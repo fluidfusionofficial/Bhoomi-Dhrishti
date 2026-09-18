@@ -1,0 +1,30 @@
+{
+  "name": "bhoomi-dhrishti-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "start:officer": "turbo run start --filter=@bhoomi/officer",
+    "start:citizen": "turbo run start --filter=@bhoomi/citizen",
+    "start:admin": "turbo run start --filter=@bhoomi/admin",
+    "dev": "turbo run dev",
+    "dev:officer": "turbo run dev --filter=@bhoomi/officer",
+    "dev:citizen": "turbo run dev --filter=@bhoomi/citizen",
+    "dev:admin": "turbo run dev --filter=@bhoomi/admin",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "turbo": "^2.1.3",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "pnpm@9.7.1",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

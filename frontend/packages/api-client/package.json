@@ -1,0 +1,24 @@
+{
+  "name": "@bhoomi/api-client",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bhoomi/types": "workspace:*",
+    "keycloak-js": "^23.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.55",
+    "react": "^18.2.0",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

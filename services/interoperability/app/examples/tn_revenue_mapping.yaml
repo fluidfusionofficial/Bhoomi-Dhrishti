@@ -1,0 +1,65 @@
+# Tamil Nadu Revenue Department Mapping Config
+# Source: Patta Chitta CSV export (land records system)
+# Target: Bhoomi Dhrishti canonical revenue schema
+# Version: 1.0
+
+source: "tn_revenue_system"
+source_type: "csv"
+target_schema: "revenue"
+
+metadata:
+  state_code: "TN"
+  state_name: "Tamil Nadu"
+  department: "revenue"
+  contact: "revenue-it@tn.gov.in"
+  encoding: "utf-8"
+  delimiter: ","
+  header_row: 1
+
+mappings:
+  - source_field: "SURVEY_NO"
+    target_field: "survey_number"
+    transform: "normalize_survey_number"
+    required: true
+
+  - source_field: "EXTENT_ACRES"
+    target_field: "area_sq_m"
+    transform: "acre_to_sq_m:district_lgd=33001"
+    required: true
+
+  - source_field: "LAND_CLASS"
+    target_field: "land_use"
+    transform: "code_lookup:land_class_v1"
+
+  - source_field: "PATTA_NAME"
+    target_field: "holder_name_en"
+    transform: "normalize_name"
+
+  - source_field: "PATTA_NAME_TAMIL"
+    target_field: "holder_name_local"
+
+  - source_field: "PATTA_NAME_TAMIL"
+    target_field: "holder_name_phonetic"
+    transform: "transliterate_to_latin"
+
+  - source_field: "AADHAAR"
+    target_field: "holder_aadhaar_hash"
+    transform: "hash_pii"
+
+  - source_field: "DATE_OF_PATTA"
+    target_field: "registration_date"
+    transform: "date_to_iso"
+
+  - source_field: "DISTRICT_CODE"
+    target_field: "district_code"
+    required: true
+
+  - source_field: "TALUK_CODE"
+    target_field: "village_code"
+
+  - source_field: "FMB_NO"
+    target_field: "field_measurement_book_no"
+    transform: "normalize_survey_number"
+
+  - source_field: "CHITTA_NO"
+    target_field: "chitta_number"

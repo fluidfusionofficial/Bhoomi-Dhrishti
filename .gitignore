@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Docker
+docker-compose.local.yml
+
+# Node / Frontend
+node_modules/
+.next/
+out/
+.npm
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Data
+data/generator/output/
+data/raw/
+*.shp
+*.dbf
+*.shx
+*.prj
+
+# Secrets
+*.pem
+*.key
+*.crt
+keycloak/import/*.json.bak
+
+# Misc
+*.tmp
+*.bak
+.terraform/
+*.tfstate

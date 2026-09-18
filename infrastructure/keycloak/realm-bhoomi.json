@@ -1,0 +1,316 @@
+{
+  "realm": "bhoomi-dhrishti",
+  "displayName": "Bhoomi Dhrishti – Land Governance Platform",
+  "displayNameHtml": "<div class='kc-logo-text'><span>Bhoomi Dhrishti</span></div>",
+  "enabled": true,
+  "sslRequired": "external",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "editUsernameAllowed": false,
+  "bruteForceProtected": true,
+  "permanentLockout": false,
+  "maxFailureWaitSeconds": 900,
+  "minimumQuickLoginWaitSeconds": 60,
+  "waitIncrementSeconds": 60,
+  "quickLoginCheckMilliSeconds": 1000,
+  "maxDeltaTimeSeconds": 43200,
+  "failureFactor": 5,
+  "defaultLocale": "en",
+  "internationalizationEnabled": true,
+  "supportedLocales": ["en", "hi", "ta", "te", "kn", "mr", "pa"],
+  "accessTokenLifespan": 300,
+  "refreshTokenMaxReuse": 0,
+  "ssoSessionIdleTimeout": 1800,
+  "ssoSessionMaxLifespan": 36000,
+  "offlineSessionIdleTimeout": 2592000,
+  "accessCodeLifespan": 60,
+
+  "roles": {
+    "realm": [
+      {
+        "name": "citizen",
+        "description": "Registered citizen – view own parcel data, raise grievances, manage consent",
+        "composite": false
+      },
+      {
+        "name": "field_officer",
+        "description": "Field inspector – view assigned parcels, upload survey reports",
+        "composite": false
+      },
+      {
+        "name": "revenue_officer",
+        "description": "Tahsildar / Revenue Inspector – process mutations, verify RoR",
+        "composite": false
+      },
+      {
+        "name": "registration_officer",
+        "description": "Sub-Registrar Office officer – register deeds, manage encumbrances",
+        "composite": false
+      },
+      {
+        "name": "planning_officer",
+        "description": "Town planning officer – manage zones, building permissions",
+        "composite": false
+      },
+      {
+        "name": "district_collector",
+        "description": "District Collector – district-wide view, approve high-value mutations, resolve disputes",
+        "composite": true,
+        "composites": {
+          "realm": ["revenue_officer", "registration_officer", "planning_officer", "field_officer"]
+        }
+      },
+      {
+        "name": "state_admin",
+        "description": "State-level administrator – state-wide view, policy configuration, audit access",
+        "composite": true,
+        "composites": {
+          "realm": ["district_collector"]
+        }
+      },
+      {
+        "name": "system_admin",
+        "description": "System administrator – full platform access, user management, service configuration",
+        "composite": true,
+        "composites": {
+          "realm": ["state_admin"]
+        }
+      },
+      {
+        "name": "data_scientist",
+        "description": "ML/analytics team – read-only access to anonymised land data for model training",
+        "composite": false
+      },
+      {
+        "name": "auditor",
+        "description": "Independent auditor – read-only access to audit logs",
+        "composite": false
+      },
+      {
+        "name": "interop_service",
+        "description": "Inter-system service account for DILRMP/NGDRS adapter",
+        "composite": false
+      }
+    ]
+  },
+
+  "groups": [
+    {
+      "name": "Citizens",
+      "realmRoles": ["citizen"],
+      "subGroups": []
+    },
+    {
+      "name": "Revenue Department",
+      "subGroups": [
+        {
+          "name": "Field Officers",
+          "realmRoles": ["field_officer"]
+        },
+        {
+          "name": "Revenue Officers",
+          "realmRoles": ["revenue_officer"]
+        },
+        {
+          "name": "District Collectors",
+          "realmRoles": ["district_collector"]
+        },
+        {
+          "name": "State Revenue Admins",
+          "realmRoles": ["state_admin"]
+        }
+      ]
+    },
+    {
+      "name": "Registration Department",
+      "subGroups": [
+        {
+          "name": "SRO Officers",
+          "realmRoles": ["registration_officer"]
+        }
+      ]
+    },
+    {
+      "name": "Planning Department",
+      "subGroups": [
+        {
+          "name": "Planning Officers",
+          "realmRoles": ["planning_officer"]
+        }
+      ]
+    },
+    {
+      "name": "System",
+      "subGroups": [
+        {
+          "name": "System Admins",
+          "realmRoles": ["system_admin"]
+        },
+        {
+          "name": "Auditors",
+          "realmRoles": ["auditor"]
+        },
+        {
+          "name": "Data Scientists",
+          "realmRoles": ["data_scientist"]
+        }
+      ]
+    }
+  ],
+
+  "clients": [
+    {
+      "clientId": "citizen-app",
+      "name": "Bhoomi Dhrishti Citizen Portal",
+      "description": "Public-facing citizen portal (Next.js)",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "http://localhost:3000/*",
+        "https://bhoomidhrishti.gov.in/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3000",
+        "https://bhoomidhrishti.gov.in"
+      ],
+      "defaultClientScopes": ["openid", "profile", "email", "roles"],
+      "optionalClientScopes": ["phone", "address"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "access.token.lifespan": "300"
+      }
+    },
+    {
+      "clientId": "officer-console",
+      "name": "Bhoomi Dhrishti Officer Console",
+      "description": "Internal officer-facing console for revenue, registration and planning staff",
+      "enabled": true,
+      "publicClient": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "http://localhost:3000/officer/*",
+        "https://officer.bhoomidhrishti.gov.in/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3000",
+        "https://officer.bhoomidhrishti.gov.in"
+      ],
+      "defaultClientScopes": ["openid", "profile", "email", "roles"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "access.token.lifespan": "600"
+      }
+    },
+    {
+      "clientId": "admin-console",
+      "name": "Bhoomi Dhrishti Admin Console",
+      "description": "System admin and state-level administrative console",
+      "enabled": true,
+      "publicClient": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "http://localhost:3000/admin/*",
+        "https://admin.bhoomidhrishti.gov.in/*"
+      ],
+      "webOrigins": ["http://localhost:3000"],
+      "defaultClientScopes": ["openid", "profile", "email", "roles"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "access.token.lifespan": "300"
+      }
+    },
+    {
+      "clientId": "service-account",
+      "name": "Bhoomi Dhrishti Service Account",
+      "description": "Machine-to-machine client for inter-service communication and external system adapters",
+      "enabled": true,
+      "publicClient": false,
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "protocol": "openid-connect",
+      "secret": "${KEYCLOAK_CLIENT_SECRET}",
+      "attributes": {
+        "access.token.lifespan": "300",
+        "use.jwks.url": "false"
+      }
+    }
+  ],
+
+  "clientScopes": [
+    {
+      "name": "parcel_read",
+      "description": "Read access to parcel data",
+      "protocol": "openid-connect",
+      "attributes": { "include.in.token.scope": "true" }
+    },
+    {
+      "name": "parcel_write",
+      "description": "Write access to parcel data (revenue officers+)",
+      "protocol": "openid-connect",
+      "attributes": { "include.in.token.scope": "true" }
+    },
+    {
+      "name": "audit_read",
+      "description": "Read access to audit trail (auditors and above)",
+      "protocol": "openid-connect",
+      "attributes": { "include.in.token.scope": "true" }
+    },
+    {
+      "name": "purpose_bound",
+      "description": "Purpose-bound access token claim (LOAN | MUTATION | ACQUISITION | SEARCH)",
+      "protocol": "openid-connect",
+      "attributes": { "include.in.token.scope": "true" }
+    }
+  ],
+
+  "passwordPolicy": "length(10) and upperCase(1) and lowerCase(1) and digits(1) and specialChars(1) and notUsername(undefined) and passwordHistory(5)",
+
+  "otpPolicyType": "totp",
+  "otpPolicyAlgorithm": "HmacSHA256",
+  "otpPolicyDigits": 6,
+  "otpPolicyPeriod": 30,
+
+  "smtpServer": {
+    "host": "${SMTP_HOST}",
+    "port": "${SMTP_PORT}",
+    "from": "${SMTP_USER}",
+    "auth": "true",
+    "starttls": "true",
+    "user": "${SMTP_USER}",
+    "password": "${SMTP_PASSWORD}"
+  },
+
+  "loginTheme": "keycloak",
+  "accountTheme": "keycloak.v3",
+  "adminTheme": "keycloak",
+  "emailTheme": "keycloak",
+
+  "eventsEnabled": true,
+  "eventsListeners": ["jboss-logging"],
+  "enabledEventTypes": [
+    "LOGIN", "LOGIN_ERROR", "REGISTER", "REGISTER_ERROR",
+    "LOGOUT", "CODE_TO_TOKEN", "CODE_TO_TOKEN_ERROR",
+    "CLIENT_LOGIN", "CLIENT_LOGIN_ERROR",
+    "TOKEN_EXCHANGE", "TOKEN_EXCHANGE_ERROR",
+    "UPDATE_EMAIL", "UPDATE_PASSWORD", "UPDATE_PROFILE",
+    "UPDATE_TOTP", "REMOVE_TOTP",
+    "SEND_RESET_PASSWORD", "SEND_VERIFY_EMAIL",
+    "RESET_PASSWORD", "VERIFY_EMAIL"
+  ],
+  "adminEventsEnabled": true,
+  "adminEventsDetailsEnabled": true
+}

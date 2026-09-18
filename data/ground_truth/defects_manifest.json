@@ -1,0 +1,236 @@
+{
+  "seed": 42,
+  "generated_at": "2026-09-16T09:07:24.607179",
+  "total_parcels": 75,
+  "defects": [
+    {
+      "type": "missing_survey_number",
+      "parcel_id": "bdd640fb-0667-4ad1-9c80-317fa3b1799d",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "missing_survey_number",
+      "parcel_id": "ec1b8ca1-f91e-4d4c-9ff4-9b7889463e85",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "d58842de-a2bc-472f-b412-b29347294739",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "missing_survey_number",
+      "parcel_id": "f16287e4-e9c3-49e0-b602-f8ac10f1bc81",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "ae849217-1d53-434b-b881-39b9ae270da7",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "ceb81f9d-7914-4120-88dc-d19f3e351128",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "0dde29a6-baa4-471a-9d24-67ac778eedb3",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "e08596db-1d87-4966-8710-d430f071d879",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "504d281f-c953-4b63-ba81-edd9587ef344",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "d9178793-a9d3-42e6-905c-c6869f871ce7",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "36b5229a-acf5-481e-b131-62697118e364",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "25c73c44-3e75-43b4-a64f-a6637e8f8095",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "77a6e17c-d72b-4108-aa40-5f12b963f37f",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "2e85cb21-7631-4e9d-9de9-f86322bd3388",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "f6f7f0cc-29ec-4e49-91bd-b8c0c71d5e60",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "13748146-32c5-4d89-b70b-3420f1043785",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "double_sold",
+      "parcel_id": "43e458fc-63f2-4e24-bc3d-3348008d4127",
+      "survey_number": "T-077/8",
+      "source": "sro_registrations"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "ec1b8ca1-f91e-4d4c-9ff4-9b7889463e85",
+      "actual_area": 191729.89,
+      "recorded_area": 158279.61249666667,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "88bd6407-2bcf-4e01-a28d-efe39bf00273",
+      "actual_area": 165461.25,
+      "recorded_area": 179984.00161682165,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "f16287e4-e9c3-49e0-b602-f8ac10f1bc81",
+      "actual_area": 145802.18,
+      "recorded_area": 189779.59597435757,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "f1eedba3-1343-4e61-9ca3-c4480279b6a6",
+      "actual_area": 171048.47,
+      "recorded_area": 163541.69429734428,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "dbccc477-09e9-4b0a-9f46-529061ee411a",
+      "actual_area": 152625.27,
+      "recorded_area": 160351.52459100776,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "area_mismatch",
+      "parcel_id": "c85aca46-90e0-44a0-bbdd-3933cbd58bf6",
+      "actual_area": 458881.88,
+      "recorded_area": 337480.96773952007,
+      "source": "municipal_tax"
+    },
+    {
+      "type": "unlinked_dispute",
+      "parcel_id": "9be578c7-81f6-41d4-a392-31a7d777a477",
+      "case_number": "CC/1653/2021",
+      "source": "court_cases"
+    },
+    {
+      "type": "unlinked_dispute",
+      "parcel_id": "d5385b0e-34f3-493c-8ff0-a55c6a702e2f",
+      "case_number": "CC/4750/2023",
+      "source": "court_cases"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "8b8148f6-b38a-488c-a65e-d389b74d0fb1",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "a9488d99-0bbb-4599-91ce-5dd2b45ed1f0",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "ae849217-1d53-434b-b881-39b9ae270da7",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "43e458fc-63f2-4e24-bc3d-3348008d4127",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "6ba25efe-311c-4eb6-a095-eef68dedf9fb",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "25c73c44-3e75-43b4-a64f-a6637e8f8095",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "d5385b0e-34f3-493c-8ff0-a55c6a702e2f",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "d284476c-6b88-483d-997d-c9cd033d2bce",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "stale_ownership",
+      "parcel_id": "4223623b-cc3e-4dde-9ad5-cf06364d7c87",
+      "source": "revenue_ror"
+    },
+    {
+      "type": "unlinked_dispute",
+      "parcel_id": "4223623b-cc3e-4dde-9ad5-cf06364d7c87",
+      "case_number": "CC/3858/2018",
+      "source": "court_cases"
+    },
+    {
+      "type": "missing_encumbrance",
+      "parcel_id": "4223623b-cc3e-4dde-9ad5-cf06364d7c87",
+      "note": "Oral mortgage arrangement not reflected",
+      "source": "encumbrance_ec"
+    },
+    {
+      "type": "circular_transaction_ring",
+      "parcel_id": "36b5229a-acf5-481e-b131-62697118e364",
+      "party": "Hredhaan Dugal",
+      "next_party": "Baghyawati Kade"
+    },
+    {
+      "type": "circular_transaction_ring",
+      "parcel_id": "c04a96c4-f3b6-4fe1-9184-332417e8392a",
+      "party": "Baghyawati Kade",
+      "next_party": "Samar Lalla"
+    },
+    {
+      "type": "circular_transaction_ring",
+      "parcel_id": "d98868dd-9c7c-4377-b9a2-8903fbe33b24",
+      "party": "Samar Lalla",
+      "next_party": "Zayan Behl"
+    },
+    {
+      "type": "circular_transaction_ring",
+      "parcel_id": "25c73c44-3e75-43b4-a64f-a6637e8f8095",
+      "party": "Zayan Behl",
+      "next_party": "Hredhaan Dugal"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Bhoomi Dhrishti – State Field Mapping
+# State: Chandigarh (CH) | Type: Urban Ward | Source System: CH Municipal
+# ─────────────────────────────────────────────────────────────────────────────
+# This file maps Chandigarh Municipal Corporation's property registry and
+# Estate Office data to Bhoomi Dhrishti canonical fields.
+#
+# Sources:
+#   - Chandigarh Estate Office (Sector-based lease / allotment records)
+#   - Chandigarh Municipal Corporation (property tax / PID registry)
+#   - Chandigarh SVAMITVA pilot data (drone survey, 2023)
+# ─────────────────────────────────────────────────────────────────────────────
+
+meta:
+  state_lgd_code: "04"
+  state_name_en: "Chandigarh"
+  state_name_local: "ਚੰਡੀਗੜ੍ਹ"
+  source_system: "CH_ESTATE_MCL"
+  source_department: "Chandigarh Estate Office / Municipal Corporation of Chandigarh"
+  hierarchy_type: LOCAL_BODY
+  default_freshness: CACHED
+  contact_api: "https://chbonline.gov.in/api"
+  sync_frequency_hours: 48
+  encoding: UTF-8
+  date_format: "DD-MM-YYYY"
+  ulpin_pilot: true             # Chandigarh is part of ULPIN pilot
+
+# ── Identity mapping ──────────────────────────────────────────────────────────
+parcel_identity:
+  source_unique_id_field: "PROPERTY_ID"          # MCL Property Identification Number
+  bdpr_prefix: "BD-CH"
+  ulpin_available: true                           # Chandigarh has partial ULPIN coverage
+  ulpin_field: "ULPIN_CODE"
+
+  field_map:
+    state_code:      { source: "STATE_CODE",     transform: "lgd_lookup",  constant_fallback: "04" }
+    district_code:   { source: "DISTRICT_CODE",  transform: "lgd_lookup",  constant_fallback: "401" }
+    urban_ward_code: { source: "WARD_CODE",      transform: "lgd_lookup" }
+    is_urban:        { source: null,             constant: true }
+
+  aliases:
+    - alias_type: MUNICIPAL_PID
+      source_field: "PROPERTY_ID"
+    - alias_type: TAX_ASSESSMENT
+      source_field: "SAP_ASSESSMENT_NO"
+      optional: true
+    - alias_type: PLOT_NUMBER
+      source_field: "PLOT_NO"
+    - alias_type: SRO_PID
+      source_field: "REGD_DEED_NO"
+      optional: true
+    - alias_type: SVAMITVA_PID
+      source_field: "SVAMITVA_ID"
+      optional: true
+
+# ── Land record mapping ───────────────────────────────────────────────────────
+# Chandigarh uses Estate Office "Allotment Letter" as the RoR equivalent
+revenue_ror:
+  source_record_id_field: "ALLOTMENT_NO"
+
+  field_map:
+    ror_id:                { source: "ALLOTMENT_NO" }
+    record_date:           { source: "ALLOTMENT_DATE",  transform: "parse_date" }
+    survey_number:         { source: "PLOT_NO" }
+    land_classification:
+      source: "PROPERTY_CATEGORY"
+      transform: "code_list_lookup"
+      list_name: "LAND_CLASSIFICATION"
+      mapping:
+        "RESIDENTIAL":     "RESIDENTIAL"
+        "COMMERCIAL":      "COMMERCIAL"
+        "INSTITUTIONAL":   "GOVERNMENT"
+        "INDUSTRIAL":      "INDUSTRIAL"
+        "GOVT":            "GOVERNMENT"
+        "EWS":             "RESIDENTIAL"
+        "MIG":             "RESIDENTIAL"
+        "HIG":             "RESIDENTIAL"
+        "SCO":             "COMMERCIAL"   # Shop-cum-Office
+        "SCF":             "COMMERCIAL"   # Shop-cum-Flat
+        "BOOTH":           "COMMERCIAL"
+    land_use:
+      source: "USE_TYPE"
+      optional: true
+    area_native:
+      source: "PLOT_AREA_SQY"           # Chandigarh uses Square Yards
+      transform: "decimal"
+    area_unit_native: { source: null,   constant: "sq_yard" }
+
+  area_conversion:
+    primary_unit: "sq_yard"             # 1 sq yard = 0.836127 sq metres
+    # Note: Chandigarh also quotes area in "marla" for residential plots
+    # 1 marla = 25.2929 sq metres (Punjab/Chandigarh standard)
+    secondary_unit: "marla"
+    secondary_detect_field: "AREA_MARLA"
+
+# ── Rights / Allottee mapping ─────────────────────────────────────────────────
+revenue_rights:
+  source_record_id_field: "ALLOTMENT_NO"
+
+  field_map:
+    right_type:
+      source: "TENURE_TYPE"
+      transform: "value_map"
+      mapping:
+        "FREEHOLD":  "OWNERSHIP"
+        "LEASEHOLD": "LEASE"
+        "GOVT":      "GOVERNMENT"
+        "PERPETUAL_LEASE": "LEASE"
+    valid_from: { source: "ALLOTMENT_DATE",  transform: "parse_date" }
+    valid_to:   { source: "LEASE_EXPIRY",    transform: "parse_date", optional: true }
+
+  provenance:
+    source_department: "Chandigarh Estate Office"
+    source_system: "CH_ESTATE_MCL"
+    source_as_of_date_field: "LAST_UPDATED"
+
+# ── Party (Allottee) mapping ──────────────────────────────────────────────────
+parties:
+  field_map:
+    name_en:           { source: "ALLOTTEE_NAME" }     # Already in English
+    name_local:        { source: "ALLOTTEE_NAME_PB",   script: "GURMUKHI", optional: true }
+    guardian_name_en:  { source: "FATHER_SPOUSE_NAME", optional: true }
+    guardian_type:
+      source: "RELATION_TYPE"
+      transform: "value_map"
+      mapping:
+        "FATHER":   "FATHER"
+        "HUSBAND":  "HUSBAND"
+        "MOTHER":   "MOTHER"
+        "GUARDIAN": "GUARDIAN"
+    id_type:
+      source: "ID_PROOF_TYPE"
+      transform: "value_map"
+      mapping:
+        "AADHAAR": "AADHAAR_HASH"
+        "PAN":     "PAN"
+        "VOTER":   "VOTER_ID"
+    id_hash:
+      source: "ID_PROOF_NUMBER"
+      transform: "sha256_salt"          # Hash before storage
+
+  id_available: true
+  matching_strategy: DETERMINISTIC_PLUS_PHONETIC
+
+# ── Fiscal / Property Tax mapping ────────────────────────────────────────────
+fiscal:
+  source_record_id_field: "SAP_ASSESSMENT_NO"
+
+  field_map:
+    assessment_year:   { source: "FINANCIAL_YEAR", transform: "extract_year_start" }
+    annual_value:      { source: "ARV",            transform: "decimal" }   # Annual Rental Value
+    tax_amount:        { source: "TAX_DEMAND",     transform: "decimal" }
+    arrears:           { source: "ARREARS_AMT",    transform: "decimal", default: 0 }
+    payment_status:
+      source: "PAYMENT_STATUS"
+      transform: "value_map"
+      mapping:
+        "PAID":     "PAID"
+        "DUE":      "DUE"
+        "PARTIAL":  "PARTIAL"
+        "OVERDUE":  "OVERDUE"
+        "EXEMPTED": "EXEMPTED"
+    last_payment_date: { source: "LAST_PMT_DATE",  transform: "parse_date", optional: true }
+    ulb_code:          { source: null,             constant: "MCL_01" }
+
+# ── Geometry ──────────────────────────────────────────────────────────────────
+geometry:
+  available: true
+  source: "SVAMITVA_DRONE_2023"      # Drone survey data from 2023 SVAMITVA pilot
+  accuracy_class: A                  # Sub-metre drone LiDAR
+  geometry_field: "GEOM_WKT"        # WKT in EPSG:32643 (UTM Zone 43N)
+  crs: "EPSG:32643"
+  area_field: "GEOM_AREA_SQM"       # Computed area from drone geometry
+
+# ── Language / script ─────────────────────────────────────────────────────────
+language:
+  primary_script: GURMUKHI
+  secondary_script: LATIN           # Most official records in English
+  encoding: UTF-8
+  transliteration_library: "indic_transliteration"
+  phonetic_algorithm: "HINDI_SOUNDEX"
+
+# ── Known data quality issues ─────────────────────────────────────────────────
+known_issues:
+  - field: ALLOTTEE_NAME
+    issue: "Mixed Romanisation – some records in CAPS, some in Title Case"
+    mitigation: "Apply unaccent + title-case normalisation before matching"
+  - field: PLOT_NO
+    issue: "Format varies: 'Sec-17/A-12', 'Sector 17 Plot A-12', '17/A-12'"
+    mitigation: "Normalise with regex: extract sector + plot components"
+  - field: FINANCIAL_YEAR
+    issue: "Some records use '2023-24' format, others '2023-2024'"
+    mitigation: "extract_year_start transform handles both"
+  - field: AREA_MARLA
+    issue: "Older records use 'marla' which varies slightly (1 marla = 20-25.29 sq metres depending on era)"
+    mitigation: "Use district unit conversion table; flag pre-1970 records as accuracy_class D"

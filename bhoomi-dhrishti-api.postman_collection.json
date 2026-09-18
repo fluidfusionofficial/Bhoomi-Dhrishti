@@ -1,0 +1,5713 @@
+{
+  "info": {
+    "_postman_id": "bhoomi-dhrishti-2026",
+    "name": "Bhoomi Dhrishti – Complete API Collection",
+    "description": "Integrated GIS-based Digital Public Infrastructure for Land Governance. SIH 2026 PS-26014 (Ministry of Rural Development, DoLR). 16 FastAPI microservices behind Nginx API gateway at http://localhost:8000. Keycloak auth at http://localhost:8080/realms/bhoomi-dhrishti. Demo users: officer@tn.gov.in/demo123, citizen@example.com/demo123, admin@bhoomi.gov.in/demo123.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    },
+    {
+      "key": "keycloak_url",
+      "value": "http://localhost:8080",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "ulpin",
+      "value": "TN-2024-01-001234",
+      "type": "string"
+    },
+    {
+      "key": "parcel_id",
+      "value": "parcel_001",
+      "type": "string"
+    },
+    {
+      "key": "state",
+      "value": "TN",
+      "type": "string"
+    },
+    {
+      "key": "officer_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "citizen_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "admin_token",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "pm.test('Status code is 2xx', function() {",
+          "  pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+          "});"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "🔐 Authentication",
+      "description": "Keycloak token endpoints for obtaining bearer tokens for officer, citizen, and admin roles. Run these first to populate the token variables.",
+      "item": [
+        {
+          "name": "Get Officer Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var json = pm.response.json();",
+                  "pm.environment.set(\"token\", json.access_token);",
+                  "pm.environment.set(\"officer_token\", json.access_token);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "bhoomi-web",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "officer@tn.gov.in",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "demo123",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{keycloak_url}}/realms/bhoomi-dhrishti/protocol/openid-connect/token",
+              "host": [
+                "{{keycloak_url}}"
+              ],
+              "path": [
+                "realms",
+                "bhoomi-dhrishti",
+                "protocol",
+                "openid-connect",
+                "token"
+              ]
+            },
+            "description": "Obtain a bearer token for the revenue officer demo user (officer@tn.gov.in). Sets the 'token' and 'officer_token' environment variables."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Citizen Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var json = pm.response.json();",
+                  "pm.environment.set(\"token\", json.access_token);",
+                  "pm.environment.set(\"citizen_token\", json.access_token);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "bhoomi-web",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "citizen@example.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "demo123",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{keycloak_url}}/realms/bhoomi-dhrishti/protocol/openid-connect/token",
+              "host": [
+                "{{keycloak_url}}"
+              ],
+              "path": [
+                "realms",
+                "bhoomi-dhrishti",
+                "protocol",
+                "openid-connect",
+                "token"
+              ]
+            },
+            "description": "Obtain a bearer token for the citizen demo user (citizen@example.com). Sets the 'token' and 'citizen_token' environment variables."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Admin Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var json = pm.response.json();",
+                  "pm.environment.set(\"token\", json.access_token);",
+                  "pm.environment.set(\"admin_token\", json.access_token);"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "bhoomi-web",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "admin@bhoomi.gov.in",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "demo123",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{keycloak_url}}/realms/bhoomi-dhrishti/protocol/openid-connect/token",
+              "host": [
+                "{{keycloak_url}}"
+              ],
+              "path": [
+                "realms",
+                "bhoomi-dhrishti",
+                "protocol",
+                "openid-connect",
+                "token"
+              ]
+            },
+            "description": "Obtain a bearer token for the admin demo user (admin@bhoomi.gov.in). Sets the 'token' and 'admin_token' environment variables."
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var json = pm.response.json();",
+                  "if (json.access_token) {",
+                  "  pm.environment.set(\"token\", json.access_token);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "refresh_token",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "bhoomi-web",
+                  "type": "text"
+                },
+                {
+                  "key": "refresh_token",
+                  "value": "{{refresh_token}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{keycloak_url}}/realms/bhoomi-dhrishti/protocol/openid-connect/token",
+              "host": [
+                "{{keycloak_url}}"
+              ],
+              "path": [
+                "realms",
+                "bhoomi-dhrishti",
+                "protocol",
+                "openid-connect",
+                "token"
+              ]
+            },
+            "description": "Refresh an existing access token using a refresh token. Set the 'refresh_token' environment variable before running."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "❤️ Health Checks",
+      "description": "Direct liveness probes for all microservices at their individual ports (bypassing the gateway). Use these to verify each service is running before testing domain endpoints.",
+      "item": [
+        {
+          "name": "Gateway Health",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Nginx API gateway liveness probe."
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel Identity Health (8001)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8001/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8001",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for parcel-identity service."
+          },
+          "response": []
+        },
+        {
+          "name": "Geospatial Health (8002)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8002/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8002",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for geospatial service."
+          },
+          "response": []
+        },
+        {
+          "name": "Revenue Records Health (8003)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8003/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8003",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for revenue-records service."
+          },
+          "response": []
+        },
+        {
+          "name": "Registration Health (8004)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8004/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8004",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for registration service."
+          },
+          "response": []
+        },
+        {
+          "name": "Planning & Zoning Health (8005)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8005/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8005",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for planning-zoning service."
+          },
+          "response": []
+        },
+        {
+          "name": "Fiscal Health (8006)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8006/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8006",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for fiscal service."
+          },
+          "response": []
+        },
+        {
+          "name": "Utilities Health (8007)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8007/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8007",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for utilities service."
+          },
+          "response": []
+        },
+        {
+          "name": "Trust Engine Health (8008)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8008/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8008",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for trust-engine service."
+          },
+          "response": []
+        },
+        {
+          "name": "ML Inference Health (8009)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8009/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8009",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for ml-inference service."
+          },
+          "response": []
+        },
+        {
+          "name": "Citizen Services Health (8010)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8010/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8010",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for citizen-services service."
+          },
+          "response": []
+        },
+        {
+          "name": "Audit Health (8011)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8011/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8011",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for audit service."
+          },
+          "response": []
+        },
+        {
+          "name": "Notifications Health (8012)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8012/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8012",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for notifications service."
+          },
+          "response": []
+        },
+        {
+          "name": "Search Health (8013)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8013/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8013",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for search service."
+          },
+          "response": []
+        },
+        {
+          "name": "Analytics Health (8014)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8014/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8014",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for analytics service."
+          },
+          "response": []
+        },
+        {
+          "name": "Interoperability Health (8015)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8015/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8015",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for interoperability service."
+          },
+          "response": []
+        },
+        {
+          "name": "Satellite Health (8016)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8016/health",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8016",
+              "path": [
+                "health"
+              ]
+            },
+            "description": "Liveness probe for satellite service."
+          },
+          "response": []
+        },
+        {
+          "name": "Workflows Health (via gateway)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/workflows/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "workflows",
+                "health"
+              ]
+            },
+            "description": "Liveness probe for workflows orchestrator service (accessed via gateway; direct port is dynamic)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Parcel Identity",
+      "description": "Canonical parcel identity register. Assigns stable BDPR references, manages ULPIN promotion, parcel aliases, lineage tracking, entity resolution cascades, and human review queue. Gateway prefix: /api/v1/parcels, /api/v1/aliases, /api/v1/lineage. Direct port: 8001.",
+      "item": [
+        {
+          "name": "Search Parcels",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/search",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "LGD state code (uppercase)",
+                  "disabled": true
+                },
+                {
+                  "key": "district_code",
+                  "value": "TN-01",
+                  "description": "LGD district code (uppercase)",
+                  "disabled": true
+                },
+                {
+                  "key": "village_code",
+                  "value": "VLG-00512",
+                  "description": "LGD village code",
+                  "disabled": true
+                },
+                {
+                  "key": "survey_number",
+                  "value": "123/2A",
+                  "description": "Survey / khasra number — searches the alias table",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Results per page (1-200)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Search parcels by LGD administrative codes (state, district, village) or survey number. Returns a paginated list of matching parcel identity records."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel by Identifier",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/:identifier",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                ":identifier"
+              ],
+              "variable": [
+                {
+                  "key": "identifier",
+                  "value": "BD-TN-A3F12B9C",
+                  "description": "BDPR (e.g. BD-TN-A3F12B9C), ULPIN (20-char national identifier), or alias value such as a survey number"
+                }
+              ]
+            },
+            "description": "Resolve a parcel by BDPR exact match, ULPIN exact match, or alias value from the parcel_aliases table. Returns 404 with code PARCEL_NOT_FOUND when no match is found."
+          },
+          "response": []
+        },
+        {
+          "name": "Register New Parcel",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"state_code\": \"TN\", \"district_code\": \"TN-01\", \"subdistrict_code\": \"TN-01-03\", \"village_code\": \"VLG-00512\", \"urban_ward_code\": null, \"is_urban\": false, \"initial_survey_number\": \"123/2A\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels"
+              ]
+            },
+            "description": "Register a new land parcel in the platform. Generates a unique BDPR of the form BD-{STATE}-{8HEX}. Optionally registers an initial survey number as a parcel alias. Returns 201 with the full parcel identity record."
+          },
+          "response": []
+        },
+        {
+          "name": "Promote ULPIN",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"ulpin\": \"TN-2024-01-001234\", \"ulpin_source\": \"DILRMP_STATE_SERVER\", \"ulpin_assigned_at\": \"2024-06-01T00:00:00Z\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/:id/promote-ulpin",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                ":id",
+                "promote-ulpin"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel record"
+                }
+              ]
+            },
+            "description": "Assign a ULPIN to a parcel. One-shot, irreversible operation. Returns 409 if a ULPIN is already present on the parcel."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Lineage Tree",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/:id/lineage",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                ":id",
+                "lineage"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel record"
+                }
+              ]
+            },
+            "description": "Returns the lineage tree for a parcel showing parent events that produced it (e.g. SUBDIVISION) and child events where it was the parent (e.g. AMALGAMATION)."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Aliases",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/:id/aliases",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                ":id",
+                "aliases"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel record"
+                }
+              ]
+            },
+            "description": "Returns all known aliases for the parcel — survey numbers, khasra numbers, account numbers, PATTA numbers, etc. — across all source systems."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Conflicts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/parcels/:id/conflicts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "parcels",
+                ":id",
+                "conflicts"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel record"
+                }
+              ]
+            },
+            "description": "Returns all open conflicts detected for a parcel: area mismatches, owner name discrepancies, transaction-mutation lags, and status inconsistencies."
+          },
+          "response": []
+        },
+        {
+          "name": "Trigger Entity Resolution Cascade",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"source_type\": \"revenue_ror\", \"state_code\": \"TN\", \"confidence_threshold_confirm\": 0.7, \"confidence_threshold_review\": 0.4}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/resolution/run",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "resolution",
+                "run"
+              ]
+            },
+            "description": "Trigger a batch entity resolution run. Runs the cascade (Spatial -> Deterministic -> Probabilistic -> Phonetic). Requires system_admin or district_collector role."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Resolution Quality Metrics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/resolution/metrics",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "resolution",
+                "metrics"
+              ],
+              "query": [
+                {
+                  "key": "source_type",
+                  "value": "revenue_ror",
+                  "description": "Filter metrics by source type (e.g. revenue_ror, sro_registrations)",
+                  "disabled": true
+                },
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter metrics by state",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Compute precision, recall, and F1 score for entity resolution against a ground truth dataset. Requires revenue_officer, district_collector, or system_admin role."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Pending Review Queue",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/reviews/queue",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reviews",
+                "queue"
+              ],
+              "query": [
+                {
+                  "key": "source_type",
+                  "value": "sro_registrations",
+                  "description": "Filter by source type",
+                  "disabled": true
+                },
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter by state (defaults to actor's state)",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Results per page (1-200)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve pending review queue items for human verification of probabilistic/phonetic entity resolution matches. Requires revenue_officer or district_collector role."
+          },
+          "response": []
+        },
+        {
+          "name": "Approve Candidate Match",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"reviewer_notes\": \"Survey number and owner name match confirmed against physical record.\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/reviews/:link_id/approve",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reviews",
+                ":link_id",
+                "approve"
+              ],
+              "variable": [
+                {
+                  "key": "link_id",
+                  "value": "990e8400-e29b-41d4-a716-446655440020",
+                  "description": "UUID of the review queue item to approve"
+                }
+              ]
+            },
+            "description": "Approve a candidate linkage, promoting it to CONFIRMED status. Requires revenue_officer or district_collector role."
+          },
+          "response": []
+        },
+        {
+          "name": "Reject Candidate Match",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"reviewer_notes\": \"Different district — phonetic match on owner name was spurious.\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/reviews/:link_id/reject",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "reviews",
+                ":link_id",
+                "reject"
+              ],
+              "variable": [
+                {
+                  "key": "link_id",
+                  "value": "990e8400-e29b-41d4-a716-446655440021",
+                  "description": "UUID of the review queue item to reject"
+                }
+              ]
+            },
+            "description": "Reject a candidate linkage, marking it as a false match. Requires revenue_officer or district_collector role."
+          },
+          "response": []
+        },
+        {
+          "name": "Resolve Alias to BDPR",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/aliases/:alias_type/:alias_value",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "aliases",
+                ":alias_type",
+                ":alias_value"
+              ],
+              "variable": [
+                {
+                  "key": "alias_type",
+                  "value": "survey_number",
+                  "description": "Type of alias identifier (e.g. survey_number, khasra, patta, pid)"
+                },
+                {
+                  "key": "alias_value",
+                  "value": "123/2A",
+                  "description": "The alias identifier value to resolve"
+                }
+              ],
+              "query": [
+                {
+                  "key": "source_system",
+                  "value": "TNERIS",
+                  "description": "Narrow resolution to a specific source system",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Resolve a state-specific parcel identifier (survey number, PID, khasra, etc.) to its canonical BDPR."
+          },
+          "response": []
+        },
+        {
+          "name": "List All Aliases for Parcel",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/aliases/parcel/:parcel_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "aliases",
+                "parcel",
+                ":parcel_id"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel"
+                }
+              ]
+            },
+            "description": "List all known aliases (survey numbers, PIDs, khasra, etc.) for a given parcel."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Lineage History",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/lineage/:parcel_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "lineage",
+                ":parcel_id"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "Internal UUID of the parcel"
+                }
+              ]
+            },
+            "description": "Return the complete lineage tree for a parcel — all parent and child parcels from subdivisions, amalgamations, and resurveys."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Geospatial",
+      "description": "PostGIS-powered geospatial API. Serves Mapbox Vector Tiles (MVT), GeoJSON parcel geometries, OGC WFS 2.0 / WMS 1.3.0 stubs, spatial query results, and topology conflict detection and resolution. Gateway prefix: /api/v1/geo, /api/v1/topology. Direct port: 8002.",
+      "item": [
+        {
+          "name": "Get Parcel Geometry",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/parcels/:parcel_id/geometry",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "parcels",
+                ":parcel_id",
+                "geometry"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel whose active geometry should be returned"
+                }
+              ]
+            },
+            "description": "Returns the current active geometry for a parcel as a GeoJSON Feature. Properties include area_sq_m, accuracy_class (DILRMP A/B/C/D), source_survey_date, version_number, and CRS metadata."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Topology Conflicts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/parcels/:parcel_id/conflicts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "parcels",
+                ":parcel_id",
+                "conflicts"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel to fetch open topology conflicts for"
+                }
+              ]
+            },
+            "description": "Returns all open (unresolved) topology conflicts where this parcel is either parcel_id_1 or parcel_id_2. Conflict types: OVERLAP, GAP, SLIVER, SELF_INTERSECTION."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vector Tile (MVT)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/tiles/:layer/:z/:x/:y_mvt",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "tiles",
+                ":layer",
+                ":z",
+                ":x",
+                ":y_mvt"
+              ],
+              "variable": [
+                {
+                  "key": "layer",
+                  "value": "parcels",
+                  "description": "Map layer name: parcels, admin_districts, restriction_zones, conflicts"
+                },
+                {
+                  "key": "z",
+                  "value": "14",
+                  "description": "Tile zoom level (0 to max configured zoom)"
+                },
+                {
+                  "key": "x",
+                  "value": "11246",
+                  "description": "Tile column index at the given zoom level"
+                },
+                {
+                  "key": "y_mvt",
+                  "value": "7258.mvt",
+                  "description": "Tile row index followed by .mvt extension (e.g. 7258.mvt). Empty tiles return HTTP 204."
+                }
+              ]
+            },
+            "description": "Serves a Mapbox Vector Tile (protobuf binary) for the specified layer at zoom/x/y. Tiles are generated on-the-fly by PostGIS ST_AsMVT. Content-Type: application/x-protobuf."
+          },
+          "response": []
+        },
+        {
+          "name": "OGC WFS GetCapabilities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/ogc/wfs?service=WFS&request=GetCapabilities",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ogc",
+                "wfs"
+              ],
+              "query": [
+                {
+                  "key": "service",
+                  "value": "WFS",
+                  "description": "OGC service identifier — must be WFS",
+                  "disabled": false
+                },
+                {
+                  "key": "request",
+                  "value": "GetCapabilities",
+                  "description": "OGC request type — must be GetCapabilities",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Returns a WFS 2.0.0 GetCapabilities XML document advertising Bhoomi Dhrishti feature types. Accepted by QGIS, ArcGIS Pro, OpenLayers, and other OGC-compliant clients."
+          },
+          "response": []
+        },
+        {
+          "name": "OGC WMS GetCapabilities",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/ogc/wms?service=WMS&request=GetCapabilities",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ogc",
+                "wms"
+              ],
+              "query": [
+                {
+                  "key": "service",
+                  "value": "WMS",
+                  "description": "OGC service identifier — must be WMS",
+                  "disabled": false
+                },
+                {
+                  "key": "request",
+                  "value": "GetCapabilities",
+                  "description": "OGC request type — must be GetCapabilities",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Returns a WMS 1.3.0 GetCapabilities XML document. Advertises parcels, admin_districts, and restriction_zones layers."
+          },
+          "response": []
+        },
+        {
+          "name": "Query Parcels Within Polygon",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"type\": \"Polygon\", \"coordinates\": [[[80.2600, 13.0700], [80.2800, 13.0700], [80.2800, 13.0900], [80.2600, 13.0900], [80.2600, 13.0700]]]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/query/within",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "query",
+                "within"
+              ]
+            },
+            "description": "Returns all parcels whose centroid is within or whose boundary intersects the supplied GeoJSON Polygon (WGS84, anti-clockwise winding). Results ordered by BDPR."
+          },
+          "response": []
+        },
+        {
+          "name": "Query Nearby Parcels",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"lat\": 13.0827, \"lon\": 80.2707, \"radius_metres\": 500}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/query/nearby",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "query",
+                "nearby"
+              ]
+            },
+            "description": "Returns parcels within radius_metres of the given WGS84 coordinate, ordered by ascending distance. Uses PostGIS geography type for spheroidal distance accuracy."
+          },
+          "response": []
+        },
+        {
+          "name": "List Open Topology Conflicts (Spatial)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/conflicts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "conflicts"
+              ],
+              "query": [
+                {
+                  "key": "conflict_type",
+                  "value": "OVERLAP",
+                  "description": "Filter by conflict type: OVERLAP, GAP, SLIVER, SELF_INTERSECTION",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Results per page (1-200)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Returns all open (unresolved) topology conflicts, paginated, with optional filter by conflict_type. Ordered by detection date descending."
+          },
+          "response": []
+        },
+        {
+          "name": "Detect Parcel Conflicts On-Demand",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/geo/conflicts/detect/:parcel_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "geo",
+                "conflicts",
+                "detect",
+                ":parcel_id"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel to run on-demand topology conflict detection for"
+                }
+              ]
+            },
+            "description": "Triggers an immediate topology check for the given parcel using ST_Overlaps. Results are returned in the response only and are NOT automatically persisted."
+          },
+          "response": []
+        },
+        {
+          "name": "List Topology Conflicts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/topology/conflicts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "topology",
+                "conflicts"
+              ],
+              "query": [
+                {
+                  "key": "conflict_type",
+                  "value": "OVERLAP",
+                  "description": "Filter by conflict type: OVERLAP, GAP, SLIVER, SELF_INTERSECTION",
+                  "disabled": true
+                },
+                {
+                  "key": "resolution_status",
+                  "value": "OPEN",
+                  "description": "Filter by status: OPEN, RESOLVED, DISMISSED, ALL",
+                  "disabled": true
+                },
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter by state code (LGD)",
+                  "disabled": true
+                },
+                {
+                  "key": "district_code",
+                  "value": "33",
+                  "description": "Filter by district code (LGD)",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Results per page (1-200)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Lists detected topology conflicts ordered by overlap area descending (most severe first). Auto-detected nightly or on-demand."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Topology Conflict Detail",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/topology/conflicts/:conflict_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "topology",
+                "conflicts",
+                ":conflict_id"
+              ],
+              "variable": [
+                {
+                  "key": "conflict_id",
+                  "value": "f0e1d2c3-b4a5-6789-0fed-cba987654321",
+                  "description": "UUID of the topology conflict record"
+                }
+              ]
+            },
+            "description": "Returns detailed information about a specific topology conflict, including the conflict geometry as GeoJSON and BDPR identifiers of both involved parcels."
+          },
+          "response": []
+        },
+        {
+          "name": "Trigger Topology Conflict Detection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"state_code\": \"TN\", \"district_code\": \"33\", \"detection_type\": \"OVERLAP\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/topology/detect",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "topology",
+                "detect"
+              ]
+            },
+            "description": "Triggers on-demand topology conflict detection. Runs PostGIS overlap checks (ST_Overlaps), optionally scoped to state or district. Requires revenue_officer, district_collector, or system_admin role."
+          },
+          "response": []
+        },
+        {
+          "name": "Apply Topology Fix",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"fix_method\": \"CLIP_TO_BOUNDARY\", \"notes\": \"Clipped overlapping southern boundary to administrative district line\", \"updated_geometry_geojson\": null}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/topology/conflicts/:conflict_id/fix",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "topology",
+                "conflicts",
+                ":conflict_id",
+                "fix"
+              ],
+              "variable": [
+                {
+                  "key": "conflict_id",
+                  "value": "f0e1d2c3-b4a5-6789-0fed-cba987654321",
+                  "description": "UUID of the open topology conflict to fix"
+                }
+              ]
+            },
+            "description": "Applies an approved topology fix. Supported fix methods: CLIP_TO_BOUNDARY, ADJUST_VERTEX, SNAP_TO_GRID, MANUAL_EDIT. Requires revenue_officer or district_collector role."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Registration",
+      "description": "Property deed registration records, encumbrances, encumbrance certificates, and ML-backed fraud detection sourced from Sub-Registrar Office (SRO) systems. Gateway prefix: /api/v1/registration. Direct port: 8004.",
+      "item": [
+        {
+          "name": "List Deeds for Parcel",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/parcels/:parcel_id/deeds",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "parcels",
+                ":parcel_id",
+                "deeds"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel to fetch deeds for"
+                }
+              ]
+            },
+            "description": "Return all deeds registered against a parcel, ordered by registration_date DESC. Includes buyer and seller party details."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Deed",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/deeds/:deed_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "deeds",
+                ":deed_id"
+              ],
+              "variable": [
+                {
+                  "key": "deed_id",
+                  "value": "d1e2f3a4-b5c6-7890-abcd-123456789012",
+                  "description": "UUID of the deed record to retrieve"
+                }
+              ]
+            },
+            "description": "Fetch a single deed by its UUID, including full buyer and seller party details."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Encumbrance Certificate",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/parcels/:parcel_id/ec",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "parcels",
+                ":parcel_id",
+                "ec"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel for which to generate the EC"
+                }
+              ]
+            },
+            "description": "Generate an Encumbrance Certificate (EC) for a parcel. Aggregates total deed count, active encumbrances, deeds summary, and period coverage from SRO and revenue department sources."
+          },
+          "response": []
+        },
+        {
+          "name": "Check Duplicate Deed",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/deeds/check-duplicate",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "deeds",
+                "check-duplicate"
+              ],
+              "query": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "Parcel UUID to check for duplicate registration",
+                  "disabled": false
+                },
+                {
+                  "key": "doc_number",
+                  "value": "SRO/BLR/2024/001234",
+                  "description": "Document number to check for duplicates",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Detect potential double-registration of the same deed. Used during the registration workflow to prevent duplicate registrations."
+          },
+          "response": []
+        },
+        {
+          "name": "Pre-Check Deed Registration",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/deeds/pre-check",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "deeds",
+                "pre-check"
+              ],
+              "query": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "Parcel UUID to run pre-checks against",
+                  "disabled": false
+                },
+                {
+                  "key": "doc_number",
+                  "value": "SRO/BLR/2026/009001",
+                  "description": "Document number of the deed being registered",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Run comprehensive pre-registration validation checks: duplicate detection, active encumbrance review, open dispute check, pending mutation check, and area consistency validation. FAIL blocks registration; WARN requires officer override."
+          },
+          "response": []
+        },
+        {
+          "name": "List Encumbrances for Parcel",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/parcels/:parcel_id/encumbrances",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "parcels",
+                ":parcel_id",
+                "encumbrances"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the parcel to fetch encumbrances for"
+                }
+              ]
+            },
+            "description": "Return all encumbrances (both active and inactive) for a parcel, including beneficiary party details, ordered by start_date DESC."
+          },
+          "response": []
+        },
+        {
+          "name": "Check ML Transaction Network Flags",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"parcel_id\": \"a1b2c3d4-e5f6-7890-abcd-ef1234567890\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/registration/check-duplicate",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "registration",
+                "check-duplicate"
+              ]
+            },
+            "description": "Check ML transaction-network fraud and anomaly flags for a parcel. Returns unresolved flags with computed risk level (LOW/MEDIUM/HIGH/CRITICAL)."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Audit",
+      "description": "Append-only audit trail with SHA-256 hash-chain integrity for all land governance events. Provides officer/admin event queries, tiered citizen disclosure, admin cross-entity search, and cryptographic tamper verification. Gateway prefix: /api/v1/audit. Direct port: 8011.",
+      "item": [
+        {
+          "name": "Record Audit Event",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"event_type\": \"MUTATION_APPROVED\", \"actor_id\": \"off-tn-rev-0042\", \"actor_role\": \"REVENUE_OFFICER\", \"actor_org\": \"Taluk Office Thanjavur\", \"resource_type\": \"mutation\", \"resource_id\": \"MUT-2024-TN-00891\", \"parcel_id\": \"a1b2c3d4-e5f6-7890-abcd-ef1234567890\", \"purpose\": \"Mutation after registered sale deed\", \"payload\": {\"deed_no\": \"TN-REGN-2024-55123\", \"previous_owner\": \"Suresh Kumar\"}, \"ip_address\": \"10.10.1.45\", \"user_agent\": \"BhoomiDhrishti/1.0 (officer-portal)\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/audit/events",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "audit",
+                "events"
+              ]
+            },
+            "description": "Appends an immutable audit event to the hash-chained event log. Validates event_type and computes SHA-256 hash chained from the previous event. Fire-and-forget from other services."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Audit Events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/audit/parcels/:parcel_id/events",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "audit",
+                "parcels",
+                ":parcel_id",
+                "events"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "{{parcel_id}}",
+                  "description": "UUID of the land parcel whose audit trail is being queried"
+                }
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number for pagination (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Number of events per page (1-200, default 50)",
+                  "disabled": true
+                },
+                {
+                  "key": "event_type",
+                  "value": "MUTATION_APPROVED",
+                  "description": "Filter events by type (e.g. MUTATION_APPROVED, PARCEL_VIEWED)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Returns paginated audit events for a specific parcel, ordered newest first. Requires REVENUE_OFFICER or ADMIN role."
+          },
+          "response": []
+        },
+        {
+          "name": "Citizen Parcel Access Disclosure",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{citizen_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/audit/citizen/my-parcel-access",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "audit",
+                "citizen",
+                "my-parcel-access"
+              ],
+              "query": [
+                {
+                  "key": "citizen_id",
+                  "value": "cit-aadhaar-hash-7f3a9b2e",
+                  "description": "Authenticated citizen's actor_id — matched against Aadhaar hash, mobile hash, or voter ID hash in the rights registry",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Tiered citizen disclosure — shows who accessed the citizen's land parcels without revealing officer names. Returns grouped access records. Requires CITIZEN role."
+          },
+          "response": []
+        },
+        {
+          "name": "Search Audit Events",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/audit/events/search",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "audit",
+                "events",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "actor_id",
+                  "value": "off-tn-rev-0042",
+                  "description": "Filter by specific actor (Keycloak subject or system identity)",
+                  "disabled": true
+                },
+                {
+                  "key": "actor_role",
+                  "value": "REVENUE_OFFICER",
+                  "description": "Filter by actor role (e.g. CITIZEN, REVENUE_OFFICER, ADMIN)",
+                  "disabled": true
+                },
+                {
+                  "key": "event_type",
+                  "value": "DATA_EXPORT",
+                  "description": "Filter by event type",
+                  "disabled": true
+                },
+                {
+                  "key": "parcel_id",
+                  "value": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                  "description": "Filter events linked to a specific parcel UUID",
+                  "disabled": true
+                },
+                {
+                  "key": "date_from",
+                  "value": "2024-09-01T00:00:00",
+                  "description": "Start of datetime range filter (ISO 8601)",
+                  "disabled": true
+                },
+                {
+                  "key": "date_to",
+                  "value": "2024-09-15T23:59:59",
+                  "description": "End of datetime range filter (ISO 8601)",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number (1-based)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "50",
+                  "description": "Number of events per page (1-200, default 50)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Admin-level cross-entity search across the full audit event log. Requires ADMIN role."
+          },
+          "response": []
+        },
+        {
+          "name": "Verify Hash Chain Integrity",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/audit/integrity/verify",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "audit",
+                "integrity",
+                "verify"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10000",
+                  "description": "Number of events to verify starting from the oldest (100-100000, default 10000)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Cryptographically verifies the SHA-256 hash chain across the most recent N audit events. Reports whether the chain is intact or identifies where tampering was detected. Requires ADMIN role."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Notifications",
+      "description": "Multi-channel (IN_APP, EMAIL, SMS_OTP), multi-language (en, hi, ta, te) notification delivery service. Supports 8 templates covering mutation lifecycle, parcel access, conflict detection, tax overdue, building permits, and encumbrance certificates. Gateway prefix: /api/v1/notifications. Direct port: 8012.",
+      "item": [
+        {
+          "name": "Send Notification",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"template_key\": \"MUTATION_SUBMITTED\", \"user_id\": \"citizen_tn_001\", \"lang\": \"ta\", \"variables\": {\"ulpin\": \"TN-2024-01-001234\", \"ref_id\": \"MUT-2024-00187\"}, \"channels\": [\"IN_APP\", \"EMAIL\"]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/notifications/send",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifications",
+                "send"
+              ]
+            },
+            "description": "Send a multi-channel notification using a predefined template key. Persists IN_APP records immediately; EMAIL and SMS_OTP channels are enqueued for async delivery. Returns 202 Accepted."
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Notifications",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/notifications/user/:user_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifications",
+                "user",
+                ":user_id"
+              ],
+              "variable": [
+                {
+                  "key": "user_id",
+                  "value": "citizen_tn_001",
+                  "description": "Unique identifier of the user whose notifications are being fetched"
+                }
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number for pagination (1-indexed)",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "20",
+                  "description": "Number of notifications per page (1-100, default 20)",
+                  "disabled": true
+                },
+                {
+                  "key": "unread_only",
+                  "value": "false",
+                  "description": "When true, returns only unread notifications",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "List paginated notifications for a specific user. Returns total count, unread count, and the notification items for the current page."
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Notification as Read",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/notifications/:notification_id/read",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifications",
+                ":notification_id",
+                "read"
+              ],
+              "variable": [
+                {
+                  "key": "notification_id",
+                  "value": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+                  "description": "UUID of the notification to mark as read"
+                }
+              ]
+            },
+            "description": "Mark a single notification as read by setting is_read=true and recording read_at timestamp. Returns 404 if the notification ID does not exist."
+          },
+          "response": []
+        },
+        {
+          "name": "List Notification Templates",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/notifications/templates",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "notifications",
+                "templates"
+              ]
+            },
+            "description": "List all registered notification templates with supported languages, delivery channels, criticality flag, and a sample English message."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Search",
+      "description": "Full-text, spatial, and natural-language parcel search. Provides parcel search by free text, bounding box, land use, risk band, dispute and encumbrance filters, autocomplete suggestions, and natural language query parsing. Gateway prefix: /api/v1/search. Direct port: 8013.",
+      "item": [
+        {
+          "name": "Search Parcels",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"q\": \"Ravi Kumar\", \"bbox\": [79.0, 10.0, 80.5, 11.5], \"land_use\": \"AGRICULTURAL\", \"risk_band\": \"HIGH\", \"state_code\": \"TN\", \"district_code\": \"TN-CBE\", \"has_dispute\": false, \"has_encumbrance\": false, \"page\": 1, \"page_size\": 20}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/search/parcels",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search",
+                "parcels"
+              ]
+            },
+            "description": "Full-text and spatial parcel search supporting free text, bounding box, land use type, risk band, state/district filters, dispute status, and encumbrance status. Returns a paginated list."
+          },
+          "response": []
+        },
+        {
+          "name": "Search Suggestions (Autocomplete)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/search/suggestions",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search",
+                "suggestions"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "TN-2024",
+                  "description": "Search prefix string (minimum 2 characters). Matched against ULPIN and survey number fields.",
+                  "disabled": false
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Maximum number of suggestions to return (1-30, default 10)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Returns autocomplete suggestions for parcel ULPIN or survey number based on a prefix query string."
+          },
+          "response": []
+        },
+        {
+          "name": "Natural Language Parcel Search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\": \"agricultural parcels with high conflict risk near Coimbatore\", \"near_lon\": 76.9558, \"near_lat\": 11.0168, \"limit\": 50}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/search/natural-language",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search",
+                "natural-language"
+              ]
+            },
+            "description": "Accepts a natural language query string, parses it into structured clauses, generates SQL, and returns matching parcels. Supports proximity-based queries when near_lon and near_lat are provided."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Interoperability",
+      "description": "State adapter gateway, YAML mapping engine, and conformance testing. Handles state onboarding, department sync orchestration, mapping YAML validation, conformance tier assessment (BRONZE/SILVER/GOLD), and ETL data ingestion for Revenue RoR and SRO registration data. Gateway prefix: /api/v1/interop. Direct port: 8015.",
+      "item": [
+        {
+          "name": "List Onboarded States",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/states",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "states"
+              ]
+            },
+            "description": "Returns all states onboarded into Bhoomi Dhrishti with tier, parcel count, last sync time, and participating departments."
+          },
+          "response": []
+        },
+        {
+          "name": "Onboard State",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"state_name\": \"Tamil Nadu\", \"contact_email\": \"tech@tn.gov.in\", \"mapping_yaml\": \"source_system: REVENUE_TN\\nfields:\\n  - source: survey_no\\n    target: ulpin\\n\", \"departments\": [\"Revenue\", \"SRO\"]}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/states/:code/onboard",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "states",
+                ":code",
+                "onboard"
+              ],
+              "variable": [
+                {
+                  "key": "code",
+                  "value": "TN",
+                  "description": "ISO-style state code to onboard"
+                }
+              ]
+            },
+            "description": "Registers a new state into the platform by validating its YAML field-mapping config. State starts at BRONZE tier; run the conformance suite to upgrade."
+          },
+          "response": []
+        },
+        {
+          "name": "Get State Sync Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/states/:code/sync-status",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "states",
+                ":code",
+                "sync-status"
+              ],
+              "variable": [
+                {
+                  "key": "code",
+                  "value": "TN",
+                  "description": "State code to query sync status for"
+                }
+              ]
+            },
+            "description": "Returns per-department sync history for a state, showing last sync timestamp and total sync event count per department."
+          },
+          "response": []
+        },
+        {
+          "name": "Trigger Department Sync",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"force\": false, \"source_file_url\": \"https://cdn.tn.gov.in/revenue/export_2026_09.csv\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/sync/:state_code/:department",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "sync",
+                ":state_code",
+                ":department"
+              ],
+              "variable": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "State code whose data should be synced"
+                },
+                {
+                  "key": "department",
+                  "value": "Revenue",
+                  "description": "Department name to sync (e.g. Revenue, SRO)"
+                }
+              ]
+            },
+            "description": "Enqueues an integration sync job for a specific state-department pair. Returns 202 immediately; poll sync-status for progress."
+          },
+          "response": []
+        },
+        {
+          "name": "List Mapping Configurations",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/mappings",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "mappings"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter mappings to a specific state",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Lists all active YAML mapping configurations, optionally filtered by state code."
+          },
+          "response": []
+        },
+        {
+          "name": "Validate Mapping YAML",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"mapping_yaml\": \"source_system: REVENUE_TN\\nfields:\\n  - source: survey_no\\n    target: ulpin\\n    transform: zero_pad\\n\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/mappings/validate",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "mappings",
+                "validate"
+              ]
+            },
+            "description": "Parses and validates a YAML field-mapping configuration string against the Bhoomi Dhrishti mapping schema without persisting it. Returns a list of errors if invalid."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Conformance Report",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/conformance/:state_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "conformance",
+                ":state_code"
+              ],
+              "variable": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "State code to retrieve the conformance report for"
+                }
+              ]
+            },
+            "description": "Returns the most recently stored conformance report for a state, including tier achieved (BRONZE/SILVER/GOLD) and per-requirement pass/fail breakdown."
+          },
+          "response": []
+        },
+        {
+          "name": "Run Conformance Suite",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/interop/conformance/:state_code/run",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "interop",
+                "conformance",
+                ":state_code",
+                "run"
+              ],
+              "variable": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "State code to run conformance tests against"
+                }
+              ]
+            },
+            "description": "Executes the full conformance test suite (BRONZE, SILVER, GOLD requirements) for a state, persists the report, and updates the state tier accordingly."
+          },
+          "response": []
+        },
+        {
+          "name": "Ingest Data File",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "",
+                  "description": "CSV, JSON, or JSONL file to ingest"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/ingest/:source_type",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ingest",
+                ":source_type"
+              ],
+              "variable": [
+                {
+                  "key": "source_type",
+                  "value": "revenue_ror",
+                  "description": "Data source type: revenue_ror or sro_registration"
+                }
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "tn",
+                  "description": "State code to resolve the mapping YAML (default: tn)",
+                  "disabled": true
+                },
+                {
+                  "key": "context",
+                  "value": "rural",
+                  "description": "Context identifier: rural or urban (default: rural)",
+                  "disabled": true
+                },
+                {
+                  "key": "conflict_strategy",
+                  "value": "update",
+                  "description": "How to handle duplicates: update (upsert) or ignore (skip) (default: update)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Accepts a multipart CSV, JSON, or JSONL file upload and runs the full ETL pipeline: field mapping via YAML config, data quality validation, and database load. Supported source types: revenue_ror, sro_registration."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Ingestion Job Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ingest/status/:job_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ingest",
+                "status",
+                ":job_id"
+              ],
+              "variable": [
+                {
+                  "key": "job_id",
+                  "value": "c7d8e9f0-a1b2-3456-cdef-012345678901",
+                  "description": "UUID of the ingestion job to query"
+                }
+              ]
+            },
+            "description": "Returns the current status and result details of a previously submitted ingestion job, including rows loaded, quality score, and any errors."
+          },
+          "response": []
+        },
+        {
+          "name": "List Source Mappings",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ingest/sources",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ingest",
+                "sources"
+              ]
+            },
+            "description": "Lists all available YAML field-mapping configurations found on disk, with source system and department metadata for each state-context combination."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Mapping Configuration File",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ingest/mappings/:state_code_context",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ingest",
+                "mappings",
+                ":state_code_context"
+              ],
+              "variable": [
+                {
+                  "key": "state_code_context",
+                  "value": "tn_rural",
+                  "description": "Combined state_code and context joined by underscore (e.g. tn_rural, ka_urban). Corresponds to {state_code}_{context} in the path."
+                }
+              ]
+            },
+            "description": "Retrieves the raw YAML content of a specific state-context mapping configuration from disk."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Mapping Configuration File",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admin_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"yaml_content\": \"source_system: REVENUE_TN\\nsource_department: Revenue\\nfields:\\n  - source: survey_no\\n    target: ulpin\\n    transform: zero_pad\\n\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/ingest/mappings/:state_code_context",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ingest",
+                "mappings",
+                ":state_code_context"
+              ],
+              "variable": [
+                {
+                  "key": "state_code_context",
+                  "value": "tn_rural",
+                  "description": "Combined state_code and context joined by underscore (e.g. tn_rural). Corresponds to {state_code}_{context} in the path."
+                }
+              ]
+            },
+            "description": "Writes or replaces a YAML mapping configuration on disk for a given state-context pair. Admin-only operation."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Satellite",
+      "description": "Satellite watch service using NDVI/NDBI land-use change detection with Sentinel-2 and Cartosat imagery. Detects agricultural to non-agricultural conversion, encroachment on water bodies and forest land, and large layout development at 10m resolution. Gateway prefix: /satellite. Direct port: 8016.",
+      "item": [
+        {
+          "name": "Get Change Detection Results",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{officer_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/satellite/change-detection/:village_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "satellite",
+                "change-detection",
+                ":village_code"
+              ],
+              "variable": [
+                {
+                  "key": "village_code",
+                  "value": "588001",
+                  "description": "LGD village code identifying the village to analyse"
+                }
+              ]
+            },
+            "description": "Get land-use change detection results for a village using Sentinel-2 imagery at 10m resolution. Detects AGRI_TO_NON_AGRI, encroachment on water bodies, and large layout developments. Requires revenue_officer or admin role."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Change Layers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/satellite/change-layers/:village_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "satellite",
+                "change-layers",
+                ":village_code"
+              ],
+              "variable": [
+                {
+                  "key": "village_code",
+                  "value": "588001",
+                  "description": "LGD village code identifying the village to retrieve change layers for"
+                }
+              ]
+            },
+            "description": "Get change detection results as a GeoJSON FeatureCollection layer for mapping. Returns polygons of detected changes with properties for visualization."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Affected Parcels",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/satellite/affected-parcels/:village_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "satellite",
+                "affected-parcels",
+                ":village_code"
+              ],
+              "variable": [
+                {
+                  "key": "village_code",
+                  "value": "588001",
+                  "description": "LGD village code identifying the village to query affected parcels for"
+                }
+              ],
+              "query": [
+                {
+                  "key": "change_type",
+                  "value": "AGRI_TO_NON_AGRI",
+                  "description": "Filter results by change type: AGRI_TO_NON_AGRI, ENCROACHMENT_WATER, VEG_TO_BARREN, WATER_BODY_FILL",
+                  "disabled": true
+                },
+                {
+                  "key": "min_area_sq_m",
+                  "value": "500.0",
+                  "description": "Minimum change area in square metres (default 100.0)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get list of parcels affected by detected land-use changes for a village. Useful for generating notices or investigation lists. Results ordered by change area descending (up to 200 parcels)."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Resolution Note",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/satellite/resolution-note",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "satellite",
+                "resolution-note"
+              ]
+            },
+            "description": "Get information about Sentinel-2 satellite imagery resolution and limitations. Describes what land-use change types can and cannot be detected at 10m resolution."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Workflows",
+      "description": "Workflow Orchestrator Service for end-to-end cross-departmental land governance processes. Includes property sale with pre-registration checks, building permission with automated compliance screening, and unauthorized land-use conversion detection with field enforcement assignment. Gateway prefix: /workflows.",
+      "item": [
+        {
+          "name": "Execute Property Sale Workflow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"ulpin\": \"TN-2024-01-001234\", \"seller_aadhaar\": \"123456789012\", \"buyer_aadhaar\": \"987654321098\", \"sale_price\": 5000000.0, \"sale_area_sqm\": 250.5, \"document_id\": \"DOC-2026-001\", \"sro_code\": \"TN-TVL-01\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/workflows/property-sale",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "workflows",
+                "property-sale"
+              ]
+            },
+            "description": "Execute end-to-end property sale workflow: (1) Parallel pre-checks for encumbrances, disputes, ownership, area consistency, zoning; (2) Register sale deed with SRO; (3) Trigger mutation to Revenue; (4) Notify ULB for tax assessment; (5) Log audit trail."
+          },
+          "response": []
+        },
+        {
+          "name": "Execute Building Permit Workflow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"ulpin\": \"TN-2024-01-001234\", \"applicant_aadhaar\": \"123456789012\", \"building_type\": \"residential\", \"proposed_area_sqm\": 400.0, \"proposed_floors\": 3, \"proposed_height_m\": 12.0, \"setback_front_m\": 4.5, \"setback_rear_m\": 3.5, \"setback_sides_m\": 2.0, \"plot_area_sqm\": 250.0, \"architect_registration\": \"COA/TN/2024/12345\", \"structural_engineer_registration\": \"IEI/TN/2024/67890\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/workflows/building-permit",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "workflows",
+                "building-permit"
+              ]
+            },
+            "description": "Execute building permission workflow: (1) Auto-screen for zoning compliance, FSI/FAR limits, setback requirements, tax dues, encumbrances; (2) Route to planning officer; (3) Notify applicant with result."
+          },
+          "response": []
+        },
+        {
+          "name": "Execute Land Use Enforcement Workflow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{officer_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"region_code\": \"TN-CBE\", \"lookback_days\": 90}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/workflows/land-use-enforcement",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "workflows",
+                "land-use-enforcement"
+              ]
+            },
+            "description": "Execute unauthorized land-use conversion detection workflow synchronously: (1) Satellite change detection; (2) Cross-reference approved permits; (3) Flag unauthorized conversions; (4) Create enforcement cases; (5) Assign to field officers. May be long-running for large regions."
+          },
+          "response": []
+        },
+        {
+          "name": "Schedule Land Use Enforcement Detection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{officer_token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"region_code\": \"TN-MDU\", \"lookback_days\": 180}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/workflows/land-use-enforcement/schedule",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "workflows",
+                "land-use-enforcement",
+                "schedule"
+              ]
+            },
+            "description": "Schedule unauthorized land-use conversion detection to run as a background task. Returns immediately with a scheduled status while detection runs asynchronously. Use for large-scale regional scans."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Revenue Records (RoR)",
+      "description": "Manages Records of Rights (RoR), land rights, mutations, and parties for the Bhoomi Dhrishti land governance platform. Handles ownership history, tenancy/share-crop rights, mutation lifecycle (create/approve/reject), and party (landholder) search and lookup.",
+      "item": [
+        {
+          "name": "Health Liveness",
+          "request": {
+            "method": "GET",
+            "description": "Basic liveness probe — always returns 200 if the process is up. No database check.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Health Readiness",
+          "request": {
+            "method": "GET",
+            "description": "Readiness probe — checks database connectivity by executing SELECT 1. Returns 503 if the database is unreachable.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health/ready",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health",
+                "ready"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Record of Rights",
+          "request": {
+            "method": "GET",
+            "description": "Returns the most recent Record of Rights (RoR) for a parcel, including all associated rights with party details and provenance metadata. Emits a READ_ROR audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/parcels/:parcel_id/ror",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "parcels",
+                ":parcel_id",
+                "ror"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+                  "description": "UUID of the land parcel"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Rights for Parcel",
+          "request": {
+            "method": "GET",
+            "description": "Returns all rights entries (ownership, tenancy, sharecrop, etc.) for a parcel with party details, ordered by valid_from descending. Emits a READ_RIGHTS audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/parcels/:parcel_id/rights",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "parcels",
+                ":parcel_id",
+                "rights"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+                  "description": "UUID of the land parcel"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Mutations for Parcel",
+          "request": {
+            "method": "GET",
+            "description": "Returns all mutation records for a parcel ordered by submitted_at descending. Emits a READ_MUTATIONS audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/parcels/:parcel_id/mutations",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "parcels",
+                ":parcel_id",
+                "mutations"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+                  "description": "UUID of the land parcel"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get RoR Temporal History",
+          "request": {
+            "method": "GET",
+            "description": "Returns the full temporal ownership history for a parcel — all historical rights and ownership changes ordered by valid_from descending. Includes party details, share fractions, validity periods, and source attribution. Emits a READ_ROR_HISTORY audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/ror/:parcel_id/history",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "ror",
+                ":parcel_id",
+                "history"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+                  "description": "UUID of the land parcel"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Mutation",
+          "request": {
+            "method": "POST",
+            "description": "Creates a new mutation record with status PENDING. Used to initiate land title transfers, inheritance mutations, partition, or gift deeds. Emits a CREATE_MUTATION audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/mutations",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "mutations"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"parcel_id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa1\", \"mutation_type\": \"SALE\", \"from_party_id\": \"c1b2c3d4-0003-4000-8000-000000000001\", \"to_party_id\": \"e1b2c3d4-0005-4000-8000-000000000001\", \"notes\": \"Sale deed no. TN-2024-TVL-45678 registered at Tirunelveli SRO on 2024-05-15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Mutation",
+          "request": {
+            "method": "GET",
+            "description": "Retrieves a single mutation record by its UUID. Emits a READ_MUTATION audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/mutations/:mutation_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "mutations",
+                ":mutation_id"
+              ],
+              "variable": [
+                {
+                  "key": "mutation_id",
+                  "value": "d1b2c3d4-0004-4000-8000-000000000001",
+                  "description": "UUID of the mutation record"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Approve Mutation",
+          "request": {
+            "method": "PUT",
+            "description": "Approves a PENDING mutation, setting its status to APPROVED and recording the officer ID and approval timestamp. Returns 422 if the mutation is not in PENDING state. Emits an APPROVE_MUTATION audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/mutations/:mutation_id/approve",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "mutations",
+                ":mutation_id",
+                "approve"
+              ],
+              "variable": [
+                {
+                  "key": "mutation_id",
+                  "value": "d1b2c3d4-0004-4000-8000-000000000001",
+                  "description": "UUID of the mutation to approve"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"officer_id\": \"OFF-TN-TVL-042\", \"notes\": \"Verified original sale deed and Aadhaar-linked party identity. Approved after field inspection.\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reject Mutation",
+          "request": {
+            "method": "PUT",
+            "description": "Rejects a PENDING mutation, setting its status to REJECTED and recording the officer ID, rejection reason, and decision timestamp. Returns 422 if the mutation is not in PENDING state. Emits a REJECT_MUTATION audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/mutations/:mutation_id/reject",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "mutations",
+                ":mutation_id",
+                "reject"
+              ],
+              "variable": [
+                {
+                  "key": "mutation_id",
+                  "value": "d1b2c3d4-0004-4000-8000-000000000001",
+                  "description": "UUID of the mutation to reject"
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"officer_id\": \"OFF-TN-TVL-042\", \"rejection_reason\": \"Sale deed TN-2024-TVL-45678 could not be verified — stamp duty underpaid. Party must re-register.\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Parties",
+          "request": {
+            "method": "GET",
+            "description": "Searches parties by name using case-insensitive ILIKE on name_en and name_local columns, and also by phonetic key (name_phonetic_key). Results from both strategies are deduplicated by UUID. Returns up to 50 results. Emits a SEARCH_PARTIES audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/parties/search",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "parties",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "Murugan",
+                  "description": "Search string matched against name_en, name_local, and name_phonetic_key using ILIKE",
+                  "disabled": false
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Party",
+          "request": {
+            "method": "GET",
+            "description": "Retrieves a single party (landholder, tenant, or institution) by UUID. Returns 404 if the party does not exist. Emits a READ_PARTY audit event.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/revenue/parties/:party_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "revenue",
+                "parties",
+                ":party_id"
+              ],
+              "variable": [
+                {
+                  "key": "party_id",
+                  "value": "c1b2c3d4-0003-4000-8000-000000000001",
+                  "description": "UUID of the party (landholder, tenant, or institution)"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Planning & Zoning",
+      "description": "Manages master plan zoning regulations, building permissions, and court dispute linkages for parcels. Schemas for ZoneResponse, BuildingPermissionResponse, and DisputeResponse are defined in schemas/planning.py but no domain routers are wired into main.py yet — only the health/readiness probes are active.",
+      "item": [
+        {
+          "name": "Liveness Probe",
+          "request": {
+            "method": "GET",
+            "description": "Kubernetes liveness probe. Returns service name and current UTC timestamp to confirm the process is alive.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Readiness Probe",
+          "request": {
+            "method": "GET",
+            "description": "Kubernetes readiness probe. Checks database connectivity via check_db_health() and reports uptime. Returns HTTP 200 when ready, HTTP 503 when the database is unhealthy.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ready",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ready"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Trust Engine",
+      "description": "Cross-registry conflict detection, ML-based anomaly scoring (Isolation Forest), and transaction network graph analysis for land parcels. Surfaces suspicious patterns such as area/ownership inconsistencies, circular trading chains, and rapid parcel flipping for officer review.",
+      "item": [
+        {
+          "name": "Health Liveness Probe",
+          "request": {
+            "method": "GET",
+            "description": "Returns service liveness status and current UTC timestamp. Used by Kubernetes liveness probe.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Readiness Probe",
+          "request": {
+            "method": "GET",
+            "description": "Checks database connectivity and returns readiness status. Returns 503 if the database is unhealthy. Used by Kubernetes readiness probe.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ready",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ready"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Anomalies",
+          "request": {
+            "method": "GET",
+            "description": "Returns a ranked list of parcels with ML anomaly scores above the given threshold, ordered by score descending. Revenue officers are automatically scoped to their assigned district. Uses Isolation Forest model results stored in ml.conflict_scores.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/anomalies",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "anomalies"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter results to a specific state LGD code",
+                  "disabled": true
+                },
+                {
+                  "key": "district_code",
+                  "value": "TVL",
+                  "description": "Filter results to a specific district LGD code; overridden by actor's district if role is revenue_officer",
+                  "disabled": true
+                },
+                {
+                  "key": "min_score",
+                  "value": "0.5",
+                  "description": "Minimum anomaly score threshold (0.0–1.0, default 0.5)",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "100",
+                  "description": "Maximum number of results to return (1–1000, default 100)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Anomaly Score by Parcel",
+          "request": {
+            "method": "GET",
+            "description": "Returns the latest Isolation Forest anomaly score for a specific parcel. Returns 404 if no anomaly score has been computed for the parcel.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/anomalies/:parcel_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "anomalies",
+                ":parcel_id"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "550e8400-e29b-41d4-a716-446655440000",
+                  "description": "UUID of the parcel in the identity.parcels table"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rescore Anomalies",
+          "request": {
+            "method": "POST",
+            "description": "Triggers a full re-run of the Isolation Forest anomaly detection model for the specified state/district scope, persisting results to ml.conflict_scores. Officers are restricted to rescoring their own district. Returns 202 Accepted on success.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/anomalies/rescore",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "anomalies",
+                "rescore"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"state_code\": \"TN\", \"district_code\": \"TVL\", \"contamination\": 0.1}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Anomaly Summary",
+          "request": {
+            "method": "GET",
+            "description": "Returns aggregate counts and score statistics for anomalies broken down by risk band (HIGH/MEDIUM/LOW). Revenue officers are automatically scoped to their district.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/anomalies/summary",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "anomalies",
+                "summary"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter aggregation to a specific state",
+                  "disabled": true
+                },
+                {
+                  "key": "district_code",
+                  "value": "TVL",
+                  "description": "Filter aggregation to a specific district",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Circular Transaction Chains",
+          "request": {
+            "method": "GET",
+            "description": "Detects circular trading patterns in the land transaction graph (e.g. Party A → B → C → A). Returns chains with party/parcel involvement, time window, and confidence score. Indicates potential shell company networks or circular trading.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/graph/circular-chains",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "graph",
+                "circular-chains"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter transaction graph to a specific state",
+                  "disabled": true
+                },
+                {
+                  "key": "min_length",
+                  "value": "3",
+                  "description": "Minimum number of parties in the chain (3–10, default 3)",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "50",
+                  "description": "Maximum number of chains to return (1–200, default 50)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Rapid Flips",
+          "request": {
+            "method": "GET",
+            "description": "Identifies parcels that have been transferred multiple times within a short window. May indicate speculative trading or value manipulation. Uses a sliding window query over revenue.mutations.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/graph/rapid-flips",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "graph",
+                "rapid-flips"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter to a specific state; revenue_officer role overrides to actor's state",
+                  "disabled": true
+                },
+                {
+                  "key": "days_threshold",
+                  "value": "30",
+                  "description": "Maximum days between consecutive transactions to flag as rapid (7–365, default 30)",
+                  "disabled": true
+                },
+                {
+                  "key": "limit",
+                  "value": "50",
+                  "description": "Maximum number of results to return (1–200, default 50)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Party Risk Score",
+          "request": {
+            "method": "GET",
+            "description": "Computes a network-topology-based risk score for a specific party using degree centrality, betweenness centrality, involvement in circular chains, and rapid flip count. Returns 404 if the party has no transactions in the graph.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/graph/party/:party_id/risk",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "graph",
+                "party",
+                ":party_id",
+                "risk"
+              ],
+              "variable": [
+                {
+                  "key": "party_id",
+                  "value": "550e8400-e29b-41d4-a716-446655440001",
+                  "description": "UUID of the party in revenue.parties"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Transaction Network Graph",
+          "request": {
+            "method": "GET",
+            "description": "Returns an N-hop ego network centered on a parcel or party, formatted as nodes and edges for D3 visualization. Either parcel_id or party_id must be provided. For a parcel, all parties involved in its mutations form the center.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/graph/network",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "graph",
+                "network"
+              ],
+              "query": [
+                {
+                  "key": "parcel_id",
+                  "value": "550e8400-e29b-41d4-a716-446655440010",
+                  "description": "UUID of the parcel to center the network on; expands to all parties in its mutations",
+                  "disabled": true
+                },
+                {
+                  "key": "party_id",
+                  "value": "550e8400-e29b-41d4-a716-446655440001",
+                  "description": "UUID of the party to center the ego network on",
+                  "disabled": true
+                },
+                {
+                  "key": "hops",
+                  "value": "2",
+                  "description": "Number of hops from the center node to include (1–3, default 2)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Full Graph Analysis Report",
+          "request": {
+            "method": "GET",
+            "description": "Runs a complete graph analysis including circular chain detection, rapid flip detection, and top-20 high-risk party scoring. A heavy operation that builds the full transaction graph. Restricted to non-citizen roles only.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/trust/graph/analysis/full",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trust",
+                "graph",
+                "analysis",
+                "full"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Scope the analysis to a specific state",
+                  "disabled": true
+                },
+                {
+                  "key": "district_code",
+                  "value": "TVL",
+                  "description": "Scope the analysis to a specific district; overridden by actor's district for revenue_officer role",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Citizen Services",
+      "description": "Tiered parcel profiles with disclosure controls, citizen service applications (mutation, encumbrance certificate, building permit, dispute filing, land use change, boundary correction), and application tracking for the Bhoomi Dhrishti land governance platform.",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "description": "Returns service liveness status. No database call — used by load balancers and container orchestration probes.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Readiness Check",
+          "request": {
+            "method": "GET",
+            "description": "Verifies the service can reach its PostgreSQL database by executing a lightweight SELECT 1 probe. Returns 503 if the database is unavailable.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ready",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ready"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Parcel Profile (Tiered Disclosure)",
+          "request": {
+            "method": "GET",
+            "description": "Returns a parcel profile whose depth is governed by the caller's role encoded in the Authorization header. PUBLIC (no auth): geometry, ULPIN, encumbered/dispute booleans only. CITIZEN (own parcel or CONSENT_GATED): adds rights, encumbrances, disputes, and own deeds. OFFICER/ADMIN roles: full detail including all parties unmasked, conflict scores, deed history, and pending mutation count. Fires a fire-and-forget audit event to the audit service on every call.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/parcels/:parcel_id/profile",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "parcels",
+                ":parcel_id",
+                "profile"
+              ],
+              "variable": [
+                {
+                  "key": "parcel_id",
+                  "value": "550e8400-e29b-41d4-a716-446655440001",
+                  "description": "Internal UUID of the parcel (identity.parcels.id)"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List My Parcels",
+          "request": {
+            "method": "GET",
+            "description": "Returns all active parcels for which the authenticated citizen holds a right (ownership, co-ownership, etc.). The citizen is identified by the subject embedded in the Authorization header (matched against aadhaar_hash, mobile_hash, or voter_id_hash). Returns 401 if no valid subject is present.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/parcels/my",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "parcels",
+                "my"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Service Application",
+          "request": {
+            "method": "POST",
+            "description": "Creates a new citizen service application for a specified parcel. Supported types: MUTATION_REQUEST, ENCUMBRANCE_CERTIFICATE, LAND_USE_CHANGE_PERMISSION, BUILDING_PERMIT, PARCEL_BOUNDARY_CORRECTION, DISPUTE_FILING. Validates parcel existence, assigns a human-readable reference number (e.g. MUT-2026-A3F0B1), and persists to citizen.applications. Returns the created application with SUBMITTED status.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/applications",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "applications"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"application_type\": \"MUTATION_REQUEST\", \"parcel_id\": \"550e8400-e29b-41d4-a716-446655440001\", \"applicant_id\": \"citizen_keycloak_sub_xyz789\", \"details\": {\"transfer_reason\": \"SALE\", \"buyer_name\": \"Priya Sundaram\", \"sale_deed_number\": \"DEED-2026-4521\", \"consideration_amount\": 1500000}, \"contact_mobile\": \"9876543210\", \"contact_email\": \"priya.sundaram@example.com\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Application by ID",
+          "request": {
+            "method": "GET",
+            "description": "Retrieves a single service application record by its UUID, including current status, reference number, submitted details, and any officer remarks. Returns 404 if the application does not exist.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/applications/:app_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "applications",
+                ":app_id"
+              ],
+              "variable": [
+                {
+                  "key": "app_id",
+                  "value": "7f3e4b2a-1c9d-4e8f-b0a1-2d3c4e5f6789",
+                  "description": "UUID primary key of the application in citizen.applications"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List My Applications",
+          "request": {
+            "method": "GET",
+            "description": "Returns a paginated list of all service applications submitted by a given citizen, ordered by submission date descending. The citizen is identified by the required applicant_id query parameter. Supports pagination via page and page_size.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/applications/my",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "applications",
+                "my"
+              ],
+              "query": [
+                {
+                  "key": "applicant_id",
+                  "value": "citizen_keycloak_sub_xyz789",
+                  "description": "Keycloak subject or citizen ID used when the application was submitted",
+                  "disabled": false
+                },
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number, 1-indexed. Defaults to 1.",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "20",
+                  "description": "Number of applications per page. Min 1, max 100. Defaults to 20.",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Service Catalog",
+          "request": {
+            "method": "GET",
+            "description": "Returns the full list of available citizen services with metadata: type code, human-readable name, description, required documents list, SLA in days, and fee in INR. Used by the citizen portal to display the services menu.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/services/catalog",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "services",
+                "catalog"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "📦 Analytics & NL Query",
+      "description": "Dashboard aggregations, KPIs, conflict taxonomy, resolution metrics, onboarding tiers, land-use trends, service delivery metrics, and natural language SQL query interface for the Bhoomi Dhrishti land governance platform.",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "description": "Returns service liveness status. No database call.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Readiness Check",
+          "request": {
+            "method": "GET",
+            "description": "Returns service readiness by executing a test query against the database. Returns 503 if the database is unavailable.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/ready",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "ready"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "District Dashboard",
+          "request": {
+            "method": "GET",
+            "description": "Returns a comprehensive dashboard for a district: total and ULPIN-covered parcels, conflict counts by risk band, pending mutations, average mutation processing time, data completeness percentage, last revenue and registration sync timestamps, top conflict types, and recent land-use change count (last 90 days).",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/dashboard/district/:lgd_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "dashboard",
+                "district",
+                ":lgd_code"
+              ],
+              "variable": [
+                {
+                  "key": "lgd_code",
+                  "value": "TN-01",
+                  "description": "LGD (Local Government Directory) code for the district"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "State Dashboard",
+          "request": {
+            "method": "GET",
+            "description": "Returns an aggregated state-level dashboard: total parcels, ULPIN coverage, number of districts with data, high-risk parcel count, onboarding tier (BRONZE/SILVER/GOLD based on ULPIN coverage), data completeness, and top conflict types across all districts in the state.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/dashboard/state/:state_code",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "dashboard",
+                "state",
+                ":state_code"
+              ],
+              "variable": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Two-letter state code (e.g. TN for Tamil Nadu)"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Conflict Summary",
+          "request": {
+            "method": "GET",
+            "description": "Returns aggregated conflict scores grouped by score type and risk band, with count and average score value. Optionally filtered to a specific state.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/conflicts/summary",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "conflicts",
+                "summary"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter conflict summary to a specific state code",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Resolution Metrics",
+          "request": {
+            "method": "GET",
+            "description": "Returns entity-resolution (ER) precision, recall, and F1 scores computed from parcel match candidate outcomes (CONFIRMED, FALSE_POSITIVE, FALSE_NEGATIVE). Also returns raw counts and the timestamp of the computation.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/resolution/metrics",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "resolution",
+                "metrics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Onboarding States",
+          "request": {
+            "method": "GET",
+            "description": "Returns the onboarding tier status (BRONZE/SILVER/GOLD) for every state that has parcel data, along with ULPIN coverage percentage, last sync timestamp, and lists of met and missing onboarding requirements.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/onboarding/states",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "onboarding",
+                "states"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Land Use Trends",
+          "request": {
+            "method": "GET",
+            "description": "Returns monthly land-use change trends grouped by change type, with count and average confidence score per month. Supports rolling window of 1–36 months and optional state filter.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/land-use/trends",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "land-use",
+                "trends"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter trends to a specific state code",
+                  "disabled": true
+                },
+                {
+                  "key": "months",
+                  "value": "12",
+                  "description": "Number of past months to include (1–36, default 12)",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Service Delivery Time Metrics",
+          "request": {
+            "method": "GET",
+            "description": "Returns per-application-type service delivery statistics: total applications, completed count, average processing days, 90th-percentile days, and SLA-met percentage. SLA thresholds are defined per application type (e.g. mutation 30 days, EC 3 days). Optionally filtered to a state.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/service-delivery/time",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "service-delivery",
+                "time"
+              ],
+              "query": [
+                {
+                  "key": "state_code",
+                  "value": "TN",
+                  "description": "Filter service delivery metrics to a specific state",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Execute Natural Language Query",
+          "request": {
+            "method": "POST",
+            "description": "Converts a plain-English question about parcels, owners, or land records into SQL via template/regex matching (no LLM API required) and executes it. Results are automatically filtered by the authenticated actor's role and jurisdiction (state/district). Requires authentication; access is tiered by role.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/query/natural-language",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "query",
+                "natural-language"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"text\": \"Find parcels with area mismatch greater than 20%\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Query Examples",
+          "request": {
+            "method": "GET",
+            "description": "Returns a list of pre-defined example natural language queries that the template engine recognises. Use these as templates to construct supported queries.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/query/examples",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "query",
+                "examples"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Query Capabilities",
+          "request": {
+            "method": "GET",
+            "description": "Returns metadata about the natural language query engine: approach (template-based, no LLM), supported pattern categories, role-based tiered access rules, known limitations, and performance characteristics.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/query/capabilities",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "query",
+                "capabilities"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Query Help",
+          "request": {
+            "method": "GET",
+            "description": "Returns user-facing help text with tips for writing effective natural language queries, common keywords by category (spatial, administrative, ownership, intelligence), and role-specific example queries.",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/v1/analytics/query/help",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "analytics",
+                "query",
+                "help"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

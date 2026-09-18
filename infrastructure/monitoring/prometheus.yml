@@ -1,0 +1,108 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+  external_labels:
+    project: 'bhoomi-dhrishti'
+    env:     'development'
+
+rule_files:
+  - "alerts/*.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'parcel-identity'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['parcel-identity:8000']
+    scrape_interval: 15s
+
+  - job_name: 'geospatial'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['geospatial:8000']
+
+  - job_name: 'revenue-records'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['revenue-records:8000']
+
+  - job_name: 'registration'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['registration:8000']
+
+  - job_name: 'planning-zoning'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['planning-zoning:8000']
+
+  - job_name: 'fiscal'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['fiscal:8000']
+
+  - job_name: 'utilities'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['utilities:8000']
+
+  - job_name: 'trust-engine'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['trust-engine:8000']
+
+  - job_name: 'ml-inference'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['ml-inference:8000']
+
+  - job_name: 'citizen-services'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['citizen-services:8000']
+
+  - job_name: 'audit'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['audit:8000']
+
+  - job_name: 'notifications'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['notifications:8000']
+
+  - job_name: 'search'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['search:8000']
+
+  - job_name: 'analytics'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['analytics:8000']
+
+  - job_name: 'interoperability'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['interoperability:8000']
+
+  - job_name: 'satellite'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['satellite:8000']
+
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:5432']
+
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:6379']

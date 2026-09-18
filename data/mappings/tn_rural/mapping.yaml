@@ -1,0 +1,139 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Bhoomi Dhrishti – State Field Mapping
+# State: Tamil Nadu (TN) | Type: Rural Village | Source System: TN Bhoomi
+# ─────────────────────────────────────────────────────────────────────────────
+# This file teaches the interoperability service how to translate TN Bhoomi
+# source fields to Bhoomi Dhrishti canonical fields.
+#
+# Tested against: Tirunelveli district Pahani extract (2024 format)
+# ─────────────────────────────────────────────────────────────────────────────
+
+meta:
+  state_lgd_code: "33"
+  state_name_en: "Tamil Nadu"
+  state_name_local: "தமிழ் நாடு"
+  source_system: "TN_BHOOMI"
+  source_department: "Tamil Nadu Revenue Department"
+  hierarchy_type: REVENUE
+  default_freshness: CACHED
+  contact_api: "https://eservices.tn.gov.in/eservicesnew/land/viewTahsillandrecords.html"
+  sync_frequency_hours: 24
+  encoding: UTF-8
+  date_format: "DD/MM/YYYY"
+
+# ── Identity mapping ──────────────────────────────────────────────────────────
+parcel_identity:
+  source_unique_id_field: "SURVEY_NO"           # TN primary key in Pahani
+  bdpr_prefix: "BD-TN"
+  ulpin_available: false                        # TN not yet in DILRMP pilot
+  ulpin_field: null
+
+  field_map:
+    state_code:        { source: "STATE_CODE",     transform: "lgd_lookup" }
+    district_code:     { source: "DIST_CODE",      transform: "lgd_lookup" }
+    subdistrict_code:  { source: "TALUK_CODE",     transform: "lgd_lookup" }
+    village_code:      { source: "VILLAGE_CODE",   transform: "lgd_lookup" }
+    is_urban:          { source: null,             constant: false }
+
+  aliases:
+    - alias_type: SURVEY_NUMBER
+      source_field: "SURVEY_NO"
+    - alias_type: RS_SURVEY
+      source_field: "RS_SURVEY_NO"
+    - alias_type: FMB_NUMBER
+      source_field: "FMB_NO"
+      optional: true
+
+# ── Land record (RoR) mapping ─────────────────────────────────────────────────
+revenue_ror:
+  source_record_id_field: "PATTA_NO"
+
+  field_map:
+    ror_id:                { source: "PATTA_NO" }
+    record_date:           { source: "PAHANI_DATE",   transform: "parse_date" }
+    survey_number:         { source: "SURVEY_NO" }
+    sub_survey_number:     { source: "SUB_DIVISION",  optional: true }
+    hissa_number:          { source: "HISSA_NO",      optional: true }
+    land_classification:
+      source: "PORAMBOKE_TYPE"
+      transform: "code_list_lookup"
+      list_name: "LAND_CLASSIFICATION"
+      default_canonical: "AGRICULTURAL"
+    land_use:              { source: "LAND_USE_TYPE", optional: true }
+    irrigated:
+      source: "LAND_TYPE"
+      transform: "boolean_map"
+      true_values: ["WET", "NANJAI", "நஞ்சை"]
+      false_values: ["DRY", "PUNJAI", "புஞ்சை", "GARDEN", "தோட்டம்"]
+    water_source:          { source: "WATER_SOURCE",  optional: true }
+    area_native:           { source: "AREA_HECTARES",  transform: "decimal" }
+    area_unit_native:      { source: null,             constant: "hectare" }
+
+  # TN uses hectares as official unit since metric conversion in 1970s
+  area_conversion:
+    primary_unit: "hectare"
+    fallback_unit: "cent"            # Older Pahani records may be in cents
+    fallback_detect: "AREA_CENTS"    # If this column present, use cents
+
+# ── Rights / Pattadhar mapping ────────────────────────────────────────────────
+revenue_rights:
+  source_record_id_field: "PATTA_NO"
+
+  field_map:
+    right_type:
+      source: "RYOTWARI_TYPE"
+      transform: "code_list_lookup"
+      list_name: "LAND_CLASSIFICATION"
+      mapping:
+        "RYOTWARI":    "OWNERSHIP"
+        "INAM":        "INAM"
+        "GOVT":        "GOVERNMENT"
+        "PORAMBOKE":   "PORAMBOKE"
+    share_numerator:   { source: "SHARE_NUM",   default: 1 }
+    share_denominator: { source: "SHARE_DEN",   default: 1 }
+    valid_from:        { source: "EFFECTIVE_DATE", transform: "parse_date", optional: true }
+
+  provenance:
+    source_department: "Tamil Nadu Revenue Department"
+    source_system: "TN_BHOOMI"
+    source_as_of_date_field: "PAHANI_DATE"
+
+# ── Party (Pattadhar) mapping ─────────────────────────────────────────────────
+parties:
+  field_map:
+    name_en:
+      source: "OWNER_NAME"
+      transform: "transliterate_ta_to_en"
+    name_local:        { source: "OWNER_NAME_TAM",  script: "TAMIL" }
+    guardian_name_en:
+      source: "FATHER_HUSBAND_NAME"
+      transform: "transliterate_ta_to_en"
+      optional: true
+    guardian_type:
+      source: "RELATION"
+      transform: "value_map"
+      mapping:
+        "S/O": "FATHER"
+        "D/O": "FATHER"
+        "W/O": "HUSBAND"
+        "C/O": "GUARDIAN"
+
+  # TN Bhoomi does NOT include Aadhaar; party matching is phonetic + address
+  id_available: false
+  matching_strategy: PHONETIC_PLUS_ADDRESS
+
+# ── Geometry notes ────────────────────────────────────────────────────────────
+geometry:
+  available: false           # TN Bhoomi API doesn't expose geometry
+  fmb_sketch_available: true # FMB sketches exist as scanned images; not vector
+  accuracy_class: D          # Digitisation from FMB sketches is > 20m accuracy
+  geometry_source: MANUAL_DIGITISE_FROM_FMB
+  crs: "EPSG:32644"          # UTM Zone 44N for Tirunelveli district
+
+# ── Language / script ─────────────────────────────────────────────────────────
+language:
+  primary_script: TAMIL
+  encoding: UTF-8
+  transliteration_library: "indic_transliteration"
+  transliteration_scheme: "IAST"
+  phonetic_algorithm: "HINDI_SOUNDEX"  # Used for cross-language party matching

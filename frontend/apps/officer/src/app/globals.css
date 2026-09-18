@@ -1,0 +1,90 @@
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 212 35% 13%;
+
+    --primary: 208 75% 31%;
+    --primary-hover: 208 73% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 208 57% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 97%;
+    --muted-foreground: 212 20% 36%;
+
+    --accent: 208 49% 92%;
+    --accent-foreground: 209 75% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 212 35% 13%;
+
+    --border: 210 25% 89%;
+    --input: 210 21% 77%;
+    --ring: 208 75% 31%;
+
+    --success: 150 61% 30%;
+    --warning: 36 89% 38%;
+    --destructive: 0 56% 41%;
+    --info: 217 11% 40%;
+
+    --radius: 0.5rem;
+
+  --bd-blue-900: #0b2447;
+  --bd-blue-800: #12315e;
+  --bd-blue-700: #1b4079;
+  --bd-blue-600: #2456a6;
+  --bd-blue-500: #3b6fbf;
+  --bd-blue-050: #eef3fb;
+  --bd-teal-700: #0f766e;
+  --bd-teal-600: #118a80;
+  --bd-teal-500: #14a89a;
+  --bd-teal-050: #e6f6f4;
+  --bd-green: #16a34a;
+  --bd-green-bg: #e7f6ec;
+  --bd-amber: #d97706;
+  --bd-amber-bg: #fdf1e0;
+  --bd-red: #dc2626;
+  --bd-red-bg: #fdeaea;
+  --bd-grey-900: #1f2733;
+  --bd-grey-700: #425066;
+  --bd-grey-500: #6b7688;
+  --bd-grey-400: #9aa4b3;
+  --bd-grey-300: #cbd3de;
+  --bd-grey-200: #e3e8ef;
+  --bd-grey-100: #f1f4f8;
+  --bd-grey-050: #f7f9fc;
+  }
+
+  * {
+    border-color: #DCE3EA;
+  }
+
+  body {
+    background-color: #F6F7F9;
+    color: #16212E;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  @keyframes bd-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(186,255,239,.7); }
+    70% { box-shadow: 0 0 0 7px rgba(186,255,239,0); }
+    100% { box-shadow: 0 0 0 0 rgba(186,255,239,0); }
+  }
+  .bd-pulse { animation: bd-pulse 2s infinite; }
+  .bd-mono { font-family: "SFMono-Regular", ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; }
+}
+

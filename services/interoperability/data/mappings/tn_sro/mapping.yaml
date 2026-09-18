@@ -1,0 +1,157 @@
+# Tamil Nadu Sub-Registrar Office (SRO) Sale Deed Mapping Configuration
+# Source: Tamil Nadu Registration Department - TNREGINET
+# Target: Bhoomi Dhrishti canonical registration schema
+# Version: 1.0
+# Last Updated: 2026-09-15
+
+source_type: sro_registration
+source_system: TNREGINET
+source_department: TN Registration Department
+
+metadata:
+  state_code: "33"
+  state_name: "Tamil Nadu"
+  lgd_state_code: "33"
+  department: "registration"
+  contact_email: "tnreginet@tn.gov.in"
+  encoding: "utf-8"
+  delimiter: ","
+  header_row: 1
+
+# Field mapping from source to canonical schema
+field_mapping:
+  # Registration identification
+  registration_number:
+    source_field: "Document_No"
+    type: str
+    description: "Unique registration/document number"
+
+  registration_date:
+    source_field: "Registration_Date"
+    transform: normalize_date
+    description: "Date of deed registration"
+
+  document_type:
+    source_field: "Document_Type"
+    type: str
+    description: "Type of document (Sale Deed, Gift Deed, etc.)"
+
+  # Location and office
+  district_code:
+    source_field: "District_Code"
+    type: str
+    description: "District LGD code"
+
+  village_code:
+    source_field: "Village_Code"
+    type: str
+    description: "Village LGD code"
+
+  sro_code:
+    source_field: "SRO_Code"
+    type: str
+    description: "Sub-Registrar Office code"
+
+  # Property details
+  survey_number:
+    source_field: "Survey_No"
+    transform: normalize_survey_number
+    type: str
+    description: "Survey number of property"
+
+  area_sq_m:
+    source_field: "Extent_Sq_M"
+    type: float
+    description: "Transaction area in square meters"
+
+  # Financial details
+  consideration_amount:
+    source_field: "Consideration_Amount"
+    type: float
+    description: "Sale consideration in INR"
+
+  stamp_duty:
+    source_field: "Stamp_Duty"
+    type: float
+    description: "Stamp duty paid"
+
+  registration_fee:
+    source_field: "Registration_Fee"
+    type: float
+    description: "Registration fee paid"
+
+  # Party details
+  seller_name:
+    source_field: "Seller_Name"
+    type: str
+    description: "Seller/Vendor name"
+
+  buyer_name:
+    source_field: "Buyer_Name"
+    type: str
+    description: "Buyer/Purchaser name"
+
+  seller_count:
+    source_field: "No_of_Sellers"
+    type: int
+    description: "Number of sellers in transaction"
+
+  buyer_count:
+    source_field: "No_of_Buyers"
+    type: int
+    description: "Number of buyers in transaction"
+
+# Data quality rules
+data_quality:
+  required_fields:
+    - registration_number
+    - registration_date
+    - district_code
+
+  unique_fields:
+    - registration_number  # Within district
+
+  validation_rules:
+    consideration_amount:
+      min: 1
+      max: 10000000000  # 1000 crore max
+    registration_date:
+      min_year: 1950
+      max_year: 2030
+    area_sq_m:
+      min: 0.1
+      max: 100000000  # 10,000 hectares max
+
+  outlier_detection:
+    enabled: true
+    z_score_threshold: 3.5
+    fields:
+      - consideration_amount
+      - area_sq_m
+
+# Cross-source matching with RoR
+matching:
+  enabled: true
+  match_to_ror:
+    match_fields:
+      primary:
+        - survey_number
+        - district_code
+        - village_code
+  confidence_threshold: 0.85
+
+# Audit and lineage
+audit:
+  track_source_file: true
+  track_import_timestamp: true
+  track_data_quality_score: true
+  retain_raw_values: false
+
+# Notes for data stewards
+notes: |
+  - Registration numbers follow format: DISTRICT_CODE/SRO_CODE/YEAR/SERIAL
+  - Consideration amount is the declared transaction value
+  - Multiple sellers/buyers are common (joint ownership, family transactions)
+  - Survey numbers link to revenue records
+  - Some transactions may not have survey numbers (apartments, flats)
+  - Stamp duty and registration fees are calculated based on consideration

@@ -1,0 +1,11 @@
+Survey_No,Extent,Unit,Pattadar_Name,Pattadar_Name_Tamil,District_Code,Village_Code,Land_Class,Patta_Date,FMB_No,Chitta_No,Geometry_WKT
+0123/4A,5.5,cent,Ramesh Kumar,ரமேஷ் குமார்,33001,3300101,AGRICULTURAL,15/08/2020,FMB-123,CHT-4567,
+234/1,2.3,acre,Lakshmi Devi,லட்சுமி தேவி,33001,3300101,RESIDENTIAL,22/03/2019,FMB-234,CHT-4568,
+345/2B,12.8,veli,Murugan S,முருகன் எஸ்,33001,3300102,AGRICULTURAL,10/11/2021,FMB-345,CHT-4569,
+0456/3,0.75,ground,Kavitha R,கவிதா ஆர்,33001,3300102,RESIDENTIAL,05/06/2022,FMB-456,CHT-4570,
+567/4C,3.2,cent,Subramanian Iyer,சுப்ரமணியன் ஐயர்,33001,3300103,COMMERCIAL,18/01/2018,FMB-567,CHT-4571,
+678/5,8.9,acre,Priya Shankar,பிரியா சங்கர்,33001,3300103,AGRICULTURAL,30/09/2020,FMB-678,CHT-4572,
+0789/6A,1.5,kuli,Anand Raj,ஆனந்த் ராஜ்,33001,3300104,RESIDENTIAL,12/12/2021,FMB-789,CHT-4573,
+890/7,25.4,cent,Meena Kumari,மீனா குமாரி,33001,3300104,AGRICULTURAL,07/04/2019,FMB-890,CHT-4574,
+901/8B,4.6,acre,Vijay Kumar,விஜய் குமார்,33001,3300105,INDUSTRIAL,22/07/2022,FMB-901,CHT-4575,
+012/9,6.8,veli,Radha Krishna,ராதா கிருஷ்ணா,33001,3300105,AGRICULTURAL,14/02/2020,FMB-012,CHT-4576,

@@ -1,0 +1,104 @@
+version: "3.9"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Bhoomi Dhrishti – Development Overrides
+# Applied automatically when running `docker compose up` in development.
+# Mount source code for hot-reload; expose additional debug ports.
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # Hot-reload for all FastAPI services via volume mounts
+  parcel-identity:
+    volumes:
+      - ./services/parcel-identity/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  geospatial:
+    volumes:
+      - ./services/geospatial/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  revenue-records:
+    volumes:
+      - ./services/revenue-records/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  registration:
+    volumes:
+      - ./services/registration/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  planning-zoning:
+    volumes:
+      - ./services/planning-zoning/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  fiscal:
+    volumes:
+      - ./services/fiscal/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  utilities:
+    volumes:
+      - ./services/utilities/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  trust-engine:
+    volumes:
+      - ./services/trust-engine/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  ml-inference:
+    volumes:
+      - ./services/ml-inference/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  citizen-services:
+    volumes:
+      - ./services/citizen-services/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  audit:
+    volumes:
+      - ./services/audit/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  notifications:
+    volumes:
+      - ./services/notifications/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  search:
+    volumes:
+      - ./services/search/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  analytics:
+    volumes:
+      - ./services/analytics/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  interoperability:
+    volumes:
+      - ./services/interoperability/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  satellite:
+    volumes:
+      - ./services/satellite/app:/app/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # Shared library available to all services in dev
+  postgres:
+    ports:
+      - "5432:5432"
+
+  redis:
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    ports:
+      - "5672:5672"
+      - "15672:15672"
