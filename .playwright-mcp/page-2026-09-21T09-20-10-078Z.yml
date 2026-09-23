@@ -1,0 +1,588 @@
+- generic [ref=f6e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f6e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f6e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f6e8]:
+    - search [ref=f6e9]:
+      - generic [ref=f6e11]:
+        - link "Go to Google Home" [ref=f6e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQPHoECAYQBA
+        - generic [ref=f6e21]:
+          - generic [ref=f6e22]:
+            - combobox "Search" [ref=f6e25]: Waqf Board property land records India digitization challenges encroachment Waqf Board property land records India digitization challenges encroachment
+            - generic [ref=f6e26]:
+              - button "Clear" [ref=f6e28] [cursor=pointer]
+              - generic [ref=f6e33]:
+                - button "Search by voice" [ref=f6e34] [cursor=pointer]
+                - button "Search by image" [ref=f6e37] [cursor=pointer]
+          - button "Search" [ref=f6e40] [cursor=pointer]
+    - generic [ref=f6e45]:
+      - button "Settings" [ref=f6e47] [cursor=pointer]
+      - button "Share" [ref=f6e52] [cursor=pointer]
+      - generic [ref=f6e58]:
+        - button "Google apps" [ref=f6e60] [cursor=pointer]
+        - link "Sign in" [ref=f6e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DWaqf%2BBoard%2Bproperty%2Bland%2Brecords%2BIndia%2Bdigitization%2Bchallenges%2Bencroachment&ec=futura_srp_og_si_72236_p
+  - generic [ref=f6e68]:
+    - navigation [ref=f6e74]:
+      - generic [ref=f6e80]:
+        - list [ref=f6e81]:
+          - listitem [ref=f6e82]:
+            - link "AI Mode" [ref=f6e85] [cursor=pointer]:
+              - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ2J8OegQIExAD
+          - listitem [ref=f6e89]:
+            - link "All" [disabled] [ref=f6e90]
+          - listitem [ref=f6e93]:
+            - link "News" [ref=f6e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ0pQJegQIGRAB
+          - listitem [ref=f6e97]:
+            - link "Forums" [ref=f6e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQs6gLegQIGBAB
+          - listitem [ref=f6e101]:
+            - link "Images" [ref=f6e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQtKgLegQIFxAB
+          - listitem [ref=f6e105]:
+            - link "Shopping" [ref=f6e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&ved=1t:220175&ictx=111
+          - listitem [ref=f6e109]:
+            - link "Videos" [ref=f6e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sa=X&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQtKgLegQIFhAB
+          - listitem [ref=f6e113]:
+            - button [ref=f6e114] [cursor=pointer]:
+              - generic "More filters" [ref=f6e115]: More
+        - button "Tools" [ref=f6e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f6e129]
+    - generic [ref=f6e134]:
+      - generic [ref=f6e156]:
+        - generic [ref=f6e158]:
+          - heading "AI Overview" [level=2] [ref=f6e162]
+          - button "Listen" [ref=f6e166]:
+            - generic [ref=f6e170] [cursor=pointer]
+        - generic [ref=f6e176]:
+          - generic [ref=f6e177]:
+            - generic [ref=f6e196]:
+              - generic [ref=f6e199]:
+                - heading "📊 Digitization of Waqf Properties" [level=3] [ref=f6e200]
+                - list [ref=f6e201]:
+                  - listitem [ref=f6e202]:
+                    - generic [ref=f6e203]: Waqf boards control hundreds of thousands of immovable assets across India.
+                    - generic [ref=f6e205]:
+                      - link "Facebook – This is how the Waqf Board kept encroaching on any land it .... Related results" [ref=f6e206] [cursor=pointer]:
+                        - /url: /goto?url=CAESyQEB6zswFQW_C5zgB-hpx2Oxi7cLBucN19iAD297FnI08SaZHIVL7OexY3GJXSFxZrCopfYMp1Klz7rtklB5k50wOoBVyB0y3h6QdauAIAnlDgS_vKtepufGYmkvOCsa1X6B5n7qE2bxuVFv9v5hqURMSMQgnhUp60BtkAUO8E7yR_iDR3ZOAEzjyoesvuYi1HeVoBtA6eTsrc4ETE8549pqxIPvLqfvy94yVKfA7llibB73_0KuPEf7HNXQ6EaZbJBv43lx9AfKOSE
+                      - button "Facebook – This is how the Waqf Board kept encroaching on any land it .... Related results" [ref=f6e207] [cursor=pointer]:
+                        - generic [ref=f6e208]: Facebook
+                  - listitem [ref=f6e216]:
+                    - generic [ref=f6e217]:
+                      - text: The
+                      - link "Waqf Amendment Act" [ref=f6e219] [cursor=pointer]:
+                        - /url: /goto?url=CAEScQHrOzAVxwHCn4GTT9fZ1QdaFb6NWPj3fnOVQ4AQs5lGm3ne_s0051aUjrVZ3nmhuIgt3UQvTFrJLReGhNQSJKZJjkqdgepwK9Kx7Tu9dP0zbKcs-THwqb60fekdX2bOHOilQxac7mGpF3FioSCVvsAI
+                      - text: mandates centralized mapping via the digital portal.
+                    - generic [ref=f6e221]:
+                      - 'link "Facebook (+1) – ThePrint #50WordEdit on digitisation of Waqf properties, US-Iran .... Related results" [ref=f6e222] [cursor=pointer]':
+                        - /url: /goto?url=CAESxwEB6zswFWMBGBsNQ4M93yDdaEij8rkAwX_KvBK71RfAtNEqCoj-Tss307wWzPviMrjOo9ulP0Rq4ojNEJL2MUM7vWEREbIcX4c9OlyQ0sh-4ZrlrRK6jWqkOTGGsA5ziDb-L-HySik9AUUIaHPNOZ_eImPZK8fJz45-M5KQ3r3KJvXCXYqS_ArUhuJb7wJVOm7lQPmJRaletlxJi2FST7-eAh1YlapR4Mjl24XMrkcwmzHd33-NH1l3zFuVoSzsQc1V4sypJDKx
+                      - 'button "Facebook (+1) – ThePrint #50WordEdit on digitisation of Waqf properties, US-Iran .... Related results" [ref=f6e223] [cursor=pointer]':
+                        - generic [ref=f6e225]:
+                          - generic [ref=f6e226]: Facebook
+                          - generic [ref=f6e227]: ·ThePrint
+                          - generic [ref=f6e228]: "+1"
+                  - listitem [ref=f6e234]:
+                    - generic [ref=f6e235]: Portal onboarding faces technical glitches, server crashes, and slow verification.
+                    - generic [ref=f6e237]:
+                      - link "Facebook (+1) – The nationwide digitisation of Waqf properties has hit a major .... Related results" [ref=f6e238] [cursor=pointer]:
+                        - /url: /goto?url=CAESyQEB6zswFThWNTZv4dRE8u1jO7nG2oKMLOc_S4qXxQBgyQdKgmEEQt2fWLTn36H-BSexMXVxq3GjXdgoaBge26sBWO7ZYGr1W0pRWbzsmvSRMJoFzNJQUoUKMKbtWqe1QFtSkAPmy5ZgOp3B6dHYyXVr2W8aJPQU6EQD1AUII6PzppF652McrLw9th19IQwGuREaVJG0Ms4JALMeeycBiTU3GFY2HpYz21ijDLQEsKINIqwF3U2ZSuuLnbtG8L4bIyVXSqnZJsW-_3Q
+                      - button "Facebook (+1) – The nationwide digitisation of Waqf properties has hit a major .... Related results" [ref=f6e239] [cursor=pointer]:
+                        - generic [ref=f6e241]:
+                          - generic [ref=f6e242]: Facebook
+                          - generic [ref=f6e243]: ·The Jamia Times
+                          - generic [ref=f6e244]: "+1"
+                  - listitem [ref=f6e250]:
+                    - generic [ref=f6e251]: Legal battles in the Supreme Court challenge mandatory digital registration rules.
+                    - generic [ref=f6e253]:
+                      - 'link "YouTube – Waqf Property Row: Digital Records, Legal Deadline .... Related results" [ref=f6e254] [cursor=pointer]':
+                        - /url: /goto?url=CAESYwHrOzAV05awtcBublCQ1XF_6Qlykt4OjL8Wl8jL9Wbm0L2D5RtYZQof917aCQBoUJTHvvBxRO_5FcFztQPl3fVhsRRliFHdT8pKRHliGa3SK3Z0BM_GDF8Ce0WDirMBRO6kPA
+                      - 'button "YouTube – Waqf Property Row: Digital Records, Legal Deadline .... Related results" [ref=f6e255] [cursor=pointer]':
+                        - generic [ref=f6e257]:
+                          - generic [ref=f6e258]: YouTube
+                          - generic [ref=f6e259]: ·CAPITAL TV
+                - heading "⚠️ Major Encroachment Challenges" [level=3] [ref=f6e265]
+                - list [ref=f6e266]:
+                  - listitem [ref=f6e268]:
+                    - generic [ref=f6e269]: Encroachment affects a massive share of recorded Waqf land historically.
+                    - generic [ref=f6e271]:
+                      - link "The Hindu – Akbaruddin Owaisi calls for action on waqf land encroachment .... Related results" [ref=f6e272] [cursor=pointer]:
+                        - /url: /goto?url=CAESwQEB6zswFR7Ox6245fs8JNXlbYC8CtiCd99rXgM84lB7N5gVCeErAg87XrjJlJUPEMQtiby6jBeGDk-XNts3L6TdiODDlGzzIr7L3SVH7Ni_Kr1UwIH2Ih4WoCLvHAvuzaSpsjYdIcnLnA2lWUbCfKVPfHta_zV_Gt3DsIDeGt2WUJRtSNO0KvJ9L8LaDlMXbMhnVpl8IQRBqE3FxdeJZMmCjZUyCplDVeY2Uwl4kKIkbu4Oy_UVu8u-ROk_MRGAQRL1
+                      - button "The Hindu – Akbaruddin Owaisi calls for action on waqf land encroachment .... Related results" [ref=f6e273] [cursor=pointer]:
+                        - generic [ref=f6e274]: The Hindu
+                  - listitem [ref=f6e282]:
+                    - generic [ref=f6e283]: Unauthorized occupation involves private parties, businesses, and government departments.
+                    - generic [ref=f6e285]:
+                      - 'link "INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS (+1) – CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, .... Related results" [ref=f6e286] [cursor=pointer]':
+                        - /url: /goto?url=CAES-QEB6zswFUGcEYtIJ3hWN5uGlA88-4lfvzpwXuYcAZvHzEw5X5ANAFfJi8hHUxiaNBzslh3odnMei8Cis7y88MsJ00w68TV12Rtpcc2A__EndSylpwA2u3uiN-TTAekdObT_sDprW9wH8Aq-KpMTQCJDxxUCvfHC9fwmISqIdGeVcrdDiTy8fMuH0sJ1SVwM8vLoUZA5qz2udLKBZhVWms3hcBRMTxmMgLGojpDzFIJ1T7YRnEC3niTas8Wgg5Cx_JyaG_ZvAr3-5Tzt0Q8MCudMPgBpj3EzkGVCx1k_BTOxTkqREO7s2NIoodwpuKEY1kjbS0YQuvJCDuI
+                      - 'button "INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS (+1) – CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, .... Related results" [ref=f6e287] [cursor=pointer]':
+                        - generic [ref=f6e289]:
+                          - generic [ref=f6e290]: INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS
+                          - generic [ref=f6e291]: "+1"
+                  - listitem [ref=f6e297]:
+                    - generic [ref=f6e298]: Collusion with local authorities enables illegal property sales and transfers.
+                    - generic [ref=f6e300]:
+                      - 'link "INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS – CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, .... Related results" [ref=f6e301] [cursor=pointer]':
+                        - /url: /goto?url=CAES-QEB6zswFUGcEYtIJ3hWN5uGlA88-4lfvzpwXuYcAZvHzEw5X5ANAFfJi8hHUxiaNBzslh3odnMei8Cis7y88MsJ00w68TV12Rtpcc2A__EndSylpwA2u3uiN-TTAekdObT_sDprW9wH8Aq-KpMTQCJDxxUCvfHC9fwmISqIdGeVcrdDiTy8fMuH0sJ1SVwM8vLoUZA5qz2udLKBZhVWms3hcBRMTxmMgLGojpDzFIJ1T7YRnEC3niTas8Wgg5Cx_JyaG_ZvAr3-5Tzt0Q8MCudMPgBpj3EzkGVCx1k_BTOxTkqREO7s2NIoodwpuKEY1kjbS0YQuvJCDuI
+                      - 'button "INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS – CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, .... Related results" [ref=f6e302] [cursor=pointer]':
+                        - generic [ref=f6e303]: INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS
+                  - listitem [ref=f6e311]:
+                    - generic [ref=f6e312]: Prolonged litigation burdens understaffed Waqf Tribunals with tens of thousands of pending cases.
+                    - generic [ref=f6e314]:
+                      - link "Ministry of Minority Affairs (+1) – Frequently Asked Questions on Waqf Board. Related results" [ref=f6e315] [cursor=pointer]:
+                        - /url: /goto?url=CAESfwHrOzAVmdyEG2b380g1iISz_pyY7LYBQEuqSNVHmLMjUubVxwIKnNS8QGNVMgMpcxbYJgZ6TcFIKsg_6ek-Lh-c56_8xaO3P0VSCtlTuuRrjBiSO1rszjngVIVhVYBhKKm9Vd5JaV6U_xiQMgrVp4rNSyfKRvNtpDOWNrZTXIo
+                      - button "Ministry of Minority Affairs (+1) – Frequently Asked Questions on Waqf Board. Related results" [ref=f6e316] [cursor=pointer]:
+                        - generic [ref=f6e318]:
+                          - generic [ref=f6e319]: Ministry of Minority Affairs
+                          - generic [ref=f6e320]: "+1"
+                - heading "💡 Core Systemic Bottlenecks" [level=3] [ref=f6e326]
+                - list [ref=f6e327]:
+                  - listitem [ref=f6e329]:
+                    - generic [ref=f6e330]:
+                      - strong [ref=f6e331]: "Outdated Records:"
+                      - text: Incomplete historical surveys and missing mutation entries.
+                  - listitem [ref=f6e333]:
+                    - generic [ref=f6e334]:
+                      - strong [ref=f6e335]: "Coordination Gaps:"
+                      - text: Weak sync between state boards, revenue departments, and municipal bodies.
+                  - listitem [ref=f6e337]:
+                    - generic [ref=f6e338]:
+                      - strong [ref=f6e339]: "Administrative Friction:"
+                      - text: Mismanagement by traditional caretakers (
+                      - emphasis [ref=f6e340]: Mutawallis
+                      - text: ) and low audit compliance.
+                    - generic [ref=f6e342]:
+                      - link "PIB (+2) – Explainer on Waqf Amendment Bill 2024 - PIB. Related results" [ref=f6e343] [cursor=pointer]:
+                        - /url: /goto?url=CAESfQHrOzAVvsdxEARYpv8i9lpIPjIjxxg_seC0A4whIikHV88_bBEU2ZbArTRz83cTbeai21Z2NxpnxGUTyjaWuTO_-sn5xoyuOZtfKNF7fuaUCYYfAZIHj83mhrLN19WsN4zulelOayoX0SI2Gp6BC2hs4u-tn_80KQPhrQTX
+                      - button "PIB (+2) – Explainer on Waqf Amendment Bill 2024 - PIB. Related results" [ref=f6e344] [cursor=pointer]:
+                        - generic [ref=f6e346]:
+                          - generic [ref=f6e347]: PIB
+                          - generic [ref=f6e348]: "+2"
+                - generic [ref=f6e355]:
+                  - text: Would you like to explore the
+                  - strong [ref=f6e356]: legal framework of the Waqf Amendment Act
+                  - text: or review
+                  - strong [ref=f6e357]: state-specific encroachment data
+                  - text: "?"
+              - generic [ref=f6e362]:
+                - list [ref=f6e364]:
+                  - listitem [ref=f6e365]:
+                    - generic [ref=f6e366]:
+                      - link "Frequently Asked Questions on Waqf Board. Opens in new tab." [ref=f6e367] [cursor=pointer]:
+                        - /url: /goto?url=CAESfwHrOzAVmdyEG2b380g1iISz_pyY7LYBQEuqSNVHmLMjUubVxwIKnNS8QGNVMgMpcxbYJgZ6TcFIKsg_6ek-Lh-c56_8xaO3P0VSCtlTuuRrjBiSO1rszjngVIVhVYBhKKm9Vd5JaV6U_xiQMgrVp4rNSyfKRvNtpDOWNrZTXIo
+                      - generic [ref=f6e368]:
+                        - generic [ref=f6e369]:
+                          - generic [ref=f6e372]: Ministry of Minority Affairs
+                          - button "About this result" [ref=f6e378] [cursor=pointer]
+                        - generic [ref=f6e384]:
+                          - generic [ref=f6e385]: Frequently Asked Questions on Waqf Board
+                          - generic [ref=f6e386]: "- Amendment provides that the District Magistrate shall be responsible for implementation of the decision of the Board. - Despite ..."
+                  - listitem [ref=f6e390]:
+                    - generic [ref=f6e391]:
+                      - 'link "CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, .... Opens in new tab." [ref=f6e392] [cursor=pointer]':
+                        - /url: /goto?url=CAES-QEB6zswFUGcEYtIJ3hWN5uGlA88-4lfvzpwXuYcAZvHzEw5X5ANAFfJi8hHUxiaNBzslh3odnMei8Cis7y88MsJ00w68TV12Rtpcc2A__EndSylpwA2u3uiN-TTAekdObT_sDprW9wH8Aq-KpMTQCJDxxUCvfHC9fwmISqIdGeVcrdDiTy8fMuH0sJ1SVwM8vLoUZA5qz2udLKBZhVWms3hcBRMTxmMgLGojpDzFIJ1T7YRnEC3niTas8Wgg5Cx_JyaG_ZvAr3-5Tzt0Q8MCudMPgBpj3EzkGVCx1k_BTOxTkqREO7s2NIoodwpuKEY1kjbS0YQuvJCDuI
+                      - generic [ref=f6e393]:
+                        - generic [ref=f6e394]:
+                          - generic [ref=f6e397]: INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS
+                          - button "About this result" [ref=f6e403] [cursor=pointer]
+                        - generic [ref=f6e409]:
+                          - generic [ref=f6e410]: "CRITICAL ANALYSIS OF THE WAQF ACT, 1995: CHALLENGES, ..."
+                          - generic [ref=f6e411]: Conclusion * Encroachment and illegal occupation of Waqf properties remain among the most pressing challenges. Despite the legal p...
+                - button "Show all related results" [ref=f6e414] [cursor=pointer]:
+                  - generic [ref=f6e415]: Show all
+            - generic [ref=f6e419]:
+              - generic [ref=f6e423]:
+                - text: AI responses may include mistakes. For legal advice, consult a professional.
+                - link "Learn more about Generative AI. Opens in new tab." [ref=f6e424] [cursor=pointer]:
+                  - /url: https://support.google.com/websearch?p=ai_overviews&hl=en-IN
+                  - text: Learn more
+              - generic [ref=f6e425]:
+                - button "Share" [ref=f6e432]
+                - generic [ref=f6e441]:
+                  - button "Good response" [ref=f6e446] [cursor=pointer]:
+                    - img "Good response" [ref=f6e449]
+                  - button "Bad response" [ref=f6e455] [cursor=pointer]:
+                    - img "Bad response" [ref=f6e458]
+                - button "More" [ref=f6e469] [cursor=pointer]
+          - generic [ref=f6e480]:
+            - generic:
+              - alert
+            - textbox "Ask anything" [ref=f6e482]
+            - button "Add files and tools" [ref=f6e486] [cursor=pointer]
+            - button "Microphone" [ref=f6e496] [cursor=pointer]
+      - main [ref=f6e502]:
+        - generic [ref=f6e506]:
+          - generic [ref=f6e509]:
+            - heading "Web results" [level=2] [ref=f6e510]
+            - generic [ref=f6e511]:
+              - generic [ref=f6e514]:
+                - link "Akbaruddin Owaisi calls for action on waqf land ... The Hindu https://www.thehindu.com › News › India › Telangana" [ref=f6e516] [cursor=pointer]:
+                  - /url: /goto?url=CAESwQEB6zswFXzEtXn78AiEDa_JG_EejZZ3QUDLYUAj66BYM3MRCu_Wftv7hJnaC5w3RM8J2WqBnXCrqE0Mzpb9yPOnPM6yLzHM3O-J-CtD--9qhDhwX7d3MK6vlSB-KO1IxmwlRecUiCQPYhPs0Y2IgwLP-iJswkXTWjKHYAq8WLIul1R4xLv7lhZKKlL0h520aASgki_wVIcwXty7_SvDtzvaB7mzFOWXwS9A1zhIDYkR3Fx501uslr821rgE97-uSyxg
+                  - heading "Akbaruddin Owaisi calls for action on waqf land ..." [level=3] [ref=f6e517]
+                  - generic [ref=f6e523]:
+                    - generic [ref=f6e524]: The Hindu
+                    - generic [ref=f6e526]: https://www.thehindu.com › News › India › Telangana
+                - button "About this result" [ref=f6e532] [cursor=pointer]
+              - generic [ref=f6e538]:
+                - generic [ref=f6e539]: 3 days ago —
+                - generic [ref=f6e540]:
+                  - text: AIMIM MLAs submitting a request for the protection of
+                  - emphasis [ref=f6e541]: Waqf properties
+                  - text: in Telangana, recovery of
+                  - emphasis [ref=f6e542]: encroached lands
+                  - text: and settlement of compensation ...
+                - link "Read more" [ref=f6e543] [cursor=pointer]:
+                  - /url: /goto?url=CAESmQIB6zswFae7VaNXsScFxkgconc4lOj9A-60fqkClLWy5JEA9t2V7d-VfSkN_sg1yGIuHk8hc4qlf5_TI2dP0XWJI-DWHa0p-6DlSOi0HMJMsJ5E5H9XE8JwuT03auNsYv4Uyn2leRlYjiBuYfxi0pcEXXz6TWrsWEA3aqY8XUcY1mmoRdcn8n_R3xhm-3WA46AaKeTNi8QYDQcc9Qg4bTzWOxdGU4pNn7MTC1aTRT3rjXDXbUwyRiMhQ9y0wZRvwcxgZ9CHs2smNsVHbJii2nGa8nfjvqQOvgxAiCgATo4HvrSPC4W-hTpF3mgU24ehUeDV-F3nOmFt1wJ2nbOr_ryvSRk8T5EN6SCBkV_ctpDSlbcHMGl5bh8E3g
+          - generic [ref=f6e547]:
+            - generic [ref=f6e550]:
+              - link "Digitise Waqf Board records and reclaim encroached Waqf ... manifestowatch.in https://manifestowatch.in › elections › promises › waqf-r..." [ref=f6e552] [cursor=pointer]:
+                - /url: /goto?url=CAESqQEB6zswFdBWs56S_magkN36IMhGplP5nJcPhc7wlfZS1Wpq6nTRCsYfhBLTKOqA_YYPeaDySJ4qa78E8_9pK6pAL1p365LN7AKE-JEeu7GB70Tl5SGJVxW1rEYF2x08NCcdTEUDxH87Y-1udv6kCaRgTWtXHKe1q5DhRCbNLYn7SydwtFzln9R5d7q26Rv5UZvrf22GjGkW6xRjffTP4L7ULY0rUyOI0vDH
+                - heading "Digitise Waqf Board records and reclaim encroached Waqf ..." [level=3] [ref=f6e553]
+                - generic [ref=f6e559]:
+                  - generic [ref=f6e560]: manifestowatch.in
+                  - generic [ref=f6e562]: https://manifestowatch.in › elections › promises › waqf-r...
+              - button "About this result" [ref=f6e568] [cursor=pointer]
+            - generic [ref=f6e574]:
+              - generic [ref=f6e575]: 11 Jul 2026 —
+              - generic [ref=f6e576]:
+                - text: “
+                - emphasis [ref=f6e577]: Land
+                - text: and
+                - emphasis [ref=f6e578]: Property records
+                - text: of the
+                - emphasis [ref=f6e579]: Waqf Board
+                - text: are to be
+                - emphasis [ref=f6e580]: digitized
+                - text: . Additionally,
+                - emphasis [ref=f6e581]: encroached properties
+                - text: of the
+                - emphasis [ref=f6e582]: Waqf Board
+                - text: will be reclaimed ...
+              - link "Read more" [ref=f6e583] [cursor=pointer]:
+                - /url: /goto?url=CAESkgIB6zswFUjfduqxzjp4s3v60oNRdlAEMKqwJd6Sylw0zkSJd_kVohiJrNQZATR8GbNQvPyQoZFdKK5EIMiew0XKSZQV8-arSwW-pH5k9jfEA5r-8K7UEfhljdchu4R1ufD66sBIwwG3fQUgHQRpWQmiFtZ8ScBIyPAQTC4L1XuFh82nSEanle9Lk4jj3X8BldTcxHDxfA_SNWdWJzzNF5MdXSWAqypzGi9eFGYngsEeLWzC1kgBq7YSypO1bnFP-yg_KnxuM4hjFdN_d_ygXDC_S6I38siJ41uFce8WgVOnXTZ2M2nvDi3uJLuzrGulvqhavksNxf3tEdRzLbRVc4jtPDLFtInfuSJ5ayn9l9MsGGFa
+          - generic [ref=f6e590]:
+            - generic [ref=f6e593]:
+              - 'link "Waqf Property Row: Digital Records, Legal Deadline ... YouTube · CAPITAL TV 39.5K+ views · 1 week ago" [ref=f6e595] [cursor=pointer]':
+                - /url: /goto?url=CAESfQHrOzAVhBVHAp8SA9t9O7G0QHnYEC676P3-hPXuN72llpcxARVsA3a2926kZDs6-bnmoZaFeLAGQeeWB3m3VmoBi2lLCamXC7JPpc-DwybtR-tRDvoFNiJN9lTN_My9OjagThY5IsJAWoL7qnPefMm_mAcaVzrOfc-22c1D
+                - 'heading "Waqf Property Row: Digital Records, Legal Deadline ..." [level=3] [ref=f6e596]'
+                - generic [ref=f6e602]:
+                  - generic [ref=f6e603]: YouTube · CAPITAL TV
+                  - generic [ref=f6e605]: 39.5K+ views · 1 week ago
+              - button "About this result" [ref=f6e611] [cursor=pointer]
+            - generic [ref=f6e616]:
+              - 'button "Waqf Property Row: Digital Records, Legal Deadline ... by CAPITAL TV on YouTube. Play on Google. 10:02" [ref=f6e617] [cursor=pointer]':
+                - generic [ref=f6e618]: 10:02
+              - generic [ref=f6e634]: the digital registration of Waqf properties under the UMEED Central Portal faces a legal challenge in the Supreme Court.
+          - generic [ref=f6e639]:
+            - generic [ref=f6e642]:
+              - link "Waqf Properties' Management and Encroachment Detection Conference world https://data.conferenceworld.in › ICRISEM7" [ref=f6e644] [cursor=pointer]:
+                - /url: /goto?url=CAESbAHrOzAVqU81iUreBa8K07Sn8614kuljy8xnqvbKx3GQgOGURF5Ee16elWIpLd9Bl98H14LbHUjnDD0qIYqVrGcd0f_N38AgmGqOfDKsZfZODiMxEslG3ePeM38L7qAS8jDHiwhUWSeb4xBTZg
+                - heading "Waqf Properties' Management and Encroachment Detection" [level=3] [ref=f6e645]
+                - generic [ref=f6e654]:
+                  - generic [ref=f6e655]: Conference world
+                  - generic [ref=f6e657]: https://data.conferenceworld.in › ICRISEM7
+              - generic [ref=f6e659]: PDF
+              - button "About this result" [ref=f6e664] [cursor=pointer]
+            - generic [ref=f6e669]:
+              - generic [ref=f6e671]:
+                - emphasis [ref=f6e672]: Waqf
+                - text: establishment faces numerous
+                - emphasis [ref=f6e673]: difficulties
+                - text: among others such as absence of financing, under-development, mis-management,
+                - emphasis [ref=f6e674]: encroachment
+                - text: ", litigations etc."
+              - generic [ref=f6e675]: 18 pages
+          - generic [ref=f6e680]:
+            - heading "People also ask" [level=2] [ref=f6e682]
+            - generic [ref=f6e683]:
+              - button "How to know if a property is Waqf property?" [ref=f6e689] [cursor=pointer]
+              - button "Can a Waqf Board claim any land in India?" [ref=f6e703] [cursor=pointer]
+              - button "Who is the owner of Waqf property?" [ref=f6e717] [cursor=pointer]
+              - generic [ref=f6e728]:
+                - button "How much land is owned by Waqf?" [expanded] [active] [ref=f6e731] [cursor=pointer]
+                - generic [ref=f6e989]:
+                  - heading "AI Overview" [level=2] [ref=f6e996]
+                  - generic [ref=f6e1009]:
+                    - generic [ref=f6e1010]:
+                      - text: Waqf boards in India manage approximately 38.39 lakh acres (3.83 million acres) of land across more than 8.72 lakh registered properties.
+                      - generic [ref=f6e1012]:
+                        - 'link "PIB (+1) – Waqf Amendment Bill, 2025: The History of Waqf in India - PIB. Related results" [ref=f6e1013] [cursor=pointer]':
+                          - /url: /goto?url=CAESdwHrOzAV_SGDXBR5zCEirI5SCxjG-qU2FUxUL-ke9xEisFqhekhIhSOrw3C6drHKMaWgresHQkogguFsRhtGplUA7xbjggutqHO9BwU00tL7z1mQaHowJut6bPCAd8-KqMOOJm2wnH2iVo3vHb2zRiHHgvXtTWcJ
+                        - 'button "PIB (+1) – Waqf Amendment Bill, 2025: The History of Waqf in India - PIB. Related results" [ref=f6e1014] [cursor=pointer]':
+                          - generic [ref=f6e1016]:
+                            - generic [ref=f6e1017]: PIB
+                            - generic [ref=f6e1018]: "+1"
+                    - heading "Key Details" [level=3] [ref=f6e1023]
+                    - list [ref=f6e1024]:
+                      - listitem [ref=f6e1026]:
+                        - generic [ref=f6e1027]:
+                          - strong [ref=f6e1028]: "Land Ranking:"
+                          - text: This makes the Waqf Board the third-largest landowner in India, coming right after the Armed Forces and the Indian Railways.
+                        - generic [ref=f6e1030]:
+                          - link "YouTube (+1) – How Much Land Does The Waqf Board Own? - YouTube. Related results" [ref=f6e1031] [cursor=pointer]:
+                            - /url: /goto?url=CAESYwHrOzAV3q8kpj_O45d5jCCuPiB1rVDnwOGtPxHqA1yd7rpQ4gr8BHSmDpJEZcb0hHzjLVwCxRqpKgnpqzzKLKgE4eksHb-IiZ64UxzMtuf0_oLdRTjBR45oMX3vSCr-KDdXEg
+                          - button "YouTube (+1) – How Much Land Does The Waqf Board Own? - YouTube. Related results" [ref=f6e1032] [cursor=pointer]:
+                            - generic [ref=f6e1034]:
+                              - generic [ref=f6e1035]: YouTube
+                              - generic [ref=f6e1036]: "+1"
+                      - listitem [ref=f6e1042]:
+                        - generic [ref=f6e1043]:
+                          - strong [ref=f6e1044]: "Growth Over Time:"
+                          - text: Government reports note that about 18 lakh acres were recorded from 1913 to 2013, with an additional 21 lakh acres reported up to 2025.
+                        - generic [ref=f6e1046]:
+                          - link "PIB – Union Home Minister and Minister of Cooperation Shri Amit Shah ... - PIB. Related results" [ref=f6e1047] [cursor=pointer]:
+                            - /url: /goto?url=CAEScwHrOzAVdO8EedIy8vRdrAUtahcpFOsamWqMiKkIfsyxgF31WSXaKqebtEssKikpvlM8iXp4a66vo4qgJVZQU9wfev_kEjWGz7jKZPO3EDO61gZFgGSWfgAyTYkOo9368jMg10Xw7JUxFdjeL-MwkNwfUeo
+                          - button "PIB – Union Home Minister and Minister of Cooperation Shri Amit Shah ... - PIB. Related results" [ref=f6e1048] [cursor=pointer]:
+                            - generic [ref=f6e1049]: PIB
+                      - listitem [ref=f6e1057]:
+                        - generic [ref=f6e1058]:
+                          - strong [ref=f6e1059]: "Property Types:"
+                          - text: Holdings include graveyards (about 1.5 lakh properties), agricultural plots (about 1.4 lakh properties), and mosques (about 1.2 lakh properties).
+                        - button [ref=f6e1062] [cursor=pointer]
+                      - listitem [ref=f6e1068]:
+                        - generic [ref=f6e1069]:
+                          - strong [ref=f6e1070]: "Official Data Portal:"
+                          - text: Statistics are tracked via the
+                          - link [ref=f6e1072] [cursor=pointer]:
+                            - /url: /goto?url=CAESfwHrOzAVNCqASZpTkzrxqahZrvMl88kJKYK9rbitDKvQiu5KoFT53u8BHLdKL52QnjZhIleuDwoQ1Bb5uY0tj_jU8FqeRCyW7bZHjFyeQGI2ufe0tGsZt7teEbqzC58-_a_jshWeQgIETa9JuaQLXIbOfVV-SseUxEBCgWE3BwM
+                            - text: Ministry of Minority Affairs
+                          - text: and the WAMSI portal.
+                        - generic [ref=f6e1074]:
+                          - link [ref=f6e1075] [cursor=pointer]:
+                            - /url: /goto?url=CAESfwHrOzAVNCqASZpTkzrxqahZrvMl88kJKYK9rbitDKvQiu5KoFT53u8BHLdKL52QnjZhIleuDwoQ1Bb5uY0tj_jU8FqeRCyW7bZHjFyeQGI2ufe0tGsZt7teEbqzC58-_a_jshWeQgIETa9JuaQLXIbOfVV-SseUxEBCgWE3BwM
+                          - button [ref=f6e1076] [cursor=pointer]:
+                            - generic [ref=f6e1078]:
+                              - generic [ref=f6e1079]: Ministry of Minority Affairs
+                              - generic [ref=f6e1080]: "+1"
+                    - generic [ref=f6e1089]:
+                      - list [ref=f6e1090]:
+                        - listitem [ref=f6e1091]:
+                          - generic [ref=f6e1092]:
+                            - link [ref=f6e1093] [cursor=pointer]:
+                              - /url: /goto?url=CAEScwHrOzAVdO8EedIy8vRdrAUtahcpFOsamWqMiKkIfsyxgF31WSXaKqebtEssKikpvlM8iXp4a66vo4qgJVZQU9wfev_kEjWGz7jKZPO3EDO61gZFgGSWfgAyTYkOo9368jMg10Xw7JUxFdjeL-MwkNwfUeo
+                            - generic [ref=f6e1094]:
+                              - generic [ref=f6e1095]:
+                                - generic [ref=f6e1098]: PIB
+                                - button [ref=f6e1102] [cursor=pointer]
+                              - generic [ref=f6e1108]:
+                                - generic [aria-hidden] [ref=f6e1109]: Union Home Minister and Minister of Cooperation Shri Amit Shah ... - PIB
+                                - generic [ref=f6e1110]: He highlighted that from 1913 to 2013, the total land under the Waqf Board was 18 lakh acres. However, between 2013 and 2025, this...
+                        - listitem [ref=f6e1112]:
+                          - generic [ref=f6e1113]:
+                            - link [ref=f6e1114] [cursor=pointer]:
+                              - /url: /goto?url=CAESdwHrOzAV_SGDXBR5zCEirI5SCxjG-qU2FUxUL-ke9xEisFqhekhIhSOrw3C6drHKMaWgresHQkogguFsRhtGplUA7xbjggutqHO9BwU00tL7z1mQaHowJut6bPCAd8-KqMOOJm2wnH2iVo3vHb2zRiHHgvXtTWcJ
+                            - generic [ref=f6e1115]:
+                              - generic [ref=f6e1116]:
+                                - generic [ref=f6e1119]: PIB
+                                - button [ref=f6e1123] [cursor=pointer]
+                              - generic [ref=f6e1129]:
+                                - generic [aria-hidden] [ref=f6e1130]: "Waqf Amendment Bill, 2025: The History of Waqf in India - PIB"
+                                - generic [ref=f6e1131]: "Overview of Waqf Properties in India: As per data available on WAMSI portal 30 States/UTs and 32 Boards reported that there are 8."
+                        - listitem [ref=f6e1134]:
+                          - generic [ref=f6e1135]:
+                            - link [ref=f6e1136] [cursor=pointer]:
+                              - /url: /goto?url=CAESYwHrOzAV3q8kpj_O45d5jCCuPiB1rVDnwOGtPxHqA1yd7rpQ4gr8BHSmDpJEZcb0hHzjLVwCxRqpKgnpqzzKLKgE4eksHb-IiZ64UxzMtuf0_oLdRTjBR45oMX3vSCr-KDdXEg
+                            - generic [ref=f6e1137]:
+                              - generic [ref=f6e1138]:
+                                - generic [ref=f6e1141]: YouTube
+                                - button [ref=f6e1145] [cursor=pointer]
+                              - generic [ref=f6e1151]:
+                                - generic [aria-hidden] [ref=f6e1152]: How Much Land Does The Waqf Board Own? - YouTube
+                                - generic [ref=f6e1153]: and does it really enjoy disproportionate power as the government claims according to the Press information Bureau India has the l...
+                        - listitem [ref=f6e1156]:
+                          - generic [ref=f6e1157]:
+                            - link [ref=f6e1158] [cursor=pointer]:
+                              - /url: /goto?url=CAES2wEB6zswFUwBmu5iuFb9vyjwaEaTFl6yCxTCfnkA9h3wfgWNq2ucf6wzfKhHm9L6Ig7PdHns-n_Kqy0h7wWQbjz70wPxdeVNjvcNfAOTDiJrmLhA2G72NNq55CkPbKGPFizuzQe5TFE8cgdjMW38hJjTMhUmhnTZ1YnmKkb1NpPw5NvrUpOQnTKGbS-mKiqFICiz1auPjhunJ2yZpTK7OH1McEXdMi_iVsHvskKJZ2GIougnUSyLHFpNQLHap2u67lef3kaXN-fTjPP-uATYSeiYBM3b5gYysleP2ZY
+                            - generic [ref=f6e1159]:
+                              - generic [ref=f6e1160]:
+                                - generic [ref=f6e1163]: India Today
+                                - button [ref=f6e1167] [cursor=pointer]
+                              - generic [ref=f6e1173]:
+                                - generic [aria-hidden] [ref=f6e1174]: "Waqf land: Waqf Boards owned 18 lakh acres in 100 years, added 21 ..."
+                                - generic [ref=f6e1175]: According to government data, Waqf Boards are among the top three owners of land in India along with the Armed Forces and the Indi...
+                        - listitem [ref=f6e1178]:
+                          - generic [ref=f6e1179]:
+                            - link [ref=f6e1180] [cursor=pointer]:
+                              - /url: /goto?url=CAESfwHrOzAVNCqASZpTkzrxqahZrvMl88kJKYK9rbitDKvQiu5KoFT53u8BHLdKL52QnjZhIleuDwoQ1Bb5uY0tj_jU8FqeRCyW7bZHjFyeQGI2ufe0tGsZt7teEbqzC58-_a_jshWeQgIETa9JuaQLXIbOfVV-SseUxEBCgWE3BwM
+                            - generic [ref=f6e1181]:
+                              - generic [ref=f6e1182]:
+                                - generic [ref=f6e1185]: Ministry of Minority Affairs
+                                - button [ref=f6e1189] [cursor=pointer]
+                              - generic [ref=f6e1195]:
+                                - generic [aria-hidden] [ref=f6e1196]: Frequently Asked Questions on Waqf Board - Ministry of Minority Affairs
+                                - generic [ref=f6e1197]: The Boards also have the authority to monitor financial transactions, prevent encroachments, alienation, and protect Waqf properti...
+                        - listitem [ref=f6e1200]:
+                          - generic [ref=f6e1201]:
+                            - link [ref=f6e1202] [cursor=pointer]:
+                              - /url: /goto?url=CAESyAEB6zswFXgYEgwrWxIStfVzrSCe6bR30nvx_Esgs6_nyoLRLpmJSxVK8t1k8MT_rk7bAZPvyizM2MM91XQr1Wqamn6k8ZXsEsiRKJm4GmzsqAj9trC48HLgJM8-EtJh4TVSCaFMtdNDUDmuvRkT1CowafL2KQ-VmjmRGEXLkkUyV98reGCEyXlMwnYSXkesI_CrF2RwQnIfg6ZTJuCt2SgRYflUU-0x8Olx1NxfU17ahbhFHvPMA6aTUP_HEnfdl9g4N-j9v6DKzA
+                            - generic [ref=f6e1203]:
+                              - generic [ref=f6e1204]:
+                                - generic [ref=f6e1207]: India Today
+                                - button [ref=f6e1211] [cursor=pointer]
+                              - generic [ref=f6e1217]:
+                                - generic [aria-hidden] [ref=f6e1218]: Waqf land 5% of India's area, more than big metro cities combined
+                                - generic [ref=f6e1219]: WHAT ARE THE WAQF PROPERTIES. WHO OWNS THEM? The Waqf Amendment Act of 2025 removes Section 40. Graveyards, numbering 1.5 lakh, ag...
+                      - button [aria-hidden] [ref=f6e1222] [cursor=pointer]
+                  - generic [ref=f6e1225]:
+                    - button [aria-hidden] [ref=f6e1226]
+                    - button "Show more" [ref=f6e1228] [cursor=pointer]
+              - generic [ref=f6e1235]:
+                - button "Is waqf only for Muslims?" [ref=f6e1243] [cursor=pointer]
+                - button "Who owns the largest amount of land in India?" [ref=f6e1258] [cursor=pointer]
+              - progressbar [ref=f6e1266]
+          - generic [ref=f6e744]:
+            - generic [ref=f6e747]:
+              - link "The nationwide digitisation of Waqf properties has hit a major ... Facebook · The Jamia Times 5 reactions · 9 months ago" [ref=f6e749] [cursor=pointer]:
+                - /url: /goto?url=CAESyQEB6zswFf3qc_-Ermr5An8tMO7foJ70_lIbw-fGoaWiAq_SaIAK1ppheuNeXpB4MoyUfUFHB9exHOpy48LfGERDMqrfxSekT7sMs2i7nEi_NbvFJsVkwXAzciVxbLdw-3H2qpPMHRFvJ9fmWrRG7sVFxJV-XBOuK6o0r74r-EYLdCrpwAWK0yozZa4V9P5QV-r2sH0Jqz2W-Tv14InTsuWL1MWTr4uZrODgJ-azoh152IARryR2MN7OeAZu-fiTFklnUJlL6_02Gi4
+                - heading "The nationwide digitisation of Waqf properties has hit a major ..." [level=3] [ref=f6e750]
+                - generic [ref=f6e756]:
+                  - generic [ref=f6e757]: Facebook · The Jamia Times
+                  - generic [ref=f6e759]: 5 reactions · 9 months ago
+              - button "About this result" [ref=f6e765] [cursor=pointer]
+            - generic [ref=f6e770]:
+              - link "The nationwide digitisation of Waqf properties has hit a major ... by The Jamia Times on Facebook. Play on Facebook. 1:31" [ref=f6e771] [cursor=pointer]:
+                - /url: /goto?url=CAESyQEB6zswFf3qc_-Ermr5An8tMO7foJ70_lIbw-fGoaWiAq_SaIAK1ppheuNeXpB4MoyUfUFHB9exHOpy48LfGERDMqrfxSekT7sMs2i7nEi_NbvFJsVkwXAzciVxbLdw-3H2qpPMHRFvJ9fmWrRG7sVFxJV-XBOuK6o0r74r-EYLdCrpwAWK0yozZa4V9P5QV-r2sH0Jqz2W-Tv14InTsuWL1MWTr4uZrODgJ-azoh152IARryR2MN7OeAZu-fiTFklnUJlL6_02Gi4
+                - generic [ref=f6e772]: 1:31
+              - generic [ref=f6e781]: The nationwide digitisation of Waqf properties has hit a major hurdle as the Umeed portal continues to malfunction across India, ...
+          - generic [ref=f6e786]:
+            - generic [ref=f6e789]:
+              - link "Explainer on Waqf Amendment Bill 2024 PIB https://www.pib.gov.in › PressNoteDetails" [ref=f6e791] [cursor=pointer]:
+                - /url: /goto?url=CAESfQHrOzAVM8lHvs3EPjkGt0LIvQcahx64802ucK2R4iCoxMAenpJ_s5ah49jgilYRPFLmD2SO4egfZq6LliRsHgORoESLvkFfx9nDt9ZQTTH8giCGoMhYxZRjEvG8rEOMPZxKsAYFp9PEplK0XbSkhuxw0jvAD-ZaOiCwUbY0
+                - heading "Explainer on Waqf Amendment Bill 2024" [level=3] [ref=f6e792]
+                - generic [ref=f6e798]:
+                  - generic [ref=f6e799]: PIB
+                  - generic [ref=f6e801]: https://www.pib.gov.in › PressNoteDetails
+              - button "About this result" [ref=f6e807] [cursor=pointer]
+            - generic [ref=f6e813]:
+              - generic [ref=f6e814]: 13 Sept 2024 —
+              - generic [ref=f6e815]:
+                - text: 148 complaints received from April, 2023 are pertaining mostly to
+                - emphasis [ref=f6e816]: encroachments
+                - text: ", illegal sales of"
+                - emphasis [ref=f6e817]: waqf land
+                - text: ", delays in Surveys and registration ..."
+          - generic [ref=f6e821]:
+            - generic [ref=f6e824]:
+              - link "This is how the Waqf Board kept encroaching on any land it ... Facebook · BJP Puducherry 7 reactions · 1 year ago" [ref=f6e826] [cursor=pointer]:
+                - /url: /goto?url=CAESyQEB6zswFf0rkEWD7AJtobVAwSJM4hqubt4-43qinVxD8goRhUTQ-ny081U-BMg3I1SeVDJtWwr1nppQquH7G7XH0rRWvy5oeiedoTAKR1y04YhBBbuwNG3NK9GlqiXILKAumzwCDM0s29yQQRbJdjj1BiVBJ5QMhWS_JS1OoPU1Vo3rbG9f_xy_s2NVfZmGh9uDy4DHLNxc2HLDssoZmGCEVjGsD8rJHkQ_qEEYuqZJnpQDkan2X3OkLlcUZhX668sFUD4rSe5gsXk
+                - heading "This is how the Waqf Board kept encroaching on any land it ..." [level=3] [ref=f6e827]
+                - generic [ref=f6e833]:
+                  - generic [ref=f6e834]: Facebook · BJP Puducherry
+                  - generic [ref=f6e836]: 7 reactions · 1 year ago
+              - button "About this result" [ref=f6e842] [cursor=pointer]
+            - generic [ref=f6e848]:
+              - generic [ref=f6e849]:
+                - text: This is how the
+                - emphasis [ref=f6e850]: Waqf Board
+                - text: kept
+                - emphasis [ref=f6e851]: encroaching
+                - text: on any
+                - emphasis [ref=f6e852]: land
+                - text: it deemed under Section 40 of the Waqf Amendment Bill 2013. This has now been ...
+              - link "Read more" [ref=f6e853] [cursor=pointer]:
+                - /url: /goto?url=CAESlAIB6zswFSo_FXjS8xYVnBneZW8lIFj_sLPlBm67Et812XwAMPuxw5ID_49kfqxB2jK0rjjcquCluY4Dt29ScREMlAnCJjK6f8enHUvHU5nT46hyCb3TiQUC1QJHUYOIdsbt7oHwqc2iJBi8mz9CiU0pEcKmmtIP-mjqqJyjcaAd0nMM3NZwbrvJmSVdA1QOUc33qEeSFC5UpwUBwgQFWGLmGV__A6jVh6BWT8THrsX28JHbykxZsVy6uu33IYjuYsV8I1D9bTD8v5xAH3j2p16uxNxV1TXRyGwhc422nYReWI0XlclCHgDHuhz9rCUC5xJMov5kc0Xs-2ZMy1mJllM1TnFs5FioBBKm0OY0MKJKI4h-Ew8
+          - generic [ref=f6e857]:
+            - generic [ref=f6e860]:
+              - link "Evolution, Laws, Challenges & Waqf (Amendment) Bill, 2024 Mondaq https://www.mondaq.com › ... › Real Estate" [ref=f6e862] [cursor=pointer]:
+                - /url: /goto?url=CAESqQEB6zswFW02h0_3-Zp7dqIhj09hlV51BVcw_wYelBUB4rwL07yydyMLnAMPV5CKt3Owhco1YukcFNVDGQ5OFrMaFp4iwULC9su4Tj2KykBRKsbrdaIN1FwwbFrm70S6MIFSHJlgJop9f6I5r5o_QCDPBcDPl2ZO1gvu9ySH03fTTGxaGksbDJLgvrSQbW7r8wRI8k8617_2oJoO65bd4E1pSZY1ZLPH0cF9
+                - heading "Evolution, Laws, Challenges & Waqf (Amendment) Bill, 2024" [level=3] [ref=f6e863]
+                - generic [ref=f6e869]:
+                  - generic [ref=f6e870]: Mondaq
+                  - generic [ref=f6e872]: https://www.mondaq.com › ... › Real Estate
+              - button "About this result" [ref=f6e878] [cursor=pointer]
+            - generic [ref=f6e884]:
+              - generic [ref=f6e885]: 4 Nov 2024 —
+              - generic [ref=f6e886]:
+                - text: However, the process of
+                - emphasis [ref=f6e887]: digitizing
+                - text: these
+                - emphasis [ref=f6e888]: records
+                - text: has been slow, and many
+                - emphasis [ref=f6e889]: Waqf Boards
+                - text: still rely on paper
+                - emphasis [ref=f6e890]: records
+                - text: ", which are prone to tampering, ..."
+              - link "Read more" [ref=f6e891] [cursor=pointer]:
+                - /url: /goto?url=CAESiwIB6zswFd9xLP9riKRcS1LV49Xidh6q__n_gFIS56Il2NO7kC4U0OCIL91HGDojibxM1WPyauXBZhz0bBSRPzrJI4ShDFBZ0aeWCVLECL1A0o-H3n3QVnzoxx4WoRiZP2Y2LjyiKZh5YGDGP4P6tCZocBn0wP9AYKHlQMwoP12PtY7uuVf5p7VvcTy9-N43L7V7J08MMlFdsxIRp0bJzgS0D3cORy-4SHbk9R_ISR4XR33RJbUkedWVO7XsWYIZj_oQPxwlLRQp9_Tb9veATZgM6NkV9HyyyI6wtkN62z0S55OtLrbp3kqN7jFzvxNq9RHYUgYkRhXmIkYv05qyczgBqbmhpHdhLHJo3Kg
+          - generic [ref=f6e895]:
+            - generic [ref=f6e898]:
+              - link "Frequently Asked Questions on Waqf Board Ministry of Minority Affairs https://www.minorityaffairs.gov.in › RTF1984" [ref=f6e900] [cursor=pointer]:
+                - /url: /goto?url=CAESfwHrOzAVyGNJv3ccttSKWjhAogE46aDw06hPPnrYBi3SFajCIKcLCQU_c5zfwTlUXLX-TeSna2Y7MQLb6ew9olglSW_-qG9CwD2cKJX-fG3dkGWmBWxGXhuL7xWR4KH8dRM7hC_dj-qA0ZVf9kay_pPF10joBoQpQxffD7nyeZ0
+                - heading "Frequently Asked Questions on Waqf Board" [level=3] [ref=f6e901]
+                - generic [ref=f6e907]:
+                  - generic [ref=f6e908]: Ministry of Minority Affairs
+                  - generic [ref=f6e910]: https://www.minorityaffairs.gov.in › RTF1984
+              - generic [ref=f6e912]: PDF
+              - button "About this result" [ref=f6e917] [cursor=pointer]
+            - generic [ref=f6e923]:
+              - generic [ref=f6e924]:
+                - text: Some of the key
+                - emphasis [ref=f6e925]: challenges
+                - text: are as following:- - Lack of transparency in
+                - emphasis [ref=f6e926]: waqf property
+                - text: management. - Incomplete surveys and mutation of
+                - emphasis [ref=f6e927]: waqf land records
+                - text: . - ...
+              - link "Read more" [ref=f6e928] [cursor=pointer]:
+                - /url: /goto?url=CAES3gEB6zswFfId_z1v_N6z-ktnp9W7vdEskOtqQWhoYSo8P3JplR20zC7RctoTE-K-g9MXFoInXr6dvNbqNgSHoypavDVn0lAiAu4PlencVakJ_S9TdRQ4iCXdyTCJ0vE-qEe6nh_LfRbjev5moB-XELy_ySyZKH-d7AHkORaPaWr-yRfIPa3VuYefbgs7m41dD1VWdqw2aKjtciLDqcXP-OkQJgPiXvjpx64xV2i0oEFUrtltrO46uYGQ6TsXuowRNH3l_bxWvsiPRIbfNYPIGAFwnO5HX10ig4ooW08XlcM
+        - navigation [ref=f6e931]:
+          - heading "Page navigation" [level=1] [ref=f6e932]
+          - text: "1"
+          - link "Page 2" [ref=f6e935] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=10&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAE
+            - text: "2"
+          - link "Page 3" [ref=f6e937] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=20&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAG
+            - text: "3"
+          - link "Page 4" [ref=f6e939] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=30&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAI
+            - text: "4"
+          - link "Page 5" [ref=f6e941] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=40&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAK
+            - text: "5"
+          - link "Page 6" [ref=f6e943] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=50&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAM
+            - text: "6"
+          - link "Page 7" [ref=f6e945] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=60&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAO
+            - text: "7"
+          - link "Page 8" [ref=f6e947] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=70&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAQ
+            - text: "8"
+          - link "Page 9" [ref=f6e949] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=80&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAS
+            - text: "9"
+          - link "Page 10" [ref=f6e951] [cursor=pointer]:
+            - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=90&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8tMDegQIKhAU
+            - text: "10"
+          - heading [level=2] [ref=f6e953]:
+            - link "Next" [ref=f6e954] [cursor=pointer]:
+              - /url: /search?q=Waqf+Board+property+land+records+India+digitization+challenges+encroachment&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnsVcRYWT00hrubQDQreeikM4zH89A:1789982400819&ei=wPawaqzSMYbcseMPupm5oQk&start=10&sa=N&sstk=AS6-VmLMokmDHLUWe8dIdWdovlxFkWp2VdeTiVnTTIC3t_ZXXkL8DhtgPXzipI1tvi3JsCEjx5NVyPZxYFNkzZ5W9d0RHtScChMxIg&ved=2ahUKEwissp6JrP-WAxUGbmwGHbpMLpQQ8NMDegQIKhAW
+        - navigation
+    - contentinfo [ref=f6e957]:
+      - heading "Footer links" [level=1] [ref=f6e958]
+      - generic [ref=f6e962]:
+        - generic [ref=f6e964]:
+          - text: India
+          - generic [ref=f6e966]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - From your IP address" [ref=f6e968] [cursor=pointer]:
+              - generic [ref=f6e969]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=f6e971]:
+                - text: "-"
+                - generic [ref=f6e972]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f6e974] [cursor=pointer]
+        - generic [ref=f6e977]:
+          - link "Help" [ref=f6e978] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f6e979] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f6e980] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f6e981] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "mcp__playwright__*",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:dolr.gov.in)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:dilrmp.nic.in)",
+      "WebFetch(domain:meebhoomi.ap.gov.in)",
+      "WebFetch(domain:mahabhulekh.maharashtra.gov.in)",
+      "WebFetch(domain:www.dolr.gov.in)",
+      "WebFetch(domain:igrs.ap.gov.in)",
+      "WebFetch(domain:igrmaharashtra.gov.in)",
+      "WebFetch(domain:mpbhulekh.gov.in)",
+      "WebFetch(domain:banglarbhumi.gov.in)",
+      "WebFetch(domain:svamitva.nic.in)",
+      "WebFetch(domain:bhulekh.ori.nic.in)"
+    ],
+    "defaultMode": "dontAsk"
+  }
+}

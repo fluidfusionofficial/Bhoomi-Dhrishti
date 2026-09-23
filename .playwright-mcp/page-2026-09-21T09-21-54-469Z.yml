@@ -1,0 +1,381 @@
+- generic [active] [ref=f30e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f30e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f30e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f30e8]:
+    - search [ref=f30e9]:
+      - generic [ref=f30e11]:
+        - link "Go to Google Home" [ref=f30e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8QPHoECAYQBA
+        - generic [ref=f30e21]:
+          - generic [ref=f30e22]:
+            - combobox "Search" [ref=f30e25]: land records digitization fraud India digital land grab tampering land records digitization fraud India digital land grab tampering
+            - generic [ref=f30e26]:
+              - button "Clear" [ref=f30e28] [cursor=pointer]
+              - generic [ref=f30e33]:
+                - button "Search by voice" [ref=f30e34] [cursor=pointer]
+                - button "Search by image" [ref=f30e37] [cursor=pointer]
+          - button "Search" [ref=f30e40] [cursor=pointer]
+    - generic [ref=f30e45]:
+      - button "Settings" [ref=f30e47] [cursor=pointer]
+      - button "Share" [ref=f30e52] [cursor=pointer]
+      - generic [ref=f30e58]:
+        - button "Google apps" [ref=f30e60] [cursor=pointer]
+        - link "Sign in" [ref=f30e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dland%2Brecords%2Bdigitization%2Bfraud%2BIndia%2Bdigital%2Bland%2Bgrab%2Btampering&ec=futura_srp_og_si_72236_p
+  - generic [ref=f30e68]:
+    - navigation [ref=f30e74]:
+      - generic [ref=f30e80]:
+        - list [ref=f30e81]:
+          - listitem [ref=f30e82]:
+            - link "AI Mode" [ref=f30e85] [cursor=pointer]:
+              - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q2J8OegQIExAD
+          - listitem [ref=f30e89]:
+            - link "All" [disabled] [ref=f30e90]
+          - listitem [ref=f30e93]:
+            - link "News" [ref=f30e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+grab+tampering&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q0pQJegQIGBAB
+          - listitem [ref=f30e97]:
+            - link "Videos" [ref=f30e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&q=land+records+digitization+fraud+India+digital+land+grab+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8QtKgLegQIFxAB
+          - listitem [ref=f30e101]:
+            - link "Forums" [ref=f30e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&q=land+records+digitization+fraud+India+digital+land+grab+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Qs6gLegQIGhAB
+          - listitem [ref=f30e105]:
+            - link "Images" [ref=f30e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&q=land+records+digitization+fraud+India+digital+land+grab+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8QtKgLegQIFRAB
+          - listitem [ref=f30e109]:
+            - link "Short videos" [ref=f30e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzIy1akcLNTbXV40dDKOsn-TP9aVxnohrEtRo-DDChMtL1V0EmklHc55W7wQ-_7Vs9suONw6zZBopBsFTjnSMjPl5jgYId-W8fqxyFYn5gqS5LBWDxEV_1iCCdie8xmaWnxHUc3pFqzw1GRpuJl90KscaaPTJVz-7ZmM4pZh97iHI60vMw&q=land+records+digitization+fraud+India+digital+land+grab+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Qs6gLegQIGRAB
+          - listitem [ref=f30e113]:
+            - button [ref=f30e114] [cursor=pointer]:
+              - generic "More filters" [ref=f30e115]: More
+        - button "Tools" [ref=f30e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f30e129]
+    - generic [ref=f30e134]:
+      - generic [ref=f30e153]:
+        - heading "Thinking" [level=2] [ref=f30e157]
+        - progressbar "Generating" [ref=f30e160]
+      - main [ref=f30e162]:
+        - generic [ref=f30e166]:
+          - generic [ref=f30e169]:
+            - heading "Web results" [level=2] [ref=f30e170]
+            - generic [ref=f30e171]:
+              - generic [ref=f30e174]:
+                - link "A Critical Legal Analysis Of Property Fraud In India Indian Journal of Law and Legal Research - IJLLR https://www.ijllr.com › post › from-paper-titles-to-digit..." [ref=f30e176] [cursor=pointer]:
+                  - /url: /goto?url=CAESrAEB6zswFf0b9Jnsj0cfqynzyWf0V7-kvvH89oPFj2ywI_-U51_0JSdzaBgd9lqRd-0UDrz0Y7WJkJDYh0NxlmDURqbdTXosWqtzcDer6xAToG72AqGzXIyvFunaq2Xjg4JaJ7Fclr8KVKljwYEbTy_ta0HJoVkGHsAyuc88epY9a_kv9o7BDOfDwBCuJI7d-E7lAJkD_sK0sytDWqDTqmXkjKc9cMjWF3lPcV3G
+                  - heading "A Critical Legal Analysis Of Property Fraud In India" [level=3] [ref=f30e177]
+                  - generic [ref=f30e183]:
+                    - generic [ref=f30e184]: Indian Journal of Law and Legal Research - IJLLR
+                    - generic [ref=f30e186]: https://www.ijllr.com › post › from-paper-titles-to-digit...
+                - button "About this result" [ref=f30e192] [cursor=pointer]
+              - generic [ref=f30e198]:
+                - generic [ref=f30e199]: 15 Jun 2026 —
+                - generic [ref=f30e200]:
+                  - text: This paper critically examines whether these technology-driven systems effectively reduce
+                  - emphasis [ref=f30e201]: property fraud
+                  - text: traditionally manifested through title ...
+                - link "Read more" [ref=f30e202] [cursor=pointer]:
+                  - /url: /goto?url=CAESmQIB6zswFcrevyVyQfflH4440C3RGpdzmVFkdtRHRwdt5AJoJA4Z80p0SByynh0-mVLupiBbJ3X0cfBI7MD0Xgb_4j0vBsb68DE_k-l59clHoKtWxMPz6SevPqJhcBoJSa7M7t_0Yh4mYnKAzBb_2bjZsne5lloLcbXsms9WlTw6jEH1y5NbI0eDUUPhxmfYqQX2f6zF99b-0oIRT2HptwUrzECJIPGEOdAA3Tr4MRO0u1UCtRhWtorT_NLMRiSP_vvi_9GGHj7CfpSN6PuFwcoEq5l3Jlyo8h5u8YI5QPyLHhAZwvi_ZNF36ZrUKqS-IV5700nNODVFih32pQQDR4CmulCQ9BeII2OMMozHlsHlPvHhquYsamsSmA
+              - generic [ref=f30e204]:
+                - text: "Missing: grab ‎| Show results with:"
+                - link "grab" [ref=f30e205] [cursor=pointer]:
+                  - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+%22grab%22+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q5t4CegQIHBAB
+          - generic [ref=f30e209]:
+            - generic [ref=f30e212]:
+              - link "Supreme Court Suggests Digitizing Land Records... LawSathi https://lawsathi.in › Blog" [ref=f30e214] [cursor=pointer]:
+                - /url: /goto?url=CAESyAEB6zswFX1tD1A4i1LrdAWadSk82gpHryGm3gDa7zkGqTjM_-iKYp2dwvrfnFGHuf3ujyvvJVOlBzut-7cZxb2ITT4He_JJxfsKkHByV0cqB0mrB0V6082dNbiI74wFgeJ11pcBLNhQnoliTYTwOFjw516QiHPscBGj1WhdfW2d0HPEl-LNkcCitE-uMVELLl7SYDwg_tQmhpdVdqLVToUlS5seATrLA70D6zLXSOTMfVn8nR3ydqybZ_cSfft3wPUzxJlOGW-06w
+                - heading "Supreme Court Suggests Digitizing Land Records..." [level=3] [ref=f30e215]
+                - generic [ref=f30e221]:
+                  - generic [ref=f30e222]: LawSathi
+                  - generic [ref=f30e224]: https://lawsathi.in › Blog
+              - button "About this result" [ref=f30e230] [cursor=pointer]
+            - generic [ref=f30e236]:
+              - generic [ref=f30e237]: 24 Jan 2026 —
+              - generic [ref=f30e238]:
+                - text: In fact, despite these updates,
+                - emphasis [ref=f30e239]: fraud
+                - text: remains common. The Supreme Court cited instances where sales are registered without verifying the ...
+              - link "Read more" [ref=f30e240] [cursor=pointer]:
+                - /url: /goto?url=CAESsgIB6zswFY4mUwQIdOVyTEbg9W98pK-7M5pQDwm5HuV41B2NJFcnNfoL2_UOIwYH2f2K0SST_ZYhnxHss-1AyO95aTzUR1BVVVbG6vRe5OxmjAFU_0yVeyVRuOnBrkmxd1cTeSlCyTnbE2HkMhYz_lbPuD2epdK1ZA3B3nYlt1YF4A5rZijpi0GmMrrcj2_4r-LwoLjkjpYWJb82sba9vzLZ2y8c0rKxoBRmPBO7GfhT7671NREz8uJsLWr09pin8mreYuthDZ0F68825ewxe0GnYMYGGNmoyAvgKpdWpDexp0FbQjtyBA-5qwhvla--0gg7Z6pTIT29bKWDmhNe3s_1v60Iivt1X4l2woGINlXAXouZdkpUDoY-5halpfKIxtagxwjD39yXc9PneUMDOyADcoA
+            - generic [ref=f30e242]:
+              - text: "Missing: grab ‎| Show results with:"
+              - link "grab" [ref=f30e243] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+%22grab%22+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q5t4CegQIMRAB
+          - generic [ref=f30e247]:
+            - generic [ref=f30e250]:
+              - link "How digital land records are helping tackle property fraud ... The Times of India https://timesofindia.indiatimes.com › news › articleshow" [ref=f30e252] [cursor=pointer]:
+                - /url: /goto?url=CAES1QEB6zswFfCXiPh5WrplBt6IpTKslV0_goIbzOpZjDpVzasdXT1mCRtdfSj1YNf-hEzcj_jaBvjPSL5iMNFizX89zrvu7CIkcJzv789oO8XSH8oqRCZdDdMGfDNtNwGgbRTZ-fB1soV85gQAfXc0qz9HDZrHnV-IlblAe4Y_tLI9_Nq6n_Z0pEernRMBBzCHFnK5CYiREbUYOROc3ZltnBzdy-GJ9XV6MXzWn6fslnmyn--jJ8tLphW-EenvRXTLIYyATbOltgiMaDx3zbdtaiXRCdDwZSo
+                - heading "How digital land records are helping tackle property fraud ..." [level=3] [ref=f30e253]
+                - generic [ref=f30e259]:
+                  - generic [ref=f30e260]: The Times of India
+                  - generic [ref=f30e262]: https://timesofindia.indiatimes.com › news › articleshow
+              - button "About this result" [ref=f30e268] [cursor=pointer]
+            - generic [ref=f30e274]:
+              - generic [ref=f30e275]: 4 Jul 2026 —
+              - generic [ref=f30e276]:
+                - emphasis [ref=f30e277]: Digital land records
+                - text: play a significant role in reducing
+                - emphasis [ref=f30e278]: property fraud
+                - text: . They help check fraudulent transactions, identify
+                - emphasis [ref=f30e279]: property
+                - text: locations, ...
+              - link "Read more" [ref=f30e280] [cursor=pointer]:
+                - /url: /goto?url=CAESuAIB6zswFXpmgF3KzAZPZWTOH3uZEvf6Ti2T9CRAxvLqRlnU-9Nv_Beh0WtL5IRJcMnNwH_ET_VjnCJDCSsnpT-jNpVi_YOmvJkoL0vv_ntrDOs3hws8XvelegfJPS3B2Ivk8_Cg5cNefcNAkh_gaNDsGGNV_y948hJfhTocLdYLDtY2sVJ00S3mAjppiv-FosDVDBg40QvrhXrB-677Z-_U90vgCa25yLykawdcGsJMHd_mPANX2P1rF3UJXcT6BtdZF9aP68jXTQvlYH-9Y7Vl3CDT2lNBEOzYCgssnp6Vr0AEDlmD2XV33MJ5Q0bok8mCW5O7wcRYjCEIi_u46D6JfoPxlMgHnl6T7OmxbMJ5UdpmJ5f56x1xDWtN3gWrkOXcd7iCGH30O4mgcMmKeJJmJLk695RnHAY
+            - generic [ref=f30e281]: "Missing: grab ‎tampering"
+          - generic [ref=f30e286]:
+            - generic [ref=f30e288]:
+              - heading "Videos" [level=2] [ref=f30e289]
+              - button "About this result" [ref=f30e294] [cursor=pointer]
+            - generic [ref=f30e300]:
+              - generic [ref=f30e307]:
+                - generic [ref=f30e308]:
+                  - link [ref=f30e310] [cursor=pointer]:
+                    - /url: /goto?url=CAESfQHrOzAVfTmW8HARb5n9ww7cvYQJgNYKRLrJtyOnG0xxEtpdrVMzrP0KQfte340_1miBDAvsYRIvHrFb4eiWFmAETVxDTk-VEqzw3OvupIf06jvfsrKXeMWXRDC8kEYwuRXzLXJ6-l03HrS3xScr6aZGJMXIuRAKrvUqkTM4
+                    - heading "Land Fraud To Face A Major Check As 99% RoR Records Are ... YouTube OTV 1 week ago" [level=3] [ref=f30e311]:
+                      - generic [ref=f30e312]: Land Fraud To Face A Major Check As 99% RoR Records Are ...
+                      - generic [ref=f30e316]:
+                        - generic [ref=f30e317]:
+                          - text: YouTube
+                          - generic [ref=f30e318]: · OTV
+                        - generic [ref=f30e319]: 1 week ago
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]:
+                            - text: YouTube
+                            - generic: · OTV
+                      - button "About this result" [ref=f30e323] [cursor=pointer]
+                - button "Land Fraud To Face A Major Check As 99% RoR Records Are ... by OTV on YouTube. Play on Google. 0:57" [ref=f30e328] [cursor=pointer]:
+                  - generic [ref=f30e338]: 0:57
+              - generic [ref=f30e348]:
+                - generic [ref=f30e349]:
+                  - link [ref=f30e351] [cursor=pointer]:
+                    - /url: /goto?url=CAESoQMB6zswFZHDIg0XJrQ3Qc-bbNVavEvc7iv9Olf8xfxctiZLqhyRVYtZ4fWTmGVB8QxnoQDc0hXvoTwHItEP8ApjLTnmLh1cyr63UZBSzG1NA1Ip61uuAtUMe6mkYMDQw-EYsQuGC2uBHRFn9IKBT_BOUTVkIbenZ8lyT3YSnlLKYMm3wIDcHKAWI2IEcf8yc8ZhJOzY0PHJFVjjenLLJTrF0Jo8DmxvoF8c2WecpXT8VaXKRgS9hpR2wynok8LLnKLLT0FbG5QzNOahIqeigpdsf2rrBPOVfDvxhDMdyNqHLbHGThJFn7FfGm40gnMeksHy3Q6rsTHqVZyl_fUPDfgpEFTRYUU0rBpN1IEjf6_fPdXfKBEq_wC-qj8vKYr4Y2s5l_7mA7ZOJ4jy8965V6FYg-mdQGFvTBwEC66wfa8XE6JcidVaesSes22WomFoQMoCTMtrx9YBoHK8g6JJTveeIpAOj7iCmgMM9P4Np_r9t39HmNCQrxAAFIK2rFBp3AHI46bwQd2vh12Q3o9gFXcfKnMP3RDdYe4tjBmmrd7sf0I
+                    - 'heading "The New Face of Land Grabbing: भारत की सबसे खतरनाक ... Facebook Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್ 22 Jun 2026" [level=3] [ref=f30e352]':
+                      - generic [ref=f30e353]: "The New Face of Land Grabbing: भारत की सबसे खतरनाक ..."
+                      - generic [ref=f30e357]:
+                        - generic [ref=f30e358]:
+                          - text: Facebook
+                          - generic [ref=f30e359]: · Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್
+                        - generic [ref=f30e360]: 22 Jun 2026
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]:
+                            - text: Facebook
+                            - generic: · Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್
+                      - button "About this result" [ref=f30e364] [cursor=pointer]
+                - 'link "The New Face of Land Grabbing: भारत की सबसे खतरनाक ... by Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್ on Facebook. Play on Facebook. 0:35" [ref=f30e369] [cursor=pointer]':
+                  - /url: /goto?url=CAESoQMB6zswFZHDIg0XJrQ3Qc-bbNVavEvc7iv9Olf8xfxctiZLqhyRVYtZ4fWTmGVB8QxnoQDc0hXvoTwHItEP8ApjLTnmLh1cyr63UZBSzG1NA1Ip61uuAtUMe6mkYMDQw-EYsQuGC2uBHRFn9IKBT_BOUTVkIbenZ8lyT3YSnlLKYMm3wIDcHKAWI2IEcf8yc8ZhJOzY0PHJFVjjenLLJTrF0Jo8DmxvoF8c2WecpXT8VaXKRgS9hpR2wynok8LLnKLLT0FbG5QzNOahIqeigpdsf2rrBPOVfDvxhDMdyNqHLbHGThJFn7FfGm40gnMeksHy3Q6rsTHqVZyl_fUPDfgpEFTRYUU0rBpN1IEjf6_fPdXfKBEq_wC-qj8vKYr4Y2s5l_7mA7ZOJ4jy8965V6FYg-mdQGFvTBwEC66wfa8XE6JcidVaesSes22WomFoQMoCTMtrx9YBoHK8g6JJTveeIpAOj7iCmgMM9P4Np_r9t39HmNCQrxAAFIK2rFBp3AHI46bwQd2vh12Q3o9gFXcfKnMP3RDdYe4tjBmmrd7sf0I
+                  - generic [ref=f30e376]: 0:35
+              - generic [ref=f30e382]:
+                - generic [ref=f30e383]:
+                  - link [ref=f30e385] [cursor=pointer]:
+                    - /url: /goto?url=CAESoQMB6zswFc80R0FF62rt-7qcXN2cUuSIFboZOjqHCqQ4DFGy3ITT4Lqe4CxlJUAPwLakSx60l2jwLR9Yt_ypoIE5F9toOYPT-dWAGHgeMiNkzf-C0wAoIGINhUFrxzOF3uKE1_RNP7gsughfJvNgtEcpTbDm9lZXc37rM3c47lSuppf8aMiYFngYtPWzaMHs5v9Yjgpbr6MW0lIeFeJ70iYeOjsJUsyLOrBTGoPTZQrOPwkV7wexubnW_9tXBgQYcYSHe3y4oVA8DRZ94rDH2YRL4crVx-JB0O7TirqSf3rfPuNAWN2GOC0ne-dygRZ3_XqiHkFTUvlixyaATkib3JKdG4teDCsidzKAxpy5jN-qBXjjesEUbCdYW4zi-u5jdo6oOWXJhRX-8xXxZSjz84pUesX806WbO1Wd26xbh_fk4pyPEIz5_WjFMR_RAErbvVb-ZGdlk6Fvigr7p93smlQa0sy5Lnsze6hbE3Y0bscJpP161JLd_wgQJZ1Nbh2F9JTW9F5vMDTrCwlBPXxjCE5pzjHueWZP9Q8O5uIzlN9eBeM
+                    - 'heading "The New Face of Land Grabbing: भारत की सबसे खतरनाक ... Facebook Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್ 22 Jun 2026" [level=3] [ref=f30e386]':
+                      - generic [ref=f30e387]: "The New Face of Land Grabbing: भारत की सबसे खतरनाक ..."
+                      - generic [ref=f30e391]:
+                        - generic [ref=f30e392]:
+                          - text: Facebook
+                          - generic [ref=f30e393]: · Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್
+                        - generic [ref=f30e394]: 22 Jun 2026
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]:
+                            - text: Facebook
+                            - generic: · Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್
+                      - button "About this result" [ref=f30e398] [cursor=pointer]
+                - 'link "The New Face of Land Grabbing: भारत की सबसे खतरनाक ... by Sakhib Hussain ಸಾಖಿಬ್ ಹುಸೇನ್ on Facebook. Play on Facebook. 0:22" [ref=f30e403] [cursor=pointer]':
+                  - /url: /goto?url=CAESoQMB6zswFc80R0FF62rt-7qcXN2cUuSIFboZOjqHCqQ4DFGy3ITT4Lqe4CxlJUAPwLakSx60l2jwLR9Yt_ypoIE5F9toOYPT-dWAGHgeMiNkzf-C0wAoIGINhUFrxzOF3uKE1_RNP7gsughfJvNgtEcpTbDm9lZXc37rM3c47lSuppf8aMiYFngYtPWzaMHs5v9Yjgpbr6MW0lIeFeJ70iYeOjsJUsyLOrBTGoPTZQrOPwkV7wexubnW_9tXBgQYcYSHe3y4oVA8DRZ94rDH2YRL4crVx-JB0O7TirqSf3rfPuNAWN2GOC0ne-dygRZ3_XqiHkFTUvlixyaATkib3JKdG4teDCsidzKAxpy5jN-qBXjjesEUbCdYW4zi-u5jdo6oOWXJhRX-8xXxZSjz84pUesX806WbO1Wd26xbh_fk4pyPEIz5_WjFMR_RAErbvVb-ZGdlk6Fvigr7p93smlQa0sy5Lnsze6hbE3Y0bscJpP161JLd_wgQJZ1Nbh2F9JTW9F5vMDTrCwlBPXxjCE5pzjHueWZP9Q8O5uIzlN9eBeM
+                  - generic [ref=f30e410]: 0:22
+            - link "View all videos" [ref=f30e414] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&udm=vids&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+grab+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8ccDKAJ6BAg4EAU
+              - separator [aria-hidden] [ref=f30e415]
+              - generic [ref=f30e416]: View all
+          - generic [ref=f30e423]:
+            - heading "Web results" [level=2] [ref=f30e424]
+            - generic [ref=f30e425]:
+              - generic [ref=f30e428]:
+                - link "SANJAY SHARMA's Post - Land Records Digitisation LinkedIn · SANJAY SHARMA 50+ reactions · 1 year ago" [ref=f30e430] [cursor=pointer]:
+                  - /url: /goto?url=CAESugEB6zswFVFVdk3sPhctpmJ6kGpw-P2NDmZLvFIR5XDal-g8Vtj6Wj9XCnDr8mZ7EnKBmKzEi-PmwAc7TaxKgmbH1tudzJaEc-lh6jN7J22xnUjYrWCYhdcGE-7PD7LgdQG9_pFcTVw8ja5QmSvkbUkA6H-wjbwqRCBpX4QjsttmavDLXQPJ6EANhXdrJGprX8dm4rmviylqT_oopYf_IYUUkbNBKKBlptO8m_Sx7rbXUKxmDQhbIdR6kZk
+                  - heading "SANJAY SHARMA's Post - Land Records Digitisation" [level=3] [ref=f30e431]
+                  - generic [ref=f30e437]:
+                    - generic [ref=f30e438]: LinkedIn · SANJAY SHARMA
+                    - generic [ref=f30e440]: 50+ reactions · 1 year ago
+                - button "About this result" [ref=f30e446] [cursor=pointer]
+              - generic [ref=f30e452]:
+                - generic [ref=f30e453]:
+                  - emphasis [ref=f30e454]: Land Records Digitisation
+                  - text: ": A Hidden Weapon Against"
+                  - emphasis [ref=f30e455]: Land
+                  - text: related Banking
+                  - emphasis [ref=f30e456]: Fraud
+                  - text: ": ... In contrast,"
+                  - emphasis [ref=f30e457]: digital
+                  - text: /card/internet
+                  - emphasis [ref=f30e458]: frauds
+                  - text: — though 56% of ...
+                - link "Read more" [ref=f30e459] [cursor=pointer]:
+                  - /url: /goto?url=CAESrwIB6zswFY7x6Tpp1zv3RRJa8diX9r85-T24M3-c_EXkSO_CainxsEasFGbLSvj7oDb8FtdQOgU4s1Z6yMzwWplRw2cel27xPMoNdaZOvqvmb_13ivdZZA7jEfcR47X5pIbwkELx3aW2s3uQAN_ObggxipQMFC8ij536P1xdxzjAwAO8FhsbeTyQm1JUcn6IaGfo-yDQ0z_e-ivjTnrb20jnIpAwpThb6nlVlnNLMPgTzn_ugogo5fBKz34XWYg0fR_9y8RrWhvaAfU6uDu8aYlR1qFsHViIkRw7r33wWWel2uvbKF6AunaavRMl_ZNG3-GIesDa7WSOUPdP3QRwov181DPdfeAxbh3Mdwj_rxlj8YO78hd_tNLfHi2wtHVE72lVG0QcnhFM1LFinSMLGRc
+          - generic [ref=f30e463]:
+            - generic [ref=f30e466]:
+              - link "Protecting digital land records from fraud and data breaches vistas.ac.in https://ir.vistas.ac.in › eprint" [ref=f30e468] [cursor=pointer]:
+                - /url: /goto?url=CAESYAHrOzAVBE39zxsxEb3n0uU4PgExs_-0F2VGcS7-pqTjpGtqwgLOFX2j6Q30Duunk-C8smq1yxnbDyUjYrS_F3sGfOsehjlc2hRGzZIX9qo_63UOMMD9kGC2OB-jZulR2A
+                - heading "Protecting digital land records from fraud and data breaches" [level=3] [ref=f30e469]
+                - generic [ref=f30e475]:
+                  - generic [ref=f30e476]: vistas.ac.in
+                  - generic [ref=f30e478]: https://ir.vistas.ac.in › eprint
+              - button "About this result" [ref=f30e484] [cursor=pointer]
+            - generic [ref=f30e490]:
+              - generic [ref=f30e491]: 11 May 2026 —
+              - generic [ref=f30e492]:
+                - text: This paper discusses measures to protect
+                - emphasis [ref=f30e493]: digital land records
+                - text: from
+                - emphasis [ref=f30e494]: fraud
+                - text: and breaches. Ultimately,
+                - emphasis [ref=f30e495]: digitalization
+                - text: must balance efficiency with ...
+              - link "Read more" [ref=f30e496] [cursor=pointer]:
+                - /url: /goto?url=CAESxAEB6zswFeOvahiCBpO3Qr1nJ2hb6T93A9nRbm09tb4L1OeVryDioFHULkAu5mlbY3ulvb035K2mSdvH0jUr17ANv5nTE__SHhsOHT230_4iVSgHcUTdhp9ZcXSBVDnFuxQMpCfHUuKxIPekRetb3bx7uXANGACuAOlaHcwLurU-fqvvSk5omRKmDlU2Sa3fjJaPduJ1nUlBxnR7adaOjR8ixU7FdQzDyQ5y2ICEV3QC64edg_IBzeRrlDdWXLCprGTqEkBQ
+          - generic [ref=f30e500]:
+            - generic [ref=f30e503]:
+              - link "Is land digitisation enough? Vidhi Centre for Legal Policy https://vidhilegalpolicy.in › blog › is-land-digitisation-en..." [ref=f30e505] [cursor=pointer]:
+                - /url: /goto?url=CAESdQHrOzAVuOeQKS2fkoTViYUnVkFH_iuLg3kD2kFlQz1kXEzPBey8jaiNkqSYAV9jWNZdLllrj1l5yCwrAsLvXE0yk9vTq3Q7ipx4qp9BmX_7_OKFdLVI7_Gqmq2R1U-MeOo24PYWC3Io-JEqA9A3Mj-TdobJIg
+                - heading "Is land digitisation enough?" [level=3] [ref=f30e506]
+                - generic [ref=f30e512]:
+                  - generic [ref=f30e513]: Vidhi Centre for Legal Policy
+                  - generic [ref=f30e515]: https://vidhilegalpolicy.in › blog › is-land-digitisation-en...
+              - button "About this result" [ref=f30e521] [cursor=pointer]
+            - generic [ref=f30e527]:
+              - generic [ref=f30e528]: 25 Jul 2025 —
+              - generic [ref=f30e529]:
+                - text: Ownership verification is made more difficult by inconsistent
+                - emphasis [ref=f30e530]: records
+                - text: and
+                - emphasis [ref=f30e531]: fraud
+                - text: ", such as Benami transactions, which leads to arduous legal ..."
+              - link "Read more" [ref=f30e532] [cursor=pointer]:
+                - /url: /goto?url=CAES0wEB6zswFe6mJDnhnO0z2mh95ebhjTxcE2tV1ejL6VpgciGXK7Z_FiBeBVgtiboxB0W6ESf_GDiLOs3CnT2E4EYt1zrTfjnN2tVIAhJeG9T3Mb4x7t4os1GoERPQ_xw3nBlKLtCq7dOHKZVcbHVHow9EzHrO5tG_3qsfeqPqaQDOsqIJbVzCU_vjqevP7h-AFw1n0-dz1Xub81IgdtpUt5P4NrKGu4K2fJkeftDgZfDEM40z5E6RzN6Bw8IgysG3Zeqp_qFpQ7lR5pv6IgLaxTZW8MJj
+            - generic [ref=f30e534]:
+              - text: "Missing: grab ‎| Show results with:"
+              - link "grab" [ref=f30e535] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+%22grab%22+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q5t4CegQIPxAB
+          - generic [ref=f30e539]:
+            - generic [ref=f30e542]:
+              - link "IMPACT OF DIGITALIZATION ON PROPERTY ... ILE Property and Land Law Review https://pllr.iledu.in › uploads › 2024/12" [ref=f30e544] [cursor=pointer]:
+                - /url: /goto?url=CAEScgHrOzAVsYrcNmePZuV2J0nW6ojcIxjfaO0VM2IW9R6gqitvqDgMsfy1dZ31GmF_mJP-fTmgdAasTRgsBGCbKZTjgZkuDd5UVlkepomOVmXu4u6vmZ-Ic6QKXsZtKc7MFZHvDwLvMznvQMx1JiuGMiqITA
+                - heading "IMPACT OF DIGITALIZATION ON PROPERTY ..." [level=3] [ref=f30e545]
+                - generic [ref=f30e551]:
+                  - generic [ref=f30e552]: ILE Property and Land Law Review
+                  - generic [ref=f30e554]: https://pllr.iledu.in › uploads › 2024/12
+              - generic [ref=f30e556]: PDF
+              - button "About this result" [ref=f30e561] [cursor=pointer]
+            - generic [ref=f30e566]:
+              - generic [ref=f30e567]:
+                - generic [ref=f30e568]:
+                  - text: E-
+                  - emphasis [ref=f30e569]: registration
+                  - text: ","
+                  - emphasis [ref=f30e570]: digital
+                  - text: signatures, online title verification, and the
+                  - emphasis [ref=f30e571]: digitization
+                  - text: of
+                  - emphasis [ref=f30e572]: land records
+                  - text: have reduced
+                  - emphasis [ref=f30e573]: fraud
+                  - text: ", increased the speed of transactions, and ..."
+                - link "Read more" [ref=f30e574] [cursor=pointer]:
+                  - /url: /goto?url=CAESwwEB6zswFXVKizo7LOedG7ZBGGkIalCdrpihSqacKzW2xi11KIPwMG0aJm4c77u6rUY989CNclUe1OqDhD9nvnq1WvzmRzsOmmP35ntjFPy89GBs32byruO3ieeOKZD1uf1pyzGUjI6Ij2QswkE6N306EzJZfA77Zw5E65iCCLc4RJOC4S_yIJM6B5PGeTIgnljGHzRgNAT0rNPC01i7x5JU_0VgWLqI2nMHk_AFh79eEIY_Sg1Ip1ReveMjsfol3GiEcmM
+              - generic [ref=f30e575]: 8 pages
+            - generic [ref=f30e577]:
+              - text: "Missing: grab ‎| Show results with:"
+              - link "grab" [ref=f30e578] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+%22grab%22+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q5t4CegQIPBAB
+          - generic [ref=f30e582]:
+            - generic [ref=f30e585]:
+              - link "Digitization of Land Records and Impact on Disputes in ... Advocate Chenoy Ceil https://advocatechenoyceil.com › 2020/03/05 › digitizat..." [ref=f30e587] [cursor=pointer]:
+                - /url: /goto?url=CAESnwEB6zswFUu9fRQ5zYDzNPwTxiJSyQBA9vsd1WuNbRX6Q8PKd-LXljvmShwNb-Dirol8_HGKoV33juRlGZ02WVIFKbapirOhrgXWuWAHz1ik6sxutajFrzQpVvEBeLnlAiUOg5qxO7ajmUXptvM7ZXA1uOgDg6t8Sz6P7vhWvgS4F6lS2seGSzFM60CoBdOuEhH3OoVqbjyDKa7jTEIRlUg
+                - heading "Digitization of Land Records and Impact on Disputes in ..." [level=3] [ref=f30e588]
+                - generic [ref=f30e594]:
+                  - generic [ref=f30e595]: Advocate Chenoy Ceil
+                  - generic [ref=f30e597]: https://advocatechenoyceil.com › 2020/03/05 › digitizat...
+              - button "About this result" [ref=f30e603] [cursor=pointer]
+            - generic [ref=f30e609]:
+              - generic [ref=f30e610]: 5 Mar 2020 —
+              - generic [ref=f30e611]:
+                - emphasis [ref=f30e612]: Digitization
+                - text: of
+                - emphasis [ref=f30e613]: land records
+                - text: has become one of the main objectives of the government to check
+                - emphasis [ref=f30e614]: fraud
+                - text: in
+                - emphasis [ref=f30e615]: property
+                - text: "-related cases."
+            - generic [ref=f30e617]:
+              - text: "Missing: grab ‎| Show results with:"
+              - link "grab" [ref=f30e618] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&q=land+records+digitization+fraud+India+digital+land+%22grab%22+tampering&sa=X&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q5t4CegQIPhAB
+        - navigation [ref=f30e621]:
+          - heading "Page navigation" [level=1] [ref=f30e622]
+          - text: "1"
+          - link "Page 2" [ref=f30e625] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=10&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAE
+            - text: "2"
+          - link "Page 3" [ref=f30e627] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=20&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAG
+            - text: "3"
+          - link "Page 4" [ref=f30e629] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=30&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAI
+            - text: "4"
+          - link "Page 5" [ref=f30e631] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=40&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAK
+            - text: "5"
+          - link "Page 6" [ref=f30e633] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=50&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAM
+            - text: "6"
+          - link "Page 7" [ref=f30e635] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=60&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAO
+            - text: "7"
+          - link "Page 8" [ref=f30e637] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=70&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAQ
+            - text: "8"
+          - link "Page 9" [ref=f30e639] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=80&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAS
+            - text: "9"
+          - link "Page 10" [ref=f30e641] [cursor=pointer]:
+            - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=90&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8tMDegQIHxAU
+            - text: "10"
+          - heading [level=2] [ref=f30e643]:
+            - link "Next" [ref=f30e644] [cursor=pointer]:
+              - /url: /search?q=land+records+digitization+fraud+India+digital+land+grab+tampering&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntYsea4rt2yNglJBxRiUeIEDcMlQw:1789982515619&ei=M_ewavezJc-RnesP39OX-QI&start=10&sa=N&sstk=AS6-VmK7TBmKKUN3QDatByiQv8bcWbbN3qjDO6hVai9sqc1cqfy0vJnamw4LVLSMktl2-wany91-vOo_Db_LOiI0w9xRZlzv9FMp3g&ved=2ahUKEwi3mf2_rP-WAxXPSGcHHd_pJS8Q8NMDegQIHxAW
+        - navigation
+    - contentinfo [ref=f30e647]:
+      - heading "Footer links" [level=1] [ref=f30e648]
+      - generic [ref=f30e652]:
+        - generic [ref=f30e654]:
+          - text: India
+          - generic [ref=f30e656]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - From your IP address" [ref=f30e658] [cursor=pointer]:
+              - generic [ref=f30e659]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=f30e661]:
+                - text: "-"
+                - generic [ref=f30e662]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f30e664] [cursor=pointer]
+        - generic [ref=f30e667]:
+          - link "Help" [ref=f30e668] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f30e669] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f30e670] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f30e671] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

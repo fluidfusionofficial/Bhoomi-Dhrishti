@@ -1,0 +1,301 @@
+- generic [active] [ref=f17e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f17e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f17e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f17e8]:
+    - search [ref=f17e9]:
+      - generic [ref=f17e11]:
+        - link "Go to Google Home" [ref=f17e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQPHoECAYQBA
+        - generic [ref=f17e21]:
+          - generic [ref=f17e22]:
+            - combobox "Search" [ref=f17e25]: India land disputes court cases backlog civil cases percentage India land disputes court cases backlog civil cases percentage
+            - generic [ref=f17e26]:
+              - button "Clear" [ref=f17e28] [cursor=pointer]
+              - generic [ref=f17e33]:
+                - button "Search by voice" [ref=f17e34] [cursor=pointer]
+                - button "Search by image" [ref=f17e37] [cursor=pointer]
+          - button "Search" [ref=f17e40] [cursor=pointer]
+    - generic [ref=f17e45]:
+      - button "Settings" [ref=f17e47] [cursor=pointer]
+      - button "Share" [ref=f17e52] [cursor=pointer]
+      - generic [ref=f17e58]:
+        - button "Google apps" [ref=f17e60] [cursor=pointer]
+        - link "Sign in" [ref=f17e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DIndia%2Bland%2Bdisputes%2Bcourt%2Bcases%2Bbacklog%2Bcivil%2Bcases%2Bpercentage&ec=futura_srp_og_si_72236_p
+  - generic [ref=f17e68]:
+    - navigation [ref=f17e74]:
+      - generic [ref=f17e80]:
+        - list [ref=f17e81]:
+          - listitem [ref=f17e82]:
+            - link "AI Mode" [ref=f17e85] [cursor=pointer]:
+              - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ2J8OegQIExAD
+          - listitem [ref=f17e89]:
+            - link "All" [disabled] [ref=f17e90]
+          - listitem [ref=f17e93]:
+            - link "News" [ref=f17e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&q=India+land+disputes+court+cases+backlog+civil+cases+percentage&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ0pQJegQIGhAB
+          - listitem [ref=f17e97]:
+            - link "Forums" [ref=f17e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQs6gLegQIFxAB
+          - listitem [ref=f17e101]:
+            - link "Images" [ref=f17e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQtKgLegQIFhAB
+          - listitem [ref=f17e105]:
+            - link "Shopping" [ref=f17e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=India+land+disputes+court+cases+backlog+civil+cases+percentage&ved=1t:220175&ictx=111
+          - listitem [ref=f17e109]:
+            - link "Videos" [ref=f17e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ33TJTgGUSXMPMOdfjOY7e2Q30AopdyVXXfWdu5WnLoZpdMFWVURTY5I2n8dJLm7dR0vrPXatW3_GpGBwWsVmgDyXSroLXaj4nxeWEQNyufndIirE5sDOZkwfdjAF7oMKIEHiPeRgaTwcW1Qmzu2s-ykHlrY2kDc8gtmzWKMBoLosjtSQw&q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQtKgLegQIGBAB
+          - listitem [ref=f17e113]:
+            - button [ref=f17e114] [cursor=pointer]:
+              - generic "More filters" [ref=f17e115]: More
+        - button "Tools" [ref=f17e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f17e129]
+    - generic [ref=f17e134]:
+      - generic [ref=f17e153]:
+        - heading "Thinking" [level=2] [ref=f17e157]
+        - progressbar "Generating" [ref=f17e160]
+      - main [ref=f17e162]:
+        - generic [ref=f17e166]:
+          - generic [ref=f17e169]:
+            - heading "Web results" [level=2] [ref=f17e170]
+            - generic [ref=f17e171]:
+              - generic [ref=f17e174]:
+                - 'link "Land Disputes in India: 66% of Civil Cases Are Property ... Assetly https://assetlyhq.com › Blog" [ref=f17e176] [cursor=pointer]':
+                  - /url: /goto?url=CAEScQHrOzAVzOZ8-Lu_HQ78JENnm6pgQLP_mY4pT-SzdF0b189jCOwJKzTkpVZp_JusXPJgFPjBw_xctC--oo7QheWPGFT9x3G66YmBqRJ0J93gswGJDzR3rJN654SYMIJMz7R4mexHZH4d2pafy5DeHh6c
+                  - 'heading "Land Disputes in India: 66% of Civil Cases Are Property ..." [level=3] [ref=f17e177]'
+                  - generic [ref=f17e183]:
+                    - generic [ref=f17e184]: Assetly
+                    - generic [ref=f17e186]: https://assetlyhq.com › Blog
+                - button "About this result" [ref=f17e192] [cursor=pointer]
+              - generic [ref=f17e198]:
+                - generic [ref=f17e199]: 17 Mar 2026 —
+                - generic [ref=f17e200]:
+                  - emphasis [ref=f17e201]: 66% of India's civil cases are property disputes
+                  - text: . district courts in India had 4,87,54,355 pending cases when checked. Of these, 1,10,68,892 ...
+          - generic [ref=f17e205]:
+            - generic [ref=f17e208]:
+              - link "Understanding Land Conflict in India and Suggestions for ... Centre for Policy Research https://cprindia.org › understanding-land-conflict-in-in..." [ref=f17e210] [cursor=pointer]:
+                - /url: /goto?url=CAESggEB6zswFTLAaKpg5EOH4ZGO9f_GwAuza-EfWUcHq_ajqhyHWRQ2eO2Cz-tK_HlRxCs-vI4Nl_E1V3c1IgtApJHntLDSXoH2Gnujhge8f8TZiK9ElK__aKf73pa-GMlf7IVGVHZYTj-Epg7fwDbHehIUAarPJR4XX1Z5j9YfxIQs6t8U
+                - heading "Understanding Land Conflict in India and Suggestions for ..." [level=3] [ref=f17e211]
+                - generic [ref=f17e217]:
+                  - generic [ref=f17e218]: Centre for Policy Research
+                  - generic [ref=f17e220]: https://cprindia.org › understanding-land-conflict-in-in...
+              - button "About this result" [ref=f17e226] [cursor=pointer]
+            - generic [ref=f17e233]:
+              - emphasis [ref=f17e234]: Land disputes
+              - text: clog all levels of
+              - emphasis [ref=f17e235]: courts
+              - text: in
+              - emphasis [ref=f17e236]: India
+              - text: ", About 25% of all"
+              - emphasis [ref=f17e237]: cases
+              - text: decided by the Supreme
+              - emphasis [ref=f17e238]: Court
+              - text: involve
+              - emphasis [ref=f17e239]: land disputes
+              - text: ", of which 30% concern"
+              - emphasis [ref=f17e240]: disputes
+              - text: ...
+          - generic [ref=f17e245]:
+            - heading "People also ask" [level=2] [ref=f17e247]
+            - generic [ref=f17e248]:
+              - button "What is the current situation with the court cases backlog in India?" [ref=f17e254] [cursor=pointer]
+              - button "How long do property disputes take in India?" [ref=f17e268] [cursor=pointer]
+              - button "How many civil cases are pending in India?" [ref=f17e282] [cursor=pointer]
+              - button "Can police resolve a land dispute?" [ref=f17e296] [cursor=pointer]
+          - generic [ref=f17e306]:
+            - heading "Web results" [level=2] [ref=f17e307]
+            - generic [ref=f17e308]:
+              - generic [ref=f17e311]:
+                - 'link "Litigation in Land Acquisition: Legal Challenges & Delays Daksh https://dakshindia.org › Justice-Frustrated › litigation-in..." [ref=f17e313] [cursor=pointer]':
+                  - /url: /goto?url=CAESgAEB6zswFV8jJFfx2HzfLM3gqQih_vixbkV2lOAL3UQWYf11U-DLh4WWpFmgcJ7bIz_8nuwekfEIyEn9dOBU4QuiA2_CxVQoP8b2dNgsdU5DzmuMtEO-G6fSPE0dxq74qQElzR3svruR9cboWc3RliEB-qgk138G5Gkmn41U3Rug9Q
+                  - 'heading "Litigation in Land Acquisition: Legal Challenges & Delays" [level=3] [ref=f17e314]'
+                  - generic [ref=f17e320]:
+                    - generic [ref=f17e321]: Daksh
+                    - generic [ref=f17e323]: https://dakshindia.org › Justice-Frustrated › litigation-in...
+                - button "About this result" [ref=f17e329] [cursor=pointer]
+              - generic [ref=f17e335]:
+                - generic [ref=f17e336]:
+                  - text: As on 1 May 2019, the Land Reference cases (under the LAA and the RFCTLARRA) constitute
+                  - emphasis [ref=f17e337]: about 2.38 per cent of all original civil cases
+                  - text: in India, according to ...
+                - link "Read more" [ref=f17e338] [cursor=pointer]:
+                  - /url: /goto?url=CAESzgEB6zswFRxTk7NhQEqH9XaA4OK0GNvUB8OnkyqH1E8fmIZwKwBrh_qsvr94cBVjsDT91LCC3vBWmNvJQkWArkKPhtySNBZeAbVY0uytJPaw3En-QBEGXkl5pHvNXQFMEbcsDBW0Rnn-AkYtUiiXCTluSRACG_NytOW48luDLMo5QawCRn-Fl-cMNZ-vLsurgapKvqfso-eHdUjB0CmaFEeGFWJ6lHJBngVtA927W1Wk__okxUfWPRs9857QgeChvCEV8nKPMS1ZrCI7DwW2mQ
+          - generic [ref=f17e342]:
+            - generic [ref=f17e345]:
+              - link "66 Percent of India's Civil Cases Are Land Disputes, and ... India Crypto Research https://indiacryptoresearch.co.in › learn › blogs › 66-pe..." [ref=f17e347] [cursor=pointer]:
+                - /url: /goto?url=CAESwQEB6zswFeKhN52jQ8MDKhQk1zpzuuYVVrEhndRwweeP11uzfA0jPmB_mcb-V8T7OASXTlTmgFC7pQGyadWSuYug7kN5NVqaXeu0vughYHzunQ-vqbUOR8iiBysMNiv2H75-XK4MbRo5LSzUykWE8sgN-4srX4nNEELq632xMiWiQfKDdwPE2pzOmmgaQIvYCoAE5xWt7kehrfqJAtwhUXySU9zEtU4H1OasRMDAlZzlD4fus-FDm9DI9ceLsrixpQf9
+                - heading "66 Percent of India's Civil Cases Are Land Disputes, and ..." [level=3] [ref=f17e348]
+                - generic [ref=f17e354]:
+                  - generic [ref=f17e355]: India Crypto Research
+                  - generic [ref=f17e357]: https://indiacryptoresearch.co.in › learn › blogs › 66-pe...
+              - button "About this result" [ref=f17e363] [cursor=pointer]
+            - generic [ref=f17e369]:
+              - generic [ref=f17e370]: 20 Mar 2026 —
+              - generic [ref=f17e371]:
+                - text: Land disputes dominate India's legal system, with
+                - emphasis [ref=f17e372]: nearly 66% of civil cases linked to property conflicts
+                - text: . ₹18.5 lakh crore worth of land is ...
+              - link "Read more" [ref=f17e373] [cursor=pointer]:
+                - /url: /goto?url=CAESqAIB6zswFYDYzqIdRggW0ext5XGw-M-lMSOmKI5uUjg8vu88ciV1dlS3yGXACIesJpScMj7H42nR5wlen_33mfrTBk_5NQGYL0bnE2mOBPgLJpRMaMZOobCYItg62NKPJt2J0GDOzkSGxWVIcW-jP9mOVcmQHY_mxsAco6I6F1a1UsLJrHbrPM7sQm-tSFGZ9qJ8BhCPFxXwpVWAW19EU6OOfgN42vRh2kyEre14fi-N4Rmz8qofxHOOruq5M57TapCj0xrQamaNc4iSctRLQ_QnKzVUf6_WLWf9eCxIFbgND9Ry5u1TmGBZLzhEiJK6gpdGN0ebDTN22u7nKlonyWIN7q-jsoExjYV3Fd6UsVLszz8vRoYmRyfL9qzkJG5ow7ffru5-l98eag
+            - generic [ref=f17e375]:
+              - text: "Missing: backlog ‎| Show results with:"
+              - link "backlog" [ref=f17e376] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&q=India+land+disputes+court+cases+%22backlog%22+civil+cases+percentage&sa=X&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ5t4CegQIORAB
+          - generic [ref=f17e380]:
+            - generic [ref=f17e383]:
+              - 'link "Navigating Land Disputes: Types and Resolution Mechanisms thelaw.institute https://thelaw.institute › rural-local-self-governance › la..." [ref=f17e385] [cursor=pointer]':
+                - /url: /goto?url=CAESlwEB6zswFfIPeFs44JoK8neH-mUmTXuT-sGM_Kx-JbyB3Zh5FDuMC05TD8Tk3y9UePLYt7JRR5aWIpc412EQWf0YIiB9WM73nU2BaLxrSVwA_G3vtdzjSlZttZ6Cv5HytwblwE3x-BEwa_X9Tx6VcT9ytIJ8L5-DFLP8aRDjmDzI1Rgpxq8_ba7aIcllJCVC6kaiPBi6GDXj
+                - 'heading "Navigating Land Disputes: Types and Resolution Mechanisms" [level=3] [ref=f17e386]'
+                - generic [ref=f17e392]:
+                  - generic [ref=f17e393]: thelaw.institute
+                  - generic [ref=f17e395]: https://thelaw.institute › rural-local-self-governance › la...
+              - button "About this result" [ref=f17e401] [cursor=pointer]
+            - generic [ref=f17e407]:
+              - generic [ref=f17e408]: 6 Dec 2025 —
+              - generic [ref=f17e409]:
+                - text: According to analysis published in The Print,
+                - emphasis [ref=f17e410]: land disputes account for roughly 66% of all civil cases in India's courts
+                - text: ", and about 25% of all ..."
+              - link "Read more" [ref=f17e411] [cursor=pointer]:
+                - /url: /goto?url=CAES-AEB6zswFfEjSxIfF07ca-9c5BvZ5fYw5-Pq6pVyeILHsWSIQ8TZs_B1A_gkbBhK7RWZ_nWfSivSIea3zr-Du23YWtIMbdK1P_ob0-LJZKM8vvCN3T14bJ3HljAYeYVQLvmZl_wTuFAUd4Y8BsR112v8fdDWlPjGI4UhrzKikx6hhdW42JgKtdmgnHN8_uZR0P7Vi89jAI9Iz2IT2pUQMeupifE-qOMGP3_vIp7XQcl9TLJxjZ896Xaz5-reeCtELijKfwGfH1v5nkwcHwnvWjzKumXayPv5O-IUbbKetE389M_s2Vp7-tIg-_9U6gWx2OBfvrjM6oIaJQ
+          - generic [ref=f17e415]:
+            - generic [ref=f17e418]:
+              - link "Judicial pendency in India Data For India https://www.dataforindia.com › pendency" [ref=f17e420] [cursor=pointer]:
+                - /url: /goto?url=CAESXgHrOzAV57G8h6jn6OPomCmadkMwPQCH-Rogu6KqFrC8XjF-wmF22hEt1zg5ByPyTXqm8xx20DIldn_AzQ0zbE0IzqB_w5Q2go9EqMLzFt-YdtWqz2hcYMY9xJ7Y8Yk
+                - heading "Judicial pendency in India" [level=3] [ref=f17e421]
+                - generic [ref=f17e427]:
+                  - generic [ref=f17e428]: Data For India
+                  - generic [ref=f17e430]: https://www.dataforindia.com › pendency
+              - button "About this result" [ref=f17e436] [cursor=pointer]
+            - generic [ref=f17e442]:
+              - generic [ref=f17e443]: 20 Apr 2026 —
+              - generic [ref=f17e444]:
+                - text: About
+                - emphasis [ref=f17e445]: 23% cases were civil
+                - text: and 77% cases were criminal in nature before the subordinate courts as of March 2026. This is the reverse of the ...
+              - link "Read more" [ref=f17e446] [cursor=pointer]:
+                - /url: /goto?url=CAESsgEB6zswFUrxBuvksNF0gVwe1TpWbyCKcf6g7MFk2xaf67f7bTXw8QJEFLzn38HacOMjDycB_-NpeqRm_-OVI0XQL-pbF0jrDQgSDjW4a4v8atW9Dz0VEJi4h3cOC4eKros8ew1jkzadeYk0rDkGJs4Ye4mh1JwY4gcFuc0yHzNoAe8bV905iLgXJxBkyw2CxPWMdwgJfb0V5qtIkEVbmvHCw_3-VIJxF5XdcBbfROy69_Hj
+          - generic [ref=f17e450]:
+            - generic [ref=f17e453]:
+              - 'link "12%** of total pendency ✔ District & Subordinate Courts: ** ... Facebook · Vajiram & Ravi 8 reactions · 2 months ago" [ref=f17e455] [cursor=pointer]':
+                - /url: /goto?url=CAES2QEB6zswFfOCDMuTF-TT3N6G_OdgUc910tje5FRrqGGE7TYj5nom7qKEDYq9EUaoRqkPId63RlUpvSsbLDweGqm1xsA4FKa5u00NdJ5G163XZRMZYoVlpV-pCC3qZmlotVrOJSxh7JwE8TF95I_OwXzqo6nNst42n8T2pwSSYPX1PbVr-HcKGhhnjAtW3cmMdo0YRR-ArzAofcMXrUUDQ15o-mvKRTh7up3obGyDeFQ8WUnEPfI72DNGVVLAzn4UulAeJCYYbpMdxwm8p2AGtDkPXWOFo_qFTTtG
+                - 'heading "12%** of total pendency ✔ District & Subordinate Courts: ** ..." [level=3] [ref=f17e456]'
+                - generic [ref=f17e462]:
+                  - generic [ref=f17e463]: Facebook · Vajiram & Ravi
+                  - generic [ref=f17e465]: 8 reactions · 2 months ago
+              - button "About this result" [ref=f17e471] [cursor=pointer]
+            - generic [ref=f17e478]:
+              - emphasis [ref=f17e479]: India's
+              - text: judicial system is facing an unprecedented
+              - emphasis [ref=f17e480]: backlog
+              - text: ", with over **5.8 crore pending"
+              - emphasis [ref=f17e481]: cases
+              - text: "** across the Supreme"
+              - emphasis [ref=f17e482]: Court
+              - text: ", High"
+              - emphasis [ref=f17e483]: Courts
+              - text: ", and ..."
+          - generic [ref=f17e487]:
+            - generic [ref=f17e490]:
+              - link "How to Check Property Court Cases in India [2026 Guide] LegiScore https://legiscore.in › Blog" [ref=f17e492] [cursor=pointer]:
+                - /url: /goto?url=CAESdwHrOzAVtUMi5gJpj6YwthlPOOAvWaXbRCyk5jQmHL1oys3m4R5tWgprGWA0QBERz9WidBN5JzSP6xm4CjFfEz8LMrXVBGfzhGLS617UXYQY5ziM1xUz_XaX6vCQMzH9wBP_J1kbGTIKyHd4nVJSEuZLzDcVTT7Z
+                - heading "How to Check Property Court Cases in India [2026 Guide]" [level=3] [ref=f17e493]
+                - generic [ref=f17e499]:
+                  - generic [ref=f17e500]: LegiScore
+                  - generic [ref=f17e502]: https://legiscore.in › Blog
+              - button "About this result" [ref=f17e508] [cursor=pointer]
+            - generic [ref=f17e515]:
+              - text: The NIPFP estimates that 66
+              - emphasis [ref=f17e516]: percent
+              - text: of all
+              - emphasis [ref=f17e517]: civil court cases
+              - text: in
+              - emphasis [ref=f17e518]: India
+              - text: pertain to real estate. 57
+              - emphasis [ref=f17e519]: percent
+              - text: of
+              - emphasis [ref=f17e520]: civil cases
+              - text: in District
+              - emphasis [ref=f17e521]: Courts
+              - text: have been pending ...
+          - generic [ref=f17e525]:
+            - generic [ref=f17e528]:
+              - link "BACKLOG OF CASES MAKING IMBALANCE TO SCALE ... INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS http://www.ijlra.com › details › backlog-of-cases-makin..." [ref=f17e530] [cursor=pointer]:
+                - /url: /goto?url=CAESmQEB6zswFe2_7K2OnGUKwPtc5kicgNCWgpYnwZiphoaUbmEgIOH3jMbhaLkI9rqlCc-aAU6VaIGCGkZ5DC2cxN1zZafR9OjGzKwJ4z7OldrJof1_vqc7o55lJ-FvtlAeuT3Fi45FlmiV6Nak1ZlVxd29HY60efkjSLtAh5GCnscWvmtGL-YYNBQ9IinPqjLsBkOxA2Vc2i11Pdg
+                - heading "BACKLOG OF CASES MAKING IMBALANCE TO SCALE ..." [level=3] [ref=f17e531]
+                - generic [ref=f17e537]:
+                  - generic [ref=f17e538]: INTERNATIONAL JOURNAL FOR LEGAL RESEARCH AND ANALYSIS
+                  - generic [ref=f17e540]: http://www.ijlra.com › details › backlog-of-cases-makin...
+              - button "About this result" [ref=f17e546] [cursor=pointer]
+            - generic [ref=f17e552]:
+              - generic [ref=f17e553]:
+                - text: A report by the Ministry of
+                - emphasis [ref=f17e554]: Law
+                - text: and Justice in 2022 indicated that the
+                - emphasis [ref=f17e555]: backlog
+                - text: of
+                - emphasis [ref=f17e556]: cases
+                - text: increased by approximately 15% during vacation periods, particularly in ...
+              - link "Read more" [ref=f17e557] [cursor=pointer]:
+                - /url: /goto?url=CAES6AEB6zswFdjkKiVuDHl3hbex_nay79OI85RqzmGjhl0IeRcrDh46l1iMYB3ax6Q8dtN0wS45AcdKWkjA76jCGNkSho0DcLLjnfikylA4zwT_n46AA87URxr0vxruMYLVdTJNoREKEK5BKWJyYbkFngyJPDQd-YRxm9ge5hosZoZrRrbbclexEa_eHhoSHQgT40gfp22AKxYgaQB0MVyJv85WTzfjO6FN5QqUQuDCGnqe5LJftxVDZBOi7v1OO1KDWaLDMxruLo881BrGMt1hi-HgVklQOiVY56BtjpK0VM7xyO9hzO2UW3S_
+        - navigation [ref=f17e560]:
+          - heading "Page navigation" [level=1] [ref=f17e561]
+          - text: "1"
+          - link "Page 2" [ref=f17e564] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=10&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAE
+            - text: "2"
+          - link "Page 3" [ref=f17e566] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=20&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAG
+            - text: "3"
+          - link "Page 4" [ref=f17e568] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=30&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAI
+            - text: "4"
+          - link "Page 5" [ref=f17e570] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=40&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAK
+            - text: "5"
+          - link "Page 6" [ref=f17e572] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=50&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAM
+            - text: "6"
+          - link "Page 7" [ref=f17e574] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=60&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAO
+            - text: "7"
+          - link "Page 8" [ref=f17e576] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=70&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAQ
+            - text: "8"
+          - link "Page 9" [ref=f17e578] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=80&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAS
+            - text: "9"
+          - link "Page 10" [ref=f17e580] [cursor=pointer]:
+            - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=90&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8tMDegQIPxAU
+            - text: "10"
+          - heading [level=2] [ref=f17e582]:
+            - link "Next" [ref=f17e583] [cursor=pointer]:
+              - /url: /search?q=India+land+disputes+court+cases+backlog+civil+cases+percentage&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntKHAbkNbQiEQ0cf7t2M1Dd7w5WKw:1789982435763&ei=4_awauWULv6RseMPi6T22Qg&start=10&sa=N&sstk=AS6-VmKI9yF74efrFB5kf-786dXe_qKzAP7wSyDxOVy_ysWbTjUh-U-Ca-ZdDMBkeSFN15INIYQZXfA1ijFNZRkgIZ8hxn9Tat-mjA&ved=2ahUKEwilkvOZrP-WAxX-SGwGHQuSPYsQ8NMDegQIPxAW
+        - navigation
+    - contentinfo [ref=f17e586]:
+      - heading "Footer links" [level=1] [ref=f17e587]
+      - generic [ref=f17e591]:
+        - generic [ref=f17e593]:
+          - text: India
+          - generic [ref=f17e595]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - From your IP address" [ref=f17e597] [cursor=pointer]:
+              - generic [ref=f17e598]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=f17e600]:
+                - text: "-"
+                - generic [ref=f17e601]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f17e603] [cursor=pointer]
+        - generic [ref=f17e606]:
+          - link "Help" [ref=f17e607] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f17e608] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f17e609] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f17e610] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

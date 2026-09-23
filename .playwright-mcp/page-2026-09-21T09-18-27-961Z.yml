@@ -1,0 +1,318 @@
+- generic [active] [ref=f2e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f2e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f2e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f2e8]:
+    - search [ref=f2e9]:
+      - generic [ref=f2e11]:
+        - link "Go to Google Home" [ref=f2e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQPHoECAYQBA
+        - generic [ref=f2e21]:
+          - generic [ref=f2e22]:
+            - combobox "Search" [ref=f2e25]: Forest Rights Act 2006 implementation India tribal land digital exclusion Forest Rights Act 2006 implementation India tribal land digital exclusion
+            - generic [ref=f2e26]:
+              - button "Clear" [ref=f2e28] [cursor=pointer]
+              - generic [ref=f2e33]:
+                - button "Search by voice" [ref=f2e34] [cursor=pointer]
+                - button "Search by image" [ref=f2e37] [cursor=pointer]
+          - button "Search" [ref=f2e40] [cursor=pointer]
+    - generic [ref=f2e45]:
+      - button "Settings" [ref=f2e47] [cursor=pointer]
+      - button "Share" [ref=f2e52] [cursor=pointer]
+      - generic [ref=f2e58]:
+        - button "Google apps" [ref=f2e60] [cursor=pointer]
+        - link "Sign in" [ref=f2e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DForest%2BRights%2BAct%2B2006%2Bimplementation%2BIndia%2Btribal%2Bland%2Bdigital%2Bexclusion%26sei%3DZPawar74EJCahvcP-JOl-QY&ec=futura_srp_og_si_72236_p
+  - generic [ref=f2e68]:
+    - navigation [ref=f2e74]:
+      - generic [ref=f2e80]:
+        - list [ref=f2e81]:
+          - listitem [ref=f2e82]:
+            - link "AI Mode" [ref=f2e85] [cursor=pointer]:
+              - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ2J8OegQIGBAD
+          - listitem [ref=f2e89]:
+            - link "All" [disabled] [ref=f2e90]
+          - listitem [ref=f2e93]:
+            - link "News" [ref=f2e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ0pQJegQIHRAB
+          - listitem [ref=f2e97]:
+            - link "Images" [ref=f2e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQtKgLegQIHhAB
+          - listitem [ref=f2e101]:
+            - link "Forums" [ref=f2e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQs6gLegQIGhAB
+          - listitem [ref=f2e105]:
+            - link "Shopping" [ref=f2e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&ved=1t:220175&ictx=111
+          - listitem [ref=f2e109]:
+            - link "Videos" [ref=f2e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE-FPuVUjVB9_WO7OnpH1X7GhGoNVLROZYTxoyoqEaYuHoLlHJnKH3qwCkjSA9YL267-FPPXpmQqiOLp8mrE5BoX4_lNfFZHMf4fZnBI4lVy8wb5XMqX7dsCmeZRZMMcTAxx16raTtyjQuN-VCZe1MbFMwnq0Q&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQtKgLegQIHBAB
+          - listitem [ref=f2e113]:
+            - button [ref=f2e114] [cursor=pointer]:
+              - generic "More filters" [ref=f2e115]: More
+        - button "Tools" [ref=f2e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f2e129]
+    - generic [ref=f2e134]:
+      - generic [ref=f2e153]:
+        - heading "Thinking Searching Thinking a little longer" [level=2] [ref=f2e157]:
+          - generic [ref=f2e158]:
+            - generic [ref=f2e159]: Thinking
+            - generic [ref=f2e161]: Searching
+            - generic [ref=f2e171]: Thinking a little longer
+        - progressbar "Generating" [ref=f2e174]
+      - main [ref=f2e297]:
+        - generic [ref=f2e301]:
+          - generic [ref=f2e304]:
+            - heading "Web results" [level=2] [ref=f2e305]
+            - generic [ref=f2e306]:
+              - generic [ref=f2e309]:
+                - link "(Recognition of Forest Rights) Act, 2006 Ministry of Tribal Affairs https://tribal.nic.in › FRA › data › FRARulesBook" [ref=f2e311] [cursor=pointer]:
+                  - /url: /goto?url=CAESZwHrOzAVEouVMWVsv81tYTYZAKYG2SnYNpPGHzSGQnx6K4ugG9wBIQe6QYcv-lNE8-piBP0ym8GhfxOArWGi4k3K_NynhH9kJoL_7swNZyw--IdZ66ugAC49Sb8dHcchSeNkRbIYJ1E
+                  - heading "(Recognition of Forest Rights) Act, 2006" [level=3] [ref=f2e312]
+                  - generic [ref=f2e318]:
+                    - generic [ref=f2e319]: Ministry of Tribal Affairs
+                    - generic [ref=f2e321]: https://tribal.nic.in › FRA › data › FRARulesBook
+                - generic [ref=f2e323]: PDF
+                - button "About this result" [ref=f2e328] [cursor=pointer]
+              - generic [ref=f2e333]:
+                - generic [ref=f2e334]:
+                  - generic [ref=f2e335]: 29 Dec 2006 —
+                  - generic [ref=f2e336]:
+                    - text: An
+                    - emphasis [ref=f2e337]: Act
+                    - text: to recognize and vest the
+                    - emphasis [ref=f2e338]: forest rights
+                    - text: and occupation in
+                    - emphasis [ref=f2e339]: forest land
+                    - text: in
+                    - emphasis [ref=f2e340]: forest
+                    - text: dwelling Scheduled
+                    - emphasis [ref=f2e341]: Tribes
+                    - text: and other traditional
+                    - emphasis [ref=f2e342]: forest
+                    - text: ...
+                - generic [ref=f2e343]: 52 pages
+              - generic [ref=f2e345]:
+                - text: "Missing: digital ‎| Show results with:"
+                - link "digital" [ref=f2e346] [cursor=pointer]:
+                  - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&q=Forest+Rights+Act+2006+implementation+India+tribal+land+%22digital%22+exclusion&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ5t4CegQIMRAB
+          - generic [ref=f2e350]:
+            - generic [ref=f2e353]:
+              - link "Impact of the Forest Rights Act on Land Conflicts Drishti IAS https://www.drishtiias.com › daily-news-analysis › impa..." [ref=f2e355] [cursor=pointer]:
+                - /url: /goto?url=CAESpgEB6zswFdWZnl8c31pYJgbbs7SJfruudcWvow-EVN8Kpw3K4A3ic1YTeO0ASbPpDW0NGt0m8YKXHlG0dfHRTaSdGiS8LZpKS7b1bW_c5tOHTWNlbhUO-iUv6HjEg4iFiTXbUkZDyM3h-95HPhtNMyFW-OkXXW6gxNW_3Rbclv5iv24QP0b7mSAWGDG3qlICZMJCC4zDei7nfjJDlUco4f2eHSiMfq5T
+                - heading "Impact of the Forest Rights Act on Land Conflicts" [level=3] [ref=f2e356]
+                - generic [ref=f2e362]:
+                  - generic [ref=f2e363]: Drishti IAS
+                  - generic [ref=f2e365]: https://www.drishtiias.com › daily-news-analysis › impa...
+              - button "About this result" [ref=f2e371] [cursor=pointer]
+            - generic [ref=f2e377]:
+              - generic [ref=f2e378]: 17 Apr 2024 —
+              - generic [ref=f2e379]:
+                - text: The
+                - emphasis [ref=f2e380]: implementation
+                - text: of
+                - emphasis [ref=f2e381]: digital
+                - text: processes, like the VanMitra software in Madhya Pradesh, presents challenges in areas with poor connectivity and ...
+          - generic [ref=f2e385]:
+            - generic [ref=f2e388]:
+              - 'link "India: Implementation of Tribal Forest Rights Act 2006 | World Rainforest Movement https://www.wrm.org.uy › other-information › india-imp..." [ref=f2e390] [cursor=pointer]':
+                - /url: /goto?url=CAESlgEB6zswFRNcCk7OYxi8DXLBXusM0F564XDl2vqkwIUNP-j_yRQQMyo4UR2uPpw6QweklOF8QSQrVfnrnQZoezBk5bDwzHFR9GzRc0ADE9TKZitwmteoji0zJqLO9bGQLalMIpRe44dAI4q_1aVuzw9sQzhmrXIBVUce4n-CVDqAOOB460VHAaXO0ATexOSsGDEM-Lyw9_U
+                - 'heading "India: Implementation of Tribal Forest Rights Act 2006" [level=3] [ref=f2e391]'
+                - generic [ref=f2e397]:
+                  - generic [ref=f2e398]: "| World Rainforest Movement"
+                  - generic [ref=f2e400]: https://www.wrm.org.uy › other-information › india-imp...
+              - button "About this result" [ref=f2e406] [cursor=pointer]
+            - generic [ref=f2e412]:
+              - generic [ref=f2e413]: 5 Dec 2007 —
+              - generic [ref=f2e414]:
+                - text: The
+                - emphasis [ref=f2e415]: Act
+                - text: provides a proper legal procedure for establishing critical wildlife habitats so that resettlement from them can take place only through ...
+              - link "Read more" [ref=f2e416] [cursor=pointer]:
+                - /url: /goto?url=CAES6gEB6zswFbIUK-letMzmXvmPg2Bp7xcxC7j9Z-atxQWxxtUYXqknuhSsRWtuAzMMEfF-laamLiZNpubvthGXKd3jJmgp1v7uJH4sQDSv_7PbXht-g7hRqt7Wm1NtNP621NhnS8M1Fv8tIywShFGdX6UDVnv08-63WrT2lezcK8omB1KhSY2Q-4bieSG12CahEkSMXQI77z7oszDnC3wCrZq7-oiEEOYMq8r-6pX41CYT6NkTO4vVbqi-O8vBZW9Y7n19g2Cn95c5Jyl7TnlCrO48B8mLQBIcqztyf5Ki5PWpFkvc3NZby8wTGHM
+            - generic [ref=f2e417]: "Missing: digital ‎exclusion"
+          - generic [ref=f2e422]:
+            - generic [ref=f2e425]:
+              - link "Ministry of Tribal Affairs (MoTA) Advances FRA Digital ... Facebook · Press Information Bureau - PIB, Government of India 20+ reactions · 8 months ago" [ref=f2e427] [cursor=pointer]:
+                - /url: /goto?url=CAESwwEB6zswFXIhw0Qkxf54PiwwXZDRhQM249x6oGubc8XZhrSypzB6yk7pozBX3eS1J2t04_wsWKMPNWvEABumc7aLQ8x5s_nlqEVejDsPgMazY6gxIbn8rRezX960IDmtMWHef4A0I3BsDIWBwsynG-LKSMBE-FHv-zoXjqEQowx9CPIid3OeuxDWneGmG9HXvUCNqVD6GfYEyi1GMSzqbsG8vIlTsHWY-k8fFC3FQf9u-kniFu5xH6a6ZvpPqUcsiG5beXk
+                - heading "Ministry of Tribal Affairs (MoTA) Advances FRA Digital ..." [level=3] [ref=f2e428]
+                - generic [ref=f2e434]:
+                  - generic [ref=f2e435]: Facebook · Press Information Bureau - PIB, Government of India
+                  - generic [ref=f2e437]: 20+ reactions · 8 months ago
+              - button "About this result" [ref=f2e443] [cursor=pointer]
+            - generic [ref=f2e449]:
+              - generic [ref=f2e450]:
+                - emphasis [ref=f2e451]: Forest Rights Act
+                - text: (
+                - emphasis [ref=f2e452]: FRA
+                - text: ),
+                - emphasis [ref=f2e453]: 2006 Implementation
+                - text: "- leveraging technology - securing"
+                - emphasis [ref=f2e454]: land
+                - text: ownership' Some of the ways to expedite
+                - emphasis [ref=f2e455]: FRA 2006
+                - text: ...
+              - link "Read more" [ref=f2e456] [cursor=pointer]:
+                - /url: /goto?url=CAESpwIB6zswFZ_nQPBusZnijOuKuCgONEX67I7igE2YfK_iIvC8QdaNHHX7o6uvK5CBm6numGXu8Zl5UI6OW3pUSoc8i6ccDePjWHU5GbJ7cvRu_ZdxCxVVgFBdn1B6rQKrjeuy9RGvHB71Dt2CwUPwMPy8zWul7J4ioKHzgSAsMUaQgqc6yste_hwAzHrfeffmPDtLJT0gEsGLsV_rGtd-m23vz8Yijnwb4kZQBkqPwbyy5x8x8MNvOsbWA36Fr8Iuu1Ey-PbwHEPuI_JP7YwzCPSmtPVascSmS-zTZeSl5OmUq2KrdJGG-yDtBSd4WzNP-70AatZmucTRlPTrACMqt532C9Fd2Z6owKO9gyYfArfj-oVJe-oijM1h1DaexK2VWM7WOoqtEmsX
+            - generic [ref=f2e458]:
+              - text: "Missing: exclusion ‎| Show results with:"
+              - link "exclusion" [ref=f2e459] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+%22exclusion%22&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ5t4CegQILxAB
+          - generic [ref=f2e463]:
+            - generic [ref=f2e466]:
+              - link "Implementation of Forest Rights Socio Legal Information Centre (SLIC) https://www.slic.org.in › post › implementation-of-forest..." [ref=f2e468] [cursor=pointer]:
+                - /url: /goto?url=CAESdAHrOzAVMRzNMAhFW44LDA59eBkIedjqYzbqrEav5HZHoiQehttMK-3MRzCgKzHDuI4We9gUJUWc8xf5u9AhzLD4W8tBy1Zws1GPtYpfhBVTWRfRoloRu2v0j85En1n-pdpJDH5MBYT8FhxKfxgO1gjBjsTk
+                - heading "Implementation of Forest Rights" [level=3] [ref=f2e469]
+                - generic [ref=f2e475]:
+                  - generic [ref=f2e476]: Socio Legal Information Centre (SLIC)
+                  - generic [ref=f2e478]: https://www.slic.org.in › post › implementation-of-forest...
+              - button "About this result" [ref=f2e484] [cursor=pointer]
+            - generic [ref=f2e490]:
+              - generic [ref=f2e491]:
+                - text: On 13th February, 2019, the Supreme Court ordered that all persons whose claims are rejected should be evicted from the
+                - emphasis [ref=f2e492]: forest lands
+                - text: . As per data from the ...
+              - link "Read more" [ref=f2e493] [cursor=pointer]:
+                - /url: /goto?url=CAESzAEB6zswFW_6JtYgOaH4RANo6nsmaFZZYT4Lv9Iuotd7kNsH3nNBq5Pj7sAGwQpS5vc_jdj6IycfXcBv1VvA40-MQBOscIHY4Rd2XYPpGqVwoze-NhRkZhobVhAN9OEvrxknQf6w5AhzO0d0yK6vTxbvI56A8Eu91vpeGeA_bza7-YslvfN24ZO_VbKv3kv0B3tE0mnazL7aYlqJ20CQ_IZFVfeAme3FWXNkkJcoBPs_zFyIWx8lHVqJxjl6Fi1zOBf331ATYJWStEQtho0
+            - generic [ref=f2e495]:
+              - text: "Missing: exclusion ‎| Show results with:"
+              - link "exclusion" [ref=f2e496] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+%22exclusion%22&sa=X&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ5t4CegQIMBAB
+          - generic [ref=f2e500]:
+            - generic [ref=f2e503]:
+              - link "Implementation of Forest Rights Act, 2006 Internet Archive https://archive.org › details › in.gov.tribals.75117" [ref=f2e505] [cursor=pointer]:
+                - /url: /goto?url=CAESaAHrOzAVEhxOaqRXh-mz6dpVb8xwd-wM9WfQJtrhdIA5Bm0N7cwmQYXeI5_Uwb0VynAPUaeYjDbVZO74HI8-GJ-cCFOo5jZDI-r9SrbrNKpy5AgIhcNM9HA_VGg8yG6Fei_EN2w-C_6w
+                - heading "Implementation of Forest Rights Act, 2006" [level=3] [ref=f2e506]
+                - generic [ref=f2e512]:
+                  - generic [ref=f2e513]: Internet Archive
+                  - generic [ref=f2e515]: https://archive.org › details › in.gov.tribals.75117
+              - button "About this result" [ref=f2e521] [cursor=pointer]
+            - generic [ref=f2e527]:
+              - generic [ref=f2e528]: 11 Nov 2025 —
+              - generic [ref=f2e529]:
+                - text: It brings in major institutional reform to enable tenure security over productive
+                - emphasis [ref=f2e530]: lands
+                - text: which are in actual possession of
+                - emphasis [ref=f2e531]: forest
+                - text: dwellers.
+              - link "Read more" [ref=f2e532] [cursor=pointer]:
+                - /url: /goto?url=CAESyAEB6zswFcJEB45vESUkJsqBxA7Uxc1u7i2c1KUbaVOXTw7awLyW2yOSdY-Qnl36ADdUbSmRgQO3r0imhAV1_tvy2sLtOS_W1iY7HxuPXalLe547wVhR616o1zgFvDql0tKlFk3d9eXaouNCdkLW4tfbjOaa_m1ekIwQht7K-GrXzMhWt6qykzeBBXV3h6b95kuT4aP-fdeS2QlOyVPn5bveh2CEpxkCMWnJD9f5u-iIeYhtByZu_laYeawTECWzD7uz_c_JGpKITA
+          - generic [ref=f2e536]:
+            - generic [ref=f2e539]:
+              - 'link "Forest Rights Act Implementation: Key Data & Challenges ... Plutus IAS https://plutusias.com › forest-rights-act-implementation-k..." [ref=f2e541] [cursor=pointer]':
+                - /url: /goto?url=CAESkQEB6zswFWcaJuTsymmsYUBGJWWCY2K2jgrDVrliDLOpeK3D9TPFN7vPnpWoyF17dueZ91GgT-bqNgGlK55EBCpRN_ZoOyRgLpev7dA8_KtF67eDT-Ams__ZAPdntyqw-4tl52lKUpLhAuTE2GjGHDSJHhX33GsIqG4EgeVNFZneQbr4_9ErvFmP6_Q5ItrhfhLv
+                - 'heading "Forest Rights Act Implementation: Key Data & Challenges ..." [level=3] [ref=f2e542]'
+                - generic [ref=f2e548]:
+                  - generic [ref=f2e549]: Plutus IAS
+                  - generic [ref=f2e551]: https://plutusias.com › forest-rights-act-implementation-k...
+              - button "About this result" [ref=f2e557] [cursor=pointer]
+            - generic [ref=f2e563]:
+              - generic [ref=f2e564]: 5 Aug 2026 —
+              - generic [ref=f2e565]:
+                - text: The
+                - emphasis [ref=f2e566]: Forest Rights Act
+                - text: (
+                - emphasis [ref=f2e567]: FRA
+                - text: ),
+                - emphasis [ref=f2e568]: "2006"
+                - text: ", was enacted to address historical injustices faced by Scheduled"
+                - emphasis [ref=f2e569]: Tribes
+                - text: (STs) and Other Traditional Forest ...
+              - link "Read more" [ref=f2e570] [cursor=pointer]:
+                - /url: /goto?url=CAES7AEB6zswFa8XnspsJ8l1-cieh4BIC8mT-lfREiV2hILsYvFr7e166ysvD2Pf-HzZeMoHljw5QvWJkz3OZJoHo8QDaPKw_nWPy0kN1eYN9U53BovOPG1iXBE63ANmHeSy2rV-MXbTXyyiQzc-4Xvmb52x0ZbEOx9iUQQyV0kGwmsN9bBkMr_msRmGA2tVGKjOBDRwx8Uh_wOE3ohyg0wtJfz07E5dbabx8ggmo_WGT7lTAzpLGnmFKLoVxF384DfDzC_kpl0ylJAUjb6bA5a_TpCBW-Qkid6kkMb4eVdjPYGhNoECBLYC538n3et1mw
+          - generic [ref=f2e574]:
+            - generic [ref=f2e577]:
+              - link "Implementation of the Scheduled Tribes and Other ... ResearchGate https://www.researchgate.net › ... › Forestry › Forest" [ref=f2e579] [cursor=pointer]:
+                - /url: /goto?url=CAES_AEB6zswFc6lyA3qN_bKqgz9OV2GzmMEUurzfgnvcdhRcOpwWhw2RW_f4y6-C2ISAeKvikVQ08JfRYV9sShpBRQifw0oAfevA8bnTv6aFTo4fEYaMWqZH0i54N3MK-uJopUnjMgVEYmlFu4gaWs4zU5YqNVrc9S3RlO2KP7y4GQY8XZst3RofwyS09OL8MIEl9etaYjfzp4_Pbv5uMrJagtWVmDYl2T-Q3fUdiUOWB1eAlcDXMe5YKRWDrZdCkc-Vify3fxQSUZYRN18iOk44R_sCPt0mq7cu_xwGzFZ39De05JAniTxQoqso4GxNsr1JvPZsOl1CLAm8mofLns
+                - heading "Implementation of the Scheduled Tribes and Other ..." [level=3] [ref=f2e580]
+                - generic [ref=f2e586]:
+                  - generic [ref=f2e587]: ResearchGate
+                  - generic [ref=f2e589]: https://www.researchgate.net › ... › Forestry › Forest
+              - button "About this result" [ref=f2e595] [cursor=pointer]
+            - generic [ref=f2e601]:
+              - generic [ref=f2e602]: 19 Jul 2026 —
+              - generic [ref=f2e603]:
+                - text: The Forest Rights Act 2006
+                - emphasis [ref=f2e604]: provides ownership rights over forest land
+                - text: and forest produce to tribals and other traditional forest dwellers ...
+              - link "Read more" [ref=f2e605] [cursor=pointer]:
+                - /url: /goto?url=CAESiQIB6zswFejQaWTOQLqtX71urT7agj9N35ZlYJobHh-Pi3uGg5En5wd34FNZTx8klcUWbVGw-JmAIQ_JDfgkzt6t-aWhWbNeCMnblZA3OaY8UMFvEceKiilJKKEuP6EkXg4VYG6azb2qgFZmQhFZR2hnu47vvWeWJsmEQSfCaJaXdoSb0OiZR-8aytGRhGGjqlslhepfpxOfBIBiaSpLF6TatFzjz6vgRRoLStndxAN-0Kbnn-SPJEQCce53hvESaE1Fql-1GGvDXz-Vedzma3sZy9vFMOtL_C4vVmP9GsUYD0dxO1hxpXCw8H66dRJCp-9RnWmLqqq39oTt6CJ9_Y8EYid-xULAbAL_
+          - generic [ref=f2e609]:
+            - generic [ref=f2e612]:
+              - link "Governance Mechanisms in the Forest Rights Act, 2006 Azim Premji University https://azimpremjiuniversity.edu.in › governance-mech..." [ref=f2e614] [cursor=pointer]:
+                - /url: /goto?url=CAESsQEB6zswFfneGzDNvKgd_6h9qRNboDlt9g-9NWcGF1B4t6hKLtWyR2iY81PXEKbdTl7w1-1T7mSp7MSHVW-wx8-sP0JYeBtseUCWAa7VMfAbeXGp0vopTBzyo-lHykEFq9g8T5k-NvzcumMJAfeLvYW_qgRnWAjHPsgqzems2-iH7VBDogA4W2CeD7NnYLzzH1B3it_VnqMU18JneqqdQcYeUvjq843hn7gPhRBTtjVCuds
+                - heading "Governance Mechanisms in the Forest Rights Act, 2006" [level=3] [ref=f2e615]
+                - generic [ref=f2e621]:
+                  - generic [ref=f2e622]: Azim Premji University
+                  - generic [ref=f2e624]: https://azimpremjiuniversity.edu.in › governance-mech...
+              - button "About this result" [ref=f2e630] [cursor=pointer]
+            - generic [ref=f2e636]:
+              - generic [ref=f2e637]: 17 Oct 2020 —
+              - generic [ref=f2e638]:
+                - text: At the Central Government level, the Ministry of
+                - emphasis [ref=f2e639]: Tribal
+                - text: Affairs (MoTA) is the nodal agency for the
+                - emphasis [ref=f2e640]: implementation
+                - text: of the
+                - emphasis [ref=f2e641]: Act
+                - text: . The rule-making ...
+              - link "Read more" [ref=f2e642] [cursor=pointer]:
+                - /url: /goto?url=CAESjAIB6zswFXg0CgAsykC15N_aiFy_lO3G5KoO6M20yvzDfm87wGpruTY0Nv520ONtCpNhsMx_UwBSqHrBbJurzGe8D9B3sIZhlYuePKvLn_zM8i0aebn57e9AUsCGGZtavfJmpg0jwK2QrOVMuGu7ivq3hx_WfWGRSU7TAextqNO3rSjH5bu51Ic3WJJcJfeQftMDyRkZPGrnmpRjUNRVJXnfpH_4TulWyLU0G-WlnNbB89MiNWJTkGxhHaPgrwM7HhL7vNW4xhMBS5lzz8-f8WkXCY2emh3QR7S-DXEjygqbU-ejoOKoNxEsH-l6I7XBpOTidgybA5VssNdWI9ovwB7mZKDZ2cVVWRfbE3jt
+        - navigation [ref=f2e645]:
+          - heading "Page navigation" [level=1] [ref=f2e646]
+          - text: "1"
+          - link "Page 2" [ref=f2e649] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=10&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAE
+            - text: "2"
+          - link "Page 3" [ref=f2e651] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=20&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAG
+            - text: "3"
+          - link "Page 4" [ref=f2e653] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=30&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAI
+            - text: "4"
+          - link "Page 5" [ref=f2e655] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=40&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAK
+            - text: "5"
+          - link "Page 6" [ref=f2e657] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=50&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAM
+            - text: "6"
+          - link "Page 7" [ref=f2e659] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=60&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAO
+            - text: "7"
+          - link "Page 8" [ref=f2e661] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=70&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAQ
+            - text: "8"
+          - link "Page 9" [ref=f2e663] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=80&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAS
+            - text: "9"
+          - link "Page 10" [ref=f2e665] [cursor=pointer]:
+            - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=90&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8tMDegQIMhAU
+            - text: "10"
+          - heading [level=2] [ref=f2e667]:
+            - link "Next" [ref=f2e668] [cursor=pointer]:
+              - /url: /search?q=Forest+Rights+Act+2006+implementation+India+tribal+land+digital+exclusion&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQntvNdFya5R0NfC4VQQyIsJyEQpVNA:1789982308452&ei=ZPawatOaGvufhvcP84CCwQ0&start=10&sa=N&sstk=AS6-VmKFwRhgITHf1ErngrIR0R8iYN61nIBbGoHze9izX2YNuTFfbEj9eUEz1hE-KF8FUQJqc6D9Hv-HaydpzfUMQ6nvYM1_9gtJWQ&ved=2ahUKEwjT3Jfdq_-WAxX7j-EIHXOAINgQ8NMDegQIMhAW
+        - navigation
+    - contentinfo [ref=f2e671]:
+      - heading "Footer links" [level=1] [ref=f2e672]
+      - generic [ref=f2e676]:
+        - generic [ref=f2e678]:
+          - text: India
+          - generic [ref=f2e680]:
+            - button "Semmancheri, Chennai, Tamil Nadu - From your IP address" [ref=f2e682] [cursor=pointer]:
+              - generic [ref=f2e683]: Semmancheri, Chennai, Tamil Nadu
+              - generic [ref=f2e685]:
+                - text: "-"
+                - generic [ref=f2e686]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f2e688] [cursor=pointer]
+        - generic [ref=f2e691]:
+          - link "Help" [ref=f2e692] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f2e693] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f2e694] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f2e695] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

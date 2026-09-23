@@ -1,0 +1,289 @@
+- generic [active] [ref=f25e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f25e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f25e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f25e8]:
+    - search [ref=f25e9]:
+      - generic [ref=f25e11]:
+        - link "Go to Google Home" [ref=f25e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQPHoECAYQBA
+        - generic [ref=f25e21]:
+          - generic [ref=f25e22]:
+            - combobox "Search" [ref=f25e25]: women land ownership India percentage statistics joint patta women land ownership India percentage statistics joint patta
+            - generic [ref=f25e26]:
+              - button "Clear" [ref=f25e28] [cursor=pointer]
+              - generic [ref=f25e33]:
+                - button "Search by voice" [ref=f25e34] [cursor=pointer]
+                - button "Search by image" [ref=f25e37] [cursor=pointer]
+          - button "Search" [ref=f25e40] [cursor=pointer]
+    - generic [ref=f25e45]:
+      - button "Settings" [ref=f25e47] [cursor=pointer]
+      - button "Share" [ref=f25e52] [cursor=pointer]
+      - generic [ref=f25e58]:
+        - button "Google apps" [ref=f25e60] [cursor=pointer]
+        - link "Sign in" [ref=f25e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dwomen%2Bland%2Bownership%2BIndia%2Bpercentage%2Bstatistics%2Bjoint%2Bpatta&ec=futura_srp_og_si_72236_p
+  - generic [ref=f25e68]:
+    - navigation [ref=f25e74]:
+      - generic [ref=f25e80]:
+        - list [ref=f25e81]:
+          - listitem [ref=f25e82]:
+            - link "AI Mode" [ref=f25e85] [cursor=pointer]:
+              - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ2J8OegQIExAD
+          - listitem [ref=f25e89]:
+            - link "All" [disabled] [ref=f25e90]
+          - listitem [ref=f25e93]:
+            - link "Images" [ref=f25e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&q=women+land+ownership+India+percentage+statistics+joint+patta&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQtKgLegQIGRAB
+          - listitem [ref=f25e97]:
+            - link "News" [ref=f25e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&q=women+land+ownership+India+percentage+statistics+joint+patta&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ0pQJegQIFhAB
+          - listitem [ref=f25e101]:
+            - link "Forums" [ref=f25e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&q=women+land+ownership+India+percentage+statistics+joint+patta&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQs6gLegQIFxAB
+          - listitem [ref=f25e105]:
+            - link "Videos" [ref=f25e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&q=women+land+ownership+India+percentage+statistics+joint+patta&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQtKgLegQIGhAB
+          - listitem [ref=f25e109]:
+            - link "Shopping" [ref=f25e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832X6CeY5aSHvaPXpohaS1dducKJ9vW2r5g1d5cMKghneO17pkIDLkifCExdoydOwG8ow-gxBkLPzFTZx_F8KBpZqdzlxKEafZHuPTrGpJyBukrtuH667sbJap2pu1BPO6tXaeCZIBdcrUoSncUuhP7dh_iNsgJzFaxFAHC49x3p9UYf2nsQ&q=women+land+ownership+India+percentage+statistics+joint+patta&ved=1t:220175&ictx=111
+          - listitem [ref=f25e113]:
+            - button [ref=f25e114] [cursor=pointer]:
+              - generic "More filters" [ref=f25e115]: More
+        - button "Tools" [ref=f25e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f25e129]
+    - generic [ref=f25e134]:
+      - generic [ref=f25e153]:
+        - heading "Thinking" [level=2] [ref=f25e157]
+        - progressbar "Generating" [ref=f25e160]
+      - main [ref=f25e162]:
+        - generic [ref=f25e166]:
+          - generic [ref=f25e169]:
+            - heading "Web results" [level=2] [ref=f25e170]
+            - generic [ref=f25e171]:
+              - generic [ref=f25e174]:
+                - link "Property Ownership among Women in India ISPP https://www.ispp.org.in › Gender & Development" [ref=f25e176] [cursor=pointer]:
+                  - /url: /goto?url=CAESeAHrOzAVn7hwce3RKSN8dt3fi9WR8Wzm85lq8YkThKuPzz-ANwlx7N0da9Euy8Hb4fiVhJ4JJ87fw2E3ixAnaXt6U3leHhPqWky9pgL5rdWhU9_uCiUsO85fZYjwjB3kjdtR1s0heLyX49qKiscyOTzi82cXkl5VtQ
+                  - heading "Property Ownership among Women in India" [level=3] [ref=f25e177]
+                  - generic [ref=f25e183]:
+                    - generic [ref=f25e184]: ISPP
+                    - generic [ref=f25e186]: https://www.ispp.org.in › Gender & Development
+                - button "About this result" [ref=f25e192] [cursor=pointer]
+              - generic [ref=f25e198]:
+                - generic [ref=f25e199]: 22 Mar 2021 —
+                - generic [ref=f25e200]:
+                  - text: While the NFHS-5 data estimates that among
+                  - emphasis [ref=f25e201]: women aged 15 to 49, 38.7 percent own a house or land
+                  - text: (either jointly or by themselves), the IHDS ...
+                - link "Read more" [ref=f25e202] [cursor=pointer]:
+                  - /url: /goto?url=CAES0QEB6zswFcN__IuFxnVbZODjxhiw8JgKr2OwFm6Rkg-kjPeLwjLBUjmjCA35CSNxd8g41g438iRUy4dXwO01xk4eNtHG6S67fU7kaQPWhSBPtj7eEHo8IT4Lw_rH8ZvoV7u3dQWgwSWZQLCS02ThyZsjhD2vPjCLvD_9aCUW0oGvMMi4MZEQdqHJM2aCYD5EK6w4GxBvfSOywtba36mXU3-qhcK4-aLMPE3sPhIdN0lUvzWESxLfm56xuaSqGyNpTs9_vAxMxBw-0RcZkUBlNx9YGA
+          - generic [ref=f25e206]:
+            - generic [ref=f25e209]:
+              - 'link "Asset Ownership by Women in India: Insights from NFHS ... UNFPA India https://india.unfpa.org › default › files › pub-pdf" [ref=f25e211] [cursor=pointer]':
+                - /url: /goto?url=CAESzgEB6zswFcxJxztKarrujVm_iFL27davTvy3td-Rs8W7lrvHFhE-xH2C4lFk40qnfnxFOBi5l4WSZrNx51k-_o5v8QJjNpsftm_WEL2JslQX6sDqVZjDw7_79MtjjRswsmelmeO4hk5MSTtU2FMP9lRCFWK2vrvnvwU5mHA1hfHG4v5sA4cKOKbc4H_m-l_AoVvJBlpi5XpBzIgJlslxKiL8lpcqSGVO_Ycuxf10KdcpXEuNKl6GXsmdiZQcZvy62o1L8UQa8nIkswBi_s8PFQ
+                - 'heading "Asset Ownership by Women in India: Insights from NFHS ..." [level=3] [ref=f25e212]'
+                - generic [ref=f25e218]:
+                  - generic [ref=f25e219]: UNFPA India
+                  - generic [ref=f25e221]: https://india.unfpa.org › default › files › pub-pdf
+              - generic [ref=f25e223]: PDF
+              - button "About this result" [ref=f25e228] [cursor=pointer]
+            - generic [ref=f25e233]:
+              - generic [ref=f25e234]:
+                - generic [ref=f25e235]: 6 Dec 2023 —
+                - generic [ref=f25e236]:
+                  - text: Overall, 42.3% of women and 62.5% of men own a house, whereas
+                  - emphasis [ref=f25e237]: 31.7% of women and 43.9% of men own land
+                  - text: either alone or jointly with someone else ...
+                - link "Read more" [ref=f25e238] [cursor=pointer]:
+                  - /url: /goto?url=CAES-wEB6zswFfpFdGqSSl1Yg0kj738L0NO7rPzJIJRFr0YX2AcxESJPK4bBbtZ4zsAEVCTXtHbQo_8qZgqeC5GomLf3hu1HJt8gH9HtKlILCA1MVbEdY-OBt6g6wKbDTY6KDGE72vcCwQSDnLFMwkIEJQ0aWY75qCYUDHlBOBCaOjAzw5SYBimMxm1PQX1fkbq9daTgAW2v_mwK19Lmklgg_w6IekSxoTqt82ocF8SUvWH0f8XC77Sdg7kwprBnnTMMclUm41oqni73_hWhR_Huw_fWKIN2fdfqpOU-fs_DNnUnY6DB-ojNY0kzjg3iI5OXa2EvmZBTcdXtMK5XPg
+              - generic [ref=f25e239]: 4 pages
+          - generic [ref=f25e243]:
+            - generic [ref=f25e246]:
+              - 'link "Women''s land ownership in India: Evidence from digital ... ScienceDirect.com https://www.sciencedirect.com › article › abs › pii" [ref=f25e248] [cursor=pointer]':
+                - /url: /goto?url=CAESfwHrOzAVSlPQ24FpJQrTYieGuLpjD4_aaYMSrpWw1BDZ5MJB7_bQJDEpZqfvF6fBpETOe5T8xTEVRbUNg7Gr1KHQZKivX0aeh52UlwtTWd3RsbEfLqzweEXkYrDBkszlvMkxw02OBDXz-7iOYpLgjApdUDJsOFykhyIwh2aGeCg
+                - 'heading "Women''s land ownership in India: Evidence from digital ..." [level=3] [ref=f25e249]'
+                - generic [ref=f25e255]:
+                  - generic [ref=f25e256]: ScienceDirect.com
+                  - generic [ref=f25e258]: https://www.sciencedirect.com › article › abs › pii
+              - button "About this result" [ref=f25e264] [cursor=pointer]
+            - generic [ref=f25e270]:
+              - generic [ref=f25e271]: by C Jain · 2023 · Cited by 50 —
+              - generic [ref=f25e272]:
+                - text: In
+                - emphasis [ref=f25e273]: India
+                - text: ", while 73 per cent of rural"
+                - emphasis [ref=f25e274]: women
+                - text: workers were engaged in the agriculture sector, only about 14 per cent of the
+                - emphasis [ref=f25e275]: women
+                - text: are operational holders
+          - generic [ref=f25e279]:
+            - generic [ref=f25e282]:
+              - link "How Many and Which Women Own Land in India? Inter ... Taylor & Francis Online https://www.tandfonline.com › ... › Volume 57, Issue 11" [ref=f25e284] [cursor=pointer]:
+                - /url: /goto?url=CAESeQHrOzAV2MIfcbzF1F0tRPElk7NjUudhq2Z7DcZfPFK9Y36Y8qz5PfNTvgUj-LY_Yg-7GDpZ6osJ4recOJkeABNfI4fbNfrvinOVcKMNJIxZRzzfGZSSM8ORx6SsFIF2Tzbo1V3vvxgdJKN16-OPGQZ-CpUyxmy1uNQ
+                - heading "How Many and Which Women Own Land in India? Inter ..." [level=3] [ref=f25e285]
+                - generic [ref=f25e291]:
+                  - generic [ref=f25e292]: Taylor & Francis Online
+                  - generic [ref=f25e294]: https://www.tandfonline.com › ... › Volume 57, Issue 11
+              - button "About this result" [ref=f25e300] [cursor=pointer]
+            - generic [ref=f25e306]:
+              - generic [ref=f25e307]: by B Agarwal · 2021 · Cited by 163 —
+              - generic [ref=f25e308]:
+                - text: Despite significant advancement towards equality in inheritance laws,
+                - emphasis [ref=f25e309]: women are found to constitute barely 14% of landowners owning 11% of agricultural land
+                - text: in ...
+              - link "Read more" [ref=f25e310] [cursor=pointer]:
+                - /url: /goto?url=CAES9AEB6zswFesCGlJZ1R6Od2PhRLcpQ9evRGX2d-UzUzR1dr1gwJsU6SrhSdTTz1Q1xTQRZTre0LNx9DyluBDJcxifEAqHdUuN8OmNem8gIxKwHokmy0UHwbYSgDQaPmtxsgC29hHk9vxjEnnEpGgR4sFUU50mz6EtuX3cSCIvEXa3M195MIQMF1VL5Eaad2h0MuS7qMVYcPRzTepZmMZWjwHSYWRPivlHhiqyyJkiOSK9XlGsZj5XGokm-0jeC1_O5smWSGvnTCTOPW9_SZjYvvNs9ojKL4eCTqlNrOuy9FmWW-78V3xuVWZ2PezMJwYIZodTLAuX
+          - generic [ref=f25e314]:
+            - generic [ref=f25e317]:
+              - link "Agricultural landownership among rural women in India India Water Portal https://www.indiawaterportal.org › Agriculture › Farm" [ref=f25e319] [cursor=pointer]:
+                - /url: /goto?url=CAESnAEB6zswFTycdmR_2gqtIAIJU7HJumBiwcZxYtyAXpy2-lyOQq8eK0JjGzYwaB6FQtSelgHJp9nE_OmU2kwvKcF4z0VocyFDMOEic1rM-N74n_290FAqgcQrV6WByBnWiEmn0l_ORANNrPrEADwP1BzfiRBvoQUn4l6iDbOPW3INQQxLaPUVjPrzRU2ncpNH3DpTFM2yg_8M7vIPuqU
+                - heading "Agricultural landownership among rural women in India" [level=3] [ref=f25e320]
+                - generic [ref=f25e326]:
+                  - generic [ref=f25e327]: India Water Portal
+                  - generic [ref=f25e329]: https://www.indiawaterportal.org › Agriculture › Farm
+              - button "About this result" [ref=f25e335] [cursor=pointer]
+            - generic [ref=f25e341]:
+              - generic [ref=f25e342]: 24 Dec 2023 —
+              - generic [ref=f25e343]:
+                - text: Barely
+                - emphasis [ref=f25e344]: 14 percent of women are landowners
+                - text: owning 11 percent of agricultural land · In 2014, women owned land in only 16 percent of the households ...
+              - link "Read more" [ref=f25e345] [cursor=pointer]:
+                - /url: /goto?url=CAESuwIB6zswFWstCoxS1vrehKqqRzw8Ak62OwZkELhJqDg3tEjAFHjEMplMq81NBNS-TNWYvl0D__NIGONczQ5rOnAT1YCg4E01hqsCdko5mbx8WOKGf4hXL29OU3df9e8uWAJ19tF2AUhDt595Uq1Oh1La_uEW6EPOGqwJVyjimCfQhDAofRQ7zMRlIpe4dBd471pauaziHc_97Cbgemje8JC7g7kgvJItbTZFTFgS0rSAuUWzREbv60zJUpQCqPiwCq6GelVdgzjcJsxZ7SEtNgzgoXG1aByase1PGRNgqdzn5vrMn0zZnihDW-Dpx9slQieLspeR9ageh_ea2PUNysY5P23mGcvxQE4qFHvGW5-aGCM9sEJCcXwkn4SzSu92jA2Q2__NN2iOxteIhfCiOICuFzsFbJ9QlKtz2-U
+          - generic [ref=f25e349]:
+            - generic [ref=f25e352]:
+              - link "How Many and Which Women Own Land in India? Inter ... binaagarwal.com https://www.binaagarwal.com › apapers › How_m..." [ref=f25e354] [cursor=pointer]:
+                - /url: /goto?url=CAESjAEB6zswFYnJT4pBYSIOG8eq1vcFDKC6IvpGytg8vck67fK_cJkMYQbmZCgTo0nxLBQE08UnTYywR-dCpi8hw8E2RL1lDJuuePCEcOHw37g0VLoe4d08L1FYK99Kd7AEX4fQfm6DFelAUkPBI_k2C1BJvqKphxYpFNjdrujjD3AvfAhUn6yILxRsDhTBmw
+                - heading "How Many and Which Women Own Land in India? Inter ..." [level=3] [ref=f25e355]
+                - generic [ref=f25e364]:
+                  - generic [ref=f25e365]: binaagarwal.com
+                  - generic [ref=f25e367]: https://www.binaagarwal.com › apapers › How_m...
+              - generic [ref=f25e369]: PDF
+              - button "About this result" [ref=f25e374] [cursor=pointer]
+            - generic [ref=f25e379]:
+              - generic [ref=f25e380]:
+                - generic [ref=f25e381]: by B AGARWAL · 2021 · Cited by 163 —
+                - generic [ref=f25e382]:
+                  - text: proportion of plots owned by
+                  - emphasis [ref=f25e383]: women
+                  - text: individually or
+                  - emphasis [ref=f25e384]: jointly
+                  - text: ; 84–95% of the households (across the states) remained in the sample; hence, ...
+              - generic [ref=f25e385]: 24 pages
+          - generic [ref=f25e389]:
+            - generic [ref=f25e392]:
+              - 'link "A Struggle For Ground: Status Of Female Land Ownership ... Feminism in India https://feminisminindia.com › ..." [ref=f25e394] [cursor=pointer]':
+                - /url: /goto?url=CAESXQHrOzAV4wZXCh1aKdpH1vRfAALLGnibX3zE7eOaeeYliR-NwS30QxVhv9ZNJgr4DR61cUMgbGYz8JfTuPuM3X28K85dx5Bbq8aXqdUjt5pSReZqeIMFdQmtAlkxfQ
+                - 'heading "A Struggle For Ground: Status Of Female Land Ownership ..." [level=3] [ref=f25e395]'
+                - generic [ref=f25e401]:
+                  - generic [ref=f25e402]: Feminism in India
+                  - generic [ref=f25e404]: https://feminisminindia.com › ...
+              - button "About this result" [ref=f25e410] [cursor=pointer]
+            - generic [ref=f25e416]:
+              - generic [ref=f25e417]: 25 Jul 2024 —
+              - generic [ref=f25e418]:
+                - emphasis [ref=f25e419]: 31.7% of women and 43.9% of men own land alone or jointly
+                - text: ", whereas only 8.3% of Indian women own land alone, and 13% own a house alone, 29% of ..."
+          - generic [ref=f25e423]:
+            - generic [ref=f25e426]:
+              - 'link "Women''s Land Rights: Centre Of India''s Agricultural Reform IMPRI Impact and Policy Research Institute https://www.impriindia.com › Insights" [ref=f25e428] [cursor=pointer]':
+                - /url: /goto?url=CAESggEB6zswFcgNMVeqSVN6HZYWkWDonTKnLMonC0kB_vRR4YpAtGwbIXkz4fDuRGNf5mOrYLvr3Y3HtNheUrN6mqrH3QbdXAqr5IvMwKmsiwGVDtRYkppG_b7LpOBDNRWatMZIxueaHA9-53ECJ_6V4zpaTYqEXLnZo93R4Zz_wYAd2-OF
+                - 'heading "Women''s Land Rights: Centre Of India''s Agricultural Reform" [level=3] [ref=f25e429]'
+                - generic [ref=f25e435]:
+                  - generic [ref=f25e436]: IMPRI Impact and Policy Research Institute
+                  - generic [ref=f25e438]: https://www.impriindia.com › Insights
+              - button "About this result" [ref=f25e444] [cursor=pointer]
+            - generic [ref=f25e450]:
+              - generic [ref=f25e451]: 16 Apr 2026 —
+              - generic [ref=f25e452]:
+                - text: Only about
+                - emphasis [ref=f25e453]: one in eight agricultural landholders in India is a woman
+                - text: ", going by PM-KISAN data. Land remains registered largely in the names of ..."
+              - link "Read more" [ref=f25e454] [cursor=pointer]:
+                - /url: /goto?url=CAES2AEB6zswFc899KW2M_47WfyORWjhvN3iaW8qi-Nta6Sc1z-f_GWIC8aHusyH5BcG95GXvfp3Z9P625nczsXuJfxgJ15tciPFHE68a31W07Sh5TEaBQf-wUdEAWUxKAbZjcwM1cnAhED49tFY6f5-bc1W5Vj2GvpY2zYPTkZ2YyFS8LDEJt3EPvF166L5G015i6DOwfrqeUQ5q_MP9rQsxWtYX6JI-gNAoilAEmHFfXRFb84fIzx4XHwGErVECxb3YwgVYsYLfJ0P-HqqWSuq9pbzms04AKbNbys
+          - generic [ref=f25e458]:
+            - generic [ref=f25e461]:
+              - 'link "Gender Inequality in Land Ownership in India: Evidence from RePEc: Research Papers in Economics https://ideas.repec.org › taf › jdevst" [ref=f25e463] [cursor=pointer]':
+                - /url: /goto?url=CAESdwHrOzAVOrF7ARFqUqSXr9Txo6_oEXtAbForz7YCJOEySpO7LiRWVKc57NWHXJJg2pgO3xdYk8XFpXb4oJHq5ZvWAcDDZTgw08ETaTEfWcKm_gJ6iXIMcNyb78CaC8S80B6NMGgYlj19PKVVG_kIF5oeC1qjiupp
+                - 'heading "Gender Inequality in Land Ownership in India: Evidence from" [level=3] [ref=f25e464]'
+                - generic [ref=f25e470]:
+                  - generic [ref=f25e471]: "RePEc: Research Papers in Economics"
+                  - generic [ref=f25e473]: https://ideas.repec.org › taf › jdevst
+              - button "About this result" [ref=f25e479] [cursor=pointer]
+            - generic [ref=f25e485]:
+              - generic [ref=f25e486]: by RK Mahato · 2025 · Cited by 10 —
+              - generic [ref=f25e487]:
+                - text: The findings reveal that
+                - emphasis [ref=f25e488]: women's land ownership remains significantly lower than men's
+                - text: ", with only 11 per cent of rural women and 15 per cent of urban women ..."
+              - link "Read more" [ref=f25e489] [cursor=pointer]:
+                - /url: /goto?url=CAESyQEB6zswFXMJb6ukiHFb9wxljMgmTQWzMm4g7CM_wCXlqcdo9OdmZx6R0AIzHn5dEdzb-OHvAPs6j9clKziPZtC7UwmFB11CNr6in5Ut6LRSzE6uuDzgSjFKc5rHOdi0r3bjErHqqJtEtSq1J-NHRNJ-6oIw2C7S4u6QHnfHo5FvNCC80fz0tlEILmuLu8MM6C1tK5MU5QNFxOHBV4VbLbMsTc3DWe11ToYyhoP3Z9Y9y3EYnLvnuK0-eU_MJXrP3uVDLxADMHOGLvw
+            - generic [ref=f25e491]:
+              - text: "Missing: percentage ‎| Show results with:"
+              - link "percentage" [ref=f25e492] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&q=women+land+ownership+India+%22percentage%22+statistics+joint+patta&sa=X&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ5t4CegQIOhAB
+          - generic [ref=f25e497]:
+            - heading "People also ask" [level=2] [ref=f25e499]
+            - generic [ref=f25e500]:
+              - button "Do women produce 50% of the food?" [ref=f25e506] [cursor=pointer]
+              - button "Who are the top 3 landowners in India?" [ref=f25e520] [cursor=pointer]
+              - button "What percentage of women in India are involved in agriculture?" [ref=f25e534] [cursor=pointer]
+              - button "Is it true that almost 50% of the people in India are involved in farming?" [ref=f25e548] [cursor=pointer]
+        - navigation [ref=f25e558]:
+          - heading "Page navigation" [level=1] [ref=f25e559]
+          - text: "1"
+          - link "Page 2" [ref=f25e562] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=10&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAE
+            - text: "2"
+          - link "Page 3" [ref=f25e564] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=20&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAG
+            - text: "3"
+          - link "Page 4" [ref=f25e566] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=30&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAI
+            - text: "4"
+          - link "Page 5" [ref=f25e568] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=40&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAK
+            - text: "5"
+          - link "Page 6" [ref=f25e570] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=50&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAM
+            - text: "6"
+          - link "Page 7" [ref=f25e572] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=60&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAO
+            - text: "7"
+          - link "Page 8" [ref=f25e574] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=70&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAQ
+            - text: "8"
+          - link "Page 9" [ref=f25e576] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=80&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAS
+            - text: "9"
+          - link "Page 10" [ref=f25e578] [cursor=pointer]:
+            - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=90&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8tMDegQIQBAU
+            - text: "10"
+          - heading [level=2] [ref=f25e580]:
+            - link "Next" [ref=f25e581] [cursor=pointer]:
+              - /url: /search?q=women+land+ownership+India+percentage+statistics+joint+patta&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnuAMShjE8sM4a7lM2B6rc2hjGpBCA:1789982504040&ei=KPewap2RApuNseMP7cfSiAg&start=10&sa=N&sstk=AS6-VmLKkJnArW7hlfAhSFYuHlf5rH4cgubOkWmQvwyZbHumVUnLP2YyANuYUwzFM36M938u5p-PR23C31CKy37K_-OvOISO0LfvAQ&ved=2ahUKEwidxbq6rP-WAxWbRmwGHe2jFIEQ8NMDegQIQBAW
+        - navigation
+    - contentinfo [ref=f25e584]:
+      - heading "Footer links" [level=1] [ref=f25e585]
+      - generic [ref=f25e589]:
+        - generic [ref=f25e591]:
+          - text: India
+          - generic [ref=f25e593]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - Based on your past activity" [ref=f25e595] [cursor=pointer]:
+              - generic [ref=f25e596]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=f25e598]:
+                - text: "-"
+                - generic [ref=f25e599]: Based on your past activity
+            - text: "-"
+            - button "Update location" [ref=f25e601] [cursor=pointer]
+        - generic [ref=f25e604]:
+          - link "Help" [ref=f25e605] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f25e606] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f25e607] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f25e608] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

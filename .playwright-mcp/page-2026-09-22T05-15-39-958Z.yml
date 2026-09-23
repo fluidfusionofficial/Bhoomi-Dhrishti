@@ -1,0 +1,345 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - link "Go to Google Home" [ref=e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQPHoECAYQBA
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - combobox "Search" [ref=e25]: JEV AI system one model 2026 JEV AI system one model 2026
+            - generic [ref=e26]:
+              - button "Clear" [ref=e28] [cursor=pointer]
+              - generic [ref=e33]:
+                - button "Search by voice" [ref=e34] [cursor=pointer]
+                - button "Search by image" [ref=e37] [cursor=pointer]
+          - button "Search" [ref=e40] [cursor=pointer]
+    - generic [ref=e45]:
+      - button "Settings" [ref=e47] [cursor=pointer]
+      - button "Share" [ref=e52] [cursor=pointer]
+      - generic [ref=e58]:
+        - button "Google apps" [ref=e60] [cursor=pointer]
+        - link "Sign in" [ref=e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3DJEV%2BAI%2Bsystem%2Bone%2Bmodel%2B2026&ec=futura_srp_og_si_72236_p
+  - generic [ref=e68]:
+    - navigation [ref=e74]:
+      - generic [ref=e80]:
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "AI Mode" [ref=e85] [cursor=pointer]:
+              - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ2J8OegQIERAD
+          - listitem [ref=e89]:
+            - link "All" [disabled] [ref=e90]
+          - listitem [ref=e93]:
+            - link "Videos" [ref=e94] [cursor=pointer]:
+              - /url: /search?sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&q=JEV+AI+system+one+model+2026&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQtKgLegQIFxAB
+          - listitem [ref=e97]:
+            - link "News" [ref=e98] [cursor=pointer]:
+              - /url: /search?sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&q=JEV+AI+system+one+model+2026&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ0pQJegQIFhAB
+          - listitem [ref=e101]:
+            - link "Images" [ref=e102] [cursor=pointer]:
+              - /url: /search?sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&q=JEV+AI+system+one+model+2026&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQtKgLegQIFRAB
+          - listitem [ref=e105]:
+            - link "Shopping" [ref=e106] [cursor=pointer]:
+              - /url: /search?sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&q=JEV+AI+system+one+model+2026&ved=1t:220175&ictx=111
+          - listitem [ref=e109]:
+            - link "Forums" [ref=e110] [cursor=pointer]:
+              - /url: /search?sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKEwpHWb4GllXaHEISn7pMuLHumWhqFU0j6EuzM_iX2yFK0S3iBlNtK5BOMl-sCHE9BTv64h2T2Mqy2d3CBzPXeUaLKYPu00evwOQ5KR4yQvbZVbQrViisv9QM4n0jkLNGSTjWNaCWwR2_2Z9qM3DvTPN64X-LE1rS3mmsSIeRWHXnh9SfzA&q=JEV+AI+system+one+model+2026&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQs6gLegQIExAB
+          - listitem [ref=e113]:
+            - button [ref=e114] [cursor=pointer]:
+              - generic "More filters" [ref=e115]: More
+        - button "Tools" [ref=e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=e129]
+    - main [ref=e135]:
+      - generic [ref=e139]:
+        - generic [ref=e143]:
+          - generic [ref=e145]:
+            - heading "Videos" [level=2] [ref=e146]
+            - button "About this result" [ref=e151] [cursor=pointer]
+          - generic [ref=e157]:
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - link [ref=e166] [cursor=pointer]:
+                  - /url: /goto?url=CAESfQHrOzAVDDJ-rh0n_us7_4hVzfqkZXkeX222F3HYa-bZ8Ovpcvu3fOUsLlE_1lHdQisz2ibaeIPR8zJjvXH56DSyo5a10msxfn6e8ZKRlw5JBVB6THonQtJqI1synQ5HDV3wx2WfhOZzIpMtDbw2gCl0rTE5Zd9NQX874E3O
+                  - heading "Jev System One Model, Clearly Explained YouTube Sean‘s AI Stories 2 hours ago" [level=3] [ref=e167]:
+                    - generic [ref=e168]: Jev System One Model, Clearly Explained
+                    - generic [ref=e172]:
+                      - generic [ref=e173]:
+                        - text: YouTube
+                        - generic [ref=e174]: · Sean‘s AI Stories
+                      - generic [ref=e175]: 2 hours ago
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [aria-hidden]:
+                          - text: YouTube
+                          - generic: · Sean‘s AI Stories
+                    - button "About this result" [ref=e179] [cursor=pointer]
+              - button "Jev System One Model, Clearly Explained by Sean‘s AI Stories on YouTube. Play on Google. 22:30" [ref=e184] [cursor=pointer]:
+                - generic [ref=e191]: 22:30
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - link [ref=e205] [cursor=pointer]:
+                  - /url: /goto?url=CAESkwEB6zswFdN_fVPQ4D1t_rtNLTleIXOZqD7v6Sp8x5jslXLxrdxwoAGwbt4-fEw0qlLmjy72oo1pNxVzxGCiqN-cW79VvyHJ3NYtlyybfr7MO8bdi5SGXc2qHN8Ee7uPjuFXuj_uhcR3yHIQyY9j6BdUbsKVwvQQ_fRdbAeR4V9fOlHk0op-QJ6dz0UYfBmxVSEkFH8
+                  - 'heading "Jev Explained: The AI Model Built to Decide, Not Talk Gnana Prasath Singularity Feed | AI Models , Agents & Robotics 2 days ago" [level=3] [ref=e206]':
+                    - generic [ref=e207]: "Jev Explained: The AI Model Built to Decide, Not Talk"
+                    - generic [ref=e211]:
+                      - generic [ref=e212]:
+                        - text: Gnana Prasath
+                        - generic [ref=e213]: · Singularity Feed | AI Models , Agents & Robotics
+                      - generic [ref=e214]: 2 days ago
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [aria-hidden]:
+                          - text: Gnana Prasath
+                          - generic: · Singularity Feed | AI Models , Agents & Robotics
+                    - button "About this result" [ref=e218] [cursor=pointer]
+              - 'link "Jev Explained: The AI Model Built to Decide, Not Talk by Singularity Feed | AI Models , Agents & Robotics on Gnana Prasath. Play on Gnana Prasath. 1:36" [ref=e223] [cursor=pointer]':
+                - /url: /goto?url=CAESkwEB6zswFdN_fVPQ4D1t_rtNLTleIXOZqD7v6Sp8x5jslXLxrdxwoAGwbt4-fEw0qlLmjy72oo1pNxVzxGCiqN-cW79VvyHJ3NYtlyybfr7MO8bdi5SGXc2qHN8Ee7uPjuFXuj_uhcR3yHIQyY9j6BdUbsKVwvQQ_fRdbAeR4V9fOlHk0op-QJ6dz0UYfBmxVSEkFH8
+                - generic [ref=e233]: 1:36
+            - generic [ref=e239]:
+              - generic [ref=e240]:
+                - generic [ref=e241]:
+                  - link [ref=e243] [cursor=pointer]:
+                    - /url: /goto?url=CAESfQHrOzAVimkiySpaH996Sw5PJ9z84KN2ndyAU0F-GajXjv-x5fAqbE2bxoA0hBaiVSLXGjRyjPlGTB99s6qPDbOO4h8ZyWbUkAVl3hKAH6lIyZb_flWbig4iRPweFkMQPFCjeeu4QlVrz2zmeRjakgQLFobdRJW8cPVVTFlu
+                    - heading "What Is Jev? TypeSafe's New System One AI Model Explained YouTube TestMu AI (Formerly LambdaTest) 2 days ago" [level=3] [ref=e244]:
+                      - generic [ref=e245]: What Is Jev? TypeSafe's New System One AI Model Explained
+                      - generic [ref=e249]:
+                        - generic [ref=e250]:
+                          - text: YouTube
+                          - generic [ref=e251]: · TestMu AI (Formerly LambdaTest)
+                        - generic [ref=e252]: 2 days ago
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic [aria-hidden]:
+                            - text: YouTube
+                            - generic: · TestMu AI (Formerly LambdaTest)
+                      - button "About this result" [ref=e256] [cursor=pointer]
+                - button "What Is Jev? TypeSafe's New System One AI Model Explained by TestMu AI (Formerly LambdaTest) on YouTube. Play on Google. 1:20" [ref=e261] [cursor=pointer]:
+                  - generic [ref=e268]: 1:20
+              - button "Jev is TypeSafe AI's first system one model, built to make fast, structured decisions for software, not to have conversations." [ref=e275] [cursor=pointer]:
+                - generic [ref=e277]: Jev is TypeSafe AI's first system one model, built to make fast, structured decisions for software, not to have conversations.
+          - link "View all videos" [ref=e282] [cursor=pointer]:
+            - /url: /search?sca_esv=5e5febaa67db9c78&udm=vids&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&q=JEV+AI+system+one+model+2026&sa=X&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8ccDKAJ6BAgbEAU
+            - separator [aria-hidden] [ref=e283]
+            - generic [ref=e284]: View all
+        - generic [ref=e291]:
+          - heading "Web results" [level=2] [ref=e292]
+          - generic [ref=e293]:
+            - generic [ref=e296]:
+              - link "Typesafe AI's Non-Autoregressive System-1 Model MindStudio https://www.mindstudio.ai › jev-system-one-model-launch" [ref=e298] [cursor=pointer]:
+                - /url: /goto?url=CAEScgHrOzAVIZwkzNchg82Jx28-6DhmZJSCwUPP6ciJ9sr7xuCCBGy2bXJVzPS0v9LpRsOA15ekI0vE393in_Pt1mqdT7XZTviGtHGDjN6KohRDYqzFI5au-wodTbytovexmIP9hUZXMR3J8Bvm4tr19JHNCg
+                - heading "Typesafe AI's Non-Autoregressive System-1 Model" [level=3] [ref=e299]
+                - generic [ref=e305]:
+                  - generic [ref=e306]: MindStudio
+                  - generic [ref=e308]: https://www.mindstudio.ai › jev-system-one-model-launch
+              - button "About this result" [ref=e314] [cursor=pointer]
+            - generic [ref=e320]:
+              - generic [ref=e321]: 4 days ago —
+              - generic [ref=e322]:
+                - text: Jev is
+                - emphasis [ref=e323]: Typesafe AI's new System-1 model
+                - text: that skips token-by-token generation for instant decisions. Here's how it works and why it matters.
+        - generic [ref=e327]:
+          - generic [ref=e330]:
+            - 'link "Jev: TypeSafe''s System One Model That Never Hallucinates DataCamp https://www.datacamp.com › Blog › Artificial Intelligence" [ref=e332] [cursor=pointer]':
+              - /url: /goto?url=CAESawHrOzAVoIEP3ilQGbmLjKhyqqxUc4z9hAkqLus4d-DKHW5-PkR40XntbVjokvSsvRBg_LIJ8bC4azqUOvvyPYTU3qAwoJFxqZ6Db0Pxp2dO0iGh8kGhQaPwUxxSonqhBJ8fgx3GBweKeMYn
+              - 'heading "Jev: TypeSafe''s System One Model That Never Hallucinates" [level=3] [ref=e333]'
+              - generic [ref=e339]:
+                - generic [ref=e340]: DataCamp
+                - generic [ref=e342]: https://www.datacamp.com › Blog › Artificial Intelligence
+            - button "About this result" [ref=e348] [cursor=pointer]
+          - generic [ref=e354]:
+            - generic [ref=e355]: 6 days ago —
+            - generic [ref=e356]:
+              - emphasis [ref=e357]: TypeSafe's Jev is a System One model
+              - text: that returns typed decisions instead of text, running 40-200x faster and 40-400x cheaper than frontier ...
+        - generic [ref=e361]:
+          - generic [ref=e364]:
+            - link "Introducing System One Models & Jev - TypeSafe AI Blog TypeSafe AI https://typesafe.ai › blog › introducing-system-one-mod..." [ref=e366] [cursor=pointer]:
+              - /url: /goto?url=CAESdgHrOzAVADWu9E81ZKoUs2osdfTSnHV1rJBauLaFybYhc3i0TjH5BZilgM86N8KneIc5U11juKZrC3g5zqsPLTzTTImMDxNgtXiBK5CjzSybU9H3HcbNewMVyYwfZQzNeCGPvIlci6TKdWvGo-oDmN-PkFfz7kM
+              - heading "Introducing System One Models & Jev - TypeSafe AI Blog" [level=3] [ref=e367]
+              - generic [ref=e373]:
+                - generic [ref=e374]: TypeSafe AI
+                - generic [ref=e376]: https://typesafe.ai › blog › introducing-system-one-mod...
+            - button "About this result" [ref=e382] [cursor=pointer]
+          - generic [ref=e388]:
+            - generic [ref=e389]: 6 days ago —
+            - generic [ref=e390]:
+              - emphasis [ref=e391]: Jev achieves similar levels of intelligence on System One tasks
+              - text: compared to existing LLMs, while being two orders of magnitude faster and more ...
+            - link "Read more" [ref=e392] [cursor=pointer]:
+              - /url: /goto?url=CAES0wEB6zswFSoIyPAQy8x1rxVOFClBriJC117bOYSYOJpX-2sRwJUrtfBD2AlNhPaT99mKpEp7VXr_rrx7XA-f1mTisUggnPDhhs4ygSCwDXVEZLw9MyhaxhzLPwyy-A1jGTJFpH9kMkS1l0Qo8_q2MWpyLhOyHyREzphiInGZsWBchwIETj69UKgTUrt5sawtZ8D3ApLJ_RtSnmXEFt7EmqB7nhj4ucyqcXhqjLSC5Czuxpid9mFy_rRuoR_ms6rjJ4SdKCARuHSks5RbvqPoXI4TsbQh
+        - generic [ref=e396]:
+          - generic [ref=e399]:
+            - link "What Is Jev? A Guide to TypeSafe AI's System One Model LangChain https://www.langchain.com › building-a-harness-with-jev" [ref=e401] [cursor=pointer]:
+              - /url: /goto?url=CAEScgHrOzAVjTJbrJLC-2SQXkSELK-6_7121dkPnzIoS4IbcJFfdyx_wRAgAWnQxniRB67TuJGvi0A4JEnynxcr8u4X4nni6BXaL71qGQzegU0rnDmiym8o5gBWf7d_X9Ll2Wt8FxAqetmIMK9LC_n3wuh_nw
+              - heading "What Is Jev? A Guide to TypeSafe AI's System One Model" [level=3] [ref=e402]
+              - generic [ref=e408]:
+                - generic [ref=e409]: LangChain
+                - generic [ref=e411]: https://www.langchain.com › building-a-harness-with-jev
+            - button "About this result" [ref=e417] [cursor=pointer]
+          - generic [ref=e423]:
+            - generic [ref=e424]:
+              - emphasis [ref=e425]: Jev
+              - text: is a new
+              - emphasis [ref=e426]: model
+              - text: released from TypeSafe
+              - emphasis [ref=e427]: AI
+              - text: . The company reports up to 200x faster inference and 400x lower cost than comparable LLMs on classification tasks.
+            - link "Read more" [ref=e428] [cursor=pointer]:
+              - /url: /goto?url=CAESxwEB6zswFZaVZJnB5K3z1t4IlNo_wYK-EpPZ9zxR9hi2a7JS839C5JE2MAXLJQx9jaGM9qIwXQTj2FsmHg-Em_xRirusAva2TLZr6fPeq13YHXh6iVaLHGeZ5suQPvZlzOfpJjmyLNu0hX4LlEoKkaXEnF0_LF1SS80sPZeZbo18VDkXoOZgCbD9RCCH426J6YRjOrEyG09DklBp-PuimXo1X329sywvw1C26z6PJ-JmD6D-qEIW-8Yj4fJLHNoAVu6TDodWSvXX
+        - generic [ref=e432]:
+          - generic [ref=e435]:
+            - link "What Is Jev? TypeSafe AI's System One Model Explained You.com https://you.com › resources › what-is-jev" [ref=e437] [cursor=pointer]:
+              - /url: /goto?url=CAESXQHrOzAVMunkjfLEWOHezWJS330rkMomNGeM73psHlf089MWVWctBBsPlUJv2pWfDhxglZVGW_yVrSuRvdFpf0kvMcPjzTZsjniW0ybrZHs54cyxIPlAK7RShWszpQ
+              - heading "What Is Jev? TypeSafe AI's System One Model Explained" [level=3] [ref=e438]
+              - generic [ref=e444]:
+                - generic [ref=e445]: You.com
+                - generic [ref=e447]: https://you.com › resources › what-is-jev
+            - button "About this result" [ref=e453] [cursor=pointer]
+          - generic [ref=e459]:
+            - generic [ref=e460]: 1 day ago —
+            - generic [ref=e461]:
+              - emphasis [ref=e462]: Jev
+              - text: is the first public
+              - emphasis [ref=e463]: model
+              - text: from TypeSafe
+              - emphasis [ref=e464]: AI
+              - text: ", announced on September 15,"
+              - emphasis [ref=e465]: "2026"
+              - text: as a "
+              - emphasis [ref=e466]: System One Model
+              - text: ." Instead of generating text
+              - emphasis [ref=e467]: one
+              - text: token ...
+        - generic [ref=e471]:
+          - generic [ref=e474]:
+            - link "Jev (TypeSafe System One) finance & trading projects GitHub https://gist.github.com › drillan" [ref=e476] [cursor=pointer]:
+              - /url: /goto?url=CAESeAHrOzAVkAb13XQxYPtJW7c3JKgimz9qnucHrllDEw5PsMGWOykPA5QHXi8n4yo6cb-Yh_4OvfiZdOK8z7KEaJN9tr-HKKziFJSP0DwYiFgwYXjAMMMpdTq7sDkp8DaQqaAOxCkq38Wc0bH3zMG1rpDRF0vvc3ghuw
+              - heading "Jev (TypeSafe System One) finance & trading projects" [level=3] [ref=e477]
+              - generic [ref=e483]:
+                - generic [ref=e484]: GitHub
+                - generic [ref=e486]: https://gist.github.com › drillan
+            - button "About this result" [ref=e492] [cursor=pointer]
+          - generic [ref=e498]:
+            - generic [ref=e499]:
+              - generic [ref=e500]: 46 minutes ago
+              - text: —
+            - generic [ref=e501]:
+              - text: Jev,
+              - emphasis [ref=e502]: TypeSafe AI's System One decision model
+              - text: (released 2026-09-15), in investment, trading, and financial-data contexts. One AI trade decision ...
+        - generic [ref=e506]:
+          - generic [ref=e509]:
+            - link "Jev and System One Models Explained Outcome School https://outcomeschool.com › blog › jev-and-system-one..." [ref=e511] [cursor=pointer]:
+              - /url: /goto?url=CAESegHrOzAVM9g3QWnMMqH4CS9UYgNIT0tChTvuimP0ET9zyAS_wRnF8sdsC3Cuov7vFUr8rykG6cqHLAc5TRw048FX4nDBkf2Wtspejc0M18v8HGXKNNUszEh4l38Wv2Wt8OR_jdcLcphoDhEAXKSkopyPoCEPrFtZDOdP
+              - heading "Jev and System One Models Explained" [level=3] [ref=e512]
+              - generic [ref=e518]:
+                - generic [ref=e519]: Outcome School
+                - generic [ref=e521]: https://outcomeschool.com › blog › jev-and-system-one...
+            - button "About this result" [ref=e527] [cursor=pointer]
+          - generic [ref=e533]:
+            - generic [ref=e534]: 5 days ago —
+            - generic [ref=e535]:
+              - emphasis [ref=e536]: Jev is the first System One Model
+              - text: ", built by a company called TypeSafe AI. It was announced on September 15, 2026. Jev supports up to 255 ..."
+        - generic [ref=e540]:
+          - generic [ref=e543]:
+            - link "Jev (AI model) Wikipedia https://en.wikipedia.org › wiki › Jev_(AI_model)" [ref=e545] [cursor=pointer]:
+              - /url: /goto?url=CAESZAHrOzAVmLET5vFpc5dLquTM6DQwT1CRq8xFi2X9Om2QJihXFpcitvJHSqs-FGhzZ82Fskf608PeGuFYB1cRms0fhobNaheF_Y4mcxdqde1bm4qg9P8k3zmbqm_AZaLvwOGsrgc
+              - heading "Jev (AI model)" [level=3] [ref=e546]
+              - generic [ref=e552]:
+                - generic [ref=e553]: Wikipedia
+                - generic [ref=e555]: https://en.wikipedia.org › wiki › Jev_(AI_model)
+            - button "About this result" [ref=e561] [cursor=pointer]
+          - generic [ref=e567]:
+            - generic [ref=e568]:
+              - generic [ref=e569]: 28 minutes ago
+              - text: —
+            - generic [ref=e570]:
+              - text: Jev is a proprietary artificial intelligence model developed by TypeSafe AI,
+              - emphasis [ref=e571]: released in limited early access on 15 September 2026
+              - text: ", US$40 million seed round ..."
+        - generic [ref=e575]:
+          - generic [ref=e578]:
+            - link "Introducing System One Models & Laya (and Jev) enzolombardi.net https://enzolombardi.net › introducing-system-one-mod..." [ref=e580] [cursor=pointer]:
+              - /url: /goto?url=CAESiAEB6zswFcv65ga2NhUyurw5aCs4JCNbRHUzg2CxM8-_NGHkVZHcqRCjP_0eSauy0DQ5uoG6la6b5a8u6p2-VN38RHuRAr25w4wQ8M7TzUF8g4AXEjv_I9A9TOMfeZ03PdSfUN1xRKioPGXUnLpJvjAws3UVsdx-6Q0KNv8ZgO3Qwp4xTwOZtK6i
+              - heading "Introducing System One Models & Laya (and Jev)" [level=3] [ref=e581]
+              - generic [ref=e587]:
+                - generic [ref=e588]: enzolombardi.net
+                - generic [ref=e590]: https://enzolombardi.net › introducing-system-one-mod...
+            - button "About this result" [ref=e596] [cursor=pointer]
+          - generic [ref=e602]:
+            - generic [ref=e603]: 21 hours ago —
+            - generic [ref=e604]:
+              - text: A
+              - emphasis [ref=e605]: System One model
+              - text: deletes the decoder. The state and the question go into a bidirectional encoder in one pass, and a small decision head reads ...
+            - link "Read more" [ref=e606] [cursor=pointer]:
+              - /url: /goto?url=CAES2wEB6zswFZVx9R_HnvrTAMh6MPeL6BcPib_5PI67kRufDAZWmp1Ud78W__iK-dxCLS6adExZk6oo56UES8sM1AcHJAzniqIGWB97pkANgPONenG9Ahx4lIwenJD9MHW1VJWa1rsgRTgcbAHWX4-cAmpJJ4b8dODtxWjpHpL4yvlpY3zSW_M23R2reGpmJ3YWH-vCCkKvtU2ehbuVFKwuTwa39yYhK15wbcq3vwZTDZ6VGafL3DxWqx7ZDKnlOXrpHthSo-u_NuFdzz2XOePhKUihVZtg2kvPHcqD7Y8
+      - navigation [ref=e609]:
+        - heading "Page navigation" [level=1] [ref=e610]
+        - text: "1"
+        - link "Page 2" [ref=e613] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=10&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAE
+          - text: "2"
+        - link "Page 3" [ref=e615] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=20&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAG
+          - text: "3"
+        - link "Page 4" [ref=e617] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=30&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAI
+          - text: "4"
+        - link "Page 5" [ref=e619] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=40&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAK
+          - text: "5"
+        - link "Page 6" [ref=e621] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=50&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAM
+          - text: "6"
+        - link "Page 7" [ref=e623] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=60&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAO
+          - text: "7"
+        - link "Page 8" [ref=e625] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=70&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAQ
+          - text: "8"
+        - link "Page 9" [ref=e627] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=80&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAS
+          - text: "9"
+        - link "Page 10" [ref=e629] [cursor=pointer]:
+          - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=90&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8tMDegQINxAU
+          - text: "10"
+        - heading [level=2] [ref=e631]:
+          - link "Next" [ref=e632] [cursor=pointer]:
+            - /url: /search?q=JEV+AI+system+one+model+2026&sca_esv=5e5febaa67db9c78&sxsrf=APpeQnsdUfy40_P1PQbXFlGN-TTt_9rIqQ:1790054138714&ei=-g6yatX9KsfvseMPgJ-uyAU&start=10&sa=N&sstk=AS6-VmLxsnp_0f1sb7kMWYntZX901xJ7U2INJtI0PSeRJdH9MELtFZat0qQ3BNc5Ggt3DYMEw3pqgf_-Xe99yVBNeYCqJF46YUqJeg&ved=2ahUKEwjV4sOot4GXAxXHd2wGHYCPC1kQ8NMDegQINxAW
+      - navigation
+    - contentinfo [ref=e635]:
+      - heading "Footer links" [level=1] [ref=e636]
+      - generic [ref=e640]:
+        - generic [ref=e642]:
+          - text: India
+          - generic [ref=e644]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - From your IP address" [ref=e646] [cursor=pointer]:
+              - generic [ref=e647]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=e649]:
+                - text: "-"
+                - generic [ref=e650]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e652] [cursor=pointer]
+        - generic [ref=e655]:
+          - link "Help" [ref=e656] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=e657] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e658] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=e659] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

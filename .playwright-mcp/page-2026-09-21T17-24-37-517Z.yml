@@ -1,0 +1,345 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - button [ref=e4] [cursor=pointer]
+    - link "Homepage" [ref=e6] [cursor=pointer]:
+      - /url: /schhp?hl=en&as_sdt=0,5
+    - generic [ref=e9]:
+      - textbox "Search" [ref=e11]: federated learning reinforcement learning government data interoperability land records
+      - button "Search" [ref=e12] [cursor=pointer]
+    - link "Sign in" [ref=e16] [cursor=pointer]:
+      - /url: https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/scholar%3Fq%3Dfederated%2Blearning%2Breinforcement%2Blearning%2Bgovernment%2Bdata%2Binteroperability%2Bland%2Brecords%26hl%3Den%26as_sdt%3D0%252C5%26as_ylo%3D2023
+  - generic [ref=e17]:
+    - generic [ref=e20]: Articles
+    - generic [ref=e22]: About 17,600 results (0.20 sec)
+    - generic [ref=e24]:
+      - link "My profile" [ref=e25] [cursor=pointer]:
+        - /url: /citations?hl=en
+      - link "My library" [ref=e28] [cursor=pointer]:
+        - /url: /scholar?scilib=1&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5
+  - generic [ref=e31]:
+    - navigation [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Any time" [ref=e37] [cursor=pointer]:
+                - /url: /scholar?q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5
+            - listitem [ref=e38]:
+              - link "Since 2026" [ref=e39] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2026&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5
+            - listitem [ref=e40]:
+              - link "Since 2025" [ref=e41] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2025&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5
+            - listitem [ref=e42]:
+              - link "Since 2022" [ref=e43] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2022&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5
+            - listitem [ref=e44]:
+              - link "Custom range..." [ref=e45] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - textbox [ref=e49]: "2023"
+              - text: —
+              - textbox [ref=e51]
+            - button "Search" [ref=e53] [cursor=pointer]
+        - list [ref=e56]:
+          - listitem [ref=e57]:
+            - link "Sort by relevance" [ref=e58] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&as_ylo=2023&q=%22federated+learning%22++reinforcement+learning+government+data+interoperability+land+records
+          - listitem [ref=e59]:
+            - link "Sort by date" [ref=e60] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&q=%22federated+learning%22++reinforcement+learning+government+data+interoperability+land+records&scisbd=1
+        - list [ref=e61]:
+          - listitem [ref=e62]:
+            - link "Any type" [ref=e63] [cursor=pointer]:
+              - /url: /scholar?q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+          - listitem [ref=e64]:
+            - link "Review articles" [ref=e65] [cursor=pointer]:
+              - /url: /scholar?q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023&as_rr=1
+        - list [ref=e66]:
+          - listitem [ref=e67]:
+            - checkbox "include patents" [ref=e68] [cursor=pointer]
+          - listitem [ref=e72]:
+            - checkbox "include citations" [checked] [ref=e73] [cursor=pointer]
+        - link "Create alert" [ref=e78] [cursor=pointer]:
+          - /url: /scholar_alerts?view_op=create_alert_options&hl=en&alert_query=%22federated+learning%22++reinforcement+learning+government+data+interoperability+land+records&alert_params=%3Fhl%3Den%26as_sdt%3D0,5
+    - main [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - link "[HTML] sciencedirect.com" [ref=e88] [cursor=pointer]:
+              - /url: https://www.sciencedirect.com/science/article/pii/S1569843226003687
+            - generic [ref=e89]:
+              - 'heading "[HTML] Federated learning in forest resource modelling and monitoring: Bridging data confidentiality and collaborative research" [level=3] [ref=e90]':
+                - generic [ref=e91]: "[HTML]"
+                - 'link "Federated learning in forest resource modelling and monitoring: Bridging data confidentiality and collaborative research" [ref=e92] [cursor=pointer]':
+                  - /url: https://www.sciencedirect.com/science/article/pii/S1569843226003687
+              - generic [ref=e93]:
+                - text: J Schumacher,
+                - link "A Cescatti" [ref=e94] [cursor=pointer]:
+                  - /url: /citations?user=Iwa27V0AAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "G Chirici" [ref=e95] [cursor=pointer]:
+                  - /url: /citations?user=OnlxhWUAAAAJ&hl=en&oi=sra
+                - text: ", G D'Amico… - International Journal of …, 2026 - Elsevier"
+              - generic [ref=e96]: … The findings underscore the potential of FL to transform collaborative environmental monitoring, particularly in domains where data confidentiality and interoperability are critical. …
+              - generic [ref=e97]:
+                - button "Save" [ref=e98] [cursor=pointer]
+                - button "Cite" [ref=e101] [cursor=pointer]
+                - link "Cited by 5" [ref=e104] [cursor=pointer]:
+                  - /url: /scholar?cites=8389810893386419382&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e105] [cursor=pointer]:
+                  - /url: /scholar?q=related:tgwAcY6YbnQJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 6 versions" [ref=e106] [cursor=pointer]:
+                  - /url: /scholar?cluster=8389810893386419382&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=e108]:
+            - heading [level=3] [ref=e109]:
+              - 'link "Integrating Federated Learning with Satellite‐Based Geospatial Analysis for Urban Lake Management: Case Study of Ana Sagar Lake, Rajasthan" [ref=e110] [cursor=pointer]':
+                - /url: https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394461295.ch5
+            - generic [ref=e111]: R Yadawar, K Moirangleima… - … Using Federated Learning, 2026 - Wiley Online Library
+            - generic [ref=e112]: … Federated learning is a demonstration of the scalability of five or more institutional … tool to local authorities when used alongside federated learning to make decisions related to the …
+            - generic [ref=e113]:
+              - button "Save" [ref=e114] [cursor=pointer]
+              - button "Cite" [ref=e117] [cursor=pointer]
+              - link "Related articles" [ref=e120] [cursor=pointer]:
+                - /url: /scholar?q=related:9MZbpbiM3ZsJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 3 versions" [ref=e121] [cursor=pointer]:
+                - /url: /scholar?cluster=11231287770408011508&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=e122]:
+            - link "[HTML] mdpi.com" [ref=e126] [cursor=pointer]:
+              - /url: https://www.mdpi.com/2076-3417/15/6/3146
+            - generic [ref=e127]:
+              - heading "[HTML] A multi-agent deep reinforcement learning system for governmental interoperability" [level=3] [ref=e128]:
+                - generic [ref=e129]: "[HTML]"
+                - link "A multi-agent deep reinforcement learning system for governmental interoperability" [ref=e130] [cursor=pointer]:
+                  - /url: https://www.mdpi.com/2076-3417/15/6/3146
+              - generic [ref=e131]:
+                - link "AM Mequanenit" [ref=e132] [cursor=pointer]:
+                  - /url: /citations?user=mdOUXgwAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "EA Nibret" [ref=e133] [cursor=pointer]:
+                  - /url: /citations?user=WLodYUwAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "P Herrero-Martín" [ref=e134] [cursor=pointer]:
+                  - /url: /citations?user=VX0uInIAAAAJ&hl=en&oi=sra
+                - text: … - Applied Sciences, 2025 - mdpi.com
+              - generic [ref=e135]: … data interoperability, allowing for more coherent and efficient information sharing among different government … full-scale governmental interoperability, necessitating further exploration …
+              - generic [ref=e136]:
+                - button "Save" [ref=e137] [cursor=pointer]
+                - button "Cite" [ref=e140] [cursor=pointer]
+                - link "Cited by 21" [ref=e143] [cursor=pointer]:
+                  - /url: /scholar?cites=13599203509563395180&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e144] [cursor=pointer]:
+                  - /url: /scholar?q=related:bIzFT4oTurwJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 9 versions" [ref=e145] [cursor=pointer]:
+                  - /url: /scholar?cluster=13599203509563395180&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=e146] [cursor=pointer]
+          - generic [ref=e149]:
+            - link "[PDF] techrxiv.org" [ref=e153] [cursor=pointer]:
+              - /url: https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176162119.94422250
+            - generic [ref=e154]:
+              - heading [level=3] [ref=e155]:
+                - 'link "Federated learning for science: A survey on the path to a trustworthy collaboration ecosystem" [ref=e156] [cursor=pointer]':
+                  - /url: https://www.techrxiv.org/doi/full/10.36227/techrxiv.176162119.94422250
+              - generic [ref=e157]:
+                - link "X Qi" [ref=e158] [cursor=pointer]:
+                  - /url: /citations?user=yuQxvU0AAAAJ&hl=en&oi=sra
+                - text: ", M Li,"
+                - link "S Zhou" [ref=e159] [cursor=pointer]:
+                  - /url: /citations?user=Lo2qKKsAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "W Feng" [ref=e160] [cursor=pointer]:
+                  - /url: /citations?user=WN6gj_wAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Z Qi" [ref=e161] [cursor=pointer]:
+                  - /url: /citations?user=l7wxjVwAAAAJ&hl=en&oi=sra
+                - text: "- 2025 - techrxiv.org"
+              - generic [ref=e162]: … Finally, we outline future directions toward trustworthy, sustainable, and interoperable scientific federations, positioning FL as a foundational layer of the next-generation research …
+              - generic [ref=e163]:
+                - button "Save" [ref=e164] [cursor=pointer]
+                - button "Cite" [ref=e167] [cursor=pointer]
+                - link "Cited by 9" [ref=e170] [cursor=pointer]:
+                  - /url: /scholar?cites=7525304152953555581&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e171] [cursor=pointer]:
+                  - /url: /scholar?q=related:fYqRn0FAb2gJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=e172] [cursor=pointer]:
+                  - /url: /scholar?cluster=7525304152953555581&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=e173] [cursor=pointer]
+          - generic [ref=e176]:
+            - link "[PDF] ieee.org" [ref=e180] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/iel8/6287639/6514899/11408739.pdf
+            - generic [ref=e181]:
+              - heading [level=3] [ref=e182]:
+                - 'link "Federated learning approaches in precision agriculture: A systematic review of current trends, challenges and opportunities" [ref=e183] [cursor=pointer]':
+                  - /url: https://ieeexplore.ieee.org/abstract/document/11408739/
+              - generic [ref=e184]:
+                - link "SM Shawon" [ref=e185] [cursor=pointer]:
+                  - /url: /citations?user=33KsNGIAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "IA Adan" [ref=e186] [cursor=pointer]:
+                  - /url: /citations?user=G2UYm8UAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "M Moniruzzaman" [ref=e187] [cursor=pointer]:
+                  - /url: /citations?user=tqqaooQAAAAJ&hl=en&oi=sra
+                - text: … - IEEE …, 2026 - ieeexplore.ieee.org
+              - generic [ref=e188]: … , ownership, and secure data sharing. Federated Learning (FL) has emerged as a promising paradigm that enables distributed model training without exposing raw data, making it well …
+              - generic [ref=e189]:
+                - button "Save" [ref=e190] [cursor=pointer]
+                - button "Cite" [ref=e193] [cursor=pointer]
+                - link "Cited by 10" [ref=e196] [cursor=pointer]:
+                  - /url: /scholar?cites=11431481495856124666&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e197] [cursor=pointer]:
+                  - /url: /scholar?q=related:-pL0mNrHpJ4J:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=e198] [cursor=pointer]:
+                  - /url: /scholar?cluster=11431481495856124666&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=e199]:
+            - link "[PDF] researchgate.net" [ref=e203] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Tymoteusz-Miller/publication/398113284_Federated_Learning_for_Environmental_Monitoring_A_Review_of_Applications_Challenges_and_Future_Directions/links/692b289da130337711c0d200/Federated-Learning-for-Environmental-Monitoring-A-Review-of-Applications-Challenges-and-Future-Directions.pdf
+            - generic [ref=e204]:
+              - 'heading "[PDF] Federated learning for environmental monitoring: A review of applications, challenges, and future directions" [level=3] [ref=e205]':
+                - generic [ref=e206]: "[PDF]"
+                - 'link "Federated learning for environmental monitoring: A review of applications, challenges, and future directions" [ref=e207] [cursor=pointer]':
+                  - /url: https://www.researchgate.net/profile/Tymoteusz-Miller/publication/398113284_Federated_Learning_for_Environmental_Monitoring_A_Review_of_Applications_Challenges_and_Future_Directions/links/692b289da130337711c0d200/Federated-Learning-for-Environmental-Monitoring-A-Review-of-Applications-Challenges-and-Future-Directions.pdf
+              - generic [ref=e208]:
+                - link "T Miller" [ref=e209] [cursor=pointer]:
+                  - /url: /citations?user=MG0Fj8AnWNwC&hl=en&oi=sra
+                - text: ","
+                - link "I Durlik" [ref=e210] [cursor=pointer]:
+                  - /url: /citations?user=smjE6M8AAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "E Kostecka" [ref=e211] [cursor=pointer]:
+                  - /url: /citations?user=LuwA4REAAAAJ&hl=en&oi=sra
+                - text: ", A Puszkarek - Applied Sciences, 2025 - researchgate.net"
+              - generic [ref=e212]: … In this article, we examine the current landscape of federated learning applied to environmental monitoring. We identify domain-specific challenges and innovations, drawing from …
+              - generic [ref=e213]:
+                - button "Save" [ref=e214] [cursor=pointer]
+                - button "Cite" [ref=e217] [cursor=pointer]
+                - link "Cited by 16" [ref=e220] [cursor=pointer]:
+                  - /url: /scholar?cites=3634550431953895481&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e221] [cursor=pointer]:
+                  - /url: /scholar?q=related:OcDadlyEcDIJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 5 versions" [ref=e222] [cursor=pointer]:
+                  - /url: /scholar?cluster=3634550431953895481&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=e223] [cursor=pointer]
+          - generic [ref=e226]:
+            - link "[PDF] researchgate.net" [ref=e230] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Obehi-Irekponor/publication/393040753_Advancing_Secure_Federated_Learning_for_Multinational_Energy_Finance_Consortia_Using_Encrypted_AI-Driven_Geospatial_and_Sensor_Data/links/686ebef9e9b6c13c89e7cfcc/Advancing-Secure-Federated-Learning-for-Multinational-Energy-Finance-Consortia-Using-Encrypted-AI-Driven-Geospatial-and-Sensor-Data.pdf
+            - generic [ref=e231]:
+              - heading "[PDF] Advancing Secure Federated Learning for Multinational Energy Finance Consortia Using Encrypted AI-Driven Geospatial and Sensor Data" [level=3] [ref=e232]:
+                - generic [ref=e233]: "[PDF]"
+                - link "Advancing Secure Federated Learning for Multinational Energy Finance Consortia Using Encrypted AI-Driven Geospatial and Sensor Data" [ref=e234] [cursor=pointer]:
+                  - /url: https://www.researchgate.net/profile/Obehi-Irekponor/publication/393040753_Advancing_Secure_Federated_Learning_for_Multinational_Energy_Finance_Consortia_Using_Encrypted_AI-Driven_Geospatial_and_Sensor_Data/links/686ebef9e9b6c13c89e7cfcc/Advancing-Secure-Federated-Learning-for-Multinational-Energy-Finance-Consortia-Using-Encrypted-AI-Driven-Geospatial-and-Sensor-Data.pdf
+              - generic [ref=e235]: O Irekponor - International Journal of Research Publication and …, 2025 - researchgate.net
+              - generic [ref=e236]: … This article aims to explore the convergence of AI, Big Data, and federated learning in … Ultimately, achieving secure, efficient, and policy-compliant encryption interoperability …
+              - generic [ref=e237]:
+                - button "Save" [ref=e238] [cursor=pointer]
+                - button "Cite" [ref=e241] [cursor=pointer]
+                - link "Related articles" [ref=e244] [cursor=pointer]:
+                  - /url: /scholar?q=related:M3NA-qqmqe4J:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=e245] [cursor=pointer]
+          - generic [ref=e249]:
+            - heading [level=3] [ref=e250]:
+              - link "Integrating blockchain and federated learning for enhanced security and privacy in smart cities" [ref=e251] [cursor=pointer]:
+                - /url: https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394167760.ch10
+            - generic [ref=e252]:
+              - link "D Sarvate" [ref=e253] [cursor=pointer]:
+                - /url: /citations?user=PVguee0AAAAJ&hl=en&oi=sra
+              - text: ","
+              - link "SS Mishra" [ref=e254] [cursor=pointer]:
+                - /url: /citations?user=0STHUUoAAAAJ&hl=en&oi=sra
+              - text: … - … Federated Learning …, 2025 - Wiley Online Library
+            - generic [ref=e255]: … and FL in legacy smart city infrastructures results issues with compatibility. There are also challenges in regards to managing the interoperability of various technology, platforms, and …
+            - generic [ref=e256]:
+              - button "Save" [ref=e257] [cursor=pointer]
+              - button "Cite" [ref=e260] [cursor=pointer]
+              - link "Cited by 11" [ref=e263] [cursor=pointer]:
+                - /url: /scholar?cites=11239909316751990605&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=e264] [cursor=pointer]:
+                - /url: /scholar?q=related:TR-b1Pgt_JsJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 3 versions" [ref=e265] [cursor=pointer]:
+                - /url: /scholar?cluster=11239909316751990605&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=e267]:
+            - heading [level=3] [ref=e268]:
+              - link "A more secure framework for open government data sharing based on federated learning" [ref=e269] [cursor=pointer]:
+                - /url: https://www.sciencedirect.com/science/article/pii/S0740624X2400073X
+            - generic [ref=e270]: X Zhang - Government Information Quarterly, 2024 - Elsevier
+            - generic [ref=e271]: … Inspired by the government data authorization operation model, this framework includes … for horizontal federated learning, vertical federated learning, and federated transfer learning. By …
+            - generic [ref=e272]:
+              - button "Save" [ref=e273] [cursor=pointer]
+              - button "Cite" [ref=e276] [cursor=pointer]
+              - link "Cited by 16" [ref=e279] [cursor=pointer]:
+                - /url: /scholar?cites=8746741430199424045&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=e280] [cursor=pointer]:
+                - /url: /scholar?q=related:LZQ6Ef2qYnkJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 2 versions" [ref=e281] [cursor=pointer]:
+                - /url: /scholar?cluster=8746741430199424045&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=e282]:
+            - link "[PDF] ieee.org" [ref=e286] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/iel7/6287639/10005208/10177172.pdf
+            - generic [ref=e287]:
+              - heading [level=3] [ref=e288]:
+                - link "Building a secure platform for digital governance interoperability and data exchange using blockchain and deep learning-based frameworks" [ref=e289] [cursor=pointer]:
+                  - /url: https://ieeexplore.ieee.org/abstract/document/10177172/
+              - generic [ref=e290]:
+                - link "V Malik" [ref=e291] [cursor=pointer]:
+                  - /url: /citations?user=73BzZ2YAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "R Mittal" [ref=e292] [cursor=pointer]:
+                  - /url: /citations?user=li8oavsAAAAJ&hl=en&oi=sra
+                - text: ", D Mavaluru,"
+                - link "BR Narapureddy" [ref=e293] [cursor=pointer]:
+                  - /url: /citations?user=gbI9xWwAAAAJ&hl=en&oi=sra
+                - text: … - Ieee …, 2023 - ieeexplore.ieee.org
+              - generic [ref=e294]: … This marked the first instance of blockchain being used in a US federal election. Voatz is a … Alamri, ‘‘Data interoperability and multimedia content management in e-health systems,’’ …
+              - generic [ref=e295]:
+                - button "Save" [ref=e296] [cursor=pointer]
+                - button "Cite" [ref=e299] [cursor=pointer]
+                - link "Cited by 102" [ref=e302] [cursor=pointer]:
+                  - /url: /scholar?cites=14379041823882428869&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=e303] [cursor=pointer]:
+                  - /url: /scholar?q=related:xUH_-lqejMcJ:scholar.google.com/&scioq=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=e304] [cursor=pointer]:
+                  - /url: /scholar?cluster=14379041823882428869&hl=en&as_sdt=0,5&as_ylo=2023
+        - navigation [ref=e306]:
+          - table [ref=e308]:
+            - rowgroup [ref=e309]:
+              - row [ref=e310]:
+                - cell [ref=e311]
+                - cell "1" [ref=e313]
+                - cell [ref=e315]:
+                  - link "2" [ref=e316] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e318]:
+                  - link "3" [ref=e319] [cursor=pointer]:
+                    - /url: /scholar?start=20&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e321]:
+                  - link "4" [ref=e322] [cursor=pointer]:
+                    - /url: /scholar?start=30&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e324]:
+                  - link "5" [ref=e325] [cursor=pointer]:
+                    - /url: /scholar?start=40&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e327]:
+                  - link "6" [ref=e328] [cursor=pointer]:
+                    - /url: /scholar?start=50&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e330]:
+                  - link "7" [ref=e331] [cursor=pointer]:
+                    - /url: /scholar?start=60&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e333]:
+                  - link "8" [ref=e334] [cursor=pointer]:
+                    - /url: /scholar?start=70&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e336]:
+                  - link "9" [ref=e337] [cursor=pointer]:
+                    - /url: /scholar?start=80&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e339]:
+                  - link "10" [ref=e340] [cursor=pointer]:
+                    - /url: /scholar?start=90&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=e342]:
+                  - link "Next" [ref=e343] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=federated+learning+reinforcement+learning+government+data+interoperability+land+records&hl=en&as_sdt=0,5&as_ylo=2023
+  - contentinfo [ref=e346]:
+    - generic [ref=e347]:
+      - link "Privacy" [ref=e348] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/privacy/
+      - link "Terms" [ref=e349] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/terms/
+      - button "Help" [ref=e350] [cursor=pointer]

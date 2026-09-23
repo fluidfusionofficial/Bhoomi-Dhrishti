@@ -1,0 +1,717 @@
+- generic [active] [ref=f12e1]:
+  - link "Jump to content" [ref=f12e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=f12e4]:
+    - generic [ref=f12e5]:
+      - navigation "Site" [ref=f12e6]:
+        - generic "Main menu" [ref=f12e7]:
+          - button "Main menu" [ref=f12e8] [cursor=pointer]
+          - generic [ref=f12e11]: Main menu
+      - link [ref=f12e12] [cursor=pointer]:
+        - /url: /wiki/Main_Page
+        - generic [ref=f12e13]:
+          - img "Wikipedia" [ref=f12e14]
+          - img "The Free Encyclopedia" [ref=f12e15]
+    - generic [ref=f12e16]:
+      - search [ref=f12e17]:
+        - generic [ref=f12e20]:
+          - searchbox "Search Wikipedia" [ref=f12e23]
+          - button "Search" [ref=f12e25]
+      - navigation "Personal tools" [ref=f12e26]:
+        - list [ref=f12e30]:
+          - listitem [ref=f12e31]:
+            - link "Donate" [ref=f12e32] [cursor=pointer]:
+              - /url: https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en
+          - listitem [ref=f12e33]:
+            - link "Create account" [ref=f12e34] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:CreateAccount&returnto=Jev+%28AI+model%29
+          - listitem [ref=f12e35]:
+            - link "Log in" [ref=f12e36] [cursor=pointer]:
+              - /url: /w/index.php?title=Special:UserLogin&returnto=Jev+%28AI+model%29
+  - generic [ref=f12e38]:
+    - navigation "Contents" [ref=f12e42]:
+      - generic [ref=f12e44]:
+        - generic [ref=f12e45]:
+          - heading "Contents" [level=2] [ref=f12e46]
+          - button "Hide Contents" [ref=f12e47] [cursor=pointer]: hide
+        - list [ref=f12e48]:
+          - listitem [ref=f12e49]:
+            - link "(Top)" [ref=f12e50] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f12e52]:
+            - link "Background" [ref=f12e53] [cursor=pointer]:
+              - /url: "#Background"
+            - list
+          - listitem [ref=f12e55]:
+            - link "Design & architecture" [ref=f12e56] [cursor=pointer]:
+              - /url: "#Design_&_architecture"
+            - button "Toggle Design & architecture subsection" [expanded] [ref=f12e58]
+            - list [ref=f12e61]:
+              - listitem [ref=f12e62]:
+                - link "Performance claims" [ref=f12e63] [cursor=pointer]:
+                  - /url: "#Performance_claims"
+                - list
+          - listitem [ref=f12e65]:
+            - link "Name" [ref=f12e66] [cursor=pointer]:
+              - /url: "#Name"
+            - list
+          - listitem [ref=f12e68]:
+            - link "References" [ref=f12e69] [cursor=pointer]:
+              - /url: "#References"
+            - list
+          - listitem [ref=f12e71]:
+            - link "External links" [ref=f12e72] [cursor=pointer]:
+              - /url: "#External_links"
+            - list
+    - main [ref=f12e75]:
+      - generic [ref=f12e76]:
+        - heading "Jev (AI model)" [level=1] [ref=f12e77]
+        - generic [ref=f12e79]:
+          - button "Add languages" [ref=f12e80] [cursor=pointer]
+          - generic [ref=f12e83]: Add languages
+      - generic [ref=f12e85]:
+        - navigation "Namespaces" [ref=f12e87]:
+          - list [ref=f12e90]:
+            - listitem [ref=f12e91]:
+              - link "Article" [ref=f12e92] [cursor=pointer]:
+                - /url: /wiki/Jev_(AI_model)
+            - listitem [ref=f12e94]:
+              - link "Talk" [ref=f12e95] [cursor=pointer]:
+                - /url: /wiki/Talk:Jev_(AI_model)
+        - generic [ref=f12e97]:
+          - navigation "Views" [ref=f12e98]:
+            - list [ref=f12e101]:
+              - listitem [ref=f12e102]:
+                - link "Read" [ref=f12e103] [cursor=pointer]:
+                  - /url: /wiki/Jev_(AI_model)
+              - listitem [ref=f12e105]:
+                - link "Edit" [ref=f12e106] [cursor=pointer]:
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit
+              - listitem [ref=f12e108]:
+                - link "View history" [ref=f12e109] [cursor=pointer]:
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=history
+          - navigation "Page tools" [ref=f12e111]:
+            - generic [ref=f12e112]:
+              - button "Tools" [ref=f12e113] [cursor=pointer]
+              - generic [ref=f12e116]: Tools
+      - navigation "Appearance" [ref=f12e119]:
+        - generic [ref=f12e121]:
+          - generic [ref=f12e122]:
+            - generic [ref=f12e123]: Appearance
+            - button "Hide Appearance" [ref=f12e124] [cursor=pointer]: hide
+          - generic [ref=f12e125]:
+            - generic [ref=f12e126]: Text
+            - list [ref=f12e128]:
+              - listitem [ref=f12e129]:
+                - generic [ref=f12e131]:
+                  - generic [ref=f12e132]:
+                    - radio "Small" [ref=f12e133]
+                    - generic [ref=f12e135]: Small
+                  - generic [ref=f12e137]:
+                    - radio "Standard" [checked] [ref=f12e138]
+                    - generic [ref=f12e140]: Standard
+                  - generic [ref=f12e142]:
+                    - radio "Large" [ref=f12e143]
+                    - generic [ref=f12e145]: Large
+          - generic [ref=f12e147]:
+            - generic [ref=f12e148]: Width
+            - list [ref=f12e150]:
+              - listitem [ref=f12e151]:
+                - generic [ref=f12e153]:
+                  - generic [ref=f12e154]:
+                    - radio "Standard" [checked] [ref=f12e155]
+                    - generic [ref=f12e157]: Standard
+                  - generic [ref=f12e159]:
+                    - radio "Wide" [ref=f12e160]
+                    - generic [ref=f12e162]: Wide
+          - generic [ref=f12e164]:
+            - generic [ref=f12e165]: Color
+            - list [ref=f12e167]:
+              - listitem [ref=f12e168]:
+                - generic [ref=f12e170]:
+                  - generic [ref=f12e171]:
+                    - radio "Automatic" [ref=f12e172]
+                    - generic [ref=f12e174]: Automatic
+                  - generic [ref=f12e176]:
+                    - radio "Light" [checked] [ref=f12e177]
+                    - generic [ref=f12e179]: Light
+                  - generic [ref=f12e181]:
+                    - radio "Dark" [ref=f12e182]
+                    - generic [ref=f12e184]: Dark
+      - generic "Jev (AI model)" [ref=f12e186]:
+        - generic [ref=f12e187]: From Wikipedia, the free encyclopedia
+        - generic [ref=f12e190]:
+          - generic [ref=f12e191]:
+            - table [ref=f12e192]:
+              - rowgroup [ref=f12e193]:
+                - row [ref=f12e194]:
+                  - columnheader "Jev" [ref=f12e195]
+                - row [ref=f12e196]:
+                  - rowheader [ref=f12e197]:
+                    - link "Developer" [ref=f12e198] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Programmer
+                  - cell "TypeSafe AI" [ref=f12e199]
+                - row [ref=f12e200]:
+                  - rowheader "Release" [ref=f12e201]
+                  - cell "September 15, 2026; 6 days ago" [ref=f12e202]:
+                    - text: September 15, 2026
+                    - generic [ref=f12e203]: ; 6 days ago
+                - row [ref=f12e204]:
+                  - rowheader [ref=f12e205]:
+                    - link "Stable release" [ref=f12e206] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Software_release_life_cycle
+                  - cell "jev-1.13.0" [ref=f12e207]
+                - row [ref=f12e209]:
+                  - rowheader [ref=f12e210]:
+                    - link "Type" [ref=f12e211] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Software_categories#Categorization_approaches
+                  - cell [ref=f12e212]:
+                    - link "Artificial intelligence" [ref=f12e213] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Artificial_intelligence
+                    - text: model
+                - row [ref=f12e214]:
+                  - rowheader [ref=f12e215]:
+                    - link "License" [ref=f12e216] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Software_license
+                  - cell [ref=f12e217]:
+                    - link "Proprietary" [ref=f12e218] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Proprietary_software
+                - row [ref=f12e219]:
+                  - rowheader "Website" [ref=f12e220]
+                  - cell [ref=f12e221]:
+                    - link "typesafe.ai" [ref=f12e223] [cursor=pointer]:
+                      - /url: https://typesafe.ai
+            - paragraph [ref=f12e224]:
+              - text: Jev is a
+              - link "proprietary" [ref=f12e225] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Proprietary_software
+              - link "artificial intelligence" [ref=f12e226] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Artificial_intelligence
+              - text: model developed by
+              - link "TypeSafe AI" [ref=f12e227] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/TypeSafe_AI?action=edit&redlink=1
+              - text: ", a"
+              - link "San Francisco" [ref=f12e228] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/San_Francisco
+              - text: –based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million
+              - link "seed round" [ref=f12e229] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Seed_funding
+              - text: led by DCVC.
+              - superscript [ref=f12e230]:
+                - link "[1]" [ref=f12e231] [cursor=pointer]:
+                  - /url: "#cite_note-forbes-1"
+              - superscript [ref=f12e233]:
+                - link "[2]" [ref=f12e234] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+            - paragraph [ref=f12e236]:
+              - text: Unlike a
+              - link "large language model" [ref=f12e237] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Large_language_model
+              - text: (LLM), Jev does not generate natural-language text. It instead returns typed values together with probability estimates and confidence scores. Its output is intended to be consumed directly by other software rather than read by a person.
+              - superscript [ref=f12e238]:
+                - link "[1]" [ref=f12e239] [cursor=pointer]:
+                  - /url: "#cite_note-forbes-1"
+              - superscript [ref=f12e241]:
+                - link "[3]" [ref=f12e242] [cursor=pointer]:
+                  - /url: "#cite_note-register-3"
+            - paragraph [ref=f12e244]:
+              - text: TypeSafe describes it as the first of a class of models it calls "
+              - link "System One models" [ref=f12e245] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#Two_systems
+              - text: "\"."
+              - superscript [ref=f12e246]:
+                - link "[2]" [ref=f12e247] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+              - superscript [ref=f12e249]:
+                - link "[4]" [ref=f12e250] [cursor=pointer]:
+                  - /url: "#cite_note-rundown-4"
+          - region [ref=f12e252]:
+            - generic [ref=f12e253]:
+              - heading "Background" [level=2] [ref=f12e254]
+              - generic [ref=f12e255]:
+                - link "edit":
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=1
+            - paragraph [ref=f12e256]:
+              - text: TypeSafe AI was founded in 2024 by Diogo Almeida, Erik Gafni and Sasha Sheng. Almeida, the company's chief executive, spent approximately four years at
+              - link "OpenAI" [ref=f12e257] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/OpenAI
+              - text: working on
+              - link "reinforcement learning from human feedback" [ref=f12e258] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback
+              - text: (RLHF), InstructGPT,
+              - link "ChatGPT" [ref=f12e259] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/ChatGPT
+              - text: and
+              - link "GPT-4" [ref=f12e260] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/GPT-4
+              - text: before leaving in 2024.
+              - superscript [ref=f12e261]:
+                - link "[1]" [ref=f12e262] [cursor=pointer]:
+                  - /url: "#cite_note-forbes-1"
+              - superscript [ref=f12e264]:
+                - link "[5]" [ref=f12e265] [cursor=pointer]:
+                  - /url: "#cite_note-siliconangle-5"
+            - paragraph [ref=f12e267]:
+              - text: The company positions Jev as a reliable model for automation and software, and as a response to overconfidence in existing models.
+              - link "Forbes" [ref=f12e269] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Forbes
+              - text: ": \"We've been optimizing for humans and we're super human at pleasing humans.\""
+              - superscript [ref=f12e270]:
+                - link "[1]" [ref=f12e271] [cursor=pointer]:
+                  - /url: "#cite_note-forbes-1"
+              - text: He has separately described his disappointment with conversational models as the origin of the project, telling
+              - link "TechCrunch" [ref=f12e274] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/TechCrunch
+              - text: that the technology amounted to "lightning in a bottle" that was nonetheless not useful.
+              - superscript [ref=f12e275]:
+                - link "[2]" [ref=f12e276] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+            - paragraph [ref=f12e278]:
+              - text: Before the announcement, Jev was being developed in stealth for roughly two years.
+              - superscript [ref=f12e279]:
+                - link "[2]" [ref=f12e280] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+              - text: Forbes reported that the round valued TypeSafe at US$200 million.
+              - superscript [ref=f12e282]:
+                - link "[1]" [ref=f12e283] [cursor=pointer]:
+                  - /url: "#cite_note-forbes-1"
+          - region [ref=f12e285]:
+            - generic [ref=f12e286]:
+              - heading "Design & architecture" [level=2] [ref=f12e287]
+              - generic [ref=f12e288]:
+                - link "edit":
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=2
+            - paragraph [ref=f12e289]:
+              - text: A Jev request consists of a block of state (a string,
+              - link "JSON" [ref=f12e290] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/JSON
+              - text: object or array of text) together with one or more typed questions. The model evaluates every question against the state in a single parallel pass and returns structured answers rather than plain text.
+              - superscript [ref=f12e291]:
+                - link "[3]" [ref=f12e292] [cursor=pointer]:
+                  - /url: "#cite_note-register-3"
+              - superscript [ref=f12e294]:
+                - link "[6]" [ref=f12e295] [cursor=pointer]:
+                  - /url: "#cite_note-docs-intro-6"
+            - paragraph [ref=f12e297]:
+              - text: "Jev allows three question types (also called primitives):"
+              - superscript [ref=f12e298]:
+                - link "[6]" [ref=f12e299] [cursor=pointer]:
+                  - /url: "#cite_note-docs-intro-6"
+              - superscript [ref=f12e301]:
+                - link "[3]" [ref=f12e302] [cursor=pointer]:
+                  - /url: "#cite_note-register-3"
+              - superscript [ref=f12e304]:
+                - link "[7]" [ref=f12e305] [cursor=pointer]:
+                  - /url: "#cite_note-docs-models-7"
+            - table [ref=f12e307]:
+              - rowgroup [ref=f12e308]:
+                - row [ref=f12e309]:
+                  - columnheader "Primitive" [ref=f12e310]
+                  - columnheader "Purpose" [ref=f12e311]
+                  - columnheader "Returns" [ref=f12e312]
+                - row [ref=f12e313]:
+                  - cell "Choice" [ref=f12e314]
+                  - cell "Select one option from a defined set" [ref=f12e315]
+                  - cell "Selected option, per-option probabilities, confidence" [ref=f12e316]
+                - row [ref=f12e317]:
+                  - cell "Score" [ref=f12e318]
+                  - cell "Rate the state against ordered levels" [ref=f12e319]
+                  - cell "Score, per-level probabilities, confidence" [ref=f12e320]
+                - row [ref=f12e321]:
+                  - cell "Noul" [ref=f12e322]
+                  - cell "Evaluate a yes/no statement" [ref=f12e323]
+                  - cell "Probability between 0 and 1" [ref=f12e324]
+            - paragraph [ref=f12e325]:
+              - text: Because the answers are defined in advance, the model cannot return a value outside the supplied schema. TypeSafe presents this as eliminating
+              - link "hallucination" [ref=f12e326] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)
+              - text: and type errors.
+              - superscript [ref=f12e327]:
+                - link "[2]" [ref=f12e328] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+              - superscript [ref=f12e330]:
+                - link "[8]" [ref=f12e331] [cursor=pointer]:
+                  - /url: "#cite_note-typesafe-blog-8"
+            - paragraph [ref=f12e333]:
+              - text: However, TypeSafe has not published Jev's exact architecture, weights, or a technical paper. The company describes the model as
+              - link "transformer" [ref=f12e334] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+              - text: "-based and trained exclusively on"
+              - link "synthetic data" [ref=f12e335] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Synthetic_data
+              - text: . The method of training is Reinforcement Learning for Calibrated Decisions (RLCD), where probabilities are optimized against outcomes rather than against human rater preference. Outside observers have suggested the model may be built on an open-weight LLM.
+              - superscript [ref=f12e336]:
+                - link "[2]" [ref=f12e337] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+              - superscript [ref=f12e339]:
+                - link "[3]" [ref=f12e340] [cursor=pointer]:
+                  - /url: "#cite_note-register-3"
+            - region [ref=f12e342]:
+              - generic [ref=f12e343]:
+                - heading "Performance claims" [level=3] [ref=f12e344]
+                - generic [ref=f12e345]:
+                  - link "edit":
+                    - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=3
+              - paragraph [ref=f12e346]:
+                - text: TypeSafe reports end-to-end response times of 70 to 500 milliseconds. The company claims that Jev is 40 to 200 times faster and 40 to 400 times cheaper than frontier LLMs on comparable tasks, with peak figures of 193.6 times faster and 444.6 times cheaper on its own workflows.
+                - superscript [ref=f12e347]:
+                  - link "[8]" [ref=f12e348] [cursor=pointer]:
+                    - /url: "#cite_note-typesafe-blog-8"
+                - superscript [ref=f12e350]:
+                  - link "[3]" [ref=f12e351] [cursor=pointer]:
+                    - /url: "#cite_note-register-3"
+              - paragraph [ref=f12e353]:
+                - text: TypeSafe states in its own technical notes that the workflows were created by members of its model-capabilities team, acknowledges possible bias, and describes the reported gains as likely to sit at the high end of real-world results.
+                - superscript [ref=f12e354]:
+                  - link "[8]" [ref=f12e355] [cursor=pointer]:
+                    - /url: "#cite_note-typesafe-blog-8"
+                - superscript [ref=f12e357]:
+                  - link "[9]" [ref=f12e358] [cursor=pointer]:
+                    - /url: "#cite_note-ts2-9"
+              - paragraph [ref=f12e360]
+          - region [ref=f12e361]:
+            - generic [ref=f12e362]:
+              - heading "Name" [level=2] [ref=f12e363]
+              - generic [ref=f12e364]:
+                - link "edit":
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=4
+            - paragraph [ref=f12e365]:
+              - text: The model is named after 19th-century English economist
+              - link "William Stanley Jevons" [ref=f12e366] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/William_Stanley_Jevons
+              - text: ", whose"
+              - link "Jevons paradox" [ref=f12e367] [cursor=pointer]:
+                - /url: https://en.wikipedia.org/wiki/Jevons_paradox
+              - text: describes how more efficient use of a resource can increase consumption. Almeida has said the name reflects an expectation that cheaper machine intelligence will lead to far wider deployment.
+              - superscript [ref=f12e368]:
+                - link "[3]" [ref=f12e369] [cursor=pointer]:
+                  - /url: "#cite_note-register-3"
+              - superscript [ref=f12e371]:
+                - link "[2]" [ref=f12e372] [cursor=pointer]:
+                  - /url: "#cite_note-techcrunch-2"
+          - region [ref=f12e374]:
+            - generic [ref=f12e375]:
+              - heading "References" [level=2] [ref=f12e376]
+              - generic [ref=f12e377]:
+                - link "edit":
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=5
+            - list [ref=f12e380]:
+              - listitem [ref=f12e381]:
+                - generic [ref=f12e382]:
+                  - text: ^
+                  - link "Jump up to:" [ref=f12e383] [cursor=pointer]:
+                    - /url: "#cite_ref-forbes_1-0"
+                  - link [ref=f12e385] [cursor=pointer]:
+                    - /url: "#cite_ref-forbes_1-1"
+                  - link [ref=f12e386] [cursor=pointer]:
+                    - /url: "#cite_ref-forbes_1-2"
+                  - link [ref=f12e387] [cursor=pointer]:
+                    - /url: "#cite_ref-forbes_1-3"
+                  - link [ref=f12e388] [cursor=pointer]:
+                    - /url: "#cite_ref-forbes_1-4"
+                - generic [ref=f12e389]:
+                  - generic [ref=f12e390]:
+                    - text: Shrivastava, Rashi (15 September 2026).
+                    - link "\"This $200 Million Startup Wants To Fix AI's Overconfidence Problem\"" [ref=f12e391] [cursor=pointer]:
+                      - /url: https://www.forbes.com/sites/the-prompt/2026/09/15/this-200-million-startup-wants-to-fix-ais-overconfidence-problem/
+                    - text: . Forbes
+                    - generic [ref=f12e392]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=Forbes&rft.atitle=This+%24200+Million+Startup+Wants+To+Fix+AI%27s+Overconfidence+Problem&rft.date=2026-09-15&rft.aulast=Shrivastava&rft.aufirst=Rashi&rft_id=https%3A%2F%2Fwww.forbes.com%2Fsites%2Fthe-prompt%2F2026%2F09%2F15%2Fthis-200-million-startup-wants-to-fix-ais-overconfidence-problem%2F&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e393]:
+                - generic [ref=f12e394]:
+                  - text: ^
+                  - link "Jump up to:" [ref=f12e395] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-0"
+                  - link [ref=f12e397] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-1"
+                  - link [ref=f12e398] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-2"
+                  - link [ref=f12e399] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-3"
+                  - link [ref=f12e400] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-4"
+                  - link [ref=f12e401] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-5"
+                  - link [ref=f12e402] [cursor=pointer]:
+                    - /url: "#cite_ref-techcrunch_2-6"
+                - generic [ref=f12e403]:
+                  - generic [ref=f12e404]:
+                    - text: Fernholz, Tim (18 September 2026).
+                    - link "\"A new kind of AI model from a ChatGPT inventor is thrilling developers\"" [ref=f12e405] [cursor=pointer]:
+                      - /url: https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/
+                    - text: . TechCrunch
+                    - generic [ref=f12e406]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=TechCrunch&rft.atitle=A+new+kind+of+AI+model+from+a+ChatGPT+inventor+is+thrilling+developers&rft.date=2026-09-18&rft.aulast=Fernholz&rft.aufirst=Tim&rft_id=https%3A%2F%2Ftechcrunch.com%2F2026%2F09%2F18%2Fa-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers%2F&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e407]:
+                - generic [ref=f12e408]:
+                  - text: ^
+                  - link "Jump up to:" [ref=f12e409] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-0"
+                  - link [ref=f12e411] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-1"
+                  - link [ref=f12e412] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-2"
+                  - link [ref=f12e413] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-3"
+                  - link [ref=f12e414] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-4"
+                  - link [ref=f12e415] [cursor=pointer]:
+                    - /url: "#cite_ref-register_3-5"
+                - generic [ref=f12e416]:
+                  - generic [ref=f12e417]:
+                    - text: Claburn, Thomas (16 September 2026).
+                    - link "\"TypeSafe AI debuts model for machines that plays Doom\"" [ref=f12e418] [cursor=pointer]:
+                      - /url: https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711
+                    - text: . The Register
+                    - generic [ref=f12e419]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=The+Register&rft.atitle=TypeSafe+AI+debuts+model+for+machines+that+plays+Doom&rft.date=2026-09-16&rft.aulast=Claburn&rft.aufirst=Thomas&rft_id=https%3A%2F%2Fwww.theregister.com%2Fai-and-ml%2F2026%2F09%2F16%2Ftypesafe-ai-debuts-model-for-machines-that-plays-doom%2F5296711&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e420]:
+                - link "Jump up" [ref=f12e422] [cursor=pointer]:
+                  - /url: "#cite_ref-rundown_4-0"
+                  - text: ^
+                - generic [ref=f12e423]:
+                  - generic [ref=f12e424]:
+                    - text: Mink, Zach (16 September 2026).
+                    - link "\"ChatGPT co-creator launches a new kind of AI\"" [ref=f12e425] [cursor=pointer]:
+                      - /url: https://www.therundown.ai/articles/chatgpt-co-creator-launches-a-new-kind-of-ai
+                    - text: . The Rundown AI
+                    - generic [ref=f12e426]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=The+Rundown+AI&rft.atitle=ChatGPT+co-creator+launches+a+new+kind+of+AI&rft.date=2026-09-16&rft.aulast=Mink&rft.aufirst=Zach&rft_id=https%3A%2F%2Fwww.therundown.ai%2Farticles%2Fchatgpt-co-creator-launches-a-new-kind-of-ai&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e427]:
+                - link "Jump up" [ref=f12e429] [cursor=pointer]:
+                  - /url: "#cite_ref-siliconangle_5-0"
+                  - text: ^
+                - generic [ref=f12e430]:
+                  - generic [ref=f12e431]:
+                    - link "\"TypeSafe AI exits stealth with $40M to build AI for use by software\"" [ref=f12e432] [cursor=pointer]:
+                      - /url: https://siliconangle.com/2026/09/16/typesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software/
+                    - text: . SiliconANGLE. 16 September 2026
+                    - generic [ref=f12e433]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=SiliconANGLE&rft.atitle=TypeSafe+AI+exits+stealth+with+%2440M+to+build+AI+for+use+by+software&rft.date=2026-09-16&rft_id=https%3A%2F%2Fsiliconangle.com%2F2026%2F09%2F16%2Ftypesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software%2F&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e434]:
+                - generic [ref=f12e435]:
+                  - text: ^
+                  - link "Jump up to:" [ref=f12e436] [cursor=pointer]:
+                    - /url: "#cite_ref-docs-intro_6-0"
+                  - link [ref=f12e438] [cursor=pointer]:
+                    - /url: "#cite_ref-docs-intro_6-1"
+                - generic [ref=f12e439]:
+                  - generic [ref=f12e440]:
+                    - link "\"Introduction\"" [ref=f12e441] [cursor=pointer]:
+                      - /url: https://docs.typesafe.ai/introduction
+                    - text: . TypeSafe AI
+                    - generic [ref=f12e442]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=unknown&rft.btitle=Introduction&rft.pub=TypeSafe+AI&rft_id=https%3A%2F%2Fdocs.typesafe.ai%2Fintroduction&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e443]:
+                - link "Jump up" [ref=f12e445] [cursor=pointer]:
+                  - /url: "#cite_ref-docs-models_7-0"
+                  - text: ^
+                - generic [ref=f12e446]:
+                  - generic [ref=f12e447]:
+                    - link "\"Models\"" [ref=f12e448] [cursor=pointer]:
+                      - /url: https://docs.typesafe.ai/models
+                    - text: . TypeSafe AI
+                    - generic [ref=f12e449]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=unknown&rft.btitle=Models&rft.pub=TypeSafe+AI&rft_id=https%3A%2F%2Fdocs.typesafe.ai%2Fmodels&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e450]:
+                - generic [ref=f12e451]:
+                  - text: ^
+                  - link "Jump up to:" [ref=f12e452] [cursor=pointer]:
+                    - /url: "#cite_ref-typesafe-blog_8-0"
+                  - link [ref=f12e454] [cursor=pointer]:
+                    - /url: "#cite_ref-typesafe-blog_8-1"
+                  - link [ref=f12e455] [cursor=pointer]:
+                    - /url: "#cite_ref-typesafe-blog_8-2"
+                - generic [ref=f12e456]:
+                  - generic [ref=f12e457]:
+                    - text: Almeida, Diogo (15 September 2026).
+                    - link "\"Introducing System One Models & Jev\"" [ref=f12e458] [cursor=pointer]:
+                      - /url: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+                    - text: . TypeSafe AI
+                    - generic [ref=f12e459]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&rft.genre=unknown&rft.btitle=Introducing+System+One+Models+%26+Jev&rft.pub=TypeSafe+AI&rft.date=2026-09-15&rft.aulast=Almeida&rft.aufirst=Diogo&rft_id=https%3A%2F%2Ftypesafe.ai%2Fblog%2Fintroducing-system-one-models-and-jev&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+              - listitem [ref=f12e460]:
+                - link "Jump up" [ref=f12e462] [cursor=pointer]:
+                  - /url: "#cite_ref-ts2_9-0"
+                  - text: ^
+                - generic [ref=f12e463]:
+                  - generic [ref=f12e464]:
+                    - link "\"TypeSafe AI Raises $40 Million for Jev, but Its 445x Cost Claim Is Still Self-Tested\"" [ref=f12e465] [cursor=pointer]:
+                      - /url: https://ts2.tech/en/typesafe-ai-raises-40-million-for-jev-but-its-445x-cost-claim-is-still-self-tested/
+                    - text: . TechStock². 17 September 2026
+                    - generic [ref=f12e466]: . Retrieved 19 September 2026
+                    - text: .
+                  - generic "ctx_ver=Z39.88-2004&rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&rft.genre=unknown&rft.jtitle=TechStock%C2%B2&rft.atitle=TypeSafe+AI+Raises+%2440+Million+for+Jev%2C+but+Its+445x+Cost+Claim+Is+Still+Self-Tested&rft.date=2026-09-17&rft_id=https%3A%2F%2Fts2.tech%2Fen%2Ftypesafe-ai-raises-40-million-for-jev-but-its-445x-cost-claim-is-still-self-tested%2F&rfr_id=info%3Asid%2Fen.wikipedia.org%3AJev+%28AI+model%29"
+          - region [ref=f12e467]:
+            - generic [ref=f12e468]:
+              - heading "External links" [level=2] [ref=f12e469]
+              - generic [ref=f12e470]:
+                - link "edit":
+                  - /url: /w/index.php?title=Jev_(AI_model)&action=edit&section=6
+            - list [ref=f12e471]:
+              - listitem [ref=f12e472]:
+                - link "Official website" [ref=f12e475] [cursor=pointer]:
+                  - /url: https://typesafe.ai
+              - listitem [ref=f12e476]:
+                - link "Developer documentation for Jev" [ref=f12e477] [cursor=pointer]:
+                  - /url: https://docs.typesafe.ai/
+            - navigation [ref=f12e478]:
+              - rowgroup [ref=f12e479]:
+                - row [ref=f12e480]:
+                  - cell [ref=f12e481]:
+                    - text: Part of
+                    - link "a series" [ref=f12e482] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Category:Artificial_intelligence
+                    - text: "on"
+                - row [ref=f12e483]:
+                  - columnheader [ref=f12e484]:
+                    - link "Artificial intelligence (AI)" [ref=f12e485] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Artificial_intelligence
+                - row [ref=f12e486]:
+                  - cell [ref=f12e487]:
+                    - generic [ref=f12e488]:
+                      - button "[show]" [ref=f12e489] [cursor=pointer]
+                      - link "Major goals" [ref=f12e491] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Artificial_intelligence#Goals
+                      - generic: () · · · · · · · · ·
+                - row [ref=f12e492]:
+                  - cell "[show] Approaches" [ref=f12e493]:
+                    - generic [ref=f12e494]:
+                      - button "[show]" [ref=f12e495] [cursor=pointer]
+                      - generic [ref=f12e496]: Approaches
+                      - generic: · · · · · · · · · ·
+                - row [ref=f12e497]:
+                  - cell [ref=f12e498]:
+                    - generic [ref=f12e499]:
+                      - button "[show]" [ref=f12e500] [cursor=pointer]
+                      - link "Applications" [ref=f12e502] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence
+                      - generic: () · · · · · ( · ) · · · · · · · ·
+                - row [ref=f12e503]:
+                  - cell [ref=f12e504]:
+                    - generic [ref=f12e505]:
+                      - button "[show]" [ref=f12e506] [cursor=pointer]
+                      - link "Philosophy" [ref=f12e508] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Philosophy_of_artificial_intelligence
+                      - generic: · · · · · · · · ·
+                - row [ref=f12e509]:
+                  - cell [ref=f12e510]:
+                    - generic [ref=f12e511]:
+                      - button "[show]" [ref=f12e512] [cursor=pointer]
+                      - link "History" [ref=f12e514] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/History_of_artificial_intelligence
+                      - generic: · · · · ·
+                - row [ref=f12e515]:
+                  - cell [ref=f12e516]:
+                    - generic [ref=f12e517]:
+                      - button "[show]" [ref=f12e518] [cursor=pointer]
+                      - link "Controversies" [ref=f12e520] [cursor=pointer]:
+                        - /url: https://en.wikipedia.org/wiki/Artificial_intelligence_controversies
+                      - generic: ( · ) · · · · · · · · · ·
+                - row [ref=f12e521]:
+                  - cell [ref=f12e522]:
+                    - link "Glossary" [ref=f12e523] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence
+                - row [ref=f12e524]:
+                  - cell [ref=f12e525]:
+                    - list [ref=f12e527]:
+                      - listitem [ref=f12e528]:
+                        - link "v" [ref=f12e529] [cursor=pointer]:
+                          - /url: https://en.wikipedia.org/wiki/Template:Artificial_intelligence
+                        - text: ·
+                      - listitem [ref=f12e530]:
+                        - link "t" [ref=f12e531] [cursor=pointer]:
+                          - /url: https://en.wikipedia.org/wiki/Template_talk:Artificial_intelligence
+                        - text: ·
+                      - listitem [ref=f12e532]:
+                        - link "e" [ref=f12e533] [cursor=pointer]:
+                          - /url: https://en.wikipedia.org/wiki/Special:EditPage/Template:Artificial_intelligence
+        - generic [ref=f12e535]:
+          - link "Categories" [ref=f12e536] [cursor=pointer]:
+            - /url: /wiki/Help:Category
+          - text: ":"
+          - list [ref=f12e537]:
+            - listitem [ref=f12e538]:
+              - link "2026 software" [ref=f12e539] [cursor=pointer]:
+                - /url: /wiki/Category:2026_software
+            - listitem [ref=f12e540]:
+              - link "Applied machine learning" [ref=f12e541] [cursor=pointer]:
+                - /url: /wiki/Category:Applied_machine_learning
+            - listitem [ref=f12e542]:
+              - link "Artificial intelligence" [ref=f12e543] [cursor=pointer]:
+                - /url: /wiki/Category:Artificial_intelligence
+            - listitem [ref=f12e544]:
+              - link "Proprietary software" [ref=f12e545] [cursor=pointer]:
+                - /url: /wiki/Category:Proprietary_software
+    - contentinfo [ref=f12e547]:
+      - list [ref=f12e548]:
+        - listitem [ref=f12e549]: This page was last edited on 21 September 2026, at 15:55 (UTC).
+        - listitem [ref=f12e550]:
+          - text: Page was rendered with
+          - link "Parsoid" [ref=f12e551] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid
+          - text: .
+        - listitem [ref=f12e552]:
+          - text: Text is available under the
+          - link "Creative Commons Attribution-ShareAlike 4.0 License" [ref=f12e553] [cursor=pointer]:
+            - /url: /wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License
+          - text: ; additional terms may apply. By using this site, you agree to the
+          - link "Terms of Use" [ref=f12e554] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use
+          - text: and
+          - link "Privacy Policy" [ref=f12e555] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy
+          - text: . Wikipedia® is a registered trademark of the
+          - link "Wikimedia Foundation, Inc." [ref=f12e556] [cursor=pointer]:
+            - /url: https://wikimediafoundation.org/
+          - text: ", a non-profit organization."
+      - list:
+        - listitem [ref=f12e557]:
+          - link "Privacy policy" [ref=f12e558] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy
+        - listitem [ref=f12e559]:
+          - link "About Wikipedia" [ref=f12e560] [cursor=pointer]:
+            - /url: /wiki/Wikipedia:About
+        - listitem [ref=f12e561]:
+          - link "Disclaimers" [ref=f12e562] [cursor=pointer]:
+            - /url: /wiki/Wikipedia:General_disclaimer
+        - listitem [ref=f12e563]:
+          - link "Contact Wikipedia" [ref=f12e564] [cursor=pointer]:
+            - /url: //en.wikipedia.org/wiki/Wikipedia:Contact_us
+        - listitem [ref=f12e565]:
+          - link "Legal & safety contacts" [ref=f12e566] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information
+        - listitem [ref=f12e567]:
+          - link "Code of Conduct" [ref=f12e568] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct
+        - listitem [ref=f12e569]:
+          - link "Developers" [ref=f12e570] [cursor=pointer]:
+            - /url: https://developer.wikimedia.org
+        - listitem [ref=f12e571]:
+          - link "Statistics" [ref=f12e572] [cursor=pointer]:
+            - /url: https://stats.wikimedia.org/#/en.wikipedia.org
+        - listitem [ref=f12e573]:
+          - link "Cookie statement" [ref=f12e574] [cursor=pointer]:
+            - /url: https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement
+        - listitem [ref=f12e575]:
+          - link "Mobile view" [ref=f12e576] [cursor=pointer]:
+            - /url: //en.wikipedia.org/w/index.php?title=Jev_(AI_model)&mobileaction=toggle_view_mobile
+      - list [ref=f12e577]:
+        - listitem [ref=f12e578]:
+          - link [ref=f12e579] [cursor=pointer]:
+            - /url: https://www.wikimedia.org/
+            - img "Wikimedia Foundation" [ref=f12e581]
+        - listitem [ref=f12e582]:
+          - link [ref=f12e583] [cursor=pointer]:
+            - /url: https://www.mediawiki.org/
+            - img "Powered by MediaWiki" [ref=f12e585]
+  - generic [ref=f12e586]:
+    - list

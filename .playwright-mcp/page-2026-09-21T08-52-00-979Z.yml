@@ -1,0 +1,338 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - navigation [ref=e7]:
+        - link [ref=e8] [cursor=pointer]:
+          - /url: https://sih.gov.in/
+      - navigation [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "MIC Alumni" [ref=e15] [cursor=pointer]:
+              - /url: https://alumni.mic.gov.in/
+          - listitem [ref=e16]:
+            - link "SIH Login" [ref=e17] [cursor=pointer]:
+              - /url: /signin
+    - navigation [ref=e18]:
+      - button "Toggle navigation" [ref=e20] [cursor=pointer]: 
+  - text: chevron_right chevron_right
+  - generic [ref=e22]:
+    - link [ref=e25] [cursor=pointer]:
+      - /url: https://sih.gov.in/signin
+      - img "Slide One" [ref=e26]
+    - button [ref=e27] [cursor=pointer]:
+      - generic [aria-hidden] [ref=e28]: 
+    - button [ref=e29] [cursor=pointer]:
+      - generic [aria-hidden] [ref=e30]: 
+  - generic [ref=e32]:
+    - link "If any SPOC is facing an issue with login, they can reset their password themselves by using the “Forgot Password” option on the SPOC login page" [ref=e33] [cursor=pointer]:
+      - /url: https://sih.gov.in/forgot_password
+    - link "New Problem Statement has been added and published on problem Statement Page" [ref=e35] [cursor=pointer]:
+      - /url: https://sih.gov.in/sih2026PS
+  - text:  
+  - generic [ref=e41]:
+    - heading "WHAT IS SIH?" [level=3] [ref=e42]
+    - paragraph [ref=e43]: Smart India Hackathon (SIH) is a premier nationwide initiative designed to engage students in solving some of the most pressing challenges faced in everyday life. Launched to foster a culture of innovation and practical problem-solving, SIH provides a dynamic platform for students to develop and showcase their creative solutions to real-world problems. By encouraging participants to think critically and innovatively, the hackathon aims to bridge the gap between academic knowledge and practical application.
+    - paragraph [ref=e44]: Since its inception, SIH has garnered significant success in promoting out-of-the-box thinking among young minds, particularly engineering students from across India. Each edition has built on the previous one, refining its approach and expanding its impact. The hackathon not only offers students an opportunity to showcase their skills but also encourages collaboration with industry experts, government agencies, and other stakeholders.
+  - generic [ref=e47]:
+    - iframe [ref=e51] [cursor=pointer]:
+      - generic [ref=f2e1]:
+        - generic "YouTube Video Player" [ref=f2e3]
+        - generic [ref=f2e5]:
+          - generic:
+            - generic:
+              - generic [ref=f2e6] [cursor=pointer]
+              - button "Play video" [ref=f2e10] [cursor=pointer]
+              - button "Hide player controls" [ref=f2e12] [cursor=pointer]
+              - generic [ref=f2e14]:
+                - generic [ref=f2e19]:
+                  - generic [ref=f2e20]:
+                    - 'link "SIH 2024: Smart India Hackathon, The World''s Biggest Open Innovation Model is Back!" [ref=f2e21] [cursor=pointer]':
+                      - /url: https://www.youtube.com/watch?v=znMbKz6ZPno
+                    - link "Hackathons of Innovation Cell, MoE" [ref=f2e22] [cursor=pointer]:
+                      - /url: /channel/UCcmA-ZzmXL_UGWSZNxVZiSw
+                  - generic [ref=f2e24]:
+                    - button [ref=f2e25] [cursor=pointer]
+                    - generic [ref=f2e27]:
+                      - generic: Hackathons of Innovation Cell, MoE
+                      - generic: 2.98K subscribers
+                - generic [ref=f2e28]:
+                  - button "Share" [ref=f2e31] [cursor=pointer]
+                  - link "Watch on YouTube" [ref=f2e42] [cursor=pointer]:
+                    - /url: https://www.youtube.com/watch?v=znMbKz6ZPno
+                    - generic [ref=f2e43]: Watch on
+    - img "image" [ref=e56]
+  - generic [ref=e58]:
+    - generic [ref=e61]:
+      - heading "THEMES" [level=2] [ref=e62]
+      - text: No problem is too big... No idea is too small
+    - generic [ref=e65]:
+      - button [ref=e66] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e67]: 
+      - generic [ref=e69]:
+        - link [ref=e71] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e72]: Games & Toys
+          - paragraph [ref=e73]: Challenge your creative mind to conceptualize and develop unique toys and games based on our civilization, history, and culture etc.
+        - link [ref=e75] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e76]: Miscellaneous
+          - paragraph [ref=e77]: Technology ideas in tertiary sectors like Hospitality, Entertainment and Retail.
+        - link [ref=e79] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e80]: Fintech
+          - paragraph [ref=e81]: Challenges related to the financial services.
+        - link [ref=e83] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading "Smart Automation" [level=3] [ref=e84]
+          - paragraph [ref=e85]: Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.
+        - link [ref=e87] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading "Fitness & Sports" [level=3] [ref=e88]
+          - paragraph [ref=e89]: Ideas that can boost fitness activities and assist in keeping fit.
+        - link [ref=e91] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading "Space Technology" [level=3] [ref=e92]
+          - paragraph [ref=e93]: For use in travel or activities beyond Earth's atmosphere, for purposes such as spaceflight or space exploration.
+        - link [ref=e95] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e96]: Heritage & Culture
+          - paragraph [ref=e97]: Ideas that showcase the rich cultural heritage and traditions of India.
+        - link [ref=e99] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e100]: MedTech/BioTech/ HealthTech
+          - paragraph [ref=e101]: Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.
+        - link [ref=e103] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e104]: Agriculture, FoodTech & Rural Development
+          - paragraph [ref=e105]: Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.
+        - link [ref=e107] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e108]: Smart Vehicles
+          - paragraph [ref=e109]: Creating intelligent devices to improve commutation sector.
+        - link [ref=e111] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e112]: Transportation & Logistics
+          - paragraph [ref=e113]: Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.
+        - link [ref=e115] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e116]: Robotics and Drones
+          - paragraph [ref=e117]: There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.
+        - link [ref=e119] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e120]: Clean & Green Technology
+          - paragraph [ref=e121]: Solutions could be in the form of waste segregation, disposal, and improve sanitization system.
+        - link [ref=e123] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e124]: Tourism
+          - paragraph [ref=e125]: A solution/idea that can boost the current situation of the tourism industries including hotels, travel and others.
+        - link [ref=e127] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e128]: Renewable/ sustainable Energy
+          - paragraph [ref=e129]: Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.
+        - link [ref=e131] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e132]: Blockchain & Cybersecurity
+          - paragraph [ref=e133]: Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.
+        - link [ref=e135] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e136]: Smart Education
+          - paragraph [ref=e137]: Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.
+        - link [ref=e139] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e140]: Disaster Management
+          - paragraph [ref=e141]: Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.
+        - link [ref=e143] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e144]: Games & Toys
+          - paragraph [ref=e145]: Challenge your creative mind to conceptualize and develop unique toys and games based on our civilization, history, and culture etc.
+        - link [ref=e147] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e148]: Miscellaneous
+          - paragraph [ref=e149]: Technology ideas in tertiary sectors like Hospitality, Entertainment and Retail.
+        - link [ref=e151] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e152]: Fintech
+          - paragraph [ref=e153]: Challenges related to the financial services.
+        - link [ref=e155] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e156]: Smart Automation
+          - paragraph [ref=e157]: Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.
+        - link [ref=e159] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e160]: Fitness & Sports
+          - paragraph [ref=e161]: Ideas that can boost fitness activities and assist in keeping fit.
+        - link [ref=e163] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e164]: Space Technology
+          - paragraph [ref=e165]: For use in travel or activities beyond Earth's atmosphere, for purposes such as spaceflight or space exploration.
+        - link [ref=e167] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e168]: Heritage & Culture
+          - paragraph [ref=e169]: Ideas that showcase the rich cultural heritage and traditions of India.
+        - link [ref=e171] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e172]: MedTech/BioTech/ HealthTech
+          - paragraph [ref=e173]: Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.
+        - link [ref=e175] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e176]: Agriculture, FoodTech & Rural Development
+          - paragraph [ref=e177]: Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.
+        - link [ref=e179] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e180]: Smart Vehicles
+          - paragraph [ref=e181]: Creating intelligent devices to improve commutation sector.
+        - link [ref=e183] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e184]: Transportation & Logistics
+          - paragraph [ref=e185]: Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.
+        - link [ref=e187] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e188]: Robotics and Drones
+          - paragraph [ref=e189]: There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.
+        - link [ref=e191] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e192]: Clean & Green Technology
+          - paragraph [ref=e193]: Solutions could be in the form of waste segregation, disposal, and improve sanitization system.
+        - link [ref=e195] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e196]: Tourism
+          - paragraph [ref=e197]: A solution/idea that can boost the current situation of the tourism industries including hotels, travel and others.
+        - link [ref=e199] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e200]: Renewable/ sustainable Energy
+          - paragraph [ref=e201]: Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.
+        - link [ref=e203] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e204]: Blockchain & Cybersecurity
+          - paragraph [ref=e205]: Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.
+        - link [ref=e207] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e208]: Smart Education
+          - paragraph [ref=e209]: Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.
+        - link [ref=e211] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e212]: Disaster Management
+          - paragraph [ref=e213]: Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.
+        - link [ref=e215] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e216]: Games & Toys
+          - paragraph [ref=e217]: Challenge your creative mind to conceptualize and develop unique toys and games based on our civilization, history, and culture etc.
+        - link [ref=e219] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e220]: Miscellaneous
+          - paragraph [ref=e221]: Technology ideas in tertiary sectors like Hospitality, Entertainment and Retail.
+        - link [ref=e223] [cursor=pointer]:
+          - /url: /SIH_Themes
+          - heading [level=3] [ref=e224]: Fintech
+          - paragraph [ref=e225]: Challenges related to the financial services.
+      - button [ref=e226] [cursor=pointer]:
+        - generic [aria-hidden] [ref=e227]: 
+  - generic [ref=e228]:
+    - generic [ref=e229]:
+      - generic [ref=e234]:
+        - heading "SIH process flow and Timeline" [level=3] [ref=e237]
+        - img "image" [ref=e239]
+      - heading "Why SIH is important for Government department and Corporate department" [level=3] [ref=e243]
+    - generic [ref=e245]:
+      - generic [ref=e247]:
+        - heading "Innovative Solutions" [level=3] [ref=e248]
+        - paragraph [ref=e249]: Get innovative solutions to your problems in cost effective ways Opportunity to be a part of Nation Building Opportunity to brand your company.
+      - generic [ref=e251]:
+        - heading "Recognition and visibility" [level=3] [ref=e252]
+        - paragraph [ref=e253]: Nationally Recognition and visibility for your company across all premier institutions in India
+      - generic [ref=e255]:
+        - heading "Out-of-the-box solutions" [level=3] [ref=e256]
+        - paragraph [ref=e257]: Talented youngsters from all over the country offer out-of-the-box solutions to your problems
+      - generic [ref=e259]:
+        - heading "Innovation Movement Opportunity" [level=3] [ref=e260]
+        - paragraph [ref=e261]: Be part of World’s biggest Open Innovation Movement Opportunity to work with some of the best talents in the country
+  - generic [ref=e267]:
+    - heading "SIH Milestones" [level=3] [ref=e271]
+    - generic [ref=e272]:
+      - generic [ref=e274]:
+        - heading "18,04,218+" [level=4] [ref=e275]
+        - paragraph [ref=e276]: Participating Students
+      - generic [ref=e278]:
+        - heading "12800+" [level=4] [ref=e279]
+        - paragraph [ref=e280]: SIH Alumni Network
+      - generic [ref=e282]:
+        - heading "9406" [level=4] [ref=e283]
+        - paragraph [ref=e284]: Participating Institutes
+      - generic [ref=e286]:
+        - heading "3158" [level=4] [ref=e287]
+        - paragraph [ref=e288]: Total Problem Statements
+      - generic [ref=e290]:
+        - heading "150+" [level=4] [ref=e291]
+        - paragraph [ref=e292]: Startups Details Submitted
+  - generic [ref=e297]:
+    - tablist [ref=e299]:
+      - listitem [ref=e300]:
+        - tab "Organizing Committee" [selected] [ref=e301] [cursor=pointer]
+    - tabpanel "Organizing Committee" [ref=e303]:
+      - generic [ref=e304]:
+        - heading "Patron" [level=2] [ref=e305]
+        - generic [ref=e310]:
+          - heading "Shri Narendra Modi" [level=3] [ref=e311]
+          - paragraph [ref=e312]: Hon'ble Prime Minister of India
+      - generic [ref=e318]:
+        - heading "Shri Pralhad Joshi" [level=3] [ref=e319]
+        - paragraph [ref=e320]: Hon'ble Minister of Education
+      - generic [ref=e321]:
+        - heading "Co-Patrons" [level=2] [ref=e322]
+        - generic [ref=e323]:
+          - generic [ref=e327]:
+            - heading "Dr. Sukanta Majumdar" [level=3] [ref=e328]
+            - paragraph [ref=e329]: Hon'ble Minister of State for Education
+          - generic [ref=e333]:
+            - heading "Jayant Chaudhary" [level=3] [ref=e334]
+            - paragraph [ref=e335]: Hon'ble Minister of State for Education
+          - generic [ref=e339]:
+            - heading "Dr. Deepti Gaur Mukerjee" [level=3] [ref=e340]
+            - paragraph [ref=e341]: Hon'ble Secretary, Higher Education
+  - generic [ref=e344]:
+    - heading "Organisers" [level=2] [ref=e346]
+    - generic [ref=e348]:
+      - img "logo" [ref=e349]
+      - img "logo" [ref=e350]
+      - img "logo" [ref=e351]
+  - contentinfo [ref=e353]:
+    - generic [ref=e355]:
+      - generic [ref=e357]:
+        - heading "Follow Us" [level=3] [ref=e358]
+        - list [ref=e359]:
+          - listitem [ref=e360]:
+            - link "" [ref=e361] [cursor=pointer]:
+              - /url: https://www.facebook.com/mhrdInnovation/
+          - listitem [ref=e363]:
+            - link [ref=e364] [cursor=pointer]:
+              - /url: https://www.instagram.com/mhrd.innovationcell/
+              - generic [aria-hidden] [ref=e365]: 
+          - listitem [ref=e366]:
+            - link "" [ref=e367] [cursor=pointer]:
+              - /url: https://x.com/SIH2025
+          - listitem [ref=e369]:
+            - link "" [ref=e370] [cursor=pointer]:
+              - /url: https://in.linkedin.com/company/moe-innovation-cell
+        - paragraph [ref=e372]: © 2025-26 Smart India Hackathon. All rights reserved
+      - generic [ref=e374]:
+        - heading "Contact Us" [level=3] [ref=e375]
+        - list [ref=e376]:
+          - listitem [ref=e377]:
+            - generic [ref=e378]: 
+            - text: "For any queries write to:"
+            - link "sih@aicte-india.org" [ref=e379] [cursor=pointer]:
+              - /url: mailto:sih@aicte-india.org
+          - listitem [ref=e380]:
+            - generic [aria-hidden] [ref=e381]: 
+            - link "011 29581222," [ref=e382] [cursor=pointer]:
+              - /url: tel:+91  11 29581222
+            - link "011 29581223," [ref=e383] [cursor=pointer]:
+              - /url: tel:+91 11 29581223
+            - link "011 29581239," [ref=e384] [cursor=pointer]:
+              - /url: tel:+91 11 29581240
+            - link "011 29581240," [ref=e385] [cursor=pointer]:
+              - /url: tel:+91 11 29581240
+            - link "011 29581241," [ref=e386] [cursor=pointer]:
+              - /url: tel:+91 11 29581241
+            - link "011 29581319." [ref=e387] [cursor=pointer]:
+              - /url: tel:+91 11 29581319

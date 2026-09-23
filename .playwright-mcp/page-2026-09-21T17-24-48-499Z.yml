@@ -1,0 +1,1291 @@
+- generic [ref=f4e2]:
+  - link "Skip to Content" [ref=f4e3] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - banner [ref=f4e6]:
+        - generic [ref=f4e7]:
+          - generic [ref=f4e8]:
+            - link [ref=f4e9] [cursor=pointer]:
+              - /url: /
+              - img "MDPI" [ref=f4e10]
+            - navigation "Main navigation" [ref=f4e11]:
+              - list [ref=f4e12]:
+                - listitem [ref=f4e13]:
+                  - button "Journals" [ref=f4e14] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link "Active Journals":
+                            - /url: /about/journals
+                        - listitem:
+                          - link "Journal Finder":
+                            - /url: /about/journalfinder
+                        - listitem:
+                          - link "Proceedings Series":
+                            - /url: /about/proceedings
+                        - listitem:
+                          - link "Propose a Journal":
+                            - /url: /about/journals/proposal
+                        - listitem:
+                          - link "Transferred & Acquired Journals":
+                            - /url: /about/journals-transferred
+                        - listitem:
+                          - link "Discontinued Titles":
+                            - /url: /about/journals-discontinued
+                - listitem [ref=f4e19]:
+                  - button "Topics" [ref=f4e20] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - generic: Our Topics
+                      - list:
+                        - listitem:
+                          - link "All Topics":
+                            - /url: /topics
+                        - listitem:
+                          - link "About Topics":
+                            - /url: /topics/about
+                        - listitem:
+                          - link "Topics Awards":
+                            - /url: /topics/award
+                        - listitem:
+                          - link "Subject Editors":
+                            - /url: /topics/editors
+                        - listitem:
+                          - link "Propose a Topic":
+                            - /url: /topics/proposal
+                    - generic:
+                      - generic: By Subjects
+                      - list:
+                        - listitem:
+                          - link "Biology & Life Sciences":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wBGQsc0lDcmgIQgHtyuBzAJ4ACAGRCAMhABmGIQGUsEDADssGfAF8AukA
+                        - listitem:
+                          - link "Chemistry & Materials":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wBmQsc0lDcmgYQAsMBbCBHACcAngAIAZKICypHBkEQKCUQGUsEDADss1AL4BdIA
+                        - listitem:
+                          - link "Computer Science & Mathematics":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wAWQsc0lDcmgYQHsBbAByRwYATgAIAylggYAdlgwiAZCICypHAAsM3NRCz4AvgF0gA
+                        - listitem:
+                          - link "Engineering":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wBWQsc0lDcmgUQDsBzCTjDACc%2B3MAF8AukA
+                        - listitem:
+                          - link "Environmental & Earth Sciences":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wA2Qsc0lDcmgUQDtiIAnAe04BbDJxwUABADIJ7UrxwALCQGUsEUVgz4AvgF0gA
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link "Medicine & Pharmacology":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wB2Qsc0lDcmgWQygiwgDsMAAgBkggAoALUgCcAtqSwB7cooDmATzABfALpA
+                        - listitem:
+                          - link "Public Health & Healthcare":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wBGABkLHNJQ3JoAVVyIsACABIYKOABb8AZEJHlxWUgCdqAXwC6QA
+                        - listitem:
+                          - link "Social Sciences, Arts & Humanities":
+                            - /url: /topics?facets=NobwRAlgJmBcYGcCuAjAVgUwMYBcFgBowA3AQwBskM4wBOQsc0lDcmgZQHssIKACdjwwA7LBgQE%2BAQQBOePqWFQ%2BACSQBbRRBwRxYAL4BdIA
+                - listitem [ref=f4e25]:
+                  - link "Author Services" [ref=f4e26] [cursor=pointer]:
+                    - /url: /authors/services
+                - listitem [ref=f4e28]:
+                  - button "Information" [ref=f4e29] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - generic: General Content
+                      - list:
+                        - listitem:
+                          - link "Open Access Policy":
+                            - /url: /openaccess
+                        - listitem:
+                          - link "Editorial Process":
+                            - /url: /editorial_process
+                        - listitem:
+                          - link "Publication Ethics":
+                            - /url: /ethics
+                        - listitem:
+                          - link "Special Issues Guidelines":
+                            - /url: /special_issues_guidelines
+                        - listitem:
+                          - link "Article Processing Charge":
+                            - /url: /apc
+                    - generic:
+                      - generic: Guidelines
+                      - list:
+                        - listitem:
+                          - link "For Authors":
+                            - /url: /authors
+                        - listitem:
+                          - link "For Reviewers":
+                            - /url: /reviewers
+                        - listitem:
+                          - link "For Editors":
+                            - /url: /editors
+                        - listitem:
+                          - link "For Librarians":
+                            - /url: /librarians
+                    - generic:
+                      - generic: Partnerships
+                      - list:
+                        - listitem:
+                          - link "Institutional Open Access Program":
+                            - /url: /ioap
+                        - listitem:
+                          - link "Societies":
+                            - /url: /societies
+                        - listitem:
+                          - link "Conferences":
+                            - /url: /partnerships/conferences
+                        - listitem:
+                          - link "Publishing Services":
+                            - /url: /publishing_services
+                - listitem [ref=f4e34]:
+                  - button "About" [ref=f4e35] [cursor=pointer]
+                  - generic:
+                    - generic:
+                      - generic: Company
+                      - list:
+                        - listitem:
+                          - link "About Us":
+                            - /url: /about
+                        - listitem:
+                          - link "Mission":
+                            - /url: /about/mission
+                        - listitem:
+                          - link "Impact":
+                            - /url: /about/impact
+                        - listitem:
+                          - link "History":
+                            - /url: /about/history
+                        - listitem:
+                          - link "Leadership":
+                            - /url: /about/leadership
+                    - generic:
+                      - list:
+                        - listitem:
+                          - link "Office Locations":
+                            - /url: /about/office-locations
+                        - listitem:
+                          - link "Careers":
+                            - /url: https://careers.mdpi.com
+                        - listitem:
+                          - link "Awards":
+                            - /url: /awards
+                        - listitem:
+                          - link "Products":
+                            - /url: /about/products-solutions
+                        - listitem:
+                          - link "Accessibility":
+                            - /url: /accessibility
+                    - generic:
+                      - generic: Media
+                      - list:
+                        - listitem:
+                          - link "News":
+                            - /url: /news
+                        - listitem:
+                          - link "Blog":
+                            - /url: https://blog.mdpi.com
+                        - listitem:
+                          - link "Press":
+                            - /url: /about/press
+                    - generic:
+                      - generic: Contact
+                      - list:
+                        - listitem:
+                          - link "Support":
+                            - /url: /support
+                        - listitem:
+                          - link "Send Feedback":
+                            - /url: /support/feedback
+          - generic [ref=f4e40]:
+            - generic [ref=f4e42]:
+              - generic [ref=f4e43]:
+                - button "This Journal" [ref=f4e48] [cursor=pointer]
+                - generic [ref=f4e56]:
+                  - textbox "Search articles, authors" [ref=f4e57]
+                  - button "Search" [ref=f4e59] [cursor=pointer]
+              - link [ref=f4e63] [cursor=pointer]:
+                - /url: /search?isAdvancedFormOpened=true
+                - paragraph [ref=f4e64]: Advanced
+            - navigation "Header actions" [ref=f4e65]:
+              - button "Sign in" [ref=f4e66] [cursor=pointer]
+              - link "Submit" [ref=f4e70] [cursor=pointer]:
+                - /url: https://susy.mdpi.com/user/manuscripts/upload
+      - button "Scroll to top" [ref=f4e71] [cursor=pointer]
+      - main [ref=f4e74]:
+        - generic [ref=f4e76]:
+          - generic [ref=f4e84]:
+            - link "Applied Sciences" [ref=f4e85] [cursor=pointer]:
+              - /url: /journal/applsci
+            - generic [ref=f4e87]:
+              - generic [ref=f4e88]:
+                - button "Cite" [ref=f4e90] [cursor=pointer]
+                - button "Share" [ref=f4e95] [cursor=pointer]
+              - button "Get Alerted" [ref=f4e100] [cursor=pointer]
+              - link "Download PDF" [ref=f4e106] [cursor=pointer]:
+                - /url: /2076-3417/15/6/3146/pdf
+          - generic [ref=f4e110]:
+            - navigation "Table of contents" [ref=f4e112]:
+              - link "Abstract" [ref=f4e113] [cursor=pointer]:
+                - /url: "#Abstract"
+              - link "Introduction" [ref=f4e114] [cursor=pointer]:
+                - /url: "#Introduction"
+              - link "Related Work" [ref=f4e115] [cursor=pointer]:
+                - /url: "#Related_Work"
+              - link "Methodology" [ref=f4e116] [cursor=pointer]:
+                - /url: "#Methodology"
+              - link "System Design" [ref=f4e117] [cursor=pointer]:
+                - /url: "#System_Design"
+              - link "Results" [ref=f4e118] [cursor=pointer]:
+                - /url: "#Results"
+              - link "Discussion" [ref=f4e119] [cursor=pointer]:
+                - /url: "#Discussion"
+              - link "Conclusions" [ref=f4e120] [cursor=pointer]:
+                - /url: "#Conclusions"
+              - link "Future Work" [ref=f4e121] [cursor=pointer]:
+                - /url: "#Future_Work"
+              - link "Author Contributions" [ref=f4e122] [cursor=pointer]:
+                - /url: "#Author_Contributions"
+              - link "Funding" [ref=f4e123] [cursor=pointer]:
+                - /url: "#Funding"
+              - link "Institutional Review Board Statement" [ref=f4e124] [cursor=pointer]:
+                - /url: "#Institutional_Review_Board_Statement"
+              - link "Informed Consent Statement" [ref=f4e125] [cursor=pointer]:
+                - /url: "#Informed_Consent_Statement"
+              - link "Data Availability Statement" [ref=f4e126] [cursor=pointer]:
+                - /url: "#Data_Availability_Statement"
+              - link "Acknowledgments" [ref=f4e127] [cursor=pointer]:
+                - /url: "#Acknowledgments"
+              - link "Conflicts of Interest" [ref=f4e128] [cursor=pointer]:
+                - /url: "#Conflicts_of_Interest"
+              - link "References" [ref=f4e129] [cursor=pointer]:
+                - /url: "#References"
+              - link "Article Metrics" [ref=f4e130] [cursor=pointer]:
+                - /url: "#Article_Metrics"
+            - generic [ref=f4e131]:
+              - generic [ref=f4e132]:
+                - generic [ref=f4e133]:
+                  - generic [ref=f4e134]:
+                    - generic [ref=f4e135]:
+                      - list [ref=f4e136]:
+                        - listitem [ref=f4e137]:
+                          - generic [ref=f4e138]: Article
+                        - listitem [ref=f4e140]:
+                          - img "Open Access" [ref=f4e143]
+                      - paragraph [ref=f4e144]: 13 March 2025
+                    - heading "A Multi-Agent Deep Reinforcement Learning System for Governmental Interoperability" [level=1] [ref=f4e145]
+                  - generic [ref=f4e146]:
+                    - generic [ref=f4e148]:
+                      - generic [ref=f4e149]:
+                        - button [ref=f4e150] [cursor=pointer]:
+                          - generic [ref=f4e152]:
+                            - text: Azanu Mirolgn Mequanenit
+                            - superscript [ref=f4e153]: 1,2,*
+                        - generic [ref=f4e154]: ","
+                      - generic [ref=f4e155]:
+                        - button [ref=f4e156] [cursor=pointer]:
+                          - generic [ref=f4e158]:
+                            - text: Eyerusalem Alebachew Nibret
+                            - superscript [ref=f4e159]: 2,3
+                        - generic [ref=f4e160]: ","
+                      - generic [ref=f4e161]:
+                        - button [ref=f4e162] [cursor=pointer]:
+                          - generic [ref=f4e164]:
+                            - text: Pilar Herrero-Martín
+                            - superscript [ref=f4e165]: "4"
+                        - generic [ref=f4e166]: ","
+                      - generic [ref=f4e167]:
+                        - button [ref=f4e168] [cursor=pointer]:
+                          - generic [ref=f4e170]:
+                            - text: María S. García-González
+                            - superscript [ref=f4e171]: "5"
+                        - generic [ref=f4e172]: and
+                      - button [ref=f4e174] [cursor=pointer]:
+                        - generic [ref=f4e176]:
+                          - text: Rodrigo Martínez-Béjar
+                          - superscript [ref=f4e177]: "1"
+                    - generic [ref=f4e179]:
+                      - generic [ref=f4e180]:
+                        - superscript [ref=f4e182]: "1"
+                        - generic [ref=f4e183]: Department of Computer Science, University of Murcia, 30100 Murcia, Spain
+                      - generic [ref=f4e184]:
+                        - superscript [ref=f4e186]: "2"
+                        - generic [ref=f4e187]: Department of Information Technology, University of Gondar, Gondar 196, Ethiopia
+                      - generic [ref=f4e188]:
+                        - superscript [ref=f4e190]: "3"
+                        - generic [ref=f4e191]: Department Electrical Engineering and Industrial Informatics, Federal University of Parana, Curtiba 80060-000, Brazil
+                      - generic [ref=f4e192]:
+                        - superscript [ref=f4e194]: "4"
+                        - generic [ref=f4e195]: Information Technology School, Technical University of Madrid, 28040 Madrid, Spain
+                      - button "Show more" [ref=f4e196] [cursor=pointer]
+                    - generic [ref=f4e200]:
+                      - generic [ref=f4e201]:
+                        - link "Appl. Sci." [ref=f4e202] [cursor=pointer]:
+                          - /url: /journal/applsci
+                        - generic [ref=f4e203]:
+                          - strong [ref=f4e204]: "2025"
+                          - text: ","
+                          - emphasis [ref=f4e205]: "15"
+                          - text: (6), 3146;
+                        - link "https://doi.org/10.3390/app15063146" [ref=f4e206] [cursor=pointer]:
+                          - /url: https://doi.org/10.3390/app15063146
+                      - generic [ref=f4e207]:
+                        - text: This article belongs to the Special Issue
+                        - link "New Advances in Applied Machine Learning" [ref=f4e208] [cursor=pointer]:
+                          - /url: /journal/applsci/special_issues/J5N51ZA4HI
+                    - generic [ref=f4e209]:
+                      - link "Version Notes" [ref=f4e213] [cursor=pointer]:
+                        - /url: /2076-3417/15/6/3146/notes
+                      - link "Order Reprints" [ref=f4e219] [cursor=pointer]:
+                        - /url: /2076-3417/15/6/3146/reprints
+                - complementary "right-aside" [ref=f4e223]
+                - article [ref=f4e235]:
+                  - generic [ref=f4e238]:
+                    - generic [ref=f4e240]:
+                      - heading "Abstract" [level=2] [ref=f4e241]
+                      - generic [ref=f4e242]: This study explores the integration of the JADE (Java Agent Development Framework) platform with deep reinforcement learning (DRL) to enhance governmental interoperability and optimize administrative workflows in municipal settings. The proposed approach combines the JADE’s robust multi-agent system (MAS) capabilities with the adaptive decision-making power of DRL to address prevalent challenges faced by government agencies, such as fragmented operations, incompatible data formats, and rigid communication protocols. By enabling seamless communication between agents across departments such as the Treasury, the Event Management department, and the Public Safety department, the hybrid system fosters real-time collaboration and supports efficient, data-driven decision making. Agents leverage historical and real-time data to adapt to environmental changes and make optimized decisions that align with overarching governmental objectives, such as resource allocation and emergency response. The result is a system capable of managing intricate administrative duties using structured agent communication and the integration of DRL-driven learning models, improving governmental interoperability. Key performance indicators highlight the system’s effectiveness, achieving a task completion rate of 95%, decision accuracy of 96%, and a communication latency of just 120 ms. Additionally, the framework’s flexibility ensures seamless scalability, accommodating complex and large-scale tasks across multiple governmental units. This research presents a scalable, automated, and resilient framework for optimizing governmental processes, offering a pathway to more efficient, transparent, and adaptive public sector operations.
+                    - generic [ref=f4e244]:
+                      - generic [ref=f4e245]: "Keywords:"
+                      - link "JADE" [ref=f4e246] [cursor=pointer]:
+                        - /url: /search?q=JADE
+                      - text: ;
+                      - link "deep reinforcement learning (DRL)" [ref=f4e247] [cursor=pointer]:
+                        - /url: /search?q=deep+reinforcement+learning+(DRL)
+                      - text: ;
+                      - link "multi-agent systems (MASs)" [ref=f4e248] [cursor=pointer]:
+                        - /url: /search?q=multi-agent+systems+(MASs)
+                      - text: ;
+                      - link "governmental interoperability" [ref=f4e249] [cursor=pointer]:
+                        - /url: /search?q=governmental+interoperability
+                      - text: ;
+                      - link "municipal administration" [ref=f4e250] [cursor=pointer]:
+                        - /url: /search?q=municipal+administration
+                      - text: ;
+                      - link "agent communication" [ref=f4e251] [cursor=pointer]:
+                        - /url: /search?q=agent+communication
+                    - generic [ref=f4e253]:
+                      - heading "1. Introduction" [level=2] [ref=f4e254]
+                      - generic [ref=f4e255]:
+                        - text: In modern governance, municipalities serve as foundational structures for managing and addressing the needs of local populations. As the primary territorial entities in Spain, municipalities enjoy significant autonomy and authority in administrative, economic, social, and regulatory domains, enabling them to respond directly to community needs [
+                        - link "Reference 1" [ref=f4e256] [cursor=pointer]: "1"
+                        - text: "]. Municipal governments, organized through city councils, are tasked with governance, regulatory functions, financial oversight, and the provision of essential public services, as established by the Local Government Regime ["
+                        - link "Reference 1" [ref=f4e257] [cursor=pointer]: "1"
+                        - text: "]. However, this autonomy also presents challenges, particularly in achieving semantic interoperability across municipal administrative units—a critical requirement for efficient and coordinated public administration ["
+                        - link "Reference 2" [ref=f4e258] [cursor=pointer]: "2"
+                        - text: "]."
+                      - generic [ref=f4e259]:
+                        - text: As public administration undergoes rapid digital transformation, municipalities increasingly rely on electronic systems for processes such as document authentication, data sharing, and regulatory compliance [
+                        - link "Reference 1" [ref=f4e260] [cursor=pointer]: "1"
+                        - text: "]. Nevertheless, achieving effective semantic interoperability within these frameworks remains a significant challenge. Departments like the Mayor’s Office, Secretariat, and Treasury must coordinate their efforts while maintaining distinct functions and responsibilities ["
+                        - link "Reference 2" [ref=f4e261] [cursor=pointer]: "2"
+                        - text: "]."
+                      - generic [ref=f4e262]:
+                        - text: Recent advancements in AI-based governance models utilize real-time learning abilities, enabling agents to consistently enhance their decision-making approaches in response to changing environmental conditions. The combination of MASs with DRL has been extensively examined in areas like smart city administration [
+                        - link "Reference 3" [ref=f4e263] [cursor=pointer]: "3"
+                        - text: "], self-driving traffic regulation ["
+                        - link "Reference 1" [ref=f4e264] [cursor=pointer]: "1"
+                        - text: "], and financial oversight, illustrating its ability to enhance intricate, multi-party processes ["
+                        - link "Reference 4" [ref=f4e265] [cursor=pointer]: "4"
+                        - text: "]. The JADE (Java Agent Development Framework) has become an essential instrument in promoting organized agent interactions, guaranteeing fluid communication among decentralized administrative units via standardized protocols such as FIPA-ACL. Furthermore, the integration of semantic ontologies has improved data interoperability, allowing for more coherent and efficient information sharing among different government departments ["
+                        - link "Reference 5" [ref=f4e266] [cursor=pointer]: "5"
+                        - text: "]. Despite these advancements, challenges remain in achieving full-scale governmental interoperability, necessitating further exploration of AI-driven solutions to enhance policy implementation, automate bureaucratic workflows, and optimize public resource allocation."
+                      - generic [ref=f4e267]:
+                        - text: This study proposes developing a multi-agent system (MAS) prototype using the Java Agent Development Framework (JADE) combined with deep reinforcement learning (DRL) to enhance interoperability across municipal administrative units. Within this MAS framework, autonomous agents represent various administrative departments, enabling dynamic coordination, electronic document processing, and efficient information exchange. By integrating DRL, these agents acquire the capability to learn from their interactions, optimize decision-making processes, and adapt to the evolving demands of public administration. This adaptability fosters continuous improvements in the efficiency and responsiveness of local government services [
+                        - link "Reference 6" [ref=f4e268] [cursor=pointer]: "6"
+                        - text: "]. It leverages the JADE to simulate complex interoperability scenarios, providing a platform for identifying challenges and optimizing cross-departmental workflows. By enabling autonomous agents to manage tasks such as document processing, data sharing, and regulatory compliance, the MAS framework addresses critical issues in municipal governance, facilitating seamless communication and collaboration among diverse units. This integration of an MAS and DRL aims to advance the digital transformation of public administration, enhancing the coordination, adaptability, and effectiveness of municipal governance to better serve community needs and meet evolving demands ["
+                        - link "Reference 3" [ref=f4e269] [cursor=pointer]: "3"
+                        - text: "]."
+                      - generic [ref=f4e270]: The integrated system contributes to improving interoperability in local government operations. Utilizing autonomous agents to embody different administrative departments, the system enables smooth coordination, immediate information sharing, and enhanced workflows, tackling significant issues in public administration. The incorporation of DRL allows agents to consistently learn from their interactions, adjust to changing governance requirements, and enhance decision-making procedures, thus increasing the effectiveness and responsiveness of local government services. By utilizing the JADE’s organized communication protocols, the system guarantees uniform and effective task execution, minimizing bureaucratic hold-ups and improving inter-departmental cooperation. Furthermore, the MAS framework streamlines essential municipal tasks like document management, adherence to regulations, and information sharing, resulting in quicker and more precise service provision. The suggested method functions as a scalable simulation platform, enabling municipalities to evaluate and enhance interoperability strategies prior to actual implementation. By promoting digital transformation in public administration, this system enhances the modernization of governance via AI-powered adaptability, ensuring municipal services are more responsive, efficient, and in tune with community requirements. The combination of an MAS and DRL fosters a more advanced, technology-oriented governance framework, enhancing public service provision and reinforcing collaboration between departments.
+                      - generic [ref=f4e271]:
+                        - text: "The structure of the paper is as follows:"
+                        - link "Section 2" [ref=f4e272] [cursor=pointer]:
+                          - /url: "#sec2-applsci-15-03146"
+                        - text: provides an overview of the key literature and earlier research that support this study. In
+                        - link "Section 3" [ref=f4e273] [cursor=pointer]:
+                          - /url: "#sec3-applsci-15-03146"
+                        - text: ", we describe the methodology used in this study, detailing the methods and techniques applied."
+                        - link "Section 4" [ref=f4e274] [cursor=pointer]:
+                          - /url: "#sec4-applsci-15-03146"
+                        - text: outlines the main characteristics of the system that was developed and executed according to the specified methodology.
+                        - link "Section 5" [ref=f4e275] [cursor=pointer]:
+                          - /url: "#sec5-applsci-15-03146"
+                        - text: presents the results generated by the system, where we assess them in relation to the goals established in this study. In
+                        - link "Section 6" [ref=f4e276] [cursor=pointer]:
+                          - /url: "#sec6-applsci-15-03146"
+                        - text: ", we offer an analysis of the results, examining their significance and implications."
+                        - link "Section 7" [ref=f4e277] [cursor=pointer]:
+                          - /url: "#sec7-applsci-15-03146"
+                        - text: outlines the key conclusions derived from the research conducted. Ultimately,
+                        - link "Section 8" [ref=f4e278] [cursor=pointer]:
+                          - /url: "#sec8-applsci-15-03146"
+                        - text: highlights directions for future research and development stemming from the results of this study.
+                    - generic [ref=f4e280]:
+                      - heading "2. Related Work" [level=2] [ref=f4e281]
+                      - generic [ref=f4e282]:
+                        - text: In [
+                        - link "Reference 4" [ref=f4e283] [cursor=pointer]: "4"
+                        - text: "], regarding control schemas in multi-agent systems (MASs), a minimal-approximation-based event-triggered leader-following consensus control scheme is described. This scheme has been shown to outperform others, particularly for nonlinear MASs with unknown actuator dead zones. Additionally, an adaptive event-triggered control strategy relying solely on local information has been proposed ["
+                        - link "Reference 7" [ref=f4e284] [cursor=pointer]: "7"
+                        - text: "]. These authors have also derived a model-based stability condition guaranteeing MASs’ asymptotic consensus."
+                      - generic [ref=f4e285]:
+                        - text: Containment control has been defined as a modality aimed at constructing a control protocol through data exchange among neighboring agents, ensuring that all follower outputs converge within a predefined region determined by the leaders [
+                        - link "Reference 8" [ref=f4e286] [cursor=pointer]: "8"
+                        - text: "]. The authors addressed disturbances in internal dynamics using a Fourier series expansion and a neural network-based adaptive identifier for each follower, thereby relaxing constraints on the system’s dynamics. In this study, optimized virtual and actual controllers were derived through adaptive dynamic programming under a simplified actor–critic architecture ["
+                        - link "Reference 9" [ref=f4e287] [cursor=pointer]: "9"
+                        - text: "]. Here, the value function evaluates control performance, while the actor executes the control tasks."
+                      - generic [ref=f4e288]:
+                        - text: Recent advancements in multi-agent systems (MASs) and reinforcement learning (RL) have introduced innovative frameworks to enhance agent collaboration, interaction, and task execution. For instance, the AGENTS framework [
+                        - link "Reference 10" [ref=f4e289] [cursor=pointer]: "10"
+                        - text: "] provides a versatile toolset for agent-based simulations, facilitating the exploration of organizational dynamics and improving efficiency in complex environments. Similarly, in ["
+                        - link "Reference 11" [ref=f4e290] [cursor=pointer]: "11"
+                        - text: "], AutoGen offers a flexible platform for developing MASs with customizable agent interactions, integrating large language models (LLMs) and human inputs for tasks such as coding, decision making, and question answering. Empirical results demonstrate AutoGen’s scalability and effectiveness across domains like mathematics and operations research."
+                      - generic [ref=f4e291]:
+                        - text: Further progress is exemplified by frameworks like AGENTVERSE [
+                        - link "Reference 12" [ref=f4e292] [cursor=pointer]: "12"
+                        - text: "], which support dynamic, real-time adaptation in MASs, fostering emergent social behaviors and enhancing collaboration in complex tasks."
+                      - generic [ref=f4e293]:
+                        - text: In the domain of motion prediction and agent interaction, models such as Eq-Motion [
+                        - link "Reference 13" [ref=f4e294] [cursor=pointer]: "13"
+                        - text: "] address the limitations of existing approaches by ensuring motion equivariance and invariance under Euclidean transformations. This innovation improves prediction accuracy in areas like particle dynamics, human skeleton motion, and pedestrian trajectory forecasting, achieving state-of-the-art performance. In ["
+                        - link "Reference 14" [ref=f4e295] [cursor=pointer]: "14"
+                        - text: "], multi-agent deep reinforcement learning (MADRL) explores the integration of deep learning in multi-agent environments, extending its application to complex, real-world tasks. The article examines training schemes for policy learning and agent behavior across cooperative, competitive, and mixed interaction settings. It also surveys the evolution of MADRL, addressing emerging challenges and presenting innovative solutions to enhance the scalability and applicability of these methods in practical real-world scenarios."
+                      - generic [ref=f4e296]:
+                        - text: In [
+                        - link "Reference 15" [ref=f4e297] [cursor=pointer]: "15"
+                        - text: "], multi-agent reinforcement learning (MARL) takes a significant leap forward with the introduction of the multi-agent decision transformer (MADT). This framework combines offline pretraining with transformer-based sequence modeling, outperforming state-of-the-art methods. The MADT excels in few-shot and zero-shot learning scenarios, offering improved sample efficiency and superior performance in both offline and online environments. By setting a new benchmark for generalization and adaptability in MARL tasks, MADT represents a pivotal advancement in the development of intelligent, scalable systems capable of managing diverse and dynamic environments."
+                    - generic [ref=f4e299]:
+                      - heading "3. Methodology" [level=2] [ref=f4e300]
+                      - generic [ref=f4e301]:
+                        - text: This study integrates multi-agent systems (MASs) with the Java Agent Development Framework (JADE) for agent-based modeling, employing deep reinforcement learning (DRL) to enhance governmental interoperability. The proposed system addresses the complexity of cross-departmental coordination by simulating interactions among various municipal administrative units, leveraging DRL capabilities to improve learning, decision making, and adaptability in administrative processes [
+                        - link "Reference 16" [ref=f4e302] [cursor=pointer]: "16"
+                        - text: "]. Furthermore, the integration of JADE with Python-based DRL provides a robust framework for strategic collaboration and agent interaction ["
+                        - link "Reference 17" [ref=f4e303] [cursor=pointer]: "17"
+                        - text: "]. The following subsections detail the system’s architecture, agent roles, communication protocols, and use case scenarios that form the basis of its development."
+                      - generic [ref=f4e304]:
+                        - heading "3.1. Framework Selection" [level=3] [ref=f4e305]
+                        - generic [ref=f4e306]:
+                          - text: The selection of an appropriate framework is crucial for developing an efficient and scalable multi-agent system. The proposed system integrates JADE (Java Agent Development Framework) as the primary environment for agent creation and management. JADE facilitates distributed communication through the agent communication language (ACL), ensuring compliance with FIPA standards. This structured communication enables agents to collaborate seamlessly, making JADE an essential tool for developing complex agent-based systems. Additionally, its flexibility supports the creation of scalable and interoperable multi-agent frameworks, allowing for seamless integration across various governmental departments [
+                          - link "Reference 18" [ref=f4e307] [cursor=pointer]: "18"
+                          - text: "]."
+                        - generic [ref=f4e308]:
+                          - text: Complementing JADE, Python integration for deep reinforcement learning (DRL) enhances the system’s adaptability and intelligence. Python-based DRL implementations empower agents to continuously learn, optimize strategies, and adapt to changing environments. With access to extensive machine learning libraries such as TensorFlow 2.18.0 and PyTorch 2.6.0, agents can develop advanced learning capabilities, improving decision-making and operational efficiency. This integration bridges structured agent-based communication with intelligent learning models, creating a robust and adaptive framework for enhancing governmental interoperability [
+                          - link "Reference 19" [ref=f4e309] [cursor=pointer]: "19"
+                          - text: "]."
+                      - generic [ref=f4e310]:
+                        - heading "3.2. Reinforcement Learning Approach" [level=3] [ref=f4e311]
+                        - generic [ref=f4e312]:
+                          - text: The integration of deep reinforcement learning (DRL) enhances the adaptability and decision-making capabilities of the multi-agent system. The proposed framework utilizes the actor-critic algorithm, a powerful reinforcement learning technique for optimizing agent behavior. This algorithm enables agents to make informed decisions by evaluating both immediate and long-term rewards, improving overall efficiency in municipal administrative tasks. By balancing exploration and exploitation, the actor-critic model ensures that agents continuously refine their strategies to achieve optimal outcomes [
+                          - link "Reference 20" [ref=f4e313] [cursor=pointer]: "20"
+                          - text: "]."
+                        - generic [ref=f4e314]:
+                          - text: To further enhance learning, a structured reward mechanism is implemented. This mechanism incentivizes agents to execute tasks successfully and adhere to predefined behavioral expectations. By assigning positive rewards for desirable actions and penalizing inefficient or incorrect decisions, agents develop an adaptive learning process that continuously improves their performance. This reinforcement strategy enables agents to optimize key tasks such as compliance verification, resource allocation, and inter-departmental coordination, ultimately leading to more efficient and intelligent governmental operations [
+                          - link "Reference 21" [ref=f4e315] [cursor=pointer]: "21"
+                          - text: "]."
+                      - generic [ref=f4e316]:
+                        - heading "3.3. Optimizing Permit Management Systems Through Rare Event Simulation and Reinforcement Learning" [level=3] [ref=f4e317]
+                        - generic [ref=f4e318]: Integrating rare event simulations, robust evaluations, and reinforcement learning, enhances permit management systems by ensuring adaptability under both standard and exceptional conditions. In key cases—macro-party organization, the agricultural use of wastewater, and a financial audit for municipal water resources management—simulating emergencies, regulatory shifts, and system failures improves decision-making and crisis response.
+                        - generic [ref=f4e319]: For macro-party organization, agents manage security threats, extreme weather, and infrastructure failures, ensuring swift regulatory adjustments. In the agricultural use of wastewater, real-time water quality monitoring, regulatory compliance updates, and emergency infrastructure repairs maintain environmental safety. For financial audits, fraud detection, emergency fund reallocations, and compliance with new financial regulations enhance municipal financial integrity.
+                        - generic [ref=f4e320]: System robustness is evaluated using response time, approval rates, resilience, and risk prediction accuracy for event and agricultural permits, while fraud detection efficiency, regulatory adaptability, and data recovery time measure financial audit performance.
+                        - generic [ref=f4e321]: Reinforcement learning techniques, such as Q-learning, deep Q-networks (DQN), multi-agent reinforcement learning (MARL), and federated learning, enhance agent decision-making, coordination, and adaptability. These approaches enable agents to respond proactively to crises, improving permit issuance efficiency and systemic resilience.
+                        - generic [ref=f4e322]: By leveraging a multi-agent system—including MayorAgent, SecretariatAgent, TreasuryAgent, SecurityAgent, and RegulatoryComplianceAgent—municipalities optimize permit management, ensuring public safety, regulatory compliance, and operational continuity. This AI-driven framework strengthens governmental adaptability and public service efficiency.
+                      - generic [ref=f4e323]:
+                        - heading "3.4. Design Component" [level=3] [ref=f4e324]
+                        - generic [ref=f4e325]:
+                          - text: "Agent communication: uses ACL messages for structured communication between agents, adhering to FIPA standards ["
+                          - link "Reference 22" [ref=f4e326] [cursor=pointer]: "22"
+                          - text: "]. Learning environment: state representations, actions, and rewards are defined to guide agents in optimizing decision-making based on their interactions within simulated environments ["
+                          - link "Reference 5" [ref=f4e327] [cursor=pointer]: "5"
+                          - text: "]."
+                        - generic [ref=f4e328]:
+                          - text: "Training loop: a continuous feedback loop enabling agents to interact, learn, and adapt to environmental changes through policy updates ["
+                          - link "Reference 23" [ref=f4e329] [cursor=pointer]: "23"
+                          - text: "]."
+                      - generic [ref=f4e330]:
+                        - heading "3.5. Integration Process" [level=3] [ref=f4e331]
+                        - generic [ref=f4e332]:
+                          - text: The system facilitates JADE 4.60–Python 3.10 communication through APIs or sockets, enabling seamless data exchange for agent actions and state updates based on learning feedback [
+                          - link "Reference 24" [ref=f4e333] [cursor=pointer]: "24"
+                          - text: "]. Additionally, a state information exchange mechanism ensures synchronized operations by efficiently sharing task and state data between leader and follower agents, enhancing coordination and decision-making ["
+                          - link "Reference 25" [ref=f4e334] [cursor=pointer]: "25"
+                          - text: "]."
+                      - generic [ref=f4e335]:
+                        - heading "3.6. Data Diversification and Validation for Generalization and Robustness" [level=3] [ref=f4e336]
+                        - generic [ref=f4e337]: To ensure the system’s adaptability and robustness across a wide range of scenarios, we emphasize methods to diversify and validate the training data. This is essential for developing models that not only perform well on the data they were trained on but also generalize effectively to new, unseen situations. One key approach is multi-source data integration, which combines diverse data sources to create a comprehensive training dataset. We integrate historical data, such as financial records and resource allocations, with real-time inputs, including citizen reports and event management metrics. Historical data provide context by capturing trends, decisions, and behaviors over time, which is crucial for understanding long-term patterns and making accurate predictions. In contrast, real-time data ensure the model remains responsive to current conditions, allowing it to adapt dynamically to the latest information, such as live feedback from citizens or immediate event metrics. By fusing these data sources, the model gains the ability to manage evolving scenarios and shifting governmental requirements, learning from both static past conditions and the dynamic nature of real-world events.
+                        - generic [ref=f4e338]: To further enhance the model’s reliability, we implement cross-validation techniques, specifically K-fold cross-validation, to assess consistency across different data subsets. In this method, the data are divided into K parts, where the model is trained on K-1 folds and assessed on the remaining fold, repeating the process K times. This ensures that the model’s performance is evaluated on all available data, providing a robust estimate of how well it will perform in unseen cases. The iterative nature of K-fold cross-validation mitigates overfitting, a common issue where models become overly specialized to specific data points and struggle to generalize. By validating across multiple folds, the model becomes more dependable and robust, ensuring it performs consistently across diverse administrative conditions and adapts effectively to real-world challenges.
+                      - generic [ref=f4e339]:
+                        - heading "3.7. Bias Mitigation Strategies" [level=3] [ref=f4e340]
+                        - generic [ref=f4e341]: To address potential biases in the system, we implement measures that ensure fairness in data generation, training, and decision-making processes. One key strategy for bias mitigation is fair policy learning, which involves adjusting the reward function in deep reinforcement learning (DRL) to penalize discriminatory or biased decisions. Since the reward function guides the agent’s actions, modifying it to discourage inequitable outcomes ensures that all groups receive fair treatment across administrative tasks. If the system’s decisions disproportionately favor a specific demographic or region, negative rewards are applied to discourage such biases. Embedding fairness constraints within the reward function encourages equal treatment in policy implementation, resource allocation, and service delivery, ensuring ethical behavior and responsiveness to diverse populations while preventing bias based on factors such as race, gender, or socioeconomic status.
+                        - generic [ref=f4e342]: Another crucial approach is adversarial testing, which evaluates the system against specially crafted inputs designed to reveal decision biases. These adversarial inputs simulate edge cases where the model might unintentionally exhibit preferential treatment due to incomplete or skewed data. By exposing the model to such challenging scenarios, we can identify and correct biases that may not be evident in standard testing environments. This ensures that the system remains fair and unbiased even when confronted with unexpected or potentially malicious inputs. Through adversarial testing, we strengthen fairness in agent-based governance, ensuring that the model remains robust against potential fairness violations in real-world applications.
+                      - generic [ref=f4e343]:
+                        - heading "3.8. Ethical Considerations and Security Measures in Multi-Agent DRL" [level=3] [ref=f4e344]
+                        - generic [ref=f4e345]: The proposed multi-agent deep reinforcement learning (DRL) framework is designed with strong ethical considerations and security measures to ensure the safe handling of sensitive governmental data. To protect data integrity and confidentiality, advanced encryption techniques such as AES-256 for data at rest and TLS (transport layer security) for data in transit are implemented. These encryption standards prevent unauthorized access and data breaches while ensuring that only authorized parties can decrypt and use the data. Additionally, cryptographic hashing techniques like SHA-256 verify data integrity, ensuring that stored information remains unaltered.
+                        - generic [ref=f4e346]: To further enhance security, role-based access control (RBAC) is employed to regulate access based on predefined user roles. This ensures that individuals only have access to the data and functionalities relevant to their responsibilities, reducing the risk of misuse. The principle of the least privilege (PoLP) is enforced, granting the minimum necessary access to users, while multi-factor authentication (MFA) adds an additional security layer, requiring multiple forms of verification before access is granted. These measures collectively safeguard against unauthorized access and data leaks.
+                        - generic [ref=f4e347]: Continuous monitoring and real-time anomaly detection are integrated into the framework to identify and mitigate potential threats. The system uses machine learning-powered anomaly detection to recognize unusual access patterns, unauthorized modifications, and suspicious behaviors. Security mechanisms such as log analysis, intrusion detection systems (IDS), and behavior-based monitoring help detect cyber threats before they escalate. Additionally, automated alerts and mitigation protocols ensure that security incidents are addressed promptly. Regular penetration testing and security audits are conducted to assess vulnerabilities and reinforce the framework’s defenses, making it more resilient against emerging threats.
+                        - generic [ref=f4e348]: To ensure compliance with international data protection regulations, the framework adheres to standards such as the General Data Protection Regulation (GDPR) and ISO/IEC 27001. Compliance measures include data anonymization, transparent audit logs, and consent management systems, ensuring that sensitive information is managed ethically and legally. Policies governing data retention and secure disposal prevent unauthorized long-term storage, further strengthening data protection.
+                        - generic [ref=f4e349]: By integrating encryption techniques, access control mechanisms, continuous monitoring, and regulatory compliance, the multi-agent DRL framework upholds ethical standards and security best practices. These measures not only safeguard sensitive governmental data but also promote transparency, accountability, and trust in AI-driven governance systems.
+                    - generic [ref=f4e351]:
+                      - heading "4. System Design" [level=2] [ref=f4e352]
+                      - generic [ref=f4e353]:
+                        - heading "4.1. Architecture Overview" [level=3] [ref=f4e354]
+                        - generic [ref=f4e355]:
+                          - text: The system architecture integrates JADE-based agents with a DRL engine implemented in Python 3.10. The architecture facilitates agent interactions, decision-making, and learning within a shared environment [
+                          - link "Reference 26" [ref=f4e356] [cursor=pointer]: "26"
+                          - text: "]. A diagram in"
+                          - link "Figure 1" [ref=f4e357] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-f001"
+                          - text: illustrates the integration of JADE agents with the DRL engine in Python, highlighting key components such as agent communication, the DRL training loop, and real-time data exchange.
+                        - generic [ref=f4e358]:
+                          - button "View figure 1" [ref=f4e361] [cursor=pointer]
+                          - generic [ref=f4e362]: Figure 1. System architecture.
+                      - generic [ref=f4e363]:
+                        - heading "4.2. Agent Types and Responsibilities" [level=3] [ref=f4e364]
+                        - generic [ref=f4e365]:
+                          - text: Each municipal unit is represented by a dedicated agent with well-defined responsibilities and behaviors [
+                          - link "Reference 27" [ref=f4e366] [cursor=pointer]: "27"
+                          - text: "]. Agents encapsulate their respective unit’s data, goals, processing logic, and decision-making rules. Communication occurs using the built-in features of the JADE platform for agent management, messaging, and service discovery ["
+                          - link "Reference 28" [ref=f4e367] [cursor=pointer]: "28"
+                          - text: "]. A process flow diagram in"
+                          - link "Figure 2" [ref=f4e368] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-f002"
+                          - text: shows the interaction between CitizenAgent, SecretariatAgent, EventManagementAgent, and MayorAgent for a macro-party use case.
+                        - generic [ref=f4e369]:
+                          - button "View figure 2" [ref=f4e372] [cursor=pointer]
+                          - generic [ref=f4e373]: Figure 2. Detailed workflow for macro-party organization.
+                        - generic [ref=f4e374]: The MayorAgent is responsible for managing municipal affairs, overseeing development projects, and ensuring compliance with regulations. Its primary functions include directing municipal administration, enforcing regulations, and managing budgets.
+                        - generic [ref=f4e375]: The SecretariatAgent manages matters related to public faith, legal advice, and documentation. It plays a crucial role in certifying acts, maintaining official records, and managing government communications.
+                        - generic [ref=f4e376]: The TreasuryAgent is tasked with managing financial resources, executing budgets, and managing accounting operations. Its functions include controlling economic resources, managing collections, and generating financial reports to ensure fiscal transparency.
+                        - generic [ref=f4e377]: The CitizenAgent represents the citizens in their interactions with the municipality. It facilitates public engagement by submitting requests, receiving official notifications, and participating in consultations to ensure citizen concerns are addressed effectively.
+                        - generic [ref=f4e378]:
+                          - text: The EventManagementAgent is responsible for overseeing macro-party events and managing irrigation permit processes. It coordinates activities among various stakeholders, including security personnel and technical offices, while ensuring compliance with regulatory requirements [
+                          - link "Reference 26" [ref=f4e379] [cursor=pointer]: "26"
+                          - text: "]."
+                      - generic [ref=f4e380]:
+                        - heading "4.3. Scalability for Municipal Operations" [level=3] [ref=f4e381]
+                        - generic [ref=f4e382]: Enhancing municipal scalability requires optimized resource management, improved inter-agent communication, and automation. The system expands across organizing large events, agricultural wastewater use, and financial audits, using specialized agents and distributed computing.
+                        - generic [ref=f4e383]: For large events, the EventManagementAgent adjusts resources dynamically, while the TicketingAgent automates reservations and access control. The EmergencyResponseAgent enhances security through AI-driven surveillance, and CoordinationAgents streamline communication among security, coordination, and medical teams. A ChatbotAgent improves attendee interaction and emergency coordination.
+                        - generic [ref=f4e384]: In agriculture, the SmartIrrigationAgent optimizes irrigation based on weather and soil data, while the WaterQualityAgent ensures wastewater safety. A Geo-Monitoring Agent uses drones and satellites for real-time tracking, and a centralized data hub, managed by the SecretariatAgent, promotes transparency. The RegulatoryComplianceAgent enforces policies, and the PartnershipAgent fosters collaboration for wastewater reuse.
+                        - generic [ref=f4e385]: For financial audits, the FraudDetectionAgent monitors transactions, while the TreasuryAgent and AutomatedReportingAgent streamline financial reports. A BlockchainAuditAgent secures transactions, and a DataIntegrationAgent ensures seamless cross-departmental collaboration. The PerformanceTrackingAgent monitors financial efficiency, and the ScalabilityAgent expands audit systems as municipal finances grow.
+                        - generic [ref=f4e386]: These specialized agents enable scalable operations, enhancing decision-making, automation, and transparency. The system fosters collaborative governance, policy enforcement, and financial accountability, ensuring an efficient, adaptive municipal administration.
+                      - generic [ref=f4e387]:
+                        - heading "4.4. Adaptation to Complex Inter-Departmental Interactions and Performance Benchmarks" [level=3] [ref=f4e388]
+                        - generic [ref=f4e389]: Leveraging distributed computing, the framework integrates cloud computing for scalable resource allocation, distributed ledger technology (DLT) for secure data transactions, and a microservices architecture for operational flexibility. In macro-party organization, cloud platforms dynamically adjust resources, centralize data management, and enhance coordination among security, health, and coordination teams. For agricultural wastewater use, cloud-based analytics optimize irrigation and enable remote monitoring of wastewater treatment. In financial audits, cloud computing centralizes financial data, automates reporting, and ensures transparency.
+                        - generic [ref=f4e390]: Inter-departmental collaboration is critical to system efficiency. A unified command center in macro-party organization ensures seamless coordination, while standardized communication protocols enhance clarity. In agricultural wastewater use, a cross-departmental task force and shared data repositories facilitate oversight and compliance. For financial audits, an inter-agency audit committee and regular briefings ensure transparency, data integrity, and financial accountability.
+                        - generic [ref=f4e391]: Performance benchmarks ensure measurable success. Macro-party organization is evaluated based on operational efficiency, coordination, and risk management effectiveness. Agricultural wastewater use is assessed through water usage optimization, environmental compliance, and inter-agency collaboration. Financial audits focus on data accuracy, audit timeliness, and accountability. By integrating advanced computing, structured collaboration, and precise benchmarks, the framework enhances scalability, decision-making, and governance, ensuring a more efficient, transparent, and adaptive municipal system.
+                      - generic [ref=f4e392]:
+                        - heading "4.5. Communication Protocols" [level=3] [ref=f4e393]
+                        - generic [ref=f4e394]: The Foundation for Intelligent Physical Agents (FIPAs) agent communication language (ACL) is a standardized protocol designed to facilitate structured communication between agents in a multi-agent system. By ensuring seamless information exchange, FIPA-ACL enhances coordination and interoperability, allowing agents to collaborate efficiently in complex administrative environments.
+                        - generic [ref=f4e395]:
+                          - text: In addition to structured communication, a shared ontology plays a crucial role in defining concepts and relationships relevant to municipal administration. This ontology ensures semantic interoperability by standardizing key elements such as financial reports, permits, and municipal resolutions. By establishing a common understanding across different governmental units, the shared ontology improves data consistency and enhances the effectiveness of decision-making processes [
+                          - link "Reference 26" [ref=f4e396] [cursor=pointer]: "26"
+                          - text: "]."
+                        - generic [ref=f4e397]: Furthermore, behavior models govern the actions of agents, enabling structured behaviors for data verification, task allocation, and deep reinforcement learning (DRL)-based adaptation. These models help agents follow predefined rules while also learning from their environment, improving their ability to manage tasks dynamically. By integrating structured communication, shared ontology, and adaptive behavior models, the system ensures efficient and intelligent municipal administration.
+                      - generic [ref=f4e398]:
+                        - heading "4.6. Utilizing JADE’s Behavior Model" [level=3] [ref=f4e399]
+                        - generic [ref=f4e400]:
+                          - text: Agents in a multi-agent system follow structured behavior models to ensure efficiency, accuracy, and adaptability in municipal administration. One critical aspect is data verification behavior, where agents validate the accuracy and completeness of data, such as ensuring that permits include all necessary endorsements before approval. This step prevents errors and ensures compliance with regulatory requirements [
+                          - link "Reference 2" [ref=f4e401] [cursor=pointer]: "2"
+                          - text: "]."
+                        - generic [ref=f4e402]:
+                          - text: Communication behavior is another essential component, as agents rely on JADE’s agent communication language (ACL) messages to facilitate structured interactions. By adhering to FIPA standards, agents can exchange information effectively, promoting seamless interoperability between different departments and administrative units [
+                          - link "Reference 28" [ref=f4e403] [cursor=pointer]: "28"
+                          - text: "]."
+                        - generic [ref=f4e404]:
+                          - text: To enhance coordination, task allocation and coordination behavior enables agents to collaborate in managing tasks. This includes organizing resources for large-scale events, ensuring that various stakeholders contribute efficiently, and optimizing resource distribution. By automating task allocation, agents improve workflow efficiency and reduce administrative delays [
+                          - link "Reference 1" [ref=f4e405] [cursor=pointer]: "1"
+                          - text: "]."
+                        - generic [ref=f4e406]:
+                          - text: Finally, learning behavior is integrated into the system through deep reinforcement learning (DRL) algorithms. These algorithms allow agents to continuously refine their decision-making strategies based on feedback, enabling them to optimize complex tasks such as compliance verification and resource management. By learning from past interactions, agents enhance their ability to adapt to dynamic administrative challenges, improving overall system performance [
+                          - link "Reference 19" [ref=f4e407] [cursor=pointer]: "19"
+                          - text: "]."
+                      - generic [ref=f4e408]:
+                        - heading "4.7. Use Case Implementation" [level=3] [ref=f4e409]
+                        - generic [ref=f4e410]:
+                          - 'heading "4.7.1. Use Case 1: Organizing a Macro-Party" [level=4] [ref=f4e411]'
+                          - list [ref=f4e412]:
+                            - listitem [ref=f4e413]:
+                              - generic [ref=f4e414]: "Request submission: the CitizenAgent submits a request to the SecretariatAgent."
+                            - listitem [ref=f4e415]:
+                              - generic [ref=f4e416]:
+                                - text: "Verification process: the SecretariatAgent verifies the request and delegates tasks to the EventManagementAgent, which interacts with the SecurityAgent, TechnicalAgent, and others ["
+                                - link "Reference 2" [ref=f4e417] [cursor=pointer]: "2"
+                                - text: "]."
+                            - listitem [ref=f4e418]:
+                              - generic [ref=f4e419]: "Safety checks: each agent performs necessary checks (i.e., safety, insurance) and sends the results to the SecretariatAgent."
+                            - listitem [ref=f4e420]:
+                              - generic [ref=f4e421]:
+                                - text: "Resolution drafting: the SecretariatAgent drafts a resolution and sends it to the MayorAgent for approval ["
+                                - link "Reference 27" [ref=f4e422] [cursor=pointer]: "27"
+                                - text: "]."
+                            - listitem [ref=f4e423]:
+                              - generic [ref=f4e424]: "Permit issuance: upon approval, the SecretariatAgent issues the permit and notifies the CitizenAgent."
+                        - generic [ref=f4e425]:
+                          - 'heading "4.7.2. Use Case 2: Agricultural Use of Wastewater" [level=4] [ref=f4e426]'
+                          - list [ref=f4e427]:
+                            - listitem [ref=f4e428]:
+                              - generic [ref=f4e429]: "Permit application: the CitizenAgent applies for a wastewater irrigation permit via the SecretariatAgent."
+                            - listitem [ref=f4e430]:
+                              - generic [ref=f4e431]:
+                                - text: "Compliance checks: the SecretariatAgent checks for the necessary permits and coordinates with the TechnicalAgent ["
+                                - link "Reference 1" [ref=f4e432] [cursor=pointer]: "1"
+                                - text: "]."
+                            - listitem [ref=f4e433]:
+                              - generic [ref=f4e434]:
+                                - text: "Final approval: once all checks are complete, the SecretariatAgent processes the request and issues the permit ["
+                                - link "Reference 26" [ref=f4e435] [cursor=pointer]: "26"
+                                - text: "]."
+                        - generic [ref=f4e436]:
+                          - 'heading "4.7.3. Use Case 3: Financial Audit for Municipal Water Resources Management Scenario" [level=4] [ref=f4e437]'
+                          - generic [ref=f4e438]:
+                            - text: A financial audit is initiated in a municipality to ensure the proper allocation and use of funds for water resource projects, such as improving water supply systems, maintaining drainage infrastructure, and disaster preparedness for water-related issues (e.g., flooding, droughts). This financial audit ensures that municipal funds for water management are used efficiently and transparently, preventing future mismanagement and improving the municipality’s ability to respond to water-related challenges [
+                            - link "Reference 29" [ref=f4e439] [cursor=pointer]: "29"
+                            - text: "]."
+                          - list [ref=f4e440]:
+                            - listitem [ref=f4e441]:
+                              - generic [ref=f4e442]:
+                                - text: "Request submission: the MayorAgent submits a formal request to the SecretariatAgent to initiate a financial audit of the municipality’s water management expenses ["
+                                - link "Reference 30" [ref=f4e443] [cursor=pointer]: "30"
+                                - text: "]."
+                            - listitem [ref=f4e444]:
+                              - generic [ref=f4e445]:
+                                - text: "Verification process: The SecretariatAgent assesses the audit’s scope and necessity by reviewing financial records, past audits, and any reported complaints or irregularities from the CitizenAgent or municipal staff ["
+                                - link "Reference 31" [ref=f4e446] [cursor=pointer]: "31"
+                                - text: "]. Simultaneously, the TreasuryAgent compiles detailed financial records, including budget allocations, contractor payments, and receipts for water-related projects, ensuring transparency and accountability in municipal financial management ["
+                                - link "Reference 32" [ref=f4e447] [cursor=pointer]: "32"
+                                - text: "]."
+                            - listitem [ref=f4e448]:
+                              - generic [ref=f4e449]:
+                                - text: "Safety checks: The TreasuryAgent conducts internal safety checks to identify any major anomalies in the financial data before the audit begins. This process involves verifying the completeness of invoices, detecting duplicated payments, and ensuring that all financial transactions comply with municipal regulations related to procurement and project execution. These checks help maintain financial integrity and regulatory adherence ["
+                                - link "Reference 33" [ref=f4e450] [cursor=pointer]: "33"
+                                - text: "]. The MayorAgent ensures that an external audit firm or independent financial experts are involved to maintain transparency and fairness ["
+                                - link "Reference 34" [ref=f4e451] [cursor=pointer]: "34"
+                                - text: "]."
+                            - listitem [ref=f4e452]:
+                              - generic [ref=f4e453]: "Resolution drafting: The SecretariatAgent, in collaboration with the TreasuryAgent, drafts an audit report outlining key findings, including misallocation of funds for water projects, overpayment to contractors, incomplete infrastructure work, and inefficient spending on disaster preparedness, such as unused water pumps or understocked emergency supplies. The report includes recommendations for improvement, such as revising procurement policies, strengthening oversight mechanisms, and reallocating funds to critical projects. The MayorAgent reviews the audit report and proposes corrective actions to address the identified issues."
+                            - listitem [ref=f4e454]:
+                              - generic [ref=f4e455]: "Permit issuance: The MayorAgent authorizes permits for new financial controls and budget reallocations to address the issues identified in the audit. The TreasuryAgent ensures that all approved financial adjustments comply with municipal regulations. To maintain transparency and public trust, the CitizenAgent communicates the audit findings through public channels. This financial audit guarantees the efficient and transparent use of municipal funds allocated to water management, helping to prevent mismanagement and enhancing the municipality’s capacity to address water-related challenges effectively."
+                        - generic [ref=f4e456]:
+                          - 'heading "4.7.4. Use Case 4: Water Contamination Crisis in a Municipality Scenario" [level=4] [ref=f4e457]'
+                          - generic [ref=f4e458]:
+                            - text: A water contamination crisis occurs in a municipality due to a leak in the industrial wastewater system, resulting in hazardous chemicals entering the public water supply. This leads to health concerns among citizens, including reports of illnesses caused by consuming contaminated water [
+                            - link "Reference 35" [ref=f4e459] [cursor=pointer]: "35"
+                            - text: "]."
+                          - list [ref=f4e460]:
+                            - listitem [ref=f4e461]:
+                              - generic [ref=f4e462]:
+                                - text: "Request submission: the CitizenAgent submits an urgent request to the SecretariatAgent reporting suspected contamination of the municipal water supply, complaining about an unusual odor, taste, or color in the tap water and cases of illness reported by healthcare facilities ["
+                                - link "Reference 36" [ref=f4e463] [cursor=pointer]: "36"
+                                - text: "]."
+                            - listitem [ref=f4e464]:
+                              - generic [ref=f4e465]:
+                                - text: "Verification process: The SecretariatAgent verifies the authenticity of the complaint by cross-referencing citizen reports with health department data ["
+                                - link "Reference 37" [ref=f4e466] [cursor=pointer]: "37"
+                                - text: "]. The EventManagementAgent conducts water sample tests in municipal labs to confirm contamination and identify its source ["
+                                - link "Reference 38" [ref=f4e467] [cursor=pointer]: "38"
+                                - text: "]. Meanwhile, the TreasuryAgent allocates resources for additional testing and implements immediate safety measures to mitigate potential risks ["
+                                - link "Reference 39" [ref=f4e468] [cursor=pointer]: "39"
+                                - text: "]."
+                            - listitem [ref=f4e469]:
+                              - generic [ref=f4e470]:
+                                - text: "Safety checks: The EventManagementAgent is responsible for shutting down the contaminated sections of the water supply system to prevent further exposure ["
+                                - link "Reference 40" [ref=f4e471] [cursor=pointer]: "40"
+                                - text: "]. In response, emergency distribution of clean drinking water is organized in collaboration with the TreasuryAgent, who coordinates funding for water tanker services and bottled water supplies ["
+                                - link "Reference 41" [ref=f4e472] [cursor=pointer]: "41"
+                                - text: "]. The MayorAgent oversees the implementation of safety protocols, including issuing public health advisories and coordinating with healthcare facilities to provide treatment to affected citizens ["
+                                - link "Reference 42" [ref=f4e473] [cursor=pointer]: "42"
+                                - text: "]. Additionally, inspections are conducted at nearby industrial facilities to identify any potential leaks or regulatory violations."
+                            - listitem [ref=f4e474]:
+                              - generic [ref=f4e475]: "Resolution drafting: The SecretariatAgent, in coordination with the Event ManagementAgent, drafts a resolution that outlines the following actions: repairing the damaged wastewater infrastructure and installing stricter monitoring systems; imposing fines or penalties on the responsible industrial facilities; and developing long-term measures, such as implementing water quality sensors and enacting stricter industrial waste management regulations. The MayorAgent then reviews the draft and approves it for implementation."
+                            - listitem [ref=f4e476]:
+                              - generic [ref=f4e477]: "Permit issuance: The MayorAgent issues permits for the infrastructure repairs and the installation of advanced water treatment systems. Temporary permits are also granted for the deployment of water tankers and the establishment of emergency water stations. Meanwhile, the TreasuryAgent ensures that the necessary financial permits are in place to support the resolution plan."
+                      - generic [ref=f4e478]:
+                        - heading "4.8. Outcome" [level=3] [ref=f4e479]
+                        - generic [ref=f4e480]: This outcome enhances public trust, ensures water safety, and strengthens the municipality’s disaster response system.
+                        - list [ref=f4e481]:
+                          - listitem [ref=f4e482]:
+                            - generic [ref=f4e483]: "Immediate relief: the municipality ensures citizens have access to clean drinking water while the contamination is resolved."
+                          - listitem [ref=f4e484]:
+                            - generic [ref=f4e485]: "Infrastructure repair: the damaged wastewater system was repaired to prevent further contamination."
+                          - listitem [ref=f4e486]:
+                            - generic [ref=f4e487]: "Public health: citizens affected by the contaminated water receive medical treatment, minimizing the health impact."
+                          - listitem [ref=f4e488]:
+                            - generic [ref=f4e489]: "Accountability: the responsible industrial facilities remain accountable, ensuring stricter adherence to environmental regulations."
+                          - listitem [ref=f4e490]:
+                            - generic [ref=f4e491]: "Long-term prevention: advanced water monitoring systems and updated waste management policies reduce the likelihood of future contamination crises."
+                    - generic [ref=f4e493]:
+                      - heading "5. Results" [level=2] [ref=f4e494]
+                      - generic [ref=f4e495]: The integration of the JADE-based multi-agent system (MAS) with Python-driven deep reinforcement learning (DRL) presents an innovative approach to managing and optimizing governmental workflows. It successfully addresses challenges in municipal administrative tasks. This section elaborates on the results, providing a deeper analysis of system performance, agent collaboration, learning outcomes, and implications for governmental interoperability.
+                      - generic [ref=f4e496]:
+                        - heading "5.1. Revolutionizing Administrative Efficiency" [level=3] [ref=f4e497]
+                        - generic [ref=f4e498]: The proposed system has improved administrative functions by incorporating workflow automation, flexible decision-making, and smooth inter-departmental collaboration. By automating standard administrative duties, bureaucratic delays have significantly diminished, guaranteeing that permit approvals, budget evaluations, and compliance verifications achieve a 95% success rate. The TreasuryAgent has enhanced the allocation of financial resources, improving budget efficiency by 25% and guaranteeing effective distribution of funds across government operations. Additionally, the MayorAgent and SeretariatAgent have attained a 96% success rate in enforcing policies and ensuring regulatory compliance, further enhancing the accuracy of decision-making.
+                        - generic [ref=f4e499]: Utilizing the JADE along with DRL, the system enables organized and smart task execution, permitting agents to react dynamically to real-time information. JADE’s FIPA-ACL messaging protocol improves interoperability, facilitating seamless cooperation among various municipal departments, such as the Treasury, the Secretariat, and the Event Management department. This guarantees that agents can work together fluidly to reach shared goals, like prioritizing urgent tasks and reallocating resources in real time. The system’s flexibility allows for easy scalability, expanding to support wider governmental functions without needing significant redesigns. Moreover, regular procedures like permit approvals and resource distribution have been optimized, minimizing manual involvement and enabling public officials to concentrate on strategic governance. This has resulted in a 40% decrease in human workload, facilitating more efficient and initiative-led decision-making.
+                        - generic [ref=f4e500]: The system’s adaptability and resilience have been enhanced by DRL’s ability to modify policies according to feedback, allowing it to better respond to abrupt shifts in regulations or resource availability. These innovations collectively transform governmental functions, optimizing workflows, boosting decision-making, and increasing the overall efficiency and flexibility of public administration.
+                      - generic [ref=f4e501]:
+                        - heading "5.2. Performance Analysis of the DRL Model" [level=3] [ref=f4e502]
+                        - generic [ref=f4e503]: The implementation of the actor-critic deep reinforcement learning (DRL) algorithm proved highly effective in optimizing agent decision-making within complex municipal environments. The system’s learning curve exhibited a steady increase in agent efficiency, as measured by cumulative rewards, with agents reaching optimal performance after approximately 10,000 training episodes. Decision accuracy, defined as the percentage of correct actions taken by agents in alignment with the reward structure, stabilized at 96% by the end of training. Additionally, cumulative rewards increased from an initial average of 15 per episode to a peak of 45 per episode after full optimization, with learning convergence occurring consistently across agents, showing minor variances within ±2%. Beyond these performance metrics, the DRL model demonstrated exceptional efficiency in handling complex multi-agent interactions, particularly in resource allocation for large-scale municipal events. Furthermore, it exhibited strong adaptability to dynamically changing constraints, such as limited resources or unexpected municipal emergencies, reinforcing its practical applicability in real-world scenarios.
+                        - generic [ref=f4e504]:
+                          - link "Figure 3" [ref=f4e505] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-f003"
+                          - text: visually represents the cumulative rewards achieved by the agent over the training episodes, illustrating a clear upward trend in performance. Starting at a low reward of approximately 15 per episode, the curve demonstrates significant improvement, peaking at around 45 rewards per episode after full optimization. Key milestones are an-notated, highlighting the point of convergence where the learning stabilized and a significant performance jump that indicates a pivotal enhancement in decision-making efficiency. This visualization effectively captures the progressive learning dynamics of the actor-critic DRL algorithm in complex municipal environments.
+                        - generic [ref=f4e506]:
+                          - button "View figure 3" [ref=f4e509] [cursor=pointer]
+                          - generic [ref=f4e510]: Figure 3. Representative learning dynamics of the DRL model.
+                      - generic [ref=f4e511]:
+                        - heading "5.3. Communication Efficiency" [level=3] [ref=f4e512]
+                        - generic [ref=f4e513]:
+                          - text: Effective communication is essential for the coordination of municipal agents. By utilizing JADE’s FIPA-ACL messaging protocol, structured and reliable information exchange among agents is ensured. The system demonstrated effective communication performance, with response times averaging 120 ms, allowing for near real-time task management. However, variations in latency have been observed depending on agent types and message complexity, as
+                          - link "Figure 4" [ref=f4e514] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-f004"
+                          - text: illustrates, which compares latency across the MayorAgent, SecretariatAgent, TreasuryAgent, EventManagementAgent, and CitizenAgent. Additionally, message reliability remained high, with a 98% success rate, minimizing communication interruptions and ensuring seamless task execution. These results highlight the system’s capability to maintain efficient and dependable communication, which is critical for effective municipal operations.
+                        - generic [ref=f4e515]:
+                          - button "View figure 4" [ref=f4e518] [cursor=pointer]
+                          - generic [ref=f4e519]: Figure 4. Communication latency across agents.
+                      - generic [ref=f4e520]:
+                        - heading "5.4. Agent Collaboration and Role Fulfillment" [level=3] [ref=f4e521]
+                        - generic [ref=f4e522]: The JADE-based agent framework effectively encapsulated specific municipal roles, ensuring that each agent performed its assigned tasks with high accuracy and timeliness. The MayorAgent successfully managed high-level approvals, maintaining a decision accuracy of 96% and processing requests within an average of 5.2 s. The SecretariatAgent demonstrated strong task delegation and data verification capabilities, achieving a success rate of 95%. Additionally, the EventManagementAgent improved overall efficiency by reducing task delays by 15% through effective coordination between stakeholders. These results highlight the robustness of the agent framework in streamlining municipal operations and enhancing collaboration among key administrative entities.
+                        - generic [ref=f4e523]:
+                          - text: As
+                          - link "Table 1" [ref=f4e524] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-t001"
+                          - text: shows, each agent performed its specialized role within a defined task duration, ensuring seamless municipal operations. This structured collaboration among agents significantly improved overall efficiency and service delivery. The JADE-based agent framework effectively encapsulated specific municipal roles, ensuring that each agent performed its designated tasks with high accuracy and efficiency.
+                        - generic [ref=f4e525]:
+                          - button "View table 1" [ref=f4e528] [cursor=pointer]
+                          - generic [ref=f4e529]: Table 1. Role-specific agent performance.
+                      - generic [ref=f4e530]:
+                        - heading "5.5. Performance of the Integration Model" [level=3] [ref=f4e531]
+                        - generic [ref=f4e532]: The integration of the JADE-based multi-agent system (MAS) with Python-driven deep reinforcement learning (DRL) effectively tackles the complexities inherent in municipal administrative tasks.
+                        - generic [ref=f4e533]:
+                          - link "Table 2" [ref=f4e534] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-t002"
+                          - text: shows key performance metrics, displaying the significant improvements achieved in task completion rates, response times, and overall efficiency, demonstrating the transformative potential of this innovative approach. The performance metrics of the integrated system highlight its efficiency, scalability, and real-time decision-making capabilities. The system achieved an average reward of 45 per episode, indicating enhanced agent decision-making through reinforcement learning. With a communication latency of 120 ms, the framework supports real-time inter-agent communication, ensuring seamless coordination. The task completion rate averaged 95%, demonstrating the system’s ability to manage diverse workflows effectively. Additionally, the system exhibited strong scalability, successfully managing up to 50 agents, which underscores its robustness for large-scale operations. Lastly, a decision accuracy of 96% validates the effectiveness of deep reinforcement learning (DRL) integration, reinforcing the system’s ability to make precise and reliable decisions across various tasks.
+                        - generic [ref=f4e535]:
+                          - button "View table 2" [ref=f4e538] [cursor=pointer]
+                          - generic [ref=f4e539]: Table 2. Performance metrics of the integrated system.
+                      - generic [ref=f4e540]:
+                        - heading "5.6. Use Case Outcomes" [level=3] [ref=f4e541]
+                        - generic [ref=f4e542]: "The system has been evaluated through two primary use cases: macro-party organization and agricultural use of wastewater. Both use cases demonstrated the system’s capacity to manage multi-faceted tasks involving four agents."
+                        - generic [ref=f4e543]:
+                          - text: As
+                          - link "Table 3" [ref=f4e544] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-t003"
+                          - text: shows, the task analysis of the use cases demonstrates the system’s adaptability and efficiency in managing complex tasks. In use case 1 (macro-party organization), agents exhibited a 97% success rate, effectively managing coordination challenges related to safety approvals. The EventManagementAgent, in collaboration with the SecretaritAgent and TechnicalAgent, successfully resolved a sudden insurance issue, ensuring that tasks were completed without significant delays. This highlights the agents’ ability to adapt dynamically to unforeseen challenges while maintaining workflow efficiency. Similarly, in the agricultural wastewater use case, the system achieved a 93% success rate, with compliance with irrigation permits being the primary challenge. These results emphasize the system’s strong decision-making capabilities, particularly in regulatory and approval-intensive processes.
+                        - generic [ref=f4e545]:
+                          - button "View table 3" [ref=f4e548] [cursor=pointer]
+                          - generic [ref=f4e549]: Table 3. Use case task analysis.
+                        - generic [ref=f4e550]: Moreover, in use case 3 (financial audit), the system achieved a 94% success rate by guaranteeing precise fund distribution for municipal water resource initiatives. The main difficulty involved confirming financial accuracy while staying within budget limits. In use case 4 (water contamination crisis), agents reached a 92% success rate by quickly identifying and addressing contamination in the city’s water supply. The main difficulty was managing real-time inter-departmental responses to guarantee public safety. These findings highlight the system’s robust decision-making abilities, especially in situations involving regulatory compliance, financial supervision, and crisis management.
+                    - generic [ref=f4e552]:
+                      - heading "6. Discussion" [level=2] [ref=f4e553]
+                      - generic [ref=f4e554]: The results of our study demonstrate that integrating the JADE platform with Python-driven deep reinforcement learning (DRL) significantly improves the operational efficiency of municipal administrative processes. Key performance metrics, such as a task completion rate of 95% and a reduced communication latency of just 120 ms, suggest that our multi-agent system (MAS) enhances governmental interoperability, a critical factor for improving coordination across departments in complex administrative environments. The high average reward of 45 per episode indicates that agents are making better, more informed decisions, while a decision accuracy of 96% reflects the success of the DRL-based learning model in optimizing agent behaviors.
+                      - generic [ref=f4e555]: The presented work, a multi-agent deep reinforcement learning system for governmental interoperability using the JADE, combines the strengths of the JADE (Java Agent Development Framework) and deep reinforcement learning (DRL) to tackle the challenge of governmental interoperability. While previous research has explored the use of the JADE and Python in isolated ways for multi-agent systems (MASs), our approach is distinguished by its integration of the JADE with DRL, specifically designed to address the unique interoperability challenges faced by government agencies. Agencies often work in silos with incompatible objectives, varying data formats, and disparate communication protocols. Our system, integrating the JADE’s agent communication framework with DRL’s adaptive learning capabilities, offers an innovative solution to harmonize these differences.
+                      - generic [ref=f4e556]: By enabling agents to negotiate, exchange information, and optimize processes collaboratively, we facilitate smoother workflows, reduce inefficiencies, and foster greater coherence in inter-departmental operations. These findings underscore the potential of MAS in transforming public sector administration, providing a scalable and adaptable model for improving governance and public service delivery.
+                      - generic [ref=f4e557]:
+                        - heading "6.1. Communication Protocols" [level=3] [ref=f4e558]
+                        - generic [ref=f4e559]: The implementation of FIPA-ACL (Foundation for Intelligent Physical Agents—Agent Communication Language) in our system was a key enabler of structured communication, ensuring that agents could effectively collaborate and exchange essential information. This communication protocol helped to streamline task coordination and foster semantic interoperability among agents. In practice, the structured exchange allowed agents to interpret messages in a standardized way, reducing the risk of miscommunication and enabling more informed, accurate decision-making. The low communication latency of 120 ms supports real-time interactions, which is critical in the dynamic environment of municipal governance. As a result, our system not only facilitates efficient information flow but also supports rapid responses to administrative challenges. It effectively minimizes communication delays and synchronization issues by integrating a JADE-based MAS with DRL, achieving an average communication latency of 120 ms and maintaining a 95% task completion rate even with 50+ agents. The FIPA-ACL messaging protocol ensures structured, real-time communication between agents, reducing miscommunication and improving interoperability. Additionally, the JADE’s behavior model enables efficient parallel task execution, allowing agents to coordinate and allocate tasks dynamically. DRL further enhances synchronization by continuously optimizing decision-making based on environmental feedback. However, while the system is scalable and automated, asynchronous messaging and network delay simulations could further enhance responsiveness and robustness in large-scale deployments. Addressing these aspects will help mitigate potential bottlenecks and improve real-time adaptability in complex governmental workflows.
+                        - generic [ref=f4e560]: The ability of agents to work and collaborate seamlessly across various departments, despite differences in objectives or data formats, is a direct result of the FIPA-ACL protocol, which enhances the system’s overall effectiveness. This ability to ensure smooth communication and collaboration in real-time is one of the defining features of our approach, distinguishing it from traditional methods of handling inter-departmental tasks that often suffer from delays or misalignment. Results such as the high task completion rate, scalability to 50 agents, and the ability to optimize decision-making with a 96% accuracy rate validate the practical impact of combining the JADE’s agent framework with DRL. This combination not only enhances coordination and decision-making processes within municipal administrations but also demonstrates the system’s robustness and adaptability, making it suitable for large-scale applications.
+                        - generic [ref=f4e561]: This work represents a unique contribution to the field of governmental interoperability by applying the innovative technologies JADE and DRL in a combined framework that facilitates real-time collaboration, decision-making, and process optimization across multiple departments. Through these innovations, our approach paves the way for more efficient, transparent, and coordinated operations within the public sector.
+                      - generic [ref=f4e562]:
+                        - heading "6.2. Framework Adaptation for Diverse Governmental Domains" [level=3] [ref=f4e563]
+                        - generic [ref=f4e564]: Adapting the proposed framework across different governmental structures requires flexibility in administrative integration and regulatory compliance. By incorporating modular design, stakeholder engagement, and policy alignment, the framework ensures seamless implementation in both centralized and decentralized governance models. The MayorAgent oversees decision-making, while the SecretariatAgent ensures coordination across functional and divisional structures.
+                        - generic [ref=f4e565]: Customization options include modular workflows managed by the TechnicalInfrastructureAgent, stakeholder engagement facilitated by the CitizenAgent, and regulatory compliance mechanisms implemented by the RegulatoryComplianceAgent. Additionally, training programs by the SecretariatAgent and TreasuryAgent support efficient framework adoption.
+                        - generic [ref=f4e566]: For macro-party organization, the EventManagementAgent manages permitting, with configurable approval hierarchies ensuring jurisdictional flexibility. In the agricultural use of wastewater, the RegulatoryComplianceAgent integrates local environmental laws, while stakeholder mapping enhances transparency. In financial audits, flexible financial modules and customizable reporting templates ensure compliance with regional accounting standards.
+                        - generic [ref=f4e567]: By leveraging a multi-agent system, including key administrative agents, the framework enhances governance, regulatory adaptability, and efficient public service delivery across diverse governmental domains.
+                      - generic [ref=f4e568]:
+                        - heading "6.3. Comparison with JADE-Based and Python-Based Research" [level=3] [ref=f4e569]
+                        - generic [ref=f4e570]: The JADE has long been used in multi-agent systems for applications like traffic management, healthcare scheduling, and coordination collaboration. These systems often rely on predefined decision-making rules or cooperative strategies, which lack adaptability to changing conditions. While the JADE is excellent for developing agent-based simulations, it does not natively support adaptive learning mechanisms such as deep reinforcement learning (DRL). In contrast, our approach integrates DRL with the JADE to enable agents to learn and adapt over time, allowing the system to evolve in response to new challenges and governmental needs. This combination enhances JADE-based systems by providing greater flexibility and robustness, especially in dynamic, complex environments like governmental interoperability, where policies must continuously adapt.
+                        - generic [ref=f4e571]: On the other hand, Python-based research, particularly in AI and machine learning, has focused heavily on DRL for applications like autonomous vehicles and smart grid management. Python frameworks, such as PyMARL and OpenAI’s Gym, are well-suited for developing DRL models but often overlook the complexities of managing multi-agent coordination, especially when interoperability across decentralized entities is a concern. Unlike these Python-based frameworks, which excel in learning but lack tools for real-world agent communication, our approach bridges this gap by combining Python’s DRL capabilities with the JADE’s established framework for agent coordination and communication. This hybrid approach enables agents to not only optimize their individual behaviors through deep reinforcement learning but also collaborate and share information effectively. This makes it particularly well-suited for applications in governmental interoperability, where coordination across various departments is essential.
+                        - generic [ref=f4e572]: This unique integration of the JADE’s robust multi-agent system with Python’s powerful DRL capabilities sets our work apart from existing research, offering a more comprehensive solution to the challenges of decentralized coordination in complex, evolving environments like municipal governance. The hybrid system ensures that agents are capable of learning optimal strategies over time while also enabling real-time, coordinated interactions addressing both the adaptability and coordination needs of governmental operations.
+                        - generic [ref=f4e573]: These results, such as the high task completion rate, scalability to 50 agents, and the ability to optimize decision-making with a 96% accuracy rate, validate the practical impact of combining the JADE’s agent framework with DRL. The combination not only enhances the coordination and decision-making processes within municipal administrations but also demonstrates the system’s robustness and adaptability, making it suitable for large-scale applications. This work represents a unique contribution to the field of governmental interoperability by applying the innovative technologies of the JADE and DRL in a combined framework that facilitates real-time collaboration, decision-making, and process optimization across multiple departments. Through these innovations, our approach offers a path forward for more efficient, transparent, and coordinated public sector operations.
+                        - generic [ref=f4e574]:
+                          - link "Table 4" [ref=f4e575] [cursor=pointer]:
+                            - /url: "#applsci-15-03146-t004"
+                          - text: shows the innovative contribution of our system to governmental interoperability. By integrating the JADE’s structured agent-based framework with DRL’s learning capability, we provide a scalable, efficient, and intelligent solution for optimizing municipal administration workflows. This novel approach can serve as a foundation for future advancements in public-sector automation and AI-driven governance.
+                        - generic [ref=f4e576]:
+                          - button "View table 4" [ref=f4e579] [cursor=pointer]
+                          - generic [ref=f4e580]: Table 4. Agent system performance comparison.
+                        - generic [ref=f4e581]: The comparison table highlights the key advantages of integrating the JADE with DRL in governmental interoperability. Unlike traditional JADE-based systems, which rely on static rule-based decision-making, our approach leverages deep reinforcement learning to introduce adaptability and efficiency. This significantly improves decision accuracy (96%) and task completion rates (95%) while ensuring real-time, structured agent communication.
+                        - generic [ref=f4e582]: Similarly, traditional DRL-based systems, while powerful in learning, often lack structured interoperability mechanisms, making them less suitable for multi-agent government workflows. Our hybrid approach overcomes this limitation by combining the JADE’s structured FIPA-ACL messaging protocol with DRL’s adaptive learning capabilities.
+                        - generic [ref=f4e583]: Furthermore, the proposed system is highly scalable, supporting up to 50+ agents while maintaining low communication latency (120 ms) and reducing bureaucratic workload by 40%. This makes it particularly well-suited for large-scale governmental operations, including permit processing, municipality event coordination, and inter-departmental resource allocation.
+                      - generic [ref=f4e584]:
+                        - heading "6.4. Benchmarking Against Traditional Systems" [level=3] [ref=f4e585]
+                        - generic [ref=f4e586]: To evaluate the effectiveness of the proposed framework, a comparative analysis against traditional governmental systems is essential. Traditional systems often rely on rule-based decision-making, manual coordination, and rigid workflows, limiting adaptability and efficiency. In contrast, the JADE-based multi-agent system (MAS) with deep reinforcement learning (DRL) optimizes decision-making through real-time learning and adaptive automation. Quantitatively, the proposed system achieves a 95% task completion rate, a 96% decision accuracy, and an average communication latency of 120 ms, significantly outperforming traditional approaches that suffer from slower processing, high error rates, and a lack of interoperability. Additionally, bureaucratic workload reduced by 40%, enhancing administrative efficiency. While traditional systems struggle with cross-departmental communication, policy adaptation, and scalability, the MAS-DRL integration enables seamless interoperability, automated compliance updates, and dynamic scalability across governmental domains.
+                    - generic [ref=f4e588]:
+                      - heading "7. Conclusions" [level=2] [ref=f4e589]
+                      - generic [ref=f4e590]: The combination of the JADE and DRL delivers a robust answer to the difficulties of government interoperability, presenting a scalable, flexible, and effective structure for local governance. The suggested system enables smooth collaboration between departments, automates administrative tasks, and flexibly adjusts to environmental shifts, enhancing decision-making and task performance efficiency. Empirical assessments validate the efficacy of the suggested system, showing a task completion rate of 95%, decision accuracy of 96%, and an average communication latency of 120 ms. These findings underscore the system’s capability to simplify administrative processes, improve resource distribution, and boost the overall effectiveness of public service provision. The incorporation of DRL allows agents to gain knowledge from interactions, persistently enhancing their decision-making tactics to improve their adaptability to changing governmental requirements.
+                      - generic [ref=f4e591]: Moreover, the system’s real-world implementation in city-related scenarios displays its adaptability and expandability. In the macro-party organization situation, the model attained a 97% success rate, guaranteeing efficient management of safety and compliance approvals. The agricultural wastewater use case achieved a 93% success rate, streamlining regulatory procedures for irrigation permits. The financial audit the model achieved a 94% success rate, guaranteeing precise fund distribution for municipal water resource initiatives. The water contamination crisis model achieved a 92% success rate by quickly identifying and addressing contamination in the city’s water supply. These scenarios demonstrate the system’s ability to manage intricate administrative duties, promoting a more efficient and clear public administration. Through the utilization of structured agent communication through FIPA-ACL and the incorporation of DRL-driven learning models, this framework presents an innovative method for improving governmental interoperability. The research aids in the progression of AI-powered solutions in the public sector, leading to more intelligent and responsive municipal administration. Future studies might investigate the application of this model to wider governmental use, incorporating more AI methods for improved performance. This project establishes a basis for the ongoing advancement of intelligent, automated public administration systems, guaranteeing enhanced service provision and operational effectiveness in local governance.
+                    - generic [ref=f4e593]:
+                      - heading "8. Future Work" [level=2] [ref=f4e594]
+                      - generic [ref=f4e595]: Expanding this system to nationwide administrative functions offer a significant opportunity to enhance efficiency, interoperability, and decision-making at a larger scale. By extending its capabilities beyond municipal governance, the system can facilitate seamless coordination among federal, state, and local agencies. This expansion would enable more effective policy implementation, optimized resource allocation, and improved crisis management across diverse governmental sectors.
+                      - generic [ref=f4e596]: Integrating blockchain technology further strengthens security, transparency, and data integrity. Blockchain’s decentralized ledger ensures tamper-proof record-keeping, reducing the risk of fraud and unauthorized data modifications. Additionally, smart contracts can automate key administrative processes—such as permit approvals, budget allocations, and compliance verification—enhancing operational efficiency while minimizing bureaucratic bottlenecks.
+                    - generic [ref=f4e598]:
+                      - heading "Author Contributions" [level=2] [ref=f4e599]
+                      - generic [ref=f4e600]: R.M.-B., M.S.G.-G. and P.H.-M. led conceptualization. Methodology and software implementation were conducted by A.M.M. and E.A.N., who also performed the state-of-the-art analysis. P.H.-M. and R.M.-B. conducted resources, formal analysis, and validation. Writing—original draft preparation was undertaken by A.M.M., while writing—review and editing was managed by R.M.-B. and P.H.-M. P.H.-M. and M.S.G.-G. provided administrative interoperability information and relevant use cases, resources, formal analysis, and data curation. All authors have read and agreed to the published version of the manuscript.
+                    - generic [ref=f4e602]:
+                      - heading "Funding" [level=2] [ref=f4e603]
+                      - generic [ref=f4e604]: This research received no external funding.
+                    - generic [ref=f4e606]:
+                      - heading "Institutional Review Board Statement" [level=2] [ref=f4e607]
+                      - generic [ref=f4e608]: Not applicable.
+                    - generic [ref=f4e610]:
+                      - heading "Informed Consent Statement" [level=2] [ref=f4e611]
+                      - generic [ref=f4e612]: Not applicable.
+                    - generic [ref=f4e614]:
+                      - heading "Data Availability Statement" [level=2] [ref=f4e615]
+                      - generic [ref=f4e616]: The datasets generated during and/or analyzed during the current study are not publicly available but are available from the corresponding author upon reasonable request.
+                    - generic [ref=f4e618]:
+                      - heading "Acknowledgments" [level=2] [ref=f4e619]
+                      - generic [ref=f4e620]: This study formed part of the AGROALNEXT programme and supported by MCIN with funding from European Union NextGenerationEU (PRTR-C17.I1) and by Fundación Séneca with funding from Comunidad Autónoma Región de Murcia (CARM).
+                    - generic [ref=f4e622]:
+                      - heading "Conflicts of Interest" [level=2] [ref=f4e623]
+                      - generic [ref=f4e624]: The authors declare that they have no conflict of interest.
+                    - generic [ref=f4e626]:
+                      - heading "References" [level=2] [ref=f4e627]
+                      - list [ref=f4e628]:
+                        - listitem [ref=f4e629]:
+                          - text: Cruz, E.M.; Rangel, E.E.; Mir, H.E.V.; SantaRosa, R.H. The productivity of bread wheat under different irrigation conditions. Rev. Mex. Cienc. Agrícolas 2020, 11, 1349–1360. [
+                          - link "Google Scholar" [ref=f4e630] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=The+productivity+of+bread+wheat+under+different+irrigation+conditions&author=Cruz,+E.M.&author=Rangel,+E.E.&author=Mir,+H.E.V.&author=SantaRosa,+R.H.&publication_year=2020&journal=Rev.+Mex.+Cienc.+Agr%C3%ADcolas&volume=11&pages=1349%E2%80%931360
+                          - text: "]"
+                        - listitem [ref=f4e631]:
+                          - text: Martinez-Perez, C.; Daimiel, L.; Climent-Mainar, C.; Martínez-González, M.Á.; Salas-Salvadó, J.; Corella, D.; Schröder, H.; Martinez, J.A.; Alonso-Gómez, Á.M.; Wärnberg, J.; et al. Integrative development of a short screening questionnaire of highly processed food consumption (sQ-HPF). Int. J. Behav. Nutr. Phys. Act. 2022, 19, 1–16. [
+                          - link "Google Scholar" [ref=f4e632] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Integrative+development+of+a+short+screening+questionnaire+of+highly+processed+food+consumption+(sQ-HPF)&author=Martinez-Perez,+C.&author=Daimiel,+L.&author=Climent-Mainar,+C.&author=Mart%C3%ADnez-Gonz%C3%A1lez,+M.%C3%81.&author=Salas-Salvad%C3%B3,+J.&author=Corella,+D.&author=Schr%C3%B6der,+H.&author=Martinez,+J.A.&author=Alonso-G%C3%B3mez,+%C3%81.M.&author=W%C3%A4rnberg,+J.&author=et+al.&publication_year=2022&journal=Int.+J.+Behav.+Nutr.+Phys.+Act.&volume=19&pages=1%E2%80%9316&doi=10.1186/s12966-021-01240-6&pmid=35073909
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e633] [cursor=pointer]:
+                            - /url: https://doi.org/10.1186/s12966-021-01240-6
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e634] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a9f46cd11533e5e09124e3a954ec7bed
+                          - text: "] ["
+                          - link "PubMed" [ref=f4e635] [cursor=pointer]:
+                            - /url: https://www.ncbi.nlm.nih.gov/pubmed/35073909
+                          - text: "]"
+                        - listitem [ref=f4e636]:
+                          - text: "Heeks, R. Information and Communication Technology for Development; Routledge: London, UK, 2017. ["
+                          - link "Google Scholar" [ref=f4e637] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Information+and+Communication+Technology+for+Development&author=Heeks,+R.&publication_year=2017
+                          - text: "]"
+                        - listitem [ref=f4e638]:
+                          - text: "Xu, N.; Chen, Z.; Niu, B.; Zhao, X. Event-triggered distributed consensus tracking for nonlinear multi-agent systems: A minimal approximation approach. IEEE J. Emerg. Sel. Top. Circuits Syst. 2023, 13, 767–779. ["
+                          - link "Google Scholar" [ref=f4e639] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Event-triggered+distributed+consensus+tracking+for+nonlinear+multi-agent+systems:+A+minimal+approximation+approach&author=Xu,+N.&author=Chen,+Z.&author=Niu,+B.&author=Zhao,+X.&publication_year=2023&journal=IEEE+J.+Emerg.+Sel.+Top.+Circuits+Syst.&volume=13&pages=767%E2%80%93779&doi=10.1109/JETCAS.2023.3277544
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e640] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/JETCAS.2023.3277544
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e641] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a197c96ac444741a2558d45486aa7d03
+                          - text: "]"
+                        - listitem [ref=f4e642]:
+                          - text: Garcia, R.; Lopez, M. Designing Learning Environments for Reinforcement Learning Agents. J. Artif. Intell. Res. 2020, 42, 75–90. [
+                          - link "Google Scholar" [ref=f4e643] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Designing+Learning+Environments+for+Reinforcement+Learning+Agents&author=Garcia,+R.&author=Lopez,+M.&publication_year=2020&journal=J.+Artif.+Intell.+Res.&volume=42&pages=75%E2%80%9390
+                          - text: "]"
+                        - listitem [ref=f4e644]:
+                          - text: "Kettunen, J.; Kallio, P. Culture and Digital Transformation in Public Administration: The Role of Leadership. Int. J. Public Adm. 2020, 43, 775–786. ["
+                          - link "Google Scholar" [ref=f4e645] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Culture+and+Digital+Transformation+in+Public+Administration:+The+Role+of+Leadership&author=Kettunen,+J.&author=Kallio,+P.&publication_year=2020&journal=Int.+J.+Public+Adm.&volume=43&pages=775%E2%80%93786
+                          - text: "]"
+                        - listitem [ref=f4e646]:
+                          - text: Li, Y.; Wang, X.; Sun, J.; Wang, G.; Chen, J. Data-driven consensus control of fully distributed event-triggered multi-agent systems. Sci. China Inf. Sci. 2023, 66, 152202. [
+                          - link "Google Scholar" [ref=f4e647] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Data-driven+consensus+control+of+fully+distributed+event-triggered+multi-agent+systems&author=Li,+Y.&author=Wang,+X.&author=Sun,+J.&author=Wang,+G.&author=Chen,+J.&publication_year=2023&journal=Sci.+China+Inf.+Sci.&volume=66&pages=152202&doi=10.1007/s11432-022-3629-1
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e648] [cursor=pointer]:
+                            - /url: https://doi.org/10.1007/s11432-022-3629-1
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e649] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/3c9b36a3528d78aab967ddc21a405306
+                          - text: "]"
+                        - listitem [ref=f4e650]:
+                          - text: Tang, F.; Wang, H.; Chang, X.H.; Zhang, L.; Alharbi, K.H. Dynamic event-triggered control for discrete-time nonlinear Markov jump systems using policy iteration-based adaptive dynamic programming. Nonlinear Anal. Hybrid Syst. 2023, 49, 101338. [
+                          - link "Google Scholar" [ref=f4e651] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Dynamic+event-triggered+control+for+discrete-time+nonlinear+Markov+jump+systems+using+policy+iteration-based+adaptive+dynamic+programming&author=Tang,+F.&author=Wang,+H.&author=Chang,+X.H.&author=Zhang,+L.&author=Alharbi,+K.H.&publication_year=2023&journal=Nonlinear+Anal.+Hybrid+Syst.&volume=49&pages=101338&doi=10.1016/j.nahs.2023.101338
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e652] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.nahs.2023.101338
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e653] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/95ff238a0151dbc0a586fc4b712738dd
+                          - text: "]"
+                        - listitem [ref=f4e654]:
+                          - text: Romero, A.; Song, Y.; Scaramuzza, D. Actor-critic model predictive control. In Proceedings of the 2024 IEEE International Conference on Robotics and Automation (ICRA), Yokohama, Japan, 13–17 May 2024; pp. 14777–14784. [
+                          - link "Google Scholar" [ref=f4e655] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Actor-critic+model+predictive+control&conference=Proceedings+of+the+2024+IEEE+International+Conference+on+Robotics+and+Automation+(ICRA)&author=Romero,+A.&author=Song,+Y.&author=Scaramuzza,+D.&publication_year=2024&pages=14777%E2%80%9314784
+                          - text: "]"
+                        - listitem [ref=f4e656]:
+                          - text: Zhao, Y.; Niu, B.; Zong, G.; Zhao, X.; Alharbi, K.H. Neural network-based adaptive optimal containment control for non-affine nonlinear multi-agent systems within an identifier-actor-critic framework. J. Frankl. Inst. 2023, 360, 8118–8143. [
+                          - link "Google Scholar" [ref=f4e657] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Neural+network-based+adaptive+optimal+containment+control+for+non-affine+nonlinear+multi-agent+systems+within+an+identifier-actor-critic+framework&author=Zhao,+Y.&author=Niu,+B.&author=Zong,+G.&author=Zhao,+X.&author=Alharbi,+K.H.&publication_year=2023&journal=J.+Frankl.+Inst.&volume=360&pages=8118%E2%80%938143&doi=10.1016/j.jfranklin.2023.06.014
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e658] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.jfranklin.2023.06.014
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e659] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a129d6635dc1ab3a7143e5d7609b4b20
+                          - text: "]"
+                        - listitem [ref=f4e660]:
+                          - text: "Wu, Q.; Bansal, G.; Zhang, J.; Wu, Y.; Li, B.; Zhu, E.; Jiang, L.; Zhang, X.; Zhang, S.; Liu, J.; et al. AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation. arXiv 2023, arXiv:2308.08155. ["
+                          - link "Google Scholar" [ref=f4e661] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=AutoGen:+Enabling+Next-Gen+LLM+Applications+via+Multi-Agent+Conversation&author=Wu,+Q.&author=Bansal,+G.&author=Zhang,+J.&author=Wu,+Y.&author=Li,+B.&author=Zhu,+E.&author=Jiang,+L.&author=Zhang,+X.&author=Zhang,+S.&author=Liu,+J.&author=et+al.&publication_year=2023&journal=arXiv
+                          - text: "]"
+                        - listitem [ref=f4e662]:
+                          - text: "Orr, J.; Dutta, A. Multi-Agent Deep Reinforcement Learning for Multi-Robot Applications: A Survey. Sensors 2023, 23, 3625. ["
+                          - link "Google Scholar" [ref=f4e663] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Multi-Agent+Deep+Reinforcement+Learning+for+Multi-Robot+Applications:+A+Survey&author=Orr,+J.&author=Dutta,+A.&publication_year=2023&journal=Sensors&volume=23&pages=3625&doi=10.3390/s23073625
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e664] [cursor=pointer]:
+                            - /url: https://doi.org/10.3390/s23073625
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e665] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/a0b2fb1f165698490aec58be44280acf
+                          - text: "]"
+                        - listitem [ref=f4e666]:
+                          - text: "Xu, C.; Tan, R.T.; Tan, Y.; Chen, S.; Wang, Y.G.; Wang, X.; Wang, Y. EqMotion: Equivariant Multi-Agent Motion Prediction with Invariant Interaction Reasoning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, Vancouver, BC, Canada, 17–24 June 2023; pp. 1410–1420. ["
+                          - link "Google Scholar" [ref=f4e667] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=EqMotion:+Equivariant+Multi-Agent+Motion+Prediction+with+Invariant+Interaction+Reasoning&conference=Proceedings+of+the+IEEE/CVF+Conference+on+Computer+Vision+and+Pattern+Recognition&author=Xu,+C.&author=Tan,+R.T.&author=Tan,+Y.&author=Chen,+S.&author=Wang,+Y.G.&author=Wang,+X.&author=Wang,+Y.&publication_year=2023&pages=1410%E2%80%931420&doi=10.1109/cvpr52729.2023.00142
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e668] [cursor=pointer]:
+                            - /url: https://doi.org/10.1109/cvpr52729.2023.00142
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e669] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/0209e33b042d5e853fc3cfaf7a503361
+                          - text: "]"
+                        - listitem [ref=f4e670]:
+                          - text: "Gronauer, S.; Diepold, K. Multi-agent deep reinforcement learning: A survey. Artif. Intell. Rev. 2021, 55, 895–943. ["
+                          - link "Google Scholar" [ref=f4e671] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Multi-agent+deep+reinforcement+learning:+A+survey&author=Gronauer,+S.&author=Diepold,+K.&publication_year=2021&journal=Artif.+Intell.+Rev.&volume=55&pages=895%E2%80%93943&doi=10.1007/s10462-021-09996-w
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e672] [cursor=pointer]:
+                            - /url: https://doi.org/10.1007/s10462-021-09996-w
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e673] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/c052e15b985bf310879e1088bf06a8b6
+                          - text: "]"
+                        - listitem [ref=f4e674]:
+                          - text: Meng, L.; Wen, M.; Le, C.; Li, X.; Xing, D.; Zhang, W.; Wen, Y.; Zhang, H.; Wang, J.; Yang, Y.; et al. Offline Pre-trained Multi-agent Decision Transformer. Mach. Intell. Res. 2023, 20, 233–248. [
+                          - link "Google Scholar" [ref=f4e675] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Offline+Pre-trained+Multi-agent+Decision+Transformer&author=Meng,+L.&author=Wen,+M.&author=Le,+C.&author=Li,+X.&author=Xing,+D.&author=Zhang,+W.&author=Wen,+Y.&author=Zhang,+H.&author=Wang,+J.&author=Yang,+Y.&author=et+al.&publication_year=2023&journal=Mach.+Intell.+Res.&volume=20&pages=233%E2%80%93248&doi=10.1007/s11633-022-1383-7
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e676] [cursor=pointer]:
+                            - /url: https://doi.org/10.1007/s11633-022-1383-7
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e677] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/6ee86115387b3598c28a339067f4595a
+                          - text: "]"
+                        - listitem [ref=f4e678]:
+                          - text: "Costa, F.R.C.; Schietti, J.; Stark, S.C.; Smith, M.N. The other side of tropical forest drought: Do shallow water table regions of Amazonia act as large-scale hydrological refugia from drought. New Phytol. 2022, 237, 714–733. ["
+                          - link "Google Scholar" [ref=f4e679] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=The+other+side+of+tropical+forest+drought:+Do+shallow+water+table+regions+of+Amazonia+act+as+large-scale+hydrological+refugia+from+drought&author=Costa,+F.R.C.&author=Schietti,+J.&author=Stark,+S.C.&author=Smith,+M.N.&publication_year=2022&journal=New+Phytol.&volume=237&pages=714%E2%80%93733&doi=10.1111/nph.17914&pmid=35037253
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e680] [cursor=pointer]:
+                            - /url: https://doi.org/10.1111/nph.17914
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e681] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/ef6542b875da52b232d52d5d4ac93c6f
+                          - text: "] ["
+                          - link "PubMed" [ref=f4e682] [cursor=pointer]:
+                            - /url: https://www.ncbi.nlm.nih.gov/pubmed/35037253
+                          - text: "]"
+                        - listitem [ref=f4e683]:
+                          - text: Johnson, X.; Wang, L. Deep Reinforcement Learning in Multi-Agent Environments. Int. J. Mach. Learn. 2020, 12, 200–215. [
+                          - link "Google Scholar" [ref=f4e684] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Deep+Reinforcement+Learning+in+Multi-Agent+Environments&author=Johnson,+X.&author=Wang,+L.&publication_year=2020&journal=Int.+J.+Mach.+Learn.&volume=12&pages=200%E2%80%93215
+                          - text: "]"
+                        - listitem [ref=f4e685]:
+                          - text: "Brown, T.; Green, R. JADE: A Framework for Developing Multi-Agent Systems. J. Softw. Eng. 2019, 34, 456–470. ["
+                          - link "Google Scholar" [ref=f4e686] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=JADE:+A+Framework+for+Developing+Multi-Agent+Systems&author=Brown,+T.&author=Green,+R.&publication_year=2019&journal=J.+Softw.+Eng.&volume=34&pages=456%E2%80%93470
+                          - text: "]"
+                        - listitem [ref=f4e687]:
+                          - text: Candido, D.S.; Claro, I.M.; De Jesus, J.G.; Souza, W.M.; Moreira, F.R.R.; Dellicour, S.; Mellan, T.A.; Du Plessis, L.; Pereira, R.H.M.; Sales, F.C.S.; et al. Evolution and epidemic spread of SARS-CoV-2 in Brazil. Science 2020, 369, 1255–1260. [
+                          - link "Google Scholar" [ref=f4e688] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Evolution+and+epidemic+spread+of+SARS-CoV-2+in+Brazil&author=Candido,+D.S.&author=Claro,+I.M.&author=De+Jesus,+J.G.&author=Souza,+W.M.&author=Moreira,+F.R.R.&author=Dellicour,+S.&author=Mellan,+T.A.&author=Du+Plessis,+L.&author=Pereira,+R.H.M.&author=Sales,+F.C.S.&author=et+al.&publication_year=2020&journal=Science&volume=369&pages=1255%E2%80%931260&doi=10.1126/science.abd2161
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e689] [cursor=pointer]:
+                            - /url: https://doi.org/10.1126/science.abd2161
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e690] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/dcc9e97d7b5881df04377fe051520dca
+                          - text: "]"
+                        - listitem [ref=f4e691]:
+                          - text: "Zhao, F.; Li, Y.; Zhao, Y. Actor-Critic Algorithms in Reinforcement Learning: A Review. Artif. Intell. Rev. 2021, 99–120. ["
+                          - link "Google Scholar" [ref=f4e692] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Actor-Critic+Algorithms+in+Reinforcement+Learning:+A+Review&author=Zhao,+F.&author=Li,+Y.&author=Zhao,+Y.&publication_year=2021&journal=Artif.+Intell.+Rev.&pages=99%E2%80%93120
+                          - text: "]"
+                        - listitem [ref=f4e693]:
+                          - text: "Chen, Y.; Zhang, S. Reward Structures in Reinforcement Learning: Impacts on Agent Performance. J. Mach. Learn. Res. 2022, 23, 789–805. ["
+                          - link "Google Scholar" [ref=f4e694] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Reward+Structures+in+Reinforcement+Learning:+Impacts+on+Agent+Performance&author=Chen,+Y.&author=Zhang,+S.&publication_year=2022&journal=J.+Mach.+Learn.+Res.&volume=23&pages=789%E2%80%93805
+                          - text: "]"
+                        - listitem [ref=f4e695]:
+                          - text: Thompson, J.; White, E. Communication Protocols in Multi-Agent Systems. J. Netw. Comput. Appl. 2019, 102, 50–65. [
+                          - link "Google Scholar" [ref=f4e696] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Communication+Protocols+in+Multi-Agent+Systems&author=Thompson,+J.&author=White,+E.&publication_year=2019&journal=J.+Netw.+Comput.+Appl.&volume=102&pages=50%E2%80%9365
+                          - text: "]"
+                        - listitem [ref=f4e697]:
+                          - text: "Van Hasselt, H.; van den Oord, A.M.M.F.; van der Meer, J.N.K.G. Training Loops in Reinforcement Learning: Strategies and Best Practices. Mach. Learn. Appl. 2021, 10, 150–165. ["
+                          - link "Google Scholar" [ref=f4e698] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Training+Loops+in+Reinforcement+Learning:+Strategies+and+Best+Practices&author=Van+Hasselt,+H.&author=van+den+Oord,+A.M.M.F.&author=van+der+Meer,+J.N.K.G.&publication_year=2021&journal=Mach.+Learn.+Appl.&volume=10&pages=150%E2%80%93165
+                          - text: "]"
+                        - listitem [ref=f4e699]:
+                          - text: "Wang, Q.; Zhao, J. API Communication between JADE and Python: A Practical Approach. J. Softw. Dev. 2022, 15, 220–235. ["
+                          - link "Google Scholar" [ref=f4e700] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=API+Communication+between+JADE+and+Python:+A+Practical+Approach&author=Wang,+Q.&author=Zhao,+J.&publication_year=2022&journal=J.+Softw.+Dev.&volume=15&pages=220%E2%80%93235
+                          - text: "]"
+                        - listitem [ref=f4e701]:
+                          - text: "Reddy, A.; Suresh, K. Synchronization in Multi-Agent Systems: Techniques and Challenges. Int. J. Robot. Autom. 2021, 36, 300–315. ["
+                          - link "Google Scholar" [ref=f4e702] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Synchronization+in+Multi-Agent+Systems:+Techniques+and+Challenges&author=Reddy,+A.&author=Suresh,+K.&publication_year=2021&journal=Int.+J.+Robot.+Autom.&volume=36&pages=300%E2%80%93315
+                          - text: "]"
+                        - listitem [ref=f4e703]:
+                          - text: Howe, K.L.; Achuthan, P.; Allen, J.; Allen, J.; Alvarez-Jarreta, J.; Amode, M.R.; Armean, I.M.; Azov, A.G.; Bennett, R.; Bhai, J.; et al. Ensembl 2021. Nucleic Acids Res. 2021, 49, D884–D891. [
+                          - link "Google Scholar" [ref=f4e704] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Ensembl+2021&author=Howe,+K.L.&author=Achuthan,+P.&author=Allen,+J.&author=Allen,+J.&author=Alvarez-Jarreta,+J.&author=Amode,+M.R.&author=Armean,+I.M.&author=Azov,+A.G.&author=Bennett,+R.&author=Bhai,+J.&author=et+al.&publication_year=2021&journal=Nucleic+Acids+Res.&volume=49&pages=D884%E2%80%93D891&doi=10.1093/nar/gkaa942&pmid=33137190
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e705] [cursor=pointer]:
+                            - /url: https://doi.org/10.1093/nar/gkaa942
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e706] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/06b253cb3df5baa6bc106af96759e98e
+                          - text: "] ["
+                          - link "PubMed" [ref=f4e707] [cursor=pointer]:
+                            - /url: https://www.ncbi.nlm.nih.gov/pubmed/33137190
+                          - text: "]"
+                        - listitem [ref=f4e708]:
+                          - text: "Canarias, I. Comunidades Autónomas. Boletín del Instituto Flores de Lemus. 2010. Available online:"
+                          - link "www.uc3m.es/boletin" [ref=f4e709] [cursor=pointer]:
+                            - /url: http://www.uc3m.es/boletin
+                          - text: (accessed on 8 March 2025).
+                        - listitem [ref=f4e710]:
+                          - text: "Pahlevan, N.; Mangin, A.; Balasubramanian, S.V.; Smith, B.; Alikas, K.; Arai, K.; Barbosa, C.; Bélanger, S.; Binding, C.; Bresciani, M.; et al. ACIX-Aqua: A global assessment of atmospheric correction methods for Landsat-8 and Sentinel-2 over lakes, rivers, and coastal waters. Remote Sens. Environ. 2021, 258, 112366. ["
+                          - link "Google Scholar" [ref=f4e711] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=ACIX-Aqua:+A+global+assessment+of+atmospheric+correction+methods+for+Landsat-8+and+Sentinel-2+over+lakes,+rivers,+and+coastal+waters&author=Pahlevan,+N.&author=Mangin,+A.&author=Balasubramanian,+S.V.&author=Smith,+B.&author=Alikas,+K.&author=Arai,+K.&author=Barbosa,+C.&author=B%C3%A9langer,+S.&author=Binding,+C.&author=Bresciani,+M.&author=et+al.&publication_year=2021&journal=Remote+Sens.+Environ.&volume=258&pages=112366&doi=10.1016/j.rse.2021.112366
+                          - text: "] ["
+                          - link "CrossRef" [ref=f4e712] [cursor=pointer]:
+                            - /url: https://doi.org/10.1016/j.rse.2021.112366
+                          - text: "] ["
+                          - link "Scilit" [ref=f4e713] [cursor=pointer]:
+                            - /url: https://www.scilit.com/publications/91fdc6cd4bd3b842589aba50344724f2
+                          - text: "]"
+                        - listitem [ref=f4e714]:
+                          - text: Smith, J.A. Financial audit for municipal water resources management scenario. J. Water Manag. 2023, 12, 45–67. [
+                          - link "Google Scholar" [ref=f4e715] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Financial+audit+for+municipal+water+resources+management+scenario&author=Smith,+J.A.&publication_year=2023&journal=J.+Water+Manag.&volume=12&pages=45%E2%80%9367
+                          - text: "]"
+                        - listitem [ref=f4e716]:
+                          - text: Smith, A.B. Request submission for financial audit of water management expenses. Munic. Gov. Rev. 2023, 10, 45–90. [
+                          - link "Google Scholar" [ref=f4e717] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Request+submission+for+financial+audit+of+water+management+expenses&author=Smith,+A.B.&publication_year=2023&journal=Munic.+Gov.+Rev.&volume=10&pages=45%E2%80%9390
+                          - text: "]"
+                        - listitem [ref=f4e718]:
+                          - text: Johnson, C.D. Verification of audit necessity and scope. J. Munic. Financ. 2023, 8, 30–35. [
+                          - link "Google Scholar" [ref=f4e719] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Verification+of+audit+necessity+and+scope&author=Johnson,+C.D.&publication_year=2023&journal=J.+Munic.+Financ.&volume=8&pages=30%E2%80%9335
+                          - text: "]"
+                        - listitem [ref=f4e720]:
+                          - text: Williams, E.F. Provision of financial records for water-related projects. J. Public Financ. 2023, 11, 75–80. [
+                          - link "Google Scholar" [ref=f4e721] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Provision+of+financial+records+for+water-related+projects&author=Williams,+E.F.&publication_year=2023&journal=J.+Public+Financ.&volume=11&pages=75%E2%80%9380
+                          - text: "]"
+                        - listitem [ref=f4e722]:
+                          - text: Taylor, G.H. Internal safety checks in financial audits. J. Audit Pract. 2023, 9, 50–55. [
+                          - link "Google Scholar" [ref=f4e723] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Internal+safety+checks+in+financial+audits&author=Taylor,+G.H.&publication_year=2023&journal=J.+Audit+Pract.&volume=9&pages=50%E2%80%9355
+                          - text: "]"
+                        - listitem [ref=f4e724]:
+                          - text: Anderson, L.J. Ensuring transparency through external audits. J. Munic. Gov. 2023, 14, 20–25. [
+                          - link "Google Scholar" [ref=f4e725] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Ensuring+transparency+through+external+audits&author=Anderson,+L.J.&publication_year=2023&journal=J.+Munic.+Gov.&volume=14&pages=20%E2%80%9325
+                          - text: "]"
+                        - listitem [ref=f4e726]:
+                          - text: Doe, J. Water contamination crisis due to industrial wastewater leakNo Title. J. Environ. Health 2023, 15, 123–130. [
+                          - link "Google Scholar" [ref=f4e727] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Water+contamination+crisis+due+to+industrial+wastewater+leakNo+Title&author=Doe,+J.&publication_year=2023&journal=J.+Environ.+Health&volume=15&pages=123%E2%80%93130
+                          - text: "]"
+                        - listitem [ref=f4e728]:
+                          - text: Journal of Public Health. Urgent request reporting suspected water contamination. J. Public Health 2023, 16, 100–105. [
+                          - link "Google Scholar" [ref=f4e729] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Urgent+request+reporting+suspected+water+contamination&author=Journal+of+Public+Health&publication_year=2023&journal=J.+Public+Health&volume=16&pages=100%E2%80%93105
+                          - text: "]"
+                        - listitem [ref=f4e730]:
+                          - text: Lee, T.R. Verification of citizen complaints regarding water quality. J. Environ. Saf. 2023, 13, 60–65. [
+                          - link "Google Scholar" [ref=f4e731] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Verification+of+citizen+complaints+regarding+water+quality&author=Lee,+T.R.&publication_year=2023&journal=J.+Environ.+Saf.&volume=13&pages=60%E2%80%9365
+                          - text: "]"
+                        - listitem [ref=f4e732]:
+                          - text: Garcia, N.P. Testing water samples for contamination in affected areas. J. Water Qual. Manag. 2023, 12, 45–90. [
+                          - link "Google Scholar" [ref=f4e733] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Testing+water+samples+for+contamination+in+affected+areas&author=Garcia,+N.P.&publication_year=2023&journal=J.+Water+Qual.+Manag.&volume=12&pages=45%E2%80%9390
+                          - text: "]"
+                        - listitem [ref=f4e734]:
+                          - text: Miller, J.A. Resource allocation for water safety measures. J. Public Resour. Manag. 2023, 15, 30–35. [
+                          - link "Google Scholar" [ref=f4e735] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Resource+allocation+for+water+safety+measures&author=Miller,+J.A.&publication_year=2023&journal=J.+Public+Resour.+Manag.&volume=15&pages=30%E2%80%9335
+                          - text: "]"
+                        - listitem [ref=f4e736]:
+                          - text: Smith, R.L. Emergency measures for contaminated water supply systems. J. Water Saf. Manag. 2023, 10, 15–20. [
+                          - link "Google Scholar" [ref=f4e737] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Emergency+measures+for+contaminated+water+supply+systems&author=Smith,+R.L.&publication_year=2023&journal=J.+Water+Saf.+Manag.&volume=10&pages=15%E2%80%9320
+                          - text: "]"
+                        - listitem [ref=f4e738]:
+                          - text: Johnson, E.T. Emergency distribution of clean drinking water. J. Cris. Manag. 2023, 8, 40–45. [
+                          - link "Google Scholar" [ref=f4e739] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Emergency+distribution+of+clean+drinking+water&author=Johnson,+E.T.&publication_year=2023&journal=J.+Cris.+Manag.&volume=8&pages=40%E2%80%9345
+                          - text: "]"
+                        - listitem [ref=f4e740]:
+                          - text: Davis, H.J. Oversight of safety protocols and public health coordination. J. Public Health Adm. 2023, 11, 25–30. [
+                          - link "Google Scholar" [ref=f4e741] [cursor=pointer]:
+                            - /url: https://scholar.google.com/scholar_lookup?title=Oversight+of+safety+protocols+and+public+health+coordination&author=Davis,+H.J.&publication_year=2023&journal=J.+Public+Health+Adm.&volume=11&pages=25%E2%80%9330
+                          - text: "]"
+                    - table [ref=f4e743]:
+                      - rowgroup [ref=f4e744]:
+                        - row [ref=f4e745]:
+                          - cell
+                          - 'cell "Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content." [ref=f4e746]'
+                    - generic [ref=f4e748]:
+                      - text: © 2025 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (
+                      - link "https://creativecommons.org/licenses/by/4.0/" [ref=f4e749] [cursor=pointer]:
+                        - /url: https://creativecommons.org/licenses/by/4.0/
+                      - text: ).
+                  - generic [ref=f4e751]:
+                    - heading "Article Metrics" [level=2] [ref=f4e752]
+                    - generic [ref=f4e753]:
+                      - generic [ref=f4e754]: Citations
+                      - progressbar "Loading" [ref=f4e756]
+                    - generic [ref=f4e760]:
+                      - heading "Article Access Statistics" [level=3] [ref=f4e761]
+                      - link "Journal Statistics" [ref=f4e764] [cursor=pointer]:
+                        - /url: /journal/applsci/stats
+                    - status [ref=f4e765]:
+                      - generic [ref=f4e766]: Multiple requests from the same IP address are counted as one view.
+              - generic [ref=f4e771]:
+                - link "Bridge Deflection Prediction Based on Cascaded Residual Smoothing and Multiscale Spatiotemporal Attention Network Previous" [ref=f4e772] [cursor=pointer]:
+                  - /url: /2076-3417/15/6/3147
+                  - generic [ref=f4e773]: Bridge Deflection Prediction Based on Cascaded Residual Smoothing and Multiscale Spatiotemporal Attention Network
+                  - generic [ref=f4e774]: Previous
+                - link "Study on Vertical Uplift Resistance Characteristics of Pre-Drilled Planted Piles in Boulder Strata Next" [ref=f4e776] [cursor=pointer]:
+                  - /url: /2076-3417/15/6/3150
+                  - generic [ref=f4e777]: Study on Vertical Uplift Resistance Characteristics of Pre-Drilled Planted Piles in Boulder Strata
+                  - generic [ref=f4e778]: Next
+    - contentinfo [ref=f4e783]:
+      - generic [ref=f4e784]:
+        - generic [ref=f4e785]:
+          - generic [ref=f4e786]:
+            - heading [level=3] [ref=f4e788]:
+              - paragraph [ref=f4e789]: Discover
+            - list [ref=f4e790]:
+              - listitem [ref=f4e791]:
+                - link "Articles" [ref=f4e792] [cursor=pointer]:
+                  - /url: /search
+              - listitem [ref=f4e793]:
+                - link "Journals" [ref=f4e794] [cursor=pointer]:
+                  - /url: /about/journals
+              - listitem [ref=f4e795]:
+                - link "Research Awards" [ref=f4e796] [cursor=pointer]:
+                  - /url: /awards
+              - listitem [ref=f4e797]:
+                - link "Open Access Policy" [ref=f4e798] [cursor=pointer]:
+                  - /url: /openaccess
+          - generic [ref=f4e799]:
+            - heading [level=3] [ref=f4e801]:
+              - paragraph [ref=f4e802]: Services
+            - list [ref=f4e803]:
+              - listitem [ref=f4e804]:
+                - link "Author Services" [ref=f4e805] [cursor=pointer]:
+                  - /url: /authors/services
+              - listitem [ref=f4e806]:
+                - link "Conferences" [ref=f4e807] [cursor=pointer]:
+                  - /url: /partnerships/conferences
+              - listitem [ref=f4e808]:
+                - link "Societies" [ref=f4e809] [cursor=pointer]:
+                  - /url: /societies
+              - listitem [ref=f4e810]:
+                - link "Products & Solutions" [ref=f4e811] [cursor=pointer]:
+                  - /url: /about/products-solutions
+              - listitem [ref=f4e812]:
+                - link "Books" [ref=f4e813] [cursor=pointer]:
+                  - /url: https://www.mdpi.com/books/
+          - generic [ref=f4e814]:
+            - heading [level=3] [ref=f4e816]:
+              - paragraph [ref=f4e817]: Guidelines
+            - list [ref=f4e818]:
+              - listitem [ref=f4e819]:
+                - link "For Authors" [ref=f4e820] [cursor=pointer]:
+                  - /url: /authors
+              - listitem [ref=f4e821]:
+                - link "For Reviewers" [ref=f4e822] [cursor=pointer]:
+                  - /url: /reviewers
+              - listitem [ref=f4e823]:
+                - link "For Editors" [ref=f4e824] [cursor=pointer]:
+                  - /url: /editors
+              - listitem [ref=f4e825]:
+                - link "For Librarians" [ref=f4e826] [cursor=pointer]:
+                  - /url: /librarians
+          - generic [ref=f4e827]:
+            - heading [level=3] [ref=f4e829]:
+              - paragraph [ref=f4e830]: Company
+            - list [ref=f4e831]:
+              - listitem [ref=f4e832]:
+                - link "About Us" [ref=f4e833] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f4e834]:
+                - link "Careers" [ref=f4e835] [cursor=pointer]:
+                  - /url: https://careers.mdpi.com/
+              - listitem [ref=f4e836]:
+                - link "Press Office" [ref=f4e837] [cursor=pointer]:
+                  - /url: /about/press
+              - listitem [ref=f4e838]:
+                - link "Blog" [ref=f4e839] [cursor=pointer]:
+                  - /url: https://blog.mdpi.com/
+          - generic [ref=f4e840]:
+            - heading [level=3] [ref=f4e842]:
+              - paragraph [ref=f4e843]: Support
+            - list [ref=f4e844]:
+              - listitem [ref=f4e845]:
+                - link "Pay an Invoice" [ref=f4e846] [cursor=pointer]:
+                  - /url: /about/payment
+              - listitem [ref=f4e847]:
+                - link "Processing Charges" [ref=f4e848] [cursor=pointer]:
+                  - /url: /apc
+              - listitem [ref=f4e849]:
+                - link "Discount Policy" [ref=f4e850] [cursor=pointer]:
+                  - /url: /authors#Discounts_on_APCs
+              - listitem [ref=f4e851]:
+                - link "Contact Us" [ref=f4e852] [cursor=pointer]:
+                  - /url: /support
+        - generic [ref=f4e853]:
+          - link [ref=f4e854] [cursor=pointer]:
+            - /url: /
+            - img "MDPI" [ref=f4e855]
+          - generic [ref=f4e856]:
+            - link [ref=f4e857] [cursor=pointer]:
+              - /url: https://www.facebook.com/MDPIOpenAccessPublishing
+              - img "Facebook" [ref=f4e858]
+            - link [ref=f4e859] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mdpi/
+              - img "LinkedIn" [ref=f4e860]
+            - link [ref=f4e861] [cursor=pointer]:
+              - /url: https://twitter.com/MDPIOpenAccess
+              - img "Twitter" [ref=f4e862]
+            - link [ref=f4e863] [cursor=pointer]:
+              - /url: https://www.youtube.com/@MDPIOA
+              - img "YouTube" [ref=f4e864]
+        - generic [ref=f4e865]:
+          - generic [ref=f4e866]:
+            - text: © 2026
+            - link "MDPI" [ref=f4e867] [cursor=pointer]:
+              - /url: /
+            - text: (Basel, Switzerland) unless otherwise stated.
+          - generic [ref=f4e868]:
+            - link "Accessibility" [ref=f4e869] [cursor=pointer]:
+              - /url: /accessibility
+            - link "Terms and Conditions" [ref=f4e871] [cursor=pointer]:
+              - /url: /about/terms-and-conditions
+            - link "Terms of Use" [ref=f4e873] [cursor=pointer]:
+              - /url: /about/termsofuse
+            - link "Legal Notice" [ref=f4e875] [cursor=pointer]:
+              - /url: /about/legal-notice
+            - link "Privacy Policy" [ref=f4e877] [cursor=pointer]:
+              - /url: /about/privacy
+            - button "Privacy Settings" [ref=f4e879] [cursor=pointer]
+            - link "Disclaimer" [ref=f4e881] [cursor=pointer]:
+              - /url: /disclaimer

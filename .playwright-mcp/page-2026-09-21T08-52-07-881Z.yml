@@ -1,0 +1,223 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - generic [ref=f5e5]:
+      - navigation [ref=f5e7]:
+        - link [ref=f5e8] [cursor=pointer]:
+          - /url: https://sih.gov.in/
+      - navigation [ref=f5e12]:
+        - list [ref=f5e13]:
+          - listitem [ref=f5e14]:
+            - link "MIC Alumni" [ref=f5e15] [cursor=pointer]:
+              - /url: https://alumni.mic.gov.in/
+          - listitem [ref=f5e16]:
+            - link "SIH Login" [ref=f5e17] [cursor=pointer]:
+              - /url: /signin
+    - navigation [ref=f5e18]:
+      - button "Toggle navigation" [ref=f5e20] [cursor=pointer]: 
+  - text: chevron_right chevron_right
+  - generic [ref=f5e24]:
+    - img "Slide One" [ref=f5e25]
+    - heading "Problem Statements" [level=3] [ref=f5e27]
+  - generic [ref=f5e33]:
+    - heading "Total Problem Statements" [level=3] [ref=f5e36]
+    - generic [ref=f5e38]:
+      - heading "58" [level=3] [ref=f5e39]
+      - paragraph [ref=f5e40]: Hardware
+    - generic [ref=f5e42]:
+      - heading "182" [level=3] [ref=f5e43]
+      - paragraph [ref=f5e44]: Software
+    - generic [ref=f5e46]:
+      - generic [ref=f5e48]:
+        - heading "17" [level=3] [ref=f5e49]
+        - paragraph [ref=f5e50]:
+          - link "Hardware Themes" [ref=f5e51] [cursor=pointer]:
+            - /url: /#sihthemes
+      - generic [ref=f5e53]:
+        - heading "17" [level=3] [ref=f5e54]
+        - paragraph [ref=f5e55]:
+          - link "Software Themes" [ref=f5e56] [cursor=pointer]:
+            - /url: /#sihthemes
+  - generic [ref=f5e60]:
+    - generic [ref=f5e61]:
+      - generic [ref=f5e64]:
+        - text: Show
+        - combobox "Show entries" [ref=f5e65]:
+          - option "10" [selected]
+          - option "25"
+          - option "50"
+          - option "100"
+        - text: entries
+      - generic [ref=f5e68]:
+        - text: "Search:"
+        - searchbox "Search:" [ref=f5e69]
+    - grid [ref=f5e72]:
+      - rowgroup [ref=f5e73]:
+        - row [ref=f5e74]:
+          - 'columnheader "S.No.: activate to sort column descending" [ref=f5e75] [cursor=pointer]': ↑ S.No. ↓
+          - 'columnheader "Organization: activate to sort column ascending" [ref=f5e76] [cursor=pointer]': ↑ Organization ↓
+          - 'columnheader "Problem Statement Title: activate to sort column ascending" [ref=f5e77] [cursor=pointer]': ↑ Problem Statement Title ↓
+          - 'columnheader "Category: activate to sort column ascending" [ref=f5e78] [cursor=pointer]': ↑ Category ↓
+          - 'columnheader "PS Number: activate to sort column ascending" [ref=f5e79] [cursor=pointer]': ↑ PS Number ↓
+          - 'columnheader "Submitted Idea(s) Count: activate to sort column ascending" [ref=f5e80] [cursor=pointer]': ↑ Submitted Idea(s) Count ↓
+          - 'columnheader "Theme: activate to sort column ascending" [ref=f5e81] [cursor=pointer]': ↑ Theme ↓
+          - 'columnheader "Deadline for Idea Submission: activate to sort column ascending" [ref=f5e82] [cursor=pointer]': ↑ Deadline for Idea Submission ↓
+      - rowgroup [ref=f5e83]:
+        - row [ref=f5e84]:
+          - gridcell "1" [ref=f5e85]
+          - gridcell "Ministry of Development of North Eastern Region (MDoNER)" [ref=f5e86]
+          - gridcell "AI-Based early warning and landslide Risk Monitoring System in NER" [ref=f5e87]
+          - gridcell "Software" [ref=f5e88]
+          - gridcell "SIH26001" [ref=f5e89]
+          - gridcell "243/500" [ref=f5e90]
+          - gridcell "Disaster Management" [ref=f5e91]
+          - gridcell "30 September 2026" [ref=f5e92]
+        - row [ref=f5e93]:
+          - gridcell "2" [ref=f5e94]
+          - gridcell "Ministry of Development of North Eastern Region (MDoNER)" [ref=f5e95]
+          - gridcell "Al-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER)" [ref=f5e96]
+          - gridcell "Software" [ref=f5e97]
+          - gridcell "SIH26002" [ref=f5e98]
+          - gridcell "106/500" [ref=f5e99]
+          - gridcell "Transportation & Logistics" [ref=f5e100]
+          - gridcell "30 September 2026" [ref=f5e101]
+        - row [ref=f5e102]:
+          - gridcell "3" [ref=f5e103]
+          - gridcell "Ministry of Development of North Eastern Region (MDoNER)" [ref=f5e104]
+          - gridcell "AI-Based Cognitive Gaming and Memory Assistance Platform for Elderly Dementia Patients in North Eastern Region (NER)" [ref=f5e105]
+          - gridcell "Software" [ref=f5e106]
+          - gridcell "SIH26003" [ref=f5e107]
+          - gridcell "164/500" [ref=f5e108]
+          - gridcell "MedTech / BioTech / HealthTech" [ref=f5e109]
+          - gridcell "30 September 2026" [ref=f5e110]
+        - row [ref=f5e111]:
+          - gridcell "4" [ref=f5e112]
+          - gridcell "Ministry of Development of North Eastern Region (MDoNER)" [ref=f5e113]
+          - gridcell "Al-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Region (NER)" [ref=f5e114]
+          - gridcell "Hardware" [ref=f5e115]
+          - gridcell "SIH26004" [ref=f5e116]
+          - gridcell "19/500" [ref=f5e117]
+          - gridcell "MedTech / BioTech / HealthTech" [ref=f5e118]
+          - gridcell "30 September 2026" [ref=f5e119]
+        - row [ref=f5e120]:
+          - gridcell "5" [ref=f5e121]
+          - gridcell "Ministry of Development of North Eastern Region (MDoNER)" [ref=f5e122]
+          - gridcell "Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region (NER)" [ref=f5e123]
+          - gridcell "Hardware" [ref=f5e124]
+          - gridcell "SIH26005" [ref=f5e125]
+          - gridcell "115/500" [ref=f5e126]
+          - gridcell "Agriculture, FoodTech & Rural Development" [ref=f5e127]
+          - gridcell "30 September 2026" [ref=f5e128]
+        - row [ref=f5e129]:
+          - gridcell "6" [ref=f5e130]
+          - gridcell "Ministry of Steel" [ref=f5e131]
+          - gridcell "Development of an Intelligent Freight Forecasting Model for Optimized Vessel Chartering and Bulk Cargo Procurement from overseas to East Coast of India" [ref=f5e132]
+          - gridcell "Software" [ref=f5e133]
+          - gridcell "SIH26006" [ref=f5e134]
+          - gridcell "40/500" [ref=f5e135]
+          - gridcell "Transportation & Logistics" [ref=f5e136]
+          - gridcell "30 September 2026" [ref=f5e137]
+        - row [ref=f5e138]:
+          - gridcell "7" [ref=f5e139]
+          - gridcell "Ministry of Steel" [ref=f5e140]
+          - gridcell "Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines." [ref=f5e141]
+          - gridcell "Hardware" [ref=f5e142]
+          - gridcell "SIH26007" [ref=f5e143]
+          - gridcell "68/500" [ref=f5e144]
+          - gridcell "Smart Automation" [ref=f5e145]
+          - gridcell "30 September 2026" [ref=f5e146]
+        - row [ref=f5e147]:
+          - gridcell "8" [ref=f5e148]
+          - gridcell "Ministry of Steel" [ref=f5e149]
+          - 'gridcell "Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Intelligent Monitoring and Prediction of Conveyor Belt Joint Rupture and Damages in Iron Ore Mining Industry." [ref=f5e150]'
+          - gridcell "Hardware" [ref=f5e151]
+          - gridcell "SIH26008" [ref=f5e152]
+          - gridcell "36/500" [ref=f5e153]
+          - gridcell "Smart Automation" [ref=f5e154]
+          - gridcell "30 September 2026" [ref=f5e155]
+        - row [ref=f5e156]:
+          - gridcell "9" [ref=f5e157]
+          - gridcell "Ministry of Steel" [ref=f5e158]
+          - gridcell "Using AI/ML and Space Technology to Identify Manganese Reserves and Overcome Production Shortfalls." [ref=f5e159]
+          - gridcell "Software" [ref=f5e160]
+          - gridcell "SIH26009" [ref=f5e161]
+          - gridcell "29/500" [ref=f5e162]
+          - gridcell "Space Technology" [ref=f5e163]
+          - gridcell "30 September 2026" [ref=f5e164]
+        - row [ref=f5e165]:
+          - gridcell "10" [ref=f5e166]
+          - gridcell "Ministry of Rural Development" [ref=f5e167]
+          - gridcell "Survey/Resurvey of Rural Agricultural Land in lndia" [ref=f5e168]
+          - gridcell "Hardware" [ref=f5e169]
+          - gridcell "SIH26010" [ref=f5e170]
+          - gridcell "16/500" [ref=f5e171]
+          - gridcell "Agriculture, FoodTech & Rural Development" [ref=f5e172]
+          - gridcell "30 September 2026" [ref=f5e173]
+    - list [ref=f5e178]:
+      - listitem [ref=f5e179]:
+        - link "Previous":
+          - /url: "#"
+      - listitem [ref=f5e180] [cursor=pointer]:
+        - link "1" [ref=f5e181]:
+          - /url: "#"
+      - listitem [ref=f5e182] [cursor=pointer]:
+        - link "2" [ref=f5e183]:
+          - /url: "#"
+      - listitem [ref=f5e184] [cursor=pointer]:
+        - link "3" [ref=f5e185]:
+          - /url: "#"
+      - listitem [ref=f5e186] [cursor=pointer]:
+        - link "4" [ref=f5e187]:
+          - /url: "#"
+      - listitem [ref=f5e188] [cursor=pointer]:
+        - link "5" [ref=f5e189]:
+          - /url: "#"
+      - listitem [ref=f5e190]:
+        - link "…":
+          - /url: "#"
+      - listitem [ref=f5e191] [cursor=pointer]:
+        - link "24" [ref=f5e192]:
+          - /url: "#"
+      - listitem [ref=f5e193] [cursor=pointer]:
+        - link "Next" [ref=f5e194]:
+          - /url: "#"
+  - contentinfo [ref=f5e195]:
+    - generic [ref=f5e197]:
+      - generic [ref=f5e199]:
+        - heading "Follow Us" [level=3] [ref=f5e200]
+        - list [ref=f5e201]:
+          - listitem [ref=f5e202]:
+            - link "" [ref=f5e203] [cursor=pointer]:
+              - /url: https://www.facebook.com/mhrdInnovation/
+          - listitem [ref=f5e205]:
+            - link [ref=f5e206] [cursor=pointer]:
+              - /url: https://www.instagram.com/mhrd.innovationcell/
+              - generic [aria-hidden] [ref=f5e207]: 
+          - listitem [ref=f5e208]:
+            - link "" [ref=f5e209] [cursor=pointer]:
+              - /url: https://x.com/SIH2025
+          - listitem [ref=f5e211]:
+            - link "" [ref=f5e212] [cursor=pointer]:
+              - /url: https://in.linkedin.com/company/moe-innovation-cell
+        - paragraph [ref=f5e214]: © 2025-26 Smart India Hackathon. All rights reserved
+      - generic [ref=f5e216]:
+        - heading "Contact Us" [level=3] [ref=f5e217]
+        - list [ref=f5e218]:
+          - listitem [ref=f5e219]:
+            - generic [ref=f5e220]: 
+            - text: "For any queries write to:"
+            - link "sih@aicte-india.org" [ref=f5e221] [cursor=pointer]:
+              - /url: mailto:sih@aicte-india.org
+          - listitem [ref=f5e222]:
+            - generic [aria-hidden] [ref=f5e223]: 
+            - link "011 29581222," [ref=f5e224] [cursor=pointer]:
+              - /url: tel:+91  11 29581222
+            - link "011 29581223," [ref=f5e225] [cursor=pointer]:
+              - /url: tel:+91 11 29581223
+            - link "011 29581239," [ref=f5e226] [cursor=pointer]:
+              - /url: tel:+91 11 29581240
+            - link "011 29581240," [ref=f5e227] [cursor=pointer]:
+              - /url: tel:+91 11 29581240
+            - link "011 29581241," [ref=f5e228] [cursor=pointer]:
+              - /url: tel:+91 11 29581241
+            - link "011 29581319." [ref=f5e229] [cursor=pointer]:
+              - /url: tel:+91 11 29581319

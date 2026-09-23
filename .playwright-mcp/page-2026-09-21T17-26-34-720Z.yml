@@ -1,0 +1,328 @@
+- generic [ref=f12e2]:
+  - banner [ref=f12e3]:
+    - button [ref=f12e4] [cursor=pointer]
+    - link "Homepage" [ref=f12e6] [cursor=pointer]:
+      - /url: /schhp?hl=en&as_sdt=0,5
+    - generic [ref=f12e9]:
+      - textbox "Search" [ref=f12e11]: LLM agent data integration heterogeneous government systems ontology alignment
+      - button "Search" [ref=f12e12] [cursor=pointer]
+    - link "Sign in" [ref=f12e16] [cursor=pointer]:
+      - /url: https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/scholar%3Fq%3DLLM%2Bagent%2Bdata%2Bintegration%2Bheterogeneous%2Bgovernment%2Bsystems%2Bontology%2Balignment%26hl%3Den%26as_sdt%3D0%252C5%26as_ylo%3D2024
+  - generic [ref=f12e17]:
+    - generic [ref=f12e20]: Articles
+    - generic [ref=f12e22]: About 4,020 results (0.33 sec)
+    - generic [ref=f12e24]:
+      - link "My profile" [ref=f12e25] [cursor=pointer]:
+        - /url: /citations?hl=en
+      - link "My library" [ref=f12e28] [cursor=pointer]:
+        - /url: /scholar?scilib=1&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5
+  - generic [ref=f12e31]:
+    - navigation [ref=f12e32]:
+      - generic [ref=f12e33]:
+        - generic [ref=f12e34]:
+          - list [ref=f12e35]:
+            - listitem [ref=f12e36]:
+              - link "Any time" [ref=f12e37] [cursor=pointer]:
+                - /url: /scholar?q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5
+            - listitem [ref=f12e38]:
+              - link "Since 2026" [ref=f12e39] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2026&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5
+            - listitem [ref=f12e40]:
+              - link "Since 2025" [ref=f12e41] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2025&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5
+            - listitem [ref=f12e42]:
+              - link "Since 2022" [ref=f12e43] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2022&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5
+            - listitem [ref=f12e44]:
+              - link "Custom range..." [ref=f12e45] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=f12e46]:
+            - generic [ref=f12e47]:
+              - textbox [ref=f12e49]: "2024"
+              - text: —
+              - textbox [ref=f12e51]
+            - button "Search" [ref=f12e53] [cursor=pointer]
+        - list [ref=f12e56]:
+          - listitem [ref=f12e57]:
+            - link "Sort by relevance" [ref=f12e58] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&as_ylo=2024&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment
+          - listitem [ref=f12e59]:
+            - link "Sort by date" [ref=f12e60] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&scisbd=1
+        - list [ref=f12e61]:
+          - listitem [ref=f12e62]:
+            - link "Any type" [ref=f12e63] [cursor=pointer]:
+              - /url: /scholar?q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+          - listitem [ref=f12e64]:
+            - link "Review articles" [ref=f12e65] [cursor=pointer]:
+              - /url: /scholar?q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024&as_rr=1
+        - list [ref=f12e66]:
+          - listitem [ref=f12e67]:
+            - checkbox "include patents" [ref=f12e68] [cursor=pointer]
+          - listitem [ref=f12e72]:
+            - checkbox "include citations" [checked] [ref=f12e73] [cursor=pointer]
+        - link "Create alert" [ref=f12e78] [cursor=pointer]:
+          - /url: /scholar_alerts?view_op=create_alert_options&hl=en&alert_query=LLM+agent++%22data+integration%22++heterogeneous+government+systems+ontology+alignment&alert_params=%3Fhl%3Den%26as_sdt%3D0,5
+    - main [ref=f12e81]:
+      - generic [ref=f12e82]:
+        - generic [ref=f12e83]:
+          - generic [ref=f12e84]:
+            - link "[HTML] intechopen.com" [ref=f12e88] [cursor=pointer]:
+              - /url: https://www.intechopen.com/online-first/1237279
+            - generic [ref=f12e89]:
+              - 'heading "[HTML] Unlocking Government Open Data: Harnessing Open-Source LLMs for Rapid Insights and Beyond" [level=3] [ref=f12e90]':
+                - generic [ref=f12e91]: "[HTML]"
+                - 'link "Unlocking Government Open Data: Harnessing Open-Source LLMs for Rapid Insights and Beyond" [ref=f12e92] [cursor=pointer]':
+                  - /url: https://www.intechopen.com/online-first/1237279
+              - generic [ref=f12e93]:
+                - link "M Ali" [ref=f12e94] [cursor=pointer]:
+                  - /url: /citations?user=0qkEQyEAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Z Lachana" [ref=f12e95] [cursor=pointer]:
+                  - /url: /citations?user=bSvt_4IAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Y Charalabidis" [ref=f12e96] [cursor=pointer]:
+                  - /url: /citations?user=ha97fGMAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "C Alexopoulos" [ref=f12e97] [cursor=pointer]:
+                  - /url: /citations?user=CuBsGUcAAAAJ&hl=en&oi=sra
+                - text: "- 2026 - intechopen.com"
+              - generic [ref=f12e98]: … to open data portals, LLM-based data exploration agents) to … open data Sensor data integration into actual open data … ontology terms, and aligning diverse/heterogeneous data schemas …
+              - generic [ref=f12e99]:
+                - button "Save" [ref=f12e100] [cursor=pointer]
+                - button "Cite" [ref=f12e103] [cursor=pointer]
+                - link "Related articles" [ref=f12e106] [cursor=pointer]:
+                  - /url: /scholar?q=related:5gIbc2m3U8YJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 2 versions" [ref=f12e107] [cursor=pointer]:
+                  - /url: /scholar?cluster=14290967706107314918&hl=en&as_sdt=0,5&as_ylo=2024
+                - button "More" [ref=f12e108] [cursor=pointer]
+          - generic [ref=f12e111]:
+            - link "[PDF] springer.com" [ref=f12e115] [cursor=pointer]:
+              - /url: https://link.springer.com/content/pdf/10.1007/s44212-026-00114-1.pdf
+            - generic [ref=f12e116]:
+              - heading [level=3] [ref=f12e117]:
+                - link "A distributed data governance architecture for smart cities based on data unified registration, dynamic catalog, and local LLM data coordination" [ref=f12e118] [cursor=pointer]:
+                  - /url: https://link.springer.com/article/10.1007/s44212-026-00114-1
+              - generic [ref=f12e119]: X Zheng, F Miao, F Yi, W Fan, J Zhuo, E Wang - Urban Informatics, 2026 - Springer
+              - generic [ref=f12e120]: "… in government data governance: (1) semantic fragmentation across heterogeneous systems, … Efficiency: We deployed Java probe agents in 69 source systems. After deployment, catalog …"
+              - generic [ref=f12e121]:
+                - button "Save" [ref=f12e122] [cursor=pointer]
+                - button "Cite" [ref=f12e125] [cursor=pointer]
+                - link "Related articles" [ref=f12e128] [cursor=pointer]:
+                  - /url: /scholar?q=related:BbBU5G9eguAJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 2 versions" [ref=f12e129] [cursor=pointer]:
+                  - /url: /scholar?cluster=16177596646133379077&hl=en&as_sdt=0,5&as_ylo=2024
+          - generic [ref=f12e130]:
+            - link "[PDF] researchgate.net" [ref=f12e134] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Mehedi-Hasan-Nipu/publication/408567285_Safe_and_Scalable_Collaboration_in_Multiagent_LLM_Systems_A_Comprehensive_Review/links/6a4f320a37be4e7a63c38a07/Safe-and-Scalable-Collaboration-in-Multiagent-LLM-Systems-A-Comprehensive-Review.pdf
+            - generic [ref=f12e135]:
+              - heading [level=3] [ref=f12e136]:
+                - 'link "Safe and Scalable Collaboration in Multiagent LLM Systems: A Comprehensive Review" [ref=f12e137] [cursor=pointer]':
+                  - /url: https://ieeexplore.ieee.org/abstract/document/11598769/
+              - generic [ref=f12e138]:
+                - link "E Hossain" [ref=f12e139] [cursor=pointer]:
+                  - /url: /citations?user=l0L1NPAAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "MMHB Nipu" [ref=f12e140] [cursor=pointer]:
+                  - /url: /citations?user=PaBcNmIAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "MS Mahmood" [ref=f12e141] [cursor=pointer]:
+                  - /url: /citations?user=2-R-Rp8AAAAJ&hl=en&oi=sra
+                - text: … - … on Systems, Man …, 2026 - ieeexplore.ieee.org
+              - generic [ref=f12e142]: … , and trust and alignment mechanisms. We synthesize a range … and roles versus heterogeneous agents that bring diverse … accountability enables institutional governance. Failure at any …
+              - generic [ref=f12e143]:
+                - button "Save" [ref=f12e144] [cursor=pointer]
+                - button "Cite" [ref=f12e147] [cursor=pointer]
+                - link "Related articles" [ref=f12e150] [cursor=pointer]:
+                  - /url: /scholar?q=related:0q8mlEKXCdgJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 2 versions" [ref=f12e151] [cursor=pointer]:
+                  - /url: /scholar?cluster=15567139899192029138&hl=en&as_sdt=0,5&as_ylo=2024
+          - generic [ref=f12e152]:
+            - link "[PDF] hal.science" [ref=f12e156] [cursor=pointer]:
+              - /url: https://hal.science/hal-05575002/document
+            - generic [ref=f12e157]:
+              - heading [level=3] [ref=f12e158]:
+                - 'link "A Survey on AI Agents for Data Management: Taxonomy, Progress, and Opportunities" [ref=f12e159] [cursor=pointer]':
+                  - /url: https://hal.science/hal-05575002/
+              - generic [ref=f12e160]:
+                - link "A Rahee" [ref=f12e161] [cursor=pointer]:
+                  - /url: /citations?user=Tqbjp-QAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "A Khan" [ref=f12e162] [cursor=pointer]:
+                  - /url: /citations?user=6Y-m8k4AAAAJ&hl=en&oi=sra
+                - text: "- 2026 - hal.science"
+              - generic [ref=f12e163]: … heterogeneous data and complex decision logic that traditional … evolving landscape of LLM-based agents for data management, … , medical analytics, and government data integration. …
+              - generic [ref=f12e164]:
+                - button "Save" [ref=f12e165] [cursor=pointer]
+                - button "Cite" [ref=f12e168] [cursor=pointer]
+                - link "Related articles" [ref=f12e171] [cursor=pointer]:
+                  - /url: /scholar?q=related:xwZJtBdcwk4J:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - button "More" [ref=f12e172] [cursor=pointer]
+          - generic [ref=f12e175]:
+            - link "[PDF] arxiv.org" [ref=f12e179] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2601.03328
+            - generic [ref=f12e180]:
+              - heading [level=3] [ref=f12e181]:
+                - 'link "LLM-Enabled Multi-Agent Systems: Empirical Evaluation and Insights into Emerging Design Patterns & Paradigms" [ref=f12e182] [cursor=pointer]':
+                  - /url: https://arxiv.org/abs/2601.03328
+              - generic [ref=f12e183]:
+                - link "H Renney" [ref=f12e184] [cursor=pointer]:
+                  - /url: /citations?user=Y_avHD2KQ5EC&hl=en&oi=sra
+                - text: ", MN Nethercott,"
+                - link "N Renney" [ref=f12e185] [cursor=pointer]:
+                  - /url: /citations?user=_p2liGUAAAAJ&hl=en&oi=sra
+                - text: … - arXiv preprint arXiv …, 2026 - arxiv.org
+              - generic [ref=f12e186]: … [62] and Government [63], data is often generated and stored … and incompatibilities that make data integration, governance, … ’s ability to integrate heterogeneous data sources, combining …
+              - generic [ref=f12e187]:
+                - button "Save" [ref=f12e188] [cursor=pointer]
+                - button "Cite" [ref=f12e191] [cursor=pointer]
+                - link "Cited by 4" [ref=f12e194] [cursor=pointer]:
+                  - /url: /scholar?cites=13033953181251099630&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f12e195] [cursor=pointer]:
+                  - /url: /scholar?q=related:7luLi1zn4bQJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 5 versions" [ref=f12e196] [cursor=pointer]:
+                  - /url: /scholar?cluster=13033953181251099630&hl=en&as_sdt=0,5&as_ylo=2024
+                - button "More" [ref=f12e197] [cursor=pointer]
+          - generic [ref=f12e200]:
+            - link "[PDF] springer.com" [ref=f12e204] [cursor=pointer]:
+              - /url: https://link.springer.com/content/pdf/10.1007/s12559-026-10619-1.pdf
+            - generic [ref=f12e205]:
+              - heading [level=3] [ref=f12e206]:
+                - 'link "From Language Models to Agentic AI: A Survey of Autonomous, Action-Enabled, and Collaborative LLM Agents" [ref=f12e207] [cursor=pointer]':
+                  - /url: https://link.springer.com/article/10.1007/s12559-026-10619-1
+              - generic [ref=f12e208]:
+                - link "S Bajoria" [ref=f12e209] [cursor=pointer]:
+                  - /url: /citations?user=gmjGm9cAAAAJ&hl=en&oi=sra
+                - text: ", S Ranjan, AM, V Suri,"
+                - link "V Hassija" [ref=f12e210] [cursor=pointer]:
+                  - /url: /citations?user=X45MXxsAAAAJ&hl=en&oi=sra
+                - text: … - Cognitive …, 2026 - Springer
+              - generic [ref=f12e211]: … Cross-modal retrieval techniques enable alignment between heterogeneous data sources [36]. Section “… To compare heterogeneous systems within a unified space, we introduce a four-…
+              - generic [ref=f12e212]:
+                - button "Save" [ref=f12e213] [cursor=pointer]
+                - button "Cite" [ref=f12e216] [cursor=pointer]
+                - link "Related articles" [ref=f12e219] [cursor=pointer]:
+                  - /url: /scholar?q=related:4VezGyYUOi0J:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 2 versions" [ref=f12e220] [cursor=pointer]:
+                  - /url: /scholar?cluster=3258939434262026209&hl=en&as_sdt=0,5&as_ylo=2024
+          - generic [ref=f12e222]:
+            - heading [level=3] [ref=f12e223]:
+              - link "Unified Agentic AI Architecture for Data Lineage, Governance, and Predictive Workflow Automation in Enterprise Systems" [ref=f12e224] [cursor=pointer]:
+                - /url: https://ieeexplore.ieee.org/abstract/document/11594381/
+            - generic [ref=f12e225]:
+              - text: N Yuvaraj,
+              - link "MS Kumar" [ref=f12e226] [cursor=pointer]:
+                - /url: /citations?user=VPTFSLMAAAAJ&hl=en&oi=sra
+              - text: ","
+              - link "MS Manoj" [ref=f12e227] [cursor=pointer]:
+                - /url: /citations?user=fXsEfFkAAAAJ&hl=en&oi=sra
+              - text: "- 2026 IEEE 18th …, 2026 - ieeexplore.ieee.org"
+            - generic [ref=f12e228]: … among heterogeneous datasets and improve data discoverability. … beyond simple pattern matching. The Governance … framework that applies LLM-powered multi-agent systems to the …
+            - generic [ref=f12e229]:
+              - button "Save" [ref=f12e230] [cursor=pointer]
+              - button "Cite" [ref=f12e233] [cursor=pointer]
+              - link "Related articles" [ref=f12e236] [cursor=pointer]:
+                - /url: /scholar?q=related:KPf0S-M0WH8J:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+          - generic [ref=f12e237]:
+            - link "[PDF] uaic.ro" [ref=f12e241] [cursor=pointer]:
+              - /url: https://scdoc.info.uaic.ro/wp-content/uploads/2025/07/Rezumatul-tezei_Calancea-Georgiana_EN.pdf
+            - generic [ref=f12e242]:
+              - heading "[PDF] Techniques to improve data governance" [level=3] [ref=f12e243]:
+                - generic [ref=f12e244]: "[PDF]"
+                - link "Techniques to improve data governance" [ref=f12e245] [cursor=pointer]:
+                  - /url: https://scdoc.info.uaic.ro/wp-content/uploads/2025/07/Rezumatul-tezei_Calancea-Georgiana_EN.pdf
+              - generic [ref=f12e246]:
+                - link "CG Calancea" [ref=f12e247] [cursor=pointer]:
+                  - /url: /citations?user=TXxD6soAAAAJ&hl=en&oi=sra
+                - text: "- 2025 - scdoc.info.uaic.ro"
+              - generic [ref=f12e248]: … seamless interoperability across heterogeneous data sources. … between an LLM and a semantic validator, where the system … FAIR-compliant data integration solution on enterprise data …
+              - generic [ref=f12e249]:
+                - button "Save" [ref=f12e250] [cursor=pointer]
+                - button "Cite" [ref=f12e253] [cursor=pointer]
+                - link "Related articles" [ref=f12e256] [cursor=pointer]:
+                  - /url: /scholar?q=related:hFO0_H4xMfYJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - button "More" [ref=f12e257] [cursor=pointer]
+          - generic [ref=f12e261]:
+            - heading [level=3] [ref=f12e262]:
+              - 'link "LLM-Driven Deterministic Data Governance: A Decoupled Standardization Architecture" [ref=f12e263] [cursor=pointer]':
+                - /url: https://ieeexplore.ieee.org/abstract/document/11676170/
+            - generic [ref=f12e264]: Y Deng, X Liu, X Yang, H Chen, G Li… - … Intelligence and Data …, 2026 - ieeexplore.ieee.org
+            - generic [ref=f12e265]: … with explicit data object models to resolve heterogeneous … support layer, data integration and quality assessment layer, … complex data governance; (2) investigating adaptive multi-agent …
+            - generic [ref=f12e266]:
+              - button "Save" [ref=f12e267] [cursor=pointer]
+              - button "Cite" [ref=f12e270] [cursor=pointer]
+              - link "Related articles" [ref=f12e273] [cursor=pointer]:
+                - /url: /scholar?q=related:dF0I1qlsI6IJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+          - generic [ref=f12e274]:
+            - link "[PDF] aegean.gr" [ref=f12e278] [cursor=pointer]:
+              - /url: https://www.icsd.aegean.gr/publication_files/0652d01ecf00a3c6139111da8db24d91.pdf
+            - generic [ref=f12e279]:
+              - heading [level=3] [ref=f12e280]:
+                - 'link "Talk to Open Data: Enabling User Interaction with Open Government Data Using LLMs, RAG and Smart Agent Technologies" [ref=f12e281] [cursor=pointer]':
+                  - /url: https://link.springer.com/chapter/10.1007/978-3-032-18487-0_2
+              - generic [ref=f12e282]:
+                - link "M Ali" [ref=f12e283] [cursor=pointer]:
+                  - /url: /citations?user=0qkEQyEAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "MI Maratsi" [ref=f12e284] [cursor=pointer]:
+                  - /url: /citations?user=5n2xouQAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Z Lachana" [ref=f12e285] [cursor=pointer]:
+                  - /url: /citations?user=bSvt_4IAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Y Charalabidis" [ref=f12e286] [cursor=pointer]:
+                  - /url: /citations?user=ha97fGMAAAAJ&hl=en&oi=sra
+                - text: … - … on Information Systems, 2025 - Springer
+              - generic [ref=f12e287]: … SDG indicators from heterogeneous open data sources. … models, we implemented an LLM agent using Langchain “… when aiming for cross domain ontology alignment or even cross-…
+              - generic [ref=f12e288]:
+                - button "Save" [ref=f12e289] [cursor=pointer]
+                - button "Cite" [ref=f12e292] [cursor=pointer]
+                - link "Cited by 2" [ref=f12e295] [cursor=pointer]:
+                  - /url: /scholar?cites=14651299980112725538&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f12e296] [cursor=pointer]:
+                  - /url: /scholar?q=related:IoZOvLTfU8sJ:scholar.google.com/&scioq=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - link "All 3 versions" [ref=f12e297] [cursor=pointer]:
+                  - /url: /scholar?cluster=14651299980112725538&hl=en&as_sdt=0,5&as_ylo=2024
+        - navigation [ref=f12e299]:
+          - table [ref=f12e301]:
+            - rowgroup [ref=f12e302]:
+              - row [ref=f12e303]:
+                - cell [ref=f12e304]
+                - cell "1" [ref=f12e306]
+                - cell [ref=f12e308]:
+                  - link "2" [ref=f12e309] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e311]:
+                  - link "3" [ref=f12e312] [cursor=pointer]:
+                    - /url: /scholar?start=20&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e314]:
+                  - link "4" [ref=f12e315] [cursor=pointer]:
+                    - /url: /scholar?start=30&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e317]:
+                  - link "5" [ref=f12e318] [cursor=pointer]:
+                    - /url: /scholar?start=40&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e320]:
+                  - link "6" [ref=f12e321] [cursor=pointer]:
+                    - /url: /scholar?start=50&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e323]:
+                  - link "7" [ref=f12e324] [cursor=pointer]:
+                    - /url: /scholar?start=60&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e326]:
+                  - link "8" [ref=f12e327] [cursor=pointer]:
+                    - /url: /scholar?start=70&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e329]:
+                  - link "9" [ref=f12e330] [cursor=pointer]:
+                    - /url: /scholar?start=80&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e332]:
+                  - link "10" [ref=f12e333] [cursor=pointer]:
+                    - /url: /scholar?start=90&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+                - cell [ref=f12e335]:
+                  - link "Next" [ref=f12e336] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=LLM+agent+data+integration+heterogeneous+government+systems+ontology+alignment&hl=en&as_sdt=0,5&as_ylo=2024
+  - contentinfo [ref=f12e339]:
+    - generic [ref=f12e340]:
+      - link "Privacy" [ref=f12e341] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/privacy/
+      - link "Terms" [ref=f12e342] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/terms/
+      - button "Help" [ref=f12e343] [cursor=pointer]

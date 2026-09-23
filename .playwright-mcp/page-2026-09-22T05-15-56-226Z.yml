@@ -1,0 +1,159 @@
+- generic [active] [ref=f11e1]:
+  - link "Skip to main content" [ref=f11e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f11e3]:
+    - navigation [ref=f11e4]:
+      - link [ref=f11e5] [cursor=pointer]:
+        - /url: /
+        - img "MindStudio" [ref=f11e6]
+      - generic [ref=f11e7]:
+        - button "Product" [ref=f11e9]
+        - link "Pricing" [ref=f11e13] [cursor=pointer]:
+          - /url: /pricing
+        - button "Learn" [ref=f11e15]
+        - link "Blog" [ref=f11e19] [cursor=pointer]:
+          - /url: /blog
+        - link "About" [ref=f11e20] [cursor=pointer]:
+          - /url: /about
+      - generic [ref=f11e23]:
+        - link "Log in" [ref=f11e24] [cursor=pointer]:
+          - /url: https://app.mindstudio.ai/login
+        - link "Get Started" [ref=f11e25] [cursor=pointer]:
+          - /url: /pricing
+  - main [ref=f11e26]:
+    - generic [ref=f11e28]:
+      - paragraph [ref=f11e29]: "404"
+      - heading "Page not found" [level=1] [ref=f11e30]
+      - paragraph [ref=f11e31]: The page you are looking for doesn't exist or has been moved.
+      - link "Go home" [ref=f11e33] [cursor=pointer]:
+        - /url: /
+  - contentinfo [ref=f11e34]:
+    - generic [ref=f11e35]:
+      - generic [ref=f11e36]:
+        - generic [ref=f11e37]:
+          - heading "Compare" [level=3] [ref=f11e38]
+          - list [ref=f11e39]:
+            - listitem [ref=f11e40]:
+              - link "n8n vs MindStudio" [ref=f11e41] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-n8n
+            - listitem [ref=f11e42]:
+              - link "Make vs MindStudio" [ref=f11e43] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-make
+            - listitem [ref=f11e44]:
+              - link "Zapier vs MindStudio" [ref=f11e45] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-zapier
+            - listitem [ref=f11e46]:
+              - link "Botpress vs MindStudio" [ref=f11e47] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-botpress
+            - listitem [ref=f11e48]:
+              - link "LangChain vs MindStudio" [ref=f11e49] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-langchain
+            - listitem [ref=f11e50]:
+              - link "CrewAI vs MindStudio" [ref=f11e51] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-crewai
+            - listitem [ref=f11e52]:
+              - link "Retool vs MindStudio" [ref=f11e53] [cursor=pointer]:
+                - /url: /blog/mindstudio-vs-retool
+        - generic [ref=f11e54]:
+          - heading "Use Cases" [level=3] [ref=f11e55]
+          - list [ref=f11e56]:
+            - listitem [ref=f11e57]:
+              - link "Product Management" [ref=f11e58] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-product-managers
+            - listitem [ref=f11e59]:
+              - link "Marketing" [ref=f11e60] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-marketing-teams
+            - listitem [ref=f11e61]:
+              - link "Sales" [ref=f11e62] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-sales-teams
+            - listitem [ref=f11e63]:
+              - link "Customer Success" [ref=f11e64] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-customer-success
+            - listitem [ref=f11e65]:
+              - link "Human Resources" [ref=f11e66] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-hr-teams
+            - listitem [ref=f11e67]:
+              - link "Legal" [ref=f11e68] [cursor=pointer]:
+                - /url: /blog/ai-agents-for-legal-professionals
+            - listitem [ref=f11e69]:
+              - link "Lead Generation" [ref=f11e70] [cursor=pointer]:
+                - /url: /blog/ai-agents-lead-generation
+        - generic [ref=f11e71]:
+          - heading "Capabilities" [level=3] [ref=f11e72]
+          - list [ref=f11e73]:
+            - listitem [ref=f11e74]:
+              - link "Image Generation" [ref=f11e75] [cursor=pointer]:
+                - /url: /blog/how-to-generate-ai-images-in-mindstudio
+            - listitem [ref=f11e76]:
+              - link "Prompt Engineering" [ref=f11e77] [cursor=pointer]:
+                - /url: /blog/prompt-engineering-ai-agents
+            - listitem [ref=f11e78]:
+              - link "RAG" [ref=f11e79] [cursor=pointer]:
+                - /url: /blog/what-is-rag
+            - listitem [ref=f11e80]:
+              - link "Human-in-the-Loop" [ref=f11e81] [cursor=pointer]:
+                - /url: /blog/human-in-the-loop-ai
+            - listitem [ref=f11e82]:
+              - link "MCP Servers" [ref=f11e83] [cursor=pointer]:
+                - /url: /blog/what-are-mcp-servers
+            - listitem [ref=f11e84]:
+              - link "Multi-Step Reasoning" [ref=f11e85] [cursor=pointer]:
+                - /url: /blog/multi-step-reasoning
+        - generic [ref=f11e86]:
+          - heading "MindStudio" [level=3] [ref=f11e87]
+          - list [ref=f11e88]:
+            - listitem [ref=f11e89]:
+              - link "About" [ref=f11e90] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f11e91]:
+              - link "Pricing" [ref=f11e92] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=f11e93]:
+              - link "Blog" [ref=f11e94] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=f11e95]:
+              - link "Newsroom" [ref=f11e96] [cursor=pointer]:
+                - /url: /newsroom
+            - listitem [ref=f11e97]:
+              - link "Contact" [ref=f11e98] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=f11e99]:
+              - link "Trust Center" [ref=f11e100] [cursor=pointer]:
+                - /url: https://trust.mindstudio.ai/
+            - listitem [ref=f11e101]:
+              - link "Community" [ref=f11e102] [cursor=pointer]:
+                - /url: https://community.mindstudio.ai/
+            - listitem [ref=f11e103]:
+              - link "Documentation" [ref=f11e104] [cursor=pointer]:
+                - /url: https://university.mindstudio.ai/
+        - generic [ref=f11e105]:
+          - heading "Programs" [level=3] [ref=f11e106]
+          - list [ref=f11e107]:
+            - listitem [ref=f11e108]:
+              - link "Enterprise" [ref=f11e109] [cursor=pointer]:
+                - /url: https://university.mindstudio.ai/programs/mindstudio-for-enterprises
+            - listitem [ref=f11e110]:
+              - link "Developers" [ref=f11e111] [cursor=pointer]:
+                - /url: https://university.mindstudio.ai/programs/mindstudio-for-developers
+            - listitem [ref=f11e112]:
+              - link "Partners" [ref=f11e113] [cursor=pointer]:
+                - /url: https://university.mindstudio.ai/programs/mindstudio-solutions-partners
+      - generic [ref=f11e114]:
+        - generic [ref=f11e115]:
+          - link "MindStudio" [ref=f11e116] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f11e117]:
+            - link "YouTube" [ref=f11e118] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCvv4fwj_uxsUZMx-Dq5W71A
+            - link "X" [ref=f11e122] [cursor=pointer]:
+              - /url: https://x.com/mindstudioai
+            - link "LinkedIn" [ref=f11e126] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/mindstudioai
+        - generic [ref=f11e130]:
+          - link "Terms of Use" [ref=f11e131] [cursor=pointer]:
+            - /url: /legal/terms-of-use
+          - link "Privacy Policy" [ref=f11e132] [cursor=pointer]:
+            - /url: /legal/privacy-policy
+          - link "DPA" [ref=f11e133] [cursor=pointer]:
+            - /url: /legal/dpa
+          - generic [ref=f11e134]: © 2026 MindStudio (GoMeta, Inc.). All rights reserved.

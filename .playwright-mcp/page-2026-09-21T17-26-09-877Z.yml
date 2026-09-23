@@ -1,0 +1,320 @@
+- generic [ref=f10e2]:
+  - banner [ref=f10e3]:
+    - button [ref=f10e4] [cursor=pointer]
+    - link "Homepage" [ref=f10e6] [cursor=pointer]:
+      - /url: /schhp?hl=en&as_sdt=0,5
+    - generic [ref=f10e9]:
+      - textbox "Search" [ref=f10e11]: "\"schema matching\" \"reinforcement learning\" heterogeneous data integration"
+      - button "Search" [ref=f10e12] [cursor=pointer]
+    - link "Sign in" [ref=f10e16] [cursor=pointer]:
+      - /url: https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/scholar%3Fq%3D%2522schema%2Bmatching%2522%2B%2522reinforcement%2Blearning%2522%2Bheterogeneous%2Bdata%2Bintegration%26hl%3Den%26as_sdt%3D0%252C5%26as_ylo%3D2023
+  - generic [ref=f10e17]:
+    - generic [ref=f10e20]: Articles
+    - generic [ref=f10e22]: About 317 results (0.16 sec)
+    - generic [ref=f10e24]:
+      - link "My profile" [ref=f10e25] [cursor=pointer]:
+        - /url: /citations?hl=en
+      - link "My library" [ref=f10e28] [cursor=pointer]:
+        - /url: /scholar?scilib=1&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5
+  - generic [ref=f10e31]:
+    - navigation [ref=f10e32]:
+      - generic [ref=f10e33]:
+        - generic [ref=f10e34]:
+          - list [ref=f10e35]:
+            - listitem [ref=f10e36]:
+              - link "Any time" [ref=f10e37] [cursor=pointer]:
+                - /url: /scholar?q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5
+            - listitem [ref=f10e38]:
+              - link "Since 2026" [ref=f10e39] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2026&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5
+            - listitem [ref=f10e40]:
+              - link "Since 2025" [ref=f10e41] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2025&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5
+            - listitem [ref=f10e42]:
+              - link "Since 2022" [ref=f10e43] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2022&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5
+            - listitem [ref=f10e44]:
+              - link "Custom range..." [ref=f10e45] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=f10e46]:
+            - generic [ref=f10e47]:
+              - textbox [ref=f10e49]: "2023"
+              - text: —
+              - textbox [ref=f10e51]
+            - button "Search" [ref=f10e53] [cursor=pointer]
+        - list [ref=f10e56]:
+          - listitem [ref=f10e57]:
+            - link "Sort by relevance" [ref=f10e58] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&as_ylo=2023&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration
+          - listitem [ref=f10e59]:
+            - link "Sort by date" [ref=f10e60] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&scisbd=1
+        - list [ref=f10e61]:
+          - listitem [ref=f10e62]:
+            - link "Any type" [ref=f10e63] [cursor=pointer]:
+              - /url: /scholar?q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+          - listitem [ref=f10e64]:
+            - link "Review articles" [ref=f10e65] [cursor=pointer]:
+              - /url: /scholar?q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023&as_rr=1
+        - list [ref=f10e66]:
+          - listitem [ref=f10e67]:
+            - checkbox "include patents" [ref=f10e68] [cursor=pointer]
+          - listitem [ref=f10e72]:
+            - checkbox "include citations" [checked] [ref=f10e73] [cursor=pointer]
+        - link "Create alert" [ref=f10e78] [cursor=pointer]:
+          - /url: /scholar_alerts?view_op=create_alert_options&hl=en&alert_query=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&alert_params=%3Fhl%3Den%26as_sdt%3D0,5
+    - main [ref=f10e81]:
+      - generic [ref=f10e82]:
+        - generic [ref=f10e83]:
+          - generic [ref=f10e84]:
+            - link "[PDF] acm.org" [ref=f10e88] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/pdf/10.1145/3539618.3591637
+            - generic [ref=f10e89]:
+              - heading [level=3] [ref=f10e90]:
+                - link "An effective framework for enhancing query answering in a heterogeneous data lake" [ref=f10e91] [cursor=pointer]:
+                  - /url: https://dl.acm.org/doi/abs/10.1145/3539618.3591637
+              - generic [ref=f10e92]:
+                - link "Q Yuan" [ref=f10e93] [cursor=pointer]:
+                  - /url: /citations?user=3yENV4UAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Y Yuan" [ref=f10e94] [cursor=pointer]:
+                  - /url: /citations?user=x7bLXjkAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "Z Wen" [ref=f10e95] [cursor=pointer]:
+                  - /url: /citations?user=3cNpbVEAAAAJ&hl=en&oi=sra
+                - text: ", H Wang,"
+                - link "S Tang" [ref=f10e96] [cursor=pointer]:
+                  - /url: /citations?user=rUUOzaEAAAAJ&hl=en&oi=sra
+                - text: "- Proceedings of the 46th …, 2023 - dl.acm.org"
+              - generic [ref=f10e97]: … that semantically integrates heterogeneous data schemas of … reinforcement learning method to semantically integrate the … The most related work to our work is schema matching. Given …
+              - generic [ref=f10e98]:
+                - button "Save" [ref=f10e99] [cursor=pointer]
+                - button "Cite" [ref=f10e102] [cursor=pointer]
+                - link "Cited by 9" [ref=f10e105] [cursor=pointer]:
+                  - /url: /scholar?cites=15668060966068565494&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f10e106] [cursor=pointer]:
+                  - /url: /scholar?q=related:9jWuiW8icNkJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 4 versions" [ref=f10e107] [cursor=pointer]:
+                  - /url: /scholar?cluster=15668060966068565494&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f10e108]:
+            - link "[PDF] acm.org" [ref=f10e112] [cursor=pointer]:
+              - /url: https://dl.acm.org/doi/pdf/10.1145/3789692.3789850
+            - generic [ref=f10e113]:
+              - heading [level=3] [ref=f10e114]:
+                - 'link "Integrating Heterogeneous Data: A Systematic Review of Challenges and Evolution Solution" [ref=f10e115] [cursor=pointer]':
+                  - /url: https://dl.acm.org/doi/abs/10.1145/3789692.3789850
+              - generic [ref=f10e116]:
+                - text: M Bensaci,
+                - link "MCE Meftah" [ref=f10e117] [cursor=pointer]:
+                  - /url: /citations?user=Va99ZeoAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "EH Meftah" [ref=f10e118] [cursor=pointer]:
+                  - /url: /citations?user=6J6XLykAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "A Laouid" [ref=f10e119] [cursor=pointer]:
+                  - /url: /citations?user=RIQsqMsAAAAJ&hl=en&oi=sra
+                - text: … - Proceedings of the 9th …, 2025 - dl.acm.org
+              - generic [ref=f10e120]: … challenges faced in heterogeneous data integration and the … (including schema matching, ontology-based integration, … advanced AI, such as Reinforcement Learning, for dynamic index …
+              - generic [ref=f10e121]:
+                - button "Save" [ref=f10e122] [cursor=pointer]
+                - button "Cite" [ref=f10e125] [cursor=pointer]
+                - link "Cited by 2" [ref=f10e128] [cursor=pointer]:
+                  - /url: /scholar?cites=14822891821386672000&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f10e129] [cursor=pointer]:
+                  - /url: /scholar?q=related:gKfLlZN9tc0J:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f10e130] [cursor=pointer]:
+                  - /url: /scholar?cluster=14822891821386672000&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f10e131]:
+            - link "[PDF] researchgate.net" [ref=f10e135] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Amelia-Olivia/publication/404314126_Reinforcement_Learning_for_Adaptive_ETL_Workflows/links/69f32e8ab1dace04f143b821/Reinforcement-Learning-for-Adaptive-ETL-Workflows.pdf
+            - generic [ref=f10e136]:
+              - heading "[PDF] Reinforcement Learning for Adaptive ETL Workflows" [level=3] [ref=f10e137]:
+                - generic [ref=f10e138]: "[PDF]"
+                - link "Reinforcement Learning for Adaptive ETL Workflows" [ref=f10e139] [cursor=pointer]:
+                  - /url: https://www.researchgate.net/profile/Amelia-Olivia/publication/404314126_Reinforcement_Learning_for_Adaptive_ETL_Workflows/links/69f32e8ab1dace04f143b821/Reinforcement-Learning-for-Adaptive-ETL-Workflows.pdf
+              - generic [ref=f10e140]: A Israel, A Paul - 2026 - researchgate.net
+              - generic [ref=f10e141]: … Automatic ETL/schema mapping using inferred transformations and schema matching. Self-healing/self-optimizing pipelines that detect failure modes and adjust execution. Learning-…
+              - generic [ref=f10e142]:
+                - button "Save" [ref=f10e143] [cursor=pointer]
+                - button "Cite" [ref=f10e146] [cursor=pointer]
+                - link "Related articles" [ref=f10e149] [cursor=pointer]:
+                  - /url: /scholar?q=related:3NR6vXSDyFQJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e150] [cursor=pointer]
+          - generic [ref=f10e154]:
+            - heading [level=3] [ref=f10e155]:
+              - 'link "Data integration in the AI era: Research trends and still open issues" [ref=f10e156] [cursor=pointer]':
+                - /url: https://link.springer.com/chapter/10.1007/978-3-032-02215-8_2
+            - generic [ref=f10e157]:
+              - link "R Wrembel" [ref=f10e158] [cursor=pointer]:
+                - /url: /citations?user=I0N3XFQAAAAJ&hl=en&oi=sra
+              - text: "- … Conference on Big Data Analytics and Knowledge …, 2025 - Springer"
+            - generic [ref=f10e159]: … , large volumes of highly heterogeneous data are produced, eg, … In the past, traditionally, schema matching has relied on a … [104] uses reinforcement learning for finding good system …
+            - generic [ref=f10e160]:
+              - button "Save" [ref=f10e161] [cursor=pointer]
+              - button "Cite" [ref=f10e164] [cursor=pointer]
+              - link "Cited by 5" [ref=f10e167] [cursor=pointer]:
+                - /url: /scholar?cites=11765984184012511724&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=f10e168] [cursor=pointer]:
+                - /url: /scholar?q=related:7BnuyEYsSaMJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 2 versions" [ref=f10e169] [cursor=pointer]:
+                - /url: /scholar?cluster=11765984184012511724&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f10e171]:
+            - heading [level=3] [ref=f10e172]:
+              - 'link "Data integration and storage strategies in heterogeneous analytical systems: architectures, methods, and interoperability challenges" [ref=f10e173] [cursor=pointer]':
+                - /url: https://search.proquest.com/openview/00dff6c6ad50b671cb432bec79b0b59a/1?pq-origsite=gscholar&cbl=2032384
+            - generic [ref=f10e174]:
+              - link "K Paraskevas" [ref=f10e175] [cursor=pointer]:
+                - /url: /citations?user=kZmoQ9MAAAAJ&hl=en&oi=sra
+              - text: "- Information, 2025 - search.proquest.com"
+            - generic [ref=f10e176]: … taxonomy that explicitly couples integration mechanisms (schema matching, entity resolution… —eg, learned cardinality estimators and reinforcement learning-based join ordering—to …
+            - generic [ref=f10e177]:
+              - button "Save" [ref=f10e178] [cursor=pointer]
+              - button "Cite" [ref=f10e181] [cursor=pointer]
+              - link "Cited by 22" [ref=f10e184] [cursor=pointer]:
+                - /url: /scholar?cites=18288427838781701958&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=f10e185] [cursor=pointer]:
+                - /url: /scholar?q=related:Rr_yHjmMzf0J:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 3 versions" [ref=f10e186] [cursor=pointer]:
+                - /url: /scholar?cluster=18288427838781701958&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f10e187]:
+            - link "[PDF] ubc.ca" [ref=f10e191] [cursor=pointer]:
+              - /url: https://open.library.ubc.ca/media/download/pdf/24/1.0451952/4
+            - generic [ref=f10e192]:
+              - heading [level=3] [ref=f10e193]:
+                - link "Integrating heterogeneous environmental permitting spreadsheets through LLM-assisted schema matching and deterministic normalization" [ref=f10e194] [cursor=pointer]:
+                  - /url: https://open.library.ubc.ca/soa/cIRcle/collections/ubctheses/24/items/1.0451952
+              - generic [ref=f10e195]: D Dehghani - 2026 - open.library.ubc.ca
+              - generic [ref=f10e196]: … data integration challenge as a schema matching and normalization problem and by developing a deterministic pipeline that transforms heterogeneous … , a reinforcement-learning (RL) …
+              - generic [ref=f10e197]:
+                - button "Save" [ref=f10e198] [cursor=pointer]
+                - button "Cite" [ref=f10e201] [cursor=pointer]
+                - link "Related articles" [ref=f10e204] [cursor=pointer]:
+                  - /url: /scholar?q=related:Iu2wruJVsmwJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f10e205] [cursor=pointer]:
+                  - /url: /scholar?cluster=7832417134032514338&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e206] [cursor=pointer]
+          - generic [ref=f10e209]:
+            - link "[PDF] uob.edu.bh" [ref=f10e213] [cursor=pointer]:
+              - /url: https://journal.uob.edu.bh/bitstreams/b4f161af-7411-435e-8bfc-46ba00a170b7/download
+            - generic [ref=f10e214]:
+              - heading [level=3] [ref=f10e215]:
+                - link "Semantic Schema Mapping for Heterogeneous Database Migration Using Transformer-Based Embedding's" [ref=f10e216] [cursor=pointer]:
+                  - /url: https://journal.uob.edu.bh/items/65677007-e0bc-422d-a40f-29427adb0153
+              - generic [ref=f10e217]:
+                - link "P Nalawade" [ref=f10e218] [cursor=pointer]:
+                  - /url: /citations?user=i76GZ4IAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "P Kumbharkar" [ref=f10e219] [cursor=pointer]:
+                  - /url: /citations?user=nt2gn7sAAAAJ&hl=en&oi=sra
+                - text: ", P Agarkar - 2026 - journal.uob.edu.bh"
+              - generic [ref=f10e220]: … Section 2 covers the literature review on relevant works in schema matching, transformer-based natural language processing techniques for structured data, and database migration to …
+              - generic [ref=f10e221]:
+                - button "Save" [ref=f10e222] [cursor=pointer]
+                - button "Cite" [ref=f10e225] [cursor=pointer]
+                - link "Related articles" [ref=f10e228] [cursor=pointer]:
+                  - /url: /scholar?q=related:CT50vXJA1pUJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f10e229] [cursor=pointer]:
+                  - /url: /scholar?cluster=10796888018216304137&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e230] [cursor=pointer]
+          - generic [ref=f10e233]:
+            - link "[PDF] alkindipublisher.com" [ref=f10e237] [cursor=pointer]:
+              - /url: https://alkindipublisher.com/index.php/jcsts/article/download/11533/10269
+            - generic [ref=f10e238]:
+              - heading [level=3] [ref=f10e239]:
+                - 'link "AI-driven data integration: Transforming enterprise data pipelines through machine learning" [ref=f10e240] [cursor=pointer]':
+                  - /url: https://alkindipublisher.com/index.php/jcsts/article/view/11533
+              - generic [ref=f10e241]: NRS Reddy, M Adapa - Journal of Computer Science and …, 2025 - alkindipublisher.com
+              - generic [ref=f10e242]: … The article identifies key machine learning techniques enabling automated schema matching, … Reinforcement learning mechanisms optimize quality rules over time based on feedback …
+              - generic [ref=f10e243]:
+                - button "Save" [ref=f10e244] [cursor=pointer]
+                - button "Cite" [ref=f10e247] [cursor=pointer]
+                - link "Cited by 10" [ref=f10e250] [cursor=pointer]:
+                  - /url: /scholar?cites=17547077009576243838&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f10e251] [cursor=pointer]:
+                  - /url: /scholar?q=related:fjI3YpK9g_MJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e252] [cursor=pointer]
+          - generic [ref=f10e255]:
+            - link "[PDF] researchgate.net" [ref=f10e259] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Rapheal-Alamu/publication/389548301_AI_for_Data_Harmonization_Overcoming_Challenges_in_Multi-_Source_Data_Integration/links/67c718c996e7fb48b9d886f0/AI-for-Data-Harmonization-Overcoming-Challenges-in-Multi-Source-Data-Integration.pdf
+            - generic [ref=f10e260]:
+              - 'heading "[PDF] AI for Data Harmonization: Overcoming Challenges in Multi-Source Data Integration" [level=3] [ref=f10e261]':
+                - generic [ref=f10e262]: "[PDF]"
+                - 'link "AI for Data Harmonization: Overcoming Challenges in Multi-Source Data Integration" [ref=f10e263] [cursor=pointer]':
+                  - /url: https://www.researchgate.net/profile/Rapheal-Alamu/publication/389548301_AI_for_Data_Harmonization_Overcoming_Challenges_in_Multi-_Source_Data_Integration/links/67c718c996e7fb48b9d886f0/AI-for-Data-Harmonization-Overcoming-Challenges-in-Multi-Source-Data-Integration.pdf
+              - generic [ref=f10e264]:
+                - link "R Alamu" [ref=f10e265] [cursor=pointer]:
+                  - /url: /citations?user=eqzH9M0AAAAJ&hl=en&oi=sra
+                - text: "- Journal of Cyber Security, 2025 - researchgate.net"
+              - generic [ref=f10e266]: "… reinforcement learning for adaptive integration, and generative … • Automating Schema Matching: Using supervised and … multi-source, heterogeneous data more efficiently and …"
+              - generic [ref=f10e267]:
+                - button "Save" [ref=f10e268] [cursor=pointer]
+                - button "Cite" [ref=f10e271] [cursor=pointer]
+                - link "Cited by 2" [ref=f10e274] [cursor=pointer]:
+                  - /url: /scholar?cites=7784682014810236537&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f10e275] [cursor=pointer]:
+                  - /url: /scholar?q=related:eeYiJgy_CGwJ:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e276] [cursor=pointer]
+          - generic [ref=f10e279]:
+            - link "[PDF] hal.science" [ref=f10e283] [cursor=pointer]:
+              - /url: https://hal.science/hal-05575002/document
+            - generic [ref=f10e284]:
+              - heading [level=3] [ref=f10e285]:
+                - 'link "A Survey on AI Agents for Data Management: Taxonomy, Progress, and Opportunities" [ref=f10e286] [cursor=pointer]':
+                  - /url: https://hal.science/hal-05575002/
+              - generic [ref=f10e287]:
+                - link "A Rahee" [ref=f10e288] [cursor=pointer]:
+                  - /url: /citations?user=Tqbjp-QAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "A Khan" [ref=f10e289] [cursor=pointer]:
+                  - /url: /citations?user=6Y-m8k4AAAAJ&hl=en&oi=sra
+                - text: "- 2026 - hal.science"
+              - generic [ref=f10e290]: … , ALASKA [20] for data integration, and a record linkage … through reinforcement learning from human feedback (RLHF) or data… LLM-based agents for schema matching remain at an early …
+              - generic [ref=f10e291]:
+                - button "Save" [ref=f10e292] [cursor=pointer]
+                - button "Cite" [ref=f10e295] [cursor=pointer]
+                - link "Related articles" [ref=f10e298] [cursor=pointer]:
+                  - /url: /scholar?q=related:xwZJtBdcwk4J:scholar.google.com/&scioq=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f10e299] [cursor=pointer]
+        - navigation [ref=f10e303]:
+          - table [ref=f10e305]:
+            - rowgroup [ref=f10e306]:
+              - row [ref=f10e307]:
+                - cell [ref=f10e308]
+                - cell "1" [ref=f10e310]
+                - cell [ref=f10e312]:
+                  - link "2" [ref=f10e313] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e315]:
+                  - link "3" [ref=f10e316] [cursor=pointer]:
+                    - /url: /scholar?start=20&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e318]:
+                  - link "4" [ref=f10e319] [cursor=pointer]:
+                    - /url: /scholar?start=30&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e321]:
+                  - link "5" [ref=f10e322] [cursor=pointer]:
+                    - /url: /scholar?start=40&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e324]:
+                  - link "6" [ref=f10e325] [cursor=pointer]:
+                    - /url: /scholar?start=50&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e327]:
+                  - link "7" [ref=f10e328] [cursor=pointer]:
+                    - /url: /scholar?start=60&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e330]:
+                  - link "8" [ref=f10e331] [cursor=pointer]:
+                    - /url: /scholar?start=70&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e333]:
+                  - link "9" [ref=f10e334] [cursor=pointer]:
+                    - /url: /scholar?start=80&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e336]:
+                  - link "10" [ref=f10e337] [cursor=pointer]:
+                    - /url: /scholar?start=90&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f10e339]:
+                  - link "Next" [ref=f10e340] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=%22schema+matching%22+%22reinforcement+learning%22+heterogeneous+data+integration&hl=en&as_sdt=0,5&as_ylo=2023
+  - contentinfo [ref=f10e343]:
+    - generic [ref=f10e344]:
+      - link "Privacy" [ref=f10e345] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/privacy/
+      - link "Terms" [ref=f10e346] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/terms/
+      - button "Help" [ref=f10e347] [cursor=pointer]

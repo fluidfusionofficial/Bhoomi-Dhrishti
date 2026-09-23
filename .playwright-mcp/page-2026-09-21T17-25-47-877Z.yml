@@ -1,0 +1,317 @@
+- generic [ref=f8e2]:
+  - banner [ref=f8e3]:
+    - button [ref=f8e4] [cursor=pointer]
+    - link "Homepage" [ref=f8e6] [cursor=pointer]:
+      - /url: /schhp?hl=en&as_sdt=0,5
+    - generic [ref=f8e9]:
+      - textbox "Search" [ref=f8e11]: knowledge graph land records cadastral digital twin geospatial
+      - button "Search" [ref=f8e12] [cursor=pointer]
+    - link "Sign in" [ref=f8e16] [cursor=pointer]:
+      - /url: https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/scholar%3Fq%3Dknowledge%2Bgraph%2Bland%2Brecords%2Bcadastral%2Bdigital%2Btwin%2Bgeospatial%26hl%3Den%26as_sdt%3D0%252C5%26as_ylo%3D2023
+  - generic [ref=f8e17]:
+    - generic [ref=f8e20]: Articles
+    - generic [ref=f8e22]: About 845 results (0.18 sec)
+    - generic [ref=f8e24]:
+      - link "My profile" [ref=f8e25] [cursor=pointer]:
+        - /url: /citations?hl=en
+      - link "My library" [ref=f8e28] [cursor=pointer]:
+        - /url: /scholar?scilib=1&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5
+  - generic [ref=f8e31]:
+    - navigation [ref=f8e32]:
+      - generic [ref=f8e33]:
+        - generic [ref=f8e34]:
+          - list [ref=f8e35]:
+            - listitem [ref=f8e36]:
+              - link "Any time" [ref=f8e37] [cursor=pointer]:
+                - /url: /scholar?q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5
+            - listitem [ref=f8e38]:
+              - link "Since 2026" [ref=f8e39] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2026&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5
+            - listitem [ref=f8e40]:
+              - link "Since 2025" [ref=f8e41] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2025&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5
+            - listitem [ref=f8e42]:
+              - link "Since 2022" [ref=f8e43] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2022&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5
+            - listitem [ref=f8e44]:
+              - link "Custom range..." [ref=f8e45] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=f8e46]:
+            - generic [ref=f8e47]:
+              - textbox [ref=f8e49]: "2023"
+              - text: —
+              - textbox [ref=f8e51]
+            - button "Search" [ref=f8e53] [cursor=pointer]
+        - list [ref=f8e56]:
+          - listitem [ref=f8e57]:
+            - link "Sort by relevance" [ref=f8e58] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&as_ylo=2023&q=%22knowledge+graph%22++land+records+cadastral+digital+twin+geospatial
+          - listitem [ref=f8e59]:
+            - link "Sort by date" [ref=f8e60] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&q=%22knowledge+graph%22++land+records+cadastral+digital+twin+geospatial&scisbd=1
+        - list [ref=f8e61]:
+          - listitem [ref=f8e62]:
+            - link "Any type" [ref=f8e63] [cursor=pointer]:
+              - /url: /scholar?q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+          - listitem [ref=f8e64]:
+            - link "Review articles" [ref=f8e65] [cursor=pointer]:
+              - /url: /scholar?q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023&as_rr=1
+        - list [ref=f8e66]:
+          - listitem [ref=f8e67]:
+            - checkbox "include patents" [ref=f8e68] [cursor=pointer]
+          - listitem [ref=f8e72]:
+            - checkbox "include citations" [checked] [ref=f8e73] [cursor=pointer]
+        - link "Create alert" [ref=f8e78] [cursor=pointer]:
+          - /url: /scholar_alerts?view_op=create_alert_options&hl=en&alert_query=%22knowledge+graph%22++land+records+cadastral+digital+twin+geospatial&alert_params=%3Fhl%3Den%26as_sdt%3D0,5
+    - main [ref=f8e81]:
+      - generic [ref=f8e82]:
+        - generic [ref=f8e83]:
+          - generic [ref=f8e84]:
+            - link "[HTML] mdpi.com" [ref=f8e88] [cursor=pointer]:
+              - /url: https://www.mdpi.com/2220-9964/15/7/278
+            - generic [ref=f8e89]:
+              - 'heading "[HTML] Big Data Analytics for Geospatial Decision-Making in Smart Cities: A Review of Spatial Data, GeoAI and Urban Digital Twins" [level=3] [ref=f8e90]':
+                - generic [ref=f8e91]: "[HTML]"
+                - 'link "Big Data Analytics for Geospatial Decision-Making in Smart Cities: A Review of Spatial Data, GeoAI and Urban Digital Twins" [ref=f8e92] [cursor=pointer]':
+                  - /url: https://www.mdpi.com/2220-9964/15/7/278
+              - generic [ref=f8e93]:
+                - link "L Theodorakopoulos" [ref=f8e94] [cursor=pointer]:
+                  - /url: /citations?user=I0TOcwEAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "A Theodoropoulou" [ref=f8e95] [cursor=pointer]:
+                  - /url: /citations?user=_HzPDIEAAAAJ&hl=en&oi=sra
+                - text: "- ISPRS International Journal of …, 2026 - mdpi.com"
+              - generic [ref=f8e96]: … Administrative, cadastral, open, and volunteered geospatial data differ from sensor and … and more as spatial knowledge bases. They define land parcels, addresses, property rights, …
+              - generic [ref=f8e97]:
+                - button "Save" [ref=f8e98] [cursor=pointer]
+                - button "Cite" [ref=f8e101] [cursor=pointer]
+                - link "Cited by 1" [ref=f8e104] [cursor=pointer]:
+                  - /url: /scholar?cites=12387815270075768074&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f8e105] [cursor=pointer]:
+                  - /url: /scholar?q=related:Cp0GzFpc6qsJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f8e106] [cursor=pointer]:
+                  - /url: /scholar?cluster=12387815270075768074&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e107] [cursor=pointer]
+          - generic [ref=f8e110]:
+            - link "[HTML] mdpi.com" [ref=f8e114] [cursor=pointer]:
+              - /url: https://www.mdpi.com/2220-9964/15/6/247
+            - generic [ref=f8e115]:
+              - 'heading "[HTML] Development of an Urban Digital Twin Based on Geospatial Data: A Case Study of Busan, South Korea" [level=3] [ref=f8e116]':
+                - generic [ref=f8e117]: "[HTML]"
+                - 'link "Development of an Urban Digital Twin Based on Geospatial Data: A Case Study of Busan, South Korea" [ref=f8e118] [cursor=pointer]':
+                  - /url: https://www.mdpi.com/2220-9964/15/6/247
+              - generic [ref=f8e119]: T Jeong, D Jeong, M Kim - ISPRS International Journal of Geo-Information, 2026 - mdpi.com
+              - generic [ref=f8e120]: … knowledge-driven approaches. This study constructed a Geographical Scene Knowledge Graph … integrates building spatial data based on continuous cadastral polygon information and …
+              - generic [ref=f8e121]:
+                - button "Save" [ref=f8e122] [cursor=pointer]
+                - button "Cite" [ref=f8e125] [cursor=pointer]
+                - link "Cited by 1" [ref=f8e128] [cursor=pointer]:
+                  - /url: /scholar?cites=4083254067512620125&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f8e129] [cursor=pointer]:
+                  - /url: /scholar?q=related:XTTCvfChqjgJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 4 versions" [ref=f8e130] [cursor=pointer]:
+                  - /url: /scholar?cluster=4083254067512620125&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e131] [cursor=pointer]
+          - generic [ref=f8e134]:
+            - link "[HTML] mdpi.com" [ref=f8e138] [cursor=pointer]:
+              - /url: https://www.mdpi.com/2073-445X/15/3/411
+            - generic [ref=f8e139]:
+              - 'heading "[HTML] Artificial Intelligence in Cadastre: A Systematic Review of Methods, Applications, and Trends" [level=3] [ref=f8e140]':
+                - generic [ref=f8e141]: "[HTML]"
+                - 'link "Artificial Intelligence in Cadastre: A Systematic Review of Methods, Applications, and Trends" [ref=f8e142] [cursor=pointer]':
+                  - /url: https://www.mdpi.com/2073-445X/15/3/411
+              - generic [ref=f8e143]:
+                - text: J Chen,
+                - link "M Nazeer" [ref=f8e144] [cursor=pointer]:
+                  - /url: /citations?user=uDGLThoAAAAJ&hl=en&oi=sra
+                - text: ", BS Lee,"
+                - link "MS Wong" [ref=f8e145] [cursor=pointer]:
+                  - /url: /citations?user=poqz28gAAAAJ&hl=en&oi=sra
+                - text: "- Land, 2026 - mdpi.com"
+              - generic [ref=f8e146]: … AI-driven 3D models are becoming the foundation of digital twins. They can be used to … In terms of non-spatial data, the application of NLP and knowledge graph technology has …
+              - generic [ref=f8e147]:
+                - button "Save" [ref=f8e148] [cursor=pointer]
+                - button "Cite" [ref=f8e151] [cursor=pointer]
+                - link "Cited by 1" [ref=f8e154] [cursor=pointer]:
+                  - /url: /scholar?cites=11638413479106568250&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f8e155] [cursor=pointer]:
+                  - /url: /scholar?q=related:OuBDc2Xzg6EJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 7 versions" [ref=f8e156] [cursor=pointer]:
+                  - /url: /scholar?cluster=11638413479106568250&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e157] [cursor=pointer]
+          - generic [ref=f8e160]:
+            - link "[PDF] ieee.org" [ref=f8e164] [cursor=pointer]:
+              - /url: https://ieeexplore.ieee.org/iel8/6287639/6514899/11573884.pdf
+            - generic [ref=f8e165]:
+              - heading [level=3] [ref=f8e166]:
+                - link "A Declarative Geographic Knowledge Graph Framework for District-Scale Urban Infrastructure Analysis" [ref=f8e167] [cursor=pointer]:
+                  - /url: https://ieeexplore.ieee.org/abstract/document/11573884/
+              - generic [ref=f8e168]:
+                - link "CS Lee" [ref=f8e169] [cursor=pointer]:
+                  - /url: /citations?user=qZryTaEAAAAJ&hl=en&oi=sra
+                - text: ", D Park, J Choi, H Chang - IEEE Access, 2026 - ieeexplore.ieee.org"
+              - generic [ref=f8e170]: … (LLM)-driven knowledge representation for geospatial digital twins, suggesting hybrid … parcel-count ratio because the LSMD cadastral SHP read and the PNU spatial-join used to attach …
+              - generic [ref=f8e171]:
+                - button "Save" [ref=f8e172] [cursor=pointer]
+                - button "Cite" [ref=f8e175] [cursor=pointer]
+                - link "Related articles" [ref=f8e178] [cursor=pointer]:
+                  - /url: /scholar?q=related:CKGF7omc5VAJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f8e180]:
+            - 'heading "[BOOK] Land Intelligence and Geospatial Ecosystem: Sustainability, Digital and AI Innovations, and Applications" [level=3] [ref=f8e181]':
+              - generic [ref=f8e182]: "[BOOK]"
+              - 'link "Land Intelligence and Geospatial Ecosystem: Sustainability, Digital and AI Innovations, and Applications" [ref=f8e183] [cursor=pointer]':
+                - /url: https://books.google.com/books?hl=en&lr=&id=5BPaEQAAQBAJ&oi=fnd&pg=PT9&dq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&ots=KTlwhFjIIS&sig=JMaq_3pklW9Sbyf86JIMWqjjybc
+            - generic [ref=f8e184]:
+              - link "A Rajabifard" [ref=f8e185] [cursor=pointer]:
+                - /url: /citations?user=rvzqsHkAAAAJ&hl=en&oi=sra
+              - text: ","
+              - link "B Atazadeh" [ref=f8e186] [cursor=pointer]:
+                - /url: /citations?user=ptKUzK0AAAAJ&hl=en&oi=sra
+              - text: "- 2026 - books.google.com"
+            - generic [ref=f8e187]: … expertise in spatial data infrastructures (SDIs), 3D cadastre, … , geospatial digital twins, and immersive visualization platforms such as augmented reality (AR) and virtual reality (VR), land …
+            - generic [ref=f8e188]:
+              - button "Save" [ref=f8e189] [cursor=pointer]
+              - button "Cite" [ref=f8e192] [cursor=pointer]
+              - link "Cited by 1" [ref=f8e195] [cursor=pointer]:
+                - /url: /scholar?cites=11166147663930711591&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=f8e196] [cursor=pointer]:
+                - /url: /scholar?q=related:J94luiMg9poJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f8e197]:
+            - link "[HTML] mdpi.com" [ref=f8e201] [cursor=pointer]:
+              - /url: https://www.mdpi.com/2220-9964/15/5/207
+            - generic [ref=f8e202]:
+              - 'heading "[HTML] LandXML and LandInfra: A Technical Comparison for 3D Cadastre Data Modelling in New South Wales, Australia" [level=3] [ref=f8e203]':
+                - generic [ref=f8e204]: "[HTML]"
+                - 'link "LandXML and LandInfra: A Technical Comparison for 3D Cadastre Data Modelling in New South Wales, Australia" [ref=f8e205] [cursor=pointer]':
+                  - /url: https://www.mdpi.com/2220-9964/15/5/207
+              - generic [ref=f8e206]:
+                - text: K Gillespie,
+                - link "DR Paudyal" [ref=f8e207] [cursor=pointer]:
+                  - /url: /citations?user=EdsxZJ4AAAAJ&hl=en&oi=sra
+                - text: "- ISPRS International Journal of Geo-Information, 2026 - mdpi.com"
+              - generic [ref=f8e208]: … for modernising cadastral systems in Australia. As Australian jurisdictions increasingly pursue parcel fabrics, BIM–GIS integration, and spatial digital twins under the Cadastre 2034 …
+              - generic [ref=f8e209]:
+                - button "Save" [ref=f8e210] [cursor=pointer]
+                - button "Cite" [ref=f8e213] [cursor=pointer]
+                - link "Related articles" [ref=f8e216] [cursor=pointer]:
+                  - /url: /scholar?q=related:o5XX43Y6UdUJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 5 versions" [ref=f8e217] [cursor=pointer]:
+                  - /url: /scholar?cluster=15371131285495322019&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e218] [cursor=pointer]
+          - generic [ref=f8e221]:
+            - link "[PDF] itcon.org" [ref=f8e225] [cursor=pointer]:
+              - /url: https://itcon.org/papers/2026_36-ITcon-Ramonell-Cazador.pdf
+            - generic [ref=f8e226]:
+              - heading "[PDF] A KNOWLEDGE GRAPH-BASED DIGITAL TWIN SYSTEM FOR BRIDGE NETWORK CONDITION MONITORING" [level=3] [ref=f8e227]:
+                - generic [ref=f8e228]: "[PDF]"
+                - link "A KNOWLEDGE GRAPH-BASED DIGITAL TWIN SYSTEM FOR BRIDGE NETWORK CONDITION MONITORING" [ref=f8e229] [cursor=pointer]:
+                  - /url: https://itcon.org/papers/2026_36-ITcon-Ramonell-Cazador.pdf
+              - generic [ref=f8e230]:
+                - link "P Pauwels" [ref=f8e231] [cursor=pointer]:
+                  - /url: /citations?user=ZpQ2tRYAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "R Chacón" [ref=f8e232] [cursor=pointer]:
+                  - /url: /citations?user=RIpoCcIAAAAJ&hl=en&oi=sra
+                - text: "- 2026 - itcon.org"
+              - generic [ref=f8e233]: … Furthermore, the system enables the resolution of context-rich queries that combine GIS, BIM, and inspection data. This study demonstrates how Digital Twins can be conceptualised …
+              - generic [ref=f8e234]:
+                - button "Save" [ref=f8e235] [cursor=pointer]
+                - button "Cite" [ref=f8e238] [cursor=pointer]
+                - link "Related articles" [ref=f8e241] [cursor=pointer]:
+                  - /url: /scholar?q=related:4wmhMOmxrrUJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e242] [cursor=pointer]
+          - generic [ref=f8e245]:
+            - link "[PDF] isg-konf.com" [ref=f8e249] [cursor=pointer]:
+              - /url: https://isg-konf.com/wp-content/uploads/2026/03/979-8-90214-541-7.pdf
+            - generic [ref=f8e250]:
+              - heading "[BOOK] INTELLECTUAL PROCESSING OF GEOSPATIAL AND GEODETIC DATA IN MUNICIPAL MANAGEMENT SYSTEMS" [level=3] [ref=f8e251]:
+                - generic [ref=f8e252]: "[BOOK]"
+                - link "INTELLECTUAL PROCESSING OF GEOSPATIAL AND GEODETIC DATA IN MUNICIPAL MANAGEMENT SYSTEMS" [ref=f8e253] [cursor=pointer]:
+                  - /url: https://books.google.com/books?hl=en&lr=&id=gBzkEQAAQBAJ&oi=fnd&pg=PA9&dq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&ots=Cpi8lX5CkU&sig=xGChqL_NfFqPj8ZjAtVWYQBRrww
+              - generic [ref=f8e254]: S Nesterenko, O Baistruk, K Musiienko, O Frolov - books.google.com
+              - generic [ref=f8e255]: … , orthophoto plans, and cadastral maps form the geometric basis of GIS, while attribute data … digital twin concepts, in which geodetic and geospatial data serve as the basis for building …
+              - generic [ref=f8e256]:
+                - button "Save" [ref=f8e257] [cursor=pointer]
+                - button "Cite" [ref=f8e260] [cursor=pointer]
+                - link "Related articles" [ref=f8e263] [cursor=pointer]:
+                  - /url: /scholar?q=related:_3Ua8XIL4pgJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f8e264] [cursor=pointer]:
+                  - /url: /scholar?cluster=11016380226800875007&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f8e265]:
+            - link "[PDF] tandfonline.com" [ref=f8e269] [cursor=pointer]:
+              - /url: https://www.tandfonline.com/doi/pdf/10.1080/27525783.2025.2610851
+            - generic [ref=f8e270]:
+              - heading [level=3] [ref=f8e271]:
+                - link "Advances, challenges and prospective research when geographical information science meets digital twin" [ref=f8e272] [cursor=pointer]:
+                  - /url: https://www.tandfonline.com/doi/abs/10.1080/27525783.2025.2610851
+              - generic [ref=f8e273]: C Xue, L Li, J Liu, F Su, W Wu, Z Ma, Z Xiang, S Wu… - Digital Twin, 2025 - Taylor & Francis
+              - generic [ref=f8e274]: … is on the application of digital twins in GIS, literature from industrial … They employed a conceptual knowledge graph to delineate … Jia et al. proposed a knowledge graph using a scenario …
+              - generic [ref=f8e275]:
+                - button "Save" [ref=f8e276] [cursor=pointer]
+                - button "Cite" [ref=f8e279] [cursor=pointer]
+                - link "Cited by 3" [ref=f8e282] [cursor=pointer]:
+                  - /url: /scholar?cites=722796982765008972&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f8e283] [cursor=pointer]:
+                  - /url: /scholar?q=related:TLhuugbkBwoJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f8e284] [cursor=pointer]:
+                  - /url: /scholar?cluster=722796982765008972&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f8e285]:
+            - link "[PDF] lu.se" [ref=f8e289] [cursor=pointer]:
+              - /url: https://lup.lub.lu.se/luur/download?func=downloadFile&recordOId=9233394&fileOId=9233416
+            - generic [ref=f8e290]:
+              - heading [level=3] [ref=f8e291]:
+                - 'link "Towards Data-Centric Geospatial Applications: A Knowledge Graph Approach to Road Maintenance in Stockholm, Sweden" [ref=f8e292] [cursor=pointer]':
+                  - /url: https://lup.lub.lu.se/student-papers/search/publication/9233394
+              - generic [ref=f8e293]: J Wahlberg - Master Thesis in Geographic Information Science, 2026 - lup.lub.lu.se
+              - generic [ref=f8e294]: … Digital twins offer great potential for transforming urban … develops a data-centric knowledge graph-based tool for road … The tool was constructed integrating geospatial road data …
+              - generic [ref=f8e295]:
+                - button "Save" [ref=f8e296] [cursor=pointer]
+                - button "Cite" [ref=f8e299] [cursor=pointer]
+                - link "Related articles" [ref=f8e302] [cursor=pointer]:
+                  - /url: /scholar?q=related:8o1_dR6-TgEJ:scholar.google.com/&scioq=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f8e303] [cursor=pointer]:
+                  - /url: /scholar?cluster=94221680250949106&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f8e304] [cursor=pointer]
+        - navigation [ref=f8e308]:
+          - table [ref=f8e310]:
+            - rowgroup [ref=f8e311]:
+              - row [ref=f8e312]:
+                - cell [ref=f8e313]
+                - cell "1" [ref=f8e315]
+                - cell [ref=f8e317]:
+                  - link "2" [ref=f8e318] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e320]:
+                  - link "3" [ref=f8e321] [cursor=pointer]:
+                    - /url: /scholar?start=20&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e323]:
+                  - link "4" [ref=f8e324] [cursor=pointer]:
+                    - /url: /scholar?start=30&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e326]:
+                  - link "5" [ref=f8e327] [cursor=pointer]:
+                    - /url: /scholar?start=40&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e329]:
+                  - link "6" [ref=f8e330] [cursor=pointer]:
+                    - /url: /scholar?start=50&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e332]:
+                  - link "7" [ref=f8e333] [cursor=pointer]:
+                    - /url: /scholar?start=60&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e335]:
+                  - link "8" [ref=f8e336] [cursor=pointer]:
+                    - /url: /scholar?start=70&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e338]:
+                  - link "9" [ref=f8e339] [cursor=pointer]:
+                    - /url: /scholar?start=80&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e341]:
+                  - link "10" [ref=f8e342] [cursor=pointer]:
+                    - /url: /scholar?start=90&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f8e344]:
+                  - link "Next" [ref=f8e345] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=knowledge+graph+land+records+cadastral+digital+twin+geospatial&hl=en&as_sdt=0,5&as_ylo=2023
+  - contentinfo [ref=f8e348]:
+    - generic [ref=f8e349]:
+      - link "Privacy" [ref=f8e350] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/privacy/
+      - link "Terms" [ref=f8e351] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/terms/
+      - button "Help" [ref=f8e352] [cursor=pointer]

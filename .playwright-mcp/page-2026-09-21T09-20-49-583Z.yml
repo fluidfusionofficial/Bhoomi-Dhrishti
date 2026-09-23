@@ -1,0 +1,292 @@
+- generic [active] [ref=f21e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=f21e2] [cursor=pointer]
+      - link "Accessibility help" [ref=f21e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-IN
+  - generic [ref=f21e8]:
+    - search [ref=f21e9]:
+      - generic [ref=f21e11]:
+        - link "Go to Google Home" [ref=f21e13] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQPHoECAYQBA
+        - generic [ref=f21e21]:
+          - generic [ref=f21e22]:
+            - combobox "Search" [ref=f21e25]: benami property India detection statistics enforcement data benami property India detection statistics enforcement data
+            - generic [ref=f21e26]:
+              - button "Clear" [ref=f21e28] [cursor=pointer]
+              - generic [ref=f21e33]:
+                - button "Search by voice" [ref=f21e34] [cursor=pointer]
+                - button "Search by image" [ref=f21e37] [cursor=pointer]
+          - button "Search" [ref=f21e40] [cursor=pointer]
+    - generic [ref=f21e45]:
+      - button "Settings" [ref=f21e47] [cursor=pointer]
+      - button "Share" [ref=f21e52] [cursor=pointer]
+      - generic [ref=f21e58]:
+        - button "Google apps" [ref=f21e60] [cursor=pointer]
+        - link "Sign in" [ref=f21e65] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3Dbenami%2Bproperty%2BIndia%2Bdetection%2Bstatistics%2Benforcement%2Bdata&ec=futura_srp_og_si_72236_p
+  - generic [ref=f21e68]:
+    - navigation [ref=f21e74]:
+      - generic [ref=f21e80]:
+        - list [ref=f21e81]:
+          - listitem [ref=f21e82]:
+            - link "AI Mode" [ref=f21e85] [cursor=pointer]:
+              - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&vsint=&aep=1&ntc=1&cs=0&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ2J8OegQIFBAD
+          - listitem [ref=f21e89]:
+            - link "All" [disabled] [ref=f21e90]
+          - listitem [ref=f21e93]:
+            - link "News" [ref=f21e94] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&q=benami+property+India+detection+statistics+enforcement+data&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ0pQJegQIGhAB
+          - listitem [ref=f21e97]:
+            - link "Images" [ref=f21e98] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&q=benami+property+India+detection+statistics+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQtKgLegQIGRAB
+          - listitem [ref=f21e101]:
+            - link "Forums" [ref=f21e102] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&udm=forums&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&q=benami+property+India+detection+statistics+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQs6gLegQIGBAB
+          - listitem [ref=f21e105]:
+            - link "Videos" [ref=f21e106] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&udm=vids&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&q=benami+property+India+detection+statistics+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQtKgLegQIFxAB
+          - listitem [ref=f21e109]:
+            - link "Shopping" [ref=f21e110] [cursor=pointer]:
+              - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&udm=28&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmay7g8A9uk3RMhUeUijinctulxwCpwLLK57lpGcvd-YuiTOY7_e3ajwwe3WEEa9HjKGBAPo-w3czrTMeL2RWEf7kx1dHBbL8QRQX0MyEXyidFbEEaMVG0nrF88t50tuFtW1c9uow&q=benami+property+India+detection+statistics+enforcement+data&ved=1t:220175&ictx=111
+          - listitem [ref=f21e113]:
+            - button [ref=f21e114] [cursor=pointer]:
+              - generic "More filters" [ref=f21e115]: More
+        - button "Tools" [ref=f21e122] [cursor=pointer]
+    - heading "Search Results" [level=1] [ref=f21e129]
+    - generic [ref=f21e134]:
+      - generic [ref=f21e153]:
+        - heading "Thinking" [level=2] [ref=f21e157]
+        - progressbar "Generating" [ref=f21e160]
+      - main [ref=f21e162]:
+        - generic [ref=f21e166]:
+          - generic [ref=f21e169]:
+            - heading "Web results" [level=2] [ref=f21e170]
+            - generic [ref=f21e171]:
+              - generic [ref=f21e174]:
+                - 'link "The Hunt for Benami Property: A Data-Driven Approach to ... Asian Development Bank https://www.adb.org › publications › the-hunt-for-bena..." [ref=f21e176] [cursor=pointer]':
+                  - /url: /goto?url=CAESpwEB6zswFSVCpznI5EESD_YS1qu-Qx7RQdDYbzVV6F4NZJ2vjFbqEEFjhYiiBF-l1oonCzeXDJdBan-TR6v9Lj5ItsquRj2ttiaXwYo0q1FpBCw67cV_JC3GvCZngAmaK_kpH78Qk6C-QsUadv6o8QiUAZlF7VixHBx91HiJ-uKf4v2YYmpNxgZZg11ncrPMMNy6gSaDpnXT39sEB0x-Rl7sbc6uMF6U7Q
+                  - 'heading "The Hunt for Benami Property: A Data-Driven Approach to ..." [level=3] [ref=f21e177]'
+                  - generic [ref=f21e183]:
+                    - generic [ref=f21e184]: Asian Development Bank
+                    - generic [ref=f21e186]: https://www.adb.org › publications › the-hunt-for-bena...
+                - button "About this result" [ref=f21e192] [cursor=pointer]
+              - generic [ref=f21e198]:
+                - generic [ref=f21e199]: by S Bijur · 2025 —
+                - generic [ref=f21e200]:
+                  - text: A
+                  - emphasis [ref=f21e201]: data
+                  - text: "-driven approach reveals how Indian authorities are uncovering illicit"
+                  - emphasis [ref=f21e202]: property
+                  - text: holdings and strengthening financial investigations.
+              - generic [ref=f21e204]:
+                - text: "Missing: statistics ‎| Show results with:"
+                - link "statistics" [ref=f21e205] [cursor=pointer]:
+                  - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&q=benami+property+India+detection+%22statistics%22+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ5t4CegQIHBAB
+          - generic [ref=f21e209]:
+            - generic [ref=f21e212]:
+              - link "Identification of Benami Properties PIB https://www.pib.gov.in › PressReleasePage" [ref=f21e214] [cursor=pointer]:
+                - /url: /goto?url=CAEScQHrOzAVC-vCJ4L2Dm10gMlEgBIGJiFTLmFz63o1jDFeWcPQ48vpSZ83CX14iMTyh0zrFf7iApQrC74eog1MiHafi0jd0vVfljkLEEJOuZwSj_Omd_fTLT_JN_cWTA3lBLYxO17sZoRC23xFS3WzWFoh
+                - heading "Identification of Benami Properties" [level=3] [ref=f21e215]
+                - generic [ref=f21e221]:
+                  - generic [ref=f21e222]: PIB
+                  - generic [ref=f21e224]: https://www.pib.gov.in › PressReleasePage
+              - button "About this result" [ref=f21e230] [cursor=pointer]
+            - generic [ref=f21e236]:
+              - generic [ref=f21e237]: 24 Jul 2018 —
+              - generic [ref=f21e238]:
+                - text: The Government of
+                - emphasis [ref=f21e239]: India
+                - text: has taken various steps to identify
+                - emphasis [ref=f21e240]: Benami
+                - text: Properties. The Income-tax Department (ITD) has set-up 24 dedicated
+                - emphasis [ref=f21e241]: Benami
+                - text: ...
+              - link "Read more" [ref=f21e242] [cursor=pointer]:
+                - /url: /goto?url=CAESzQEB6zswFQkXjQiB-hC_49wzYTlagjqIYYLkJaF16VU6qJwn_itBGwuECIZKBwT1S7ZbTcf4pr_-0rtUpmQe69Msz9A2ZsmYkBZjJkvPV7aqBT7ph5uwS_iboPMYw9hZnC22TezXC4QuOH_EHaqwj5BBok-vVTm3I2KatO07yXDuAwkbMKMlds-z4lrzrHl89x1eoMdDQiUVZ_i8hYUJQv4TFktv7-iR5csm-2ydcf5Zq7StM1pJukN83SXAUoF7jqcso-4uKkVVLgAA6q2E
+            - generic [ref=f21e243]: "Missing: statistics ‎enforcement"
+          - generic [ref=f21e248]:
+            - generic [ref=f21e251]:
+              - 'link "Benami Transactions In India: A Historical And ... Legal 500 https://www.legal500.com › Intelligence › India › Tax" [ref=f21e253] [cursor=pointer]':
+                - /url: /goto?url=CAESqgEB6zswFU3fIVQI2_MP_9BoozabVfyNBAygWNX30BJASPs8C8JGunq_dwwkwBeft_g_65MXDu49E2nRMkRBsRDDRIlhVW8pXJNWDTUN2pKGVIxNkypVnxD94ehe235OcpL4kUS2YQOuFbZArFCyh-4Nx1_aYnJHbgceKh82j3f8h6qy3M3AdMAWar3_b460sfALESfYTVfVo6uas7Ao2QGRvHI3T7CFxcTitA
+                - 'heading "Benami Transactions In India: A Historical And ..." [level=3] [ref=f21e254]'
+                - generic [ref=f21e260]:
+                  - generic [ref=f21e261]: Legal 500
+                  - generic [ref=f21e263]: https://www.legal500.com › Intelligence › India › Tax
+              - button "About this result" [ref=f21e269] [cursor=pointer]
+            - generic [ref=f21e275]:
+              - generic [ref=f21e276]:
+                - emphasis [ref=f21e277]: Benami transactions have been a long-standing concern in India
+                - text: ", deeply rooted in historical practices and contemporary economic offences. IndiaTax."
+              - link "Read more" [ref=f21e278] [cursor=pointer]:
+                - /url: /goto?url=CAES5AEB6zswFWAxmSTnFVeWPWjtcxtFF_GNeK-JfxlXg0dW9jjrhqbbFKE7lAo1a0mc2vY-Pke_gcDPVZs8AYiddxsUcZAAkJmEKC-t-lrUGjTOg5QdgoFQntl1je9NIZJC-2_h6vouSFK5iMEGw99VEOgWvz5fnVcWcUv5qosnNcDt5z_oOm_s3FKqPVIA4SCiMDSvohXgIfjOBrez9MjpF7Xd95Or0UfqYbj0n2m63X5SbMCt5gKKsZZk6dFsicmVZLFenBbHOyWfaP0rAkmr4a8AyT604dqVftn6KcIV7KsUA9R6aQk
+          - generic [ref=f21e282]:
+            - generic [ref=f21e285]:
+              - 'link "Benami Property in India: Laws, Penalties & Detection [2026] LegiScore https://legiscore.in › Blog" [ref=f21e287] [cursor=pointer]':
+                - /url: /goto?url=CAESdgHrOzAVy01YbHFZBxH7bVff63BDmV_bXGvblf6oaguu5wcyN4jTpF6RFsbKSOwwZPj0HMahK5eQylYabDp24K6u2X7g6cRAJs4Ma4MS7SsF40GN9mgBOfnB5Rkf64_kV3KOmVLDN1k0u56ZUnKyB0q5qnuJ9es
+                - 'heading "Benami Property in India: Laws, Penalties & Detection [2026]" [level=3] [ref=f21e288]'
+                - generic [ref=f21e294]:
+                  - generic [ref=f21e295]: LegiScore
+                  - generic [ref=f21e297]: https://legiscore.in › Blog
+              - button "About this result" [ref=f21e303] [cursor=pointer]
+            - generic [ref=f21e309]:
+              - generic [ref=f21e310]: 7 Aug 2026 —
+              - generic [ref=f21e311]:
+                - text: This comprehensive guide explains what
+                - emphasis [ref=f21e312]: benami property
+                - text: … to
+                - emphasis [ref=f21e313]: detect benami
+                - text: transactions, Up to 25% of the fair market value of the
+                - emphasis [ref=f21e314]: property
+                - text: l ...
+          - generic [ref=f21e318]:
+            - generic [ref=f21e321]:
+              - 'link "Benami Transactions in India: A Study International Journal of Law Management & Humanities https://ijlmh.com › paper › benami-transactions-in-india..." [ref=f21e323] [cursor=pointer]':
+                - /url: /goto?url=CAESdQHrOzAVcHBcSBQe-RAj4Qnyoqex3AqGMVbRY7tzJsAzluuYAJUwugNTihKANc7NySLY_N31P02HeqGbYehKQNLuxBZkwXLoXd2N9Q2FP3fDJ8lh5zozyHhyYuWqaqJTMAKVZ4FHuMJru1jk84pBI2cDU9mwRw
+                - 'heading "Benami Transactions in India: A Study" [level=3] [ref=f21e324]'
+                - generic [ref=f21e330]:
+                  - generic [ref=f21e331]: International Journal of Law Management & Humanities
+                  - generic [ref=f21e333]: https://ijlmh.com › paper › benami-transactions-in-india...
+              - button "About this result" [ref=f21e339] [cursor=pointer]
+            - generic [ref=f21e345]:
+              - generic [ref=f21e346]: 18 Apr 2025 —
+              - generic [ref=f21e347]:
+                - text: The paper offers vital background for understanding the development of legal measures meant to avoid and penalise
+                - emphasis [ref=f21e348]: Benami
+                - text: transactions in
+                - emphasis [ref=f21e349]: India
+                - text: ...
+              - link "Read more" [ref=f21e350] [cursor=pointer]:
+                - /url: /goto?url=CAES2AEB6zswFdNxv93nNMopZCwwB-Nq2T1bHLsq67IZioqzOIwA8yVgGnWap-j57WkpqjSVMmQQfC839TLCllkH4ypkE3VE6eKPqKkud1aMg2oUaS6Dq-RAhZoc3WP8pdtQ-oGA5LAqJ4S1PJbNtGGopkkJJ05iGhXQmbehJFt-4r6QpzK7CaS5l9SXoWsfwie2rHAqeTu21grUU8qGWlDk2hrPklGHwqRG37mRvS650rWGY4IDDN0EoNcw1IhwNGCLIGL6dYDOSTXvYIlqU2EmzCZ2hyFcNfC4DMw
+          - generic [ref=f21e354]:
+            - generic [ref=f21e357]:
+              - link "The Income-Tax Department is examining ₹28500 crore ... Facebook · Realty NXT 20+ reactions · 2 weeks ago" [ref=f21e359] [cursor=pointer]:
+                - /url: /goto?url=CAESxAEB6zswFdoVGhNBHso-H1EWcr3JQvcb1oxRiMY4mh3D_tuvcZfbwAU1XUxBfBP3BTsXXoLFu2ssGYkAkN7loakT0TxqNEtruAePkPrcFneKuuIfstSY20102h0Dil8mKNvsR92A_51GWFA6Dyos7pePb8oloUCbTCz4BGvVMsREhDJYg6tBhzSJ69YCIx_X0X2Juf9w7zj0YC-o1nleqScFq5tye2TlOskD-wfquHo26lw1Qx_o58nABIBc4JVmxndCAyqq
+                - heading "The Income-Tax Department is examining ₹28500 crore ..." [level=3] [ref=f21e360]
+                - generic [ref=f21e366]:
+                  - generic [ref=f21e367]: Facebook · Realty NXT
+                  - generic [ref=f21e369]: 20+ reactions · 2 weeks ago
+              - button "About this result" [ref=f21e375] [cursor=pointer]
+            - generic [ref=f21e382]:
+              - text: The Income-Tax Department is examining ₹28,500 crore worth of
+              - emphasis [ref=f21e383]: property
+              - text: transactions, suspected
+              - emphasis [ref=f21e384]: benami
+              - text: ownership. Around ₹2,000 crore involves ...
+          - generic [ref=f21e388]:
+            - generic [ref=f21e391]:
+              - link "Benami Transaction Act, Authorities and Enforcement ... Vajiram & Ravi https://vajiramandravi.com › Home › General Studies" [ref=f21e393] [cursor=pointer]:
+                - /url: /goto?url=CAESegHrOzAVSQVJyWjdWLmZjSD4kE9YesGe2zFm1QXiUu5YBbL_-7jgEayasqFeQm-3lCLymsJd3UkfMqgbGFSVxDFuKEIVklv65tYTQfhizjefCGZYPHioISlqIlrrbZwCSoeL2Gzn6IqMCHTyN5pEOHyv3Dfew2Fx8QXg
+                - heading "Benami Transaction Act, Authorities and Enforcement ..." [level=3] [ref=f21e394]
+                - generic [ref=f21e400]:
+                  - generic [ref=f21e401]: Vajiram & Ravi
+                  - generic [ref=f21e403]: https://vajiramandravi.com › Home › General Studies
+              - button "About this result" [ref=f21e409] [cursor=pointer]
+            - generic [ref=f21e415]:
+              - generic [ref=f21e416]: 28 Mar 2026 —
+              - generic [ref=f21e417]:
+                - emphasis [ref=f21e418]: Benami Property Transactions Act
+                - text: is an important law in India aimed at preventing illegal property transactions. Examines evidence and % of the ...
+            - generic [ref=f21e420]:
+              - text: "Missing: statistics ‎| Show results with:"
+              - link "statistics" [ref=f21e421] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&q=benami+property+India+detection+%22statistics%22+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ5t4CegQIOxAB
+          - generic [ref=f21e425]:
+            - generic [ref=f21e428]:
+              - 'link "Benami Transactions in India: A Historical and Legal ... Singhania & Partners https://singhania.in › blog › benami-transactions-in-india..." [ref=f21e430] [cursor=pointer]':
+                - /url: /goto?url=CAESkQEB6zswFVeqcKiw2OlXA23SKvHCyL2lhzcld9xYjRksRCQMCnB2UNgUAJNOUFMWPmCFaSs_Zcfb6pZV-AYjBNHVBSWWwpLFZykHcw_pp6aih1a-is285ZpDWa4n4z1sKbcHcP6xTwC_Mm5YRySHIPcEyHnV0Yvl0TVQZ4oWSE251gIPhacjvbBj9J3YKvmZuotJ
+                - 'heading "Benami Transactions in India: A Historical and Legal ..." [level=3] [ref=f21e431]'
+                - generic [ref=f21e440]:
+                  - generic [ref=f21e441]: Singhania & Partners
+                  - generic [ref=f21e443]: https://singhania.in › blog › benami-transactions-in-india...
+              - button "About this result" [ref=f21e449] [cursor=pointer]
+            - generic [ref=f21e455]:
+              - generic [ref=f21e456]: 9 Nov 2023 —
+              - generic [ref=f21e457]:
+                - emphasis [ref=f21e458]: Benami
+                - text: transactions have been a long-standing concern in
+                - emphasis [ref=f21e459]: India
+                - text: ", deeply rooted in historical practices and contemporary economic offences."
+              - link "Read more" [ref=f21e460] [cursor=pointer]:
+                - /url: /goto?url=CAES-AEB6zswFUvKhcTngJ-UamcUAymDNB4gdZiUbGtpli1UqF31ZX0shZEkjGpRKSkIpr6iPC6PBUQIhefq6jcvbPZ2f8BnUR7QV5Rw-JSX7RcFSk1KVOuA7QG2q6iMnrwGpVFG0qHFkmNPoCbPtI8MEHSkXGf87F9eENRpxCjMgFtiMI_18Du4i1T9clubQgfmEYJ9hWoSomDQyUShKE1ThoVzj8CKq0LxD3GuJpqFoHgVqbIRsa3gCFJLvUGc3-mssCOMcPeYRGQM9BxbzQ5vwkuYXzGroTckTMdBsYokmZkNFlOT4LUTBy99vHPa1M4HYCtMiKxxp7BhMw
+            - generic [ref=f21e462]:
+              - text: "Missing: detection ‎| Show results with:"
+              - link "detection" [ref=f21e463] [cursor=pointer]:
+                - /url: /search?sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&q=benami+property+India+%22detection%22+statistics+enforcement+data&sa=X&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ5t4CegQIMBAB
+          - generic [ref=f21e467]:
+            - generic [ref=f21e470]:
+              - link "I-T dept's crackdown on benami properties SNG & Partners https://sngpartners.in › Outside Perspectives" [ref=f21e472] [cursor=pointer]:
+                - /url: /goto?url=CAEStQEB6zswFbHCZLbcHH8qWLXcN6VOWwGhrTqFubQ2necs3X0e_nynSpIz6TGoBZNrlka7tjOiHxhJCZ99aOkrJN6OdKUtvcyPv4ggeTvQv38J-Ij-QQDODChD8pSoa6Ye2qkN31_Bd4MfdqaauXykAoIbyc12D0OWMhyHmEh_SEG5ckE1xzuibsA8fIQzsY3y0txfsKucyfuAg7Q1cl9ndxyAfYWZK-fvVqSQuud2sHbkojDzZd4v
+                - heading "I-T dept's crackdown on benami properties" [level=3] [ref=f21e473]
+                - generic [ref=f21e479]:
+                  - generic [ref=f21e480]: SNG & Partners
+                  - generic [ref=f21e482]: https://sngpartners.in › Outside Perspectives
+              - button "About this result" [ref=f21e488] [cursor=pointer]
+            - generic [ref=f21e494]:
+              - generic [ref=f21e495]:
+                - text: “Digitisation of land records and
+                - emphasis [ref=f21e496]: property
+                - text: records has led to a significant rise in
+                - emphasis [ref=f21e497]: detection
+                - text: of
+                - emphasis [ref=f21e498]: benami
+                - text: properties,” Rajesh Narain Gupta, managing director of ...
+              - link "Read more" [ref=f21e499] [cursor=pointer]:
+                - /url: /goto?url=CAESnQIB6zswFRQ3IRnaemaL7Jeu4qyub0KsfwCNLsSDeYPVtiAVswqTMHqkaYnSMDal3C6Dkw9-zG65IkuEzoK6esTihbbicZJysVnMeVQBMLqybjdBrLRPfz7IIqu29GYXaSimfL4TxOkeSQoJqdXf0-YpuQxTgRHALJ5Q5osgDVStIRZH3YT7UH24dFsbnDx5N8uEWu2JxjNcI748APICKYcVMrMHk6Q9io2NtL2wq6Yh5WReTI8ymUj4dc6jEg_oV8-rasuV8V81jjXwRbrhu2HKH4hpTn2L1ogosWhOPkBgQiTSOJix7N25woRaMjwFBefSEM-Itk09YPtGvJI59OWObr-sXKOUe6HkOFL1w91Ix7G5aVBazhoOjxRWBbY
+            - generic [ref=f21e500]: "Missing: India ‎statistics ‎enforcement"
+        - navigation [ref=f21e504]:
+          - heading "Page navigation" [level=1] [ref=f21e505]
+          - text: "1"
+          - link "Page 2" [ref=f21e508] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=10&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAE
+            - text: "2"
+          - link "Page 3" [ref=f21e510] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=20&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAG
+            - text: "3"
+          - link "Page 4" [ref=f21e512] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=30&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAI
+            - text: "4"
+          - link "Page 5" [ref=f21e514] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=40&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAK
+            - text: "5"
+          - link "Page 6" [ref=f21e516] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=50&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAM
+            - text: "6"
+          - link "Page 7" [ref=f21e518] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=60&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAO
+            - text: "7"
+          - link "Page 8" [ref=f21e520] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=70&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAQ
+            - text: "8"
+          - link "Page 9" [ref=f21e522] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=80&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAS
+            - text: "9"
+          - link "Page 10" [ref=f21e524] [cursor=pointer]:
+            - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=90&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8tMDegQIHxAU
+            - text: "10"
+          - heading [level=2] [ref=f21e526]:
+            - link "Next" [ref=f21e527] [cursor=pointer]:
+              - /url: /search?q=benami+property+India+detection+statistics+enforcement+data&sca_esv=191ec1cb4de0abb4&sxsrf=APpeQnvHxvtXQ5p83uftvnbB-QMe7WOlLw:1789982450840&ei=8vawaqX5MufgseMP1vKoiQU&start=10&sa=N&sstk=AS6-VmLlHRFxepBq0LGPmxByByQxzVmnWo7oalnp8eqJw0p4a0YnnHvm-G1utPL6biQhIQ5NObOGrLFy3KS7dQNmeLRdal4gx7f1TA&ved=2ahUKEwiluouhrP-WAxVncGwGHVY5KlEQ8NMDegQIHxAW
+        - navigation
+    - contentinfo [ref=f21e530]:
+      - heading "Footer links" [level=1] [ref=f21e531]
+      - generic [ref=f21e535]:
+        - generic [ref=f21e537]:
+          - text: India
+          - generic [ref=f21e539]:
+            - button "Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu - From your IP address" [ref=f21e541] [cursor=pointer]:
+              - generic [ref=f21e542]: Semmanjeri, Semmancheri, Semmanjeri, Tamil Nadu
+              - generic [ref=f21e544]:
+                - text: "-"
+                - generic [ref=f21e545]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=f21e547] [cursor=pointer]
+        - generic [ref=f21e550]:
+          - link "Help" [ref=f21e551] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1
+          - link "Send feedback" [ref=f21e552] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=f21e553] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-IN&fg=1
+          - link "Terms" [ref=f21e554] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-IN&fg=1

@@ -1,0 +1,298 @@
+- generic [ref=f14e2]:
+  - banner [ref=f14e3]:
+    - button [ref=f14e4] [cursor=pointer]
+    - link "Homepage" [ref=f14e6] [cursor=pointer]:
+      - /url: /schhp?hl=en&as_sdt=0,5
+    - generic [ref=f14e9]:
+      - textbox "Search" [ref=f14e11]: GAIA-X data spaces federated government interoperability India digital public infrastructure
+      - button "Search" [ref=f14e12] [cursor=pointer]
+    - link "Sign in" [ref=f14e16] [cursor=pointer]:
+      - /url: https://accounts.google.com/Login?hl=en&continue=https://scholar.google.com/scholar%3Fq%3DGAIA-X%2Bdata%2Bspaces%2Bfederated%2Bgovernment%2Binteroperability%2BIndia%2Bdigital%2Bpublic%2Binfrastructure%26hl%3Den%26as_sdt%3D0%252C5%26as_ylo%3D2023
+  - generic [ref=f14e17]:
+    - generic [ref=f14e20]: Articles
+    - generic [ref=f14e22]: About 270 results (0.16 sec)
+    - generic [ref=f14e24]:
+      - link "My profile" [ref=f14e25] [cursor=pointer]:
+        - /url: /citations?hl=en
+      - link "My library" [ref=f14e28] [cursor=pointer]:
+        - /url: /scholar?scilib=1&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5
+  - generic [ref=f14e31]:
+    - navigation [ref=f14e32]:
+      - generic [ref=f14e33]:
+        - generic [ref=f14e34]:
+          - list [ref=f14e35]:
+            - listitem [ref=f14e36]:
+              - link "Any time" [ref=f14e37] [cursor=pointer]:
+                - /url: /scholar?q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5
+            - listitem [ref=f14e38]:
+              - link "Since 2026" [ref=f14e39] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2026&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5
+            - listitem [ref=f14e40]:
+              - link "Since 2025" [ref=f14e41] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2025&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5
+            - listitem [ref=f14e42]:
+              - link "Since 2022" [ref=f14e43] [cursor=pointer]:
+                - /url: /scholar?as_ylo=2022&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5
+            - listitem [ref=f14e44]:
+              - link "Custom range..." [ref=f14e45] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - generic [ref=f14e46]:
+            - generic [ref=f14e47]:
+              - textbox [ref=f14e49]: "2023"
+              - text: —
+              - textbox [ref=f14e51]
+            - button "Search" [ref=f14e53] [cursor=pointer]
+        - list [ref=f14e56]:
+          - listitem [ref=f14e57]:
+            - link "Sort by relevance" [ref=f14e58] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&as_ylo=2023&q=%22GAIA-X%22++data+spaces+federated+government+interoperability+India+digital+public+infrastructure
+          - listitem [ref=f14e59]:
+            - link "Sort by date" [ref=f14e60] [cursor=pointer]:
+              - /url: /scholar?hl=en&as_sdt=0,5&q=%22GAIA-X%22++data+spaces+federated+government+interoperability+India+digital+public+infrastructure&scisbd=1
+        - list [ref=f14e61]:
+          - listitem [ref=f14e62]:
+            - link "Any type" [ref=f14e63] [cursor=pointer]:
+              - /url: /scholar?q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+          - listitem [ref=f14e64]:
+            - link "Review articles" [ref=f14e65] [cursor=pointer]:
+              - /url: /scholar?q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023&as_rr=1
+        - list [ref=f14e66]:
+          - listitem [ref=f14e67]:
+            - checkbox "include patents" [ref=f14e68] [cursor=pointer]
+          - listitem [ref=f14e72]:
+            - checkbox "include citations" [checked] [ref=f14e73] [cursor=pointer]
+        - link "Create alert" [ref=f14e78] [cursor=pointer]:
+          - /url: /scholar_alerts?view_op=create_alert_options&hl=en&alert_query=%22GAIA-X%22++data+spaces+federated+government+interoperability+India+digital+public+infrastructure&alert_params=%3Fhl%3Den%26as_sdt%3D0,5
+    - main [ref=f14e81]:
+      - generic [ref=f14e82]:
+        - generic [ref=f14e83]:
+          - generic [ref=f14e84]:
+            - link "[PDF] ssrn.com" [ref=f14e88] [cursor=pointer]:
+              - /url: https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7355801
+            - generic [ref=f14e89]:
+              - heading [level=3] [ref=f14e90]:
+                - link "Foundations of Digital Sovereignty Definitions, Drivers, and a Reference Framework for National Digital Infrastructure" [ref=f14e91] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7355801
+              - generic [ref=f14e92]: B Burnard - 2026 - papers.ssrn.com
+              - generic [ref=f14e93]: … Gaia-X's founders were explicit that the initiative was a … formats, data space protocols, and digital identity credential … mechanism by which the interoperability layer discussed in SDIS…
+              - generic [ref=f14e94]:
+                - button "Save" [ref=f14e95] [cursor=pointer]
+                - button "Cite" [ref=f14e98] [cursor=pointer]
+                - link "Related articles" [ref=f14e101] [cursor=pointer]:
+                  - /url: /scholar?q=related:KBrzTnl8vNkJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e102] [cursor=pointer]
+          - generic [ref=f14e105]:
+            - link "[PDF] arxiv.org" [ref=f14e109] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2609.01773
+            - generic [ref=f14e110]:
+              - heading [level=3] [ref=f14e111]:
+                - 'link "From Open Standards to Openly Governed: Standards-Setting Organizations as Stewards of Openness amid Platformization and Digital Sovereignty" [ref=f14e112] [cursor=pointer]':
+                  - /url: https://arxiv.org/abs/2609.01773
+              - generic [ref=f14e113]:
+                - text: BG Otero,
+                - link "SG Verhulst" [ref=f14e114] [cursor=pointer]:
+                  - /url: /citations?user=XwhOyDAAAAAJ&hl=en&oi=sra
+                - text: "- arXiv preprint arXiv:2609.01773, 2026 - arxiv.org"
+              - generic [ref=f14e115]: … examine standardization in China, India, or the regional bodies … data exchange, trust, and interoperability across European … Gaia-X trust labels, compliance frameworks, and data-space …
+              - generic [ref=f14e116]:
+                - button "Save" [ref=f14e117] [cursor=pointer]
+                - button "Cite" [ref=f14e120] [cursor=pointer]
+                - link "Related articles" [ref=f14e123] [cursor=pointer]:
+                  - /url: /scholar?q=related:DJVjuZTTNSYJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e124] [cursor=pointer]
+          - generic [ref=f14e128]:
+            - heading [level=3] [ref=f14e129]:
+              - link "Data Privacy, Sovereignty, and Cloud Localization Laws" [ref=f14e130] [cursor=pointer]:
+                - /url: https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394382484.ch16
+            - generic [ref=f14e131]: D Nagasubramanian… - … Technologies in Cloud …, 2026 - Wiley Online Library
+            - generic [ref=f14e132]: … Data and Cloud (GAIA-X), aimed at building interoperable, … , where the federal government draws a harder line is with its own … Act places oversight with a governmentappointed Data …
+            - generic [ref=f14e133]:
+              - button "Save" [ref=f14e134] [cursor=pointer]
+              - button "Cite" [ref=f14e137] [cursor=pointer]
+              - link "Related articles" [ref=f14e140] [cursor=pointer]:
+                - /url: /scholar?q=related:TKgKdIptnewJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 2 versions" [ref=f14e141] [cursor=pointer]:
+                - /url: /scholar?cluster=17049904205714335820&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f14e142]:
+            - link "[PDF] ssrn.com" [ref=f14e146] [cursor=pointer]:
+              - /url: https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=7389959
+            - generic [ref=f14e147]:
+              - heading [level=3] [ref=f14e148]:
+                - link "From Open Standards to Openly Governed Standards-Setting Organizations as Stewards of Openness amid Platformization and Digital Sovereignty" [ref=f14e149] [cursor=pointer]:
+                  - /url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7389959
+              - generic [ref=f14e150]:
+                - link "B Gonzalez Otero" [ref=f14e151] [cursor=pointer]:
+                  - /url: /citations?user=rYrMnR4AAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "S Verhulst" [ref=f14e152] [cursor=pointer]:
+                  - /url: /citations?user=XwhOyDAAAAAJ&hl=en&oi=sra
+                - text: "- 2026 - papers.ssrn.com"
+              - generic [ref=f14e153]: … examine standardization in China, India, or the regional bodies … data exchange, trust, and interoperability across European … Gaia-X trust labels, compliance frameworks, and data-space …
+              - generic [ref=f14e154]:
+                - button "Save" [ref=f14e155] [cursor=pointer]
+                - button "Cite" [ref=f14e158] [cursor=pointer]
+                - link "Related articles" [ref=f14e161] [cursor=pointer]:
+                  - /url: /scholar?q=related:h-0HdetsAPgJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e162] [cursor=pointer]
+          - generic [ref=f14e165]:
+            - link "[PDF] ceps.eu" [ref=f14e169] [cursor=pointer]:
+              - /url: https://cdn.ceps.eu/wp-content/uploads/2025/03/IDA-2025-03_GRID_DPI-1.pdf
+            - generic [ref=f14e170]:
+              - 'heading "[BOOK] Building the European Digital Public Infrastructure: Rationale, Options, and Roadmap" [level=3] [ref=f14e171]':
+                - generic [ref=f14e172]: "[BOOK]"
+                - 'link "Building the European Digital Public Infrastructure: Rationale, Options, and Roadmap" [ref=f14e173] [cursor=pointer]':
+                  - /url: https://cdn.ceps.eu/wp-content/uploads/2025/03/IDA-2025-03_GRID_DPI-1.pdf
+              - generic [ref=f14e174]: C Ford, M Dell'Aquila, O Grabova, I Muñoz, A Renda - 2025 - cdn.ceps.eu
+              - generic [ref=f14e175]: … This digital infrastructure is interoperable and ‘stacked’, allowing private companies to develop … and Germany, known as Gaia-X, and is the basis for implementing sectoral data spaces…
+              - generic [ref=f14e176]:
+                - button "Save" [ref=f14e177] [cursor=pointer]
+                - button "Cite" [ref=f14e180] [cursor=pointer]
+                - link "Cited by 5" [ref=f14e183] [cursor=pointer]:
+                  - /url: /scholar?cites=9022083336274475375&as_sdt=2005&sciodt=0,5&hl=en
+                - link "Related articles" [ref=f14e184] [cursor=pointer]:
+                  - /url: /scholar?q=related:b3mcSP7gNH0J:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e185] [cursor=pointer]
+          - generic [ref=f14e188]:
+            - link "[PDF] uni-konstanz.de" [ref=f14e192] [cursor=pointer]:
+              - /url: https://kops.uni-konstanz.de/server/api/core/bitstreams/17d975fb-6c4a-44fb-a85f-0c56724e3ede/content
+            - generic [ref=f14e193]:
+              - heading "[PDF] Investigating government collaboration in sovereign data spaces" [level=3] [ref=f14e194]:
+                - generic [ref=f14e195]: "[PDF]"
+                - link "Investigating government collaboration in sovereign data spaces" [ref=f14e196] [cursor=pointer]:
+                  - /url: https://kops.uni-konstanz.de/server/api/core/bitstreams/17d975fb-6c4a-44fb-a85f-0c56724e3ede/content
+              - generic [ref=f14e197]: J Schmeling - 2026 - kops.uni-konstanz.de
+              - generic [ref=f14e198]: … in the development of Gaia-X-compliant data spaces to identify … To ensure interoperability between European open data … the implementation of federated data infrastructures driven by …
+              - generic [ref=f14e199]:
+                - button "Save" [ref=f14e200] [cursor=pointer]
+                - button "Cite" [ref=f14e203] [cursor=pointer]
+                - link "Related articles" [ref=f14e206] [cursor=pointer]:
+                  - /url: /scholar?q=related:Tl0sIcz0jXAJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f14e207] [cursor=pointer]:
+                  - /url: /scholar?cluster=8110407661531192654&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e208] [cursor=pointer]
+          - generic [ref=f14e211]:
+            - link "[PDF] researchgate.net" [ref=f14e215] [cursor=pointer]:
+              - /url: https://www.researchgate.net/profile/Dr-Saikat-Gochhait/publication/390308361_Enhancing_IoT_Cybersecurity_Through_Innovative_Blockchain_Solutions/links/67f79a5203b8d7280e2fdb8d/Enhancing-IoT-Cybersecurity-Through-Innovative-Blockchain-Solutions.pdf#page=99
+            - generic [ref=f14e216]:
+              - heading [level=3] [ref=f14e217]:
+                - 'link "Metadata Interoperability Considerations for India''s Data Ecosystem: A Study of International Approaches" [ref=f14e218] [cursor=pointer]':
+                  - /url: https://link.springer.com/chapter/10.1007/978-981-97-9529-1_9
+              - generic [ref=f14e219]:
+                - text: A Misra, DP Misra, R Ghai,
+                - link "SS Mahapatra" [ref=f14e220] [cursor=pointer]:
+                  - /url: /citations?user=tbxQKTYAAAAJ&hl=en&oi=sra
+                - text: … - … Conference on ICT for …, 2024 - Springer
+              - generic [ref=f14e221]: … , government, science, technology, etc. to build a federated and secure data infrastructure … Offerings, which in aggregate constitute the Gaia-X ecosystem, in a machine-readable …
+              - generic [ref=f14e222]:
+                - button "Save" [ref=f14e223] [cursor=pointer]
+                - button "Cite" [ref=f14e226] [cursor=pointer]
+                - link "Related articles" [ref=f14e229] [cursor=pointer]:
+                  - /url: /scholar?q=related:gCtiFxqVnDUJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 3 versions" [ref=f14e230] [cursor=pointer]:
+                  - /url: /scholar?cluster=3863126519671040896&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f14e231]:
+            - link "[PDF] techrxiv.org" [ref=f14e235] [cursor=pointer]:
+              - /url: https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176171143.39676752/v1
+            - generic [ref=f14e236]:
+              - heading [level=3] [ref=f14e237]:
+                - 'link "Geopatriation: Mitigating Geopolitical Risk Through Sovereign And Regional Cloud Strategies" [ref=f14e238] [cursor=pointer]':
+                  - /url: https://www.techrxiv.org/doi/abs/10.36227/techrxiv.176171143.39676752/v1
+              - generic [ref=f14e239]:
+                - link "V Narayandas" [ref=f14e240] [cursor=pointer]:
+                  - /url: /citations?user=_2PHcoMAAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "S Tiruvayipati" [ref=f14e241] [cursor=pointer]:
+                  - /url: /citations?user=rA1p5zIAAAAJ&hl=en&oi=sra
+                - text: ", A Meduri,"
+                - link "R Yellasiri" [ref=f14e242] [cursor=pointer]:
+                  - /url: /citations?user=PZJu42EAAAAJ&hl=en&oi=sra
+                - text: "- 2025 - techrxiv.org"
+              - generic [ref=f14e243]: … sovereignty movements in the European Union (EU), India, and … Governs interoperability between sovereign providers. … Case materials from GAIA-X, FAIR Data Spaces, and sovereign …
+              - generic [ref=f14e244]:
+                - button "Save" [ref=f14e245] [cursor=pointer]
+                - button "Cite" [ref=f14e248] [cursor=pointer]
+                - link "Related articles" [ref=f14e251] [cursor=pointer]:
+                  - /url: /scholar?q=related:lazryqbIXsgJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f14e252] [cursor=pointer]:
+                  - /url: /scholar?cluster=14438198074090957973&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f14e254]:
+            - heading [level=3] [ref=f14e255]:
+              - 'link "Navigating digital sovereignty within regional integration: A conceptual framework" [ref=f14e256] [cursor=pointer]':
+                - /url: https://www.sciencedirect.com/science/chapter/edited-volume/pii/B978044332964700018X
+            - generic [ref=f14e257]: A Baykov, M Kharkevich - Digital Transformation in Artificial Systems, 2026 - Elsevier
+            - generic [ref=f14e258]: "… of Gaia-X's vision is the development of federated data spaces: sector-specific infrastructures that enable data … but also a marketplace of interoperable services to attract users across …"
+            - generic [ref=f14e259]:
+              - button "Save" [ref=f14e260] [cursor=pointer]
+              - button "Cite" [ref=f14e263] [cursor=pointer]
+              - link "Cited by 1" [ref=f14e266] [cursor=pointer]:
+                - /url: /scholar?cites=619293787757272109&as_sdt=2005&sciodt=0,5&hl=en
+              - link "Related articles" [ref=f14e267] [cursor=pointer]:
+                - /url: /scholar?q=related:LdzgNmssmAgJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+              - link "All 2 versions" [ref=f14e268] [cursor=pointer]:
+                - /url: /scholar?cluster=619293787757272109&hl=en&as_sdt=0,5&as_ylo=2023
+          - generic [ref=f14e269]:
+            - link "[PDF] arxiv.org" [ref=f14e273] [cursor=pointer]:
+              - /url: https://arxiv.org/pdf/2509.06983
+            - generic [ref=f14e274]:
+              - heading [level=3] [ref=f14e275]:
+                - 'link "Navigating the Data Space Landscape: Concepts, Applications, and Future Directions" [ref=f14e276] [cursor=pointer]':
+                  - /url: https://arxiv.org/abs/2509.06983
+              - generic [ref=f14e277]:
+                - link "B Marojevikj" [ref=f14e278] [cursor=pointer]:
+                  - /url: /citations?user=SA0us_0AAAAJ&hl=en&oi=sra
+                - text: ","
+                - link "R Stojanov" [ref=f14e279] [cursor=pointer]:
+                  - /url: /citations?user=IqAbbNsAAAAJ&hl=en&oi=sra
+                - text: "- arXiv preprint arXiv:2509.06983, 2025 - arxiv.org"
+              - generic [ref=f14e280]: "… promoting transparency, interoperability, and digital sovereignty. … Soft Infrastructure: The infrastructure for data spaces is … digital sovereignty and fostering the digital economy, Gaia-X …"
+              - generic [ref=f14e281]:
+                - button "Save" [ref=f14e282] [cursor=pointer]
+                - button "Cite" [ref=f14e285] [cursor=pointer]
+                - link "Related articles" [ref=f14e288] [cursor=pointer]:
+                  - /url: /scholar?q=related:MYPzYIOo5GUJ:scholar.google.com/&scioq=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - link "All 2 versions" [ref=f14e289] [cursor=pointer]:
+                  - /url: /scholar?cluster=7342178574741504817&hl=en&as_sdt=0,5&as_ylo=2023
+                - button "More" [ref=f14e290] [cursor=pointer]
+        - navigation [ref=f14e294]:
+          - table [ref=f14e296]:
+            - rowgroup [ref=f14e297]:
+              - row [ref=f14e298]:
+                - cell [ref=f14e299]
+                - cell "1" [ref=f14e301]
+                - cell [ref=f14e303]:
+                  - link "2" [ref=f14e304] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e306]:
+                  - link "3" [ref=f14e307] [cursor=pointer]:
+                    - /url: /scholar?start=20&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e309]:
+                  - link "4" [ref=f14e310] [cursor=pointer]:
+                    - /url: /scholar?start=30&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e312]:
+                  - link "5" [ref=f14e313] [cursor=pointer]:
+                    - /url: /scholar?start=40&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e315]:
+                  - link "6" [ref=f14e316] [cursor=pointer]:
+                    - /url: /scholar?start=50&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e318]:
+                  - link "7" [ref=f14e319] [cursor=pointer]:
+                    - /url: /scholar?start=60&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e321]:
+                  - link "8" [ref=f14e322] [cursor=pointer]:
+                    - /url: /scholar?start=70&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e324]:
+                  - link "9" [ref=f14e325] [cursor=pointer]:
+                    - /url: /scholar?start=80&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e327]:
+                  - link "10" [ref=f14e328] [cursor=pointer]:
+                    - /url: /scholar?start=90&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+                - cell [ref=f14e330]:
+                  - link "Next" [ref=f14e331] [cursor=pointer]:
+                    - /url: /scholar?start=10&q=GAIA-X+data+spaces+federated+government+interoperability+India+digital+public+infrastructure&hl=en&as_sdt=0,5&as_ylo=2023
+  - contentinfo [ref=f14e334]:
+    - generic [ref=f14e335]:
+      - link "Privacy" [ref=f14e336] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/privacy/
+      - link "Terms" [ref=f14e337] [cursor=pointer]:
+        - /url: //www.google.com/intl/en/policies/terms/
+      - button "Help" [ref=f14e338] [cursor=pointer]
