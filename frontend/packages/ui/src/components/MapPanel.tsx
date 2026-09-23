@@ -155,12 +155,12 @@ function statusBorderColor(): any {
 
 function selectedFillOpacity(parcelId: string | undefined): any {
   if (!parcelId) return 0.3;
-  return ['case', ['==', ['get', 'parcel_id'], parcelId], 0.55, 0.3];
+  return ['case', ['any', ['==', ['get', 'parcel_id'], parcelId], ['==', ['get', 'ulpin'], parcelId]], 0.55, 0.3];
 }
 
 function selectedLineWidth(parcelId: string | undefined): any {
   if (!parcelId) return 2;
-  return ['case', ['==', ['get', 'parcel_id'], parcelId], 4, 2];
+  return ['case', ['any', ['==', ['get', 'parcel_id'], parcelId], ['==', ['get', 'ulpin'], parcelId]], 4, 2];
 }
 
 // Compute bounding box from a polygon coordinate ring
@@ -380,7 +380,7 @@ export function MapPanel({
 
 function fitToParcel(map: maplibregl.Map, parcelId: string) {
   const feature = PANEL_PARCEL_GEOJSON.features.find(
-    (f) => f.properties.parcel_id === parcelId
+    (f) => f.properties.parcel_id === parcelId || f.properties.ulpin === parcelId
   );
   if (!feature) return;
 

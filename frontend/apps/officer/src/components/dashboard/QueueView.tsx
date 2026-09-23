@@ -254,16 +254,11 @@ export function QueueView({ onNavigateTab }: QueueViewProps) {
                   },
                   {
                     key: 'status',
-                    header: 'ACTION',
+                    header: 'STATUS',
                     render: (row) => (
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        onClick={() => setSelectedItem(row)}
-                        className="h-7 px-2.5 text-xs"
-                      >
-                        Inspect
-                      </Button>
+                      <StatusBadge status={row.status}>
+                        {row.status}
+                      </StatusBadge>
                     ),
                   },
                 ]}
@@ -341,29 +336,29 @@ export function QueueView({ onNavigateTab }: QueueViewProps) {
                   </div>
                 </div>
 
-                {/* Actions */}
-                <div className="flex gap-2 pt-2">
-                  <Button
-                    size="sm"
-                    className="flex-1 h-8 text-xs bg-[#1E7B4D] hover:bg-[#16603B]"
-                    onClick={() => {
-                      console.log(`Approved link for case ${selectedItem.id}`);
-                      setQueue((prev) => prev.filter((q) => q.id !== selectedItem.id));
-                    }}
-                  >
-                    Approve Link / Sanction
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant="destructive"
-                    className="flex-1 h-8 text-xs"
-                    onClick={() => {
-                      console.log(`Discrepancy flagged for re-survey: case ${selectedItem.id}`);
-                      setQueue((prev) => prev.filter((q) => q.id !== selectedItem.id));
-                    }}
-                  >
-                    Reject / Flag Dispute
-                  </Button>
+                {/* Provenance */}
+                <div className="pt-2 border-t border-[#DCE3EA] space-y-1.5">
+                  <div className="text-[10px] font-bold text-[#4A5B6E] uppercase flex items-center gap-1">
+                    <Activity className="w-3 h-3" /> Data Provenance
+                  </div>
+                  <div className="bg-[#F4F7FB] border border-[#DCE3EA] rounded p-2 text-[11px] space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-[#4A5B6E]">Source A:</span>
+                      <span className="font-semibold text-[#14548C]">{selectedItem.source_a?.system}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-[#4A5B6E]">Source B:</span>
+                      <span className="font-semibold text-[#14548C]">{selectedItem.source_b?.system}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-[#4A5B6E]">Detected:</span>
+                      <span className="font-serif tabular-nums font-semibold text-[#16212E]">{selectedItem.created_at}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-[#4A5B6E]">Freshness:</span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#FDF1E0] text-[#B8720B]">CACHED</span>
+                    </div>
+                  </div>
                 </div>
               </div>
 

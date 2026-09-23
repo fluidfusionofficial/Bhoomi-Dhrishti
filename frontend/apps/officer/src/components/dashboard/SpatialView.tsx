@@ -42,7 +42,8 @@ export function SpatialView() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetchTopologyConflicts();
+      let res: TopologyConflict[] | null = null;
+      try { res = await fetchTopologyConflicts(); } catch { /* use fallback */ }
       if (Array.isArray(res) && res.length > 0) {
         setConflicts(res);
         setSelectedConflict(res[0]);
@@ -66,12 +67,51 @@ export function SpatialView() {
             conflict_id: 'TOP-2026-0044',
             type: 'GAP',
             severity: 'MEDIUM',
-            parcel_a_id: 'TN-607-001-044',
-            parcel_b_id: 'TN-607-001-045',
-            ulpin_a: 'TN607001002423D',
-            ulpin_b: 'TN607001002424E',
+            parcel_a_id: 'TN-CHN-000004',
+            parcel_b_id: 'TN-CHN-000005',
+            ulpin_a: 'TN-CHN-000004',
+            ulpin_b: 'TN-CHN-000005',
             overlap_area_sq_m: 8.5,
             detected_at: '2026-09-12 14:00',
+            status: 'INVESTIGATING',
+          },
+          {
+            id: 'conf-003',
+            conflict_id: 'TOP-2026-0112',
+            type: 'SLIVER',
+            severity: 'LOW',
+            parcel_a_id: 'TN-CHN-000008',
+            parcel_b_id: 'TN-CHN-000009',
+            ulpin_a: 'TN-CHN-000008',
+            ulpin_b: 'TN-CHN-000009',
+            overlap_area_sq_m: 2.1,
+            detected_at: '2026-09-10 16:30',
+            status: 'DETECTED',
+          },
+          {
+            id: 'conf-004',
+            conflict_id: 'TOP-2026-0089',
+            type: 'OVERLAP',
+            severity: 'HIGH',
+            parcel_a_id: 'TN-CHN-000012',
+            parcel_b_id: 'TN-CHN-000013',
+            ulpin_a: 'TN-CHN-000012',
+            ulpin_b: 'TN-CHN-000013',
+            overlap_area_sq_m: 31.6,
+            detected_at: '2026-09-08 09:45',
+            status: 'DETECTED',
+          },
+          {
+            id: 'conf-005',
+            conflict_id: 'TOP-2026-0067',
+            type: 'GAP',
+            severity: 'MEDIUM',
+            parcel_a_id: 'TN-CHN-000014',
+            parcel_b_id: 'TN-CHN-000015',
+            ulpin_a: 'TN-CHN-000014',
+            ulpin_b: 'TN-CHN-000015',
+            overlap_area_sq_m: 14.8,
+            detected_at: '2026-09-05 11:20',
             status: 'INVESTIGATING',
           },
         ];

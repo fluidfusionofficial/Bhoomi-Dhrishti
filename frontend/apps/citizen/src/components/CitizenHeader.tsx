@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Bell, Check, X, Shield, Clock } from 'lucide-react';
+import { Bell, Check, X, Shield, Clock, ArrowLeft } from 'lucide-react';
 import { fetchUserNotifications, markNotificationAsRead, NotificationItem } from '@bhoomi/api-client';
 
 export function CitizenHeader() {
@@ -83,7 +83,14 @@ export function CitizenHeader() {
             </div>
           </Link>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <a
+              href="http://localhost:3001"
+              className="p-2 rounded-[4px] hover:bg-[#103F68] transition-colors text-white/70 hover:text-white"
+              title="Switch Role"
+            >
+              <ArrowLeft className="w-4 h-4" />
+            </a>
             <button
               type="button"
               onClick={() => setShowDrawer(true)}
