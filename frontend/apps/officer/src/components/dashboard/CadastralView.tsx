@@ -110,9 +110,14 @@ export function CadastralView({
   onNavigateTab: (tab: any) => void;
 }) {
   const [layers, setLayers] = useState<LayerState>({
-    parcels: true, ulpin: true, roads: false,
+    // Tier 1: Base Spatial
+    parcels: true, ulpin: true, villageBoundary: false,
+    // Tier 2: Governance
     ownership: true, landUse: false, zoning: false,
-    propertyTax: false, topologyConflicts: true,
+    registration: false, encumbrance: false, litigation: false,
+    topologyConflicts: true,
+    // Tier 3: Use-Case & Utility
+    propertyTax: false, utilityLines: false, infrastructureRoW: false, envBuffers: false,
   });
   const [statusFilter, setStatusFilter] = useState('all');
   const [riskFilter,   setRiskFilter]   = useState('all');
@@ -319,17 +324,39 @@ export function CadastralView({
           </button>
 
           {showLayers && (
-            <div className="absolute top-12 right-0 w-[240px] bg-white rounded-[10px] shadow-[0_12px_32px_rgba(11,36,71,.18)] border border-[#e3e8ef] p-3.5 z-[200]">
-              <div className="text-[10px] font-extrabold text-[#9aa4b3] uppercase tracking-[.08em] mb-2">Base Spatial</div>
-              <LayerToggle label="Parcel Geometries"  color="#3b6fbf" on={layers.parcels}            onToggle={() => toggleLayer('parcels')} />
-              <LayerToggle label="ULPIN Labels"        color="#9aa4b3" on={layers.ulpin}              onToggle={() => toggleLayer('ulpin')} />
-              <LayerToggle label="Roads & Admin"       color="#c9b48a" on={layers.roads}              onToggle={() => toggleLayer('roads')} />
-              <div className="text-[10px] font-extrabold text-[#0f766e] uppercase tracking-[.08em] mt-3 mb-2">Governance Theme</div>
-              <LayerToggle label="Ownership Status"    color="#3b6fbf" on={layers.ownership}          onToggle={() => toggleLayer('ownership')} />
-              <LayerToggle label="Land Use"            color="#16a34a" on={layers.landUse}            onToggle={() => toggleLayer('landUse')} />
-              <div className="text-[10px] font-extrabold text-[#d97706] uppercase tracking-[.08em] mt-3 mb-2">Services</div>
-              <LayerToggle label="Property Tax"        color="#d97706" on={layers.propertyTax}        onToggle={() => toggleLayer('propertyTax')} />
-              <LayerToggle label="Topology Conflicts"  color="#dc2626" on={layers.topologyConflicts}  onToggle={() => toggleLayer('topologyConflicts')} />
+            <div className="absolute top-12 right-0 w-[272px] bg-white rounded-[10px] shadow-[0_12px_32px_rgba(11,36,71,.18)] border border-[#e3e8ef] p-3.5 z-[200] max-h-[80vh] overflow-y-auto">
+
+              {/* Tier 1: Base Spatial */}
+              <div className="flex items-center gap-1.5 mb-2">
+                <div className="w-2 h-2 rounded-full bg-[#3b6fbf] flex-shrink-0" />
+                <span className="text-[10px] font-extrabold text-[#1b4079] uppercase tracking-[.08em]">Tier 1 — Base Spatial</span>
+              </div>
+              <LayerToggle label="Parcel Geometries"     color="#3b6fbf" on={layers.parcels}         onToggle={() => toggleLayer('parcels')} />
+              <LayerToggle label="ULPIN / Parcel Labels" color="#9aa4b3" on={layers.ulpin}           onToggle={() => toggleLayer('ulpin')} />
+              <LayerToggle label="Village / Ward Boundary" color="#c9b48a" on={layers.villageBoundary} onToggle={() => toggleLayer('villageBoundary')} />
+
+              {/* Tier 2: Essential Governance */}
+              <div className="flex items-center gap-1.5 mt-3.5 mb-2">
+                <div className="w-2 h-2 rounded-full bg-[#0f766e] flex-shrink-0" />
+                <span className="text-[10px] font-extrabold text-[#0f766e] uppercase tracking-[.08em]">Tier 2 — Governance</span>
+              </div>
+              <LayerToggle label="Ownership Status (RoR)" color="#3b6fbf" on={layers.ownership}       onToggle={() => toggleLayer('ownership')} />
+              <LayerToggle label="Land Use Classification" color="#16a34a" on={layers.landUse}         onToggle={() => toggleLayer('landUse')} />
+              <LayerToggle label="Zoning / Master Plan"   color="#2563eb" on={layers.zoning}          onToggle={() => toggleLayer('zoning')} />
+              <LayerToggle label="Registered Deeds"       color="#7c3aed" on={layers.registration}    onToggle={() => toggleLayer('registration')} />
+              <LayerToggle label="Encumbrance (EC)"       color="#d97706" on={layers.encumbrance}     onToggle={() => toggleLayer('encumbrance')} />
+              <LayerToggle label="Court Litigation / Stay" color="#7c3aed" on={layers.litigation}     onToggle={() => toggleLayer('litigation')} />
+              <LayerToggle label="Topology Conflicts"     color="#dc2626" on={layers.topologyConflicts} onToggle={() => toggleLayer('topologyConflicts')} />
+
+              {/* Tier 3: Use-Case & Utility */}
+              <div className="flex items-center gap-1.5 mt-3.5 mb-2">
+                <div className="w-2 h-2 rounded-full bg-[#d97706] flex-shrink-0" />
+                <span className="text-[10px] font-extrabold text-[#92400e] uppercase tracking-[.08em]">Tier 3 — Use-Case & Utility</span>
+              </div>
+              <LayerToggle label="Property Tax Tagging"   color="#d97706" on={layers.propertyTax}     onToggle={() => toggleLayer('propertyTax')} />
+              <LayerToggle label="Utility Lines (W/E/G)"  color="#0891b2" on={layers.utilityLines}    onToggle={() => toggleLayer('utilityLines')} />
+              <LayerToggle label="Infrastructure RoW"     color="#78716c" on={layers.infrastructureRoW} onToggle={() => toggleLayer('infrastructureRoW')} />
+              <LayerToggle label="Env. Buffers (CRZ/Forest)" color="#15803d" on={layers.envBuffers}   onToggle={() => toggleLayer('envBuffers')} />
             </div>
           )}
         </div>
@@ -396,20 +423,63 @@ export function CadastralView({
         </div>
       </div>
 
-      {/* ── BOTTOM-LEFT: Legend ───────────────────────────────────────────── */}
-      <div className="absolute bottom-12 left-3 z-50 bg-white/[.96] backdrop-blur-sm px-3.5 py-3 rounded-[10px] shadow-[0_4px_12px_rgba(11,36,71,.10)] border border-[#e3e8ef] pointer-events-none">
-        <h4 className="text-[10.5px] font-extrabold text-[#6b7688] uppercase tracking-[.06em] mb-2">Parcel Status</h4>
+      {/* ── BOTTOM-LEFT: Three-Tier Legend ───────────────────────────────── */}
+      <div className="absolute bottom-12 left-3 z-50 bg-white/[.96] backdrop-blur-sm px-3.5 py-3 rounded-[10px] shadow-[0_4px_12px_rgba(11,36,71,.10)] border border-[#e3e8ef] pointer-events-none min-w-[180px]">
+        {/* Always show parcel status */}
+        <h4 className="text-[10px] font-extrabold text-[#1b4079] uppercase tracking-[.06em] mb-1.5">Tier 1 — Parcel Status</h4>
         {[
           { color: '#16a34a', border: '#00ff88', label: 'Verified' },
           { color: '#d97706', border: '#ffa500', label: 'Warning' },
           { color: '#dc2626', border: '#ff4400', label: 'Conflict / Dispute' },
           { color: '#2456a6', border: '#44aaff', label: 'Pending' },
         ].map(({ color, border, label }) => (
-          <div key={label} className="flex items-center gap-2 py-0.5 text-[11.5px] text-[#425066] font-medium">
-            <div className="w-3.5 h-3.5 rounded-[3px] flex-shrink-0 border-2" style={{ background: `${color}55`, borderColor: border }} />
+          <div key={label} className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066] font-medium">
+            <div className="w-3 h-3 rounded-[3px] flex-shrink-0 border-2" style={{ background: `${color}55`, borderColor: border }} />
             {label}
           </div>
         ))}
+
+        {/* Tier 2 legend entries — show when any governance layer is on */}
+        {(layers.zoning || layers.encumbrance || layers.litigation || layers.registration) && (
+          <>
+            <div className="border-t border-[#f1f4f8] mt-2 pt-2">
+              <h4 className="text-[10px] font-extrabold text-[#0f766e] uppercase tracking-[.06em] mb-1.5">Tier 2 — Governance</h4>
+              {layers.zoning && (
+                <>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-[#2563eb]" style={{ background: '#2563eb33' }} />Residential Zone</div>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-[#65a30d]" style={{ background: '#65a30d33' }} />Agricultural Zone</div>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-[#c026d3]" style={{ background: '#c026d333' }} />Commercial Zone</div>
+                </>
+              )}
+              {layers.encumbrance && <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-dashed border-[#d97706]" style={{ background: '#d9770633' }} />Encumbrance (EC)</div>}
+              {layers.litigation && <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-dashed border-[#7c3aed]" style={{ background: '#7c3aed33' }} />Court Litigation / Stay</div>}
+              {layers.registration && <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-full bg-[#7c3aed]" />Registered Deed</div>}
+            </div>
+          </>
+        )}
+
+        {/* Tier 3 legend entries */}
+        {(layers.utilityLines || layers.infrastructureRoW || layers.envBuffers) && (
+          <>
+            <div className="border-t border-[#f1f4f8] mt-2 pt-2">
+              <h4 className="text-[10px] font-extrabold text-[#92400e] uppercase tracking-[.06em] mb-1.5">Tier 3 — Utility</h4>
+              {layers.utilityLines && (
+                <>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded" style={{ background: '#0891b2' }} />Water Main</div>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded" style={{ background: '#f59e0b' }} />Electricity Line</div>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded border-t-2 border-dashed border-[#f97316]" />Gas Pipeline</div>
+                </>
+              )}
+              {layers.infrastructureRoW && <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px]" style={{ background: '#78716c55' }} />Infra. RoW Corridor</div>}
+              {layers.envBuffers && (
+                <>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px]" style={{ background: '#0891b233' }} />Waterbody Buffer</div>
+                  <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px]" style={{ background: '#15803d33' }} />Forest Buffer</div>
+                </>
+              )}
+            </div>
+          </>
+        )}
       </div>
 
       {/* ── BOTTOM STATUS BAR ─────────────────────────────────────────────── */}
@@ -551,19 +621,20 @@ export function CadastralView({
               {/* ── Linked Records tab ───────────────────────────────────── */}
               {activeTab === 'records' && records && (
                 <div className="p-4 space-y-2.5">
+                  {/* Tier badge header */}
+                  <div className="text-[10px] font-extrabold text-[#9aa4b3] uppercase tracking-[.08em]">Tier 2 — Governance Records</div>
                   {[
-                    { icon: <FileText className="w-4 h-4" />,    title: 'Revenue RoR',          r: records.ror },
-                    { icon: <Landmark className="w-4 h-4" />,    title: 'Registration / EC',    r: records.registration },
-                    { icon: <Leaf className="w-4 h-4" />,        title: 'Survey & FMB',         r: records.survey },
-                    { icon: <Coins className="w-4 h-4" />,       title: 'Property Tax',         r: records.tax },
-                    { icon: <Building2 className="w-4 h-4" />,   title: 'Planning / Zoning',    r: records.planning },
-                  ].map(({ icon, title, r }) => (
+                    { icon: <FileText className="w-4 h-4" />,  title: 'Revenue RoR',               r: records.ror,          source: 'Tamil Nilam Revenue System' },
+                    { icon: <Landmark className="w-4 h-4" />,  title: 'Registered Deed (SRO)',      r: records.registration, source: 'NGDRS / SRO Portal' },
+                    { icon: <Leaf className="w-4 h-4" />,      title: 'Encumbrance Certificate',    r: { label: records.registration.label, cls: records.registration.cls, detail: records.registration.detail }, source: 'NGDRS EC Search' },
+                    { icon: <Building2 className="w-4 h-4" />, title: 'Planning / Zoning',          r: records.planning,     source: 'DTCP Master Plan Portal' },
+                  ].map(({ icon, title, r, source }) => (
                     <div
                       key={title}
                       className="bg-white rounded-[10px] border border-[#e3e8ef] p-3.5 shadow-[0_1px_2px_rgba(11,36,71,.06)]"
                       style={{ borderLeft: `4px solid ${r.cls === 'conflict' ? '#dc2626' : r.cls === 'warning' ? '#d97706' : '#16a34a'}` }}
                     >
-                      <div className="flex items-center gap-2.5 mb-1.5">
+                      <div className="flex items-center gap-2.5 mb-1">
                         <div
                           className="w-7 h-7 rounded-[7px] grid place-items-center flex-shrink-0"
                           style={{ background: r.cls === 'conflict' ? '#fdeaea' : r.cls === 'warning' ? '#fdf1e0' : '#e7f6ec',
@@ -580,6 +651,66 @@ export function CadastralView({
                         </div>
                       </div>
                       <div className="text-[11.5px] text-[#6b7688] pl-9">{r.detail}</div>
+                      <div className="text-[10px] text-[#9aa4b3] pl-9 mt-1 flex items-center gap-1">
+                        <Globe className="w-2.5 h-2.5" />
+                        {source} · CACHED
+                      </div>
+                    </div>
+                  ))}
+
+                  {/* Court Litigation */}
+                  {(selectedParcel?.status === 'Conflict' || selectedParcel?.risk_level === 'High') && (
+                    <div className="bg-white rounded-[10px] border border-[#e3e8ef] p-3.5 shadow-[0_1px_2px_rgba(11,36,71,.06)]" style={{ borderLeft: '4px solid #7c3aed' }}>
+                      <div className="flex items-center gap-2.5 mb-1">
+                        <div className="w-7 h-7 rounded-[7px] grid place-items-center flex-shrink-0 bg-[#ede9fe] text-[#7c3aed]">
+                          <AlertTriangle className="w-4 h-4" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-[12px] font-extrabold text-[#1f2733] uppercase tracking-[.03em]">Court Litigation / Stay</div>
+                        </div>
+                        <div className="flex items-center gap-1 text-[11px] font-bold text-[#7c3aed]">
+                          <AlertTriangle className="w-3.5 h-3.5" /> ACTIVE STAY
+                        </div>
+                      </div>
+                      <div className="text-[11.5px] text-[#6b7688] pl-9">Case OS-421/2024 · Chengalpattu District Court · Ownership Dispute</div>
+                      <div className="text-[10px] text-[#9aa4b3] pl-9 mt-1 flex items-center gap-1">
+                        <Globe className="w-2.5 h-2.5" />
+                        eCourts NJDG Portal · CACHED
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="text-[10px] font-extrabold text-[#9aa4b3] uppercase tracking-[.08em] pt-1">Tier 3 — Use-Case & Utility</div>
+                  {[
+                    { icon: <Coins className="w-4 h-4" />,      title: 'Property Tax',              r: records.tax,   source: 'CMDA / Panchayat Tax Portal' },
+                    { icon: <Leaf className="w-4 h-4" />,       title: 'Survey & FMB',              r: records.survey, source: 'DILRMP / SVAMITVA Survey DB' },
+                  ].map(({ icon, title, r, source }) => (
+                    <div
+                      key={title}
+                      className="bg-white rounded-[10px] border border-[#e3e8ef] p-3.5 shadow-[0_1px_2px_rgba(11,36,71,.06)]"
+                      style={{ borderLeft: `4px solid ${r.cls === 'conflict' ? '#dc2626' : r.cls === 'warning' ? '#d97706' : '#16a34a'}` }}
+                    >
+                      <div className="flex items-center gap-2.5 mb-1">
+                        <div
+                          className="w-7 h-7 rounded-[7px] grid place-items-center flex-shrink-0"
+                          style={{ background: r.cls === 'conflict' ? '#fdeaea' : r.cls === 'warning' ? '#fdf1e0' : '#e7f6ec',
+                                   color:      r.cls === 'conflict' ? '#dc2626' : r.cls === 'warning' ? '#d97706' : '#16a34a' }}
+                        >
+                          {icon}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-[12px] font-extrabold text-[#1f2733] uppercase tracking-[.03em]">{title}</div>
+                        </div>
+                        <div className={`flex items-center gap-1 text-[11px] font-bold ${clsCls(r.cls)}`}>
+                          {clsIcon(r.cls)}
+                          {r.label}
+                        </div>
+                      </div>
+                      <div className="text-[11.5px] text-[#6b7688] pl-9">{r.detail}</div>
+                      <div className="text-[10px] text-[#9aa4b3] pl-9 mt-1 flex items-center gap-1">
+                        <Globe className="w-2.5 h-2.5" />
+                        {source} · CACHED
+                      </div>
                     </div>
                   ))}
                 </div>

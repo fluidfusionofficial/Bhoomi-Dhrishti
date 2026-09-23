@@ -88,3 +88,52 @@
   .bd-mono { font-family: "SFMono-Regular", ui-monospace, "Cascadia Code", Menlo, Consolas, monospace; }
 }
 
+@media print {
+  header, aside, nav, .no-print, [data-no-print] {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+  }
+  main, .print-area {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+  .print-header {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 2px solid #0B2E4E;
+    margin-bottom: 16px;
+  }
+  .print-header-title {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #0B2E4E;
+  }
+  .print-header-sub {
+    font-size: 9pt;
+    color: #4A5B6E;
+  }
+  .print-footer {
+    display: block !important;
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #DCE3EA;
+    font-size: 8pt;
+    color: #4A5B6E;
+    text-align: center;
+  }
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+}
+

@@ -67,7 +67,8 @@ export function GlobalSearchView({ onSelectParcel }: GlobalSearchViewProps) {
     setSuggestions([]);
 
     try {
-      const res = await searchNaturalLanguage(q);
+      let res: any = null;
+      try { res = await searchNaturalLanguage(q); } catch { /* fallback */ }
       if (res?.parsed_filters || res?.intent) {
         setParsedIntent(res.parsed_filters || res.intent);
       } else {
@@ -122,13 +123,14 @@ export function GlobalSearchView({ onSelectParcel }: GlobalSearchViewProps) {
     setParsedIntent(null);
 
     try {
-      const res = await searchParcelsCitizen({
+      let res: any = null;
+      try { res = await searchParcelsCitizen({
         state_code: structuredParams.state_code || undefined,
         district: structuredParams.district || undefined,
         village: structuredParams.village || undefined,
         survey_number: structuredParams.survey_number || undefined,
         owner_name: structuredParams.owner_name || undefined,
-      });
+      }); } catch { /* fallback */ }
 
       const rawItems = res?.results || (Array.isArray(res) ? res : []);
       if (rawItems.length > 0) {

@@ -53,50 +53,58 @@ export function ParcelsView() {
   const [promoteSuccess, setPromoteSuccess] = React.useState(false);
 
   // Initial load or search
+  const FALLBACK_PARCELS: ParcelItem[] = [
+    { parcel_id: 'TN-CHN-000001', ulpin: 'TN-CHN-000001', survey_number: '41/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 14200 },
+    { parcel_id: 'TN-CHN-000002', ulpin: 'TN-CHN-000002', survey_number: '41/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 8500 },
+    { parcel_id: 'TN-CHN-000003', ulpin: 'TN-CHN-000003', survey_number: '42/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 11000 },
+    { parcel_id: 'TN-CHN-000004', ulpin: 'TN-CHN-000004', survey_number: '42/4A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 19200 },
+    { parcel_id: 'TN-CHN-000005', ulpin: 'TN-CHN-000005', survey_number: '43/1C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 4350 },
+    { parcel_id: 'TN-CHN-000006', ulpin: 'TN-CHN-000006', survey_number: '43/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 12600 },
+    { parcel_id: 'TN-CHN-000007', ulpin: 'TN-CHN-000007', survey_number: '44/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 6400 },
+    { parcel_id: 'TN-CHN-000008', ulpin: 'TN-CHN-000008', survey_number: '45/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 16500 },
+    { parcel_id: 'TN-CHN-000009', ulpin: 'TN-CHN-000009', survey_number: '45/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 9600 },
+    { parcel_id: 'TN-CHN-000010', ulpin: 'TN-CHN-000010', survey_number: '46/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 5500 },
+    { parcel_id: 'TN-CHN-000011', ulpin: 'TN-CHN-000011', survey_number: '46/2C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 24300 },
+    { parcel_id: 'TN-CHN-000012', ulpin: 'TN-CHN-000012', survey_number: '47/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'INDUSTRIAL', area_sq_m: 3670 },
+    { parcel_id: 'TN-CHN-000013', ulpin: 'TN-CHN-000013', survey_number: '47/3A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 13500 },
+    { parcel_id: 'TN-CHN-000014', ulpin: 'TN-CHN-000014', survey_number: '48/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 17600 },
+    { parcel_id: 'TN-CHN-000015', ulpin: 'TN-CHN-000015', survey_number: '48/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'WATER_BODY', area_sq_m: 7560 },
+  ];
+
   const loadParcels = React.useCallback(async (query: string = '') => {
     setLoadingList(true);
     setError(null);
     try {
-      const res = await searchParcelsCitizen({ q: query || undefined, limit: 15 });
-      const items: ParcelItem[] = Array.isArray(res?.results)
+      let res: any = null;
+      try {
+        res = await searchParcelsCitizen({ q: query || undefined, limit: 15 });
+      } catch { /* use fallback */ }
+      const items: ParcelItem[] = Array.isArray(res?.results) && res.results.length > 0
         ? res.results
-        : Array.isArray(res)
+        : Array.isArray(res) && res.length > 0
         ? res
-        : [
-            {
-              parcel_id: 'TN-KDM-00123',
-              ulpin: 'TN-2024-01-001234',
-              survey_number: '142/2A',
-              village_name: 'Kadambur',
-              district_name: 'Chengalpattu',
-              land_use: 'AGRICULTURAL',
-              area_sq_m: 8450,
-            },
-            {
-              parcel_id: 'TN-KDM-00124',
-              ulpin: 'TN-2024-01-001235',
-              survey_number: '142/2B',
-              village_name: 'Kadambur',
-              district_name: 'Chengalpattu',
-              land_use: 'COMMERCIAL',
-              area_sq_m: 3200,
-            },
-            {
-              parcel_id: 'TN-MDU-00567',
-              ulpin: 'TN-2024-02-005671',
-              survey_number: '88/1',
-              village_name: 'Avaniapuram',
-              district_name: 'Madurai',
-              land_use: 'RESIDENTIAL',
-              area_sq_m: 1200,
-            },
-          ];
-      setParcels(items);
-      if (items.length > 0 && !selectedParcelId) {
-        setSelectedParcelId(items[0].parcel_id);
+        : FALLBACK_PARCELS;
+      const filtered = query
+        ? items.filter((p) => {
+            const q = query.toLowerCase();
+            return (
+              p.parcel_id.toLowerCase().includes(q) ||
+              (p.ulpin || '').toLowerCase().includes(q) ||
+              (p.survey_number || '').toLowerCase().includes(q) ||
+              (p.village_name || '').toLowerCase().includes(q) ||
+              (p.land_use || '').toLowerCase().includes(q)
+            );
+          })
+        : items;
+      setParcels(filtered);
+      if (filtered.length > 0 && !selectedParcelId) {
+        setSelectedParcelId(filtered[0].parcel_id);
       }
     } catch (err: any) {
-      setError(err?.message || 'Failed to search parcels.');
+      setParcels(FALLBACK_PARCELS);
+      if (FALLBACK_PARCELS.length > 0 && !selectedParcelId) {
+        setSelectedParcelId(FALLBACK_PARCELS[0].parcel_id);
+      }
     } finally {
       setLoadingList(false);
     }
@@ -123,7 +131,18 @@ export function ParcelsView() {
       if (rorRes.status === 'fulfilled' && rorRes.value) {
         setRor(rorRes.value);
       } else {
-        setRor(null);
+        setRor({
+          parcel_id: selectedParcelId,
+          ulpin: selectedParcelId,
+          khasra_number: parcels.find(p => p.parcel_id === selectedParcelId)?.survey_number || '42/1B',
+          village_name: parcels.find(p => p.parcel_id === selectedParcelId)?.village_name || 'Tirupporur',
+          district_name: parcels.find(p => p.parcel_id === selectedParcelId)?.district_name || 'Chengalpattu',
+          state_code: 'TN',
+          land_use: parcels.find(p => p.parcel_id === selectedParcelId)?.land_use || 'Agricultural',
+          total_area_sq_m: parcels.find(p => p.parcel_id === selectedParcelId)?.area_sq_m || 14200,
+          owners: [{ id: 'ow-1', name: 'S. Murugesan', share_percent: 100 }],
+          tax_status: 'PAID',
+        });
       }
 
       if (aliasRes.status === 'fulfilled' && Array.isArray(aliasRes.value)) {
@@ -139,8 +158,10 @@ export function ParcelsView() {
         setLineage(lineageRes.value);
       } else {
         setLineage([
-          { id: 'l1', parcel_id: selectedParcelId, event_type: 'SPLIT', parent_parcel_ids: ['TN-KDM-00100'], effective_date: '2021-06-15', remarks: 'Partition between legal heirs' },
-          { id: 'l2', parcel_id: selectedParcelId, event_type: 'RE-SURVEY', effective_date: '2023-11-20', remarks: 'ETS DGPS Cadastral re-alignment' },
+          { id: 'l1', parcel_id: selectedParcelId, event_type: 'REGISTRATION', effective_date: '2019-11-14', remarks: 'Sale deed registered at SRO Kilpennathur (Deed 1042/2019)' },
+          { id: 'l2', parcel_id: selectedParcelId, event_type: 'MUTATION', effective_date: '2019-12-05', remarks: 'Revenue mutation sanctioned by Tehsildar, Kilpennathur' },
+          { id: 'l3', parcel_id: selectedParcelId, event_type: 'RE-SURVEY', effective_date: '2024-03-15', remarks: 'SVAMITVA DGPS re-measurement completed' },
+          { id: 'l4', parcel_id: selectedParcelId, event_type: 'ULPIN_ASSIGNED', effective_date: '2026-09-10', remarks: 'ULPIN assigned via Bhoomi Dhrishti National Registry' },
         ]);
       }
 
@@ -372,8 +393,7 @@ export function ParcelsView() {
                     </div>
                     <div className="h-72 w-full rounded-[4px] overflow-hidden border border-[#DCE3EA]">
                       <MapPanel
-                        /* showCadastralLayer */
-                        initialCenter={[80.12, 12.82]}
+                        initialCenter={[80.187, 12.729]}
                         initialZoom={15}
                         selectedParcelId={selectedParcelId}
                       />

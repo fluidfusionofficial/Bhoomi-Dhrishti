@@ -12,6 +12,7 @@
     "dev:officer": "turbo run dev --filter=@bhoomi/officer",
     "dev:citizen": "turbo run dev --filter=@bhoomi/citizen",
     "dev:admin": "turbo run dev --filter=@bhoomi/admin",
+    "dev:portal": "turbo run dev --filter=@bhoomi/portal",
     "lint": "turbo run lint",
     "type-check": "turbo run type-check",
     "clean": "turbo run clean",

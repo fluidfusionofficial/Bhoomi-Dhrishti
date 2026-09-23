@@ -21,14 +21,23 @@ export interface ParcelData {
 }
 
 export interface LayerState {
+  // Tier 1: Base Spatial
   parcels: boolean;
   ulpin: boolean;
-  roads: boolean;
+  villageBoundary: boolean;
+  // Tier 2: Essential Governance
   ownership: boolean;
   landUse: boolean;
   zoning: boolean;
-  propertyTax: boolean;
+  registration: boolean;
+  encumbrance: boolean;
+  litigation: boolean;
   topologyConflicts: boolean;
+  // Tier 3: Use-Case & Utility
+  propertyTax: boolean;
+  utilityLines: boolean;
+  infrastructureRoW: boolean;
+  envBuffers: boolean;
   extruded?: boolean;
 }
 
@@ -123,6 +132,92 @@ const CONFLICT_GEOJSON = {
   ],
 };
 
+// ── Tier 2: Governance overlay GeoJSON ────────────────────────────────────────
+
+// Registration deed markers — centroids of parcels with registered deeds
+const REGISTRATION_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { parcel_id: 'P001', deed_no: '1042/2019', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1825, 12.7312] } },
+    { type: 'Feature', properties: { parcel_id: 'P002', deed_no: '0221/2021', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1858, 12.7311] } },
+    { type: 'Feature', properties: { parcel_id: 'P004', deed_no: '0891/2021', deed_type: 'MORTGAGE_DEED', sro: 'SRO Tirupporur', status: 'ENCUMBERED' }, geometry: { type: 'Point', coordinates: [80.1928, 12.7308] } },
+    { type: 'Feature', properties: { parcel_id: 'P008', deed_no: '1204/2018', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1868, 12.7277] } },
+    { type: 'Feature', properties: { parcel_id: 'P013', deed_no: '0562/2022', deed_type: 'GIFT_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1869, 12.7238] } },
+  ],
+};
+
+// Encumbrance certificate zone outlines — parcels with active mortgages/liens
+const ENCUMBRANCE_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { parcel_id: 'P004', ec_type: 'MORTGAGE', lender: 'SBI Chengalpattu', amount: 1500000, period: '2021–2031' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1908,12.7320],[80.1946,12.7325],[80.1948,12.7303],[80.1908,12.7298],[80.1908,12.7320]]] } },
+    { type: 'Feature', properties: { parcel_id: 'P007', ec_type: 'LIEN', lender: 'Canara Bank', amount: 800000, period: '2020–2030' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1836,12.7296],[80.1860,12.7282],[80.1855,12.7268],[80.1832,12.7272],[80.1836,12.7296]]] } },
+  ],
+};
+
+// Court litigation / stay order zones
+const LITIGATION_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { parcel_id: 'P003', case_no: 'OS-421/2024', court: 'Chengalpattu District Court', type: 'OWNERSHIP_DISPUTE', status: 'STAY_GRANTED' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1876,12.7328],[80.1910,12.7332],[80.1912,12.7295],[80.1876,12.7292],[80.1876,12.7328]]] } },
+    { type: 'Feature', properties: { parcel_id: 'P012', case_no: 'OS-188/2023', court: 'Chengalpattu District Court', type: 'TITLE_DISPUTE', status: 'PENDING' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1828,12.7270],[80.1862,12.7255],[80.1857,12.7232],[80.1823,12.7238],[80.1828,12.7270]]] } },
+  ],
+};
+
+// Zoning master plan polygons (residential / agricultural / commercial bands)
+const ZONING_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { zone: 'Residential', plan: 'Tirupporur Master Plan 2041' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1840,12.7335],[80.1980,12.7335],[80.1980,12.7305],[80.1840,12.7305],[80.1840,12.7335]]] } },
+    { type: 'Feature', properties: { zone: 'Agricultural', plan: 'Tirupporur Master Plan 2041' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1770,12.7310],[80.1840,12.7310],[80.1840,12.7225],[80.1770,12.7225],[80.1770,12.7310]]] } },
+    { type: 'Feature', properties: { zone: 'Commercial', plan: 'Tirupporur Master Plan 2041' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1940,12.7305],[80.1990,12.7305],[80.1990,12.7255],[80.1940,12.7255],[80.1940,12.7305]]] } },
+  ],
+};
+
+// ── Tier 3: Use-Case & Utility overlay GeoJSON ─────────────────────────────────
+
+// Utility lines — water main, electricity, gas (simplified line segments through village)
+const UTILITY_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { type: 'WATER_MAIN', operator: 'TWAD Board', diameter_mm: 200 },
+      geometry: { type: 'LineString', coordinates: [[80.1780,12.7290],[80.1830,12.7285],[80.1880,12.7280],[80.1940,12.7275],[80.1980,12.7268]] } },
+    { type: 'Feature', properties: { type: 'ELECTRICITY', operator: 'TANGEDCO', voltage_kv: 11 },
+      geometry: { type: 'LineString', coordinates: [[80.1795,12.7330],[80.1840,12.7310],[80.1880,12.7295],[80.1930,12.7285],[80.1970,12.7280]] } },
+    { type: 'Feature', properties: { type: 'GAS_PIPELINE', operator: 'GAIL', pressure: 'medium' },
+      geometry: { type: 'LineString', coordinates: [[80.1780,12.7245],[80.1840,12.7248],[80.1900,12.7250],[80.1960,12.7248]] } },
+  ],
+};
+
+// Infrastructure Right-of-Way (RoW) corridors
+const ROW_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { type: 'STATE_HIGHWAY', road_no: 'SH-114', row_width_m: 30 },
+      geometry: { type: 'Polygon', coordinates: [[[80.1780,12.7302],[80.1980,12.7302],[80.1980,12.7290],[80.1780,12.7290],[80.1780,12.7302]]] } },
+    { type: 'Feature', properties: { type: 'PANCHAYAT_ROAD', row_width_m: 7 },
+      geometry: { type: 'Polygon', coordinates: [[[80.1870,12.7335],[80.1874,12.7335],[80.1874,12.7225],[80.1870,12.7225],[80.1870,12.7335]]] } },
+  ],
+};
+
+// Environmental buffers — waterbody, coastal regulation zone, forest reserve
+const ENV_BUFFER_GEOJSON = {
+  type: 'FeatureCollection',
+  features: [
+    { type: 'Feature', properties: { type: 'WATERBODY_BUFFER', body: 'Palar River Tributary', buffer_m: 100, regulation: 'CRZ-III' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1946,12.7260],[80.1978,12.7268],[80.1985,12.7230],[80.1955,12.7225],[80.1938,12.7228],[80.1946,12.7260]]] } },
+    { type: 'Feature', properties: { type: 'FOREST_BUFFER', body: 'Reserve Forest Block 42', buffer_m: 50, regulation: 'Forest Act 1980' },
+      geometry: { type: 'Polygon', coordinates: [[[80.1768,12.7260],[80.1795,12.7265],[80.1798,12.7230],[80.1770,12.7225],[80.1768,12.7260]]] } },
+  ],
+};
+
 // ── MapLibre expression helpers ────────────────────────────────────────────────
 
 function statusColorExpr() {
@@ -191,15 +286,35 @@ function visStr(on: boolean | undefined): 'visible' | 'none' {
 }
 
 function applyLayerState(map: any, layers: LayerState, pid: string | null) {
+  // Tier 1: Base Spatial
   safeSet(map, () => map.setLayoutProperty('parcels-fill', 'visibility', visStr(layers.parcels)));
   safeSet(map, () => map.setLayoutProperty('parcels-outline', 'visibility', visStr(layers.parcels)));
   safeSet(map, () => map.setLayoutProperty('parcels-labels', 'visibility', visStr(layers.ulpin)));
+  safeSet(map, () => map.setLayoutProperty('village-boundary', 'visibility', visStr(layers.villageBoundary)));
+
+  // Tier 2: Governance
+  safeSet(map, () => map.setLayoutProperty('zoning-fill', 'visibility', visStr(layers.zoning)));
+  safeSet(map, () => map.setLayoutProperty('zoning-outline', 'visibility', visStr(layers.zoning)));
+  safeSet(map, () => map.setLayoutProperty('registration-points', 'visibility', visStr(layers.registration)));
+  safeSet(map, () => map.setLayoutProperty('encumbrance-fill', 'visibility', visStr(layers.encumbrance)));
+  safeSet(map, () => map.setLayoutProperty('encumbrance-outline', 'visibility', visStr(layers.encumbrance)));
+  safeSet(map, () => map.setLayoutProperty('litigation-fill', 'visibility', visStr(layers.litigation)));
+  safeSet(map, () => map.setLayoutProperty('litigation-outline', 'visibility', visStr(layers.litigation)));
   safeSet(map, () => map.setLayoutProperty('conflict-fill', 'visibility', visStr(layers.topologyConflicts)));
   safeSet(map, () => map.setLayoutProperty('conflict-outline', 'visibility', visStr(layers.topologyConflicts)));
+
+  // Tier 3: Use-Case & Utility
+  safeSet(map, () => map.setLayoutProperty('utility-lines', 'visibility', visStr(layers.utilityLines)));
+  safeSet(map, () => map.setLayoutProperty('utility-labels', 'visibility', visStr(layers.utilityLines)));
+  safeSet(map, () => map.setLayoutProperty('row-fill', 'visibility', visStr(layers.infrastructureRoW)));
+  safeSet(map, () => map.setLayoutProperty('row-outline', 'visibility', visStr(layers.infrastructureRoW)));
+  safeSet(map, () => map.setLayoutProperty('env-buffer-fill', 'visibility', visStr(layers.envBuffers)));
+  safeSet(map, () => map.setLayoutProperty('env-buffer-outline', 'visibility', visStr(layers.envBuffers)));
 
   // 3D extrusion toggle
   safeSet(map, () => map.setLayoutProperty('parcels-extrusion', 'visibility', visStr(layers.extruded)));
 
+  // Parcel coloring priority: landUse > zoning override > ownership status
   const colorExpr = layers.landUse
     ? landUseColorExpr()
     : layers.ownership
@@ -208,10 +323,8 @@ function applyLayerState(map: any, layers: LayerState, pid: string | null) {
 
   safeSet(map, () => map.setPaintProperty('parcels-fill', 'fill-color', colorExpr));
   safeSet(map, () => map.setPaintProperty('parcels-fill', 'fill-opacity', fillOpacityExpr(pid)));
-  // Borders always use high-contrast satellite colors regardless of theme
   safeSet(map, () => map.setPaintProperty('parcels-outline', 'line-color', satBorderColorExpr()));
   safeSet(map, () => map.setPaintProperty('parcels-outline', 'line-width', lineWidthExpr(pid)));
-  // Extrusion colors follow the active theme
   safeSet(map, () => map.setPaintProperty('parcels-extrusion', 'fill-extrusion-color', colorExpr));
 }
 
@@ -475,6 +588,165 @@ export function CadastralMap({
           type: 'line',
           source: 'conflicts',
           paint: { 'line-color': '#dc2626', 'line-width': 2, 'line-dasharray': [4, 2] },
+        });
+
+        // ── Tier 1: Village boundary outline ──────────────────────────
+        map.addSource('village-boundary-src', {
+          type: 'geojson',
+          data: {
+            type: 'Feature',
+            properties: { name: 'Tirupporur Village' },
+            geometry: { type: 'Polygon', coordinates: [[[80.1760,12.7345],[80.1995,12.7345],[80.1995,12.7215],[80.1760,12.7215],[80.1760,12.7345]]] },
+          } as any,
+        });
+        map.addLayer({
+          id: 'village-boundary',
+          type: 'line',
+          source: 'village-boundary-src',
+          layout: { visibility: 'none' },
+          paint: { 'line-color': '#c9b48a', 'line-width': 2, 'line-dasharray': [6, 3] },
+        });
+
+        // ── Tier 2: Zoning master plan ─────────────────────────────────
+        map.addSource('zoning', { type: 'geojson', data: ZONING_GEOJSON as any });
+        map.addLayer({
+          id: 'zoning-fill',
+          type: 'fill',
+          source: 'zoning',
+          layout: { visibility: 'none' },
+          paint: {
+            'fill-color': ['match', ['get', 'zone'], 'Residential', '#2563eb', 'Agricultural', '#65a30d', 'Commercial', '#c026d3', '#9aa4b3'],
+            'fill-opacity': 0.18,
+          },
+        });
+        map.addLayer({
+          id: 'zoning-outline',
+          type: 'line',
+          source: 'zoning',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': ['match', ['get', 'zone'], 'Residential', '#2563eb', 'Agricultural', '#65a30d', 'Commercial', '#c026d3', '#9aa4b3'],
+            'line-width': 1.5,
+            'line-dasharray': [3, 2],
+          },
+        });
+
+        // ── Tier 2: Registration deeds ─────────────────────────────────
+        map.addSource('registration', { type: 'geojson', data: REGISTRATION_GEOJSON as any });
+        map.addLayer({
+          id: 'registration-points',
+          type: 'circle',
+          source: 'registration',
+          layout: { visibility: 'none' },
+          paint: {
+            'circle-radius': 7,
+            'circle-color': ['match', ['get', 'status'], 'ENCUMBERED', '#d97706', '#7c3aed'],
+            'circle-stroke-color': '#ffffff',
+            'circle-stroke-width': 2,
+            'circle-opacity': 0.9,
+          },
+        });
+
+        // ── Tier 2: Encumbrance certificate zones ──────────────────────
+        map.addSource('encumbrance', { type: 'geojson', data: ENCUMBRANCE_GEOJSON as any });
+        map.addLayer({
+          id: 'encumbrance-fill',
+          type: 'fill',
+          source: 'encumbrance',
+          layout: { visibility: 'none' },
+          paint: { 'fill-color': '#d97706', 'fill-opacity': 0.22 },
+        });
+        map.addLayer({
+          id: 'encumbrance-outline',
+          type: 'line',
+          source: 'encumbrance',
+          layout: { visibility: 'none' },
+          paint: { 'line-color': '#d97706', 'line-width': 2, 'line-dasharray': [4, 2] },
+        });
+
+        // ── Tier 2: Court litigation / stay zones ──────────────────────
+        map.addSource('litigation', { type: 'geojson', data: LITIGATION_GEOJSON as any });
+        map.addLayer({
+          id: 'litigation-fill',
+          type: 'fill',
+          source: 'litigation',
+          layout: { visibility: 'none' },
+          paint: { 'fill-color': '#7c3aed', 'fill-opacity': 0.25 },
+        });
+        map.addLayer({
+          id: 'litigation-outline',
+          type: 'line',
+          source: 'litigation',
+          layout: { visibility: 'none' },
+          paint: { 'line-color': '#7c3aed', 'line-width': 2, 'line-dasharray': [3, 3] },
+        });
+
+        // ── Tier 3: Utility lines ──────────────────────────────────────
+        map.addSource('utilities', { type: 'geojson', data: UTILITY_GEOJSON as any });
+        map.addLayer({
+          id: 'utility-lines',
+          type: 'line',
+          source: 'utilities',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': ['match', ['get', 'type'], 'WATER_MAIN', '#0891b2', 'ELECTRICITY', '#f59e0b', 'GAS_PIPELINE', '#f97316', '#6b7688'],
+            'line-width': 2.5,
+            'line-dasharray': ['match', ['get', 'type'], 'GAS_PIPELINE', ['literal', [6, 3]], ['literal', [1, 0]]] as any,
+          },
+        });
+        map.addLayer({
+          id: 'utility-labels',
+          type: 'symbol',
+          source: 'utilities',
+          layout: {
+            visibility: 'none',
+            'symbol-placement': 'line',
+            'text-field': ['get', 'type'],
+            'text-size': 9,
+            'text-font': ['Noto Sans Bold'],
+          } as any,
+          paint: { 'text-color': '#f59e0b', 'text-halo-color': '#000', 'text-halo-width': 1 },
+        });
+
+        // ── Tier 3: Infrastructure Right-of-Way ────────────────────────
+        map.addSource('row', { type: 'geojson', data: ROW_GEOJSON as any });
+        map.addLayer({
+          id: 'row-fill',
+          type: 'fill',
+          source: 'row',
+          layout: { visibility: 'none' },
+          paint: { 'fill-color': '#78716c', 'fill-opacity': 0.20 },
+        });
+        map.addLayer({
+          id: 'row-outline',
+          type: 'line',
+          source: 'row',
+          layout: { visibility: 'none' },
+          paint: { 'line-color': '#78716c', 'line-width': 1.5 },
+        });
+
+        // ── Tier 3: Environmental buffers ──────────────────────────────
+        map.addSource('env-buffers', { type: 'geojson', data: ENV_BUFFER_GEOJSON as any });
+        map.addLayer({
+          id: 'env-buffer-fill',
+          type: 'fill',
+          source: 'env-buffers',
+          layout: { visibility: 'none' },
+          paint: {
+            'fill-color': ['match', ['get', 'type'], 'WATERBODY_BUFFER', '#0891b2', '#15803d'],
+            'fill-opacity': 0.28,
+          },
+        });
+        map.addLayer({
+          id: 'env-buffer-outline',
+          type: 'line',
+          source: 'env-buffers',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': ['match', ['get', 'type'], 'WATERBODY_BUFFER', '#0891b2', '#15803d'],
+            'line-width': 1.5,
+            'line-dasharray': [4, 2],
+          },
         });
 
         // ── Animated conflict zones — pulsing opacity ──────────────────

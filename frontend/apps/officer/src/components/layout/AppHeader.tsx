@@ -2,9 +2,11 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, X, MapPin } from 'lucide-react';
+import { useRole } from '@/context/RoleContext';
 
 export interface AppHeaderProps {
   onSearch?: (parcelId: string) => void;
+  onGoHome?: () => void;
 }
 
 interface Suggestion {
@@ -35,10 +37,10 @@ const DEMO_SUGGESTIONS: Suggestion[] = [
   },
 ];
 
-export default function AppHeader({ onSearch }: AppHeaderProps) {
+export default function AppHeader({ onSearch, onGoHome }: AppHeaderProps) {
   const [query, setQuery] = useState('');
   const [isFocused, setIsFocused] = useState(false);
-  const [activeRole, setActiveRole] = useState<'citizen' | 'officer'>('officer');
+  const { config } = useRole();
 
   const searchWrapperRef = useRef<HTMLDivElement>(null);
 
@@ -91,9 +93,12 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
         boxSizing: 'border-box',
       }}
     >
-      {/* LEFT: Brand */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-        {/* Seal */}
+      {/* LEFT: Brand — clickable to go home */}
+      <div
+        style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0, cursor: 'pointer' }}
+        onClick={onGoHome}
+        title="Go to Dashboard"
+      >
         <div
           style={{
             width: '40px',
@@ -108,7 +113,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
           <MapPin size={24} color="white" />
         </div>
 
-        {/* Title + sub-label */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
           <span
             style={{
@@ -145,9 +149,7 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
         }}
         ref={searchWrapperRef}
       >
-        {/* Input wrapper */}
         <div style={{ position: 'relative', height: '40px' }}>
-          {/* Search icon */}
           <Search
             size={16}
             style={{
@@ -183,8 +185,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
             }}
           />
 
-          {/* Placeholder color override via inline trick — handled by controlling color */}
-          {/* Clear button */}
           {query.length > 0 && (
             <button
               onClick={() => {
@@ -213,7 +213,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
           )}
         </div>
 
-        {/* Suggestions dropdown */}
         {showSuggestions && (
           <div
             style={{
@@ -267,7 +266,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    {/* Type chip */}
                     <span
                       style={{
                         fontFamily: 'monospace',
@@ -283,7 +281,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
                     >
                       {suggestion.type}
                     </span>
-                    {/* Name */}
                     <span
                       style={{
                         fontSize: '13px',
@@ -294,7 +291,6 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
                       {suggestion.name}
                     </span>
                   </div>
-                  {/* Sub */}
                   <span
                     style={{
                       fontSize: '11.5px',
@@ -311,57 +307,51 @@ export default function AppHeader({ onSearch }: AppHeaderProps) {
         )}
       </div>
 
-      {/* RIGHT: Controls */}
+      {/* RIGHT: Role Badge + Demo */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexShrink: 0 }}>
-        {/* Role toggle segment */}
+        {/* Active Role Badge */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
+            gap: '8px',
             background: 'rgba(255,255,255,.10)',
             borderRadius: '10px',
-            padding: '3px',
-            gap: '2px',
+            padding: '6px 14px',
             border: '1px solid rgba(255,255,255,.14)',
           }}
         >
-          {(['citizen', 'officer'] as const).map((role) => {
-            const isActive = activeRole === role;
-            return (
-              <button
-                key={role}
-                onClick={() => setActiveRole(role)}
-                style={{
-                  background: isActive ? 'white' : 'none',
-                  color: isActive ? '#12315e' : '#c7d8f0',
-                  fontWeight: isActive ? 600 : 400,
-                  border: 'none',
-                  borderRadius: '7px',
-                  padding: '5px 13px',
-                  fontSize: '13px',
-                  cursor: 'pointer',
-                  boxShadow: isActive ? '0 1px 3px rgba(0,0,0,0.15)' : 'none',
-                  transition: 'background 0.12s, color 0.12s',
-                  textTransform: 'capitalize',
-                }}
-                onMouseEnter={(e) => {
-                  if (!isActive) {
-                    (e.currentTarget as HTMLButtonElement).style.background =
-                      'rgba(255,255,255,.08)';
-                    (e.currentTarget as HTMLButtonElement).style.color = 'white';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isActive) {
-                    (e.currentTarget as HTMLButtonElement).style.background = 'none';
-                    (e.currentTarget as HTMLButtonElement).style.color = '#c7d8f0';
-                  }
-                }}
-              >
-                {role.charAt(0).toUpperCase() + role.slice(1)}
-              </button>
-            );
-          })}
+          <span
+            style={{
+              width: '8px',
+              height: '8px',
+              borderRadius: '50%',
+              background: config.color,
+              flexShrink: 0,
+              boxShadow: `0 0 6px ${config.color}80`,
+            }}
+          />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span
+              style={{
+                fontSize: '12px',
+                fontWeight: 700,
+                color: 'white',
+                lineHeight: 1.2,
+              }}
+            >
+              {config.title}
+            </span>
+            <span
+              style={{
+                fontSize: '10px',
+                color: '#aac4e8',
+                lineHeight: 1.2,
+              }}
+            >
+              {config.subtitle}
+            </span>
+          </div>
         </div>
 
         {/* SIH Live Demo button */}

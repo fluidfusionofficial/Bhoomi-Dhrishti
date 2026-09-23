@@ -1,9 +1,12 @@
 'use client';
 
 import * as React from 'react';
-import { OfficerSidebar, OfficerNavTab } from '@/components/layout/OfficerSidebar';
+import { RoleProvider, useRole, OfficerNavTab } from '@/context/RoleContext';
+import { FreshnessProvider } from '@/context/FreshnessContext';
+import { OfficerSidebar } from '@/components/layout/OfficerSidebar';
 import AppHeader from '@/components/layout/AppHeader';
 import KpiStrip from '@/components/layout/KpiStrip';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { HomeView } from '@/components/dashboard/HomeView';
 import { QueueView } from '@/components/dashboard/QueueView';
 import { CadastralView } from '@/components/dashboard/CadastralView';
@@ -16,12 +19,24 @@ import { TrustFraudView } from '@/components/dashboard/TrustFraudView';
 import { SatelliteView } from '@/components/dashboard/SatelliteView';
 import { WorkflowsView } from '@/components/dashboard/WorkflowsView';
 import { GlobalSearchView } from '@/components/dashboard/GlobalSearchView';
+import { PlanningView } from '@/components/dashboard/PlanningView';
+import { AnalyticsView } from '@/components/dashboard/AnalyticsView';
 
-export default function OfficerConsolePage() {
-  const [activeTab, setActiveTab] = React.useState<OfficerNavTab>('home');
+function OfficerConsoleInner() {
+  const { config, isTabAllowed } = useRole();
+  const [activeTab, setActiveTab] = React.useState<OfficerNavTab>(config.defaultTab);
   const [selectedParcelForInspector, setSelectedParcelForInspector] = React.useState<string | null>(null);
 
-  // Pending counts for sidebar badges
+  const safeSetTab = React.useCallback(
+    (tab: OfficerNavTab | string) => {
+      const t = tab as OfficerNavTab;
+      if (isTabAllowed(t)) {
+        setActiveTab(t);
+      }
+    },
+    [isTabAllowed]
+  );
+
   const pendingCounts: Partial<Record<OfficerNavTab, number>> = {
     home: 4,
     queue: 3,
@@ -31,19 +46,20 @@ export default function OfficerConsolePage() {
     spatial: 3,
     trust: 2,
     satellite: 1,
+    planning: 4,
   };
 
   const handleSelectParcelFromSearch = (parcelId: string) => {
     setSelectedParcelForInspector(parcelId);
-    setActiveTab('parcels');
+    safeSetTab('parcels');
   };
 
   return (
     <div className="h-screen w-screen flex flex-col overflow-hidden bg-[#F4F7FB]">
-      <AppHeader onSearch={handleSelectParcelFromSearch} />
-      <KpiStrip onNavigate={(tab) => setActiveTab(tab as OfficerNavTab)} />
+      <AppHeader onSearch={handleSelectParcelFromSearch} onGoHome={() => safeSetTab('home')} />
+      <KpiStrip onNavigate={(tab) => safeSetTab(tab)} />
+      <Breadcrumb activeTab={activeTab} onNavigate={(tab) => safeSetTab(tab)} />
 
-      {/* Main View Area: Left Rail + Center Work Area */}
       <div className="flex-1 flex min-h-0 overflow-hidden">
         <OfficerSidebar
           activeTab={activeTab}
@@ -52,22 +68,34 @@ export default function OfficerConsolePage() {
         />
 
         <main className="flex-1 flex flex-col min-w-0 overflow-hidden bg-[#F4F7FB]">
-          {activeTab === 'home'      && <HomeView      onNavigateTab={(tab) => setActiveTab(tab)} />}
-          {activeTab === 'cadastral' && <CadastralView onNavigateTab={(tab) => setActiveTab(tab)} />}
-          {activeTab === 'queue'     && <QueueView     onNavigateTab={(tab) => setActiveTab(tab)} />}
-          {activeTab === 'parcels' && <ParcelsView />}
-          {activeTab === 'revenue' && <RevenueView />}
+          {activeTab === 'home'         && <HomeView onNavigateTab={(tab) => safeSetTab(tab)} />}
+          {activeTab === 'analytics'    && <AnalyticsView />}
+          {activeTab === 'cadastral'    && <CadastralView onNavigateTab={(tab) => safeSetTab(tab)} />}
+          {activeTab === 'queue'        && <QueueView onNavigateTab={(tab) => safeSetTab(tab)} />}
+          {activeTab === 'parcels'      && <ParcelsView />}
+          {activeTab === 'revenue'      && <RevenueView />}
           {activeTab === 'registration' && <RegistrationView />}
-          {activeTab === 'resolution' && <ResolutionView />}
-          {activeTab === 'spatial' && <SpatialView />}
-          {activeTab === 'trust' && <TrustFraudView />}
-          {activeTab === 'satellite' && <SatelliteView />}
-          {activeTab === 'workflows' && <WorkflowsView />}
-          {activeTab === 'search' && (
+          {activeTab === 'planning'     && <PlanningView />}
+          {activeTab === 'resolution'   && <ResolutionView />}
+          {activeTab === 'spatial'      && <SpatialView />}
+          {activeTab === 'trust'        && <TrustFraudView />}
+          {activeTab === 'satellite'    && <SatelliteView />}
+          {activeTab === 'workflows'    && <WorkflowsView />}
+          {activeTab === 'search'       && (
             <GlobalSearchView onSelectParcel={handleSelectParcelFromSearch} />
           )}
         </main>
       </div>
     </div>
+  );
+}
+
+export default function OfficerConsolePage() {
+  return (
+    <RoleProvider>
+      <FreshnessProvider>
+        <OfficerConsoleInner />
+      </FreshnessProvider>
+    </RoleProvider>
   );
 }

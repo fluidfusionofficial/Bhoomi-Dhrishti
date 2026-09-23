@@ -1,391 +1,310 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import { ZoomIn, ZoomOut, Layers, Compass, X, ChevronRight, Map as MapIcon } from 'lucide-react';
+import React from 'react';
 import {
-  CadastralMap,
-  PARCEL_DATA,
-  type ParcelData,
-  type LayerState,
-} from './CadastralMap';
+  Map, MapPin, FileSpreadsheet, FileCheck2, Building2, Layers,
+  ShieldAlert, Satellite, GitBranch, Search, BarChart3, Scale,
+  ArrowRight, Clock, CheckCircle2, AlertTriangle, Globe, Users,
+  Eye, Zap, Database, TrendingUp, ChevronRight, Landmark,
+} from 'lucide-react';
+import { useRole, OfficerNavTab } from '@/context/RoleContext';
+import { useFreshness } from '@/context/FreshnessContext';
 
-// ── Helpers ────────────────────────────────────────────────────────────────────
-
-function statusPillClass(status: string): string {
-  if (status === 'Conflict') return 'bg-[#dc2626] text-white';
-  if (status === 'Warning')  return 'bg-[#d97706] text-white';
-  if (status === 'Pending')  return 'bg-[#2456a6] text-white';
-  return 'bg-[#16a34a] text-white';
-}
-
-function riskBadgeClass(risk: string): string {
-  if (risk === 'High')   return 'bg-[#fdeaea] text-[#dc2626]';
-  if (risk === 'Medium') return 'bg-[#fdf1e0] text-[#d97706]';
-  return 'bg-[#e7f6ec] text-[#16a34a]';
-}
-
-function Toggle({ on, onToggle }: { on: boolean; onToggle: () => void }) {
-  return (
-    <div
-      onClick={onToggle}
-      className="flex-shrink-0 cursor-pointer"
-      style={{
-        width: 34,
-        height: 20,
-        borderRadius: 20,
-        background: on ? '#118a80' : '#cbd3de',
-        position: 'relative',
-        transition: 'background .18s',
-      }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: 2,
-          left: on ? 16 : 2,
-          width: 16,
-          height: 16,
-          borderRadius: '50%',
-          background: '#fff',
-          boxShadow: '0 1px 2px rgba(11,36,71,.08)',
-          transition: 'left .18s',
-        }}
-      />
-    </div>
-  );
-}
-
-// ── Layer row ──────────────────────────────────────────────────────────────────
-
-function LayerRow({
-  label,
-  color,
-  on,
-  onToggle,
-}: {
+interface QuickAction {
+  tab: OfficerNavTab;
   label: string;
+  description: string;
+  icon: React.ElementType;
   color: string;
-  on: boolean;
-  onToggle: () => void;
-}) {
-  return (
-    <div className="flex items-center gap-2.5 py-1.5 cursor-pointer hover:[&_span]:text-[#1b4079]" onClick={onToggle}>
-      <Toggle on={on} onToggle={() => {}} />
-      <span className="text-[13px] font-semibold text-[#425066] flex-1 transition-colors">{label}</span>
-      <div
-        className="w-3.5 h-3.5 rounded-[4px] flex-shrink-0 border border-black/[.08]"
-        style={{ background: color }}
-      />
-    </div>
-  );
+  bgColor: string;
 }
 
-// ── Component ──────────────────────────────────────────────────────────────────
+interface StatCard {
+  label: string;
+  value: string;
+  sub: string;
+  icon: React.ElementType;
+  color: string;
+  bgColor: string;
+  tab: OfficerNavTab;
+}
+
+interface RecentItem {
+  id: string;
+  title: string;
+  sub: string;
+  time: string;
+  status: 'ok' | 'warning' | 'critical';
+  dept: string;
+}
+
+function getQuickActions(role: string): QuickAction[] {
+  const common: QuickAction[] = [
+    { tab: 'parcels', label: 'Search Parcels', description: 'Look up any parcel by ULPIN, survey number, or owner name', icon: Search, color: '#14548C', bgColor: '#E2ECF5' },
+    { tab: 'cadastral', label: 'Cadastral Map', description: 'Open the Three-Tier GIS engine with satellite imagery', icon: Map, color: '#0F766E', bgColor: '#E6F6F4' },
+  ];
+
+  switch (role) {
+    case 'tehsildar':
+      return [
+        { tab: 'revenue', label: 'Revenue Casework', description: 'View mutation register, RoR records, and pattadar transfers', icon: FileSpreadsheet, color: '#14548C', bgColor: '#E2ECF5' },
+        { tab: 'queue', label: 'Casework Queue', description: 'Review pending identity matches, mutations, and conflicts', icon: Clock, color: '#B8720B', bgColor: '#FDF1E0' },
+        ...common,
+        { tab: 'trust', label: 'Trust & Fraud', description: 'Inspect anomaly scores and circular chain detection', icon: ShieldAlert, color: '#A32E2E', bgColor: '#FDEAEA' },
+        { tab: 'workflows', label: 'Workflows', description: 'Launch cross-departmental workflow simulations', icon: GitBranch, color: '#1E7B4D', bgColor: '#E7F6EC' },
+      ];
+    case 'sub-registrar':
+      return [
+        { tab: 'registration', label: 'Deeds & EC', description: 'View registered deeds, encumbrance certificates, and stamp duty calculator', icon: FileCheck2, color: '#7C3AED', bgColor: '#EDE9FE' },
+        { tab: 'queue', label: 'Casework Queue', description: 'Review pending identity matches and deed verification', icon: Clock, color: '#B8720B', bgColor: '#FDF1E0' },
+        ...common,
+        { tab: 'trust', label: 'Suspicious Transfers', description: 'Flag and review suspicious transfer patterns', icon: ShieldAlert, color: '#A32E2E', bgColor: '#FDEAEA' },
+        { tab: 'workflows', label: 'Workflows', description: 'Launch encumbrance locking and mutation workflows', icon: GitBranch, color: '#1E7B4D', bgColor: '#E7F6EC' },
+      ];
+    case 'town-planner':
+      return [
+        { tab: 'planning', label: 'Planning & Zoning', description: 'Zoning compliance, building permits, and property tax linkage', icon: Building2, color: '#B45309', bgColor: '#FEF3C7' },
+        ...common,
+        { tab: 'spatial', label: 'Spatial Analysis', description: 'Topology conflicts, boundary overlaps, and restriction zones', icon: Layers, color: '#0369A1', bgColor: '#E0F2FE' },
+        { tab: 'satellite', label: 'Satellite Watch', description: 'Sentinel-2 unauthorized conversion detection', icon: Satellite, color: '#A32E2E', bgColor: '#FDEAEA' },
+        { tab: 'workflows', label: 'Workflows', description: 'Launch violation detection workflow simulations', icon: GitBranch, color: '#1E7B4D', bgColor: '#E7F6EC' },
+      ];
+    case 'surveyor':
+      return [
+        { tab: 'spatial', label: 'Topology Conflicts', description: 'Resolve overlaps, gaps, slivers in cadastral boundaries', icon: Layers, color: '#0369A1', bgColor: '#E0F2FE' },
+        ...common,
+        { tab: 'satellite', label: 'Satellite Watch', description: 'Encroachment detection via Sentinel-2 imagery', icon: Satellite, color: '#A32E2E', bgColor: '#FDEAEA' },
+        { tab: 'workflows', label: 'Workflows', description: 'Launch dynamic partitioning workflow', icon: GitBranch, color: '#1E7B4D', bgColor: '#E7F6EC' },
+      ];
+    case 'collector':
+      return [
+        { tab: 'analytics', label: 'Executive Analytics', description: 'District KPIs, heatmaps, department performance, and scheme coverage', icon: BarChart3, color: '#0B2E4E', bgColor: '#E2ECF5' },
+        { tab: 'queue', label: 'Pendency Board', description: 'Cross-department pending casework requiring escalation', icon: Clock, color: '#B8720B', bgColor: '#FDF1E0' },
+        ...common,
+        { tab: 'trust', label: 'Trust & Fraud', description: 'District-wide anomaly patterns and network graph', icon: ShieldAlert, color: '#A32E2E', bgColor: '#FDEAEA' },
+        { tab: 'workflows', label: 'Workflows', description: 'All four cross-departmental workflow simulations', icon: GitBranch, color: '#1E7B4D', bgColor: '#E7F6EC' },
+      ];
+    default:
+      return common;
+  }
+}
+
+function getStats(role: string): StatCard[] {
+  switch (role) {
+    case 'tehsildar':
+      return [
+        { label: 'Pending Mutations', value: '7', sub: '3 high priority', icon: FileSpreadsheet, color: '#B8720B', bgColor: '#FDF1E0', tab: 'revenue' },
+        { label: 'Topology Conflicts', value: '5', sub: '2 boundary overlaps', icon: Layers, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'spatial' },
+        { label: 'High Risk Parcels', value: '4', sub: 'Trust score < 40', icon: ShieldAlert, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'trust' },
+        { label: 'Verified This Week', value: '8', sub: 'of 15 total', icon: CheckCircle2, color: '#1E7B4D', bgColor: '#E7F6EC', tab: 'parcels' },
+      ];
+    case 'sub-registrar':
+      return [
+        { label: 'Pending Deeds', value: '5', sub: '2 mortgage deeds', icon: FileCheck2, color: '#7C3AED', bgColor: '#EDE9FE', tab: 'registration' },
+        { label: 'EC Requests', value: '3', sub: 'Avg 0.2 days', icon: Scale, color: '#14548C', bgColor: '#E2ECF5', tab: 'registration' },
+        { label: 'Suspicious Transfers', value: '2', sub: 'Flagged by trust engine', icon: ShieldAlert, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'trust' },
+        { label: 'Registered This Week', value: '12', sub: '₹2.1Cr total', icon: CheckCircle2, color: '#1E7B4D', bgColor: '#E7F6EC', tab: 'registration' },
+      ];
+    case 'town-planner':
+      return [
+        { label: 'Zone Violations', value: '4', sub: '2 commercial on ag. land', icon: AlertTriangle, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'planning' },
+        { label: 'Permits Pending', value: '6', sub: '3 pending > 7 days', icon: Building2, color: '#B45309', bgColor: '#FEF3C7', tab: 'planning' },
+        { label: 'Land Use Changes', value: '3', sub: 'Satellite detected', icon: Satellite, color: '#0369A1', bgColor: '#E0F2FE', tab: 'satellite' },
+        { label: 'Restriction Zones', value: '4', sub: 'CRZ, Heritage, SEZ', icon: Landmark, color: '#14548C', bgColor: '#E2ECF5', tab: 'planning' },
+      ];
+    case 'surveyor':
+      return [
+        { label: 'Topology Conflicts', value: '5', sub: '3 overlaps, 2 slivers', icon: Layers, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'spatial' },
+        { label: 'Demarcation Pending', value: '4', sub: 'DGPS upload needed', icon: Globe, color: '#0369A1', bgColor: '#E0F2FE', tab: 'spatial' },
+        { label: 'Encroachments', value: '2', sub: 'Sentinel-2 flagged', icon: Satellite, color: '#B8720B', bgColor: '#FDF1E0', tab: 'satellite' },
+        { label: 'Parcels Surveyed', value: '11', sub: 'This month', icon: CheckCircle2, color: '#1E7B4D', bgColor: '#E7F6EC', tab: 'parcels' },
+      ];
+    case 'collector':
+      return [
+        { label: 'Total Parcels', value: '15,842', sub: '+312 this month', icon: MapPin, color: '#14548C', bgColor: '#E2ECF5', tab: 'analytics' },
+        { label: 'Revenue Collection', value: '₹4.2Cr', sub: '+18.4% YoY', icon: TrendingUp, color: '#1E7B4D', bgColor: '#E7F6EC', tab: 'analytics' },
+        { label: 'Mutation Backlog', value: '47', sub: '-12 from last month', icon: Clock, color: '#B8720B', bgColor: '#FDF1E0', tab: 'analytics' },
+        { label: 'Active Disputes', value: '23', sub: '6 critical', icon: AlertTriangle, color: '#A32E2E', bgColor: '#FDEAEA', tab: 'analytics' },
+      ];
+    default:
+      return [];
+  }
+}
+
+const RECENT_ACTIVITY: RecentItem[] = [
+  { id: '1', title: 'Mutation MUT-2026-0819 filed', sub: 'ULPIN TN-CHN-000001 · Sale deed transfer', time: '2 hrs ago', status: 'warning', dept: 'Revenue' },
+  { id: '2', title: 'Topology conflict resolved', sub: 'Parcels P003–P008 overlap fixed', time: '4 hrs ago', status: 'ok', dept: 'Survey' },
+  { id: '3', title: 'Court stay registered', sub: 'Case OS-421/2024 · P003 ownership dispute', time: '1 day ago', status: 'critical', dept: 'eCourts' },
+  { id: '4', title: 'Encumbrance lien placed', sub: 'SBI Chengalpattu · ULPIN TN-CHN-000002', time: '1 day ago', status: 'warning', dept: 'Registration' },
+  { id: '5', title: 'Satellite anomaly detected', sub: 'P006 agricultural → mixed use (NDBI +0.48)', time: '2 days ago', status: 'critical', dept: 'Satellite' },
+  { id: '6', title: 'RoR extract issued', sub: 'Citizen request for TN-CHN-000008', time: '2 days ago', status: 'ok', dept: 'Citizen Services' },
+];
 
 export function HomeView({ onNavigateTab }: { onNavigateTab: (tab: any) => void }) {
-  const [layers, setLayers] = useState<LayerState>({
-    parcels: true,
-    ulpin: true,
-    roads: false,
-    ownership: true,
-    landUse: false,
-    zoning: false,
-    propertyTax: false,
-    topologyConflicts: true,
-  });
-
-  const [statusFilter, setStatusFilter] = useState('all');
-  const [riskFilter, setRiskFilter]     = useState('all');
-
-  const [selectedParcel, setSelectedParcel] = useState<ParcelData | null>(null);
-  const [drawerOpen, setDrawerOpen]         = useState(false);
-
-  const toggleLayer = (key: keyof LayerState) =>
-    setLayers((prev) => ({ ...prev, [key]: !prev[key] }));
-
-  const handleParcelSelect = (parcel: ParcelData) => {
-    setSelectedParcel(parcel);
-    setDrawerOpen(true);
-  };
-
-  const visibleCount = useMemo(() => {
-    return PARCEL_DATA.filter((p) => {
-      if (statusFilter !== 'all' && p.status.toLowerCase() !== statusFilter) return false;
-      if (riskFilter   !== 'all' && p.risk_level.toLowerCase() !== riskFilter)  return false;
-      return true;
-    }).length;
-  }, [statusFilter, riskFilter]);
+  const { config, role } = useRole();
+  const freshness = useFreshness();
+  const quickActions = getQuickActions(role);
+  const stats = getStats(role);
 
   return (
-    <div className="flex-1 flex overflow-hidden">
+    <div className="flex-1 overflow-y-auto">
+      <div className="max-w-[1200px] mx-auto p-5 space-y-5">
 
-      {/* ── LEFT LAYER PANEL ───────────────────────────────────────────────── */}
-      <div className="w-[274px] flex-shrink-0 bg-white border-r border-[#e3e8ef] flex flex-col z-10 shadow-[0_1px_2px_rgba(11,36,71,.06)] overflow-y-auto">
-
-        {/* MAP LAYERS */}
-        <div className="border-b border-[#f1f4f8] px-4 py-3.5">
-          <h3 className="text-[11px] font-extrabold text-[#6b7688] uppercase tracking-[.07em] mb-3 flex items-center gap-2">
-            MAP LAYERS <span className="flex-1 h-px bg-[#e3e8ef]" />
-          </h3>
-
-          <div className="text-[10px] font-extrabold text-[#9aa4b3] uppercase tracking-[.08em] mb-2">Base Spatial</div>
-          <LayerRow label="Parcel Geometries"  color="#3b6fbf" on={layers.parcels}  onToggle={() => toggleLayer('parcels')} />
-          <LayerRow label="ULPIN Labels"        color="#9aa4b3" on={layers.ulpin}    onToggle={() => toggleLayer('ulpin')} />
-          <LayerRow label="Roads & Admin"       color="#cbd3de" on={layers.roads}    onToggle={() => toggleLayer('roads')} />
-
-          <div className="text-[10px] font-extrabold text-[#0f766e] uppercase tracking-[.08em] mt-3 mb-2">Core Governance</div>
-          <LayerRow label="Ownership Status"     color="#3b6fbf" on={layers.ownership}  onToggle={() => toggleLayer('ownership')} />
-          <LayerRow label="Land Use"             color="#16a34a" on={layers.landUse}    onToggle={() => toggleLayer('landUse')} />
-          <LayerRow label="Zoning / Master Plan" color="#7c3aed" on={layers.zoning}     onToggle={() => toggleLayer('zoning')} />
-
-          <div className="text-[10px] font-extrabold text-[#d97706] uppercase tracking-[.08em] mt-3 mb-2">Services &amp; Use-Case</div>
-          <LayerRow label="Property Tax"       color="#d97706" on={layers.propertyTax}       onToggle={() => toggleLayer('propertyTax')} />
-          <LayerRow label="Topology Conflicts" color="#dc2626" on={layers.topologyConflicts}  onToggle={() => toggleLayer('topologyConflicts')} />
-        </div>
-
-        {/* FILTERS */}
-        <div className="px-4 py-3.5">
-          <h3 className="text-[11px] font-extrabold text-[#6b7688] uppercase tracking-[.07em] mb-3 flex items-center gap-2">
-            FILTERS <span className="flex-1 h-px bg-[#e3e8ef]" />
-          </h3>
-
-          <div className="mb-3.5">
-            <div className="text-[11.5px] font-bold text-[#425066] mb-1.5">Status</div>
-            <div className="flex flex-wrap gap-1.5">
-              {['all', 'verified', 'conflict', 'warning', 'pending'].map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setStatusFilter(f)}
-                  className={`text-[11.5px] font-semibold px-[11px] py-[5px] rounded-[20px] transition-colors ${
-                    statusFilter === f
-                      ? 'bg-[#1b4079] text-white'
-                      : 'bg-[#f1f4f8] text-[#425066] hover:bg-[#e3e8ef]'
-                  }`}
-                >
-                  {f.charAt(0).toUpperCase() + f.slice(1)}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-3.5">
-            <div className="text-[11.5px] font-bold text-[#425066] mb-1.5">Risk</div>
-            <div className="flex flex-wrap gap-1.5">
-              {['all', 'low', 'medium', 'high'].map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setRiskFilter(f)}
-                  className={`text-[11.5px] font-semibold px-[11px] py-[5px] rounded-[20px] transition-colors ${
-                    riskFilter === f
-                      ? 'bg-[#1b4079] text-white'
-                      : 'bg-[#f1f4f8] text-[#425066] hover:bg-[#e3e8ef]'
-                  }`}
-                >
-                  {f.charAt(0).toUpperCase() + f.slice(1)}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <button
-            onClick={() => { setStatusFilter('all'); setRiskFilter('all'); }}
-            className="w-full text-[12px] font-semibold text-[#2456a6] bg-[#eef3fb] py-1.5 rounded-[6px] hover:brightness-95 transition-[filter]"
-          >
-            Reset Filters
-          </button>
-          <div className="text-[11.5px] text-[#6b7688] text-center mt-2.5 font-semibold">
-            {visibleCount} of {PARCEL_DATA.length} parcels shown
-          </div>
-        </div>
-      </div>
-
-      {/* ── CENTER MAP ─────────────────────────────────────────────────────── */}
-      <div className="flex-1 relative min-w-0 overflow-hidden">
-
-        {/* MapLibre GL interactive map */}
-        <CadastralMap
-          layers={layers}
-          statusFilter={statusFilter}
-          riskFilter={riskFilter}
-          selectedParcelId={selectedParcel?.parcel_id ?? null}
-          onParcelSelect={handleParcelSelect}
-        />
-
-        {/* TOP-LEFT: Map Title Overlay */}
-        <div className="absolute top-3.5 left-3.5 z-50 bg-white/[.94] backdrop-blur-sm px-3.5 py-2.5 rounded-[10px] shadow-[0_4px_12px_rgba(11,36,71,.10)] border border-[#e3e8ef] pointer-events-none">
-          <div className="text-[12.5px] font-extrabold text-[#12315e] tracking-[.02em]">Demo Village · Chengalpattu</div>
-          <div className="text-[10.5px] text-[#6b7688] mt-px">Tamil Nadu · Active Parcels: {PARCEL_DATA.length}</div>
-          <div className="mt-1.5 inline-flex items-center gap-1 text-[9.5px] font-bold text-[#d97706] bg-[#fdf1e0] px-2 py-0.5 rounded-xl uppercase tracking-[.04em]">
-            ⚠ SYNTHETIC DATA
-          </div>
-        </div>
-
-        {/* TOP-RIGHT: Map Action Buttons */}
-        <div className="absolute top-3.5 right-3.5 z-50 flex flex-col gap-2">
-          {[
-            { Icon: ZoomIn,  label: 'Zoom in' },
-            { Icon: ZoomOut, label: 'Zoom out' },
-            { Icon: Layers,  label: 'Layers' },
-            { Icon: Compass, label: 'Reset bearing' },
-          ].map(({ Icon, label }) => (
-            <button
-              key={label}
-              title={label}
-              className="w-10 h-10 bg-white rounded-[9px] shadow-[0_4px_12px_rgba(11,36,71,.10)] grid place-items-center text-[#425066] border border-[#e3e8ef] hover:bg-[#eef3fb] hover:text-[#1b4079] transition-colors"
-            >
-              <Icon className="w-[18px] h-[18px]" />
-            </button>
-          ))}
-        </div>
-
-        {/* BOTTOM-LEFT: Legend */}
-        <div className="absolute bottom-5 left-3.5 z-50 bg-white/[.96] backdrop-blur-sm px-3.5 py-3 rounded-[10px] shadow-[0_4px_12px_rgba(11,36,71,.10)] border border-[#e3e8ef] min-w-[150px] pointer-events-none">
-          <h4 className="text-[10.5px] font-extrabold text-[#6b7688] uppercase tracking-[.06em] mb-2">PARCEL STATUS</h4>
-          {[
-            { color: '#16a34a', label: 'Verified' },
-            { color: '#d97706', label: 'Warning' },
-            { color: '#dc2626', label: 'Conflict / Dispute' },
-            { color: '#2456a6', label: 'Pending' },
-          ].map(({ color, label }) => (
-            <div key={label} className="flex items-center gap-2.5 py-0.5 text-[12px] text-[#425066] font-medium">
-              <div
-                className="w-[15px] h-[15px] rounded-[4px] flex-shrink-0 border-[1.5px] border-black/10"
-                style={{ background: color }}
-              />
-              {label}
-            </div>
-          ))}
-        </div>
-
-        {/* RIGHT DRAWER */}
+        {/* ── Welcome Banner ────────────────────────────────────────────────── */}
         <div
-          className={`absolute top-0 right-0 bottom-0 w-[370px] bg-white z-[1100] flex flex-col shadow-[-8px_0_28px_rgba(11,36,71,.14)] transition-transform duration-[280ms] ease-[cubic-bezier(.4,0,.2,1)] ${
-            drawerOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          className="rounded-xl p-6 text-white relative overflow-hidden"
+          style={{ background: `linear-gradient(135deg, ${config.color}, ${config.color}dd)` }}
         >
-          {selectedParcel && (
-            <>
-              {/* Drawer Header */}
-              <div className="bg-gradient-to-br from-[#12315e] to-[#0b2447] text-white px-[18px] pt-4 pb-[18px] flex-shrink-0 relative">
-                <div className="text-[10.5px] font-bold text-[#8fb4e6] uppercase tracking-[.08em]">Selected Parcel</div>
-                <div className="text-[22px] font-extrabold tracking-[.02em] mt-0.5 flex items-center gap-2.5 flex-wrap">
-                  {selectedParcel.parcel_id}
-                  <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-[14px] uppercase tracking-[.03em] ${statusPillClass(selectedParcel.status)}`}>
-                    {selectedParcel.status_detail}
-                  </span>
-                </div>
-                <button
-                  onClick={() => setDrawerOpen(false)}
-                  className="absolute top-3.5 right-3.5 text-[#b9cbe6] w-[30px] h-[30px] rounded-[7px] grid place-items-center hover:bg-white/[.12] hover:text-white transition-colors"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-
-                {/* ULPIN Block */}
-                <div className="mt-3.5 bg-white/[.09] border-[1.5px] border-[#7fe9db]/40 rounded-[10px] px-3.5 py-3">
-                  <div className="text-[10px] font-bold text-[#7fe9db] uppercase tracking-[.09em] flex items-center gap-1.5">
-                    <MapIcon className="w-3 h-3" />
-                    ULPIN · Common Parcel Identity
-                  </div>
-                  <div className="bd-mono text-[20px] font-extrabold text-white tracking-[.04em] mt-1">
-                    {selectedParcel.ulpin}
-                  </div>
-                  <div className="text-[10.5px] text-[#a9c6ea] mt-1">
-                    {selectedParcel.taluk} Taluk · {selectedParcel.district} District
-                  </div>
-                </div>
-              </div>
-
-              {/* Drawer Body */}
-              <div className="flex-1 overflow-y-auto px-[18px] py-4">
-                {/* Field Grid */}
-                <div className="grid grid-cols-2 gap-px bg-[#e3e8ef] rounded-[10px] overflow-hidden border border-[#e3e8ef] mb-4">
-                  {[
-                    { label: 'Area',       value: `${selectedParcel.area.toFixed(2)} acres` },
-                    { label: 'Land Use',   value: selectedParcel.land_use },
-                    { label: 'Village',    value: selectedParcel.village },
-                    { label: 'Survey No.', value: selectedParcel.survey_number },
-                  ].map(({ label, value }) => (
-                    <div key={label} className="bg-white px-3 py-2.5">
-                      <div className="text-[10px] font-bold text-[#6b7688] uppercase tracking-[.05em]">{label}</div>
-                      <div className="text-[13px] font-bold text-[#1f2733] mt-0.5">{value}</div>
-                    </div>
-                  ))}
-                  <div className="bg-white px-3 py-2.5 col-span-2">
-                    <div className="text-[10px] font-bold text-[#6b7688] uppercase tracking-[.05em]">Owner / Pattadar</div>
-                    <div className="text-[14px] font-bold text-[#1f2733] mt-0.5">{selectedParcel.owner}</div>
-                  </div>
-                </div>
-
-                {/* Risk Badge */}
-                <div className="flex items-center gap-2 mb-4 flex-wrap">
-                  <div className={`inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-xl ${riskBadgeClass(selectedParcel.risk_level)}`}>
-                    {selectedParcel.risk_level} RISK
-                  </div>
-                  <div className={`inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-xl ${statusPillClass(selectedParcel.status)}`}>
-                    {selectedParcel.status}
-                  </div>
-                </div>
-
-                {/* Explore Button */}
-                <button
-                  onClick={() => onNavigateTab('parcels')}
-                  className="w-full bg-gradient-to-br from-[#2456a6] to-[#1b4079] text-white font-bold text-[14px] py-3.5 rounded-[10px] shadow-[0_4px_12px_rgba(11,36,71,.10)] flex items-center justify-center gap-2.5 hover:brightness-110 hover:-translate-y-px hover:shadow-[0_12px_32px_rgba(11,36,71,.16)] transition-all"
-                >
-                  Explore Full Profile
-                  <ChevronRight className="w-4 h-4" />
-                </button>
-
-                {/* Mini Connectivity */}
-                <div className="mt-4">
-                  <div className="text-[11px] font-extrabold text-[#6b7688] uppercase tracking-[.06em] mb-2.5 text-center">
-                    CONNECTED DATASETS
-                  </div>
-                  <div className="flex flex-col items-center gap-0">
-                    <div className="bd-mono font-extrabold text-[13px] text-white bg-[#1b4079] px-4 py-1.5 rounded-lg shadow-sm">
-                      {selectedParcel.parcel_id}
-                    </div>
-                    <div className="text-[#cbd3de] text-base leading-none my-1">↓</div>
-                    <div className="bd-mono font-extrabold text-[13px] text-white bg-[#118a80] px-4 py-1.5 rounded-lg shadow-sm">
-                      {selectedParcel.ulpin}
-                    </div>
-                    <div className="text-[#cbd3de] text-base leading-none my-1">↓</div>
-                    <div className="flex flex-wrap gap-1.5 justify-center">
-                      {['Revenue', 'Registration', 'Survey', 'Tax', 'Planning'].map((ds) => (
-                        <div
-                          key={ds}
-                          className="text-[10.5px] font-semibold text-[#425066] bg-[#f1f4f8] px-2.5 py-1 rounded-xl border border-[#e3e8ef]"
-                        >
-                          {ds}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </>
-          )}
-
-          {/* Empty drawer state (no parcel selected yet but drawer opened) */}
-          {!selectedParcel && (
-            <div className="flex-1 flex items-center justify-center text-[#6b7688] text-sm text-center px-6">
-              Click a parcel on the map to view its details here.
+          <div className="relative z-10">
+            <p className="text-xs font-semibold text-white/60 uppercase tracking-[0.15em]">
+              Bhoomi Dhrishti · {new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
+            </p>
+            <h1 className="text-2xl font-serif font-bold mt-1 tracking-tight">
+              Welcome, {config.title}
+            </h1>
+            <p className="text-sm text-white/80 mt-1.5 max-w-xl leading-relaxed">
+              {role === 'tehsildar' && 'Your unified view of revenue records, mutation casework, and conflict triage across the Chengalpattu district. All data is cross-verified from state department systems.'}
+              {role === 'sub-registrar' && 'Review registered deeds, verify encumbrance status, and use the stamp duty calculator. Data is fetched from NGDRS and state SRO portals.'}
+              {role === 'town-planner' && 'Inspect zoning compliance, building permits, and property tax linkages against the Tirupporur Master Plan 2041. Satellite change detection alerts included.'}
+              {role === 'surveyor' && 'Resolve topology conflicts, upload DGPS measurements, and validate cadastral boundary accuracy. Sentinel-2 encroachment alerts available.'}
+              {role === 'collector' && 'Executive overview of district-wide land governance — KPIs, department performance, dispute backlogs, and cross-department conflict summaries.'}
+            </p>
+          </div>
+          <div className="absolute top-0 right-0 w-48 h-full opacity-10">
+            <div className="w-full h-full flex items-center justify-center">
+              <Globe className="w-40 h-40" />
             </div>
-          )}
+          </div>
         </div>
 
-        {/* Re-open drawer button (shown when drawer is closed) */}
-        {!drawerOpen && (
-          <button
-            onClick={() => setDrawerOpen(true)}
-            className="absolute top-1/2 right-0 -translate-y-1/2 z-[1100] bg-[#0b2447] text-white px-2 py-3 rounded-l-lg shadow-lg text-xs font-bold flex flex-col items-center gap-1 hover:bg-[#12315e] transition-colors"
-          >
-            <ChevronRight className="w-4 h-4 rotate-180" />
-            <span style={{ writingMode: 'vertical-lr', transform: 'rotate(180deg)', fontSize: 10 }}>
-              {selectedParcel ? selectedParcel.parcel_id : 'Detail'}
-            </span>
-          </button>
-        )}
+        {/* ── Summary Stats ─────────────────────────────────────────────────── */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          {stats.map((s) => {
+            const Icon = s.icon;
+            return (
+              <button
+                key={s.label}
+                type="button"
+                onClick={() => onNavigateTab(s.tab)}
+                className="bg-white rounded-lg border border-[#DCE3EA] p-4 text-left hover:border-[#B9C5D1] hover:shadow-sm transition-all group"
+              >
+                <div className="flex items-start justify-between">
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform"
+                    style={{ backgroundColor: s.bgColor }}
+                  >
+                    <Icon className="w-4.5 h-4.5" style={{ color: s.color }} />
+                  </div>
+                  <ChevronRight className="w-4 h-4 text-[#DCE3EA] group-hover:text-[#14548C] transition-colors" />
+                </div>
+                <div className="mt-3">
+                  <div className="text-xl font-serif font-bold text-[#16212E] tabular-nums">{s.value}</div>
+                  <div className="text-xs font-semibold text-[#16212E] mt-0.5">{s.label}</div>
+                  <div className="text-[11px] text-[#4A5B6E] mt-0.5">{s.sub}</div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* ── Quick Actions + Recent Activity (two-column) ──────────────────── */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+
+          {/* Quick Actions — 3 cols */}
+          <div className="lg:col-span-3 space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-sm font-bold text-[#16212E]">Quick Actions</h2>
+              <span className="text-[10px] text-[#4A5B6E] uppercase tracking-wider font-semibold">
+                {quickActions.length} tools available
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              {quickActions.map((action) => {
+                const Icon = action.icon;
+                return (
+                  <button
+                    key={action.tab + action.label}
+                    type="button"
+                    onClick={() => onNavigateTab(action.tab)}
+                    className="bg-white rounded-lg border border-[#DCE3EA] p-4 text-left hover:border-[#14548C] hover:shadow-sm transition-all group flex gap-3"
+                  >
+                    <div
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform"
+                      style={{ backgroundColor: action.bgColor }}
+                    >
+                      <Icon className="w-5 h-5" style={{ color: action.color }} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs font-bold text-[#16212E] group-hover:text-[#14548C] transition-colors flex items-center gap-1.5">
+                        {action.label}
+                        <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                      <div className="text-[11px] text-[#4A5B6E] mt-0.5 leading-relaxed line-clamp-2">
+                        {action.description}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Recent Activity — 2 cols */}
+          <div className="lg:col-span-2 space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-sm font-bold text-[#16212E]">Recent Activity</h2>
+              <span className="text-[10px] text-[#4A5B6E] uppercase tracking-wider font-semibold">
+                Cross-system feed
+              </span>
+            </div>
+
+            <div className="bg-white rounded-lg border border-[#DCE3EA] divide-y divide-[#F1F4F8]">
+              {RECENT_ACTIVITY.map((item) => (
+                <div key={item.id} className="px-4 py-3 hover:bg-[#F7F9FC] transition-colors">
+                  <div className="flex items-start gap-2.5">
+                    <div className={`w-2 h-2 rounded-full mt-1.5 flex-shrink-0 ${
+                      item.status === 'ok' ? 'bg-[#1E7B4D]' :
+                      item.status === 'warning' ? 'bg-[#B8720B]' :
+                      'bg-[#A32E2E]'
+                    }`} />
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs font-semibold text-[#16212E] leading-tight">{item.title}</div>
+                      <div className="text-[11px] text-[#4A5B6E] mt-0.5">{item.sub}</div>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-[10px] text-[#4A5B6E]">{item.time}</span>
+                        <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-[#F1F4F8] text-[#4A5B6E]">{item.dept}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Platform Info Strip ───────────────────────────────────────────── */}
+        <div className="bg-white rounded-lg border border-[#DCE3EA] p-4 flex flex-wrap items-center justify-between gap-4 text-[11px] text-[#4A5B6E]">
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-1.5">
+              <Database className="w-3.5 h-3.5 text-[#14548C]" />
+              <span>16 microservices</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1E7B4D]" />
+              <span className="text-[#1E7B4D] font-semibold">All operational</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <Eye className="w-3.5 h-3.5 text-[#14548C]" />
+              <span>Read-only unified view</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <Zap className="w-3.5 h-3.5 text-[#14548C]" />
+              <span>Data freshness: <strong className={freshness === 'LIVE' ? 'text-[#1E7B4D]' : 'text-[#B8720B]'}>{freshness}</strong></span>
+            </div>
+          </div>
+          <div className="font-mono text-[10px] text-[#9AA4B3]">
+            SIH 2026 · PS-26014 · Keycloak SSO · SRID 4326
+          </div>
+        </div>
       </div>
     </div>
   );
