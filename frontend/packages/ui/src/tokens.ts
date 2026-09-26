@@ -65,6 +65,12 @@ export const colors = {
     greenOpen: '#43A047',
     government: '#4527A0',
     mixedUse: '#8D6E63',
+    waterBody: '#0277BD',
+    forest: '#1B5E20',
+    poramboke: '#795548',
+    road: '#616161',
+    railway: '#37474F',
+    unoccupied: '#9E9E9E',
   },
 } as const;
 

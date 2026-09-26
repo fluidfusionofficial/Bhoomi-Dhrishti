@@ -36,59 +36,59 @@ export const PANEL_PARCEL_GEOJSON = {
     // Northern belt (lat ~12.731-12.734)
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P001', ulpin: 'TN-CHN-000001', survey_number: '41/1A', area: 3.1, land_use: 'Agricultural', owner: 'Lakshmi Narayanan', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P001', ulpin: '33230101000001', survey_number: '41/1A', patta_no: 'PT/2019/1042', area: 3.1, land_use: 'Agricultural', owner: 'Lakshmi Narayanan', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Kovilpathagai' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1806,12.7322],[80.1838,12.7331],[80.1851,12.7318],[80.1843,12.7302],[80.1818,12.7294],[80.1798,12.7306],[80.1806,12.7322]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P002', ulpin: 'TN-CHN-000002', survey_number: '41/2B', area: 1.85, land_use: 'Residential', owner: 'Meena Rajendran', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P002', ulpin: '33230101000002', survey_number: '41/2B', patta_no: 'PT/2021/0221', area: 1.85, land_use: 'Residential', owner: 'Meena Rajendran', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Kovilpathagai' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1853,12.7320],[80.1866,12.7325],[80.1876,12.7315],[80.1870,12.7300],[80.1853,12.7296],[80.1843,12.7302],[80.1853,12.7320]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P003', ulpin: 'TN-CHN-000003', survey_number: '42/3B', area: 2.4, land_use: 'Residential', owner: 'Arun Kumar', status: 'Conflict', status_detail: 'Ownership Conflict', risk_level: 'High', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P003', ulpin: '33230101000003', survey_number: '42/3B', patta_no: 'PT/2020/0789', area: 2.4, land_use: 'Residential', owner: 'Arun Kumar', status: 'Conflict', status_detail: 'Ownership Conflict', risk_level: 'High', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Kovilpathagai' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1876,12.7323],[80.1896,12.7330],[80.1910,12.7317],[80.1904,12.7298],[80.1882,12.7290],[80.1870,12.7300],[80.1876,12.7323]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P004', ulpin: 'TN-CHN-000004', survey_number: '42/4A', area: 4.2, land_use: 'Agricultural', owner: 'Suresh Babu', status: 'Warning', status_detail: 'Encumbrance Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P004', ulpin: '33230101000004', survey_number: '42/4A', patta_no: 'PT/2018/0634', area: 4.2, land_use: 'Agricultural', owner: 'Suresh Babu', status: 'Warning', status_detail: 'Encumbrance Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Kovilpathagai' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1910,12.7317],[80.1928,12.7328],[80.1944,12.7322],[80.1946,12.7304],[80.1928,12.7291],[80.1908,12.7290],[80.1904,12.7298],[80.1910,12.7317]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P005', ulpin: 'TN-CHN-000005', survey_number: '43/1C', area: 0.95, land_use: 'Commercial', owner: 'Priya Venkatesh', status: 'Warning', status_detail: 'Tax Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P005', ulpin: '33230101000005', survey_number: '43/1C', patta_no: 'PT/2022/1128', area: 0.95, land_use: 'Commercial', owner: 'Priya Venkatesh', status: 'Warning', status_detail: 'Tax Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Kovilpathagai' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1946,12.7318],[80.1960,12.7324],[80.1970,12.7312],[80.1966,12.7297],[80.1948,12.7291],[80.1946,12.7304],[80.1946,12.7318]]] },
     },
     // Middle belt (lat ~12.728-12.731)
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P006', ulpin: 'TN-CHN-000006', survey_number: '43/2A', area: 2.75, land_use: 'Mixed', owner: 'Karthik Selvam', status: 'Conflict', status_detail: 'Planning Conflict', risk_level: 'High', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P006', ulpin: '33230101000006', survey_number: '43/2A', patta_no: 'PT/2017/0512', area: 2.75, land_use: 'Mixed', owner: 'Karthik Selvam', status: 'Conflict', status_detail: 'Planning Conflict', risk_level: 'High', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Thottakkal' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1798,12.7306],[80.1818,12.7294],[80.1826,12.7279],[80.1814,12.7264],[80.1793,12.7260],[80.1782,12.7273],[80.1790,12.7292],[80.1798,12.7306]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P007', ulpin: 'TN-CHN-000007', survey_number: '44/1B', area: 1.4, land_use: 'Residential', owner: 'Divya Anand', status: 'Warning', status_detail: 'Building Permission Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P007', ulpin: '33230101000007', survey_number: '44/1B', patta_no: 'PT/2020/0856', area: 1.4, land_use: 'Residential', owner: 'Divya Anand', status: 'Warning', status_detail: 'Building Permission Warning', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Thottakkal' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1843,12.7302],[80.1853,12.7296],[80.1859,12.7280],[80.1846,12.7266],[80.1830,12.7268],[80.1826,12.7279],[80.1843,12.7302]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P008', ulpin: 'TN-CHN-000008', survey_number: '45/2A', area: 3.6, land_use: 'Agricultural', owner: 'Arun Raj', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P008', ulpin: '33230101000008', survey_number: '45/2A', patta_no: 'PT/2018/1204', area: 3.6, land_use: 'Agricultural', owner: 'Arun Raj', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Thottakkal' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1870,12.7300],[80.1882,12.7290],[80.1892,12.7275],[80.1882,12.7258],[80.1860,12.7253],[80.1846,12.7260],[80.1846,12.7266],[80.1859,12.7280],[80.1870,12.7300]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P009', ulpin: 'TN-CHN-000009', survey_number: '45/3B', area: 2.1, land_use: 'Residential', owner: 'Ganesh Moorthy', status: 'Warning', status_detail: 'Area Discrepancy', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P009', ulpin: '33230101000009', survey_number: '45/3B', patta_no: 'PT/2019/0945', area: 2.1, land_use: 'Residential', owner: 'Ganesh Moorthy', status: 'Warning', status_detail: 'Area Discrepancy', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Thottakkal' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1904,12.7298],[80.1920,12.7290],[80.1930,12.7276],[80.1918,12.7260],[80.1898,12.7254],[80.1882,12.7258],[80.1892,12.7275],[80.1904,12.7298]]] },
     },
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P010', ulpin: 'TN-CHN-000010', survey_number: '46/1A', area: 1.2, land_use: 'Commercial', owner: 'Ravi Chandran', status: 'Pending', status_detail: 'Pending Transaction', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P010', ulpin: '33230101000010', survey_number: '46/1A', patta_no: 'PT/2021/1067', area: 1.2, land_use: 'Commercial', owner: 'Ravi Chandran', status: 'Pending', status_detail: 'Pending Transaction', risk_level: 'Medium', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Thottakkal' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1946,12.7304],[80.1948,12.7291],[80.1964,12.7282],[80.1966,12.7265],[80.1946,12.7258],[80.1930,12.7264],[80.1930,12.7276],[80.1946,12.7304]]] },
     },
     // Southern belt (lat ~12.724-12.728)
     {
       type: 'Feature' as const,
-      properties: { parcel_id: 'P011', ulpin: 'TN-CHN-000011', survey_number: '46/2C', area: 5.3, land_use: 'Agricultural', owner: 'Saravanan Pillai', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
+      properties: { parcel_id: 'P011', ulpin: '33230101000011', survey_number: '46/2C', patta_no: 'PT/2016/0445', area: 5.3, land_use: 'Agricultural', owner: 'Saravanan Pillai', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Tirupporur', place: 'Manimangalam' },
       geometry: { type: 'Polygon' as const, coordinates: [[[80.1782,12.7273],[80.1793,12.7260],[80.1814,12.7264],[80.1830,12.7268],[80.1828,12.7248],[80.1808,12.7236],[80.1784,12.7232],[80.1768,12.7248],[80.1782,12.7273]]] },
     },
     {

@@ -32,8 +32,27 @@ import {
 } from 'lucide-react';
 import { CitizenHeader } from '@/components/CitizenHeader';
 import { BottomNav } from '@/components/BottomNav';
+import { AadhaarAuth, useAadhaarAuth } from '@/components/AadhaarAuth';
 
 export default function CitizenHomePage() {
+  const { isAuthenticated, maskedAadhaar, checked, authenticate } = useAadhaarAuth();
+
+  if (!checked) {
+    return (
+      <div className="min-h-screen bg-[#F4F7FB] flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-[#14548C] border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return <AadhaarAuth onAuthenticated={authenticate} />;
+  }
+
+  return <CitizenDashboard maskedAadhaar={maskedAadhaar} />;
+}
+
+function CitizenDashboard({ maskedAadhaar }: { maskedAadhaar: string }) {
   const [parcels, setParcels] = React.useState<MyParcelSummary[]>([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState<string | null>(null);
@@ -82,7 +101,7 @@ export default function CitizenHomePage() {
                 Aadhaar e-KYC Verified
               </div>
               <div className="text-[10px] text-[#4A5B6E] font-serif tabular-nums">
-                Citizen ID: •••• •••• 8912
+                {maskedAadhaar || 'XXXX XXXX ••••'}
               </div>
             </div>
           </div>

@@ -30,7 +30,7 @@ interface NavItem {
 }
 
 const ALL_NAV_ITEMS: NavItem[] = [
-  { id: 'home',         label: 'Home',           icon: Home,            description: 'Dashboard Overview',               section: 'Overview' },
+  { id: 'home',         label: 'Triage Cockpit', icon: Home,            description: '4-Pillar Cross-Silo Reconciliation Cockpit', section: 'Overview' },
   { id: 'analytics',    label: 'Analytics',      icon: BarChart3,       description: 'Executive KPIs & Heatmaps',        section: 'Overview' },
   { id: 'cadastral',    label: 'Cadastral Map',  icon: Map,             description: 'Full-Screen GIS Cadastral View',   section: 'Land Records' },
   { id: 'parcels',      label: 'Parcels',        icon: MapPin,          description: 'Search & Cadastral Lineage',       section: 'Land Records' },

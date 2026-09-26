@@ -12,6 +12,7 @@ import {
   type ParcelData,
   type LayerState,
 } from './CadastralMap';
+import { PARCEL_GEOJSON } from '../../data/cadastral-data';
 
 // ── Derived synthetic record data for the profile panel ───────────────────────
 
@@ -112,6 +113,7 @@ export function CadastralView({
   const [layers, setLayers] = useState<LayerState>({
     // Tier 1: Base Spatial
     parcels: true, ulpin: true, villageBoundary: false,
+    roads: false, railway: false, governmentLand: false,
     // Tier 2: Governance
     ownership: true, landUse: false, zoning: false,
     registration: false, encumbrance: false, litigation: false,
@@ -162,13 +164,37 @@ export function CadastralView({
 
   const searchResults = useMemo(() => {
     if (searchQuery.trim().length < 2) return [];
-    const q = searchQuery.toLowerCase();
+    const q = searchQuery.toLowerCase().trim();
+
+    // Georeference detection: "lat, lng" or "lng, lat" patterns
+    const coordMatch = q.match(/^(-?\d+\.?\d*)\s*[,\s]\s*(-?\d+\.?\d*)$/);
+    if (coordMatch) {
+      const a = parseFloat(coordMatch[1]);
+      const b = parseFloat(coordMatch[2]);
+      const lat = (a >= 6 && a <= 38) ? a : b;
+      const lng = (b >= 68 && b <= 98) ? b : a;
+      if (lat >= 6 && lat <= 38 && lng >= 68 && lng <= 98) {
+        const threshold = 0.005;
+        return PARCEL_DATA.filter((p) => {
+          const feature = (PARCEL_GEOJSON as any).features.find((f: any) => f.properties.parcel_id === p.parcel_id);
+          if (!feature) return false;
+          const coords: number[][] = feature.geometry.coordinates[0];
+          const cLng = coords.reduce((s, c) => s + c[0], 0) / coords.length;
+          const cLat = coords.reduce((s, c) => s + c[1], 0) / coords.length;
+          return Math.abs(cLat - lat) < threshold && Math.abs(cLng - lng) < threshold;
+        }).slice(0, 6);
+      }
+    }
+
     return PARCEL_DATA.filter(
       (p) =>
         p.parcel_id.toLowerCase().includes(q) ||
         p.ulpin.toLowerCase().includes(q) ||
         p.owner.toLowerCase().includes(q) ||
-        p.survey_number.toLowerCase().includes(q)
+        p.survey_number.toLowerCase().includes(q) ||
+        p.patta_no.toLowerCase().includes(q) ||
+        p.place.toLowerCase().includes(q) ||
+        p.village.toLowerCase().includes(q)
     ).slice(0, 6);
   }, [searchQuery]);
 
@@ -236,7 +262,7 @@ export function CadastralView({
             value={searchQuery}
             onChange={(e) => { setSearchQuery(e.target.value); setShowSuggestions(true); }}
             onFocus={() => setShowSuggestions(true)}
-            placeholder="Search ULPIN, survey no., owner name…"
+            placeholder="Search ULPIN, survey no., patta, owner, place, or lat,lng…"
             className="w-full h-10 pl-10 pr-10 text-[13px] rounded-[10px] bg-white/[.96] backdrop-blur-sm shadow-[0_4px_12px_rgba(11,36,71,.14)] border border-[#e3e8ef] text-[#1f2733] placeholder-[#9aa4b3] focus:outline-none focus:border-[#118a80] focus:ring-2 focus:ring-[#118a80]/20 transition-all"
           />
           {searchQuery && (
@@ -270,7 +296,7 @@ export function CadastralView({
                     </span>
                     <div className="flex-1 min-w-0">
                       <div className="text-[12.5px] font-semibold text-[#1f2733] truncate">{p.ulpin}</div>
-                      <div className="text-[11px] text-[#6b7688] truncate">Survey {p.survey_number} · {p.owner}</div>
+                      <div className="text-[11px] text-[#6b7688] truncate">Survey {p.survey_number} · Patta {p.patta_no} · {p.owner}</div>
                     </div>
                     <span
                       className="text-[10px] font-bold px-2 py-0.5 rounded-xl flex-shrink-0"
@@ -334,6 +360,9 @@ export function CadastralView({
               <LayerToggle label="Parcel Geometries"     color="#3b6fbf" on={layers.parcels}         onToggle={() => toggleLayer('parcels')} />
               <LayerToggle label="ULPIN / Parcel Labels" color="#9aa4b3" on={layers.ulpin}           onToggle={() => toggleLayer('ulpin')} />
               <LayerToggle label="Village / Ward Boundary" color="#c9b48a" on={layers.villageBoundary} onToggle={() => toggleLayer('villageBoundary')} />
+              <LayerToggle label="Roads & Highways"       color="#f59e0b" on={layers.roads}           onToggle={() => toggleLayer('roads')} />
+              <LayerToggle label="Railway Lines"          color="#ef4444" on={layers.railway}         onToggle={() => toggleLayer('railway')} />
+              <LayerToggle label="Government Land"        color="#4527A0" on={layers.governmentLand}  onToggle={() => toggleLayer('governmentLand')} />
 
               {/* Tier 2: Essential Governance */}
               <div className="flex items-center gap-1.5 mt-3.5 mb-2">
@@ -438,6 +467,28 @@ export function CadastralView({
             {label}
           </div>
         ))}
+
+        {/* Infrastructure legend entries */}
+        {(layers.roads || layers.railway || layers.governmentLand) && (
+          <>
+            {layers.roads && (
+              <>
+                <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded" style={{ background: '#f59e0b' }} />State Highway</div>
+                <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded" style={{ background: '#fb923c' }} />District Road</div>
+                <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded" style={{ background: '#d4d4d8' }} />Village Road</div>
+              </>
+            )}
+            {layers.railway && (
+              <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="h-[3px] w-6 rounded border-t-2 border-dashed border-[#ef4444]" />Railway Line</div>
+            )}
+            {layers.governmentLand && (
+              <>
+                <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-dashed border-[#4527A0]" style={{ background: '#4527A033' }} />Govt. Land</div>
+                <div className="flex items-center gap-2 py-0.5 text-[11px] text-[#425066]"><div className="w-3 h-3 rounded-[3px] border-2 border-dashed border-[#795548]" style={{ background: '#79554833' }} />Poramboke</div>
+              </>
+            )}
+          </>
+        )}
 
         {/* Tier 2 legend entries — show when any governance layer is on */}
         {(layers.zoning || layers.encumbrance || layers.litigation || layers.registration) && (

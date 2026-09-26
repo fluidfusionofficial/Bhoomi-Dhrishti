@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import * as React from 'react';
 import Link from 'next/link';
@@ -31,6 +31,14 @@ import {
   Eye,
   CheckCircle,
   ExternalLink,
+  Building2,
+  Download,
+  Scale,
+  Landmark,
+  Check,
+  FileSpreadsheet,
+  FileCheck2,
+  Sparkles,
 } from 'lucide-react';
 import { CitizenHeader } from '@/components/CitizenHeader';
 import { BottomNav } from '@/components/BottomNav';
@@ -43,7 +51,7 @@ export default function CitizenParcelProfilePage() {
   const [profile, setProfile] = React.useState<ParcelProfile | null>(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState<string | null>(null);
-  const [activeTab, setActiveTab] = React.useState<'overview' | 'rights' | 'encumbrances' | 'deeds'>('overview');
+  const [activeTab, setActiveTab] = React.useState<'overview' | 'rights' | 'encumbrances' | 'deeds' | 'clearances'>('overview');
 
   const loadProfile = React.useCallback(async () => {
     if (!parcelId) return;
@@ -130,18 +138,35 @@ export default function CitizenParcelProfilePage() {
               <div className="flex items-start justify-between">
                 <div>
                   <span className="text-[10px] font-semibold text-[#4A5B6E] uppercase tracking-wider">
-                    Unique Land Parcel Identification Number
+                    Unique Land Parcel Identification Number (Bhu-Aadhaar)
                   </span>
                   <h1 className="text-xl font-bold font-serif text-[#16212E] tracking-tight">
                     {profile.ulpin || parcelId}
                   </h1>
                 </div>
                 <StatusBadge
-                  status={profile.has_dispute ? 'disputed' : 'approved'}
-                  variant={profile.has_dispute ? 'rejected' : 'approved'}
+                  status={profile.has_dispute ? 'disputed' : profile.encumbered ? 'pending' : 'approved'}
+                  variant={profile.has_dispute ? 'rejected' : profile.encumbered ? 'pending' : 'approved'}
                 >
-                  {profile.has_dispute ? 'Dispute Open' : 'Clear Title'}
+                  {profile.has_dispute
+                    ? 'Dispute Recorded'
+                    : profile.encumbered
+                    ? 'Presumptive (Encumbered)'
+                    : 'Presumptive Title (Verified)'}
                 </StatusBadge>
+              </div>
+
+              {/* Statutory Presumptive Title Disclaimer Notice */}
+              <div className="bg-[#FFFBEB] border border-[#FDE68A] p-2.5 rounded-md text-[11px] text-[#92400E] flex items-start gap-2">
+                <Scale className="w-4 h-4 text-[#D97706] flex-shrink-0 mt-0.5" />
+                <div>
+                  <div className="font-bold leading-tight">
+                    Presumptive Title Notice (Section 31, Registration Act 1908)
+                  </div>
+                  <div className="text-[10.5px] text-[#B45309] mt-0.5 leading-relaxed">
+                    Under Indian jurisprudence, land registration confers presumptive evidence of ownership, not state-guaranteed conclusive title. Prospective buyers must conduct independent physical survey and verify encumbrance certificates.
+                  </div>
+                </div>
               </div>
 
               {/* Core Ledger Attributes */}
@@ -173,10 +198,170 @@ export default function CitizenParcelProfilePage() {
                       profile.encumbered ? 'text-[#B8720B]' : 'text-[#1E7B4D]'
                     }`}
                   >
-                    {profile.encumbered ? 'Mortgaged' : 'Free from Liens'}
+                    {profile.encumbered ? 'Mortgaged (Bank Lien)' : 'Free from Liens'}
                   </span>
                 </div>
               </div>
+            </Card>
+
+            {/* ── 4-WAY FEDERATED DEPARTMENT CLEARANCE GRID ─────────────────── */}
+            <Card className="p-4 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#16212E] flex items-center gap-1.5">
+                  <Landmark className="w-4 h-4 text-[#14548C]" />
+                  4-Way Federated Department Clearance
+                </span>
+                <span className="text-[10px] text-[#1E7B4D] font-bold bg-[#E7F6EC] px-2 py-0.5 rounded">
+                  Live Cross-Check
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 gap-2.5">
+                {/* 1. Revenue */}
+                <div className="p-2.5 rounded border border-[#DCE3EA] bg-[#F8FAFC]">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="font-bold text-[#14548C] flex items-center gap-1">
+                      <FileSpreadsheet className="w-3.5 h-3.5" />
+                      1. Revenue (RoR)
+                    </span>
+                    <span className="text-[10px] font-bold text-[#1E7B4D] bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200">
+                      VERIFIED
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-[#4A5B6E] mt-1.5 space-y-0.5">
+                    <div>Patta No: <strong className="text-[#16212E]">#4101 (Sole Owner)</strong></div>
+                    <div>Register: Tamil Nilam Portal</div>
+                  </div>
+                </div>
+
+                {/* 2. Registration */}
+                <div className="p-2.5 rounded border border-[#DCE3EA] bg-[#F8FAFC]">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="font-bold text-[#7C3AED] flex items-center gap-1">
+                      <FileCheck2 className="w-3.5 h-3.5" />
+                      2. SRO Registry
+                    </span>
+                    <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded border ${
+                      profile.encumbered
+                        ? 'text-amber-700 bg-amber-50 border-amber-200'
+                        : 'text-emerald-700 bg-emerald-50 border-emerald-200'
+                    }`}>
+                      {profile.encumbered ? 'MORTGAGED' : 'CLEAN EC'}
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-[#4A5B6E] mt-1.5 space-y-0.5">
+                    <div>Deed: <strong className="text-[#16212E]">Doc #1042/2019</strong></div>
+                    <div>Status: {profile.encumbered ? 'Active Bank Charge' : 'Zero Encumbrances'}</div>
+                  </div>
+                </div>
+
+                {/* 3. Municipality / ULB */}
+                <div className="p-2.5 rounded border border-[#DCE3EA] bg-[#F8FAFC]">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="font-bold text-[#0369A1] flex items-center gap-1">
+                      <Building2 className="w-3.5 h-3.5" />
+                      3. Municipality (ULB)
+                    </span>
+                    <span className="text-[10px] font-bold text-[#1E7B4D] bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200">
+                      TAX PAID
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-[#4A5B6E] mt-1.5 space-y-0.5">
+                    <div>PID: <strong className="text-[#16212E]">CHN-2024-891</strong></div>
+                    <div>Assessment: Current (FY25)</div>
+                  </div>
+                </div>
+
+                {/* 4. Town Planning */}
+                <div className="p-2.5 rounded border border-[#DCE3EA] bg-[#F8FAFC]">
+                  <div className="flex items-center justify-between text-[11px]">
+                    <span className="font-bold text-[#B45309] flex items-center gap-1">
+                      <Layers className="w-3.5 h-3.5" />
+                      4. Master Plan
+                    </span>
+                    <span className="text-[10px] font-bold text-[#1E7B4D] bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200">
+                      COMPLIANT
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-[#4A5B6E] mt-1.5 space-y-0.5">
+                    <div>Zone: <strong className="text-[#16212E]">Tirupporur 2041</strong></div>
+                    <div>Buffer: Zero Encroachment</div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* ── CITIZEN SAFE-TO-BUY RISK SCORE CARD ──────────────────────── */}
+            <Card className="p-4 space-y-3 bg-gradient-to-br from-[#F8FAFC] to-[#F1F5F9] border border-[#CBD5E1]">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-[#475569] uppercase tracking-wider flex items-center gap-1">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                    Buyer Due Diligence Rating
+                  </span>
+                  <div className="text-base font-bold text-[#0F172A] mt-0.5">
+                    Safe-to-Buy Confidence Index
+                  </div>
+                </div>
+
+                <div className="text-right">
+                  <span className={`text-xl font-black font-mono px-2.5 py-1 rounded-md border ${
+                    profile.has_dispute
+                      ? 'bg-red-100 text-red-700 border-red-300'
+                      : profile.encumbered
+                      ? 'bg-amber-100 text-amber-700 border-amber-300'
+                      : 'bg-emerald-100 text-emerald-800 border-emerald-300'
+                  }`}>
+                    {profile.has_dispute ? '38' : profile.encumbered ? '74' : '96'}
+                    <span className="text-xs font-normal text-[#64748B]">/100</span>
+                  </span>
+                  <div className="text-[9px] font-bold uppercase text-[#64748B] mt-0.5">
+                    {profile.has_dispute ? 'High Risk' : profile.encumbered ? 'Moderate Risk' : 'Low Risk'}
+                  </div>
+                </div>
+              </div>
+
+              {/* Sub-Metric Bars */}
+              <div className="space-y-1.5 pt-1 text-xs">
+                <div className="flex items-center justify-between text-[11px]">
+                  <span className="text-[#475569]">1. 30-Year Title Chain Provenance:</span>
+                  <strong className="text-[#0F172A]">95% (Continuous)</strong>
+                </div>
+                <div className="flex items-center justify-between text-[11px]">
+                  <span className="text-[#475569]">2. Lien & Encumbrance Clearance:</span>
+                  <strong className={profile.encumbered ? 'text-amber-700' : 'text-emerald-700'}>
+                    {profile.encumbered ? '40% (Active Mortgage)' : '100% (Clean)'}
+                  </strong>
+                </div>
+                <div className="flex items-center justify-between text-[11px]">
+                  <span className="text-[#475569]">3. Master Plan Zoning Sanction:</span>
+                  <strong className="text-emerald-700">100% (Permitted)</strong>
+                </div>
+                <div className="flex items-center justify-between text-[11px]">
+                  <span className="text-[#475569]">4. Municipal Property Tax Dues:</span>
+                  <strong className="text-emerald-700">100% (Paid in Full)</strong>
+                </div>
+              </div>
+
+              {/* Plain English Buyer Advisory */}
+              <div className="bg-white p-2.5 rounded border border-[#E2E8F0] text-[11px] leading-relaxed text-[#334155]">
+                <strong>Buyer Advisory:</strong>{' '}
+                {profile.has_dispute
+                  ? 'Active ownership dispute or boundary conflict is recorded. Transaction is not recommended until title adjudication is completed.'
+                  : profile.encumbered
+                  ? 'A commercial bank mortgage is registered with State Bank of India. Safe to purchase only after the seller produces a formal Mortgage Discharge Deed & Bank NOC.'
+                  : 'All 4 departments confirm consistent records. No registered liens, boundary overlaps, or tax arrears recorded.'}
+              </div>
+
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full text-xs font-semibold flex items-center justify-center gap-1.5 h-8"
+                onClick={() => alert('Downloading official 4-Department Due Diligence Dossier (BNDR Certified PDF)...')}
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download Buyer Due Diligence Dossier (PDF)</span>
+              </Button>
             </Card>
 
             {/* Interactive Spatial Cadastral Map */}
@@ -218,15 +403,16 @@ export default function CitizenParcelProfilePage() {
                   { id: 'overview', label: 'Rights (RoR)' },
                   { id: 'encumbrances', label: 'Encumbrances' },
                   { id: 'deeds', label: 'Deeds' },
+                  { id: 'clearances', label: 'Municipal & Planning' },
                 ] as const
               ).map((tab) => (
                 <button
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex-1 py-2.5 text-center transition-colors border-b-2 ${
+                  className={`flex-1 py-2.5 text-center transition-colors border-b-2 text-[11px] ${
                     activeTab === tab.id
-                      ? 'border-[#14548C] text-[#14548C] bg-[#F4F7FB]/50'
+                      ? 'border-[#14548C] text-[#14548C] bg-[#F4F7FB]/50 font-bold'
                       : 'border-transparent text-[#4A5B6E] hover:text-[#16212E]'
                   }`}
                 >
@@ -337,6 +523,51 @@ export default function CitizenParcelProfilePage() {
                       Sale Deed No. 1042/2019 • SRO Tiruvannamalai
                     </div>
                   )}
+                </div>
+              )}
+
+              {activeTab === 'clearances' && (
+                <div className="space-y-4">
+                  <h3 className="text-xs font-semibold text-[#16212E] uppercase tracking-wider">
+                    Local Body & Town Planning Clearances
+                  </h3>
+
+                  <div className="space-y-2.5 text-xs">
+                    <div className="p-3 rounded border border-[#DCE3EA] bg-[#F8FAFC] space-y-1.5">
+                      <div className="flex items-center justify-between font-bold text-[#14548C]">
+                        <span className="flex items-center gap-1.5">
+                          <Building2 className="w-3.5 h-3.5" />
+                          Municipal Property Tax (ULB)
+                        </span>
+                        <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                          CLEARED
+                        </span>
+                      </div>
+                      <div className="text-[11px] text-[#4A5B6E] grid grid-cols-2 gap-1 pt-1 border-t border-[#E2E8F0]">
+                        <div>Assessment PID: <strong className="text-[#16212E]">CHN-2024-891</strong></div>
+                        <div>Annual Tax: <strong className="text-[#16212E]">INR 4,200</strong></div>
+                        <div>Last Paid Receipt: <strong className="text-[#16212E]">RCPT-9812-FY25</strong></div>
+                        <div>Arrears / Penalties: <strong className="text-emerald-700">NIL</strong></div>
+                      </div>
+                    </div>
+
+                    <div className="p-3 rounded border border-[#DCE3EA] bg-[#F8FAFC] space-y-1.5">
+                      <div className="flex items-center justify-between font-bold text-[#B45309]">
+                        <span className="flex items-center gap-1.5">
+                          <Layers className="w-3.5 h-3.5" />
+                          Master Plan 2041 Zoning & Buffers
+                        </span>
+                        <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200">
+                          PERMITTED
+                        </span>
+                      </div>
+                      <div className="text-[11px] text-[#4A5B6E] space-y-1 pt-1 border-t border-[#E2E8F0]">
+                        <div>Master Plan Zone: <strong className="text-[#16212E]">Primary Agriculture / Eco-Protection Zone</strong></div>
+                        <div>Permitted Coverage (FSI/FAR): <strong className="text-[#16212E]">0.25 (Farmhouse / Allied Agro)</strong></div>
+                        <div>Environmental Buffers: <strong className="text-emerald-700">Outside CRZ & Waterbody Restrictions</strong></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>

@@ -18,22 +18,28 @@ interface Suggestion {
 
 const DEMO_SUGGESTIONS: Suggestion[] = [
   {
-    id: 'TN-607-001-042',
-    type: 'PARCEL',
-    name: 'Ag. Land — Kilpennathur Village',
-    sub: 'Survey No. 42/1B · 0.82 ha',
-  },
-  {
-    id: 'TN607001002422C',
+    id: '33230101000001',
     type: 'ULPIN',
-    name: 'ULPIN Reference',
-    sub: 'Linked to TN-607-001-043',
+    name: 'Ag. Land — Tirupporur, Kovilpathagai',
+    sub: 'Survey 41/1A · Patta PT/2019/1042 · 3.1 acres',
   },
   {
-    id: 'TN-607-001-044',
+    id: '33230101000003',
+    type: 'ULPIN',
+    name: 'Residential — Ownership Conflict',
+    sub: 'Survey 42/3B · Patta PT/2020/0789 · 2.4 acres',
+  },
+  {
+    id: 'P012',
     type: 'PARCEL',
-    name: 'Residential Plot — Chengalpattu',
-    sub: 'Survey No. 44/2 · 0.12 ha',
+    name: 'Industrial — High Risk Transaction',
+    sub: 'Survey 47/1B · ULPIN 33230101000012 · 0.8 acres',
+  },
+  {
+    id: '33230101000022',
+    type: 'ULPIN',
+    name: 'Govt. Land — Panchayat Union School',
+    sub: 'Survey 54/G · Patta GV/1972/0008 · 2.5 acres',
   },
 ];
 
@@ -168,7 +174,7 @@ export default function AppHeader({ onSearch, onGoHome }: AppHeaderProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onFocus={() => setIsFocused(true)}
-            placeholder="Search parcel ID, ULPIN, or village…"
+            placeholder="Search ULPIN, survey no., patta, owner, place…"
             style={{
               width: '100%',
               height: '40px',

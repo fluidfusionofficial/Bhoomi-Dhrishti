@@ -1,30 +1,26 @@
 'use client';
 
 import * as React from 'react';
+import {
+  PARCEL_GEOJSON, PARCEL_DATA as _PARCEL_DATA, CONFLICT_GEOJSON,
+  REGISTRATION_GEOJSON, ENCUMBRANCE_GEOJSON, LITIGATION_GEOJSON,
+  ZONING_GEOJSON, UTILITY_GEOJSON, ROW_GEOJSON, ENV_BUFFER_GEOJSON,
+  ROADS_GEOJSON, RAILWAY_GEOJSON, VILLAGE_BOUNDARY_GEOJSON,
+  GOVERNMENT_LAND_GEOJSON,
+  type ParcelData,
+} from '../../data/cadastral-data';
 
-// ── Types ──────────────────────────────────────────────────────────────────────
-
-export interface ParcelData {
-  parcel_id: string;
-  ulpin: string;
-  survey_number: string;
-  area: number;
-  land_use: string;
-  owner: string;
-  status: string;
-  status_detail: string;
-  risk_level: string;
-  anomaly_score: number;
-  district: string;
-  taluk: string;
-  village: string;
-}
+export type { ParcelData } from '../../data/cadastral-data';
+export const PARCEL_DATA = _PARCEL_DATA;
 
 export interface LayerState {
   // Tier 1: Base Spatial
   parcels: boolean;
   ulpin: boolean;
   villageBoundary: boolean;
+  roads: boolean;
+  railway: boolean;
+  governmentLand: boolean;
   // Tier 2: Essential Governance
   ownership: boolean;
   landUse: boolean;
@@ -53,170 +49,7 @@ export interface CadastralMapProps {
   onMapReady?: (map: any) => void;
 }
 
-// ── Parcel GeoJSON (15 real Chengalpattu parcels from HTML prototype) ──────────
-
-// Realistic irregular cadastral polygons — diagonal boundaries, varying vertex counts,
-// sizes proportional to land use (agricultural >> residential >> commercial).
-// Positioned in the Tirupporur village area, Chengalpattu district, Tamil Nadu.
-const PARCEL_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    // ── Northern belt (lat ~12.731–12.734) ──────────────────────────────────
-    { type: 'Feature', properties: { parcel_id: 'P001', ulpin: 'TN-CHN-000001', survey_number: '41/1A', area: 3.1, land_use: 'Agricultural', owner: 'Lakshmi Narayanan', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.12, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1806,12.7322],[80.1838,12.7331],[80.1851,12.7318],[80.1843,12.7302],[80.1818,12.7294],[80.1798,12.7306],[80.1806,12.7322]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P002', ulpin: 'TN-CHN-000002', survey_number: '41/2B', area: 1.85, land_use: 'Residential', owner: 'Meena Rajendran', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.08, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1853,12.7320],[80.1866,12.7325],[80.1876,12.7315],[80.1870,12.7300],[80.1853,12.7296],[80.1843,12.7302],[80.1853,12.7320]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P003', ulpin: 'TN-CHN-000003', survey_number: '42/3B', area: 2.4, land_use: 'Residential', owner: 'Arun Kumar', status: 'Conflict', status_detail: 'Ownership Conflict', risk_level: 'High', anomaly_score: 0.91, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1876,12.7323],[80.1896,12.7330],[80.1910,12.7317],[80.1904,12.7298],[80.1882,12.7290],[80.1870,12.7300],[80.1876,12.7323]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P004', ulpin: 'TN-CHN-000004', survey_number: '42/4A', area: 4.2, land_use: 'Agricultural', owner: 'Suresh Babu', status: 'Warning', status_detail: 'Encumbrance Warning', risk_level: 'Medium', anomaly_score: 0.52, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1910,12.7317],[80.1928,12.7328],[80.1944,12.7322],[80.1946,12.7304],[80.1928,12.7291],[80.1908,12.7290],[80.1904,12.7298],[80.1910,12.7317]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P005', ulpin: 'TN-CHN-000005', survey_number: '43/1C', area: 0.95, land_use: 'Commercial', owner: 'Priya Venkatesh', status: 'Warning', status_detail: 'Tax Warning', risk_level: 'Medium', anomaly_score: 0.48, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1946,12.7318],[80.1960,12.7324],[80.1970,12.7312],[80.1966,12.7297],[80.1948,12.7291],[80.1946,12.7304],[80.1946,12.7318]]] } },
-
-    // ── Middle belt (lat ~12.728–12.731) ─────────────────────────────────────
-    { type: 'Feature', properties: { parcel_id: 'P006', ulpin: 'TN-CHN-000006', survey_number: '43/2A', area: 2.75, land_use: 'Mixed', owner: 'Karthik Selvam', status: 'Conflict', status_detail: 'Planning Conflict', risk_level: 'High', anomaly_score: 0.87, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1798,12.7306],[80.1818,12.7294],[80.1826,12.7279],[80.1814,12.7264],[80.1793,12.7260],[80.1782,12.7273],[80.1790,12.7292],[80.1798,12.7306]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P007', ulpin: 'TN-CHN-000007', survey_number: '44/1B', area: 1.4, land_use: 'Residential', owner: 'Divya Anand', status: 'Warning', status_detail: 'Building Permission Warning', risk_level: 'Medium', anomaly_score: 0.55, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1843,12.7302],[80.1853,12.7296],[80.1859,12.7280],[80.1846,12.7266],[80.1830,12.7268],[80.1826,12.7279],[80.1843,12.7302]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P008', ulpin: 'TN-CHN-000008', survey_number: '45/2A', area: 3.6, land_use: 'Agricultural', owner: 'Arun Raj', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.15, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1870,12.7300],[80.1882,12.7290],[80.1892,12.7275],[80.1882,12.7258],[80.1860,12.7253],[80.1846,12.7260],[80.1846,12.7266],[80.1859,12.7280],[80.1870,12.7300]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P009', ulpin: 'TN-CHN-000009', survey_number: '45/3B', area: 2.1, land_use: 'Residential', owner: 'Ganesh Moorthy', status: 'Warning', status_detail: 'Area Discrepancy', risk_level: 'Medium', anomaly_score: 0.61, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1904,12.7298],[80.1920,12.7290],[80.1930,12.7276],[80.1918,12.7260],[80.1898,12.7254],[80.1882,12.7258],[80.1892,12.7275],[80.1904,12.7298]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P010', ulpin: 'TN-CHN-000010', survey_number: '46/1A', area: 1.2, land_use: 'Commercial', owner: 'Ravi Chandran', status: 'Pending', status_detail: 'Pending Transaction', risk_level: 'Medium', anomaly_score: 0.44, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1946,12.7304],[80.1948,12.7291],[80.1964,12.7282],[80.1966,12.7265],[80.1946,12.7258],[80.1930,12.7264],[80.1930,12.7276],[80.1946,12.7304]]] } },
-
-    // ── Southern belt (lat ~12.724–12.728) ───────────────────────────────────
-    { type: 'Feature', properties: { parcel_id: 'P011', ulpin: 'TN-CHN-000011', survey_number: '46/2C', area: 5.3, land_use: 'Agricultural', owner: 'Saravanan Pillai', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.10, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1782,12.7273],[80.1793,12.7260],[80.1814,12.7264],[80.1830,12.7268],[80.1828,12.7248],[80.1808,12.7236],[80.1784,12.7232],[80.1768,12.7248],[80.1782,12.7273]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P012', ulpin: 'TN-CHN-000012', survey_number: '47/1B', area: 0.8, land_use: 'Industrial', owner: 'Nithya Sundaram', status: 'Conflict', status_detail: 'High Risk Transaction', risk_level: 'High', anomaly_score: 0.93, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1830,12.7268],[80.1846,12.7266],[80.1860,12.7253],[80.1854,12.7238],[80.1836,12.7232],[80.1820,12.7238],[80.1820,12.7252],[80.1830,12.7268]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P013', ulpin: 'TN-CHN-000013', survey_number: '47/3A', area: 2.95, land_use: 'Residential', owner: 'Bala Subramani', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.18, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1860,12.7253],[80.1882,12.7258],[80.1894,12.7244],[80.1888,12.7230],[80.1866,12.7224],[80.1846,12.7230],[80.1854,12.7238],[80.1860,12.7253]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P014', ulpin: 'TN-CHN-000014', survey_number: '48/1A', area: 3.85, land_use: 'Mixed', owner: 'Kavya Raman', status: 'Warning', status_detail: 'Planning Warning', risk_level: 'Medium', anomaly_score: 0.58, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1898,12.7254],[80.1918,12.7260],[80.1936,12.7252],[80.1940,12.7234],[80.1920,12.7224],[80.1898,12.7226],[80.1888,12.7238],[80.1898,12.7254]]] } },
-
-    { type: 'Feature', properties: { parcel_id: 'P015', ulpin: 'TN-CHN-000015', survey_number: '48/2B', area: 1.65, land_use: 'Water Body', owner: 'Village Commons', status: 'Verified', status_detail: 'Verified', risk_level: 'Low', anomaly_score: 0.05, district: 'Chengalpattu', taluk: 'Tirupporur', village: 'Demo Village' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1946,12.7258],[80.1966,12.7265],[80.1978,12.7254],[80.1976,12.7238],[80.1958,12.7228],[80.1940,12.7230],[80.1940,12.7234],[80.1946,12.7258]]] } },
-  ],
-} as const;
-
-export const PARCEL_DATA: ParcelData[] = PARCEL_GEOJSON.features.map(
-  (f) => f.properties as unknown as ParcelData
-);
-
-// ── Conflict overlay geometry (overlap zone between P003 & P008) ───────────────
-
-// Small overlap zone between P003 (Conflict) and P008 (Verified) — shows topology conflict
-const CONFLICT_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    {
-      type: 'Feature',
-      properties: {},
-      geometry: {
-        type: 'Polygon',
-        coordinates: [[[80.1876, 12.7302],[80.1886, 12.7300],[80.1884, 12.7292],[80.1874, 12.7294],[80.1876, 12.7302]]],
-      },
-    },
-  ],
-};
-
-// ── Tier 2: Governance overlay GeoJSON ────────────────────────────────────────
-
-// Registration deed markers — centroids of parcels with registered deeds
-const REGISTRATION_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { parcel_id: 'P001', deed_no: '1042/2019', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1825, 12.7312] } },
-    { type: 'Feature', properties: { parcel_id: 'P002', deed_no: '0221/2021', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1858, 12.7311] } },
-    { type: 'Feature', properties: { parcel_id: 'P004', deed_no: '0891/2021', deed_type: 'MORTGAGE_DEED', sro: 'SRO Tirupporur', status: 'ENCUMBERED' }, geometry: { type: 'Point', coordinates: [80.1928, 12.7308] } },
-    { type: 'Feature', properties: { parcel_id: 'P008', deed_no: '1204/2018', deed_type: 'SALE_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1868, 12.7277] } },
-    { type: 'Feature', properties: { parcel_id: 'P013', deed_no: '0562/2022', deed_type: 'GIFT_DEED', sro: 'SRO Chengalpattu', status: 'VERIFIED' }, geometry: { type: 'Point', coordinates: [80.1869, 12.7238] } },
-  ],
-};
-
-// Encumbrance certificate zone outlines — parcels with active mortgages/liens
-const ENCUMBRANCE_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { parcel_id: 'P004', ec_type: 'MORTGAGE', lender: 'SBI Chengalpattu', amount: 1500000, period: '2021–2031' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1908,12.7320],[80.1946,12.7325],[80.1948,12.7303],[80.1908,12.7298],[80.1908,12.7320]]] } },
-    { type: 'Feature', properties: { parcel_id: 'P007', ec_type: 'LIEN', lender: 'Canara Bank', amount: 800000, period: '2020–2030' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1836,12.7296],[80.1860,12.7282],[80.1855,12.7268],[80.1832,12.7272],[80.1836,12.7296]]] } },
-  ],
-};
-
-// Court litigation / stay order zones
-const LITIGATION_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { parcel_id: 'P003', case_no: 'OS-421/2024', court: 'Chengalpattu District Court', type: 'OWNERSHIP_DISPUTE', status: 'STAY_GRANTED' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1876,12.7328],[80.1910,12.7332],[80.1912,12.7295],[80.1876,12.7292],[80.1876,12.7328]]] } },
-    { type: 'Feature', properties: { parcel_id: 'P012', case_no: 'OS-188/2023', court: 'Chengalpattu District Court', type: 'TITLE_DISPUTE', status: 'PENDING' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1828,12.7270],[80.1862,12.7255],[80.1857,12.7232],[80.1823,12.7238],[80.1828,12.7270]]] } },
-  ],
-};
-
-// Zoning master plan polygons (residential / agricultural / commercial bands)
-const ZONING_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { zone: 'Residential', plan: 'Tirupporur Master Plan 2041' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1840,12.7335],[80.1980,12.7335],[80.1980,12.7305],[80.1840,12.7305],[80.1840,12.7335]]] } },
-    { type: 'Feature', properties: { zone: 'Agricultural', plan: 'Tirupporur Master Plan 2041' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1770,12.7310],[80.1840,12.7310],[80.1840,12.7225],[80.1770,12.7225],[80.1770,12.7310]]] } },
-    { type: 'Feature', properties: { zone: 'Commercial', plan: 'Tirupporur Master Plan 2041' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1940,12.7305],[80.1990,12.7305],[80.1990,12.7255],[80.1940,12.7255],[80.1940,12.7305]]] } },
-  ],
-};
-
-// ── Tier 3: Use-Case & Utility overlay GeoJSON ─────────────────────────────────
-
-// Utility lines — water main, electricity, gas (simplified line segments through village)
-const UTILITY_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { type: 'WATER_MAIN', operator: 'TWAD Board', diameter_mm: 200 },
-      geometry: { type: 'LineString', coordinates: [[80.1780,12.7290],[80.1830,12.7285],[80.1880,12.7280],[80.1940,12.7275],[80.1980,12.7268]] } },
-    { type: 'Feature', properties: { type: 'ELECTRICITY', operator: 'TANGEDCO', voltage_kv: 11 },
-      geometry: { type: 'LineString', coordinates: [[80.1795,12.7330],[80.1840,12.7310],[80.1880,12.7295],[80.1930,12.7285],[80.1970,12.7280]] } },
-    { type: 'Feature', properties: { type: 'GAS_PIPELINE', operator: 'GAIL', pressure: 'medium' },
-      geometry: { type: 'LineString', coordinates: [[80.1780,12.7245],[80.1840,12.7248],[80.1900,12.7250],[80.1960,12.7248]] } },
-  ],
-};
-
-// Infrastructure Right-of-Way (RoW) corridors
-const ROW_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { type: 'STATE_HIGHWAY', road_no: 'SH-114', row_width_m: 30 },
-      geometry: { type: 'Polygon', coordinates: [[[80.1780,12.7302],[80.1980,12.7302],[80.1980,12.7290],[80.1780,12.7290],[80.1780,12.7302]]] } },
-    { type: 'Feature', properties: { type: 'PANCHAYAT_ROAD', row_width_m: 7 },
-      geometry: { type: 'Polygon', coordinates: [[[80.1870,12.7335],[80.1874,12.7335],[80.1874,12.7225],[80.1870,12.7225],[80.1870,12.7335]]] } },
-  ],
-};
-
-// Environmental buffers — waterbody, coastal regulation zone, forest reserve
-const ENV_BUFFER_GEOJSON = {
-  type: 'FeatureCollection',
-  features: [
-    { type: 'Feature', properties: { type: 'WATERBODY_BUFFER', body: 'Palar River Tributary', buffer_m: 100, regulation: 'CRZ-III' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1946,12.7260],[80.1978,12.7268],[80.1985,12.7230],[80.1955,12.7225],[80.1938,12.7228],[80.1946,12.7260]]] } },
-    { type: 'Feature', properties: { type: 'FOREST_BUFFER', body: 'Reserve Forest Block 42', buffer_m: 50, regulation: 'Forest Act 1980' },
-      geometry: { type: 'Polygon', coordinates: [[[80.1768,12.7260],[80.1795,12.7265],[80.1798,12.7230],[80.1770,12.7225],[80.1768,12.7260]]] } },
-  ],
-};
+// All GeoJSON data is imported from ../../data/cadastral-data
 
 // ── MapLibre expression helpers ────────────────────────────────────────────────
 
@@ -252,6 +85,10 @@ function landUseColorExpr() {
     'Industrial',   '#e11d48',
     'Mixed',        '#ea580c',
     'Water Body',   '#0891b2',
+    'Forest',       '#15803d',
+    'Government',   '#4527a0',
+    'Poramboke',    '#795548',
+    'Unoccupied',   '#9e9e9e',
     '#9aa4b3',
   ];
 }
@@ -291,6 +128,12 @@ function applyLayerState(map: any, layers: LayerState, pid: string | null) {
   safeSet(map, () => map.setLayoutProperty('parcels-outline', 'visibility', visStr(layers.parcels)));
   safeSet(map, () => map.setLayoutProperty('parcels-labels', 'visibility', visStr(layers.ulpin)));
   safeSet(map, () => map.setLayoutProperty('village-boundary', 'visibility', visStr(layers.villageBoundary)));
+  safeSet(map, () => map.setLayoutProperty('roads-line', 'visibility', visStr(layers.roads)));
+  safeSet(map, () => map.setLayoutProperty('roads-labels', 'visibility', visStr(layers.roads)));
+  safeSet(map, () => map.setLayoutProperty('railway-line', 'visibility', visStr(layers.railway)));
+  safeSet(map, () => map.setLayoutProperty('railway-labels', 'visibility', visStr(layers.railway)));
+  safeSet(map, () => map.setLayoutProperty('govt-land-fill', 'visibility', visStr(layers.governmentLand)));
+  safeSet(map, () => map.setLayoutProperty('govt-land-outline', 'visibility', visStr(layers.governmentLand)));
 
   // Tier 2: Governance
   safeSet(map, () => map.setLayoutProperty('zoning-fill', 'visibility', visStr(layers.zoning)));
@@ -593,11 +436,7 @@ export function CadastralMap({
         // ── Tier 1: Village boundary outline ──────────────────────────
         map.addSource('village-boundary-src', {
           type: 'geojson',
-          data: {
-            type: 'Feature',
-            properties: { name: 'Tirupporur Village' },
-            geometry: { type: 'Polygon', coordinates: [[[80.1760,12.7345],[80.1995,12.7345],[80.1995,12.7215],[80.1760,12.7215],[80.1760,12.7345]]] },
-          } as any,
+          data: VILLAGE_BOUNDARY_GEOJSON as any,
         });
         map.addLayer({
           id: 'village-boundary',
@@ -605,6 +444,101 @@ export function CadastralMap({
           source: 'village-boundary-src',
           layout: { visibility: 'none' },
           paint: { 'line-color': '#c9b48a', 'line-width': 2, 'line-dasharray': [6, 3] },
+        });
+
+        // ── Tier 1: Road network ──────────────────────────────────────
+        map.addSource('roads', { type: 'geojson', data: ROADS_GEOJSON as any });
+        map.addLayer({
+          id: 'roads-line',
+          type: 'line',
+          source: 'roads',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': ['match', ['get', 'road_class'],
+              'STATE_HIGHWAY', '#f59e0b',
+              'MAJOR_DISTRICT_ROAD', '#fb923c',
+              'VILLAGE_ROAD', '#d4d4d8',
+              '#a8a29e'] as any,
+            'line-width': ['match', ['get', 'road_class'],
+              'STATE_HIGHWAY', 4,
+              'MAJOR_DISTRICT_ROAD', 3,
+              'VILLAGE_ROAD', 2,
+              1.5] as any,
+          },
+        });
+        map.addLayer({
+          id: 'roads-labels',
+          type: 'symbol',
+          source: 'roads',
+          layout: {
+            visibility: 'none',
+            'symbol-placement': 'line',
+            'text-field': ['get', 'name'],
+            'text-size': 10,
+            'text-font': ['Noto Sans Bold'],
+          } as any,
+          paint: { 'text-color': '#fbbf24', 'text-halo-color': '#000', 'text-halo-width': 1.2 },
+        });
+
+        // ── Tier 1: Railway line ──────────────────────────────────────
+        map.addSource('railway', { type: 'geojson', data: RAILWAY_GEOJSON as any });
+        map.addLayer({
+          id: 'railway-line',
+          type: 'line',
+          source: 'railway',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': '#ef4444',
+            'line-width': 3,
+            'line-dasharray': [8, 4, 2, 4],
+          },
+        });
+        map.addLayer({
+          id: 'railway-labels',
+          type: 'symbol',
+          source: 'railway',
+          layout: {
+            visibility: 'none',
+            'symbol-placement': 'line',
+            'text-field': ['get', 'name'],
+            'text-size': 10,
+            'text-font': ['Noto Sans Bold'],
+          } as any,
+          paint: { 'text-color': '#fca5a5', 'text-halo-color': '#000', 'text-halo-width': 1.2 },
+        });
+
+        // ── Tier 1: Government & institutional land zones ─────────────
+        map.addSource('government-land', { type: 'geojson', data: GOVERNMENT_LAND_GEOJSON as any });
+        map.addLayer({
+          id: 'govt-land-fill',
+          type: 'fill',
+          source: 'government-land',
+          layout: { visibility: 'none' },
+          paint: {
+            'fill-color': ['match', ['get', 'type'],
+              'RAILWAY_LAND', '#37474F',
+              'GOVERNMENT_BUILDING', '#4527A0',
+              'PORAMBOKE', '#795548',
+              'WATER_BODY', '#0277BD',
+              '#616161'] as any,
+            'fill-opacity': 0.25,
+          },
+        });
+        map.addLayer({
+          id: 'govt-land-outline',
+          type: 'line',
+          source: 'government-land',
+          layout: { visibility: 'none' },
+          paint: {
+            'line-color': ['match', ['get', 'type'],
+              'RAILWAY_LAND', '#37474F',
+              'GOVERNMENT_BUILDING', '#4527A0',
+              'PORAMBOKE', '#795548',
+              'WATER_BODY', '#0277BD',
+              '#616161'] as any,
+            'line-width': 2,
+            'line-dasharray': [5, 3],
+          },
         });
 
         // ── Tier 2: Zoning master plan ─────────────────────────────────

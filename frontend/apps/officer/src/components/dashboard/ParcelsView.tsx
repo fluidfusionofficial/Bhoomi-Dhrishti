@@ -54,21 +54,31 @@ export function ParcelsView() {
 
   // Initial load or search
   const FALLBACK_PARCELS: ParcelItem[] = [
-    { parcel_id: 'TN-CHN-000001', ulpin: 'TN-CHN-000001', survey_number: '41/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 14200 },
-    { parcel_id: 'TN-CHN-000002', ulpin: 'TN-CHN-000002', survey_number: '41/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 8500 },
-    { parcel_id: 'TN-CHN-000003', ulpin: 'TN-CHN-000003', survey_number: '42/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 11000 },
-    { parcel_id: 'TN-CHN-000004', ulpin: 'TN-CHN-000004', survey_number: '42/4A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 19200 },
-    { parcel_id: 'TN-CHN-000005', ulpin: 'TN-CHN-000005', survey_number: '43/1C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 4350 },
-    { parcel_id: 'TN-CHN-000006', ulpin: 'TN-CHN-000006', survey_number: '43/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 12600 },
-    { parcel_id: 'TN-CHN-000007', ulpin: 'TN-CHN-000007', survey_number: '44/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 6400 },
-    { parcel_id: 'TN-CHN-000008', ulpin: 'TN-CHN-000008', survey_number: '45/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 16500 },
-    { parcel_id: 'TN-CHN-000009', ulpin: 'TN-CHN-000009', survey_number: '45/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 9600 },
-    { parcel_id: 'TN-CHN-000010', ulpin: 'TN-CHN-000010', survey_number: '46/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 5500 },
-    { parcel_id: 'TN-CHN-000011', ulpin: 'TN-CHN-000011', survey_number: '46/2C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 24300 },
-    { parcel_id: 'TN-CHN-000012', ulpin: 'TN-CHN-000012', survey_number: '47/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'INDUSTRIAL', area_sq_m: 3670 },
-    { parcel_id: 'TN-CHN-000013', ulpin: 'TN-CHN-000013', survey_number: '47/3A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 13500 },
-    { parcel_id: 'TN-CHN-000014', ulpin: 'TN-CHN-000014', survey_number: '48/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 17600 },
-    { parcel_id: 'TN-CHN-000015', ulpin: 'TN-CHN-000015', survey_number: '48/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'WATER_BODY', area_sq_m: 7560 },
+    { parcel_id: 'P001', ulpin: '33230101000001', survey_number: '41/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 14200 },
+    { parcel_id: 'P002', ulpin: '33230101000002', survey_number: '41/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 8500 },
+    { parcel_id: 'P003', ulpin: '33230101000003', survey_number: '42/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 11000 },
+    { parcel_id: 'P004', ulpin: '33230101000004', survey_number: '42/4A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 19200 },
+    { parcel_id: 'P005', ulpin: '33230101000005', survey_number: '43/1C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 4350 },
+    { parcel_id: 'P006', ulpin: '33230101000006', survey_number: '43/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 12600 },
+    { parcel_id: 'P007', ulpin: '33230101000007', survey_number: '44/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 6400 },
+    { parcel_id: 'P008', ulpin: '33230101000008', survey_number: '45/2A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 16500 },
+    { parcel_id: 'P009', ulpin: '33230101000009', survey_number: '45/3B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 9600 },
+    { parcel_id: 'P010', ulpin: '33230101000010', survey_number: '46/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'COMMERCIAL', area_sq_m: 5500 },
+    { parcel_id: 'P011', ulpin: '33230101000011', survey_number: '46/2C', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 24300 },
+    { parcel_id: 'P012', ulpin: '33230101000012', survey_number: '47/1B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'INDUSTRIAL', area_sq_m: 3670 },
+    { parcel_id: 'P013', ulpin: '33230101000013', survey_number: '47/3A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'RESIDENTIAL', area_sq_m: 13500 },
+    { parcel_id: 'P014', ulpin: '33230101000014', survey_number: '48/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'MIXED', area_sq_m: 17600 },
+    { parcel_id: 'P015', ulpin: '33230101000015', survey_number: '48/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'WATER_BODY', area_sq_m: 7560 },
+    { parcel_id: 'P016', ulpin: '33230101000016', survey_number: '49/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 17000 },
+    { parcel_id: 'P017', ulpin: '33230101000017', survey_number: '49/2B', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 14200 },
+    { parcel_id: 'P018', ulpin: '33230101000018', survey_number: '50/RF', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'FOREST', area_sq_m: 27500 },
+    { parcel_id: 'P019', ulpin: '33230101000019', survey_number: '51/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'AGRICULTURAL', area_sq_m: 16600 },
+    { parcel_id: 'P020', ulpin: '33230101000020', survey_number: '52/PB', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'PORAMBOKE', area_sq_m: 30400 },
+    { parcel_id: 'P022', ulpin: '33230101000022', survey_number: '54/G', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'GOVERNMENT', area_sq_m: 10100 },
+    { parcel_id: 'P025', ulpin: '33230101000025', survey_number: '57/UC', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'UNOCCUPIED', area_sq_m: 20200 },
+    { parcel_id: 'P039', ulpin: '33230101000039', survey_number: '62/RW', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'GOVERNMENT', area_sq_m: 13000 },
+    { parcel_id: 'P036', ulpin: '33230101000036', survey_number: '60/WB', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'WATER_BODY', area_sq_m: 13800 },
+    { parcel_id: 'P050', ulpin: '33230101000050', survey_number: '67/1A', village_name: 'Tirupporur', district_name: 'Chengalpattu', land_use: 'INDUSTRIAL', area_sq_m: 7300 },
   ];
 
   const loadParcels = React.useCallback(async (query: string = '') => {
@@ -244,7 +254,7 @@ export function ParcelsView() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by ULPIN, Survey No, Khasra, or Parcel ID..."
+              placeholder="Search by ULPIN, Survey No, Patta No, Owner, or Place..."
               className="w-full pl-8 pr-3 py-1.5 text-xs bg-[#F6F7F9] border border-[#DCE3EA] rounded-[4px] focus:outline-none focus:ring-1 focus:ring-[#14548C] focus:bg-white text-[#16212E]"
             />
           </div>

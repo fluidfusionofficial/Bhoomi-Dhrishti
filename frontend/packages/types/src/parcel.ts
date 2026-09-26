@@ -51,6 +51,10 @@ export type LandUseCategory =
   | 'MIXED_USE'
   | 'WATER_BODY'
   | 'FOREST'
+  | 'PORAMBOKE'
+  | 'ROAD'
+  | 'RAILWAY'
+  | 'UNOCCUPIED'
   | 'UNKNOWN';
 
 export type TenureType =

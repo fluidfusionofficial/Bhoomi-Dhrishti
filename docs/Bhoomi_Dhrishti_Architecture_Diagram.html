@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhoomi Dhrishti — System Architecture Diagram</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.25);
+    }
+    .glow-blue {
+      box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.25);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- Top Global Header -->
+  <header class="max-w-[1500px] mx-auto mb-8 border-b border-slate-800 pb-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-cyan-950 text-cyan-400 border border-cyan-700/60">
+          SIH 2026 · PS-26014
+        </span>
+        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-950 text-emerald-400 border border-emerald-700/60">
+          Ministry of Rural Development / DoLR
+        </span>
+        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-950 text-indigo-300 border border-indigo-700/60">
+          ISO 19152 LADM · X-Road LEM
+        </span>
+      </div>
+      <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white mt-2 flex items-center gap-3">
+        <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+          BHOOMI DHRISHTI (भूमि दृष्टि)
+        </span>
+        <span class="text-sm font-normal text-slate-400 border-l border-slate-700 pl-3">
+          Master Enterprise Architecture Flow
+        </span>
+      </h1>
+      <p class="text-slate-400 text-sm mt-1">
+        Federated GIS-based Digital Public Infrastructure (DPI) for Unified Indian Land Governance
+      </p>
+    </div>
+
+    <!-- Quick Stats Pill -->
+    <div class="flex items-center gap-3 bg-slate-900/90 border border-slate-800 p-2.5 rounded-xl shadow-inner">
+      <div class="text-right px-2">
+        <div class="text-xs text-slate-400 font-medium">Throughput</div>
+        <div class="text-sm font-bold text-cyan-400 font-mono">&lt; 80 µs / Record</div>
+      </div>
+      <div class="h-8 w-px bg-slate-800"></div>
+      <div class="text-right px-2">
+        <div class="text-xs text-slate-400 font-medium">State Nodes</div>
+        <div class="text-sm font-bold text-emerald-400 font-mono">28 States + 8 UTs</div>
+      </div>
+      <div class="h-8 w-px bg-slate-800"></div>
+      <div class="text-right px-2">
+        <div class="text-xs text-slate-400 font-medium">Spatial Render</div>
+        <div class="text-sm font-bold text-indigo-400 font-mono">60 FPS MVT Vector</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Architecture Canvas -->
+  <main class="max-w-[1500px] mx-auto relative">
+
+    <!-- ROW 1: TOP 4 COLUMNS -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-5 relative z-10">
+
+      <!-- COLUMN 1: VARIOUS STATES, UT (col-span-2) -->
+      <section class="md:col-span-2 flex flex-col justify-between">
+        <div>
+          <!-- Header -->
+          <div class="text-center md:text-left mb-3">
+            <span class="text-xs font-black tracking-widest text-slate-400 uppercase">Input Domain</span>
+            <h2 class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider flex items-center gap-2">
+              <svg class="w-5 h-5 text-indigo-400 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              Various States, UT
+            </h2>
+          </div>
+
+          <!-- State Government Icons Pill -->
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-3.5 mb-4 shadow-md flex items-center justify-around">
+            <div class="text-center group" title="Karnataka - Bhoomi & Kaveri">
+              <div class="w-10 h-10 rounded-xl bg-indigo-950/80 border border-indigo-700/50 flex items-center justify-center text-indigo-300 font-bold text-xs shadow transition group-hover:scale-110">
+                KA
+              </div>
+              <span class="text-[10px] text-slate-400 mt-1 block">Bhoomi</span>
+            </div>
+            <div class="text-center group" title="Telangana - Dharani">
+              <div class="w-10 h-10 rounded-xl bg-sky-950/80 border border-sky-700/50 flex items-center justify-center text-sky-300 font-bold text-xs shadow transition group-hover:scale-110">
+                TG
+              </div>
+              <span class="text-[10px] text-slate-400 mt-1 block">Dharani</span>
+            </div>
+            <div class="text-center group" title="Uttar Pradesh - Bhulekh">
+              <div class="w-10 h-10 rounded-xl bg-amber-950/80 border border-amber-700/50 flex items-center justify-center text-amber-300 font-bold text-xs shadow transition group-hover:scale-110">
+                UP
+              </div>
+              <span class="text-[10px] text-slate-400 mt-1 block">Bhulekh</span>
+            </div>
+            <div class="text-center group" title="Andhra Pradesh - MeeBhoomi">
+              <div class="w-10 h-10 rounded-xl bg-emerald-950/80 border border-emerald-700/50 flex items-center justify-center text-emerald-300 font-bold text-xs shadow transition group-hover:scale-110">
+                AP
+              </div>
+              <span class="text-[10px] text-slate-400 mt-1 block">MeeBhoomi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Disparate Formats Sub-Card -->
+        <div class="bg-gradient-to-b from-slate-900/90 to-slate-950 border border-slate-800 rounded-2xl p-4 shadow-lg relative">
+          <div class="flex items-center gap-2 mb-2 pb-2 border-b border-slate-800/80">
+            <div class="w-7 h-7 rounded-lg bg-red-950/80 border border-red-700/50 flex items-center justify-center text-red-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6m6 6v-3"></path>
+              </svg>
+            </div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-200">Different Format & Data</h3>
+          </div>
+
+          <ul class="text-[11px] space-y-2 text-slate-400">
+            <li class="flex items-start gap-1.5">
+              <span class="text-red-400 font-bold">•</span>
+              <span><strong class="text-slate-300">Heterogeneous Schemas:</strong> RoR 7/12, Patta, Jamabandi, Khasra-Khatauni</span>
+            </li>
+            <li class="flex items-start gap-1.5">
+              <span class="text-amber-400 font-bold">•</span>
+              <span><strong class="text-slate-300">Spatial Discrepancies:</strong> Scanned Shajra, CAD dwg, ESRI Shapefile, GeoTIFF</span>
+            </li>
+            <li class="flex items-start gap-1.5">
+              <span class="text-blue-400 font-bold">•</span>
+              <span><strong class="text-slate-300">Disparate Protocols:</strong> Legacy Oracle DB, SOAP XML, HTML portals</span>
+            </li>
+          </ul>
+
+          <div class="mt-3 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[10px] font-mono text-slate-400">
+            <span>28 States + 8 UTs</span>
+            <span class="text-amber-400">Siloed Data</span>
+          </div>
+        </div>
+
+        <!-- Connection Arrow to Engine -->
+        <div class="hidden md:flex justify-end pr-2 pt-3">
+          <div class="flex items-center text-xs font-mono text-cyan-400 font-bold gap-1 bg-cyan-950/60 px-2.5 py-1 rounded-full border border-cyan-800/50">
+            <span>P2P TLS Ingress</span>
+            <svg class="w-3.5 h-3.5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLUMN 2: INTEROPERABILITY ENGINE (col-span-4) -->
+      <section class="md:col-span-4 bg-slate-900/90 border border-slate-800/90 rounded-2xl p-4 shadow-xl glow-cyan flex flex-col justify-between">
+        <div>
+          <!-- Header -->
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+            <div>
+              <span class="text-xs font-black tracking-widest text-cyan-400 uppercase">Core Transformation</span>
+              <h2 class="text-base font-extrabold text-white tracking-wide flex items-center gap-2">
+                <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                INTEROPERABILITY ENGINE
+              </h2>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-cyan-950 text-cyan-300 border border-cyan-700/60 font-mono">
+              3-Layer Mesh
+            </span>
+          </div>
+
+          <!-- 3 Stacked Sub-Layers -->
+          <div class="space-y-3">
+            
+            <!-- LAYER 1: TRANSPORT -->
+            <div class="bg-slate-950/90 border border-cyan-800/40 rounded-xl p-3 shadow-sm hover:border-cyan-500/70 transition">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-[11px] font-black uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800">
+                  LAYER 1 : TRANSPORT
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">X-Road Land Exchange Mesh</span>
+              </div>
+              <p class="text-[11px] text-slate-300 font-semibold mb-1">
+                Peer-to-Peer Encrypted Security Servers (FCNs)
+              </p>
+              <div class="flex flex-wrap gap-1.5 text-[10px]">
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">mTLS 1.3</span>
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">X.509 Dual Signing</span>
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">HSM Non-Repudiation</span>
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">No Central Honeypot</span>
+              </div>
+            </div>
+
+            <!-- LAYER 2: SYNTACTIC (TWO-PHASE COMPILER PATTERN) -->
+            <div class="bg-slate-950/90 border border-amber-500/40 rounded-xl p-3 shadow-sm hover:border-amber-400/80 transition relative">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/80 px-2 py-0.5 rounded border border-amber-700">
+                  LAYER 2 : SYNTACTIC (TWO-PHASE COMPILER)
+                </span>
+                <span class="text-[10px] font-mono text-emerald-400 font-bold">&lt; 80 µs Runtime</span>
+              </div>
+              
+              <!-- Two Phase Split -->
+              <div class="grid grid-cols-2 gap-2 text-[10px] mt-2">
+                <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800">
+                  <div class="font-bold text-amber-300 mb-0.5 flex items-center gap-1">
+                    <span>⚡ Phase 1: Onboard</span>
+                  </div>
+                  <p class="text-slate-400 text-[10px] leading-tight">
+                    AI (Laya/Jev/Bhashini) suggests schema mapping &rarr; Officer Approves
+                  </p>
+                </div>
+                <div class="bg-slate-900/90 p-2 rounded-lg border border-slate-800">
+                  <div class="font-bold text-emerald-300 mb-0.5 flex items-center gap-1">
+                    <span>⚙️ Phase 2: Runtime</span>
+                  </div>
+                  <p class="text-slate-400 text-[10px] leading-tight">
+                    Frozen <code class="text-cyan-300">mapping.yaml</code> compiled into pure Cython / Pydantic V2
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- LAYER 3: SEMANTIC -->
+            <div class="bg-slate-950/90 border border-indigo-500/40 rounded-xl p-3 shadow-sm hover:border-indigo-400/80 transition">
+              <div class="flex items-center justify-between mb-1.5">
+                <span class="text-[11px] font-black uppercase tracking-wider text-indigo-300 bg-indigo-950/80 px-2 py-0.5 rounded border border-indigo-700">
+                  LAYER 3 : SEMANTIC
+                </span>
+                <span class="text-[10px] font-mono text-slate-400">ISO 19152 LADM & LRES</span>
+              </div>
+              <p class="text-[11px] text-slate-300 font-semibold mb-1">
+                LRES ConceptMaps & Metric Harmonization
+              </p>
+              <div class="flex flex-wrap gap-1.5 text-[10px]">
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">Patta/Khata &rarr; TENURE_FREEHOLD</span>
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">Bigha/Guntha &rarr; Standard m²</span>
+                <span class="bg-slate-900 text-slate-300 px-1.5 py-0.5 rounded border border-slate-700">Encumbrance Ontology</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Output Metric -->
+        <div class="mt-3 pt-2 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+          <span class="flex items-center gap-1 text-cyan-400 font-medium">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Clean Canonical JSON
+          </span>
+          <span class="font-mono text-slate-500">&rarr; Feeds Canonical Store</span>
+        </div>
+      </section>
+
+      <!-- COLUMN 3: CANONICAL DATA STORE (col-span-3) -->
+      <section class="md:col-span-3 bg-slate-900/90 border border-slate-800/90 rounded-2xl p-4 shadow-xl glow-blue flex flex-col justify-between">
+        <div>
+          <!-- Header -->
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+            <div>
+              <span class="text-xs font-black tracking-widest text-sky-400 uppercase">System of Engagement</span>
+              <h2 class="text-base font-extrabold text-white tracking-wide flex items-center gap-2">
+                <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                </svg>
+                CANONICAL DATA STORE
+              </h2>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-sky-950 text-sky-300 border border-sky-700/60 font-mono">
+              PostGIS 3.4
+            </span>
+          </div>
+
+          <!-- Technical Core Card -->
+          <div class="space-y-3">
+            <!-- LADM 4 Core Packages -->
+            <div class="bg-slate-950/90 border border-sky-800/40 rounded-xl p-3">
+              <div class="text-[11px] font-bold text-sky-300 mb-1.5 flex items-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                ISO 19152 Indian Profile
+              </div>
+              <div class="grid grid-cols-2 gap-1.5 text-[10px]">
+                <div class="bg-slate-900 p-1.5 rounded border border-slate-800 text-slate-300">
+                  <span class="font-bold text-sky-400">LA_Party:</span> Citizen, Joint Owners, Corp
+                </div>
+                <div class="bg-slate-900 p-1.5 rounded border border-slate-800 text-slate-300">
+                  <span class="font-bold text-sky-400">LA_RRR:</span> Rights, Restrictions, Liens
+                </div>
+                <div class="bg-slate-900 p-1.5 rounded border border-slate-800 text-slate-300">
+                  <span class="font-bold text-sky-400">LA_BAUnit:</span> 14-Digit ULPIN Key
+                </div>
+                <div class="bg-slate-900 p-1.5 rounded border border-slate-800 text-slate-300">
+                  <span class="font-bold text-sky-400">LA_Spatial:</span> PostGIS Cadastral Poly
+                </div>
+              </div>
+            </div>
+
+            <!-- Spatial Tile Cache & Graph -->
+            <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-3">
+              <div class="text-[11px] font-bold text-indigo-300 mb-1 flex items-center justify-between">
+                <span>High-Speed Vector & Graph</span>
+                <span class="text-[10px] font-mono text-emerald-400">Redis 7.2 + Neo4j</span>
+              </div>
+              <ul class="text-[10px] text-slate-400 space-y-1">
+                <li>• <strong class="text-slate-300">MVT Vector Tile Cache:</strong> 60 FPS sub-20ms rendering</li>
+                <li>• <strong class="text-slate-300">Temporal Event Sourcing:</strong> Full historic mutation chain</li>
+                <li>• <strong class="text-slate-300">Cryptographic Seal:</strong> SHA-256 state signature wrapper</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 pt-2 border-t border-slate-800 text-[10px] font-mono text-slate-400 flex justify-between items-center">
+          <span>Decoupled Storage</span>
+          <span class="text-sky-400 font-bold">ReadOnly Replica Mesh</span>
+        </div>
+      </section>
+
+      <!-- COLUMN 4: ANALYTICS LAYER (col-span-3) -->
+      <section class="md:col-span-3 bg-slate-900/90 border border-slate-800/90 rounded-2xl p-4 shadow-xl glow-emerald flex flex-col justify-between">
+        <div>
+          <!-- Header -->
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+            <div>
+              <span class="text-xs font-black tracking-widest text-emerald-400 uppercase">Intelligence & Trust</span>
+              <h2 class="text-base font-extrabold text-white tracking-wide flex items-center gap-2">
+                <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+                ANALYTICS LAYER
+              </h2>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-700/60 font-mono">
+              AI + Trust
+            </span>
+          </div>
+
+          <!-- Analytics Submodules -->
+          <div class="space-y-2.5">
+            <!-- Trust Score Engine -->
+            <div class="bg-slate-950/90 border border-emerald-800/40 rounded-xl p-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold text-emerald-300">Trust & Consistency Engine</span>
+                <span class="text-[10px] font-mono text-emerald-400 font-bold">0–100 Score</span>
+              </div>
+              <p class="text-[10px] text-slate-400 mt-0.5">
+                Deterministic 6-axis vector: geometry, ownership, encumbrance, dispute, mutation, tax.
+              </p>
+            </div>
+
+            <!-- Satellite AI -->
+            <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold text-sky-300">Sentinel-2 Satellite AI</span>
+                <span class="text-[10px] font-mono text-sky-400">10m / NDVI / NDBI</span>
+              </div>
+              <p class="text-[10px] text-slate-400 mt-0.5">
+                Detects illegal encroachments, built-up sprawl, and agricultural land conversion.
+              </p>
+            </div>
+
+            <!-- Anomaly & Audit -->
+            <div class="bg-slate-950/90 border border-slate-800 rounded-xl p-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold text-amber-300">Anomaly & Merkle Audit</span>
+                <span class="text-[10px] font-mono text-amber-400">Zero-Tamper</span>
+              </div>
+              <p class="text-[10px] text-slate-400 mt-0.5">
+                Isolation Forest for undervaluation + SHA-256 Merkle DAG hash chains.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 pt-2 border-t border-slate-800 text-[10px] font-mono text-slate-400 flex justify-between items-center">
+          <span>Continuous Inference</span>
+          <span class="text-emerald-400 font-bold">&darr; Connects to Backend</span>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ROW 2: BACKEND PILL -->
+    <div class="my-6 relative">
+      <div class="hidden md:block absolute -top-5 right-12 w-0.5 h-6 bg-gradient-to-b from-emerald-500 to-indigo-500"></div>
+
+      <div class="bg-gradient-to-r from-slate-900 via-indigo-950/70 to-slate-900 border-2 border-indigo-700/60 rounded-3xl p-4 shadow-2xl glow-blue">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <!-- Backend Title Badge -->
+          <div class="flex items-center gap-3 md:border-r border-indigo-800/80 pr-6 shrink-0">
+            <div class="w-10 h-10 rounded-2xl bg-indigo-600/20 border border-indigo-500 flex items-center justify-center text-indigo-400 shadow">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-widest text-indigo-400">Microservice Mesh & Security Core</span>
+              <h3 class="text-lg font-extrabold text-white tracking-wide">BACKEND</h3>
+            </div>
+          </div>
+
+          <!-- Microservices Chips Grid -->
+          <div class="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
+            <div class="bg-slate-950/80 border border-indigo-900/60 p-2 rounded-xl">
+              <div class="font-bold text-slate-200">16 FastAPI Nodes</div>
+              <div class="text-[10px] text-indigo-300 font-mono">Ports 8001–8016</div>
+            </div>
+            <div class="bg-slate-950/80 border border-indigo-900/60 p-2 rounded-xl">
+              <div class="font-bold text-slate-200">Keycloak 24 IAM</div>
+              <div class="text-[10px] text-indigo-300 font-mono">OAuth2 / OIDC / RBAC</div>
+            </div>
+            <div class="bg-slate-950/80 border border-indigo-900/60 p-2 rounded-xl">
+              <div class="font-bold text-slate-200">DEPA Consent Engine</div>
+              <div class="text-[10px] text-indigo-300 font-mono">Purpose-Bound Token</div>
+            </div>
+            <div class="bg-slate-950/80 border border-indigo-900/60 p-2 rounded-xl">
+              <div class="font-bold text-slate-200">RabbitMQ + Celery</div>
+              <div class="text-[10px] text-indigo-300 font-mono">Async Event Queue</div>
+            </div>
+          </div>
+
+          <!-- Nginx Ingress -->
+          <div class="shrink-0 bg-slate-950 px-3 py-1.5 rounded-xl border border-slate-800 text-[10px] font-mono text-cyan-400 text-center">
+            <span>Nginx Reverse Proxy</span>
+            <div class="text-slate-400 text-[9px]">SSL & Rate Limiting</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 3: FRONTEND / RESOURCE & TOOLS PILL + USERS -->
+    <div class="flex flex-col lg:flex-row items-center gap-4 relative">
+
+      <!-- Connector line down from Backend left -->
+      <div class="hidden md:block absolute -top-6 left-8 w-0.5 h-6 bg-gradient-to-b from-indigo-500 to-cyan-500"></div>
+
+      <!-- Main Pill Container -->
+      <div class="flex-1 w-full bg-slate-900/90 border border-slate-700/80 rounded-3xl p-3 md:p-4 shadow-2xl flex flex-col md:flex-row items-center gap-4">
+        
+        <!-- Vertical / Side Badge: FRONTEND -->
+        <div class="bg-cyan-950/90 border border-cyan-700/70 text-cyan-400 px-3 py-2 md:py-6 rounded-2xl font-black text-xs md:text-sm uppercase tracking-widest flex md:flex-col items-center justify-center shrink-0 shadow">
+          <span class="md:[writing-mode:vertical-rl] md:rotate-180">FRONTEND</span>
+        </div>
+
+        <!-- 8 Tools Icons Row (Exact Wireframe Match) -->
+        <div class="flex-1 grid grid-cols-4 sm:grid-cols-8 gap-2.5 w-full">
+          
+          <!-- Tool 1: Valuation Chart -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-cyan-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-cyan-950/70 border border-cyan-700/60 flex items-center justify-center text-cyan-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Cadastral Valuation</span>
+            <span class="text-[8px] text-slate-400">Circle Rates</span>
+          </div>
+
+          <!-- Tool 2: Land Health Card -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/70 border border-emerald-700/60 flex items-center justify-center text-emerald-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Land Health Card</span>
+            <span class="text-[8px] text-emerald-400">Citizen RoR</span>
+          </div>
+
+          <!-- Tool 3: LEM Mesh Inspector -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-sky-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-sky-950/70 border border-sky-700/60 flex items-center justify-center text-sky-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h16M4 12h16M4 20h16"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">LEM Mesh Node</span>
+            <span class="text-[8px] text-slate-400">X-Road P2P</span>
+          </div>
+
+          <!-- Tool 4: Institutional Sync Hub -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-indigo-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-indigo-950/70 border border-indigo-700/60 flex items-center justify-center text-indigo-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Tri-Party Sync</span>
+            <span class="text-[8px] text-slate-400">SRO · Court · Bank</span>
+          </div>
+
+          <!-- Tool 5: AI Schema Studio -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-amber-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-amber-950/70 border border-amber-700/60 flex items-center justify-center text-amber-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">AI Schema Studio</span>
+            <span class="text-[8px] text-amber-400">HITL Mapper</span>
+          </div>
+
+          <!-- Tool 6: DEPA Consent Vault -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-purple-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-purple-950/70 border border-purple-700/60 flex items-center justify-center text-purple-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Consent Vault</span>
+            <span class="text-[8px] text-slate-400">Who Accessed</span>
+          </div>
+
+          <!-- Tool 7: Discrepancy Console -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-rose-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-rose-950/70 border border-rose-700/60 flex items-center justify-center text-rose-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Discrepancy Inspector</span>
+            <span class="text-[8px] text-rose-400">Officer Console</span>
+          </div>
+
+          <!-- Tool 8: Bank Loan Underwriting -->
+          <div class="group relative flex flex-col items-center p-2 rounded-2xl bg-slate-950 border border-slate-800 hover:border-emerald-500 hover:bg-slate-900 transition-all cursor-pointer">
+            <div class="w-12 h-12 rounded-xl bg-emerald-950/70 border border-emerald-700/60 flex items-center justify-center text-emerald-300 shadow group-hover:scale-105 transition">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <span class="text-[10px] font-bold text-slate-300 mt-1.5 text-center leading-tight">Loan Gateway</span>
+            <span class="text-[8px] text-emerald-400">KCC & Mortgage</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Arrow & User Node (Far Right) -->
+      <div class="shrink-0 flex items-center gap-3 bg-slate-900/90 border border-slate-800 p-3.5 rounded-3xl shadow-xl">
+        <svg class="w-6 h-6 text-cyan-400 rotate-180 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+
+        <div class="flex flex-col items-center text-center">
+          <div class="w-12 h-12 rounded-full bg-cyan-600/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-300 shadow-md">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <span class="text-xs font-black text-white mt-1 uppercase tracking-wider">USER</span>
+          <span class="text-[9px] text-slate-400 max-w-[90px] leading-tight">Citizens, Officers, Banks, SRO</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Subtitle below Bottom Pill -->
+    <div class="text-center mt-3">
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-400 bg-slate-900/80 px-4 py-1 rounded-full border border-slate-800">
+        RESOURCE & TOOLS (Modular Application Layer)
+      </span>
+    </div>
+
+    <!-- FLOW NARRATIVE SUMMARY STRIP -->
+    <footer class="mt-8 bg-slate-900/50 border border-slate-800/80 rounded-2xl p-4 text-xs text-slate-400">
+      <div class="font-bold text-slate-300 mb-2 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+        End-to-End Architectural Data Flow Narrative:
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-[11px] leading-relaxed">
+        <div class="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80">
+          <strong class="text-indigo-300 block mb-1">1. State Ingestion & Transit</strong>
+          28 States & 8 UTs route local land data via peer-to-peer X-Road Land Exchange Mesh (LEM) nodes with mTLS 1.3 and HSM dual-signatures without creating a centralized honeypot.
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80">
+          <strong class="text-amber-300 block mb-1">2. Two-Phase AI Compilation</strong>
+          Laya/Jev/Bhashini AI performs one-time onboarding schema matching approved by officers, freezing into immutable Cython/Pydantic code executing at &lt;80 µs live query latency.
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80">
+          <strong class="text-sky-300 block mb-1">3. Engagement Canonical Store</strong>
+          Data is mapped to ISO 19152 LADM Indian Profile (Party, RRR, BAUnit, SpatialUnit) in PostGIS 3.4, with Redis 7.2 MVT vector tiles serving cadastral maps at 60 FPS.
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-950/70 border border-slate-800/80">
+          <strong class="text-emerald-300 block mb-1">4. Intelligence & User Delivery</strong>
+          Deterministic Trust Engine scores parcels (0–100), Sentinel-2 detects encroachments, and FastAPI backend serves 8 specialized tools to Citizens, Officers, and Banks under DEPA consent.
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>

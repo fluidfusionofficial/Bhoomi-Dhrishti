@@ -96,7 +96,8 @@ export default function AdminConsolePage() {
         setStates(statesRes.value);
       } else {
         setStates([
-          { code: 'TN', name: 'Tamil Nadu (Tamil Nilam)', status: 'ACTIVE', onboarded_date: '2024-01-15', parcels_ingested: 4280500, conformance_score: 98.4 },
+          { code: 'TN', name: 'Tamil Nadu (Tamil Nilam Rural)', status: 'ACTIVE', onboarded_date: '2024-01-15', parcels_ingested: 4280500, conformance_score: 98.4 },
+          { code: 'CH', name: 'Chandigarh (Estate & MCL Urban)', status: 'ACTIVE', onboarded_date: '2024-03-01', parcels_ingested: 840200, conformance_score: 97.8 },
           { code: 'KA', name: 'Karnataka (Bhoomi)', status: 'ACTIVE', onboarded_date: '2024-04-10', parcels_ingested: 3650200, conformance_score: 96.2 },
           { code: 'MH', name: 'Maharashtra (MahaBhulekh)', status: 'ACTIVE', onboarded_date: '2024-08-22', parcels_ingested: 5120400, conformance_score: 94.7 },
           { code: 'UP', name: 'Uttar Pradesh (Bhulekh UP)', status: 'ONBOARDING', onboarded_date: '2025-02-01', parcels_ingested: 1450000, conformance_score: 88.5 },
